@@ -1,0 +1,62 @@
+--- creacion de grupo de usuarios SAT
+IF NOT EXISTS (SELECT 1 FROM DBO.SYSUSERS WHERE name = 'SAT')
+BEGIN
+  CREATE USER SAT 
+  FORCE PASSWORD CHANGE OFF;
+END;
+COMMIT;
+
+--- creacion de grupo de usuarios STG_SAT
+IF NOT EXISTS (SELECT 1 FROM DBO.SYSUSERS WHERE name = 'STG_SAT')
+BEGIN
+  CREATE USER STG_SAT
+  FORCE PASSWORD CHANGE OFF;
+END;
+COMMIT;
+------------------------------
+-- INTERFAZ  TITULARES
+--------------------------------
+
+drop table IF EXISTS SAT.TBDOCPER;  
+CREATE TABLE IF NOT EXISTS SAT.TBDOCPER  (
+ 	IDENTIFICADOR_EJECUCION	INTEGER		--IDENTIFICADOR UNICO DE EJECUCION
+,	CODENT	VARCHAR	(4)	--Código de entidad
+,	IDENTCLI	VARCHAR	(8)	--Número único de persona
+,	TIPDOC 	VARCHAR	(3)	--Tipo de documento
+,	NUMDOC	VARCHAR	(22)	--Número de documento
+,	FECDOC	DATE		--Fecha de vigencia de documento
+,	DOCPRIN	VARCHAR	(1)	--Indicador de documento principal
+,	DOCDUPL	VARCHAR	(1)	--Indicador de documento duplicado
+,	FECALTA	DATE		--Fecha de alta
+,	FECBAJA	DATE		--Fecha de baja
+,	CODENTUMO	VARCHAR	(4)	--Entidad última modificació
+,	CODOFIUMO	VARCHAR	(4)	--Oficina última modificación
+,	USUARIOUMO	VARCHAR	(8)	--Usuario última modificación
+,	CODTERMUMO	VARCHAR	(8)	--Terminal última modificación
+,	CONTCUR	TIMESTAMP		--Control de concurrencia
+); COMMIT;	 	 		
+
+DROP TABLE IF EXISTS "DWH_ETLS"."TBDOCPER";
+COMMIT;
+DROP TABLE IF EXISTS "STG"."TBDOCPER";
+COMMIT;
+DROP TABLE IF EXISTS "STG_SAT"."TBDOCPER";
+COMMIT;
+
+CREATE TABLE IF NOT EXISTS "STG_SAT"."TBDOCPER" (
+	"CODENT" VARCHAR(4) NULL ,
+	"IDENTCLI" VARCHAR(8) NULL ,
+	"TIPDOC" VARCHAR(3) NULL ,
+	"NUMDOC" VARCHAR(22) NULL ,
+	"FECDOC" VARCHAR(10) NULL ,
+	"DOCPRIN" VARCHAR(1) NULL ,
+	"DOCDUPL" VARCHAR(1) NULL ,
+	"FECALTA" VARCHAR(10) NULL ,
+	"FECBAJA" VARCHAR(10) NULL ,
+	"CODENTUMO" VARCHAR(4) NULL ,
+	"CODOFIUMO" VARCHAR(4) NULL ,
+	"USUARIOUMO" VARCHAR(8) NULL ,
+	"CODTERMUMO" VARCHAR(8) NULL ,
+	"CONTCUR" VARCHAR(26) NULL 
+)  COMMIT;
+

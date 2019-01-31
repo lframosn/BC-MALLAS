@@ -10,38 +10,3 @@ create table IF NOT EXISTS CNF.VERSION_OBJETOS (
 )
 ;
 COMMIT;
-
-------------------------------------------------
----- CONTROL DE VERSION ------------------------
-------------------------------------------------
-declare 
- @OBJECT_NAME varchar(100)
-,@OBJECT_USER varchar(20)
-,@VERSION_COMMIT VARCHAR(100)
-,@VERSION_CODE VARCHAR(20)
-,@VERSION_DATE DATETIME 
-,@CRDATE DATETIME
-
-select 
- @OBJECT_NAME = 'VERSION_OBJETOS'
-,@OBJECT_USER = 'CNF'
-,@VERSION_COMMIT = 'a69b91087fc04cd171955e10de5168aa20175d60 '
-,@VERSION_CODE = 'a69b910'
-,@VERSION_DATE = ' 2019/01/31 2:30:48 PM'
-
-SELECT @CRDATE = NULL
-SELECT @CRDATE = create_time 
-FROM SYSUSERS U, SYSTABLE T, SYSIQTABLE S
-where T.table_name = @OBJECT_NAME
-  and T.creator = U.uid
-  and U.name = @OBJECT_USER
-  and T.table_id = S.table_id
-if @CRDATE IS NULL SELECT @CRDATE = getdate()
-
-insert CNF.VERSION_OBJETOS (
- OBJECT_NAME ,OBJECT_USER ,VERSION_COMMIT ,VERSION_CODE ,VERSION_DATE ,CRDATE
-)
-select 
- @OBJECT_NAME ,@OBJECT_USER ,@VERSION_COMMIT,@VERSION_CODE ,@VERSION_DATE ,@CRDATE
-
-COMMIT;

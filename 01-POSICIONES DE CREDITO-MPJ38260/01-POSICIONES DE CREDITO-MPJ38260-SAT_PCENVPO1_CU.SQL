@@ -78,8 +78,7 @@ drop table IF EXISTS SAT.PCENVPO1_CU;  CREATE TABLE IF NOT EXISTS SAT.PCENVPO1_C
 ,	FECCLICUM  	VARCHAR	(10)	--Fecha Ultima actualizaciOn cliente cumplido 
 ,	CLASIFRISAT	VARCHAR	(2)	--ClasificaciOn de riesgo SAT 
 ,	CLASIFRIREG	VARCHAR	(2)	--ClasificaciOn de riesgo regulatorios 
-,	CLASIFRIMDE	VARCHAR	(2)	--ClasificaciOn de riesgo motor de decisiOn 
+,	CLASIFRIMDE	VARCHAR	(5)	--ClasificaciOn de riesgo motor de decisiOn 
 ,	TASAEFECMAX	DECIMAL	(7,4)	--Tasa efectiva mAxima 
-,	FILLER2	VARCHAR	(3)	--
-,	FILLER3	VARCHAR	(299)	--
+,	FILLER2	VARCHAR	(299)	--
 ); COMMIT;	 	 		

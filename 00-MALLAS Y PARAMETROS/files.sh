@@ -13,4 +13,4 @@
 
 cd /datos/SAT/mallas
 ls *.txt > listadoArchivos.txt
-
+ 

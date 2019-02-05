@@ -126,7 +126,7 @@ drop table IF EXISTS SAT.TBAUTORI;  CREATE TABLE IF NOT EXISTS SAT.TBAUTORI  ( 	
 ,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
 ,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ,	DATADI 	VARCHAR	(650)	--Datos adicionales 
---	 	 		
+,	MIS_DATE	DATE		--Fecha de generación de informacion
 ); COMMIT;	 	 		
 
 DROP TABLE IF EXISTS "DWH_ETLS"."TBAUTORI";
@@ -209,7 +209,8 @@ CREATE TABLE IF NOT EXISTS "STG_SAT"."TBAUTORI" (
 	"USUARIOUMO" VARCHAR(8) NULL ,
 	"CODTERMUMO" VARCHAR(8) NULL ,
 	"CONTCUR" TIMESTAMP NULL ,
-	"DATADI" VARCHAR(650) NULL 
+	"DATADI" VARCHAR(650) NULL ,
+	"MIS_DATE" DATE NULL 
 )  COMMIT;
 
 ------------------------------------------------
@@ -241,9 +242,9 @@ select
  @NOMBRE_MALLA = 'PCJA84A88'
 ,@OBJECT_NAME = 'TBAUTORI'
 ,@OBJECT_USER = 'SAT'
-,@VERSION_COMMIT = 'f0e40d208599d1ca3c1f317fee2205f331490c20'
-,@VERSION_CODE = 'f0e40d2'
-,@VERSION_DATE = ' 2019/01/28 4:16:42 PM'
+,@VERSION_COMMIT = 'b9fb9d10a40e610b8027db903bc1ec5c16ad6a9d'
+,@VERSION_CODE = 'b9fb9d1'
+,@VERSION_DATE = 'February 5, 2019 5:04:23 PM'
 ,@CRDATE = NULL
 
 SELECT @CRDATE = create_time 

@@ -81,5 +81,6 @@ CTADEBETPMP  decimal(30,0) NULL,
 CTAHABERTPMP  decimal(30,0) NULL,
 DESCAPUNTE  varchar(30) NULL,
 CODCONVEN  varchar(4) NULL,
-FILLER1  varchar(102) NULL
+FILLER1  varchar(102) NULL,
+MIS_DATE DATE NULL
 ); commit;

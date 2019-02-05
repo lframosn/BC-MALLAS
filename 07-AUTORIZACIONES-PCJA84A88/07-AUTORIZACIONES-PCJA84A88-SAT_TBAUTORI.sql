@@ -109,5 +109,5 @@ drop table IF EXISTS SAT.TBAUTORI;  CREATE TABLE IF NOT EXISTS SAT.TBAUTORI  ( 	
 ,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
 ,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ,	DATADI 	VARCHAR	(650)	--Datos adicionales 
---	 	 		
+,	MIS_DATE	DATE		--Fecha de generación de informacion
 ); COMMIT;	 	 		

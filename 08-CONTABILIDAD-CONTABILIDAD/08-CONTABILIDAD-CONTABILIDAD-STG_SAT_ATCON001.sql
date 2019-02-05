@@ -76,5 +76,6 @@ NUMOPER decimal(10,0) NULL,
 SIGNO varchar(1) NULL,
 LINREF decimal(8,0) NULL,
 TIPOLIN varchar(4) NULL,
-FILLER_0001 varchar(5) NULL
+FILLER_0001 varchar(5) NULL,
+MIS_DATE DATE NULL
 ); COMMIT;

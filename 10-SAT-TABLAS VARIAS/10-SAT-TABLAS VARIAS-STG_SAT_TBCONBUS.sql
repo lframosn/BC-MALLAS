@@ -1,0 +1,18 @@
+drop table IF EXISTS STG_SAT.TBCONBUS;  CREATE TABLE IF NOT EXISTS STG_SAT.TBCONBUS  (
+--MPDT142-Relacion de contratos de tarjeta con estructura business	 	 		
+	CODENT 	VARCHAR	(4)	--Código de entidad 
+,	CENTALTA 	VARCHAR	(4)	--Centro de alta cuenta de tarjeta 
+,	CUENTA 	VARCHAR	(12)	--Cuenta de tarjeta 
+,	CODBUS 	DECIMAL	(8,0)	--Código de Estructura Business 
+,	CODELEMENTO 	DECIMAL	(4,0)	--Código de Elemento dentro de la Estructura Business 
+,	TIPROLCUENTA 	VARCHAR	(1)	--Tipo de rol de la cuenta en la estructura business:
+--U = Cuenta de control de cuotas o actividad (única)	 	 		
+--E = Cuenta de empleado	 	 		
+,	FECALTA 	DATE		--Fecha de alta 
+,	FECBAJA 	DATE		--Fecha de baja 
+,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación                           
+,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
+,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
+,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
+,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
+); COMMIT;	 	 		

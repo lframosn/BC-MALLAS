@@ -15,7 +15,7 @@ CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET
 <locale_codepage>&lt;default&gt;</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E8D1424B8181E0868FB847B580AF04CB36D9B1EE468BB158D8B5C612A053ACDD28879C1A0381D8C453738799E142CB</password>
+<password>+0400000000120303000803E8DD306A90A8FDC4183B906E99ED6848E102A8AC2AD4C5C6D826B8F3DF53DCE7BB2E40530D35E2C2C5AF8400C76946</password>
 <server_codepage>&lt;default&gt;</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -40,7 +40,7 @@ CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET 
 <locale_codepage>iso-8859-1</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E8390FC566AEB26A05BF23991B0C40CC52F52A4D028CAA895CBF602FDBC1940CE38568D6AB1395FB18E9FE369A7155</password>
+<password>+0400000000120303000803E8A24AD6F2284C53AE2CEBB1CDB21A5F9ADDFCF35869BE6F9E7462C088303D4CAD0260CF78533D126925FE7586E470</password>
 <server_codepage>iso-8859-1</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -52,9 +52,9 @@ CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET 
 </DSConfigurations>
 ', "enable_data_transfer" = 'yes', "import_unknown_type" = 'no', "name" = 'DS_TARGET', "pcache_force_utf16" = 'no', "unknown_type_size" = '255');
 
- AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '342' , 
+ AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '4872' , 
 ActaName_2 = 'RNumber_Of_Rows_Rejected',ActaValue_2 = '0' , 
-ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '342' , 
+ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '4872' , 
 ActaName_4 = 'RNumber_Of_Updates',ActaValue_4 = '0' , 
 ActaName_5 = 'RNumber_Of_Deletes',ActaValue_5 = '0' , 
 ActaName_6 = 'RElapsed_Time_For_Load',ActaValue_6 = '2 Seconds' , 
@@ -65,7 +65,7 @@ ActaName_10 = 'REstimated_Row_Count',ActaValue_10 = '50000' ,
 ActaName_11 = 'RSavedAfterCheckOut',ActaValue_11 = 'YES' , 
 ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'no' , 
 ActaName_13 = 'RDate_created',ActaValue_13 = 'Fri Jan 11 11:24:58 2019' , 
-ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Thu Jan 24 20:11:24 2019' )
+ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Wed Feb  6 11:10:32 2019' )
 CREATE TABLE DS_TARGET.SAT.ATCON001(IDENTIFICADOR_EJECUCION INT  NULL , 
 CODENT VARCHAR(4)  NULL , 
 CODGRU DECIMAL(2, 0)  NULL , 
@@ -141,98 +141,100 @@ FILLER VARCHAR(5)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Thu Jan 24 20:11:18 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '342' , 
-ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '342' , 
-ActaName_5 = 'RElapsed_Time_For_Load',ActaValue_5 = '1 Seconds' , 
-ActaName_6 = 'RDatabase_Object_Type',ActaValue_6 = 'TABLE' , 
-ActaName_7 = 'RTable_Type',ActaValue_7 = 'TABLE' , 
-ActaName_8 = 'RDescription',ActaValue_8 = '' , 
-ActaName_9 = 'REstimated_Row_Count',ActaValue_9 = '50000' , 
-ActaName_10 = 'RLoader_Is_Template_Table',ActaValue_10 = 'no' , 
-ActaName_11 = 'RSavedAfterCheckOut',ActaValue_11 = 'YES' , 
-ActaName_12 = 'RDate_modified',ActaValue_12 = 'Mon Jan 14 11:02:49 2019' )
-CREATE TABLE DS_TARGET.STG.ATCON001(CODENT VARCHAR(4)  NULL  SET("Description" = 'ATCON001.CODENT', "ui_mapping_text" = 'ATCON001.CODENT'), 
-CODGRU DECIMAL(2, 0)  NULL  SET("Description" = 'ATCON001.CODGRU', "ui_mapping_text" = 'ATCON001.CODGRU'), 
-CODCCN DECIMAL(4, 0)  NULL  SET("Description" = 'ATCON001.CODCCN', "ui_mapping_text" = 'ATCON001.CODCCN'), 
-IMPORTE DECIMAL(17, 2)  NULL  SET("Description" = 'ATCON001.IMPORTE', "ui_mapping_text" = 'ATCON001.IMPORTE'), 
-CLAMON DECIMAL(3, 0)  NULL  SET("Description" = 'ATCON001.CLAMON', "ui_mapping_text" = 'ATCON001.CLAMON'), 
-FECALTA VARCHAR(10)  NULL  SET("Description" = 'ATCON001.FECALTA', "ui_mapping_text" = 'ATCON001.FECALTA'), 
-FECCONTA VARCHAR(10)  NULL  SET("Description" = 'ATCON001.FECCONTA', "ui_mapping_text" = 'ATCON001.FECCONTA'), 
-FECOPER VARCHAR(10)  NULL  SET("Description" = 'ATCON001.FECOPER', "ui_mapping_text" = 'ATCON001.FECOPER'), 
-IMPORI DECIMAL(17, 2)  NULL  SET("Description" = 'ATCON001.IMPORI', "ui_mapping_text" = 'ATCON001.IMPORI'), 
-CLAMONORI DECIMAL(3, 0)  NULL  SET("Description" = 'ATCON001.CLAMONORI', "ui_mapping_text" = 'ATCON001.CLAMONORI'), 
-CMBAPLIORI DECIMAL(9, 4)  NULL  SET("Description" = 'ATCON001.CMBAPLIORI', "ui_mapping_text" = 'ATCON001.CMBAPLIORI'), 
-IMPEMI DECIMAL(17, 2)  NULL  SET("Description" = 'ATCON001.IMPEMI', "ui_mapping_text" = 'ATCON001.IMPEMI'), 
-CLAMONEMI DECIMAL(3, 0)  NULL  SET("Description" = 'ATCON001.CLAMONEMI', "ui_mapping_text" = 'ATCON001.CLAMONEMI'), 
-CMBAPLIEMI DECIMAL(9, 4)  NULL  SET("Description" = 'ATCON001.CMBAPLIEMI', "ui_mapping_text" = 'ATCON001.CMBAPLIEMI'), 
-INDNORCOR DECIMAL(1, 0)  NULL  SET("Description" = 'ATCON001.INDNORCOR', "ui_mapping_text" = 'ATCON001.INDNORCOR'), 
-TIPOFAC DECIMAL(4, 0)  NULL  SET("Description" = 'ATCON001.TIPOFAC', "ui_mapping_text" = 'ATCON001.TIPOFAC'), 
-INDAPLDEBCRE DECIMAL(1, 0)  NULL  SET("Description" = 'ATCON001.INDAPLDEBCRE', "ui_mapping_text" = 'ATCON001.INDAPLDEBCRE'), 
-CODACT DECIMAL(4, 0)  NULL  SET("Description" = 'ATCON001.CODACT', "ui_mapping_text" = 'ATCON001.CODACT'), 
-CODCONECO DECIMAL(4, 0)  NULL  SET("Description" = 'ATCON001.CODCONECO', "ui_mapping_text" = 'ATCON001.CODCONECO'), 
-SECOPE DECIMAL(12, 0)  NULL  SET("Description" = 'ATCON001.SECOPE', "ui_mapping_text" = 'ATCON001.SECOPE'), 
-OFIOPE VARCHAR(4)  NULL  SET("Description" = 'ATCON001.OFIOPE', "ui_mapping_text" = 'ATCON001.OFIOPE'), 
-IDTERM VARCHAR(16)  NULL  SET("Description" = 'ATCON001.IDTERM', "ui_mapping_text" = 'ATCON001.IDTERM'), 
-SIAIDCD VARCHAR(19)  NULL  SET("Description" = 'ATCON001.SIAIDCD', "ui_mapping_text" = 'ATCON001.SIAIDCD'), 
-NUMCINTA DECIMAL(17, 0)  NULL  SET("Description" = 'ATCON001.NUMCINTA', "ui_mapping_text" = 'ATCON001.NUMCINTA'), 
-SECLOTE DECIMAL(6, 0)  NULL  SET("Description" = 'ATCON001.SECLOTE', "ui_mapping_text" = 'ATCON001.SECLOTE'), 
-CENTALTA VARCHAR(4)  NULL  SET("Description" = 'ATCON001.CENTALTA', "ui_mapping_text" = 'ATCON001.CENTALTA'), 
-CUENTA VARCHAR(12)  NULL  SET("Description" = 'ATCON001.CUENTA', "ui_mapping_text" = 'ATCON001.CUENTA'), 
-PAN VARCHAR(22)  NULL  SET("Description" = 'ATCON001.PAN', "ui_mapping_text" = 'ATCON001.PAN'), 
-NUMEXTCTA DECIMAL(3, 0)  NULL  SET("Description" = 'ATCON001.NUMEXTCTA', "ui_mapping_text" = 'ATCON001.NUMEXTCTA'), 
-NUMMOV DECIMAL(9, 0)  NULL  SET("Description" = 'ATCON001.NUMMOV', "ui_mapping_text" = 'ATCON001.NUMMOV'), 
-NUMOPECUO DECIMAL(6, 0)  NULL  SET("Description" = 'ATCON001.NUMOPECUO', "ui_mapping_text" = 'ATCON001.NUMOPECUO'), 
-FECINI VARCHAR(10)  NULL  SET("Description" = 'ATCON001.FECINI', "ui_mapping_text" = 'ATCON001.FECINI'), 
-FECFIN VARCHAR(10)  NULL  SET("Description" = 'ATCON001.FECFIN', "ui_mapping_text" = 'ATCON001.FECFIN'), 
-CODCOM VARCHAR(15)  NULL  SET("Description" = 'ATCON001.CODCOM', "ui_mapping_text" = 'ATCON001.CODCOM'), 
-CENTALTACOM VARCHAR(4)  NULL  SET("Description" = 'ATCON001.CENTALTACOM', "ui_mapping_text" = 'ATCON001.CENTALTACOM'), 
-CUENTACOM VARCHAR(12)  NULL  SET("Description" = 'ATCON001.CUENTACOM', "ui_mapping_text" = 'ATCON001.CUENTACOM'), 
-NUMEXTCOM DECIMAL(3, 0)  NULL  SET("Description" = 'ATCON001.NUMEXTCOM', "ui_mapping_text" = 'ATCON001.NUMEXTCOM'), 
-NUMMOVEXTCO DECIMAL(7, 0)  NULL  SET("Description" = 'ATCON001.NUMMOVEXTCO', "ui_mapping_text" = 'ATCON001.NUMMOVEXTCO'), 
-NUMREFREM DECIMAL(10, 0)  NULL  SET("Description" = 'ATCON001.NUMREFREM', "ui_mapping_text" = 'ATCON001.NUMREFREM'), 
-NUMREFFACREM DECIMAL(10, 0)  NULL  SET("Description" = 'ATCON001.NUMREFFACREM', "ui_mapping_text" = 'ATCON001.NUMREFFACREM'), 
-NUMINC DECIMAL(9, 0)  NULL  SET("Description" = 'ATCON001.NUMINC', "ui_mapping_text" = 'ATCON001.NUMINC'), 
-NUMSECREC DECIMAL(15, 0)  NULL  SET("Description" = 'ATCON001.NUMSECREC', "ui_mapping_text" = 'ATCON001.NUMSECREC'), 
-NUMSECIMP DECIMAL(15, 0)  NULL  SET("Description" = 'ATCON001.NUMSECIMP', "ui_mapping_text" = 'ATCON001.NUMSECIMP'), 
-CODMAR DECIMAL(2, 0)  NULL  SET("Description" = 'ATCON001.CODMAR', "ui_mapping_text" = 'ATCON001.CODMAR'), 
-INDTIPT DECIMAL(2, 0)  NULL  SET("Description" = 'ATCON001.INDTIPT', "ui_mapping_text" = 'ATCON001.INDTIPT'), 
-PRODUCTO VARCHAR(2)  NULL  SET("Description" = 'ATCON001.PRODUCTO', "ui_mapping_text" = 'ATCON001.PRODUCTO'), 
-SUBPRODU VARCHAR(4)  NULL  SET("Description" = 'ATCON001.SUBPRODU', "ui_mapping_text" = 'ATCON001.SUBPRODU'), 
-VERTIENTE VARCHAR(1)  NULL  SET("Description" = 'ATCON001.VERTIENTE', "ui_mapping_text" = 'ATCON001.VERTIENTE'), 
-CONPROD VARCHAR(3)  NULL  SET("Description" = 'ATCON001.CONPROD', "ui_mapping_text" = 'ATCON001.CONPROD'), 
-TIPFRAN DECIMAL(4, 0)  NULL  SET("Description" = 'ATCON001.TIPFRAN', "ui_mapping_text" = 'ATCON001.TIPFRAN'), 
-CODRAZON DECIMAL(4, 0)  NULL  SET("Description" = 'ATCON001.CODRAZON', "ui_mapping_text" = 'ATCON001.CODRAZON'), 
-TIPOREM VARCHAR(1)  NULL  SET("Description" = 'ATCON001.TIPOREM', "ui_mapping_text" = 'ATCON001.TIPOREM'), 
-CODESTCTA DECIMAL(2, 0)  NULL  SET("Description" = 'ATCON001.CODESTCTA', "ui_mapping_text" = 'ATCON001.CODESTCTA'), 
-CODPAIS DECIMAL(3, 0)  NULL  SET("Description" = 'ATCON001.CODPAIS', "ui_mapping_text" = 'ATCON001.CODPAIS'), 
-TIPOCLI VARCHAR(4)  NULL  SET("Description" = 'ATCON001.TIPOCLI', "ui_mapping_text" = 'ATCON001.TIPOCLI'), 
-IDENTCLI VARCHAR(8)  NULL  SET("Description" = 'ATCON001.IDENTCLI', "ui_mapping_text" = 'ATCON001.IDENTCLI'), 
-ORIGENOPE VARCHAR(4)  NULL  SET("Description" = 'ATCON001.ORIGENOPE', "ui_mapping_text" = 'ATCON001.ORIGENOPE'), 
-PROGRAMA VARCHAR(8)  NULL  SET("Description" = 'ATCON001.PROGRAMA', "ui_mapping_text" = 'ATCON001.PROGRAMA'), 
-IMPCON DECIMAL(17, 2)  NULL  SET("Description" = 'ATCON001.IMPCON', "ui_mapping_text" = 'ATCON001.IMPCON'), 
-CLAMONCON DECIMAL(3, 0)  NULL  SET("Description" = 'ATCON001.CLAMONCON', "ui_mapping_text" = 'ATCON001.CLAMONCON'), 
-CMBAPLI DECIMAL(9, 4)  NULL  SET("Description" = 'ATCON001.CMBAPLI', "ui_mapping_text" = 'ATCON001.CMBAPLI'), 
-CUENTADEBE DECIMAL(6, 0)  NULL  SET("Description" = 'ATCON001.CUENTADEBE', "ui_mapping_text" = 'ATCON001.CUENTADEBE'), 
-CUENTAHABER DECIMAL(6, 0)  NULL  SET("Description" = 'ATCON001.CUENTAHABER', "ui_mapping_text" = 'ATCON001.CUENTAHABER'), 
-OFIIMPDEB VARCHAR(4)  NULL  SET("Description" = 'ATCON001.OFIIMPDEB', "ui_mapping_text" = 'ATCON001.OFIIMPDEB'), 
-OFIIMPHAB VARCHAR(4)  NULL  SET("Description" = 'ATCON001.OFIIMPHAB', "ui_mapping_text" = 'ATCON001.OFIIMPHAB'), 
-INDNACINT DECIMAL(1, 0)  NULL  SET("Description" = 'ATCON001.INDNACINT', "ui_mapping_text" = 'ATCON001.INDNACINT'), 
-NUMOPER DECIMAL(10, 0)  NULL  SET("Description" = 'ATCON001.NUMOPER', "ui_mapping_text" = 'ATCON001.NUMOPER'), 
-SIGNO VARCHAR(1)  NULL  SET("Description" = 'ATCON001.SIGNO', "ui_mapping_text" = 'ATCON001.SIGNO'), 
-LINREF DECIMAL(8, 0)  NULL  SET("Description" = 'ATCON001.LINREF', "ui_mapping_text" = 'ATCON001.LINREF'), 
-TIPOLIN VARCHAR(4)  NULL  SET("Description" = 'ATCON001.TIPOLIN', "ui_mapping_text" = 'ATCON001.TIPOLIN'), 
-FILLER_0001 VARCHAR(5)  NULL  SET("Description" = 'ATCON001.FILLER', "ui_mapping_text" = 'ATCON001.FILLER_0001')) 
-SET("db_alias_name" = 'STG')
+ AlGUIComment (ActaName_1 = 'RDatabase_Object_Type',ActaValue_1 = 'TABLE' , 
+ActaName_2 = 'RTable_Type',ActaValue_2 = 'TABLE' , 
+ActaName_3 = 'RDate_last_loaded',ActaValue_3 = 'Wed Feb  6 11:10:26 2019' , 
+ActaName_4 = 'RTotal_Number_Of_Rows_Processed',ActaValue_4 = '342' , 
+ActaName_5 = 'RNumber_Of_Rows_Rejected',ActaValue_5 = '0' , 
+ActaName_6 = 'RNumber_Of_Inserts',ActaValue_6 = '342' , 
+ActaName_7 = 'RDescription',ActaValue_7 = '' , 
+ActaName_8 = 'REstimated_Row_Count',ActaValue_8 = '50000' , 
+ActaName_9 = 'RLoader_Is_Template_Table',ActaValue_9 = 'no' , 
+ActaName_10 = 'RSavedAfterCheckOut',ActaValue_10 = 'YES' , 
+ActaName_11 = 'RDate_modified',ActaValue_11 = 'Thu Jan 31 10:34:37 2019' , 
+ActaName_12 = 'RNumber_Of_Updates',ActaValue_12 = '0' , 
+ActaName_13 = 'RNumber_Of_Deletes',ActaValue_13 = '0' , 
+ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '2 Seconds' )
+CREATE TABLE DS_TARGET.STG_SAT.ATCON001(CODENT VARCHAR(4)  NULL  SET("Description" = 'ATCON001.CODENT'), 
+CODGRU DECIMAL(2, 0)  NULL  SET("Description" = 'ATCON001.CODGRU'), 
+CODCCN DECIMAL(4, 0)  NULL  SET("Description" = 'ATCON001.CODCCN'), 
+IMPORTE DECIMAL(17, 2)  NULL  SET("Description" = 'ATCON001.IMPORTE'), 
+CLAMON DECIMAL(3, 0)  NULL  SET("Description" = 'ATCON001.CLAMON'), 
+FECALTA VARCHAR(10)  NULL  SET("Description" = 'ATCON001.FECALTA'), 
+FECCONTA VARCHAR(10)  NULL  SET("Description" = 'ATCON001.FECCONTA'), 
+FECOPER VARCHAR(10)  NULL  SET("Description" = 'ATCON001.FECOPER'), 
+IMPORI DECIMAL(17, 2)  NULL  SET("Description" = 'ATCON001.IMPORI'), 
+CLAMONORI DECIMAL(3, 0)  NULL  SET("Description" = 'ATCON001.CLAMONORI'), 
+CMBAPLIORI DECIMAL(9, 4)  NULL  SET("Description" = 'ATCON001.CMBAPLIORI'), 
+IMPEMI DECIMAL(17, 2)  NULL  SET("Description" = 'ATCON001.IMPEMI'), 
+CLAMONEMI DECIMAL(3, 0)  NULL  SET("Description" = 'ATCON001.CLAMONEMI'), 
+CMBAPLIEMI DECIMAL(9, 4)  NULL  SET("Description" = 'ATCON001.CMBAPLIEMI'), 
+INDNORCOR DECIMAL(1, 0)  NULL  SET("Description" = 'ATCON001.INDNORCOR'), 
+TIPOFAC DECIMAL(4, 0)  NULL  SET("Description" = 'ATCON001.TIPOFAC'), 
+INDAPLDEBCRE DECIMAL(1, 0)  NULL  SET("Description" = 'ATCON001.INDAPLDEBCRE'), 
+CODACT DECIMAL(4, 0)  NULL  SET("Description" = 'ATCON001.CODACT'), 
+CODCONECO DECIMAL(4, 0)  NULL  SET("Description" = 'ATCON001.CODCONECO'), 
+SECOPE DECIMAL(12, 0)  NULL  SET("Description" = 'ATCON001.SECOPE'), 
+OFIOPE VARCHAR(4)  NULL  SET("Description" = 'ATCON001.OFIOPE'), 
+IDTERM VARCHAR(16)  NULL  SET("Description" = 'ATCON001.IDTERM'), 
+SIAIDCD VARCHAR(19)  NULL  SET("Description" = 'ATCON001.SIAIDCD'), 
+NUMCINTA DECIMAL(17, 0)  NULL  SET("Description" = 'ATCON001.NUMCINTA'), 
+SECLOTE DECIMAL(6, 0)  NULL  SET("Description" = 'ATCON001.SECLOTE'), 
+CENTALTA VARCHAR(4)  NULL  SET("Description" = 'ATCON001.CENTALTA'), 
+CUENTA VARCHAR(12)  NULL  SET("Description" = 'ATCON001.CUENTA'), 
+PAN VARCHAR(22)  NULL  SET("Description" = 'ATCON001.PAN'), 
+NUMEXTCTA DECIMAL(3, 0)  NULL  SET("Description" = 'ATCON001.NUMEXTCTA'), 
+NUMMOV DECIMAL(9, 0)  NULL  SET("Description" = 'ATCON001.NUMMOV'), 
+NUMOPECUO DECIMAL(6, 0)  NULL  SET("Description" = 'ATCON001.NUMOPECUO'), 
+FECINI VARCHAR(10)  NULL  SET("Description" = 'ATCON001.FECINI'), 
+FECFIN VARCHAR(10)  NULL  SET("Description" = 'ATCON001.FECFIN'), 
+CODCOM VARCHAR(15)  NULL  SET("Description" = 'ATCON001.CODCOM'), 
+CENTALTACOM VARCHAR(4)  NULL  SET("Description" = 'ATCON001.CENTALTACOM'), 
+CUENTACOM VARCHAR(12)  NULL  SET("Description" = 'ATCON001.CUENTACOM'), 
+NUMEXTCOM DECIMAL(3, 0)  NULL  SET("Description" = 'ATCON001.NUMEXTCOM'), 
+NUMMOVEXTCO DECIMAL(7, 0)  NULL  SET("Description" = 'ATCON001.NUMMOVEXTCO'), 
+NUMREFREM DECIMAL(10, 0)  NULL  SET("Description" = 'ATCON001.NUMREFREM'), 
+NUMREFFACREM DECIMAL(10, 0)  NULL  SET("Description" = 'ATCON001.NUMREFFACREM'), 
+NUMINC DECIMAL(9, 0)  NULL  SET("Description" = 'ATCON001.NUMINC'), 
+NUMSECREC DECIMAL(15, 0)  NULL  SET("Description" = 'ATCON001.NUMSECREC'), 
+NUMSECIMP DECIMAL(15, 0)  NULL  SET("Description" = 'ATCON001.NUMSECIMP'), 
+CODMAR DECIMAL(2, 0)  NULL  SET("Description" = 'ATCON001.CODMAR'), 
+INDTIPT DECIMAL(2, 0)  NULL  SET("Description" = 'ATCON001.INDTIPT'), 
+PRODUCTO VARCHAR(2)  NULL  SET("Description" = 'ATCON001.PRODUCTO'), 
+SUBPRODU VARCHAR(4)  NULL  SET("Description" = 'ATCON001.SUBPRODU'), 
+VERTIENTE VARCHAR(1)  NULL  SET("Description" = 'ATCON001.VERTIENTE'), 
+CONPROD VARCHAR(3)  NULL  SET("Description" = 'ATCON001.CONPROD'), 
+TIPFRAN DECIMAL(4, 0)  NULL  SET("Description" = 'ATCON001.TIPFRAN'), 
+CODRAZON DECIMAL(4, 0)  NULL  SET("Description" = 'ATCON001.CODRAZON'), 
+TIPOREM VARCHAR(1)  NULL  SET("Description" = 'ATCON001.TIPOREM'), 
+CODESTCTA DECIMAL(2, 0)  NULL  SET("Description" = 'ATCON001.CODESTCTA'), 
+CODPAIS DECIMAL(3, 0)  NULL  SET("Description" = 'ATCON001.CODPAIS'), 
+TIPOCLI VARCHAR(4)  NULL  SET("Description" = 'ATCON001.TIPOCLI'), 
+IDENTCLI VARCHAR(8)  NULL  SET("Description" = 'ATCON001.IDENTCLI'), 
+ORIGENOPE VARCHAR(4)  NULL  SET("Description" = 'ATCON001.ORIGENOPE'), 
+PROGRAMA VARCHAR(8)  NULL  SET("Description" = 'ATCON001.PROGRAMA'), 
+IMPCON DECIMAL(17, 2)  NULL  SET("Description" = 'ATCON001.IMPCON'), 
+CLAMONCON DECIMAL(3, 0)  NULL  SET("Description" = 'ATCON001.CLAMONCON'), 
+CMBAPLI DECIMAL(9, 4)  NULL  SET("Description" = 'ATCON001.CMBAPLI'), 
+CUENTADEBE DECIMAL(6, 0)  NULL  SET("Description" = 'ATCON001.CUENTADEBE'), 
+CUENTAHABER DECIMAL(6, 0)  NULL  SET("Description" = 'ATCON001.CUENTAHABER'), 
+OFIIMPDEB VARCHAR(4)  NULL  SET("Description" = 'ATCON001.OFIIMPDEB'), 
+OFIIMPHAB VARCHAR(4)  NULL  SET("Description" = 'ATCON001.OFIIMPHAB'), 
+INDNACINT DECIMAL(1, 0)  NULL  SET("Description" = 'ATCON001.INDNACINT'), 
+NUMOPER DECIMAL(10, 0)  NULL  SET("Description" = 'ATCON001.NUMOPER'), 
+SIGNO VARCHAR(1)  NULL  SET("Description" = 'ATCON001.SIGNO'), 
+LINREF DECIMAL(8, 0)  NULL  SET("Description" = 'ATCON001.LINREF'), 
+TIPOLIN VARCHAR(4)  NULL  SET("Description" = 'ATCON001.TIPOLIN'), 
+FILLER_0001 VARCHAR(5)  NULL  SET("Description" = 'ATCON001.FILLER')) 
+SET("db_alias_name" = 'STG_SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '2301' , 
+ AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '2' , 
 ActaName_2 = 'RNumber_Of_Rows_Rejected',ActaValue_2 = '0' , 
-ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '2301' , 
+ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '2' , 
 ActaName_4 = 'RNumber_Of_Updates',ActaValue_4 = '0' , 
 ActaName_5 = 'RNumber_Of_Deletes',ActaValue_5 = '0' , 
-ActaName_6 = 'RElapsed_Time_For_Load',ActaValue_6 = '2 Seconds' , 
+ActaName_6 = 'RElapsed_Time_For_Load',ActaValue_6 = '0 Seconds' , 
 ActaName_7 = 'RDatabase_Object_Type',ActaValue_7 = 'TABLE' , 
 ActaName_8 = 'RTable_Type',ActaValue_8 = 'TABLE' , 
 ActaName_9 = 'RDescription',ActaValue_9 = '' , 
@@ -240,7 +242,7 @@ ActaName_10 = 'REstimated_Row_Count',ActaValue_10 = '50000' ,
 ActaName_11 = 'RSavedAfterCheckOut',ActaValue_11 = 'YES' , 
 ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'no' , 
 ActaName_13 = 'RDate_created',ActaValue_13 = 'Thu Jan 10 14:21:38 2019' , 
-ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Thu Jan 24 20:11:39 2019' )
+ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Wed Feb  6 11:10:45 2019' )
 CREATE TABLE DS_TARGET.SAT.PCCON001(IDENTIFICADOR_EJECUCION INT  NULL , 
 CODENT VARCHAR(4)  NULL , 
 CODGRU DECIMAL(2, 0)  NULL , 
@@ -321,99 +323,100 @@ FILLER1 VARCHAR(102)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDatabase_Object_Type',ActaValue_1 = 'TABLE' , 
-ActaName_2 = 'RTable_Type',ActaValue_2 = 'TABLE' , 
-ActaName_3 = 'RDescription',ActaValue_3 = '' , 
-ActaName_4 = 'RDate_last_loaded',ActaValue_4 = 'Thu Jan 24 20:11:33 2019' , 
-ActaName_5 = 'RTotal_Number_Of_Rows_Processed',ActaValue_5 = '1' , 
-ActaName_6 = 'RNumber_Of_Rows_Rejected',ActaValue_6 = '0' , 
-ActaName_7 = 'RNumber_Of_Inserts',ActaValue_7 = '1' , 
-ActaName_8 = 'RNumber_Of_Updates',ActaValue_8 = '0' , 
-ActaName_9 = 'RNumber_Of_Deletes',ActaValue_9 = '0' , 
-ActaName_10 = 'RElapsed_Time_For_Load',ActaValue_10 = '3 Seconds' , 
-ActaName_11 = 'REstimated_Row_Count',ActaValue_11 = '50000' , 
-ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'no' , 
-ActaName_13 = 'RSavedAfterCheckOut',ActaValue_13 = 'YES' , 
-ActaName_14 = 'RDate_modified',ActaValue_14 = 'Mon Jan 14 11:24:17 2019' )
-CREATE TABLE DS_TARGET.STG.PCCON001(CODENT VARCHAR(4)  NULL  SET("Description" = 'PCCON001.CODENT', "ui_mapping_text" = 'MPJ15005.CODENT'), 
-CODGRU DECIMAL(2, 0)  NULL  SET("Description" = 'PCCON001.CODGRU', "ui_mapping_text" = 'MPJ15005.CODGRU'), 
-CODCCN DECIMAL(4, 0)  NULL  SET("Description" = 'PCCON001.CODCCN', "ui_mapping_text" = 'MPJ15005.CODCCN'), 
-IMPORTE DECIMAL(17, 2)  NULL  SET("Description" = 'PCCON001.IMPORTE', "ui_mapping_text" = 'MPJ15005.IMPORTE'), 
-CLAMON DECIMAL(3, 0)  NULL  SET("Description" = 'PCCON001.CLAMON', "ui_mapping_text" = 'MPJ15005.CLAMON'), 
-FECALTA VARCHAR(10)  NULL  SET("Description" = 'PCCON001.FECALTA', "ui_mapping_text" = 'MPJ15005.FECALTA'), 
-FECCONTA VARCHAR(10)  NULL  SET("Description" = 'PCCON001.FECCONTA', "ui_mapping_text" = 'MPJ15005.FECCONTA'), 
-FECOPER VARCHAR(10)  NULL  SET("Description" = 'PCCON001.FECOPER', "ui_mapping_text" = 'MPJ15005.FECOPER'), 
-IMPORI DECIMAL(17, 2)  NULL  SET("Description" = 'PCCON001.IMPORI', "ui_mapping_text" = 'MPJ15005.IMPORI'), 
-CLAMONORI DECIMAL(3, 0)  NULL  SET("Description" = 'PCCON001.CLAMONORI', "ui_mapping_text" = 'MPJ15005.CLAMONORI'), 
-CMBAPLIORI DECIMAL(9, 4)  NULL  SET("Description" = 'PCCON001.CMBAPLIORI', "ui_mapping_text" = 'MPJ15005.CMBAPLIORI'), 
-IMPEMI DECIMAL(17, 2)  NULL  SET("Description" = 'PCCON001.IMPEMI', "ui_mapping_text" = 'MPJ15005.IMPEMI'), 
-CLAMONEMI DECIMAL(3, 0)  NULL  SET("Description" = 'PCCON001.CLAMONEMI', "ui_mapping_text" = 'MPJ15005.CLAMONEMI'), 
-CMBAPLIEMI DECIMAL(9, 4)  NULL  SET("Description" = 'PCCON001.CMBAPLIEMI', "ui_mapping_text" = 'MPJ15005.CMBAPLIEMI'), 
-INDNORCOR DECIMAL(1, 0)  NULL  SET("Description" = 'PCCON001.INDNORCOR', "ui_mapping_text" = 'MPJ15005.INDNORCOR'), 
-TIPOFAC DECIMAL(4, 0)  NULL  SET("Description" = 'PCCON001.TIPOFAC', "ui_mapping_text" = 'MPJ15005.TIPOFAC'), 
-INDAPLDEBCRE DECIMAL(1, 0)  NULL  SET("Description" = 'PCCON001.INDAPLDEBCRE', "ui_mapping_text" = 'MPJ15005.INDAPLDEBCRE'), 
-CODACT DECIMAL(4, 0)  NULL  SET("Description" = 'PCCON001.CODACT', "ui_mapping_text" = 'MPJ15005.CODACT'), 
-CODCONECO DECIMAL(4, 0)  NULL  SET("Description" = 'PCCON001.CODCONECO', "ui_mapping_text" = 'MPJ15005.CODCONECO'), 
-SECOPE DECIMAL(12, 0)  NULL  SET("Description" = 'PCCON001.SECOPE', "ui_mapping_text" = 'MPJ15005.SECOPE'), 
-OFIOPE VARCHAR(4)  NULL  SET("Description" = 'PCCON001.OFIOPE', "ui_mapping_text" = 'MPJ15005.OFIOPE'), 
-IDTERM VARCHAR(16)  NULL  SET("Description" = 'PCCON001.IDTERM', "ui_mapping_text" = 'MPJ15005.IDTERM'), 
-SIAIDCD VARCHAR(19)  NULL  SET("Description" = 'PCCON001.SIAIDCD', "ui_mapping_text" = 'MPJ15005.SIAIDCD'), 
-NUMCINTA DECIMAL(17, 0)  NULL  SET("Description" = 'PCCON001.NUMCINTA', "ui_mapping_text" = 'MPJ15005.NUMCINTA'), 
-SECLOTE DECIMAL(6, 0)  NULL  SET("Description" = 'PCCON001.SECLOTE', "ui_mapping_text" = 'MPJ15005.SECLOTE'), 
-CENTALTA VARCHAR(4)  NULL  SET("Description" = 'PCCON001.CENTALTA', "ui_mapping_text" = 'MPJ15005.CENTALTA'), 
-CUENTA VARCHAR(12)  NULL  SET("Description" = 'PCCON001.CUENTA', "ui_mapping_text" = 'MPJ15005.CUENTA'), 
-PAN VARCHAR(22)  NULL  SET("Description" = 'PCCON001.PAN', "ui_mapping_text" = 'MPJ15005.PAN'), 
-NUMEXTCTA DECIMAL(3, 0)  NULL  SET("Description" = 'PCCON001.NUMEXTCTA', "ui_mapping_text" = 'MPJ15005.NUMEXTCTA'), 
-NUMMOV DECIMAL(9, 0)  NULL  SET("Description" = 'PCCON001.NUMMOV', "ui_mapping_text" = 'MPJ15005.NUMMOV'), 
-NUMOPECUO DECIMAL(6, 0)  NULL  SET("Description" = 'PCCON001.NUMOPECUO', "ui_mapping_text" = 'MPJ15005.NUMOPECUO'), 
-FECINI VARCHAR(10)  NULL  SET("Description" = 'PCCON001.FECINI', "ui_mapping_text" = 'MPJ15005.FECINI'), 
-FECFIN VARCHAR(10)  NULL  SET("Description" = 'PCCON001.FECFIN', "ui_mapping_text" = 'MPJ15005.FECFIN'), 
-CODCOM VARCHAR(15)  NULL  SET("Description" = 'PCCON001.CODCOM', "ui_mapping_text" = 'MPJ15005.CODCOM'), 
-CENTALTACOM VARCHAR(4)  NULL  SET("Description" = 'PCCON001.CENTALTACOM', "ui_mapping_text" = 'MPJ15005.CENTALTACOM'), 
-CUENTACOM VARCHAR(12)  NULL  SET("Description" = 'PCCON001.CUENTACOM', "ui_mapping_text" = 'MPJ15005.CUENTACOM'), 
-NUMEXTCOM DECIMAL(3, 0)  NULL  SET("Description" = 'PCCON001.NUMEXTCOM', "ui_mapping_text" = 'MPJ15005.NUMEXTCOM'), 
-NUMMOVEXTCO DECIMAL(7, 0)  NULL  SET("Description" = 'PCCON001.NUMMOVEXTCO', "ui_mapping_text" = 'MPJ15005.NUMMOVEXTCO'), 
-NUMREFREM DECIMAL(10, 0)  NULL  SET("Description" = 'PCCON001.NUMREFREM', "ui_mapping_text" = 'MPJ15005.NUMREFREM'), 
-NUMREFFACREM DECIMAL(10, 0)  NULL  SET("Description" = 'PCCON001.NUMREFFACREM', "ui_mapping_text" = 'MPJ15005.NUMREFFACREM'), 
-NUMINC DECIMAL(9, 0)  NULL  SET("Description" = 'PCCON001.NUMINC', "ui_mapping_text" = 'MPJ15005.NUMINC'), 
-NUMSECREC DECIMAL(15, 0)  NULL  SET("Description" = 'PCCON001.NUMSECREC', "ui_mapping_text" = 'MPJ15005.NUMSECREC'), 
-NUMSECIMP DECIMAL(15, 0)  NULL  SET("Description" = 'PCCON001.NUMSECIMP', "ui_mapping_text" = 'MPJ15005.NUMSECIMP'), 
-CODMAR DECIMAL(2, 0)  NULL  SET("Description" = 'PCCON001.CODMAR', "ui_mapping_text" = 'MPJ15005.CODMAR'), 
-INDTIPT DECIMAL(2, 0)  NULL  SET("Description" = 'PCCON001.INDTIPT', "ui_mapping_text" = 'MPJ15005.INDTIPT'), 
-PRODUCTO VARCHAR(2)  NULL  SET("Description" = 'PCCON001.PRODUCTO', "ui_mapping_text" = 'MPJ15005.PRODUCTO'), 
-SUBPRODU VARCHAR(4)  NULL  SET("Description" = 'PCCON001.SUBPRODU', "ui_mapping_text" = 'MPJ15005.SUBPRODU'), 
-VERTIENTE VARCHAR(1)  NULL  SET("Description" = 'PCCON001.VERTIENTE', "ui_mapping_text" = 'MPJ15005.VERTIENTE'), 
-CONPROD VARCHAR(3)  NULL  SET("Description" = 'PCCON001.CONPROD', "ui_mapping_text" = 'MPJ15005.CONPROD'), 
-TIPFRAN DECIMAL(4, 0)  NULL  SET("Description" = 'PCCON001.TIPFRAN', "ui_mapping_text" = 'MPJ15005.TIPFRAN'), 
-CODRAZON DECIMAL(4, 0)  NULL  SET("Description" = 'PCCON001.CODRAZON', "ui_mapping_text" = 'MPJ15005.CODRAZON'), 
-TIPOREM VARCHAR(1)  NULL  SET("Description" = 'PCCON001.TIPOREM', "ui_mapping_text" = 'MPJ15005.TIPOREM'), 
-CODESTCTA DECIMAL(2, 0)  NULL  SET("Description" = 'PCCON001.CODESTCTA', "ui_mapping_text" = 'MPJ15005.CODESTCTA'), 
-CODPAIS DECIMAL(3, 0)  NULL  SET("Description" = 'PCCON001.CODPAIS', "ui_mapping_text" = 'MPJ15005.CODPAIS'), 
-TIPOCLI VARCHAR(4)  NULL  SET("Description" = 'PCCON001.TIPOCLI', "ui_mapping_text" = 'MPJ15005.TIPOCLI'), 
-IDENTCLI VARCHAR(8)  NULL  SET("Description" = 'PCCON001.IDENTCLI', "ui_mapping_text" = 'MPJ15005.IDENTCLI'), 
-ORIGENOPE VARCHAR(4)  NULL  SET("Description" = 'PCCON001.ORIGENOPE', "ui_mapping_text" = 'MPJ15005.ORIGENOPE'), 
-PROGRAMA VARCHAR(8)  NULL  SET("Description" = 'PCCON001.PROGRAMA', "ui_mapping_text" = 'MPJ15005.PROGRAMA'), 
-IMPCON DECIMAL(17, 2)  NULL  SET("Description" = 'PCCON001.IMPCON', "ui_mapping_text" = 'MPJ15005.IMPCON'), 
-CLAMONCON DECIMAL(3, 0)  NULL  SET("Description" = 'PCCON001.CLAMONCON', "ui_mapping_text" = 'MPJ15005.CLAMONCON'), 
-CMBAPLI DECIMAL(9, 4)  NULL  SET("Description" = 'PCCON001.CMBAPLI', "ui_mapping_text" = 'MPJ15005.CMBAPLI'), 
-CUENTADEBE DECIMAL(6, 0)  NULL  SET("Description" = 'PCCON001.CUENTADEBE', "ui_mapping_text" = 'MPJ15005.CUENTADEBE'), 
-CUENTAHABER DECIMAL(6, 0)  NULL  SET("Description" = 'PCCON001.CUENTAHABER', "ui_mapping_text" = 'MPJ15005.CUENTAHABER'), 
-OFIIMPDEB VARCHAR(4)  NULL  SET("Description" = 'PCCON001.OFIIMPDEB', "ui_mapping_text" = 'MPJ15005.OFIIMPDEB'), 
-OFIIMPHAB VARCHAR(4)  NULL  SET("Description" = 'PCCON001.OFIIMPHAB', "ui_mapping_text" = 'MPJ15005.OFIIMPHAB'), 
-INDNACINT DECIMAL(1, 0)  NULL  SET("Description" = 'PCCON001.INDNACINT', "ui_mapping_text" = 'MPJ15005.INDNACINT'), 
-NUMOPER DECIMAL(10, 0)  NULL  SET("Description" = 'PCCON001.NUMOPER', "ui_mapping_text" = 'MPJ15005.NUMOPER'), 
-SIGNO VARCHAR(1)  NULL  SET("Description" = 'PCCON001.SIGNO', "ui_mapping_text" = 'MPJ15005.SIGNO'), 
-LINREF DECIMAL(8, 0)  NULL  SET("Description" = 'PCCON001.LINREF', "ui_mapping_text" = 'MPJ15005.LINREF'), 
-TIPOLIN VARCHAR(4)  NULL  SET("Description" = 'PCCON001.TIPOLIN', "ui_mapping_text" = 'MPJ15005.TIPOLIN'), 
-CODACTEMP VARCHAR(6)  NULL  SET("Description" = 'PCCON001.CODACTEMP', "ui_mapping_text" = 'MPJ15005.CODACTEMP'), 
-CTADEBETPMP DECIMAL(30, 0)  NULL  SET("Description" = 'PCCON001.CTADEBETPMP', "ui_mapping_text" = 'MPJ15005.CTADEBETPMP'), 
-CTAHABERTPMP DECIMAL(30, 0)  NULL  SET("Description" = 'PCCON001.CTAHABERTPMP', "ui_mapping_text" = 'MPJ15005.CTAHABERTPMP'), 
-DESCAPUNTE VARCHAR(30)  NULL  SET("Description" = 'PCCON001.DESCAPUNTE', "ui_mapping_text" = 'MPJ15005.DESCAPUNTE'), 
-CODCONVEN VARCHAR(4)  NULL  SET("Description" = 'PCCON001.CODCONVEN', "ui_mapping_text" = 'MPJ15005.CODCONVEN'), 
-FILLER1 VARCHAR(102)  NULL  SET("Description" = 'PCCON001.FILLER1', "ui_mapping_text" = 'MPJ15005.FILLER1')) 
-SET("db_alias_name" = 'STG')
+ AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '1' , 
+ActaName_2 = 'RNumber_Of_Rows_Rejected',ActaValue_2 = '0' , 
+ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '1' , 
+ActaName_4 = 'RNumber_Of_Updates',ActaValue_4 = '0' , 
+ActaName_5 = 'RNumber_Of_Deletes',ActaValue_5 = '0' , 
+ActaName_6 = 'RElapsed_Time_For_Load',ActaValue_6 = '2 Seconds' , 
+ActaName_7 = 'RDatabase_Object_Type',ActaValue_7 = 'TABLE' , 
+ActaName_8 = 'RTable_Type',ActaValue_8 = 'TABLE' , 
+ActaName_9 = 'RDescription',ActaValue_9 = '' , 
+ActaName_10 = 'REstimated_Row_Count',ActaValue_10 = '50000' , 
+ActaName_11 = 'RLoader_Is_Template_Table',ActaValue_11 = 'no' , 
+ActaName_12 = 'RSavedAfterCheckOut',ActaValue_12 = 'YES' , 
+ActaName_13 = 'RDate_created',ActaValue_13 = 'Thu Jan 31 10:46:32 2019' , 
+ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Wed Feb  6 11:10:41 2019' , 
+ActaName_15 = 'RDate_modified',ActaValue_15 = 'Thu Jan 31 10:46:46 2019' )
+CREATE TABLE DS_TARGET.STG_SAT.PCCON001(CODENT VARCHAR(4)  NULL  SET("Description" = 'PCCON001.CODENT', "ui_mapping_text" = 'PCCON001.CODENT'), 
+CODGRU DECIMAL(2, 0)  NULL  SET("Description" = 'PCCON001.CODGRU', "ui_mapping_text" = 'PCCON001.CODGRU'), 
+CODCCN DECIMAL(4, 0)  NULL  SET("Description" = 'PCCON001.CODCCN', "ui_mapping_text" = 'PCCON001.CODCCN'), 
+IMPORTE DECIMAL(17, 2)  NULL  SET("Description" = 'PCCON001.IMPORTE', "ui_mapping_text" = 'PCCON001.IMPORTE'), 
+CLAMON DECIMAL(3, 0)  NULL  SET("Description" = 'PCCON001.CLAMON', "ui_mapping_text" = 'PCCON001.CLAMON'), 
+FECALTA VARCHAR(10)  NULL  SET("Description" = 'PCCON001.FECALTA', "ui_mapping_text" = 'PCCON001.FECALTA'), 
+FECCONTA VARCHAR(10)  NULL  SET("Description" = 'PCCON001.FECCONTA', "ui_mapping_text" = 'PCCON001.FECCONTA'), 
+FECOPER VARCHAR(10)  NULL  SET("Description" = 'PCCON001.FECOPER', "ui_mapping_text" = 'PCCON001.FECOPER'), 
+IMPORI DECIMAL(17, 2)  NULL  SET("Description" = 'PCCON001.IMPORI', "ui_mapping_text" = 'PCCON001.IMPORI'), 
+CLAMONORI DECIMAL(3, 0)  NULL  SET("Description" = 'PCCON001.CLAMONORI', "ui_mapping_text" = 'PCCON001.CLAMONORI'), 
+CMBAPLIORI DECIMAL(9, 4)  NULL  SET("Description" = 'PCCON001.CMBAPLIORI', "ui_mapping_text" = 'PCCON001.CMBAPLIORI'), 
+IMPEMI DECIMAL(17, 2)  NULL  SET("Description" = 'PCCON001.IMPEMI', "ui_mapping_text" = 'PCCON001.IMPEMI'), 
+CLAMONEMI DECIMAL(3, 0)  NULL  SET("Description" = 'PCCON001.CLAMONEMI', "ui_mapping_text" = 'PCCON001.CLAMONEMI'), 
+CMBAPLIEMI DECIMAL(9, 4)  NULL  SET("Description" = 'PCCON001.CMBAPLIEMI', "ui_mapping_text" = 'PCCON001.CMBAPLIEMI'), 
+INDNORCOR DECIMAL(1, 0)  NULL  SET("Description" = 'PCCON001.INDNORCOR', "ui_mapping_text" = 'PCCON001.INDNORCOR'), 
+TIPOFAC DECIMAL(4, 0)  NULL  SET("Description" = 'PCCON001.TIPOFAC', "ui_mapping_text" = 'PCCON001.TIPOFAC'), 
+INDAPLDEBCRE DECIMAL(1, 0)  NULL  SET("Description" = 'PCCON001.INDAPLDEBCRE', "ui_mapping_text" = 'PCCON001.INDAPLDEBCRE'), 
+CODACT DECIMAL(4, 0)  NULL  SET("Description" = 'PCCON001.CODACT', "ui_mapping_text" = 'PCCON001.CODACT'), 
+CODCONECO DECIMAL(4, 0)  NULL  SET("Description" = 'PCCON001.CODCONECO', "ui_mapping_text" = 'PCCON001.CODCONECO'), 
+SECOPE DECIMAL(12, 0)  NULL  SET("Description" = 'PCCON001.SECOPE', "ui_mapping_text" = 'PCCON001.SECOPE'), 
+OFIOPE VARCHAR(4)  NULL  SET("Description" = 'PCCON001.OFIOPE', "ui_mapping_text" = 'PCCON001.OFIOPE'), 
+IDTERM VARCHAR(16)  NULL  SET("Description" = 'PCCON001.IDTERM', "ui_mapping_text" = 'PCCON001.IDTERM'), 
+SIAIDCD VARCHAR(19)  NULL  SET("Description" = 'PCCON001.SIAIDCD', "ui_mapping_text" = 'PCCON001.SIAIDCD'), 
+NUMCINTA DECIMAL(17, 0)  NULL  SET("Description" = 'PCCON001.NUMCINTA', "ui_mapping_text" = 'PCCON001.NUMCINTA'), 
+SECLOTE DECIMAL(6, 0)  NULL  SET("Description" = 'PCCON001.SECLOTE', "ui_mapping_text" = 'PCCON001.SECLOTE'), 
+CENTALTA VARCHAR(4)  NULL  SET("Description" = 'PCCON001.CENTALTA', "ui_mapping_text" = 'PCCON001.CENTALTA'), 
+CUENTA VARCHAR(12)  NULL  SET("Description" = 'PCCON001.CUENTA', "ui_mapping_text" = 'PCCON001.CUENTA'), 
+PAN VARCHAR(22)  NULL  SET("Description" = 'PCCON001.PAN', "ui_mapping_text" = 'PCCON001.PAN'), 
+NUMEXTCTA DECIMAL(3, 0)  NULL  SET("Description" = 'PCCON001.NUMEXTCTA', "ui_mapping_text" = 'PCCON001.NUMEXTCTA'), 
+NUMMOV DECIMAL(9, 0)  NULL  SET("Description" = 'PCCON001.NUMMOV', "ui_mapping_text" = 'PCCON001.NUMMOV'), 
+NUMOPECUO DECIMAL(6, 0)  NULL  SET("Description" = 'PCCON001.NUMOPECUO', "ui_mapping_text" = 'PCCON001.NUMOPECUO'), 
+FECINI VARCHAR(10)  NULL  SET("Description" = 'PCCON001.FECINI', "ui_mapping_text" = 'PCCON001.FECINI'), 
+FECFIN VARCHAR(10)  NULL  SET("Description" = 'PCCON001.FECFIN', "ui_mapping_text" = 'PCCON001.FECFIN'), 
+CODCOM VARCHAR(15)  NULL  SET("Description" = 'PCCON001.CODCOM', "ui_mapping_text" = 'PCCON001.CODCOM'), 
+CENTALTACOM VARCHAR(4)  NULL  SET("Description" = 'PCCON001.CENTALTACOM', "ui_mapping_text" = 'PCCON001.CENTALTACOM'), 
+CUENTACOM VARCHAR(12)  NULL  SET("Description" = 'PCCON001.CUENTACOM', "ui_mapping_text" = 'PCCON001.CUENTACOM'), 
+NUMEXTCOM DECIMAL(3, 0)  NULL  SET("Description" = 'PCCON001.NUMEXTCOM', "ui_mapping_text" = 'PCCON001.NUMEXTCOM'), 
+NUMMOVEXTCO DECIMAL(7, 0)  NULL  SET("Description" = 'PCCON001.NUMMOVEXTCO', "ui_mapping_text" = 'PCCON001.NUMMOVEXTCO'), 
+NUMREFREM DECIMAL(10, 0)  NULL  SET("Description" = 'PCCON001.NUMREFREM', "ui_mapping_text" = 'PCCON001.NUMREFREM'), 
+NUMREFFACREM DECIMAL(10, 0)  NULL  SET("Description" = 'PCCON001.NUMREFFACREM', "ui_mapping_text" = 'PCCON001.NUMREFFACREM'), 
+NUMINC DECIMAL(9, 0)  NULL  SET("Description" = 'PCCON001.NUMINC', "ui_mapping_text" = 'PCCON001.NUMINC'), 
+NUMSECREC DECIMAL(15, 0)  NULL  SET("Description" = 'PCCON001.NUMSECREC', "ui_mapping_text" = 'PCCON001.NUMSECREC'), 
+NUMSECIMP DECIMAL(15, 0)  NULL  SET("Description" = 'PCCON001.NUMSECIMP', "ui_mapping_text" = 'PCCON001.NUMSECIMP'), 
+CODMAR DECIMAL(2, 0)  NULL  SET("Description" = 'PCCON001.CODMAR', "ui_mapping_text" = 'PCCON001.CODMAR'), 
+INDTIPT DECIMAL(2, 0)  NULL  SET("Description" = 'PCCON001.INDTIPT', "ui_mapping_text" = 'PCCON001.INDTIPT'), 
+PRODUCTO VARCHAR(2)  NULL  SET("Description" = 'PCCON001.PRODUCTO', "ui_mapping_text" = 'PCCON001.PRODUCTO'), 
+SUBPRODU VARCHAR(4)  NULL  SET("Description" = 'PCCON001.SUBPRODU', "ui_mapping_text" = 'PCCON001.SUBPRODU'), 
+VERTIENTE VARCHAR(1)  NULL  SET("Description" = 'PCCON001.VERTIENTE', "ui_mapping_text" = 'PCCON001.VERTIENTE'), 
+CONPROD VARCHAR(3)  NULL  SET("Description" = 'PCCON001.CONPROD', "ui_mapping_text" = 'PCCON001.CONPROD'), 
+TIPFRAN DECIMAL(4, 0)  NULL  SET("Description" = 'PCCON001.TIPFRAN', "ui_mapping_text" = 'PCCON001.TIPFRAN'), 
+CODRAZON DECIMAL(4, 0)  NULL  SET("Description" = 'PCCON001.CODRAZON', "ui_mapping_text" = 'PCCON001.CODRAZON'), 
+TIPOREM VARCHAR(1)  NULL  SET("Description" = 'PCCON001.TIPOREM', "ui_mapping_text" = 'PCCON001.TIPOREM'), 
+CODESTCTA DECIMAL(2, 0)  NULL  SET("Description" = 'PCCON001.CODESTCTA', "ui_mapping_text" = 'PCCON001.CODESTCTA'), 
+CODPAIS DECIMAL(3, 0)  NULL  SET("Description" = 'PCCON001.CODPAIS', "ui_mapping_text" = 'PCCON001.CODPAIS'), 
+TIPOCLI VARCHAR(4)  NULL  SET("Description" = 'PCCON001.TIPOCLI', "ui_mapping_text" = 'PCCON001.TIPOCLI'), 
+IDENTCLI VARCHAR(8)  NULL  SET("Description" = 'PCCON001.IDENTCLI', "ui_mapping_text" = 'PCCON001.IDENTCLI'), 
+ORIGENOPE VARCHAR(4)  NULL  SET("Description" = 'PCCON001.ORIGENOPE', "ui_mapping_text" = 'PCCON001.ORIGENOPE'), 
+PROGRAMA VARCHAR(8)  NULL  SET("Description" = 'PCCON001.PROGRAMA', "ui_mapping_text" = 'PCCON001.PROGRAMA'), 
+IMPCON DECIMAL(17, 2)  NULL  SET("Description" = 'PCCON001.IMPCON', "ui_mapping_text" = 'PCCON001.IMPCON'), 
+CLAMONCON DECIMAL(3, 0)  NULL  SET("Description" = 'PCCON001.CLAMONCON', "ui_mapping_text" = 'PCCON001.CLAMONCON'), 
+CMBAPLI DECIMAL(9, 4)  NULL  SET("Description" = 'PCCON001.CMBAPLI', "ui_mapping_text" = 'PCCON001.CMBAPLI'), 
+CUENTADEBE DECIMAL(6, 0)  NULL  SET("Description" = 'PCCON001.CUENTADEBE', "ui_mapping_text" = 'PCCON001.CUENTADEBE'), 
+CUENTAHABER DECIMAL(6, 0)  NULL  SET("Description" = 'PCCON001.CUENTAHABER', "ui_mapping_text" = 'PCCON001.CUENTAHABER'), 
+OFIIMPDEB VARCHAR(4)  NULL  SET("Description" = 'PCCON001.OFIIMPDEB', "ui_mapping_text" = 'PCCON001.OFIIMPDEB'), 
+OFIIMPHAB VARCHAR(4)  NULL  SET("Description" = 'PCCON001.OFIIMPHAB', "ui_mapping_text" = 'PCCON001.OFIIMPHAB'), 
+INDNACINT DECIMAL(1, 0)  NULL  SET("Description" = 'PCCON001.INDNACINT', "ui_mapping_text" = 'PCCON001.INDNACINT'), 
+NUMOPER DECIMAL(10, 0)  NULL  SET("Description" = 'PCCON001.NUMOPER', "ui_mapping_text" = 'PCCON001.NUMOPER'), 
+SIGNO VARCHAR(1)  NULL  SET("Description" = 'PCCON001.SIGNO', "ui_mapping_text" = 'PCCON001.SIGNO'), 
+LINREF DECIMAL(8, 0)  NULL  SET("Description" = 'PCCON001.LINREF', "ui_mapping_text" = 'PCCON001.LINREF'), 
+TIPOLIN VARCHAR(4)  NULL  SET("Description" = 'PCCON001.TIPOLIN', "ui_mapping_text" = 'PCCON001.TIPOLIN'), 
+CODACTEMP VARCHAR(6)  NULL  SET("Description" = 'PCCON001.CODACTEMP', "ui_mapping_text" = 'PCCON001.CODACTEMP'), 
+CTADEBETPMP DECIMAL(30, 0)  NULL  SET("Description" = 'PCCON001.CTADEBETPMP', "ui_mapping_text" = 'PCCON001.CTADEBETPMP'), 
+CTAHABERTPMP DECIMAL(30, 0)  NULL  SET("Description" = 'PCCON001.CTAHABERTPMP', "ui_mapping_text" = 'PCCON001.CTAHABERTPMP'), 
+DESCAPUNTE VARCHAR(30)  NULL  SET("Description" = 'PCCON001.DESCAPUNTE', "ui_mapping_text" = 'PCCON001.DESCAPUNTE'), 
+CODCONVEN VARCHAR(4)  NULL  SET("Description" = 'PCCON001.CODCONVEN', "ui_mapping_text" = 'PCCON001.CODCONVEN'), 
+FILLER1 VARCHAR(102)  NULL  SET("Description" = 'PCCON001.FILLER1', "ui_mapping_text" = 'PCCON001.FILLER1')) 
+SET("db_alias_name" = 'STG_SAT')
 ;
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Fri Dec 14 15:48:11 2018', "ActaValue_6" = 'Tue Jan 22 15:12:12 2019', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Fri Dec 14 15:48:11 2018', "ActaValue_6" = 'Wed Jan 23 19:03:22 2019', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '
 
 
 $L_NOMBRE_TABLA = workflow_name( );
@@ -423,17 +426,16 @@ $L_ID_EJECUCION = $P_ID_EJECUCION ;
 print( \'--------------------ENTRANDO A CUENTA DE DATOS  [$L_ID_EJECUCION]\');
 
 $L_CUANTOS_LLEVA = sql( \'DS_CONTROL\', \'SELECT NUM_FILAS_INS FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-print( \'CUANTOS LLEVA\');
-print( $L_CUANTOS_LLEVA );
+print( \'CUENTA ACTUAL: \' || $L_CUANTOS_LLEVA);
+
 
 IF ($L_CUANTOS_LLEVA IS null )
 begin
     $L_CUANTOS_LLEVA = 0;	
 end
-print( \'LUEGO DE IF\');
 
 
-print( \'SELECT COUNT(*) FROM SAT.[$L_NOMBRE_TABLA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
+#print( \'SELECT COUNT(*) FROM SAT.[$L_NOMBRE_TABLA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
 $L_SUMA = sql( \'DS_TARGET\', \'SELECT COUNT(*) FROM SAT.[$L_NOMBRE_TABLA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
 print( $L_SUMA);
 
@@ -455,12 +457,12 @@ DECLARE
      $L_SUMA INT ;
      $L_ID_EJECUCION INT ;
 BEGIN
-$L_NOMBRE_TABLA = workflow_name();$L_NOMBRE_TABLA = replace_substr($L_NOMBRE_TABLA, 'WF_', '');$L_NOMBRE_TABLA = replace_substr($L_NOMBRE_TABLA, '__R', '');$L_ID_EJECUCION = $P_ID_EJECUCION;print('--------------------ENTRANDO A CUENTA DE DATOS  [$L_ID_EJECUCION]');$L_CUANTOS_LLEVA = sql('DS_CONTROL', 'SELECT NUM_FILAS_INS FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');print('CUANTOS LLEVA');print($L_CUANTOS_LLEVA);IF (($L_CUANTOS_LLEVA IS  NULL ) )
+$L_NOMBRE_TABLA = workflow_name();$L_NOMBRE_TABLA = replace_substr($L_NOMBRE_TABLA, 'WF_', '');$L_NOMBRE_TABLA = replace_substr($L_NOMBRE_TABLA, '__R', '');$L_ID_EJECUCION = $P_ID_EJECUCION;print('--------------------ENTRANDO A CUENTA DE DATOS  [$L_ID_EJECUCION]');$L_CUANTOS_LLEVA = sql('DS_CONTROL', 'SELECT NUM_FILAS_INS FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');print(('CUENTA ACTUAL: ' || $L_CUANTOS_LLEVA));IF (($L_CUANTOS_LLEVA IS  NULL ) )
 BEGIN
 $L_CUANTOS_LLEVA = 0;END
-print('LUEGO DE IF');print('SELECT COUNT(*) FROM SAT.[$L_NOMBRE_TABLA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');$L_SUMA = sql('DS_TARGET', 'SELECT COUNT(*) FROM SAT.[$L_NOMBRE_TABLA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');print($L_SUMA);$L_SUMA = ($L_SUMA + $L_CUANTOS_LLEVA);sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = [$L_SUMA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'COMMIT');RETURN 0;
+$L_SUMA = sql('DS_TARGET', 'SELECT COUNT(*) FROM SAT.[$L_NOMBRE_TABLA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');print($L_SUMA);$L_SUMA = ($L_SUMA + $L_CUANTOS_LLEVA);sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = [$L_SUMA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'COMMIT');RETURN 0;
 END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 13:29:48 2018', "ActaValue_6" = 'Thu Dec 20 16:05:27 2018', "InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '54', "ui_script_text" = '######################################################################
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 13:29:48 2018', "ActaValue_6" = 'Wed Jan 30 19:19:18 2019', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '######################################################################
 ## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
 ##                                                                  ##
 ## 11/12/2018                                                       ##
@@ -480,8 +482,8 @@ $L_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS 
 
 
 ##OBTENEMOS EL ID DE EJECUCIÓN DE LA MALLA QUE ESTÉ CON ESTADO CARGADO
-$L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
-print( \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
+$L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\\\'CARGADO\\\',\\\'LISTADO\\\') AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
+#print( \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
 print( $L_ID_EJECUCION );
 
 ##INICIAMOS VARIABLES
@@ -532,7 +534,7 @@ DECLARE
      $L_REPROCESO INT ;
      $L_ID_EJECUCION INT ;
 BEGIN
-$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');$L_ID_MALLA = sql('DS_CONTROL', 'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]');print('SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]');print($L_ID_EJECUCION);$L_ESTADO = 'INICIADO';$L_CURRENT_DATE = sysdate();TRY
+$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');$L_ID_MALLA = sql('DS_CONTROL', 'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\'CARGADO\',\'LISTADO\') AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]');print($L_ID_EJECUCION);$L_ESTADO = 'INICIADO';$L_CURRENT_DATE = sysdate();TRY
 BEGIN
 sql('DS_CONTROL', 'BEGIN TRANSACTION');sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \'[$L_ESTADO]\' WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = 0 WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'COMMIT');print('**********************************************************************');print('****************TERMINANDO INSERCION CONTROL_EJECUCION****************');print('**********************************************************************');print('**********************************************************************');print('********TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION*********');print('**********************************************************************');RETURN $L_ID_EJECUCION;
 END
@@ -714,7 +716,7 @@ DECLARE
 BEGIN
 $L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');print('PROCESO NORMAL INICIO');print('SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');$L_ID_MALLA = sql('DS_CONTROL', 'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');print('SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]');print('SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');$P_TIPO_PROCESO = sql('DS_CONTROL', 'SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');RETURN $P_TIPO_PROCESO;
 END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 11:01:08 2018', "ActaValue_6" = 'Tue Jan 22 15:12:13 2019', "InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '54', "ui_script_text" = '######################################################################
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 11:01:08 2018', "ActaValue_6" = 'Wed Jan 30 19:13:26 2019', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '######################################################################
 ## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
 ##                                                                  ##
 ## 11/12/2018                                                       ##
@@ -728,8 +730,8 @@ $L_NOMBRE_WF = replace_substr(workflow_name( ), \'__\', \'.\');
 $L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, \'WF_\', \'\');
 
 $L_VALOR_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\' \');
-$L_VALOR_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS_EJECUCION WHERE  IDENTIFICADOR_MALLA = \' || $L_VALOR_ID_MALLA);
-#print( \'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\' \');
+$L_VALOR_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\\\'CARGADO\\\',\\\'LISTADO\\\') AND IDENTIFICADOR_MALLA = \' || $L_VALOR_ID_MALLA);
+#print( \'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS_EJECUCION WHERE ESTADO NOT IN (\\\'FINALIZADO\\\',\\\'INICIADO\\\') AND IDENTIFICADOR_MALLA = \' || $L_VALOR_ID_MALLA);
 
 IF($L_VALOR_ID_MALLA IS NOT null)
 begin
@@ -748,7 +750,7 @@ DECLARE
      $L_EXISTE_MALLA INT ;
      $L_VALOR_ID_MALLA INT ;
 BEGIN
-$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');$L_VALOR_ID_MALLA = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\' ');$L_VALOR_ID_MALLA = sql('DS_CONTROL', ('SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS_EJECUCION WHERE  IDENTIFICADOR_MALLA = ' || $L_VALOR_ID_MALLA));IF (($L_VALOR_ID_MALLA IS NOT  NULL ) )
+$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');$L_VALOR_ID_MALLA = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\' ');$L_VALOR_ID_MALLA = sql('DS_CONTROL', ('SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\'CARGADO\',\'LISTADO\') AND IDENTIFICADOR_MALLA = ' || $L_VALOR_ID_MALLA));IF (($L_VALOR_ID_MALLA IS NOT  NULL ) )
 BEGIN
 $L_EXISTE_MALLA = 1;END
 ELSE
@@ -756,11 +758,11 @@ BEGIN
 $L_EXISTE_MALLA = 0;END
 RETURN $L_EXISTE_MALLA;
 END
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Jan 14 10:18:33 2019', "ActaValue_3" = 'Mon Jan 14 11:03:06 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Jan 14 10:18:33 2019', "ActaValue_3" = 'Thu Jan 31 10:33:09 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_ATCON001::'85b8a28d-9d0f-434e-a838-dc9d697b2b9c'
 BEGIN
 
-ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = '', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>435</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
+ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>435</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
 GUID::'9131148c-33a1-4afa-9ef8-cba1b283d689' LOAD TABLE DS_TARGET.SAT.ATCON001 INPUT(Query)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
@@ -812,8 +814,8 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 </LDRConfiguration>
 </LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
 
-ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'ATCON001', "x" = '480', "y" = '-90')
-GUID::'8ab6915c-0940-41eb-a718-5ec1c7233ccc' CREATE VIEW Query( IDENTIFICADOR_EJECUCION INT  SET( "ui_mapping_text" = '$G_ID_EJECUCION') ,
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'ATCON001', "x" = '480', "y" = '-90')
+GUID::'9ae95878-d4f3-4f96-a9a9-b41d939ee393' CREATE VIEW Query( IDENTIFICADOR_EJECUCION INT  SET( "ui_mapping_text" = '$G_ID_EJECUCION') ,
  CODENT VARCHAR(4)  SET( "ui_mapping_text" = 'ATCON001.CODENT') ,
  CODGRU DECIMAL(2, 0)  SET( "ui_mapping_text" = 'ATCON001.CODGRU') ,
  CODCCN DECIMAL(4, 0)  SET( "ui_mapping_text" = 'ATCON001.CODCCN') ,
@@ -890,19 +892,15 @@ SELECT $G_ID_EJECUCION, ATCON001.CODENT, ATCON001.CODGRU, ATCON001.CODCCN, ATCON
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
-ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>391</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
-GUID::'acf01dae-fb75-432e-8640-f3508e76fce6' READ TABLE DS_TARGET.STG.ATCON001 OUTPUT(ATCON001)
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>391</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "ui_display_name" = 'ATCON001(DS_TARGET.STG_SAT)', "x" = '90', "y" = '-90')
+GUID::'22c1abac-fef9-409d-8b47-1f38468f58cd' READ TABLE DS_TARGET.STG_SAT.ATCON001 OUTPUT(ATCON001)
 SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Jan 14 11:17:06 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_ATCON001__R::'0fd63d88-df8a-42b6-9cce-1ff3523fa1c9'
 BEGIN
-
-ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>391</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
-GUID::'4a9beccc-97d9-4efc-8cc1-8430ed24b74e' READ TABLE DS_TARGET.STG.ATCON001 OUTPUT(ATCON001)
-SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>435</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
 GUID::'c2a54a38-aafd-4dba-894b-bad5649f24a9' LOAD TABLE DS_TARGET.SAT.ATCON001 INPUT(Query)
@@ -1034,15 +1032,15 @@ SELECT $G_ID_EJECUCION, ATCON001.CODENT, ATCON001.CODGRU, ATCON001.CODCCN, ATCON
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>391</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
+GUID::'57a983d6-3302-4940-9e5a-a29c3d044e5d' READ TABLE DS_TARGET.STG_SAT.ATCON001 OUTPUT(ATCON001)
+SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
+
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Jan 10 14:34:26 2019', "ActaValue_3" = 'Mon Jan 14 11:26:09 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Jan 10 14:34:26 2019', "ActaValue_3" = 'Thu Jan 31 10:44:12 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_PCCON001::'b5ed07c7-3a23-4a4a-aee9-7813e6a7d380'
 BEGIN
-
-ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>388</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
-GUID::'6f16f077-ad20-418a-b52e-fdb1a8447abc' READ TABLE DS_TARGET.STG.PCCON001 OUTPUT(PCCON001)
-SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
 
 ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'PCCON001', "x" = '480', "y" = '-90')
 GUID::'3508e652-6bae-48a7-ae18-d4f62d15446e' CREATE VIEW Query( IDENTIFICADOR_EJECUCION INT  SET( "ui_mapping_text" = '$G_ID_EJECUCION') ,
@@ -1127,14 +1125,14 @@ SELECT $G_ID_EJECUCION, PCCON001.CODENT, PCCON001.CODGRU, PCCON001.CODCCN, PCCON
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
-ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = '', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>500</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
+ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>432</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
 GUID::'d68b9d6c-bb83-44db-8ea8-f245c2299ee2' LOAD TABLE DS_TARGET.SAT.PCCON001 INPUT(Query)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
 <bulk_col_delimiter>/127</bulk_col_delimiter>
 <bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
-<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_generate_files_only>0</bulk_ldr_generate_files_only>
 <bulk_row_delimiter>&#xA;</bulk_row_delimiter>
 <enable_partitioning>no</enable_partitioning>
 <ignore_column_case>yes</ignore_column_case>
@@ -1154,7 +1152,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 <iq_log_null_constraints>no</iq_log_null_constraints>
 <iq_log_unique_constraints>no</iq_log_unique_constraints>
 <loader_auto_correct>no</loader_auto_correct>
-<loader_bulk_load></loader_bulk_load>
+<loader_bulk_load>1</loader_bulk_load>
 <loader_compare_column>compare_by_name</loader_compare_column>
 <loader_delete_map></loader_delete_map>
 <loader_drop_and_create_table>yes</loader_drop_and_create_table>
@@ -1179,15 +1177,15 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 </LDRConfiguration>
 </LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
 
+ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>388</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
+GUID::'74275f03-683c-41b5-a05c-7a3098376de4' READ TABLE DS_TARGET.STG_SAT.PCCON001 OUTPUT(PCCON001)
+SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
+
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Jan 10 14:44:03 2019', "ActaValue_3" = 'Thu Jan 10 14:45:40 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Jan 10 14:44:03 2019', "ActaValue_3" = 'Mon Jan 14 11:24:22 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_PCCON001__R::'2706196b-44d9-44ed-a3c6-addc01ebd522'
 BEGIN
-
-ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>388</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '487', "y" = '-195')
-GUID::'028f1634-1100-4853-aef1-4f9a9a3445ed' READ TABLE DS_TARGET.STG.PCCON001 OUTPUT(PCCON001)
-SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>432</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '1685', "y" = '-206')
 GUID::'39460e38-4a42-4e73-810b-71db56a719f9' LOAD TABLE DS_TARGET.SAT.PCCON001 INPUT(Query)
@@ -1324,9 +1322,13 @@ SELECT $G_ID_EJECUCION, PCCON001.CODENT, PCCON001.CODGRU, PCCON001.CODCCN, PCCON
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
+ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>388</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '394', "y" = '-806')
+GUID::'b984215d-5a6a-402e-8784-289ec72c157c' READ TABLE DS_TARGET.STG_SAT.PCCON001 OUTPUT(PCCON001)
+SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
+
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Jan 14 10:11:09 2019', "ActaValue_3" = 'Mon Jan 14 11:03:06 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Jan 14 10:11:09 2019', "ActaValue_3" = 'Thu Jan 31 10:31:12 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_ATCON001::'e35dbef4-1c2c-4602-bb9e-28948e92aaba'
 BEGIN
 
@@ -1334,8 +1336,8 @@ ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Descrip
 GUID::'9eb7d947-1fe9-4391-9daf-e41e0d8a054e' READ __BODI_COPYBOOK_COBOL MPJ15005 OUTPUT(ATCON001)
 SET("Cbl_capture_data_conversion" = 'no', "Cbl_file_dir" = '$G_RUTA', "Cbl_file_name" = '$G_NOMBRE_ARCHIVO', "cache" = 'no', "connection_port" = 'no', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'yes', "reader_include_filename" = 'no', "table_weight" = '0');
 
-ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'ATCON001', "x" = '480', "y" = '-90')
-GUID::'ed2078f3-5dff-44ba-935f-52be791d5bbb' CREATE VIEW Query( CODENT VARCHAR(4)  SET( "Description" = 'ATCON001.CODENT', "ui_mapping_text" = 'ATCON001.CODENT') ,
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'ATCON001', "x" = '480', "y" = '-90')
+GUID::'b46d19df-cd50-451e-850a-adf3ac5c38d0' CREATE VIEW Query( CODENT VARCHAR(4)  SET( "Description" = 'ATCON001.CODENT', "ui_mapping_text" = 'ATCON001.CODENT') ,
  CODGRU DECIMAL(2, 0)  SET( "Description" = 'ATCON001.CODGRU', "ui_mapping_text" = 'ATCON001.CODGRU') ,
  CODCCN DECIMAL(4, 0)  SET( "Description" = 'ATCON001.CODCCN', "ui_mapping_text" = 'ATCON001.CODCCN') ,
  IMPORTE DECIMAL(17, 2)  SET( "Description" = 'ATCON001.IMPORTE', "ui_mapping_text" = 'ATCON001.IMPORTE') ,
@@ -1411,20 +1413,20 @@ SELECT ATCON001.CODENT, ATCON001.CODGRU, ATCON001.CODCCN, ATCON001.IMPORTE, ATCO
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
-ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>435</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_display_name" = 'ATCON001(DS_TARGET.STG)', "x" = '870', "y" = '-90')
-GUID::'b619b58c-7dfc-47f2-9888-689ac4b8b142' LOAD TABLE DS_TARGET.STG.ATCON001 INPUT(Query)
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>435</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_display_name" = 'ATCON001(DS_TARGET.STG_SAT)', "x" = '870', "y" = '-90')
+GUID::'cd2c1487-3a3a-43dc-9ec2-3e82354d5dfa' LOAD TABLE DS_TARGET.STG_SAT.ATCON001 INPUT(Query)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
 <bulk_col_delimiter>/127</bulk_col_delimiter>
 <bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
-<bulk_ldr_generate_files_only>0</bulk_ldr_generate_files_only>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
 <bulk_row_delimiter>&#xA;</bulk_row_delimiter>
 <enable_partitioning>no</enable_partitioning>
 <ignore_column_case>yes</ignore_column_case>
 <ignore_columns_null>no</ignore_columns_null>
 <ignore_columns_value></ignore_columns_value>
-<iq_blk_ldr_binary>yes</iq_blk_ldr_binary>
+<iq_blk_ldr_binary></iq_blk_ldr_binary>
 <iq_blk_ldr_block_size>500000</iq_blk_ldr_block_size>
 <iq_checkpoint>no</iq_checkpoint>
 <iq_ignore_all_constraints></iq_ignore_all_constraints>
@@ -1438,7 +1440,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 <iq_log_null_constraints>no</iq_log_null_constraints>
 <iq_log_unique_constraints>no</iq_log_unique_constraints>
 <loader_auto_correct>no</loader_auto_correct>
-<loader_bulk_load>1</loader_bulk_load>
+<loader_bulk_load></loader_bulk_load>
 <loader_compare_column>compare_by_name</loader_compare_column>
 <loader_delete_map></loader_delete_map>
 <loader_drop_and_create_table>yes</loader_drop_and_create_table>
@@ -1454,7 +1456,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 <loader_update_map></loader_update_map>
 <loader_use_user_defined_keys>no</loader_use_user_defined_keys>
 <loader_xact_size>1000</loader_xact_size>
-<mssql_bulk_ldr_mode>truncate</mssql_bulk_ldr_mode>
+<mssql_bulk_ldr_mode>append</mssql_bulk_ldr_mode>
 <mssql_bulk_ldr_packet_size>0</mssql_bulk_ldr_packet_size>
 <overflow_file_format>write_data</overflow_file_format>
 <use_overflow_file>no</use_overflow_file>
@@ -1465,7 +1467,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Jan 14 11:14:42 2019', "ActaValue_3" = 'Mon Jan 14 15:55:43 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Jan 14 11:14:42 2019', "ActaValue_3" = 'Wed Jan 23 15:38:56 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_ATCON001__r::'c2ad2423-0132-4ffa-aaf6-2b90db6b852a'
 BEGIN
 
@@ -1551,7 +1553,7 @@ SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process
 ;
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>435</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
-GUID::'59aaceca-8f7d-4742-84d7-7efeab826eb1' LOAD TABLE DS_TARGET.STG.ATCON001 INPUT(Query)
+GUID::'adf29c19-9da9-47bd-a4a0-35e9e1ecbb59' LOAD TABLE DS_TARGET.STG_SAT.ATCON001 INPUT(Query)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
@@ -1604,7 +1606,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Jan 14 11:23:03 2019', "ActaValue_3" = 'Mon Jan 14 15:55:43 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Jan 14 11:23:03 2019', "ActaValue_3" = 'Thu Jan 31 10:46:32 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_PCCON001::'ba69ad4c-6189-4a27-8574-442d2b3d88cf'
 BEGIN
 
@@ -1694,8 +1696,8 @@ SELECT PCCON001.CODENT, PCCON001.CODGRU, PCCON001.CODCCN, PCCON001.IMPORTE, PCCO
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
-ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>432</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
-GUID::'8eac3755-5184-4e5a-9eb1-259932697d40' LOAD TABLE DS_TARGET.STG.PCCON001 INPUT(Query)
+ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>432</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_display_name" = 'PCCON001(DS_TARGET.STG_SAT)', "x" = '870', "y" = '-90')
+GUID::'d28b2b84-3528-4493-9c14-932352a4cbbd' LOAD TABLE DS_TARGET.STG_SAT.PCCON001 INPUT(Query)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
@@ -1707,7 +1709,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 <ignore_column_case>yes</ignore_column_case>
 <ignore_columns_null>no</ignore_columns_null>
 <ignore_columns_value></ignore_columns_value>
-<iq_blk_ldr_binary>yes</iq_blk_ldr_binary>
+<iq_blk_ldr_binary></iq_blk_ldr_binary>
 <iq_blk_ldr_block_size>500000</iq_blk_ldr_block_size>
 <iq_checkpoint>no</iq_checkpoint>
 <iq_ignore_all_constraints></iq_ignore_all_constraints>
@@ -1748,7 +1750,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Jan 14 11:27:45 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Jan 14 11:27:45 2019', "ActaValue_3" = 'Mon Jan 14 11:27:56 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_PCCON001__r::'a1d32c2d-f08d-45b4-b3a3-a3b3fa6d93b2'
 BEGIN
 
@@ -1838,8 +1840,8 @@ SELECT PCCON001.CODENT, PCCON001.CODGRU, PCCON001.CODCCN, PCCON001.IMPORTE, PCCO
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
-ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>432</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
-GUID::'6a4b6c69-e29a-4c28-a17c-692097a7e261' LOAD TABLE DS_TARGET.STG.PCCON001 INPUT(Query)
+ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>432</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '919', "y" = '-275')
+GUID::'4d934034-937a-45e3-ae53-f60521ae53bd' LOAD TABLE DS_TARGET.STG_SAT.PCCON001 INPUT(Query)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
@@ -1892,7 +1894,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Jan 14 09:49:14 2019', "ActaValue_3" = 'Mon Jan 21 15:12:51 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaName_4" = 'RVersion', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Jan 14 09:49:14 2019', "ActaValue_3" = 'Wed Feb  6 11:27:19 2019', "ActaValue_4" = 'f0e40d208599d1ca3c1f317fee2205f331490c20', "x" = '-1', "y" = '-1')
 CREATE SESSION JOB_CONTABILIDAD::'11c4e9af-69c9-4655-9d8f-be768d8f0d67'( )
 DECLARE
      GLOBAL $G_NOMBRE_JOB VARCHAR(50) ;
@@ -1921,7 +1923,7 @@ END
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch186', "x" = '1260', "y" = '-90')
 CATCH (210101)
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>291</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_ERROR', "x" = '994', "y" = '-303')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>291</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_ERROR', "ui_script_text" = '##', "x" = '994', "y" = '-303')
 BEGIN_SCRIPT
 END
 END
@@ -1936,7 +1938,7 @@ END
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch1861', "x" = '1261', "y" = '-359')
 CATCH (210101)
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>291</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_ERROR', "x" = '994', "y" = '-303')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>291</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_ERROR', "ui_script_text" = '##', "x" = '994', "y" = '-303')
 BEGIN_SCRIPT
 END
 END
@@ -2127,7 +2129,7 @@ BEGIN_SCRIPT
 cf_cuenta_datos($G_ID_EJECUCION);END
 END
  SET ("run_once" = 'no', "unit_of_recovery" = 'no', "workflow_type" = 'Regular')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Jan  8 16:43:21 2019', "ActaValue_3" = 'Mon Jan 14 11:12:47 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Jan  8 16:43:21 2019', "ActaValue_3" = 'Thu Jan 31 10:40:40 2019', "x" = '-1', "y" = '-1')
 CREATE PLAN WF_MPJ15005::'e3306352-7387-4282-9d66-45daa3c16c79'( )
 DECLARE
      $L_NOMBRE_WF VARCHAR(50) ;
@@ -2149,7 +2151,6 @@ print( \'--------------------------------EJECUCIÓN DATOS\');
 print( $G_ID_EJECUCION );
 
 $G_NOMBRE_ARCHIVO = sql( \'DS_CONTROL\', \'SELECT NOMBRE_ARCHIVO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$G_ID_EJECUCION]\');
-print( \'antes de entrar\');
 print( $G_NOMBRE_ARCHIVO );
 
 
@@ -2157,7 +2158,7 @@ CF_ENVIO_CORREO(\'INICIO DE PROCESO [$L_NOMBRE_WF]\', \'SE INICIA LA EJECUCIÓN 
 
 ', "x" = '90', "y" = '-90')
 BEGIN_SCRIPT
-$L_ID_EJECUCION_MALLA = CF_EJECUCION_MALLA();$G_ID_EJECUCION = $L_ID_EJECUCION_MALLA;print('--------------------------------EJECUCIÓN DATOS');print($G_ID_EJECUCION);$G_NOMBRE_ARCHIVO = sql('DS_CONTROL', 'SELECT NOMBRE_ARCHIVO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$G_ID_EJECUCION]');print('antes de entrar');print($G_NOMBRE_ARCHIVO);cf_envio_correo('INICIO DE PROCESO [$L_NOMBRE_WF]', 'SE INICIA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]');END
+$L_ID_EJECUCION_MALLA = CF_EJECUCION_MALLA();$G_ID_EJECUCION = $L_ID_EJECUCION_MALLA;print('--------------------------------EJECUCIÓN DATOS');print($G_ID_EJECUCION);$G_NOMBRE_ARCHIVO = sql('DS_CONTROL', 'SELECT NOMBRE_ARCHIVO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$G_ID_EJECUCION]');print($G_NOMBRE_ARCHIVO);cf_envio_correo('INICIO DE PROCESO [$L_NOMBRE_WF]', 'SE INICIA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]');END
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>291</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
 CALL PLAN WF_ATCON001::'43f39bb1-4554-435c-bf5f-0ad61774393a'();
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SC_FIN', "ui_script_text" = '##ENVIO DE CORREO DE FIN DE PROCESO
@@ -2209,18 +2210,16 @@ END
 ELSE
 BEGIN
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>300</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SC_ERROR_404', "ui_script_text" = '##ERROR NO EXISTE MALLA
-PRINT(\'SCRIPT NO EXISTE LA MALLA\');
 ##CF_NO_EXISTE_MALLA();
-
 ##CF_ENVIO_CORREO(\'ERROR AL EJECUTAR [$L_NOMBRE_WF], NO EXISTE EN CATALOGO DE MALLAS\', \'NO SE ENCONTRÓ MALLA\');
 
 print( \'LA MALLA NO EXISTE\');', "x" = '978', "y" = '-334')
 BEGIN_SCRIPT
-print('SCRIPT NO EXISTE LA MALLA');print('LA MALLA NO EXISTE');END
+print('LA MALLA NO EXISTE');END
 END
 END
  SET ("run_once" = 'no', "unit_of_recovery" = 'no', "workflow_type" = 'Regular')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Jan  8 16:38:16 2019', "ActaValue_3" = 'Mon Jan 14 11:23:03 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Jan  8 16:38:16 2019', "ActaValue_3" = 'Wed Feb  6 11:14:53 2019', "x" = '-1', "y" = '-1')
 CREATE PLAN WF_PCCON001::'0fa60115-5d15-48b6-961a-647906849cf4'( )
 BEGIN
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>363</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '90', "y" = '-90')
@@ -2250,7 +2249,7 @@ BEGIN_SCRIPT
 cf_cuenta_datos($G_ID_EJECUCION);END
 END
  SET ("run_once" = 'no', "unit_of_recovery" = 'no', "workflow_type" = 'Regular')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Jan 11 10:53:19 2019', "ActaValue_3" = 'Mon Jan 14 11:27:45 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Jan 11 10:53:19 2019', "ActaValue_3" = 'Wed Feb  6 11:16:43 2019', "x" = '-1', "y" = '-1')
 CREATE PLAN WF_PCJ15015::'e84ee70f-b4b4-43f9-b508-979596d07e72'( )
 DECLARE
      $L_NOMBRE_WF VARCHAR(50) ;
@@ -2272,7 +2271,6 @@ print( \'--------------------------------EJECUCIÓN DATOS\');
 print( $G_ID_EJECUCION );
 
 $G_NOMBRE_ARCHIVO = sql( \'DS_CONTROL\', \'SELECT NOMBRE_ARCHIVO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$G_ID_EJECUCION]\');
-print( \'antes de entrar\');
 print( $G_NOMBRE_ARCHIVO );
 
 
@@ -2280,8 +2278,8 @@ CF_ENVIO_CORREO(\'INICIO DE PROCESO [$L_NOMBRE_WF]\', \'SE INICIA LA EJECUCIÓN 
 
 ', "x" = '90', "y" = '-90')
 BEGIN_SCRIPT
-$L_ID_EJECUCION_MALLA = CF_EJECUCION_MALLA();$G_ID_EJECUCION = $L_ID_EJECUCION_MALLA;print('--------------------------------EJECUCIÓN DATOS');print($G_ID_EJECUCION);$G_NOMBRE_ARCHIVO = sql('DS_CONTROL', 'SELECT NOMBRE_ARCHIVO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$G_ID_EJECUCION]');print('antes de entrar');print($G_NOMBRE_ARCHIVO);cf_envio_correo('INICIO DE PROCESO [$L_NOMBRE_WF]', 'SE INICIA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]');END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>288</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
+$L_ID_EJECUCION_MALLA = CF_EJECUCION_MALLA();$G_ID_EJECUCION = $L_ID_EJECUCION_MALLA;print('--------------------------------EJECUCIÓN DATOS');print($G_ID_EJECUCION);$G_NOMBRE_ARCHIVO = sql('DS_CONTROL', 'SELECT NOMBRE_ARCHIVO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$G_ID_EJECUCION]');print($G_NOMBRE_ARCHIVO);cf_envio_correo('INICIO DE PROCESO [$L_NOMBRE_WF]', 'SE INICIA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]');END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>307</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
 CALL PLAN WF_PCCON001::'0fa60115-5d15-48b6-961a-647906849cf4'();
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SC_FIN', "ui_script_text" = '##ENVIO DE CORREO DE FIN DE PROCESO
 CF_ENVIO_CORREO(\'FIN DE PROCESO [$L_NOMBRE_WF]\', \'SE FINALIZA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]\');
@@ -2335,14 +2333,13 @@ END
 ELSE
 BEGIN
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>300</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SC_ERROR_404', "ui_script_text" = '##ERROR NO EXISTE MALLA
-PRINT(\'SCRIPT NO EXISTE LA MALLA\');
 ##CF_NO_EXISTE_MALLA();
 
 ##CF_ENVIO_CORREO(\'ERROR AL EJECUTAR [$L_NOMBRE_WF], NO EXISTE EN CATALOGO DE MALLAS\', \'NO SE ENCONTRÓ MALLA\');
 
 print( \'LA MALLA NO EXISTE\');', "x" = '978', "y" = '-334')
 BEGIN_SCRIPT
-print('SCRIPT NO EXISTE LA MALLA');print('LA MALLA NO EXISTE');END
+print('LA MALLA NO EXISTE');END
 END
 END
  SET ("run_once" = 'no', "unit_of_recovery" = 'no', "workflow_type" = 'Regular')

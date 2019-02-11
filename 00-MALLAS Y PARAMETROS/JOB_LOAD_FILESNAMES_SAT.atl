@@ -15,7 +15,7 @@ CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET
 <locale_codepage>&lt;default&gt;</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E87CA8DBA7A5A113B23693061A130A45E26A2B5248780FF5B34CB458D284E27FF40BE471842A5192725C61965C146C</password>
+<password>+0400000000120303000803E84898D3E92B0E692F2C8B923D3EF05FFAFE0C7FB29EEDB94F4FEACA7D029166836A93B599CA3354889703943BF838</password>
 <server_codepage>&lt;default&gt;</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -40,7 +40,7 @@ CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET 
 <locale_codepage>iso-8859-1</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E8FAC65DDBE0A7077C551ACBAD6422266BA79C25604A073792AD3F938E2F0752FBA37A02A0D80CB90D8A7DEB880C29</password>
+<password>+0400000000120303000803E80779483C2F29AE71C39321276008B0E24D16214AA8B49EB1E1D7BB317C18AFD7EF7CA03CE8DF2EC2889BF06063AE</password>
 <server_codepage>iso-8859-1</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -59,7 +59,7 @@ ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' ,
 ActaName_5 = 'RLoader_Is_Template_Table',ActaValue_5 = 'no' , 
 ActaName_6 = 'RSavedAfterCheckOut',ActaValue_6 = 'YES' , 
 ActaName_7 = 'RDate_modified',ActaValue_7 = 'Thu Jan 31 10:46:43 2019' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Wed Feb  6 20:17:59 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Fri Feb  8 15:36:13 2019' , 
 ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '1' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
 ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '1' , 
@@ -100,11 +100,11 @@ DESCRIPCION VARCHAR(500)  NULL )
 SET("db_alias_name" = 'CNF')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Wed Feb  6 20:16:57 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '25' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Mon Feb 11 14:22:16 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '7' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '25' , 
-ActaName_5 = 'RElapsed_Time_For_Load',ActaValue_5 = '0 Seconds' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '7' , 
+ActaName_5 = 'RElapsed_Time_For_Load',ActaValue_5 = '1 Seconds' , 
 ActaName_6 = 'RDatabase_Object_Type',ActaValue_6 = 'TABLE' , 
 ActaName_7 = 'RTable_Type',ActaValue_7 = 'TABLE' , 
 ActaName_8 = 'RDescription',ActaValue_8 = '' , 
@@ -233,7 +233,7 @@ CREATE FILE DATASTORE FILE_LIST::'f2be7736-5683-489c-a1d0-da7116e86127'(filename
 ', "table_weight" = '0', "time_format" = 'hh24:mi:ss', "transfer_custom" = 'no', "use_root_dir" = 'no', "write_bom" = 'no');
  AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Jan 23 16:18:50 2019')
 CREATE __AL_PROJECT INICIALIZAR JOB_LOAD_FILESNAMES_SAT;
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Feb  6 14:29:23 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_modified', "ActaName_3" = 'RVersion', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Feb  6 18:13:25 2019', "ActaValue_3" = 'f0e40d208599d1ca3c1f317fee2205f331490c20', "x" = '-1', "y" = '-1')
 CREATE SESSION JOB_LOAD_FILESNAMES_SAT::'d354107b-abe2-4289-9328-370b4906afdd'( )
 DECLARE
      GLOBAL $G_SH_ROUTE VARCHAR(255) ;
@@ -245,7 +245,7 @@ BEGIN
 CALL PLAN WF_CREATEFILESNAMES_SAT::'ff4fa994-73f7-4a2c-947c-8f20f13eefba'();
 END
  SET ("job_checkpoint_enabled" = 'no', "job_collect_statistics" = 'no', "job_collect_statistics_monitor" = 'no', "job_create_debug_package" = 'no', "job_enable_assemblers" = 'yes', "job_enable_audit" = 'yes', "job_enable_dataquality" = 'yes', "job_export_repo" = 'no', "job_export_reports" = 'no', "job_guid" = 'd354107b-abe2-4289-9328-370b4906afdd', "job_isrecoverable" = 'no', "job_mode" = 'Multi-Process', "job_monitor_sample_rate" = '1000', "job_monitor_timer_rate" = '5', "job_name" = 'JOB_LOAD_FILESNAMES_SAT', "job_print_version" = 'no', "job_testmode_enabled" = 'no', "job_trace_abapquery" = 'no', "job_trace_all" = 'no', "job_trace_ascomm" = 'no', "job_trace_assemblers" = 'no', "job_trace_audit" = 'no', "job_trace_dataflow" = 'yes', "job_trace_idoc_file" = 'no', "job_trace_memory_loader" = 'no', "job_trace_memory_reader" = 'no', "job_trace_optimized_dataflow" = 'no', "job_trace_parallel_execution" = 'no', "job_trace_rfc_function" = 'no', "job_trace_row" = 'no', "job_trace_script" = 'no', "job_trace_session" = 'yes', "job_trace_sql_only" = 'no', "job_trace_sqlfunctions" = 'no', "job_trace_sqlloaders" = 'no', "job_trace_sqlreaders" = 'no', "job_trace_sqltransforms" = 'no', "job_trace_stored_procedure" = 'no', "job_trace_table" = 'no', "job_trace_table_reader" = 'no', "job_trace_transform" = 'no', "job_trace_userfunction" = 'no', "job_trace_usertransform" = 'no', "job_trace_workflow" = 'yes', "job_type" = 'batch', "job_use_statistics" = 'yes', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Jan 23 16:18:52 2019', "ActaValue_3" = 'Wed Feb  6 20:14:15 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Jan 23 16:18:52 2019', "ActaValue_3" = 'Mon Feb 11 14:29:10 2019', "x" = '-1', "y" = '-1')
 CREATE PLAN WF_CREATEFILESNAMES_SAT::'ff4fa994-73f7-4a2c-947c-8f20f13eefba'( )
 DECLARE
      $L_COUNTER INT ;
@@ -256,15 +256,22 @@ DECLARE
      $L_CLEAN_FILE_NAME VARCHAR(150) ;
      $L_FECHA_MIS_DATE VARCHAR(10) ;
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>222</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'getFilesList', "ui_script_text" = '$G_SH_ROUTE = sql(\'DS_CONTROL\', \'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \\\'%SH_ROUTE_TEC%\\\'\');
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>222</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'getFilesList', "ui_script_text" = 'print(\'version:\');
+print(\'--\' || sql(\'DS_CONTROL\', \'select version_commit from cnf.version_objetos where object_name = \\\'MALLAS_EJECUCION\\\'\'));
+
+
+
+$G_SH_ROUTE = sql(\'DS_CONTROL\', \'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \\\'%SH_ROUTE_TEC%\\\'\');
 
 sql(\'DS_CONTROL\', \'commit\');
 exec(\'[$G_SH_ROUTE]\'||\'files.sh\',8);
 
 
+
+
 ', "x" = '90', "y" = '-90')
 BEGIN_SCRIPT
-$G_SH_ROUTE = sql('DS_CONTROL', 'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%SH_ROUTE_TEC%\'');sql('DS_CONTROL', 'commit');exec(('[$G_SH_ROUTE]' || 'files.sh'), 8);END
+print('version:');print(('--' || sql('DS_CONTROL', 'select version_commit from cnf.version_objetos where object_name = \'MALLAS_EJECUCION\'')));$G_SH_ROUTE = sql('DS_CONTROL', 'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%SH_ROUTE_TEC%\'');sql('DS_CONTROL', 'commit');exec(('[$G_SH_ROUTE]' || 'files.sh'), 8);END
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>378</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
 CALL DATAFLOW save_filesnames_SAT::'20a12a11-e1a5-49ef-b3a0-128e53717370'();
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Counter', "ui_script_text" = '$L_COUNTER = 0;
@@ -363,7 +370,7 @@ BEGIN_SCRIPT
 sql('DS_CONTROL', 'update cnf.MALLAS_EJECUCION set estado = \'CARGADO\'');exec(('[$G_SH_ROUTE]' || 'moveFiles.sh'), 'listadoArchivos.txt', 8);END
 END
  SET ("run_once" = 'no', "unit_of_recovery" = 'no', "workflow_type" = 'Regular')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Jan 23 16:18:53 2019', "ActaValue_3" = 'Mon Feb  4 17:36:43 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Jan 23 16:18:53 2019', "ActaValue_3" = 'Wed Feb  6 18:39:39 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW save_filesnames_SAT::'20a12a11-e1a5-49ef-b3a0-128e53717370'
 BEGIN
 
@@ -414,7 +421,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 <loader_update_map></loader_update_map>
 <loader_use_user_defined_keys>no</loader_use_user_defined_keys>
 <loader_xact_size>1000</loader_xact_size>
-<mssql_bulk_ldr_mode>truncate</mssql_bulk_ldr_mode>
+<mssql_bulk_ldr_mode>append</mssql_bulk_ldr_mode>
 <mssql_bulk_ldr_packet_size>0</mssql_bulk_ldr_packet_size>
 <overflow_file_format>write_data</overflow_file_format>
 <use_overflow_file>no</use_overflow_file>

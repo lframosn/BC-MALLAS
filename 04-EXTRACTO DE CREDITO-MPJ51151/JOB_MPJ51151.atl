@@ -15,7 +15,7 @@ CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET
 <locale_codepage>&lt;default&gt;</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E896E6A8641C61073892B700E6ABA6E1C66CD7EAE4E5C3722BED2BFF9EE7171384022C40A3837171186154E2D4327E</password>
+<password>+0400000000120303000803E83EF1D33D3A2E19750F3263ABD7617C430F9A962340486CE107B08EBB1D5A82DCD6686E901B279CEE7A3C8FEE6326</password>
 <server_codepage>&lt;default&gt;</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -40,7 +40,7 @@ CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET 
 <locale_codepage>iso-8859-1</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E8433DA04770CBDC040CAEDFCE13307FDFB3FF5272DF9E2FF9D3B499EAC4CB5F75A4D0EE0DCCEF24651BB5C2268E40</password>
+<password>+0400000000120303000803E812C87AAB14E2E9158FEF04730C7CFC9E68424D3E1AF7ECC607BAD3804148F43FD976F69263197E11E1B73A0E3913</password>
 <server_codepage>iso-8859-1</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -59,7 +59,7 @@ ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' ,
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
 ActaName_7 = 'RDate_created',ActaValue_7 = 'Fri Dec 21 12:00:55 2018' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb  5 09:36:46 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb 12 12:41:42 2019' , 
 ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '248' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
 ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '248' , 
@@ -95,7 +95,7 @@ FILLER1 VARCHAR(823)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb  5 09:36:41 2019' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb 12 12:41:37 2019' , 
 ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '248' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
 ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '248' , 
@@ -134,12 +134,12 @@ FILLER1 VARCHAR(823)  NULL  SET("Description" = 'PCIMPEXT_CI.FILLER1', "ui_mappi
 SET("db_alias_name" = 'STG_SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '1687' , 
+ AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '415' , 
 ActaName_2 = 'RNumber_Of_Rows_Rejected',ActaValue_2 = '0' , 
-ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '1687' , 
+ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '415' , 
 ActaName_4 = 'RNumber_Of_Updates',ActaValue_4 = '0' , 
 ActaName_5 = 'RNumber_Of_Deletes',ActaValue_5 = '0' , 
-ActaName_6 = 'RElapsed_Time_For_Load',ActaValue_6 = '1 Seconds' , 
+ActaName_6 = 'RElapsed_Time_For_Load',ActaValue_6 = '2 Seconds' , 
 ActaName_7 = 'RDatabase_Object_Type',ActaValue_7 = 'TABLE' , 
 ActaName_8 = 'RTable_Type',ActaValue_8 = 'TABLE' , 
 ActaName_9 = 'RDescription',ActaValue_9 = '' , 
@@ -147,7 +147,7 @@ ActaName_10 = 'REstimated_Row_Count',ActaValue_10 = '50000' ,
 ActaName_11 = 'RSavedAfterCheckOut',ActaValue_11 = 'YES' , 
 ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'no' , 
 ActaName_13 = 'RDate_created',ActaValue_13 = 'Fri Dec 21 12:00:55 2018' , 
-ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Tue Feb  5 09:36:57 2019' , 
+ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Tue Feb 12 12:41:53 2019' , 
 ActaName_15 = 'RDate_modified',ActaValue_15 = 'Tue Jan 22 15:11:54 2019' )
 CREATE TABLE DS_TARGET.SAT.PCIMPEXT_CL(IDENTIFICADOR_EJECUCION INT  NULL , 
 CODENT_D VARCHAR(4)  NULL , 
@@ -204,13 +204,13 @@ FILLER1 VARCHAR(9)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb  5 09:36:52 2019' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb 12 12:41:47 2019' , 
 ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '397' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
 ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '397' , 
 ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
 ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
-ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '2 Seconds' , 
+ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '1 Seconds' , 
 ActaName_8 = 'RDatabase_Object_Type',ActaValue_8 = 'TABLE' , 
 ActaName_9 = 'RTable_Type',ActaValue_9 = 'TABLE' , 
 ActaName_10 = 'RDescription',ActaValue_10 = '' , 
@@ -272,10 +272,10 @@ FILLER1 VARCHAR(9)  NULL  SET("Description" = 'PCIMPEXT_CL.FILLER1', "ui_mapping
 SET("db_alias_name" = 'STG_SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb  5 09:37:09 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '397' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb 12 12:31:17 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '18' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '397' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '18' , 
 ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
 ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
 ActaName_7 = 'RDatabase_Object_Type',ActaValue_7 = 'TABLE' , 
@@ -285,7 +285,7 @@ ActaName_10 = 'REstimated_Row_Count',ActaValue_10 = '50000' ,
 ActaName_11 = 'RSavedAfterCheckOut',ActaValue_11 = 'YES' , 
 ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'no' , 
 ActaName_13 = 'RDate_modified',ActaValue_13 = 'Tue Jan 22 15:11:56 2019' , 
-ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '2 Seconds' )
+ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '1 Seconds' )
 CREATE TABLE DS_TARGET.SAT.PCIMPEXT_CU(IDENTIFICADOR_EJECUCION INT  NULL , 
 CODENT_D VARCHAR(4)  NULL , 
 NSECFIC_D DECIMAL(10, 0)  NULL , 
@@ -350,7 +350,7 @@ ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' ,
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
 ActaName_7 = 'RDate_created',ActaValue_7 = 'Mon Feb  4 20:25:59 2019' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb  5 09:37:03 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb 12 12:41:58 2019' , 
 ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '397' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
 ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '397' , 
@@ -414,10 +414,10 @@ SET("db_alias_name" = 'STG_SAT')
 ;
 
  AlGUIComment (ActaName_1 = 'RDatabase_Object_Type',ActaValue_1 = 'TABLE' , 
-ActaName_2 = 'RDate_last_loaded',ActaValue_2 = 'Tue Feb  5 09:37:20 2019' , 
-ActaName_3 = 'RTotal_Number_Of_Rows_Processed',ActaValue_3 = '5' , 
+ActaName_2 = 'RDate_last_loaded',ActaValue_2 = 'Tue Feb 12 12:31:28 2019' , 
+ActaName_3 = 'RTotal_Number_Of_Rows_Processed',ActaValue_3 = '0' , 
 ActaName_4 = 'RNumber_Of_Rows_Rejected',ActaValue_4 = '0' , 
-ActaName_5 = 'RNumber_Of_Inserts',ActaValue_5 = '5' , 
+ActaName_5 = 'RNumber_Of_Inserts',ActaValue_5 = '0' , 
 ActaName_6 = 'RElapsed_Time_For_Load',ActaValue_6 = '1 Seconds' , 
 ActaName_7 = 'RTable_Type',ActaValue_7 = 'TABLE' , 
 ActaName_8 = 'RDescription',ActaValue_8 = '' , 
@@ -508,10 +508,10 @@ FILLER1 VARCHAR(34)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb  5 09:37:15 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '5' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb 12 12:31:23 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '0' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '5' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '0' , 
 ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
 ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
 ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '2 Seconds' , 
@@ -519,9 +519,9 @@ ActaName_8 = 'RDatabase_Object_Type',ActaValue_8 = 'TABLE' ,
 ActaName_9 = 'RTable_Type',ActaValue_9 = 'TABLE' , 
 ActaName_10 = 'RDescription',ActaValue_10 = '' , 
 ActaName_11 = 'REstimated_Row_Count',ActaValue_11 = '50000' , 
-ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'yes' , 
+ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'no' , 
 ActaName_13 = 'RSavedAfterCheckOut',ActaValue_13 = 'YES' , 
-ActaName_14 = 'RDate_modified',ActaValue_14 = 'Mon Feb  4 20:46:25 2019' )
+ActaName_14 = 'RDate_modified',ActaValue_14 = 'Tue Feb  5 14:01:59 2019' )
 CREATE TABLE DS_TARGET.STG_SAT.PCIMPEXT_EX(CODENT_D VARCHAR(4)  NULL  SET("Description" = 'PCIMPEXT_EX.CODENT_D', "ui_mapping_text" = 'PCIMPEXT_EX.CODENT_D'), 
 NSECFIC_D DECIMAL(10, 0)  NULL  SET("Description" = 'PCIMPEXT_EX.NSECFIC_D', "ui_mapping_text" = 'PCIMPEXT_EX.NSECFIC_D'), 
 TIPOCINTA_D DECIMAL(2, 0)  NULL  SET("Description" = 'PCIMPEXT_EX.TIPOCINTA_D', "ui_mapping_text" = 'PCIMPEXT_EX.TIPOCINTA_D'), 
@@ -612,10 +612,10 @@ ActaName_5 = 'REstimated_Row_Count',ActaValue_5 = '50000' ,
 ActaName_6 = 'RSavedAfterCheckOut',ActaValue_6 = 'YES' , 
 ActaName_7 = 'RLoader_Is_Template_Table',ActaValue_7 = 'no' , 
 ActaName_8 = 'RDate_modified',ActaValue_8 = 'Tue Jan 22 15:11:58 2019' , 
-ActaName_9 = 'RDate_last_loaded',ActaValue_9 = 'Tue Feb  5 09:37:29 2019' , 
-ActaName_10 = 'RTotal_Number_Of_Rows_Processed',ActaValue_10 = '63' , 
+ActaName_9 = 'RDate_last_loaded',ActaValue_9 = 'Tue Feb 12 12:31:37 2019' , 
+ActaName_10 = 'RTotal_Number_Of_Rows_Processed',ActaValue_10 = '0' , 
 ActaName_11 = 'RNumber_Of_Rows_Rejected',ActaValue_11 = '0' , 
-ActaName_12 = 'RNumber_Of_Inserts',ActaValue_12 = '63' , 
+ActaName_12 = 'RNumber_Of_Inserts',ActaValue_12 = '0' , 
 ActaName_13 = 'RNumber_Of_Updates',ActaValue_13 = '0' , 
 ActaName_14 = 'RNumber_Of_Deletes',ActaValue_14 = '0' , 
 ActaName_15 = 'RElapsed_Time_For_Load',ActaValue_15 = '1 Seconds' )
@@ -644,10 +644,10 @@ FILLER1 VARCHAR(866)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb  5 09:37:24 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '63' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb 12 12:31:32 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '0' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '63' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '0' , 
 ActaName_5 = 'RElapsed_Time_For_Load',ActaValue_5 = '0 Seconds' , 
 ActaName_6 = 'RDatabase_Object_Type',ActaValue_6 = 'TABLE' , 
 ActaName_7 = 'RTable_Type',ActaValue_7 = 'TABLE' , 
@@ -687,10 +687,10 @@ ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' ,
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
 ActaName_7 = 'RDate_created',ActaValue_7 = 'Fri Dec 21 12:00:57 2018' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb  5 09:37:38 2019' , 
-ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '243' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb 12 12:31:45 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '0' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
-ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '243' , 
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '0' , 
 ActaName_12 = 'RNumber_Of_Updates',ActaValue_12 = '0' , 
 ActaName_13 = 'RNumber_Of_Deletes',ActaValue_13 = '0' , 
 ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '0 Seconds' , 
@@ -717,10 +717,10 @@ FILLER1 VARCHAR(901)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb  5 09:37:33 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '243' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb 12 12:31:41 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '0' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '243' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '0' , 
 ActaName_5 = 'RElapsed_Time_For_Load',ActaValue_5 = '0 Seconds' , 
 ActaName_6 = 'RDatabase_Object_Type',ActaValue_6 = 'TABLE' , 
 ActaName_7 = 'RTable_Type',ActaValue_7 = 'TABLE' , 
@@ -757,13 +757,13 @@ ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' ,
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
 ActaName_7 = 'RDate_created',ActaValue_7 = 'Fri Dec 21 12:00:58 2018' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb  5 09:37:47 2019' , 
-ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '1193' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb 12 12:31:55 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '27' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
-ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '1193' , 
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '27' , 
 ActaName_12 = 'RNumber_Of_Updates',ActaValue_12 = '0' , 
 ActaName_13 = 'RNumber_Of_Deletes',ActaValue_13 = '0' , 
-ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '0 Seconds' , 
+ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '1 Seconds' , 
 ActaName_15 = 'RDate_modified',ActaValue_15 = 'Tue Jan 22 15:12:00 2019' )
 CREATE TABLE DS_TARGET.SAT.PCIMPEXT_LI(IDENTIFICADOR_EJECUCION INT  NULL , 
 CODENT_D VARCHAR(4)  NULL , 
@@ -789,11 +789,11 @@ FILLER1 VARCHAR(874)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb  5 09:37:43 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '1193' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb 12 12:31:50 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '27' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '1193' , 
-ActaName_5 = 'RElapsed_Time_For_Load',ActaValue_5 = '1 Seconds' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '27' , 
+ActaName_5 = 'RElapsed_Time_For_Load',ActaValue_5 = '0 Seconds' , 
 ActaName_6 = 'RDatabase_Object_Type',ActaValue_6 = 'TABLE' , 
 ActaName_7 = 'RTable_Type',ActaValue_7 = 'TABLE' , 
 ActaName_8 = 'RDescription',ActaValue_8 = '' , 
@@ -831,10 +831,10 @@ ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' ,
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
 ActaName_7 = 'RDate_created',ActaValue_7 = 'Fri Dec 21 12:00:58 2018' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb  5 09:37:57 2019' , 
-ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '195' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb 12 12:32:04 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '0' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
-ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '195' , 
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '0' , 
 ActaName_12 = 'RNumber_Of_Updates',ActaValue_12 = '0' , 
 ActaName_13 = 'RNumber_Of_Deletes',ActaValue_13 = '0' , 
 ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '1 Seconds' , 
@@ -868,10 +868,10 @@ FILLER1 VARCHAR(822)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb  5 09:37:52 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '195' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb 12 12:31:59 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '0' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '195' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '0' , 
 ActaName_5 = 'RElapsed_Time_For_Load',ActaValue_5 = '0 Seconds' , 
 ActaName_6 = 'RDatabase_Object_Type',ActaValue_6 = 'TABLE' , 
 ActaName_7 = 'RTable_Type',ActaValue_7 = 'TABLE' , 
@@ -915,7 +915,7 @@ ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' ,
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
 ActaName_7 = 'RDate_created',ActaValue_7 = 'Wed Jan 30 14:46:26 2019' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb  5 09:38:07 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb 12 12:32:13 2019' , 
 ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '0' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
 ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '0' , 
@@ -949,20 +949,20 @@ FILLER VARCHAR(802)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb  5 09:38:02 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '0' , 
-ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '0' , 
-ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
-ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
-ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '0 Seconds' , 
-ActaName_8 = 'RDatabase_Object_Type',ActaValue_8 = 'TABLE' , 
-ActaName_9 = 'RTable_Type',ActaValue_9 = 'TABLE' , 
-ActaName_10 = 'RDescription',ActaValue_10 = '' , 
-ActaName_11 = 'REstimated_Row_Count',ActaValue_11 = '50000' , 
-ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'yes' , 
-ActaName_13 = 'RSavedAfterCheckOut',ActaValue_13 = 'YES' , 
-ActaName_14 = 'RDate_modified',ActaValue_14 = 'Tue Feb  5 09:01:58 2019' )
+ AlGUIComment (ActaName_1 = 'RDatabase_Object_Type',ActaValue_1 = 'TABLE' , 
+ActaName_2 = 'RTable_Type',ActaValue_2 = 'TABLE' , 
+ActaName_3 = 'RDescription',ActaValue_3 = '' , 
+ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
+ActaName_5 = 'RLoader_Is_Template_Table',ActaValue_5 = 'no' , 
+ActaName_6 = 'RSavedAfterCheckOut',ActaValue_6 = 'YES' , 
+ActaName_7 = 'RDate_modified',ActaValue_7 = 'Tue Feb  5 14:02:01 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb 12 12:32:09 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '0' , 
+ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '0' , 
+ActaName_12 = 'RNumber_Of_Updates',ActaValue_12 = '0' , 
+ActaName_13 = 'RNumber_Of_Deletes',ActaValue_13 = '0' , 
+ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '1 Seconds' )
 CREATE TABLE DS_TARGET.STG_SAT.PCIMPEXT_ME(CODENT_D VARCHAR(4)  NULL  SET("Description" = 'PCIMPEXT_ME.CODENT_D', "ui_mapping_text" = 'PCIMPEXT_ME_1.CODENT_D'), 
 NSECFIC_D DECIMAL(10, 0)  NULL  SET("Description" = 'PCIMPEXT_ME.NSECFIC_D', "ui_mapping_text" = 'PCIMPEXT_ME_1.NSECFIC_D'), 
 TIPOCINTA_D DECIMAL(2, 0)  NULL  SET("Description" = 'PCIMPEXT_ME.TIPOCINTA_D', "ui_mapping_text" = 'PCIMPEXT_ME_1.TIPOCINTA_D'), 
@@ -996,10 +996,10 @@ ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' ,
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
 ActaName_7 = 'RDate_created',ActaValue_7 = 'Fri Dec 21 12:00:59 2018' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb  5 09:38:17 2019' , 
-ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '720' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb 12 12:32:23 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '0' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
-ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '720' , 
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '0' , 
 ActaName_12 = 'RNumber_Of_Updates',ActaValue_12 = '0' , 
 ActaName_13 = 'RNumber_Of_Deletes',ActaValue_13 = '0' , 
 ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '1 Seconds' , 
@@ -1038,20 +1038,20 @@ FILLER1 VARCHAR(791)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb  5 09:38:12 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '720' , 
-ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '720' , 
-ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
-ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
-ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '1 Seconds' , 
-ActaName_8 = 'RDatabase_Object_Type',ActaValue_8 = 'TABLE' , 
-ActaName_9 = 'RTable_Type',ActaValue_9 = 'TABLE' , 
-ActaName_10 = 'RDescription',ActaValue_10 = '' , 
-ActaName_11 = 'REstimated_Row_Count',ActaValue_11 = '50000' , 
-ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'yes' , 
-ActaName_13 = 'RSavedAfterCheckOut',ActaValue_13 = 'YES' , 
-ActaName_14 = 'RDate_modified',ActaValue_14 = 'Tue Feb  5 09:27:05 2019' )
+ AlGUIComment (ActaName_1 = 'RDatabase_Object_Type',ActaValue_1 = 'TABLE' , 
+ActaName_2 = 'RTable_Type',ActaValue_2 = 'TABLE' , 
+ActaName_3 = 'RDescription',ActaValue_3 = '' , 
+ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
+ActaName_5 = 'RLoader_Is_Template_Table',ActaValue_5 = 'no' , 
+ActaName_6 = 'RSavedAfterCheckOut',ActaValue_6 = 'YES' , 
+ActaName_7 = 'RDate_modified',ActaValue_7 = 'Tue Feb  5 14:02:01 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb 12 12:32:18 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '0' , 
+ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '0' , 
+ActaName_12 = 'RNumber_Of_Updates',ActaValue_12 = '0' , 
+ActaName_13 = 'RNumber_Of_Deletes',ActaValue_13 = '0' , 
+ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '1 Seconds' )
 CREATE TABLE DS_TARGET.STG_SAT.PCIMPEXT_MI(CODENT_D VARCHAR(4)  NULL  SET("Description" = 'PCIMPEXT_MI.CODENT_D', "ui_mapping_text" = 'PCIMPEXT_MI.CODENT_D'), 
 NSECFIC_D DECIMAL(10, 0)  NULL  SET("Description" = 'PCIMPEXT_MI.NSECFIC_D', "ui_mapping_text" = 'PCIMPEXT_MI.NSECFIC_D'), 
 TIPOCINTA_D DECIMAL(2, 0)  NULL  SET("Description" = 'PCIMPEXT_MI.TIPOCINTA_D', "ui_mapping_text" = 'PCIMPEXT_MI.TIPOCINTA_D'), 
@@ -1092,13 +1092,13 @@ ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' ,
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
 ActaName_7 = 'RDate_created',ActaValue_7 = 'Fri Dec 21 12:00:59 2018' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb  5 09:38:26 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb 12 12:32:32 2019' , 
 ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '0' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
 ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '0' , 
 ActaName_12 = 'RNumber_Of_Updates',ActaValue_12 = '0' , 
 ActaName_13 = 'RNumber_Of_Deletes',ActaValue_13 = '0' , 
-ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '1 Seconds' , 
+ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '0 Seconds' , 
 ActaName_15 = 'RDate_modified',ActaValue_15 = 'Tue Jan 22 15:12:03 2019' )
 CREATE TABLE DS_TARGET.SAT.PCIMPEXT_ML(IDENTIFICADOR_EJECUCION INT  NULL , 
 CODENT_D VARCHAR(4)  NULL , 
@@ -1118,11 +1118,11 @@ FILLER1 VARCHAR(894)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb  5 09:38:21 2019' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb 12 12:32:28 2019' , 
 ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '0' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
 ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '0' , 
-ActaName_5 = 'RElapsed_Time_For_Load',ActaValue_5 = '0 Seconds' , 
+ActaName_5 = 'RElapsed_Time_For_Load',ActaValue_5 = '1 Seconds' , 
 ActaName_6 = 'RDatabase_Object_Type',ActaValue_6 = 'TABLE' , 
 ActaName_7 = 'RTable_Type',ActaValue_7 = 'TABLE' , 
 ActaName_8 = 'RDescription',ActaValue_8 = '' , 
@@ -1154,10 +1154,10 @@ ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' ,
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
 ActaName_7 = 'RDate_created',ActaValue_7 = 'Fri Dec 21 12:00:59 2018' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb  5 09:38:35 2019' , 
-ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '1568' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb 12 12:32:41 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '36' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
-ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '1568' , 
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '36' , 
 ActaName_12 = 'RNumber_Of_Updates',ActaValue_12 = '0' , 
 ActaName_13 = 'RNumber_Of_Deletes',ActaValue_13 = '0' , 
 ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '0 Seconds' , 
@@ -1182,10 +1182,10 @@ FILLER1 VARCHAR(442)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb  5 09:38:30 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '1568' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb 12 12:32:36 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '36' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '1568' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '36' , 
 ActaName_5 = 'RElapsed_Time_For_Load',ActaValue_5 = '0 Seconds' , 
 ActaName_6 = 'RDatabase_Object_Type',ActaValue_6 = 'TABLE' , 
 ActaName_7 = 'RTable_Type',ActaValue_7 = 'TABLE' , 
@@ -1213,9 +1213,9 @@ FILLER1 VARCHAR(442)  NULL  SET("Description" = 'PCIMPEXT_MS.FILLER1', "ui_mappi
 SET("db_alias_name" = 'STG_SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '1007' , 
+ AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '18' , 
 ActaName_2 = 'RNumber_Of_Rows_Rejected',ActaValue_2 = '0' , 
-ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '1007' , 
+ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '18' , 
 ActaName_4 = 'RNumber_Of_Updates',ActaValue_4 = '0' , 
 ActaName_5 = 'RNumber_Of_Deletes',ActaValue_5 = '0' , 
 ActaName_6 = 'RElapsed_Time_For_Load',ActaValue_6 = '1 Seconds' , 
@@ -1226,7 +1226,7 @@ ActaName_10 = 'REstimated_Row_Count',ActaValue_10 = '50000' ,
 ActaName_11 = 'RSavedAfterCheckOut',ActaValue_11 = 'YES' , 
 ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'no' , 
 ActaName_13 = 'RDate_created',ActaValue_13 = 'Fri Dec 21 12:00:59 2018' , 
-ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Tue Feb  5 09:38:47 2019' , 
+ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Tue Feb 12 12:32:52 2019' , 
 ActaName_15 = 'RDate_modified',ActaValue_15 = 'Tue Jan 22 15:12:04 2019' )
 CREATE TABLE DS_TARGET.SAT.PCIMPEXT_MX(IDENTIFICADOR_EJECUCION INT  NULL , 
 CODENT_D VARCHAR(4)  NULL , 
@@ -1276,10 +1276,10 @@ FILLER1 VARCHAR(589)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb  5 09:38:41 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '989' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb 12 12:32:47 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '9' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '989' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '9' , 
 ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
 ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
 ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '1 Seconds' , 
@@ -1350,7 +1350,7 @@ ActaName_10 = 'REstimated_Row_Count',ActaValue_10 = '50000' ,
 ActaName_11 = 'RSavedAfterCheckOut',ActaValue_11 = 'YES' , 
 ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'no' , 
 ActaName_13 = 'RDate_created',ActaValue_13 = 'Fri Dec 21 12:01:00 2018' , 
-ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Tue Feb  5 09:38:56 2019' , 
+ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Tue Feb 12 12:33:02 2019' , 
 ActaName_15 = 'RDate_modified',ActaValue_15 = 'Tue Jan 22 15:12:05 2019' )
 CREATE TABLE DS_TARGET.SAT.PCIMPEXT_MZ(IDENTIFICADOR_EJECUCION INT  NULL , 
 CODENT_D VARCHAR(4)  NULL , 
@@ -1373,13 +1373,13 @@ FILLER1 VARCHAR(917)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb  5 09:38:52 2019' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb 12 12:32:57 2019' , 
 ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '0' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
 ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '0' , 
 ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
 ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
-ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '1 Seconds' , 
+ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '0 Seconds' , 
 ActaName_8 = 'RDatabase_Object_Type',ActaValue_8 = 'TABLE' , 
 ActaName_9 = 'RTable_Type',ActaValue_9 = 'TABLE' , 
 ActaName_10 = 'RDescription',ActaValue_10 = '' , 
@@ -1407,9 +1407,9 @@ FILLER1 VARCHAR(917)  NULL  SET("Description" = 'PCIMPEXT_MZ.FILLER1', "ui_mappi
 SET("db_alias_name" = 'STG_SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '82' , 
+ AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '0' , 
 ActaName_2 = 'RNumber_Of_Rows_Rejected',ActaValue_2 = '0' , 
-ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '82' , 
+ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '0' , 
 ActaName_4 = 'RNumber_Of_Updates',ActaValue_4 = '0' , 
 ActaName_5 = 'RNumber_Of_Deletes',ActaValue_5 = '0' , 
 ActaName_6 = 'RElapsed_Time_For_Load',ActaValue_6 = '1 Seconds' , 
@@ -1420,7 +1420,7 @@ ActaName_10 = 'REstimated_Row_Count',ActaValue_10 = '50000' ,
 ActaName_11 = 'RSavedAfterCheckOut',ActaValue_11 = 'YES' , 
 ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'no' , 
 ActaName_13 = 'RDate_created',ActaValue_13 = 'Fri Dec 21 12:01:00 2018' , 
-ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Tue Feb  5 09:39:06 2019' , 
+ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Tue Feb 12 12:33:11 2019' , 
 ActaName_15 = 'RDate_modified',ActaValue_15 = 'Tue Jan 22 15:12:05 2019' )
 CREATE TABLE DS_TARGET.SAT.PCIMPEXT_PU(IDENTIFICADOR_EJECUCION INT  NULL , 
 CODENT_D VARCHAR(4)  NULL , 
@@ -1449,10 +1449,10 @@ FILLER1 VARCHAR(871)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb  5 09:39:01 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '82' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb 12 12:33:07 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '0' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '82' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '0' , 
 ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
 ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
 ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '1 Seconds' , 
@@ -1489,12 +1489,12 @@ FILLER1 VARCHAR(871)  NULL  SET("Description" = 'PCIMPEXT_PU.FILLER1', "ui_mappi
 SET("db_alias_name" = 'STG_SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '1296' , 
+ AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '0' , 
 ActaName_2 = 'RNumber_Of_Rows_Rejected',ActaValue_2 = '0' , 
-ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '1296' , 
+ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '0' , 
 ActaName_4 = 'RNumber_Of_Updates',ActaValue_4 = '0' , 
 ActaName_5 = 'RNumber_Of_Deletes',ActaValue_5 = '0' , 
-ActaName_6 = 'RElapsed_Time_For_Load',ActaValue_6 = '1 Seconds' , 
+ActaName_6 = 'RElapsed_Time_For_Load',ActaValue_6 = '0 Seconds' , 
 ActaName_7 = 'RDatabase_Object_Type',ActaValue_7 = 'TABLE' , 
 ActaName_8 = 'RTable_Type',ActaValue_8 = 'TABLE' , 
 ActaName_9 = 'RDescription',ActaValue_9 = '' , 
@@ -1502,7 +1502,7 @@ ActaName_10 = 'REstimated_Row_Count',ActaValue_10 = '50000' ,
 ActaName_11 = 'RSavedAfterCheckOut',ActaValue_11 = 'YES' , 
 ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'no' , 
 ActaName_13 = 'RDate_created',ActaValue_13 = 'Fri Dec 21 12:01:00 2018' , 
-ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Tue Feb  5 09:39:16 2019' , 
+ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Tue Feb 12 12:33:20 2019' , 
 ActaName_15 = 'RDate_modified',ActaValue_15 = 'Tue Jan 22 15:12:06 2019' )
 CREATE TABLE DS_TARGET.SAT.PCIMPEXT_PZ(IDENTIFICADOR_EJECUCION INT  NULL , 
 CODENT_D VARCHAR(4)  NULL , 
@@ -1525,10 +1525,10 @@ FILLER1 VARCHAR(919)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb  5 09:39:11 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '1296' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb 12 12:33:16 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '0' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '1296' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '0' , 
 ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
 ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
 ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '1 Seconds' , 
@@ -1559,12 +1559,12 @@ FILLER1 VARCHAR(919)  NULL  SET("Description" = 'PCIMPEXT_PZ.FILLER1', "ui_mappi
 SET("db_alias_name" = 'STG_SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '447' , 
+ AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '0' , 
 ActaName_2 = 'RNumber_Of_Rows_Rejected',ActaValue_2 = '0' , 
-ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '447' , 
+ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '0' , 
 ActaName_4 = 'RNumber_Of_Updates',ActaValue_4 = '0' , 
 ActaName_5 = 'RNumber_Of_Deletes',ActaValue_5 = '0' , 
-ActaName_6 = 'RElapsed_Time_For_Load',ActaValue_6 = '1 Seconds' , 
+ActaName_6 = 'RElapsed_Time_For_Load',ActaValue_6 = '0 Seconds' , 
 ActaName_7 = 'RDatabase_Object_Type',ActaValue_7 = 'TABLE' , 
 ActaName_8 = 'RTable_Type',ActaValue_8 = 'TABLE' , 
 ActaName_9 = 'RDescription',ActaValue_9 = '' , 
@@ -1572,7 +1572,7 @@ ActaName_10 = 'REstimated_Row_Count',ActaValue_10 = '50000' ,
 ActaName_11 = 'RSavedAfterCheckOut',ActaValue_11 = 'YES' , 
 ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'no' , 
 ActaName_13 = 'RDate_created',ActaValue_13 = 'Fri Dec 21 12:01:00 2018' , 
-ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Tue Feb  5 09:39:26 2019' , 
+ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Tue Feb 12 12:33:29 2019' , 
 ActaName_15 = 'RDate_modified',ActaValue_15 = 'Tue Jan 22 15:12:07 2019' )
 CREATE TABLE DS_TARGET.SAT.PCIMPEXT_RI(IDENTIFICADOR_EJECUCION INT  NULL , 
 CODENT_D VARCHAR(4)  NULL , 
@@ -1602,10 +1602,10 @@ FILLER1 VARCHAR(810)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb  5 09:39:21 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '447' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb 12 12:33:25 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '0' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '447' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '0' , 
 ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
 ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
 ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '1 Seconds' , 
@@ -1643,9 +1643,9 @@ FILLER1 VARCHAR(810)  NULL  SET("Description" = 'PCIMPEXT_RI.FILLER1', "ui_mappi
 SET("db_alias_name" = 'STG_SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '1692' , 
+ AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '0' , 
 ActaName_2 = 'RNumber_Of_Rows_Rejected',ActaValue_2 = '0' , 
-ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '1692' , 
+ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '0' , 
 ActaName_4 = 'RNumber_Of_Updates',ActaValue_4 = '0' , 
 ActaName_5 = 'RNumber_Of_Deletes',ActaValue_5 = '0' , 
 ActaName_6 = 'RElapsed_Time_For_Load',ActaValue_6 = '0 Seconds' , 
@@ -1655,7 +1655,7 @@ ActaName_9 = 'RDescription',ActaValue_9 = '' ,
 ActaName_10 = 'REstimated_Row_Count',ActaValue_10 = '50000' , 
 ActaName_11 = 'RSavedAfterCheckOut',ActaValue_11 = 'YES' , 
 ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'no' , 
-ActaName_13 = 'RDate_last_loaded',ActaValue_13 = 'Tue Feb  5 09:39:35 2019' , 
+ActaName_13 = 'RDate_last_loaded',ActaValue_13 = 'Tue Feb 12 12:33:38 2019' , 
 ActaName_14 = 'RDate_created',ActaValue_14 = 'Fri Dec 21 12:01:01 2018' , 
 ActaName_15 = 'RDate_modified',ActaValue_15 = 'Tue Jan 22 15:12:08 2019' )
 CREATE TABLE DS_TARGET.SAT.PCIMPEXT_RL(IDENTIFICADOR_EJECUCION INT  NULL , 
@@ -1680,10 +1680,10 @@ FILLER1 VARCHAR(889)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb  5 09:39:31 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '1692' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb 12 12:33:34 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '0' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '1692' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '0' , 
 ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
 ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
 ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '1 Seconds' , 
@@ -1715,9 +1715,9 @@ FILLER1 VARCHAR(889)  NULL  SET("Description" = 'PCIMPEXT_RL.FILLER1', "ui_mappi
 SET("db_alias_name" = 'STG_SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '448' , 
+ AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '0' , 
 ActaName_2 = 'RNumber_Of_Rows_Rejected',ActaValue_2 = '0' , 
-ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '448' , 
+ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '0' , 
 ActaName_4 = 'RNumber_Of_Updates',ActaValue_4 = '0' , 
 ActaName_5 = 'RNumber_Of_Deletes',ActaValue_5 = '0' , 
 ActaName_6 = 'RElapsed_Time_For_Load',ActaValue_6 = '1 Seconds' , 
@@ -1729,7 +1729,7 @@ ActaName_11 = 'RSavedAfterCheckOut',ActaValue_11 = 'YES' ,
 ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'no' , 
 ActaName_13 = 'RDate_modified',ActaValue_13 = 'Tue Jan 22 15:12:08 2019' , 
 ActaName_14 = 'RDate_created',ActaValue_14 = 'Fri Dec 21 12:01:01 2018' , 
-ActaName_15 = 'RDate_last_loaded',ActaValue_15 = 'Tue Feb  5 09:39:45 2019' )
+ActaName_15 = 'RDate_last_loaded',ActaValue_15 = 'Tue Feb 12 12:33:48 2019' )
 CREATE TABLE DS_TARGET.SAT.PCIMPEXT_RZ(IDENTIFICADOR_EJECUCION INT  NULL , 
 CODENT_D VARCHAR(4)  NULL , 
 NSECFIC_D DECIMAL(10, 0)  NULL , 
@@ -1758,13 +1758,13 @@ FILLER1 VARCHAR(799)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb  5 09:39:40 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '448' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb 12 12:33:43 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '0' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '448' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '0' , 
 ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
 ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
-ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '0 Seconds' , 
+ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '1 Seconds' , 
 ActaName_8 = 'RDatabase_Object_Type',ActaValue_8 = 'TABLE' , 
 ActaName_9 = 'RTable_Type',ActaValue_9 = 'TABLE' , 
 ActaName_10 = 'RDescription',ActaValue_10 = '' , 
@@ -1799,9 +1799,9 @@ FILLER1 VARCHAR(799)  NULL  SET("Description" = 'PCIMPEXT_RZ.FILLER1', "ui_mappi
 SET("db_alias_name" = 'STG_SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '448' , 
+ AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '0' , 
 ActaName_2 = 'RNumber_Of_Rows_Rejected',ActaValue_2 = '0' , 
-ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '448' , 
+ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '0' , 
 ActaName_4 = 'RNumber_Of_Updates',ActaValue_4 = '0' , 
 ActaName_5 = 'RNumber_Of_Deletes',ActaValue_5 = '0' , 
 ActaName_6 = 'RElapsed_Time_For_Load',ActaValue_6 = '1 Seconds' , 
@@ -1812,7 +1812,7 @@ ActaName_10 = 'REstimated_Row_Count',ActaValue_10 = '50000' ,
 ActaName_11 = 'RSavedAfterCheckOut',ActaValue_11 = 'YES' , 
 ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'no' , 
 ActaName_13 = 'RDate_created',ActaValue_13 = 'Tue Jan 22 10:54:45 2019' , 
-ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Tue Feb  5 09:39:55 2019' , 
+ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Tue Feb 12 12:33:57 2019' , 
 ActaName_15 = 'RDate_modified',ActaValue_15 = 'Tue Jan 22 15:12:09 2019' )
 CREATE TABLE DS_TARGET.SAT.PCIMPEXT_SZ(IDENTIFICADOR_EJECUCION INT  NULL , 
 CODENT_D VARCHAR(4)  NULL , 
@@ -1842,20 +1842,20 @@ FILLER1 VARCHAR(799)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb  5 09:39:50 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '448' , 
-ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '448' , 
-ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
-ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
-ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '1 Seconds' , 
-ActaName_8 = 'RDatabase_Object_Type',ActaValue_8 = 'TABLE' , 
-ActaName_9 = 'RTable_Type',ActaValue_9 = 'TABLE' , 
-ActaName_10 = 'RDescription',ActaValue_10 = '' , 
-ActaName_11 = 'REstimated_Row_Count',ActaValue_11 = '50000' , 
-ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'yes' , 
-ActaName_13 = 'RSavedAfterCheckOut',ActaValue_13 = 'YES' , 
-ActaName_14 = 'RDate_modified',ActaValue_14 = 'Tue Feb  5 09:39:24 2019' )
+ AlGUIComment (ActaName_1 = 'RDatabase_Object_Type',ActaValue_1 = 'TABLE' , 
+ActaName_2 = 'RTable_Type',ActaValue_2 = 'TABLE' , 
+ActaName_3 = 'RDescription',ActaValue_3 = '' , 
+ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
+ActaName_5 = 'RLoader_Is_Template_Table',ActaValue_5 = 'no' , 
+ActaName_6 = 'RSavedAfterCheckOut',ActaValue_6 = 'YES' , 
+ActaName_7 = 'RDate_modified',ActaValue_7 = 'Tue Feb  5 14:02:02 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb 12 12:33:52 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '0' , 
+ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '0' , 
+ActaName_12 = 'RNumber_Of_Updates',ActaValue_12 = '0' , 
+ActaName_13 = 'RNumber_Of_Deletes',ActaValue_13 = '0' , 
+ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '1 Seconds' )
 CREATE TABLE DS_TARGET.STG_SAT.PCIMPEXT_SZ(CODENT_D VARCHAR(4)  NULL  SET("Description" = 'PCIMPEXT_SZ.CODENT_D', "ui_mapping_text" = 'PCIMPEXT_SZ.CODENT_D'), 
 NSECFIC_D DECIMAL(10, 0)  NULL  SET("Description" = 'PCIMPEXT_SZ.NSECFIC_D', "ui_mapping_text" = 'PCIMPEXT_SZ.NSECFIC_D'), 
 TIPOCINTA_D DECIMAL(2, 0)  NULL  SET("Description" = 'PCIMPEXT_SZ.TIPOCINTA_D', "ui_mapping_text" = 'PCIMPEXT_SZ.TIPOCINTA_D'), 
@@ -1883,9 +1883,9 @@ FILLER1 VARCHAR(799)  NULL  SET("Description" = 'PCIMPEXT_SZ.FILLER1', "ui_mappi
 SET("db_alias_name" = 'STG_SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '4936' , 
+ AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '0' , 
 ActaName_2 = 'RNumber_Of_Rows_Rejected',ActaValue_2 = '0' , 
-ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '4936' , 
+ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '0' , 
 ActaName_4 = 'RNumber_Of_Updates',ActaValue_4 = '0' , 
 ActaName_5 = 'RNumber_Of_Deletes',ActaValue_5 = '0' , 
 ActaName_6 = 'RElapsed_Time_For_Load',ActaValue_6 = '1 Seconds' , 
@@ -1897,7 +1897,7 @@ ActaName_11 = 'RSavedAfterCheckOut',ActaValue_11 = 'YES' ,
 ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'no' , 
 ActaName_13 = 'RDate_modified',ActaValue_13 = 'Tue Jan 22 15:12:10 2019' , 
 ActaName_14 = 'RDate_created',ActaValue_14 = 'Fri Dec 21 12:01:02 2018' , 
-ActaName_15 = 'RDate_last_loaded',ActaValue_15 = 'Tue Feb  5 09:40:05 2019' )
+ActaName_15 = 'RDate_last_loaded',ActaValue_15 = 'Tue Feb 12 12:34:06 2019' )
 CREATE TABLE DS_TARGET.SAT.PCIMPEXT_TX(IDENTIFICADOR_EJECUCION INT  NULL , 
 CODENT_D VARCHAR(4)  NULL , 
 NSECFIC_D DECIMAL(10, 0)  NULL , 
@@ -1925,13 +1925,13 @@ FILLER1 VARCHAR(830)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb  5 09:40:00 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '4936' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb 12 12:34:01 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '0' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '4936' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '0' , 
 ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
 ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
-ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '1 Seconds' , 
+ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '0 Seconds' , 
 ActaName_8 = 'RDatabase_Object_Type',ActaValue_8 = 'TABLE' , 
 ActaName_9 = 'RTable_Type',ActaValue_9 = 'TABLE' , 
 ActaName_10 = 'RDescription',ActaValue_10 = '' , 
@@ -1964,348 +1964,6 @@ IMPMIN DECIMAL(17, 2)  NULL  SET("Description" = 'PCIMPEXT_TX.IMPMIN', "ui_mappi
 FILLER1 VARCHAR(830)  NULL  SET("Description" = 'PCIMPEXT_TX.FILLER1', "ui_mapping_text" = 'PCIMPEXT_TX.FILLER1')) 
 SET("db_alias_name" = 'STG_SAT')
 ;
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Fri Dec 14 15:48:11 2018', "ActaValue_6" = 'Wed Jan 23 19:03:22 2019', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '
-
-
-$L_NOMBRE_TABLA = workflow_name( );
-$L_NOMBRE_TABLA = replace_substr( $L_NOMBRE_TABLA , \'WF_\', \'\');
-$L_NOMBRE_TABLA = replace_substr( $L_NOMBRE_TABLA , \'__R\', \'\');
-$L_ID_EJECUCION = $P_ID_EJECUCION ;
-print( \'--------------------ENTRANDO A CUENTA DE DATOS  [$L_ID_EJECUCION]\');
-
-$L_CUANTOS_LLEVA = sql( \'DS_CONTROL\', \'SELECT NUM_FILAS_INS FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-print( \'CUENTA ACTUAL: \' || $L_CUANTOS_LLEVA);
-
-
-IF ($L_CUANTOS_LLEVA IS null )
-begin
-    $L_CUANTOS_LLEVA = 0;	
-end
-
-
-#print( \'SELECT COUNT(*) FROM SAT.[$L_NOMBRE_TABLA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-$L_SUMA = sql( \'DS_TARGET\', \'SELECT COUNT(*) FROM SAT.[$L_NOMBRE_TABLA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-print( $L_SUMA);
-
-
-
-$L_SUMA = $L_SUMA + $L_CUANTOS_LLEVA ;
-
-sql( \'DS_CONTROL\', \'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = [$L_SUMA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-sql( \'DS_CONTROL\', \'COMMIT\');
-
-RETURN 0;
-
-', "x" = '-1', "y" = '-1')
-CREATE FUNCTION CF_CUENTA_DATOS($P_ID_EJECUCION INT  IN )
-RETURNS  INT 
-DECLARE
-     $L_NOMBRE_TABLA VARCHAR(50) ;
-     $L_CUANTOS_LLEVA INT ;
-     $L_SUMA INT ;
-     $L_ID_EJECUCION INT ;
-BEGIN
-$L_NOMBRE_TABLA = workflow_name();$L_NOMBRE_TABLA = replace_substr($L_NOMBRE_TABLA, 'WF_', '');$L_NOMBRE_TABLA = replace_substr($L_NOMBRE_TABLA, '__R', '');$L_ID_EJECUCION = $P_ID_EJECUCION;print('--------------------ENTRANDO A CUENTA DE DATOS  [$L_ID_EJECUCION]');$L_CUANTOS_LLEVA = sql('DS_CONTROL', 'SELECT NUM_FILAS_INS FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');print(('CUENTA ACTUAL: ' || $L_CUANTOS_LLEVA));IF (($L_CUANTOS_LLEVA IS  NULL ) )
-BEGIN
-$L_CUANTOS_LLEVA = 0;END
-$L_SUMA = sql('DS_TARGET', 'SELECT COUNT(*) FROM SAT.[$L_NOMBRE_TABLA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');print($L_SUMA);$L_SUMA = ($L_SUMA + $L_CUANTOS_LLEVA);sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = [$L_SUMA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'COMMIT');RETURN 0;
-END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 13:29:48 2018', "ActaValue_6" = 'Wed Jan 30 19:19:18 2019', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '######################################################################
-## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
-##                                                                  ##
-## 11/12/2018                                                       ##
-##                                                                  ##
-## CREADO POR JAVIER LOPEZ                                          ##
-## GYSSA                                                            ##
-######################################################################
-
-##ELIMINAMOS PREFIJO WF Y REEMPLAZAMOS __ POR . PARA QUE HAGA MATCH CON LO QUE SE TIENE EN LA TABLA DE MALLAS
-$L_NOMBRE_WF = replace_substr(workflow_name( ), \'__\', \'.\');
-$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, \'WF_\', \'\');
-
-
-##OBTENEMOS ID DE MALLA POR MEDIO DE LA TABLA CNF.MALLAS
-$L_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\'\');
-
-
-
-##OBTENEMOS EL ID DE EJECUCIÓN DE LA MALLA QUE ESTÉ CON ESTADO CARGADO
-$L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\\\'CARGADO\\\',\\\'LISTADO\\\') AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
-#print( \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
-print( $L_ID_EJECUCION );
-
-##INICIAMOS VARIABLES
-$L_ESTADO  = \'INICIADO\';
-$L_CURRENT_DATE = sysdate( ) ;
-
-
-try
-    
-	begin
-	##INICIO DE TRANASCCIÓN
-	SQL(\'DS_CONTROL\', \'BEGIN TRANSACTION\');
-
-	##CAMBIO DE ESTADO A INICIADO EN TABLA DE CONTROL PARA LA MALLA QUE SE EJECUTANDO
-	sql( \'DS_CONTROL\', \'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \\\'[$L_ESTADO]\\\' WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-	sql( \'DS_CONTROL\', \'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = 0 WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-	
-
-	SQL(\'DS_CONTROL\', \'COMMIT\');
-    print( \'**********************************************************************\');
-    print( \'****************TERMINANDO INSERCION CONTROL_EJECUCION****************\');
-    print( \'**********************************************************************\');
-	
-
-	print( \'**********************************************************************\');
-	PRINT( \'********TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION*********\');
-	print( \'**********************************************************************\');
-
-    
-
-	RETURN $L_ID_EJECUCION ;		
-	end
-catch ( all  )
-	begin
-	    print( \'********************************************************************************************\');
-		print( \'**********OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION**********\');
-		print( \'********************************************************************************************\');
-		RETURN -1;
-	end
-', "x" = '-1', "y" = '-1')
-CREATE FUNCTION CF_EJECUCION_MALLA( )
-RETURNS  INT 
-DECLARE
-     $L_CURRENT_DATE DATE ;
-     $L_ID_MALLA INT ;
-     $L_NOMBRE_WF VARCHAR(50) ;
-     $L_ESTADO VARCHAR(50) ;
-     $L_REPROCESO INT ;
-     $L_ID_EJECUCION INT ;
-BEGIN
-$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');$L_ID_MALLA = sql('DS_CONTROL', 'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\'CARGADO\',\'LISTADO\') AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]');print($L_ID_EJECUCION);$L_ESTADO = 'INICIADO';$L_CURRENT_DATE = sysdate();TRY
-BEGIN
-sql('DS_CONTROL', 'BEGIN TRANSACTION');sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \'[$L_ESTADO]\' WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = 0 WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'COMMIT');print('**********************************************************************');print('****************TERMINANDO INSERCION CONTROL_EJECUCION****************');print('**********************************************************************');print('**********************************************************************');print('********TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION*********');print('**********************************************************************');RETURN $L_ID_EJECUCION;
-END
-CATCH (210101)
-BEGIN
-print('********************************************************************************************');print('**********OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION**********');print('********************************************************************************************');RETURN -1;
-END
-
-END_TRY
-END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Wed Dec 19 10:28:20 2018', "ActaValue_6" = 'Wed Dec 19 11:23:14 2018', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '
-$L_TABLE = replace_substr( $P_WF, \'WF_\', \'\');
-$L_TABLE = replace_substr( $L_TABLE, \'__R\', \'\');
-
-$L_JOB = replace_substr( job_name( ), \'JOB_\', \'\');
-$L_JOB = replace_substr( $L_JOB , \'__\', \'.\');
-
-
-
-$L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE NOMBRE_ARCHIVO LIKE \\\'[$L_JOB]\\\'\');
-
-
-sql( \'DS_TARGET\', \'DELETE FROM SAT.[$L_TABLE] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-sql( \'DS_TARGET\', \'COMMIT\');
-
-RETURN $L_ID_EJECUCION ;', "x" = '-1', "y" = '-1')
-CREATE FUNCTION CF_ELIMINA_DATOS($P_WF VARCHAR(50)  IN )
-RETURNS  INT 
-DECLARE
-     $L_TABLE VARCHAR(50) ;
-     $L_ID_EJECUCION INT ;
-     $L_JOB VARCHAR(50) ;
-BEGIN
-$L_TABLE = replace_substr($P_WF, 'WF_', '');$L_TABLE = replace_substr($L_TABLE, '__R', '');$L_JOB = replace_substr(job_name(), 'JOB_', '');$L_JOB = replace_substr($L_JOB, '__', '.');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE NOMBRE_ARCHIVO LIKE \'[$L_JOB]\'');sql('DS_TARGET', 'DELETE FROM SAT.[$L_TABLE] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_TARGET', 'COMMIT');RETURN $L_ID_EJECUCION;
-END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 12:14:53 2018', "ActaValue_6" = 'Fri Dec 14 11:25:44 2018', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '######################################################################
-## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
-##                                                                  ##
-## 11/12/2018                                                       ##
-##                                                                  ##
-## CREADO POR JAVIER LOPEZ                                          ##
-## GYSSA                                                            ##
-######################################################################
-
-##ENVIO DE CORREO ELECTRONICO ANTE ERROR
-$L_EMAIL = sql(\'DS_CONTROL\', \'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \\\'%EMAIL_NOTIFICACION%\\\'\');
-
-
-$L_EXEC = smtp_to($L_EMAIL,$P_SBJ,$P_MSG,10,10);
-
-
-RETURN $L_EXEC;', "x" = '-1', "y" = '-1')
-CREATE FUNCTION CF_ENVIO_CORREO($P_SBJ VARCHAR(100)  IN, $P_MSG VARCHAR(1000)  IN )
-RETURNS  INT 
-DECLARE
-     $L_EMAIL VARCHAR(1000) ;
-     $L_EXEC VARCHAR(1000) ;
-BEGIN
-$L_EMAIL = sql('DS_CONTROL', 'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%EMAIL_NOTIFICACION%\'');$L_EXEC = smtp_to($L_EMAIL, $P_SBJ, $P_MSG, 10, 10);RETURN $L_EXEC;
-END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 16:39:09 2018', "ActaValue_6" = 'Fri Dec 14 15:23:09 2018', "InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '54', "ui_script_text" = '######################################################################
-## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
-##                                                                  ##
-## 11/12/2018                                                       ##
-##                                                                  ##
-## CREADO POR JAVIER LOPEZ                                          ##
-## GYSSA                                                            ##
-######################################################################
-
-##ELIMINAMOS PREFIJO WF Y REEMPLAZAMOS __ POR . PARA QUE HAGA MATCH CON LO QUE SE TIENE EN LA TABLA DE MALLAS
-$L_NOMBRE_WF = replace_substr(workflow_name( ), \'__\', \'.\');
-$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, \'WF_\', \'\');
-
-##OBTENEMOS ID DE MALLA POR MEDIO DE LA TABLA CNF.MALLAS
-$L_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\'\');
-
-##OBTENEMOS EL ID DE EJECUCIÓN DE LA MALLA QUE ESTÉ CON ESTADO CARGADO
-$L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
-
-##INICIAMOS VARIABLES
-$L_ESTADO  = \'FINALIZADO\';
-$L_CURRENT_DATE = sysdate( ) ;
-
-try
-    
-	begin
-	##INICIO DE TRANASCCIÓN
-	
-	SQL(\'DS_CONTROL\', \'BEGIN TRANSACTION\');	
-	
-	##CAMBIO DE ESTADO A FINALIZADO EN TABLA DE CONTROL PARA LA MALLA QUE SE EJECUTANDO
-	sql( \'DS_CONTROL\', \'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \\\'[$L_ESTADO]\\\' WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');	
-
-
-	
-	SQL(\'DS_CONTROL\', \'COMMIT\');
-    print( \'**********************************************************\');
-    print( \'**********TERMINANDO INSERCION CONTROL_EJECUCION**********\');
-	print( \'**********************************************************\');
-
-	
-
-	print( \'************************************************************************\');
-	PRINT(\'**********TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION**********\');
-	print( \'************************************************************************\');
-	
-	
-	
-	RETURN $L_ID_EJECUCION ;		
-	end
-catch ( all  )
-	begin
-	    print( \'********************************************************************************************\');
-		print( \'**********OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION**********\');
-		print( \'********************************************************************************************\');
-		RETURN -1;
-	end', "x" = '-1', "y" = '-1')
-CREATE FUNCTION CF_FIN_MALLA( )
-RETURNS  INT 
-DECLARE
-     $L_NOMBRE_WF VARCHAR(50) ;
-     $L_ID_MALLA INT ;
-     $L_ID_EJECUCION INT ;
-     $L_ESTADO VARCHAR(25) ;
-     $L_CURRENT_DATE DATETIME(9) ;
-     $L_CUENTA_DATOS INT ;
-     $L_TABLA_ACTUAL INT ;
-     $L_CUENTA_CONTROL INT ;
-BEGIN
-$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');$L_ID_MALLA = sql('DS_CONTROL', 'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]');$L_ESTADO = 'FINALIZADO';$L_CURRENT_DATE = sysdate();TRY
-BEGIN
-sql('DS_CONTROL', 'BEGIN TRANSACTION');sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \'[$L_ESTADO]\' WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'COMMIT');print('**********************************************************');print('**********TERMINANDO INSERCION CONTROL_EJECUCION**********');print('**********************************************************');print('************************************************************************');print('**********TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION**********');print('************************************************************************');RETURN $L_ID_EJECUCION;
-END
-CATCH (210101)
-BEGIN
-print('********************************************************************************************');print('**********OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION**********');print('********************************************************************************************');RETURN -1;
-END
-
-END_TRY
-END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 14:57:03 2018', "ActaValue_6" = 'Fri Dec 14 11:29:45 2018', "InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '54', "ui_script_text" = '######################################################################
-## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
-##                                                                  ##
-## 11/12/2018                                                       ##
-##                                                                  ##
-## CREADO POR JAVIER LOPEZ                                          ##
-## GYSSA                                                            ##
-######################################################################
-
-##ELIMINAMOS PREFIJO WF Y REEMPLAZAMOS __ POR . PARA QUE HAGA MATCH CON LO QUE SE TIENE EN LA TABLA DE MALLAS
-$L_NOMBRE_WF = replace_substr(workflow_name( ), \'__\', \'.\');
-$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, \'WF_\', \'\');
-
-
-print( \'PROCESO NORMAL INICIO\');
-##OBTENEMOS ID DE MALLA POR MEDIO DE LA TABLA CNF.MALLAS
-print( \'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\'\');
-$L_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\'\');
-
-##SE BUSCA SI EXISTE COMBINACIÓN DE REPROCESO CON ID_MALLA, SI HAY VALOR QUE COINCIDE
-##ES REPROCESO Y ENTRA EN EL FLUJO DEL ELSE, SI NO, ENTRA EN FLUJO DE PRIMER PROCESO
-print( \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
-$L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
-
-
-print( \'SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-$P_TIPO_PROCESO  = sql( \'DS_CONTROL\', \'SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-
-
-RETURN $P_TIPO_PROCESO;', "x" = '-1', "y" = '-1')
-CREATE FUNCTION CF_PROCESO_NORMAL( )
-RETURNS  INT 
-DECLARE
-     $L_NOMBRE_WF VARCHAR(50) ;
-     $L_ID_MALLA INT ;
-     $L_ID_EJECUCION INT ;
-     $P_TIPO_PROCESO INT ;
-     $L_VALOR_REPROCESO INT ;
-BEGIN
-$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');print('PROCESO NORMAL INICIO');print('SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');$L_ID_MALLA = sql('DS_CONTROL', 'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');print('SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]');print('SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');$P_TIPO_PROCESO = sql('DS_CONTROL', 'SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');RETURN $P_TIPO_PROCESO;
-END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 11:01:08 2018', "ActaValue_6" = 'Wed Jan 30 19:13:26 2019', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '######################################################################
-## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
-##                                                                  ##
-## 11/12/2018                                                       ##
-##                                                                  ##
-## CREADO POR JAVIER LOPEZ                                          ##
-## GYSSA                                                            ##
-######################################################################
-
-##ELIMINA CARACTERES ESPACIALES DEL NOMBRE DEL WF
-$L_NOMBRE_WF = replace_substr(workflow_name( ), \'__\', \'.\');
-$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, \'WF_\', \'\');
-
-$L_VALOR_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\' \');
-$L_VALOR_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\\\'CARGADO\\\',\\\'LISTADO\\\') AND IDENTIFICADOR_MALLA = \' || $L_VALOR_ID_MALLA);
-#print( \'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS_EJECUCION WHERE ESTADO NOT IN (\\\'FINALIZADO\\\',\\\'INICIADO\\\') AND IDENTIFICADOR_MALLA = \' || $L_VALOR_ID_MALLA);
-
-IF($L_VALOR_ID_MALLA IS NOT null)
-begin
-	$L_EXISTE_MALLA = 1;
-
-end
-else begin
-    $L_EXISTE_MALLA = 0	;
-end
-
-RETURN $L_EXISTE_MALLA ;', "x" = '-1', "y" = '-1')
-CREATE FUNCTION CF_VERIFICA_MALLA( )
-RETURNS  INT 
-DECLARE
-     $L_NOMBRE_WF VARCHAR(50) ;
-     $L_EXISTE_MALLA INT ;
-     $L_VALOR_ID_MALLA INT ;
-BEGIN
-$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');$L_VALOR_ID_MALLA = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\' ');$L_VALOR_ID_MALLA = sql('DS_CONTROL', ('SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\'CARGADO\',\'LISTADO\') AND IDENTIFICADOR_MALLA = ' || $L_VALOR_ID_MALLA));IF (($L_VALOR_ID_MALLA IS NOT  NULL ) )
-BEGIN
-$L_EXISTE_MALLA = 1;END
-ELSE
-BEGIN
-$L_EXISTE_MALLA = 0;END
-RETURN $L_EXISTE_MALLA;
-END
  AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:02 2018', "ActaValue_3" = 'Tue Jan 22 15:12:13 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_PCIMPEXT_CI::'985b8273-992a-43dc-acb8-d8c4a9981b0a'
 BEGIN
@@ -2641,7 +2299,7 @@ SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connec
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:02 2018', "ActaValue_3" = 'Mon Feb  4 20:45:22 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:02 2018', "ActaValue_3" = 'Mon Feb  4 20:46:49 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_PCIMPEXT_EX::'02412158-0de4-40cd-ad1d-f4d19780ae64'
 BEGIN
 
@@ -2783,8 +2441,8 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 </LDRConfiguration>
 </LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
 
-ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Description', "Input_2nd_Column_Name" = 'Type', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = '', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>366</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '128', "y" = '-600')
-GUID::'4158d566-aebf-4de2-ba31-a7e7f5543663' READ TABLE DS_TARGET.STG_SAT.PCIMPEXT_EX OUTPUT(PCIMPEXT_EX)
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '54', "x" = '128', "y" = '-600')
+GUID::'bab80b4c-a1d6-4346-be08-373f48b82e56' READ TABLE DS_TARGET.STG_SAT.PCIMPEXT_EX OUTPUT(PCIMPEXT_EX)
 SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
 
 END
@@ -3149,13 +2807,9 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:02 2018', "ActaValue_3" = 'Thu Jan 31 10:47:07 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:02 2018', "ActaValue_3" = 'Tue Feb  5 10:54:57 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_PCIMPEXT_ME::'aec19add-15e4-44eb-945d-e42f2726ccca'
 BEGIN
-
-ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Description', "Input_2nd_Column_Name" = 'Type', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = '', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>369</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
-GUID::'edd97af0-04b3-4667-9979-d672081d6ebf' READ TABLE DS_TARGET.STG_SAT.PCIMPEXT_ME OUTPUT(PCIMPEXT_ME)
-SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'PCIMPEXT_ME', "x" = '480', "y" = '-90')
 GUID::'c6fa8622-33e3-42ed-b131-3a023c42127d' CREATE VIEW Query( IDENTIFICADOR_EJECUCION INT  SET( "ui_mapping_text" = '$G_ID_EJECUCION') ,
@@ -3187,7 +2841,7 @@ SELECT $G_ID_EJECUCION, PCIMPEXT_ME.CODENT_D, PCIMPEXT_ME.NSECFIC_D, PCIMPEXT_ME
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
-ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = '', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>413</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>413</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
 GUID::'180bf86a-bd35-4834-b454-cf4fe228e4d4' LOAD TABLE DS_TARGET.SAT.PCIMPEXT_ME INPUT(Query)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
@@ -3239,13 +2893,17 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 </LDRConfiguration>
 </LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
 
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
+GUID::'1fc74265-5468-4732-97e9-65c009af0c95' READ TABLE DS_TARGET.STG_SAT.PCIMPEXT_ME OUTPUT(PCIMPEXT_ME)
+SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
+
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:02 2018', "ActaValue_3" = 'Tue Feb  5 09:27:04 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:02 2018', "ActaValue_3" = 'Tue Feb  5 10:54:57 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_PCIMPEXT_MI::'6dae5aa2-92c2-4b81-9e00-31cdd00a86d8'
 BEGIN
 
-ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = '', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>400</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>400</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
 GUID::'8558477e-994b-4ef2-a231-1119d6145c70' LOAD TABLE DS_TARGET.SAT.PCIMPEXT_MI INPUT(Query)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
@@ -3297,10 +2955,6 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 </LDRConfiguration>
 </LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
 
-ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>356</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '138', "y" = '-294')
-GUID::'16df64e5-daee-4aa0-aa14-0d69926979dd' READ TABLE DS_TARGET.STG_SAT.PCIMPEXT_MI OUTPUT(PCIMPEXT_MI)
-SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
-
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'PCIMPEXT_MI', "x" = '550', "y" = '-394')
 GUID::'cf56e2c8-b634-456d-8ce9-ad43111ac3d8' CREATE VIEW Query( IDENTIFICADOR_EJECUCION INT  SET( "ui_mapping_text" = '$G_ID_EJECUCION') ,
  CODENT_D VARCHAR(4)  SET( "ui_mapping_text" = 'PCIMPEXT_MI.CODENT_D') ,
@@ -3337,6 +2991,10 @@ GUID::'cf56e2c8-b634-456d-8ce9-ad43111ac3d8' CREATE VIEW Query( IDENTIFICADOR_EJ
 SELECT $G_ID_EJECUCION, PCIMPEXT_MI.CODENT_D, PCIMPEXT_MI.NSECFIC_D, PCIMPEXT_MI.TIPOCINTA_D, PCIMPEXT_MI.TIPOREG_D, PCIMPEXT_MI.FILLER_D, PCIMPEXT_MI.NUMREGPROC, PCIMPEXT_MI.CODENT, PCIMPEXT_MI.CENTALTA, PCIMPEXT_MI.CUENTA, PCIMPEXT_MI.PAN, PCIMPEXT_MI.TIPOREG, PCIMPEXT_MI.NUMORDEN, PCIMPEXT_MI.NUMSECIMP, PCIMPEXT_MI.NUMMOVIMP, PCIMPEXT_MI.CLAMON, PCIMPEXT_MI.TIPOLIN, PCIMPEXT_MI.INDNORCOR, PCIMPEXT_MI.TIPOFAC, PCIMPEXT_MI.FECFAC, PCIMPEXT_MI.IMPORTE, PCIMPEXT_MI.FECPROCES, PCIMPEXT_MI.FECCONTA, PCIMPEXT_MI.ORIGENOPE, PCIMPEXT_MI.TIPDOCPAG, PCIMPEXT_MI.REFDOCPAG, PCIMPEXT_MI.IMPAMORT, PCIMPEXT_MI.TIPDEVOL, PCIMPEXT_MI.FEC2PRES, PCIMPEXT_MI.IMPIMPTO, PCIMPEXT_MI.FILLER1 FROM PCIMPEXT_MI 
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '54', "x" = '138', "y" = '-294')
+GUID::'851d18d0-10bb-49eb-8c56-775cd8ea74a0' READ TABLE DS_TARGET.STG_SAT.PCIMPEXT_MI OUTPUT(PCIMPEXT_MI)
+SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
@@ -3885,7 +3543,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:03 2018', "ActaValue_3" = 'Tue Jan 22 15:12:14 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:03 2018', "ActaValue_3" = 'Tue Feb 12 11:55:14 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_PCIMPEXT_RI::'7cb7b510-2d84-49d4-9e67-e644d41db8f1'
 BEGIN
 
@@ -3916,11 +3574,11 @@ GUID::'dd5401e9-cb5d-46de-8619-f16a9b81e864' CREATE VIEW Query( IDENTIFICADOR_EJ
  IMPREC DECIMAL(17, 2)  SET( "ui_mapping_text" = 'PCIMPEXT_RI.IMPREC') ,
  IMPAGO DECIMAL(17, 2)  SET( "ui_mapping_text" = 'PCIMPEXT_RI.IMPAGO') ,
  IMPAPL DECIMAL(17, 2)  SET( "ui_mapping_text" = 'PCIMPEXT_RI.IMPAPL') ,
- FECULTAPL DATE  SET( "ui_mapping_text" = 'PCIMPEXT_RI.FECULTAPL') ,
- FECENVCOB DATE  SET( "ui_mapping_text" = 'PCIMPEXT_RI.FECENVCOB') ,
+ FECULTAPL DATE  SET( "ui_mapping_text" = 'to_date(PCIMPEXT_RI.FECULTAPL,\'YYYY-MM-DD\')') ,
+ FECENVCOB DATE  SET( "ui_mapping_text" = 'to_date(PCIMPEXT_RI.FECENVCOB,\'YYYY-MM-DD\')') ,
  FILLER1 VARCHAR(810)  SET( "ui_mapping_text" = 'PCIMPEXT_RI.FILLER1')  )
  AS
-SELECT $G_ID_EJECUCION, PCIMPEXT_RI.CODENT_D, PCIMPEXT_RI.NSECFIC_D, PCIMPEXT_RI.TIPOCINTA_D, PCIMPEXT_RI.TIPOREG_D, PCIMPEXT_RI.FILLER_D, PCIMPEXT_RI.NUMREGPROC, PCIMPEXT_RI.CODENT, PCIMPEXT_RI.CENTALTA, PCIMPEXT_RI.CUENTA, PCIMPEXT_RI.PAN, PCIMPEXT_RI.TIPOREG, PCIMPEXT_RI.NUMORDEN, PCIMPEXT_RI.CLAMON, PCIMPEXT_RI.NUMSECIMP, PCIMPEXT_RI.NUMSECREC, PCIMPEXT_RI.FECALTA, PCIMPEXT_RI.FECEMIMOV, PCIMPEXT_RI.FECVENMOV, PCIMPEXT_RI.IMPREC, PCIMPEXT_RI.IMPAGO, PCIMPEXT_RI.IMPAPL, PCIMPEXT_RI.FECULTAPL, PCIMPEXT_RI.FECENVCOB, PCIMPEXT_RI.FILLER1 FROM PCIMPEXT_RI 
+SELECT $G_ID_EJECUCION, PCIMPEXT_RI.CODENT_D, PCIMPEXT_RI.NSECFIC_D, PCIMPEXT_RI.TIPOCINTA_D, PCIMPEXT_RI.TIPOREG_D, PCIMPEXT_RI.FILLER_D, PCIMPEXT_RI.NUMREGPROC, PCIMPEXT_RI.CODENT, PCIMPEXT_RI.CENTALTA, PCIMPEXT_RI.CUENTA, PCIMPEXT_RI.PAN, PCIMPEXT_RI.TIPOREG, PCIMPEXT_RI.NUMORDEN, PCIMPEXT_RI.CLAMON, PCIMPEXT_RI.NUMSECIMP, PCIMPEXT_RI.NUMSECREC, PCIMPEXT_RI.FECALTA, PCIMPEXT_RI.FECEMIMOV, PCIMPEXT_RI.FECVENMOV, PCIMPEXT_RI.IMPREC, PCIMPEXT_RI.IMPAGO, PCIMPEXT_RI.IMPAPL, to_date(PCIMPEXT_RI.FECULTAPL, 'YYYY-MM-DD'), to_date(PCIMPEXT_RI.FECENVCOB, 'YYYY-MM-DD'), PCIMPEXT_RI.FILLER1 FROM PCIMPEXT_RI 
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
@@ -4158,7 +3816,7 @@ SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:03 2018', "ActaValue_3" = 'Tue Feb  5 09:38:32 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:03 2018', "ActaValue_3" = 'Tue Feb  5 09:39:23 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_PCIMPEXT_SZ::'4ea61f2a-2199-420a-b8d5-861aedb8758b'
 BEGIN
 
@@ -4214,10 +3872,6 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 </LDRConfiguration>
 </LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
 
-ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>369</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
-GUID::'2d3fb7b0-4047-49d9-a138-be92de978a1a' READ TABLE DS_TARGET.STG_SAT.PCIMPEXT_SZ OUTPUT(PCIMPEXT_SZ)
-SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
-
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'PCIMPEXT_SZ', "x" = '480', "y" = '-90')
 GUID::'8998ba7c-e9be-4838-a7f0-2369c2a18fcd' CREATE VIEW Query_1( IDENTIFICADOR_EJECUCION INT  SET( "ui_mapping_text" = '$G_ID_EJECUCION') ,
  CODENT_D VARCHAR(4)  SET( "ui_mapping_text" = 'PCIMPEXT_SZ.CODENT_D') ,
@@ -4248,6 +3902,10 @@ GUID::'8998ba7c-e9be-4838-a7f0-2369c2a18fcd' CREATE VIEW Query_1( IDENTIFICADOR_
 SELECT $G_ID_EJECUCION, PCIMPEXT_SZ.CODENT_D, PCIMPEXT_SZ.NSECFIC_D, PCIMPEXT_SZ.TIPOCINTA_D, PCIMPEXT_SZ.TIPOREG_D, PCIMPEXT_SZ.FILLER_D, PCIMPEXT_SZ.NUMREGPROC, PCIMPEXT_SZ.CODENT, PCIMPEXT_SZ.CENTALTA, PCIMPEXT_SZ.CUENTA, PCIMPEXT_SZ.PAN, PCIMPEXT_SZ.TIPOREG, PCIMPEXT_SZ.NUMORDEN, PCIMPEXT_SZ.NUMEXTCTA, PCIMPEXT_SZ.CLAMON, PCIMPEXT_SZ.TIPLINEA, PCIMPEXT_SZ.CAPACT, PCIMPEXT_SZ.INTACT, PCIMPEXT_SZ.RECACT, PCIMPEXT_SZ.COMACT, PCIMPEXT_SZ.PAGACT, PCIMPEXT_SZ.COREACT, PCIMPEXT_SZ.CREACT, PCIMPEXT_SZ.DEBACT, PCIMPEXT_SZ.FILLER1 FROM PCIMPEXT_SZ 
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
+GUID::'00a73d44-227b-4e94-af86-e3e35ee4026c' READ TABLE DS_TARGET.STG_SAT.PCIMPEXT_SZ OUTPUT(PCIMPEXT_SZ)
+SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
@@ -4343,13 +4001,13 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:03 2018', "ActaValue_3" = 'Tue Jan 22 15:12:14 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:03 2018', "ActaValue_3" = 'Thu Jan 31 10:46:51 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_PCIMPEXT_CI::'a70ebb16-0ec5-495a-8aa0-884de7207015'
 BEGIN
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Description', "Input_2nd_Column_Name" = 'Type', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>194</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
 GUID::'a4518af1-abd7-4846-b316-4f692a296f38' READ __BODI_COPYBOOK_COBOL MPJ51151 OUTPUT(PCIMPEXT_CI)
-SET("Cbl_capture_data_conversion" = 'no', "Cbl_file_dir" = '/datos/SAT/mallas', "Cbl_rdr_current_schema" = 'PCIMPEXT_CI', "cache" = 'no', "connection_port" = 'no', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'yes', "reader_include_filename" = 'no', "table_weight" = '0');
+SET("Cbl_capture_data_conversion" = 'no', "Cbl_rdr_current_schema" = 'PCIMPEXT_CI', "cache" = 'no', "connection_port" = 'no', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'yes', "reader_include_filename" = 'no', "table_weight" = '0');
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'PCIMPEXT_CI', "x" = '480', "y" = '-90')
 GUID::'bd4b6b8e-70c1-4358-a2f4-99c899f8760d' CREATE VIEW Query( CODENT_D VARCHAR(4)  SET( "Description" = 'PCIMPEXT_CI.CODENT_D', "ui_mapping_text" = 'PCIMPEXT_CI.CODENT_D') ,
@@ -4435,13 +4093,13 @@ SET("LDRLiveLoad" = 'no', "connection_port" = 'no', "ldr_configuration_enabled" 
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:03 2018', "ActaValue_3" = 'Tue Jan 22 15:12:15 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:03 2018', "ActaValue_3" = 'Thu Jan 31 10:46:54 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_PCIMPEXT_CL::'7ac9cf8a-f83d-41b9-aada-db7d761e44d7'
 BEGIN
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Description', "Input_2nd_Column_Name" = 'Type', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>194</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '456', "y" = '-722')
 GUID::'f3fb1835-341c-4c55-89e5-e4ebd7882fd7' READ __BODI_COPYBOOK_COBOL MPJ51151 OUTPUT(PCIMPEXT_CL)
-SET("Cbl_capture_data_conversion" = 'no', "Cbl_file_name" = '$G_NOMBRE_ARCHIVO', "Cbl_rdr_current_schema" = 'PCIMPEXT_CL', "cache" = 'no', "connection_port" = 'no', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'yes', "reader_include_filename" = 'no', "table_weight" = '0');
+SET("Cbl_capture_data_conversion" = 'no', "Cbl_rdr_current_schema" = 'PCIMPEXT_CL', "cache" = 'no', "connection_port" = 'no', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'yes', "reader_include_filename" = 'no', "table_weight" = '0');
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'PCIMPEXT_CL', "x" = '1094', "y" = '-819')
 GUID::'563a0b7f-ad99-4873-8a27-16f3e7d4bd5a' CREATE VIEW Query( CODENT_D VARCHAR(4)  SET( "Description" = 'PCIMPEXT_CL.CODENT_D', "ui_mapping_text" = 'PCIMPEXT_CL.CODENT_D') ,
@@ -4554,13 +4212,13 @@ SET("LDRLiveLoad" = 'no', "connection_port" = 'no', "ldr_configuration_enabled" 
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Dec 20 16:36:46 2018', "ActaValue_3" = 'Mon Feb  4 19:13:18 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Dec 20 16:36:46 2018', "ActaValue_3" = 'Mon Feb  4 19:14:06 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_PCIMPEXT_CU::'b07f4ed8-687f-491b-b541-ac99d1e4f005'
 BEGIN
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Description', "Input_2nd_Column_Name" = 'Type', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>225</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
 GUID::'e9ea2741-a6e4-4610-be0f-171e2515f914' READ __BODI_COPYBOOK_COBOL MPJ51151_CU OUTPUT(PCIMPEXT_CU)
-SET("Cbl_capture_data_conversion" = 'no', "Cbl_file_name" = '$G_NOMBRE_ARCHIVO', "Cbl_rdr_current_schema" = 'PCIMPEXT_CU', "cache" = 'no', "connection_port" = 'no', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'yes', "reader_include_filename" = 'no', "table_weight" = '0');
+SET("Cbl_capture_data_conversion" = 'no', "Cbl_rdr_current_schema" = 'PCIMPEXT_CU', "cache" = 'no', "connection_port" = 'no', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'yes', "reader_include_filename" = 'no', "table_weight" = '0');
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'PCIMPEXT_CU', "x" = '480', "y" = '-90')
 GUID::'992f7b91-477a-450e-9144-2587232140be' CREATE VIEW Query( CODENT_D VARCHAR(4)  SET( "ui_mapping_text" = 'PCIMPEXT_CU.CODENT_D') ,
@@ -4623,7 +4281,7 @@ SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = '', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>413</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
 GUID::'39d64bc9-bb13-4112-bfa8-a12dc991ec11' LOAD TABLE DS_TARGET.STG_SAT.PCIMPEXT_CU INPUT(Query)
-SET("connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
+SET("LDRLiveLoad" = 'no', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
 <bulk_col_delimiter>/127</bulk_col_delimiter>
@@ -4671,11 +4329,11 @@ SET("connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configur
 <use_unicode_varchar>no</use_unicode_varchar>
 <sql_text></sql_text>
 </LDRConfiguration>
-</LDRConfigurations>', "loader_template_table" = 'yes', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
+</LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:03 2018', "ActaValue_3" = 'Mon Feb  4 20:45:22 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:03 2018', "ActaValue_3" = 'Tue Feb 12 11:53:55 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_PCIMPEXT_EX::'bd602fa6-a1bb-4df7-b29b-471443635653'
 BEGIN
 
@@ -4769,8 +4427,8 @@ SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process
 ;
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = '', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>410</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '872', "y" = '-250')
-GUID::'c423a857-83ff-444f-a2de-371f4c40b8ab' LOAD TABLE DS_TARGET.STG_SAT.PCIMPEXT_EX INPUT(Query)
-SET("connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
+GUID::'49cda7da-e3af-46a2-9751-b6dd9d30124e' LOAD TABLE DS_TARGET.STG_SAT.PCIMPEXT_EX INPUT(Query)
+SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
 <bulk_col_delimiter>/127</bulk_col_delimiter>
@@ -4818,17 +4476,17 @@ SET("connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configur
 <use_unicode_varchar>no</use_unicode_varchar>
 <sql_text></sql_text>
 </LDRConfiguration>
-</LDRConfigurations>', "loader_template_table" = 'yes', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
+</LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:03 2018', "ActaValue_3" = 'Tue Jan 22 15:12:15 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:03 2018', "ActaValue_3" = 'Thu Jan 31 10:47:02 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_PCIMPEXT_IC::'dc8db7c9-fe5a-4bc1-a338-c1805fc269e6'
 BEGIN
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Description', "Input_2nd_Column_Name" = 'Type', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>194</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
 GUID::'802f2c90-f21d-4984-97f2-d64feec4bde3' READ __BODI_COPYBOOK_COBOL MPJ51151 OUTPUT(PCIMPEXT_IC)
-SET("Cbl_capture_data_conversion" = 'no', "Cbl_file_name" = '$G_NOMBRE_ARCHIVO', "Cbl_rdr_current_schema" = 'PCIMPEXT_IC', "cache" = 'no', "connection_port" = 'no', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'yes', "reader_include_filename" = 'no', "table_weight" = '0');
+SET("Cbl_capture_data_conversion" = 'no', "Cbl_rdr_current_schema" = 'PCIMPEXT_IC', "cache" = 'no', "connection_port" = 'no', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'yes', "reader_include_filename" = 'no', "table_weight" = '0');
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'PCIMPEXT_IC', "x" = '480', "y" = '-90')
 GUID::'591da008-9f26-46dd-bfbb-77c65bbe1f32' CREATE VIEW Query( CODENT_D VARCHAR(4)  SET( "Description" = 'PCIMPEXT_IC.CODENT_D', "ui_mapping_text" = 'PCIMPEXT_IC.CODENT_D') ,
@@ -4911,7 +4569,7 @@ SET("LDRLiveLoad" = 'no', "connection_port" = 'no', "ldr_configuration_enabled" 
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:03 2018', "ActaValue_3" = 'Tue Jan 22 15:12:15 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:03 2018', "ActaValue_3" = 'Thu Jan 31 10:47:03 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_PCIMPEXT_IL::'19e3f8d9-4234-4465-ba15-b36511a35f27'
 BEGIN
 
@@ -4941,7 +4599,7 @@ SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Description', "Input_2nd_Column_Name" = 'Type', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>194</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
 GUID::'d1962632-7d39-4871-97aa-9b53f3043dac' READ __BODI_COPYBOOK_COBOL MPJ51151 OUTPUT(PCIMPEXT_IL)
-SET("Cbl_capture_data_conversion" = 'no', "Cbl_file_name" = '$G_NOMBRE_ARCHIVO', "Cbl_rdr_current_schema" = 'PCIMPEXT_IL', "cache" = 'no', "connection_port" = 'no', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'yes', "reader_include_filename" = 'no', "table_weight" = '0');
+SET("Cbl_capture_data_conversion" = 'no', "Cbl_rdr_current_schema" = 'PCIMPEXT_IL', "cache" = 'no', "connection_port" = 'no', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'yes', "reader_include_filename" = 'no', "table_weight" = '0');
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>394</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
 GUID::'43a2aff9-ff50-41e2-88c3-7663f81fccea' LOAD TABLE DS_TARGET.STG_SAT.PCIMPEXT_IL INPUT(Query)
@@ -4997,13 +4655,13 @@ SET("LDRLiveLoad" = 'no', "connection_port" = 'no', "ldr_configuration_enabled" 
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:04 2018', "ActaValue_3" = 'Tue Jan 22 15:12:15 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:04 2018', "ActaValue_3" = 'Thu Jan 31 10:47:04 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_PCIMPEXT_LI::'49bca5e2-b531-469b-8e21-282db1fc902a'
 BEGIN
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Description', "Input_2nd_Column_Name" = 'Type', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>194</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
 GUID::'571eb79b-a8ef-4e66-9175-14a038953e56' READ __BODI_COPYBOOK_COBOL MPJ51151 OUTPUT(PCIMPEXT_LI)
-SET("Cbl_capture_data_conversion" = 'no', "Cbl_file_name" = '$G_NOMBRE_ARCHIVO', "Cbl_rdr_current_schema" = 'PCIMPEXT_LI', "cache" = 'no', "connection_port" = 'no', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'yes', "reader_include_filename" = 'no', "table_weight" = '0');
+SET("Cbl_capture_data_conversion" = 'no', "Cbl_rdr_current_schema" = 'PCIMPEXT_LI', "cache" = 'no', "connection_port" = 'no', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'yes', "reader_include_filename" = 'no', "table_weight" = '0');
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'PCIMPEXT_LI', "x" = '480', "y" = '-90')
 GUID::'37c4a6c4-d416-463d-bcfb-230b70cc4405' CREATE VIEW Query( CODENT_D VARCHAR(4)  SET( "Description" = 'PCIMPEXT_LI.CODENT_D', "ui_mapping_text" = 'PCIMPEXT_LI.CODENT_D') ,
@@ -5085,13 +4743,13 @@ SET("LDRLiveLoad" = 'no', "connection_port" = 'no', "ldr_configuration_enabled" 
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:04 2018', "ActaValue_3" = 'Tue Jan 22 15:12:15 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:04 2018', "ActaValue_3" = 'Thu Jan 31 10:47:06 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_PCIMPEXT_MC::'e8325d0c-1860-4a03-9ba6-ae31ab2d1194'
 BEGIN
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Description', "Input_2nd_Column_Name" = 'Type', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>194</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
 GUID::'153eba06-b73a-4cde-8c60-d971f18dce68' READ __BODI_COPYBOOK_COBOL MPJ51151 OUTPUT(PCIMPEXT_MC)
-SET("Cbl_capture_data_conversion" = 'no', "Cbl_file_name" = '$G_NOMBRE_ARCHIVO', "Cbl_rdr_current_schema" = 'PCIMPEXT_MC', "cache" = 'no', "connection_port" = 'no', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'yes', "reader_include_filename" = 'no', "table_weight" = '0');
+SET("Cbl_capture_data_conversion" = 'no', "Cbl_rdr_current_schema" = 'PCIMPEXT_MC', "cache" = 'no', "connection_port" = 'no', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'yes', "reader_include_filename" = 'no', "table_weight" = '0');
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'PCIMPEXT_MC', "x" = '480', "y" = '-90')
 GUID::'cfbbe5d0-5dfe-49e6-b2b1-4936866aacba' CREATE VIEW Query( CODENT_D VARCHAR(4)  SET( "Description" = 'PCIMPEXT_MC.CODENT_D', "ui_mapping_text" = 'PCIMPEXT_MC.CODENT_D') ,
@@ -5178,7 +4836,7 @@ SET("LDRLiveLoad" = 'no', "connection_port" = 'no', "ldr_configuration_enabled" 
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:04 2018', "ActaValue_3" = 'Tue Feb  5 09:01:45 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:04 2018', "ActaValue_3" = 'Tue Feb  5 14:11:12 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_PCIMPEXT_ME::'072bc605-acbf-4763-901e-d3d331188cad'
 BEGIN
 
@@ -5216,8 +4874,8 @@ SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process
 ;
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>413</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '1475', "y" = '-525')
-GUID::'ac3a1f5e-b9a5-48d8-a580-83f30e1b7818' LOAD TABLE DS_TARGET.STG_SAT.PCIMPEXT_ME INPUT(Query)
-SET("connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
+GUID::'8dc82f8f-3ca1-476a-97b5-894127fe5219' LOAD TABLE DS_TARGET.STG_SAT.PCIMPEXT_ME INPUT(Query)
+SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
 <bulk_col_delimiter>/127</bulk_col_delimiter>
@@ -5265,11 +4923,11 @@ SET("connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configur
 <use_unicode_varchar>no</use_unicode_varchar>
 <sql_text></sql_text>
 </LDRConfiguration>
-</LDRConfigurations>', "loader_template_table" = 'yes', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
+</LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:04 2018', "ActaValue_3" = 'Tue Feb  5 09:12:45 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:04 2018', "ActaValue_3" = 'Tue Feb  5 14:11:12 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_PCIMPEXT_MI::'e4574ada-d3fe-4dc5-8a13-0e8319e72507'
 BEGIN
 
@@ -5314,8 +4972,8 @@ SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process
 ;
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>400</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
-GUID::'4b021169-1341-42ef-b308-962ab5d59c9a' LOAD TABLE DS_TARGET.STG_SAT.PCIMPEXT_MI INPUT(Query)
-SET("connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
+GUID::'7004d468-f35d-4263-b79d-b32d0b5b5698' LOAD TABLE DS_TARGET.STG_SAT.PCIMPEXT_MI INPUT(Query)
+SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
 <bulk_col_delimiter>/127</bulk_col_delimiter>
@@ -5363,7 +5021,7 @@ SET("connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configur
 <use_unicode_varchar>no</use_unicode_varchar>
 <sql_text></sql_text>
 </LDRConfiguration>
-</LDRConfigurations>', "loader_template_table" = 'yes', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
+</LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
@@ -6176,7 +5834,7 @@ SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:04 2018', "ActaValue_3" = 'Tue Feb  5 09:38:32 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:04 2018', "ActaValue_3" = 'Tue Feb 12 11:54:50 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_PCIMPEXT_SZ::'1c6eccc7-e5b1-4a07-ac8a-f19ff3722b6f'
 BEGIN
 
@@ -6214,9 +5872,9 @@ SELECT PCIMPEXT_SZ.CODENT_D, PCIMPEXT_SZ.NSECFIC_D, PCIMPEXT_SZ.TIPOCINTA_D, PCI
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
-ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>413</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '1269', "y" = '-196')
-GUID::'e90543f9-0006-4e2e-bd61-8797cadfa939' LOAD TABLE DS_TARGET.STG_SAT.PCIMPEXT_SZ INPUT(Query)
-SET("connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = '', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>413</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '1269', "y" = '-196')
+GUID::'8b0916e0-56c1-4595-a9ad-7a5d78a2875d' LOAD TABLE DS_TARGET.STG_SAT.PCIMPEXT_SZ INPUT(Query)
+SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
 <bulk_col_delimiter>/127</bulk_col_delimiter>
@@ -6264,7 +5922,7 @@ SET("connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configur
 <use_unicode_varchar>no</use_unicode_varchar>
 <sql_text></sql_text>
 </LDRConfiguration>
-</LDRConfigurations>', "loader_template_table" = 'yes', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
+</LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
@@ -6359,7 +6017,7 @@ SET("LDRLiveLoad" = 'no', "connection_port" = 'no', "ldr_configuration_enabled" 
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaName_4" = 'RDescription', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Jan 21 14:15:36 2019', "ActaValue_3" = 'Mon Feb  4 20:26:37 2019', "ActaValue_4" = '04-IMPRESION EXTRACTO DE CREDITO', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaName_4" = 'RDescription', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Jan 21 14:15:36 2019', "ActaValue_3" = 'Tue Feb  5 09:28:31 2019', "ActaValue_4" = '04-IMPRESION EXTRACTO DE CREDITO', "x" = '-1', "y" = '-1')
 CREATE SESSION JOB_MPJ51151::'eef6b282-8668-4bb4-a6ce-666f80d3ab31'( )
 DECLARE
      GLOBAL $G_NOMBRE_JOB VARCHAR(50) ;
@@ -6368,7 +6026,10 @@ DECLARE
      GLOBAL $G_RUTA VARCHAR(1000) ;
      GLOBAL $G_NOMBRE_ARCHIVO VARCHAR(1000) ;
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>288</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INICIAL', "ui_script_text" = '##INICIALIZACIÓN DE VARIABLES
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>288</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INICIAL', "ui_script_text" = 'print(\'version:\');
+print(\'--\' || sql(\'DS_CONTROL\', \'select top 1 version_commit from cnf.version_objetos where object_name = \\\'PCIMPEXT_CU\\\' and object_user = \\\'SAT\\\'\'));
+
+##INICIALIZACIÓN DE VARIABLES
 
 $G_NOMBRE_JOB = job_name( );
 $G_FECHA_PROCESO  = sysdate( );
@@ -6378,7 +6039,7 @@ sql( \'DS_CONTROL\', \'COMMIT\');
 
 ', "x" = '90', "y" = '-90')
 BEGIN_SCRIPT
-$G_NOMBRE_JOB = job_name();$G_FECHA_PROCESO = sysdate();$G_RUTA = sql('DS_CONTROL', 'SELECT VALOR FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'RUTA_ARCHIVO\'');sql('DS_CONTROL', 'COMMIT');END
+print('version:');print(('--' || sql('DS_CONTROL', 'select top 1 version_commit from cnf.version_objetos where object_name = \'PCIMPEXT_CU\' and object_user = \'SAT\'')));$G_NOMBRE_JOB = job_name();$G_FECHA_PROCESO = sysdate();$G_RUTA = sql('DS_CONTROL', 'SELECT VALOR FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'RUTA_ARCHIVO\'');sql('DS_CONTROL', 'COMMIT');END
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try182', "x" = '480', "y" = '-90')
 TRY
 BEGIN
@@ -6396,7 +6057,7 @@ END
 END_TRY
 END
  SET ("job_checkpoint_enabled" = 'no', "job_collect_statistics" = 'no', "job_collect_statistics_monitor" = 'no', "job_create_debug_package" = 'no', "job_enable_assemblers" = 'yes', "job_enable_audit" = 'yes', "job_enable_dataquality" = 'yes', "job_export_repo" = 'no', "job_export_reports" = 'no', "job_guid" = 'eef6b282-8668-4bb4-a6ce-666f80d3ab31', "job_isrecoverable" = 'no', "job_mode" = 'Multi-Process', "job_monitor_sample_rate" = '1000', "job_monitor_timer_rate" = '5', "job_name" = 'JOB_MPJ51151', "job_print_version" = 'no', "job_testmode_enabled" = 'no', "job_trace_abapquery" = 'no', "job_trace_all" = 'no', "job_trace_ascomm" = 'no', "job_trace_assemblers" = 'no', "job_trace_audit" = 'no', "job_trace_dataflow" = 'yes', "job_trace_idoc_file" = 'no', "job_trace_memory_loader" = 'no', "job_trace_memory_reader" = 'no', "job_trace_optimized_dataflow" = 'no', "job_trace_parallel_execution" = 'no', "job_trace_rfc_function" = 'no', "job_trace_row" = 'no', "job_trace_script" = 'no', "job_trace_session" = 'yes', "job_trace_sql_only" = 'no', "job_trace_sqlfunctions" = 'no', "job_trace_sqlloaders" = 'no', "job_trace_sqlreaders" = 'no', "job_trace_sqltransforms" = 'no', "job_trace_stored_procedure" = 'no', "job_trace_table" = 'no', "job_trace_table_reader" = 'no', "job_trace_transform" = 'no', "job_trace_userfunction" = 'no', "job_trace_usertransform" = 'no', "job_trace_workflow" = 'yes', "job_type" = 'batch', "job_use_statistics" = 'yes', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:04 2018')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Dec 21 12:01:04 2018', "ActaValue_3" = 'Tue Jan 22 15:12:16 2019')
 CREATE __BODI_COPYBOOK_COBOL DATASTORE MPJ51151::'5b286366-f268-4cd8-b723-5814df07be77' OUTPUT (ATINTCAB( CODENT VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'ATINTCAB.CODENT', "Description" = 'ATINTCAB.CODENT') ,
  NSECFIC VARCHAR(10)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '4', "Cbl_field_level" = '2', "Cbl_field_name" = 'NSECFIC', "Cbl_field_original_PIC" = 'X(10)', "Cbl_field_path" = 'ATINTCAB.NSECFIC', "Description" = 'ATINTCAB.NSECFIC') ,
  TIPOCINTA VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '14', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOCINTA', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'ATINTCAB.TIPOCINTA', "Description" = 'ATINTCAB.TIPOCINTA') ,
@@ -7003,7 +6664,7 @@ CREATE __BODI_COPYBOOK_COBOL DATASTORE MPJ51151::'5b286366-f268-4cd8-b723-5814df
  FILLER1 VARCHAR(830)  SET( "Cbl_field_internal_length" = '830', "Cbl_field_internal_offset" = '290', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER1', "Cbl_field_original_PIC" = 'X(830)', "Cbl_field_path" = 'PCIMPEXT_TX.FILLER1', "Description" = 'PCIMPEXT_TX.FILLER1')  )
 )
  SET ("Cbl_expand_occurs" = 'yes', "Cbl_field_id_col(PCIMPEXT_CI)" = '10', "Cbl_field_id_col(PCIMPEXT_CL)" = '10', "Cbl_field_id_col(PCIMPEXT_CU)" = '10', "Cbl_field_id_col(PCIMPEXT_EX)" = '10', "Cbl_field_id_col(PCIMPEXT_IC)" = '10', "Cbl_field_id_col(PCIMPEXT_IL)" = '10', "Cbl_field_id_col(PCIMPEXT_LI)" = '10', "Cbl_field_id_col(PCIMPEXT_MC)" = '10', "Cbl_field_id_col(PCIMPEXT_ME)" = '10', "Cbl_field_id_col(PCIMPEXT_MI)" = '10', "Cbl_field_id_col(PCIMPEXT_ML)" = '10', "Cbl_field_id_col(PCIMPEXT_MS)" = '10', "Cbl_field_id_col(PCIMPEXT_MX)" = '10', "Cbl_field_id_col(PCIMPEXT_MZ)" = '10', "Cbl_field_id_col(PCIMPEXT_PU)" = '10', "Cbl_field_id_col(PCIMPEXT_PZ)" = '10', "Cbl_field_id_col(PCIMPEXT_RI)" = '10', "Cbl_field_id_col(PCIMPEXT_RL)" = '10', "Cbl_field_id_col(PCIMPEXT_RZ)" = '10', "Cbl_field_id_col(PCIMPEXT_SZ)" = '10', "Cbl_field_id_col(PCIMPEXT_TX)" = '10', "Cbl_field_id_val(PCIMPEXT_CI)10_1" = 'CI', "Cbl_field_id_val(PCIMPEXT_CL)10_1" = 'CL', "Cbl_field_id_val(PCIMPEXT_CU)10_1" = 'CU', "Cbl_field_id_val(PCIMPEXT_EX)10_1" = 'EX', "Cbl_field_id_val(PCIMPEXT_IC)10_1" = 'IC', "Cbl_field_id_val(PCIMPEXT_IL)10_1" = 'IL', "Cbl_field_id_val(PCIMPEXT_LI)10_1" = 'LI', "Cbl_field_id_val(PCIMPEXT_MC)10_1" = 'MC', "Cbl_field_id_val(PCIMPEXT_ME)10_1" = 'ME', "Cbl_field_id_val(PCIMPEXT_MI)10_1" = 'MI', "Cbl_field_id_val(PCIMPEXT_ML)10_1" = 'ML', "Cbl_field_id_val(PCIMPEXT_MS)10_1" = 'MS', "Cbl_field_id_val(PCIMPEXT_MX)10_1" = 'MX', "Cbl_field_id_val(PCIMPEXT_MZ)10_1" = 'MZ', "Cbl_field_id_val(PCIMPEXT_PU)10_1" = 'PU', "Cbl_field_id_val(PCIMPEXT_PZ)10_1" = 'PZ', "Cbl_field_id_val(PCIMPEXT_RI)10_1" = 'RI', "Cbl_field_id_val(PCIMPEXT_RL)10_1" = 'RL', "Cbl_field_id_val(PCIMPEXT_RZ)10_1" = 'RZ', "Cbl_field_id_val(PCIMPEXT_SZ)10_1" = 'SZ', "Cbl_field_id_val(PCIMPEXT_TX)10_1" = 'TX', "Cbl_file_dir" = '$G_RUTA', "Cbl_file_name" = '$G_NOMBRE_ARCHIVO', "Cbl_file_type" = 'F', "Cbl_has_record_mark" = 'no', "Cbl_ignore_redefines" = 'no', "Cbl_is_big_endian" = 'yes', "Cbl_rdr_hv_action" = 'Nothing', "Cbl_rdr_hvalue" = '0xFF', "Cbl_rdr_lv_action" = 'Nothing', "Cbl_rdr_lvalue" = '0x40', "Cbl_rec_size" = '1121', "Cbl_rec_trailer" = '1', "Cbl_schema_file" = 'C:\\BC\\SAT\\cobol copybooks\\MPJ51151.cpy', "Cbl_source_begin_pos" = '1', "Cbl_source_end_pos" = '9999', "Cbl_source_format" = 'smart', "application_type" = '', "ds_configuration_enabled" = 'no', "locale_codepage" = 'cp1252', "locale_language" = '<default>', "locale_territory" = '<default>');
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Jan 18 15:52:24 2019', "ActaValue_3" = 'Tue Jan 22 15:12:17 2019')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Jan 18 15:52:24 2019', "ActaValue_3" = 'Wed Jan 30 14:16:17 2019')
 CREATE __BODI_COPYBOOK_COBOL DATASTORE MPJ51151_CU::'b6f92f34-a5a1-449d-b6d1-b2230ef309a3' OUTPUT (ATINTCAB( CODENT VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'ATINTCAB.CODENT', "Description" = 'ATINTCAB.CODENT') ,
  NSECFIC VARCHAR(10)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '4', "Cbl_field_level" = '2', "Cbl_field_name" = 'NSECFIC', "Cbl_field_original_PIC" = 'X(10)', "Cbl_field_path" = 'ATINTCAB.NSECFIC', "Description" = 'ATINTCAB.NSECFIC') ,
  TIPOCINTA VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '14', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOCINTA', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'ATINTCAB.TIPOCINTA', "Description" = 'ATINTCAB.TIPOCINTA') ,
@@ -7076,7 +6737,7 @@ CREATE __BODI_COPYBOOK_COBOL DATASTORE MPJ51151_CU::'b6f92f34-a5a1-449d-b6d1-b22
  FILLER2 VARCHAR(9)  SET( "Cbl_field_internal_length" = '9', "Cbl_field_internal_offset" = '1111', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER2', "Cbl_field_original_PIC" = 'X(9)', "Cbl_field_path" = 'PCIMPEXT_CU.FILLER2', "Description" = 'PCIMPEXT_CU.FILLER2')  )
 )
  SET ("Cbl_expand_occurs" = 'yes', "Cbl_field_id_col(PCIMPEXT_CU)" = '10', "Cbl_field_id_val(PCIMPEXT_CU)10_1" = 'CU', "Cbl_file_dir" = '$G_RUTA', "Cbl_file_name" = '$G_NOMBRE_ARCHIVO', "Cbl_file_type" = 'F', "Cbl_has_record_mark" = 'no', "Cbl_ignore_redefines" = 'no', "Cbl_is_big_endian" = 'yes', "Cbl_rdr_hv_action" = 'Nothing', "Cbl_rdr_hvalue" = '0xFF', "Cbl_rdr_lv_action" = 'Nothing', "Cbl_rdr_lvalue" = '0x40', "Cbl_rec_size" = '1121', "Cbl_rec_trailer" = '1', "Cbl_schema_file" = 'C:\\BC\\SAT\\MPJ51151\\cobol\\MPJ51151.cpy', "Cbl_source_begin_pos" = '1', "Cbl_source_end_pos" = '9999', "Cbl_source_format" = 'smart', "application_type" = '', "ds_configuration_enabled" = 'no', "locale_codepage" = 'cp1252', "locale_language" = '<default>', "locale_territory" = '<default>');
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Jan 30 11:46:22 2019', "ActaValue_3" = 'Wed Jan 30 14:18:28 2019')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Jan 30 11:46:22 2019', "ActaValue_3" = 'Mon Feb  4 19:30:27 2019')
 CREATE __BODI_COPYBOOK_COBOL DATASTORE MPJ51151_EX::'deae06ab-944b-4322-9a46-31ffa96bec3a' OUTPUT (ATINTCAB( CODENT VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'ATINTCAB.CODENT', "Description" = 'ATINTCAB.CODENT') ,
  NSECFIC VARCHAR(10)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '4', "Cbl_field_level" = '2', "Cbl_field_name" = 'NSECFIC', "Cbl_field_original_PIC" = 'X(10)', "Cbl_field_path" = 'ATINTCAB.NSECFIC', "Description" = 'ATINTCAB.NSECFIC') ,
  TIPOCINTA VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '14', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOCINTA', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'ATINTCAB.TIPOCINTA', "Description" = 'ATINTCAB.TIPOCINTA') ,
@@ -7173,8 +6834,8 @@ CREATE __BODI_COPYBOOK_COBOL DATASTORE MPJ51151_EX::'deae06ab-944b-4322-9a46-31f
  IMP_COM DECIMAL(14, 2)  SET( "Cbl_field_internal_length" = '14', "Cbl_field_internal_offset" = '1072', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMP_COM', "Cbl_field_original_PIC" = '9(12)V99', "Cbl_field_path" = 'PCIMPEXT_EX.IMP_COM', "Cbl_field_precision" = '14', "Cbl_field_scale" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PCIMPEXT_EX.IMP_COM') ,
  FILLER1 VARCHAR(34)  SET( "Cbl_field_internal_length" = '34', "Cbl_field_internal_offset" = '1086', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER1', "Cbl_field_original_PIC" = 'X(34)', "Cbl_field_path" = 'PCIMPEXT_EX.FILLER1', "Description" = 'PCIMPEXT_EX.FILLER1')  )
 )
- SET ("Cbl_expand_occurs" = 'yes', "Cbl_field_id_col(PCIMPEXT_EX)" = '10', "Cbl_field_id_val(PCIMPEXT_EX)10_1" = 'EX', "Cbl_file_dir" = '$G_RUTA', "Cbl_file_name" = '$G_NOMBRE_ARCHIVO', "Cbl_file_type" = 'F', "Cbl_has_record_mark" = 'no', "Cbl_ignore_redefines" = 'no', "Cbl_is_big_endian" = 'yes', "Cbl_rdr_hv_action" = 'Nothing', "Cbl_rdr_hvalue" = '0xFF', "Cbl_rdr_lv_action" = 'Nothing', "Cbl_rdr_lvalue" = '0x40', "Cbl_rec_size" = '1021', "Cbl_rec_trailer" = '1', "Cbl_schema_file" = 'C:\\Users\\CL50607\\Downloads\\MPJ51151_EX.cpy', "Cbl_source_begin_pos" = '1', "Cbl_source_end_pos" = '9999', "Cbl_source_format" = 'smart', "application_type" = '', "ds_configuration_enabled" = 'no', "fl_object_name" = '', "locale_codepage" = 'cp1252', "locale_language" = '<default>', "locale_territory" = '<default>');
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Jan 30 14:39:43 2019', "ActaValue_3" = 'Wed Jan 30 14:40:00 2019')
+ SET ("Cbl_expand_occurs" = 'yes', "Cbl_field_id_col(PCIMPEXT_EX)" = '10', "Cbl_field_id_val(PCIMPEXT_EX)10_1" = 'EX', "Cbl_file_dir" = '$G_RUTA', "Cbl_file_name" = '$G_NOMBRE_ARCHIVO', "Cbl_file_type" = 'F', "Cbl_has_record_mark" = 'no', "Cbl_ignore_redefines" = 'no', "Cbl_is_big_endian" = 'yes', "Cbl_rdr_hv_action" = 'Nothing', "Cbl_rdr_hvalue" = '0xFF', "Cbl_rdr_lv_action" = 'Nothing', "Cbl_rdr_lvalue" = '0x40', "Cbl_rec_size" = '1021', "Cbl_rec_trailer" = '1', "Cbl_schema_file" = 'C:\\Users\\CL50607\\Downloads\\MPJ51151_EX.cpy', "Cbl_source_begin_pos" = '1', "Cbl_source_end_pos" = '9999', "Cbl_source_format" = 'smart', "application_type" = '', "ds_configuration_enabled" = 'no', "locale_codepage" = 'cp1252', "locale_language" = '<default>', "locale_territory" = '<default>');
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Jan 30 14:39:43 2019', "ActaValue_3" = 'Wed Jan 30 14:50:41 2019')
 CREATE __BODI_COPYBOOK_COBOL DATASTORE MPJ51151_ME::'2f7412ee-7a65-4a52-b53a-157ff5d94e4a' OUTPUT (ATINTCAB( CODENT VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'ATINTCAB.CODENT', "Description" = 'ATINTCAB.CODENT') ,
  NSECFIC VARCHAR(10)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '4', "Cbl_field_level" = '2', "Cbl_field_name" = 'NSECFIC', "Cbl_field_original_PIC" = 'X(10)', "Cbl_field_path" = 'ATINTCAB.NSECFIC', "Description" = 'ATINTCAB.NSECFIC') ,
  TIPOCINTA VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '14', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOCINTA', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'ATINTCAB.TIPOCINTA', "Description" = 'ATINTCAB.TIPOCINTA') ,
@@ -7216,7 +6877,7 @@ CREATE __BODI_COPYBOOK_COBOL DATASTORE MPJ51151_ME::'2f7412ee-7a65-4a52-b53a-157
  FILLER1 VARCHAR(802)  SET( "Cbl_field_internal_length" = '802', "Cbl_field_internal_offset" = '318', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER1', "Cbl_field_original_PIC" = 'X(802)', "Cbl_field_path" = 'PCIMPEXT_ME.FILLER1', "Description" = 'PCIMPEXT_ME.FILLER1')  )
 )
  SET ("Cbl_expand_occurs" = 'yes', "Cbl_field_id_col(PCIMPEXT_ME)" = '10', "Cbl_field_id_val(PCIMPEXT_ME)10_1" = 'ME', "Cbl_file_dir" = '$G_RUTA', "Cbl_file_name" = '$G_NOMBRE_ARCHIVO', "Cbl_file_type" = 'F', "Cbl_has_record_mark" = 'no', "Cbl_ignore_redefines" = 'no', "Cbl_is_big_endian" = 'yes', "Cbl_rdr_hv_action" = 'Nothing', "Cbl_rdr_hvalue" = '0xFF', "Cbl_rdr_lv_action" = 'Nothing', "Cbl_rdr_lvalue" = '0x40', "Cbl_rec_size" = '1121', "Cbl_rec_trailer" = '1', "Cbl_schema_file" = 'C:\\Users\\CL50607\\Downloads\\PCIMPEXT_ME.cpy', "Cbl_source_begin_pos" = '1', "Cbl_source_end_pos" = '9999', "Cbl_source_format" = 'smart', "application_type" = '', "ds_configuration_enabled" = 'no', "locale_codepage" = 'cp1252', "locale_language" = '<default>', "locale_territory" = '<default>');
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Jan 22 10:46:19 2019')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Jan 22 10:46:19 2019', "ActaValue_3" = 'Tue Jan 22 15:12:17 2019')
 CREATE __BODI_COPYBOOK_COBOL DATASTORE MPJ51151_SZ::'997a1717-d1d6-4755-9616-214cf7ab8cf3' OUTPUT (ATINTCAB( CODENT VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'ATINTCAB.CODENT', "Description" = 'ATINTCAB.CODENT') ,
  NSECFIC VARCHAR(10)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '4', "Cbl_field_level" = '2', "Cbl_field_name" = 'NSECFIC', "Cbl_field_original_PIC" = 'X(10)', "Cbl_field_path" = 'ATINTCAB.NSECFIC', "Description" = 'ATINTCAB.NSECFIC') ,
  TIPOCINTA VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '14', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOCINTA', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'ATINTCAB.TIPOCINTA', "Description" = 'ATINTCAB.TIPOCINTA') ,
@@ -7260,7 +6921,7 @@ CREATE __BODI_COPYBOOK_COBOL DATASTORE MPJ51151_SZ::'997a1717-d1d6-4755-9616-214
  FILLER1 VARCHAR(799)  SET( "Cbl_field_internal_length" = '799', "Cbl_field_internal_offset" = '321', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER1', "Cbl_field_original_PIC" = 'X(799)', "Cbl_field_path" = 'PCIMPEXT_SZ.FILLER1', "Description" = 'PCIMPEXT_SZ.FILLER1')  )
 )
  SET ("Cbl_expand_occurs" = 'yes', "Cbl_field_id_col(PCIMPEXT_SZ)" = '10', "Cbl_field_id_val(PCIMPEXT_SZ)10_1" = 'SZ', "Cbl_file_dir" = '$G_RUTA', "Cbl_file_name" = '$G_NOMBRE_ARCHIVO', "Cbl_file_type" = 'F', "Cbl_has_record_mark" = 'no', "Cbl_ignore_redefines" = 'no', "Cbl_is_big_endian" = 'yes', "Cbl_rdr_hv_action" = 'Nothing', "Cbl_rdr_hvalue" = '0xFF', "Cbl_rdr_lv_action" = 'Nothing', "Cbl_rdr_lvalue" = '0x40', "Cbl_rec_size" = '1121', "Cbl_rec_trailer" = '1', "Cbl_schema_file" = 'C:\\Users\\MV50688\\Downloads\\MPJ51151_SZ.cpy', "Cbl_source_begin_pos" = '1', "Cbl_source_end_pos" = '9999', "Cbl_source_format" = 'smart', "application_type" = '', "ds_configuration_enabled" = 'no', "locale_codepage" = 'cp1252', "locale_language" = '<default>', "locale_territory" = '<default>');
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Jan 21 14:19:42 2019', "ActaValue_3" = 'Tue Jan 22 09:12:37 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Jan 21 14:19:42 2019', "ActaValue_3" = 'Tue Jan 22 15:12:17 2019', "x" = '-1', "y" = '-1')
 CREATE PLAN WF_MPJ51151::'309743be-a105-46fb-ada9-e2d2f10fc2ae'( )
 DECLARE
      $L_NOMBRE_WF VARCHAR(50) ;
@@ -7423,14 +7084,14 @@ END
 ELSE
 BEGIN
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>300</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SC_ERROR_404', "ui_script_text" = '##ERROR NO EXISTE MALLA
-PRINT(\'SCRIPT NO EXISTE LA MALLA\');
+#PRINT(\'SCRIPT NO EXISTE LA MALLA\');
 ##CF_NO_EXISTE_MALLA();
 
 ##CF_ENVIO_CORREO(\'ERROR AL EJECUTAR [$L_NOMBRE_WF], NO EXISTE EN CATALOGO DE MALLAS\', \'NO SE ENCONTRÓ MALLA\');
 
 print( \'LA MALLA NO EXISTE\');', "x" = '978', "y" = '-334')
 BEGIN_SCRIPT
-print('SCRIPT NO EXISTE LA MALLA');print('LA MALLA NO EXISTE');END
+print('LA MALLA NO EXISTE');END
 END
 END
  SET ("run_once" = 'no', "unit_of_recovery" = 'no', "workflow_type" = 'Regular')

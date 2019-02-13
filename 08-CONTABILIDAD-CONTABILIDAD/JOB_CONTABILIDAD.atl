@@ -15,7 +15,7 @@ CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET
 <locale_codepage>&lt;default&gt;</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E8DD306A90A8FDC4183B906E99ED6848E102A8AC2AD4C5C6D826B8F3DF53DCE7BB2E40530D35E2C2C5AF8400C76946</password>
+<password>+0400000000120303000803E89A99C878D0C8B00F46FD02083EE9358C6E397FAB4EE1761771CEFF2E19D2C94CA92D7F6D3790FF4D4872CC326918</password>
 <server_codepage>&lt;default&gt;</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -40,7 +40,7 @@ CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET 
 <locale_codepage>iso-8859-1</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E8A24AD6F2284C53AE2CEBB1CDB21A5F9ADDFCF35869BE6F9E7462C088303D4CAD0260CF78533D126925FE7586E470</password>
+<password>+0400000000120303000803E8720E8441E3F6292D46F12BEFD903358047DE98419834E7555644D1B97D7D97FBDA2BE12468ED3BE3D28E6B7B89CE</password>
 <server_codepage>iso-8859-1</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -52,9 +52,9 @@ CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET 
 </DSConfigurations>
 ', "enable_data_transfer" = 'yes', "import_unknown_type" = 'no', "name" = 'DS_TARGET', "pcache_force_utf16" = 'no', "unknown_type_size" = '255');
 
- AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '4872' , 
+ AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '21110' , 
 ActaName_2 = 'RNumber_Of_Rows_Rejected',ActaValue_2 = '0' , 
-ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '4872' , 
+ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '21110' , 
 ActaName_4 = 'RNumber_Of_Updates',ActaValue_4 = '0' , 
 ActaName_5 = 'RNumber_Of_Deletes',ActaValue_5 = '0' , 
 ActaName_6 = 'RElapsed_Time_For_Load',ActaValue_6 = '2 Seconds' , 
@@ -65,7 +65,7 @@ ActaName_10 = 'REstimated_Row_Count',ActaValue_10 = '50000' ,
 ActaName_11 = 'RSavedAfterCheckOut',ActaValue_11 = 'YES' , 
 ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'no' , 
 ActaName_13 = 'RDate_created',ActaValue_13 = 'Fri Jan 11 11:24:58 2019' , 
-ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Wed Feb  6 11:10:32 2019' )
+ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Wed Feb 13 16:40:54 2019' )
 CREATE TABLE DS_TARGET.SAT.ATCON001(IDENTIFICADOR_EJECUCION INT  NULL , 
 CODENT VARCHAR(4)  NULL , 
 CODGRU DECIMAL(2, 0)  NULL , 
@@ -143,10 +143,10 @@ SET("db_alias_name" = 'SAT')
 
  AlGUIComment (ActaName_1 = 'RDatabase_Object_Type',ActaValue_1 = 'TABLE' , 
 ActaName_2 = 'RTable_Type',ActaValue_2 = 'TABLE' , 
-ActaName_3 = 'RDate_last_loaded',ActaValue_3 = 'Wed Feb  6 11:10:26 2019' , 
-ActaName_4 = 'RTotal_Number_Of_Rows_Processed',ActaValue_4 = '342' , 
+ActaName_3 = 'RDate_last_loaded',ActaValue_3 = 'Wed Feb 13 16:40:48 2019' , 
+ActaName_4 = 'RTotal_Number_Of_Rows_Processed',ActaValue_4 = '3463' , 
 ActaName_5 = 'RNumber_Of_Rows_Rejected',ActaValue_5 = '0' , 
-ActaName_6 = 'RNumber_Of_Inserts',ActaValue_6 = '342' , 
+ActaName_6 = 'RNumber_Of_Inserts',ActaValue_6 = '3463' , 
 ActaName_7 = 'RDescription',ActaValue_7 = '' , 
 ActaName_8 = 'REstimated_Row_Count',ActaValue_8 = '50000' , 
 ActaName_9 = 'RLoader_Is_Template_Table',ActaValue_9 = 'no' , 
@@ -154,7 +154,7 @@ ActaName_10 = 'RSavedAfterCheckOut',ActaValue_10 = 'YES' ,
 ActaName_11 = 'RDate_modified',ActaValue_11 = 'Thu Jan 31 10:34:37 2019' , 
 ActaName_12 = 'RNumber_Of_Updates',ActaValue_12 = '0' , 
 ActaName_13 = 'RNumber_Of_Deletes',ActaValue_13 = '0' , 
-ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '2 Seconds' )
+ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '4 Seconds' )
 CREATE TABLE DS_TARGET.STG_SAT.ATCON001(CODENT VARCHAR(4)  NULL  SET("Description" = 'ATCON001.CODENT'), 
 CODGRU DECIMAL(2, 0)  NULL  SET("Description" = 'ATCON001.CODGRU'), 
 CODCCN DECIMAL(4, 0)  NULL  SET("Description" = 'ATCON001.CODCCN'), 
@@ -229,9 +229,9 @@ FILLER_0001 VARCHAR(5)  NULL  SET("Description" = 'ATCON001.FILLER'))
 SET("db_alias_name" = 'STG_SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '2' , 
+ AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '3' , 
 ActaName_2 = 'RNumber_Of_Rows_Rejected',ActaValue_2 = '0' , 
-ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '2' , 
+ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '3' , 
 ActaName_4 = 'RNumber_Of_Updates',ActaValue_4 = '0' , 
 ActaName_5 = 'RNumber_Of_Deletes',ActaValue_5 = '0' , 
 ActaName_6 = 'RElapsed_Time_For_Load',ActaValue_6 = '0 Seconds' , 
@@ -242,7 +242,7 @@ ActaName_10 = 'REstimated_Row_Count',ActaValue_10 = '50000' ,
 ActaName_11 = 'RSavedAfterCheckOut',ActaValue_11 = 'YES' , 
 ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'no' , 
 ActaName_13 = 'RDate_created',ActaValue_13 = 'Thu Jan 10 14:21:38 2019' , 
-ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Wed Feb  6 11:10:45 2019' )
+ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Wed Feb  6 18:35:17 2019' )
 CREATE TABLE DS_TARGET.SAT.PCCON001(IDENTIFICADOR_EJECUCION INT  NULL , 
 CODENT VARCHAR(4)  NULL , 
 CODGRU DECIMAL(2, 0)  NULL , 
@@ -336,7 +336,7 @@ ActaName_10 = 'REstimated_Row_Count',ActaValue_10 = '50000' ,
 ActaName_11 = 'RLoader_Is_Template_Table',ActaValue_11 = 'no' , 
 ActaName_12 = 'RSavedAfterCheckOut',ActaValue_12 = 'YES' , 
 ActaName_13 = 'RDate_created',ActaValue_13 = 'Thu Jan 31 10:46:32 2019' , 
-ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Wed Feb  6 11:10:41 2019' , 
+ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Wed Feb  6 18:35:12 2019' , 
 ActaName_15 = 'RDate_modified',ActaValue_15 = 'Thu Jan 31 10:46:46 2019' )
 CREATE TABLE DS_TARGET.STG_SAT.PCCON001(CODENT VARCHAR(4)  NULL  SET("Description" = 'PCCON001.CODENT', "ui_mapping_text" = 'PCCON001.CODENT'), 
 CODGRU DECIMAL(2, 0)  NULL  SET("Description" = 'PCCON001.CODGRU', "ui_mapping_text" = 'PCCON001.CODGRU'), 
@@ -416,348 +416,6 @@ CODCONVEN VARCHAR(4)  NULL  SET("Description" = 'PCCON001.CODCONVEN', "ui_mappin
 FILLER1 VARCHAR(102)  NULL  SET("Description" = 'PCCON001.FILLER1', "ui_mapping_text" = 'PCCON001.FILLER1')) 
 SET("db_alias_name" = 'STG_SAT')
 ;
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Fri Dec 14 15:48:11 2018', "ActaValue_6" = 'Wed Jan 23 19:03:22 2019', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '
-
-
-$L_NOMBRE_TABLA = workflow_name( );
-$L_NOMBRE_TABLA = replace_substr( $L_NOMBRE_TABLA , \'WF_\', \'\');
-$L_NOMBRE_TABLA = replace_substr( $L_NOMBRE_TABLA , \'__R\', \'\');
-$L_ID_EJECUCION = $P_ID_EJECUCION ;
-print( \'--------------------ENTRANDO A CUENTA DE DATOS  [$L_ID_EJECUCION]\');
-
-$L_CUANTOS_LLEVA = sql( \'DS_CONTROL\', \'SELECT NUM_FILAS_INS FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-print( \'CUENTA ACTUAL: \' || $L_CUANTOS_LLEVA);
-
-
-IF ($L_CUANTOS_LLEVA IS null )
-begin
-    $L_CUANTOS_LLEVA = 0;	
-end
-
-
-#print( \'SELECT COUNT(*) FROM SAT.[$L_NOMBRE_TABLA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-$L_SUMA = sql( \'DS_TARGET\', \'SELECT COUNT(*) FROM SAT.[$L_NOMBRE_TABLA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-print( $L_SUMA);
-
-
-
-$L_SUMA = $L_SUMA + $L_CUANTOS_LLEVA ;
-
-sql( \'DS_CONTROL\', \'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = [$L_SUMA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-sql( \'DS_CONTROL\', \'COMMIT\');
-
-RETURN 0;
-
-', "x" = '-1', "y" = '-1')
-CREATE FUNCTION CF_CUENTA_DATOS($P_ID_EJECUCION INT  IN )
-RETURNS  INT 
-DECLARE
-     $L_NOMBRE_TABLA VARCHAR(50) ;
-     $L_CUANTOS_LLEVA INT ;
-     $L_SUMA INT ;
-     $L_ID_EJECUCION INT ;
-BEGIN
-$L_NOMBRE_TABLA = workflow_name();$L_NOMBRE_TABLA = replace_substr($L_NOMBRE_TABLA, 'WF_', '');$L_NOMBRE_TABLA = replace_substr($L_NOMBRE_TABLA, '__R', '');$L_ID_EJECUCION = $P_ID_EJECUCION;print('--------------------ENTRANDO A CUENTA DE DATOS  [$L_ID_EJECUCION]');$L_CUANTOS_LLEVA = sql('DS_CONTROL', 'SELECT NUM_FILAS_INS FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');print(('CUENTA ACTUAL: ' || $L_CUANTOS_LLEVA));IF (($L_CUANTOS_LLEVA IS  NULL ) )
-BEGIN
-$L_CUANTOS_LLEVA = 0;END
-$L_SUMA = sql('DS_TARGET', 'SELECT COUNT(*) FROM SAT.[$L_NOMBRE_TABLA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');print($L_SUMA);$L_SUMA = ($L_SUMA + $L_CUANTOS_LLEVA);sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = [$L_SUMA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'COMMIT');RETURN 0;
-END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 13:29:48 2018', "ActaValue_6" = 'Wed Jan 30 19:19:18 2019', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '######################################################################
-## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
-##                                                                  ##
-## 11/12/2018                                                       ##
-##                                                                  ##
-## CREADO POR JAVIER LOPEZ                                          ##
-## GYSSA                                                            ##
-######################################################################
-
-##ELIMINAMOS PREFIJO WF Y REEMPLAZAMOS __ POR . PARA QUE HAGA MATCH CON LO QUE SE TIENE EN LA TABLA DE MALLAS
-$L_NOMBRE_WF = replace_substr(workflow_name( ), \'__\', \'.\');
-$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, \'WF_\', \'\');
-
-
-##OBTENEMOS ID DE MALLA POR MEDIO DE LA TABLA CNF.MALLAS
-$L_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\'\');
-
-
-
-##OBTENEMOS EL ID DE EJECUCIÓN DE LA MALLA QUE ESTÉ CON ESTADO CARGADO
-$L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\\\'CARGADO\\\',\\\'LISTADO\\\') AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
-#print( \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
-print( $L_ID_EJECUCION );
-
-##INICIAMOS VARIABLES
-$L_ESTADO  = \'INICIADO\';
-$L_CURRENT_DATE = sysdate( ) ;
-
-
-try
-    
-	begin
-	##INICIO DE TRANASCCIÓN
-	SQL(\'DS_CONTROL\', \'BEGIN TRANSACTION\');
-
-	##CAMBIO DE ESTADO A INICIADO EN TABLA DE CONTROL PARA LA MALLA QUE SE EJECUTANDO
-	sql( \'DS_CONTROL\', \'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \\\'[$L_ESTADO]\\\' WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-	sql( \'DS_CONTROL\', \'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = 0 WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-	
-
-	SQL(\'DS_CONTROL\', \'COMMIT\');
-    print( \'**********************************************************************\');
-    print( \'****************TERMINANDO INSERCION CONTROL_EJECUCION****************\');
-    print( \'**********************************************************************\');
-	
-
-	print( \'**********************************************************************\');
-	PRINT( \'********TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION*********\');
-	print( \'**********************************************************************\');
-
-    
-
-	RETURN $L_ID_EJECUCION ;		
-	end
-catch ( all  )
-	begin
-	    print( \'********************************************************************************************\');
-		print( \'**********OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION**********\');
-		print( \'********************************************************************************************\');
-		RETURN -1;
-	end
-', "x" = '-1', "y" = '-1')
-CREATE FUNCTION CF_EJECUCION_MALLA( )
-RETURNS  INT 
-DECLARE
-     $L_CURRENT_DATE DATE ;
-     $L_ID_MALLA INT ;
-     $L_NOMBRE_WF VARCHAR(50) ;
-     $L_ESTADO VARCHAR(50) ;
-     $L_REPROCESO INT ;
-     $L_ID_EJECUCION INT ;
-BEGIN
-$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');$L_ID_MALLA = sql('DS_CONTROL', 'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\'CARGADO\',\'LISTADO\') AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]');print($L_ID_EJECUCION);$L_ESTADO = 'INICIADO';$L_CURRENT_DATE = sysdate();TRY
-BEGIN
-sql('DS_CONTROL', 'BEGIN TRANSACTION');sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \'[$L_ESTADO]\' WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = 0 WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'COMMIT');print('**********************************************************************');print('****************TERMINANDO INSERCION CONTROL_EJECUCION****************');print('**********************************************************************');print('**********************************************************************');print('********TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION*********');print('**********************************************************************');RETURN $L_ID_EJECUCION;
-END
-CATCH (210101)
-BEGIN
-print('********************************************************************************************');print('**********OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION**********');print('********************************************************************************************');RETURN -1;
-END
-
-END_TRY
-END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Wed Dec 19 10:28:20 2018', "ActaValue_6" = 'Wed Dec 19 11:23:14 2018', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '
-$L_TABLE = replace_substr( $P_WF, \'WF_\', \'\');
-$L_TABLE = replace_substr( $L_TABLE, \'__R\', \'\');
-
-$L_JOB = replace_substr( job_name( ), \'JOB_\', \'\');
-$L_JOB = replace_substr( $L_JOB , \'__\', \'.\');
-
-
-
-$L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE NOMBRE_ARCHIVO LIKE \\\'[$L_JOB]\\\'\');
-
-
-sql( \'DS_TARGET\', \'DELETE FROM SAT.[$L_TABLE] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-sql( \'DS_TARGET\', \'COMMIT\');
-
-RETURN $L_ID_EJECUCION ;', "x" = '-1', "y" = '-1')
-CREATE FUNCTION CF_ELIMINA_DATOS($P_WF VARCHAR(50)  IN )
-RETURNS  INT 
-DECLARE
-     $L_TABLE VARCHAR(50) ;
-     $L_ID_EJECUCION INT ;
-     $L_JOB VARCHAR(50) ;
-BEGIN
-$L_TABLE = replace_substr($P_WF, 'WF_', '');$L_TABLE = replace_substr($L_TABLE, '__R', '');$L_JOB = replace_substr(job_name(), 'JOB_', '');$L_JOB = replace_substr($L_JOB, '__', '.');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE NOMBRE_ARCHIVO LIKE \'[$L_JOB]\'');sql('DS_TARGET', 'DELETE FROM SAT.[$L_TABLE] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_TARGET', 'COMMIT');RETURN $L_ID_EJECUCION;
-END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 12:14:53 2018', "ActaValue_6" = 'Fri Dec 14 11:25:44 2018', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '######################################################################
-## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
-##                                                                  ##
-## 11/12/2018                                                       ##
-##                                                                  ##
-## CREADO POR JAVIER LOPEZ                                          ##
-## GYSSA                                                            ##
-######################################################################
-
-##ENVIO DE CORREO ELECTRONICO ANTE ERROR
-$L_EMAIL = sql(\'DS_CONTROL\', \'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \\\'%EMAIL_NOTIFICACION%\\\'\');
-
-
-$L_EXEC = smtp_to($L_EMAIL,$P_SBJ,$P_MSG,10,10);
-
-
-RETURN $L_EXEC;', "x" = '-1', "y" = '-1')
-CREATE FUNCTION CF_ENVIO_CORREO($P_SBJ VARCHAR(100)  IN, $P_MSG VARCHAR(1000)  IN )
-RETURNS  INT 
-DECLARE
-     $L_EMAIL VARCHAR(1000) ;
-     $L_EXEC VARCHAR(1000) ;
-BEGIN
-$L_EMAIL = sql('DS_CONTROL', 'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%EMAIL_NOTIFICACION%\'');$L_EXEC = smtp_to($L_EMAIL, $P_SBJ, $P_MSG, 10, 10);RETURN $L_EXEC;
-END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 16:39:09 2018', "ActaValue_6" = 'Fri Dec 14 15:23:09 2018', "InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '54', "ui_script_text" = '######################################################################
-## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
-##                                                                  ##
-## 11/12/2018                                                       ##
-##                                                                  ##
-## CREADO POR JAVIER LOPEZ                                          ##
-## GYSSA                                                            ##
-######################################################################
-
-##ELIMINAMOS PREFIJO WF Y REEMPLAZAMOS __ POR . PARA QUE HAGA MATCH CON LO QUE SE TIENE EN LA TABLA DE MALLAS
-$L_NOMBRE_WF = replace_substr(workflow_name( ), \'__\', \'.\');
-$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, \'WF_\', \'\');
-
-##OBTENEMOS ID DE MALLA POR MEDIO DE LA TABLA CNF.MALLAS
-$L_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\'\');
-
-##OBTENEMOS EL ID DE EJECUCIÓN DE LA MALLA QUE ESTÉ CON ESTADO CARGADO
-$L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
-
-##INICIAMOS VARIABLES
-$L_ESTADO  = \'FINALIZADO\';
-$L_CURRENT_DATE = sysdate( ) ;
-
-try
-    
-	begin
-	##INICIO DE TRANASCCIÓN
-	
-	SQL(\'DS_CONTROL\', \'BEGIN TRANSACTION\');	
-	
-	##CAMBIO DE ESTADO A FINALIZADO EN TABLA DE CONTROL PARA LA MALLA QUE SE EJECUTANDO
-	sql( \'DS_CONTROL\', \'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \\\'[$L_ESTADO]\\\' WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');	
-
-
-	
-	SQL(\'DS_CONTROL\', \'COMMIT\');
-    print( \'**********************************************************\');
-    print( \'**********TERMINANDO INSERCION CONTROL_EJECUCION**********\');
-	print( \'**********************************************************\');
-
-	
-
-	print( \'************************************************************************\');
-	PRINT(\'**********TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION**********\');
-	print( \'************************************************************************\');
-	
-	
-	
-	RETURN $L_ID_EJECUCION ;		
-	end
-catch ( all  )
-	begin
-	    print( \'********************************************************************************************\');
-		print( \'**********OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION**********\');
-		print( \'********************************************************************************************\');
-		RETURN -1;
-	end', "x" = '-1', "y" = '-1')
-CREATE FUNCTION CF_FIN_MALLA( )
-RETURNS  INT 
-DECLARE
-     $L_NOMBRE_WF VARCHAR(50) ;
-     $L_ID_MALLA INT ;
-     $L_ID_EJECUCION INT ;
-     $L_ESTADO VARCHAR(25) ;
-     $L_CURRENT_DATE DATETIME(9) ;
-     $L_CUENTA_DATOS INT ;
-     $L_TABLA_ACTUAL INT ;
-     $L_CUENTA_CONTROL INT ;
-BEGIN
-$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');$L_ID_MALLA = sql('DS_CONTROL', 'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]');$L_ESTADO = 'FINALIZADO';$L_CURRENT_DATE = sysdate();TRY
-BEGIN
-sql('DS_CONTROL', 'BEGIN TRANSACTION');sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \'[$L_ESTADO]\' WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'COMMIT');print('**********************************************************');print('**********TERMINANDO INSERCION CONTROL_EJECUCION**********');print('**********************************************************');print('************************************************************************');print('**********TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION**********');print('************************************************************************');RETURN $L_ID_EJECUCION;
-END
-CATCH (210101)
-BEGIN
-print('********************************************************************************************');print('**********OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION**********');print('********************************************************************************************');RETURN -1;
-END
-
-END_TRY
-END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 14:57:03 2018', "ActaValue_6" = 'Fri Dec 14 11:29:45 2018', "InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '54', "ui_script_text" = '######################################################################
-## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
-##                                                                  ##
-## 11/12/2018                                                       ##
-##                                                                  ##
-## CREADO POR JAVIER LOPEZ                                          ##
-## GYSSA                                                            ##
-######################################################################
-
-##ELIMINAMOS PREFIJO WF Y REEMPLAZAMOS __ POR . PARA QUE HAGA MATCH CON LO QUE SE TIENE EN LA TABLA DE MALLAS
-$L_NOMBRE_WF = replace_substr(workflow_name( ), \'__\', \'.\');
-$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, \'WF_\', \'\');
-
-
-print( \'PROCESO NORMAL INICIO\');
-##OBTENEMOS ID DE MALLA POR MEDIO DE LA TABLA CNF.MALLAS
-print( \'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\'\');
-$L_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\'\');
-
-##SE BUSCA SI EXISTE COMBINACIÓN DE REPROCESO CON ID_MALLA, SI HAY VALOR QUE COINCIDE
-##ES REPROCESO Y ENTRA EN EL FLUJO DEL ELSE, SI NO, ENTRA EN FLUJO DE PRIMER PROCESO
-print( \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
-$L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
-
-
-print( \'SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-$P_TIPO_PROCESO  = sql( \'DS_CONTROL\', \'SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-
-
-RETURN $P_TIPO_PROCESO;', "x" = '-1', "y" = '-1')
-CREATE FUNCTION CF_PROCESO_NORMAL( )
-RETURNS  INT 
-DECLARE
-     $L_NOMBRE_WF VARCHAR(50) ;
-     $L_ID_MALLA INT ;
-     $L_ID_EJECUCION INT ;
-     $P_TIPO_PROCESO INT ;
-     $L_VALOR_REPROCESO INT ;
-BEGIN
-$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');print('PROCESO NORMAL INICIO');print('SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');$L_ID_MALLA = sql('DS_CONTROL', 'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');print('SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]');print('SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');$P_TIPO_PROCESO = sql('DS_CONTROL', 'SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');RETURN $P_TIPO_PROCESO;
-END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 11:01:08 2018', "ActaValue_6" = 'Wed Jan 30 19:13:26 2019', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '######################################################################
-## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
-##                                                                  ##
-## 11/12/2018                                                       ##
-##                                                                  ##
-## CREADO POR JAVIER LOPEZ                                          ##
-## GYSSA                                                            ##
-######################################################################
-
-##ELIMINA CARACTERES ESPACIALES DEL NOMBRE DEL WF
-$L_NOMBRE_WF = replace_substr(workflow_name( ), \'__\', \'.\');
-$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, \'WF_\', \'\');
-
-$L_VALOR_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\' \');
-$L_VALOR_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\\\'CARGADO\\\',\\\'LISTADO\\\') AND IDENTIFICADOR_MALLA = \' || $L_VALOR_ID_MALLA);
-#print( \'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS_EJECUCION WHERE ESTADO NOT IN (\\\'FINALIZADO\\\',\\\'INICIADO\\\') AND IDENTIFICADOR_MALLA = \' || $L_VALOR_ID_MALLA);
-
-IF($L_VALOR_ID_MALLA IS NOT null)
-begin
-	$L_EXISTE_MALLA = 1;
-
-end
-else begin
-    $L_EXISTE_MALLA = 0	;
-end
-
-RETURN $L_EXISTE_MALLA ;', "x" = '-1', "y" = '-1')
-CREATE FUNCTION CF_VERIFICA_MALLA( )
-RETURNS  INT 
-DECLARE
-     $L_NOMBRE_WF VARCHAR(50) ;
-     $L_EXISTE_MALLA INT ;
-     $L_VALOR_ID_MALLA INT ;
-BEGIN
-$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');$L_VALOR_ID_MALLA = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\' ');$L_VALOR_ID_MALLA = sql('DS_CONTROL', ('SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\'CARGADO\',\'LISTADO\') AND IDENTIFICADOR_MALLA = ' || $L_VALOR_ID_MALLA));IF (($L_VALOR_ID_MALLA IS NOT  NULL ) )
-BEGIN
-$L_EXISTE_MALLA = 1;END
-ELSE
-BEGIN
-$L_EXISTE_MALLA = 0;END
-RETURN $L_EXISTE_MALLA;
-END
  AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Jan 14 10:18:33 2019', "ActaValue_3" = 'Thu Jan 31 10:33:09 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_ATCON001::'85b8a28d-9d0f-434e-a838-dc9d697b2b9c'
 BEGIN
@@ -1894,7 +1552,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaName_4" = 'RVersion', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Jan 14 09:49:14 2019', "ActaValue_3" = 'Wed Feb  6 11:27:19 2019', "ActaValue_4" = 'f0e40d208599d1ca3c1f317fee2205f331490c20', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaName_4" = 'RVersion', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Jan 14 09:49:14 2019', "ActaValue_3" = 'Wed Feb  6 18:30:43 2019', "ActaValue_4" = 'f0e40d208599d1ca3c1f317fee2205f331490c20', "x" = '-1', "y" = '-1')
 CREATE SESSION JOB_CONTABILIDAD::'11c4e9af-69c9-4655-9d8f-be768d8f0d67'( )
 DECLARE
      GLOBAL $G_NOMBRE_JOB VARCHAR(50) ;
@@ -1903,7 +1561,8 @@ DECLARE
      GLOBAL $G_RUTA VARCHAR(1000) ;
      GLOBAL $G_NOMBRE_ARCHIVO VARCHAR(1000) ;
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>288</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INICIAL', "ui_script_text" = '##INICIALIZACIÓN DE VARIABLES
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>288</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INICIAL', "ui_script_text" = 'print(\'--version: b8a77bd\');
+
 
 $G_NOMBRE_JOB = job_name( );
 $G_FECHA_PROCESO  = sysdate( );
@@ -1913,7 +1572,7 @@ sql( \'DS_CONTROL\', \'COMMIT\');
 
 ', "x" = '90', "y" = '-90')
 BEGIN_SCRIPT
-$G_NOMBRE_JOB = job_name();$G_FECHA_PROCESO = sysdate();$G_RUTA = sql('DS_CONTROL', 'SELECT VALOR FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'RUTA_ARCHIVO\'');sql('DS_CONTROL', 'COMMIT');END
+print('--version: b8a77bd');$G_NOMBRE_JOB = job_name();$G_FECHA_PROCESO = sysdate();$G_RUTA = sql('DS_CONTROL', 'SELECT VALOR FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'RUTA_ARCHIVO\'');sql('DS_CONTROL', 'COMMIT');END
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try182', "x" = '480', "y" = '-90')
 TRY
 BEGIN

@@ -1,3 +1,4 @@
+190212: Correcion cambios de estados actualiza unicamente los cargados en el set actual.
 190212: Cambio de truncate/append en tabla MALLAS_EJECUCION
 190207:	Inicializacion de configuración de Mallas
 		Logica del ETL

@@ -1,1 +1,8 @@
 190212: Cambio de truncate/append en tabla MALLAS_EJECUCION
+190207:	Inicializacion de configuración de Mallas
+		Logica del ETL
+		Grabacion mis_date, tomándola del nombre del archivo para ciertas mallas
+		Control de version de objetos 
+190206:	Se identifico el problema para archivos con más de ocho caracteres hasta el primer punto, a diferencia de los anteriores que era de 8.
+		Debido a que el patrón con el que se toma el substring del nombre no encontraba coincidencias en las mallas a procesar, y por tal motivo no era cargada a la tabla.
+		Se corrige para ver archivos de N caracteres hasta el primer punto.

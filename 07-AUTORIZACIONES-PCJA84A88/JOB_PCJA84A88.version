@@ -1,0 +1,5 @@
+190212: Correccion a ruta del archivo
+190207: Lógica de validación de malla en ejecución
+		Recrear tabla Stage
+		Control de versión de objetos
+		Lectura de fecha MIS_DATE del nombre del archivo

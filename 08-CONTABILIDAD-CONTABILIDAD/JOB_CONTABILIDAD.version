@@ -1,0 +1,4 @@
+190207:	Se corrige logica de validacion de malla ejecucion
+		Recrear stage
+		Control de version de objetos
+		Lectura de fecha MIS_DATE del nombre del archivo

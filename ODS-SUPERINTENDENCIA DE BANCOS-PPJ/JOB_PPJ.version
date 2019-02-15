@@ -1,3 +1,4 @@
+190215: Se cambio el formato de las fechas a yyyymmdd en la tabla PTOPERAC
 190207: Se cambia la logica del etl
 		Se verifican las tablas
 		Se agrega control de version

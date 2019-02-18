@@ -1,3 +1,4 @@
+190218: se remueve columna de MIS_DATE, se setea truncate para los stages.
 190207:	Se corrige logica de validacion de malla ejecucion
 		Recrear stage
 		Control de version de objetos

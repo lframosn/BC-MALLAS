@@ -23,18 +23,18 @@ drop table IF EXISTS SAT.ATCON001;  CREATE TABLE IF NOT EXISTS SAT.ATCON001  ( 	
 --DATOS GENERALES OBLIGATORIOS	 	 		
 ,	CODENT	VARCHAR	(4)	--CODIGO DE ENTIDAD
 ,	CODGRU	DECIMAL	(2,0)	--CODIGO DE GRUPO CONTABLE
----      01 = FRANQUICIAS. ENTRADA	 	 		
----      02 = INCOMING 	 	 		
----      03 = COMERCIOS 	 	 		
----      04 = INCIDENCIAS 	 	 		
----      05 = TITULARES 	 	 		
----      06 = OPERACIONES DIARIAS 	 	 		
----      07 = COMPRA EN CUOTAS 	 	 		
----      08 = IMPAGADOS 	 	 		
----      09 = LIQUIDACION 	 	 		
----      10 = MAESTRO DE RECIBOS 	 	 		
----      11 = OUTGOING 	 	 		
----      12 = FRANQUICIAS. SALIDA	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ 01 = FRANQUICIAS. ENTRADA	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ 02 = INCOMING 	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ 03 = COMERCIOS 	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ 04 = INCIDENCIAS 	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ 05 = TITULARES 	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ 06 = OPERACIONES DIARIAS 	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ 07 = COMPRA EN CUOTAS 	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ 08 = IMPAGADOS 	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ 09 = LIQUIDACION 	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ 10 = MAESTRO DE RECIBOS 	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ 11 = OUTGOING 	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ 12 = FRANQUICIAS. SALIDA	 	 		
 ,	CODCCN	DECIMAL	(4,0)	--CONCEPTO CONTABLE
 ,	IMPORTE	DECIMAL	(17,2)	--IMPORTE 
 ,	CLAMON	DECIMAL	(3,0)	--CLAVE DE MONEDA
@@ -49,15 +49,15 @@ drop table IF EXISTS SAT.ATCON001;  CREATE TABLE IF NOT EXISTS SAT.ATCON001  ( 	
 ,	CLAMONEMI	DECIMAL	(3,0)	--CLAVE MONEDA EMISOR
 ,	CMBAPLIEMI	DECIMAL	(9,4)	--CAMBIO APLICADO PASO DE MONEDA EMISOR
 ,	INDNORCOR	DECIMAL	(1,0)	--INDICADOR DE NORMAL O CORRECTORA:
----      NORMAL	 	 		
----      CORRECTORA	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ NORMAL	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ CORRECTORA	 	 		
 ,	TIPOFAC	DECIMAL	(4,0)	--TIPO DE FACTURA
 ,	INDAPLDEBCRE	DECIMAL	(1,0)	--INDICADOR DE OPERATIVIDAD DE LA TARJETA
----      1 – CrEdito	 	 		
----      2 – DEbito	 	 		
----      3 – Mixta	 	 		
----      4- Monedero 	 	 		
----      5- Prepago  banda	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ 1 ï¿½ CrEdito	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ 2 ï¿½ DEbito	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ 3 ï¿½ Mixta	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ 4- Monedero 	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ 5- Prepago  banda	 	 		
 ,	CODACT	DECIMAL	(4,0)	--CODIGO ACTIVIDAD ISO
 ,	CODCONECO	DECIMAL	(4,0)	--CODIGO DE CONCEPTO ECONOMICO
 ,	SECOPE	DECIMAL	(12,0)	--SECUENCIA DE LA OPERACION
@@ -110,32 +110,31 @@ drop table IF EXISTS SAT.ATCON001;  CREATE TABLE IF NOT EXISTS SAT.ATCON001  ( 	
 ,	OFIIMPDEB	VARCHAR	(4)	--OFICINA IMPUTACION DEBE
 ,	OFIIMPHAB	VARCHAR	(4)	--OFICINA IMPUTACION HABER
 ,	INDNACINT	DECIMAL	(1,0)	--INDICADOR OPERADOR
---0-     NACIONAL	 	 		
---1-     INTERNACIONAL	 	 		
+--0-ï¿½ï¿½ï¿½ï¿½ NACIONAL	 	 		
+--1-ï¿½ï¿½ï¿½ï¿½ INTERNACIONAL	 	 		
 ,	NUMOPER	DECIMAL	(10,0)	--NUMERO DE REGISTROS QUE COMPONEN LA TOTALIZACION DE CONCEPTOS
 ,	SIGNO	VARCHAR	(1)	--SIGNO DEL REGISTRO CONTABLE (SIGNO DEL TIPO DE FACTURA O INDICADOR DE NORMAL / CORRECTORA)
 --DATOS DE LINEA	 	 		
 ,	LINREF	DECIMAL	(8,0)	--REFERENCIA DE TIPO DE LINEA
 ,	TIPOLIN	VARCHAR	(4)	--TIPO DE LINEA
 ,	FILLER	VARCHAR	(5)	--
-,	MIS_DATE	DATE		--Fecha de generación de informacion
 ); COMMIT;	 	 		
 drop table IF EXISTS SAT.PCCON001;  CREATE TABLE IF NOT EXISTS SAT.PCCON001  ( 	IDENTIFICADOR_EJECUCION	INTEGER		--IDENTIFICADOR UNICO DE EJECUCION
 --INTERFAZ CONTABLE, APUNTES CONTABLES	 	 		
 ,	CODENT	VARCHAR	(4)	--CODIGO DE ENTIDAD
 ,	CODGRU	DECIMAL	(2,0)	--CODIGO DE GRUPO CONTABLE
----        01 = FRANQUICIAS. ENTRADA	 	 		
----        02 = INCOMING 	 	 		
----        03 = COMERCIOS 	 	 		
----        04 = INCIDENCIAS 	 	 		
----        05 = TITULARES 	 	 		
----        06 = OPERACIONES DIARIAS 	 	 		
----        07 = COMPRA EN CUOTAS 	 	 		
----        08 = IMPAGADOS 	 	 		
----        09 = LIQUIDACION 	 	 		
----        10 = MAESTRO DE RECIBOS 	 	 		
----        11 = OUTGOING 	 	 		
----        12 = FRANQUICIAS. SALIDA	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 01 = FRANQUICIAS. ENTRADA	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 02 = INCOMING 	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 03 = COMERCIOS 	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 04 = INCIDENCIAS 	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 05 = TITULARES 	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 06 = OPERACIONES DIARIAS 	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 07 = COMPRA EN CUOTAS 	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 08 = IMPAGADOS 	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 09 = LIQUIDACION 	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 10 = MAESTRO DE RECIBOS 	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 11 = OUTGOING 	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 12 = FRANQUICIAS. SALIDA	 	 		
 ,	CODCCN	DECIMAL	(4,0)	--CONCEPTO CONTABLE
 ,	IMPORTE	DECIMAL	(17,2)	--IMPORTE 
 ,	CLAMON	DECIMAL	(3,0)	--CLAVE DE MONEDA
@@ -150,13 +149,13 @@ drop table IF EXISTS SAT.PCCON001;  CREATE TABLE IF NOT EXISTS SAT.PCCON001  ( 	
 ,	CLAMONEMI	DECIMAL	(3,0)	--CLAVE MONEDA EMISOR
 ,	CMBAPLIEMI	DECIMAL	(9,4)	--CAMBIO APLICADO PASO DE MONEDA EMISOR
 ,	INDNORCOR	DECIMAL	(1,0)	--INDICADOR DE NORMAL O CORRECTORA:
----        NORMAL	 	 		
----        CORRECTORA	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ NORMAL	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ CORRECTORA	 	 		
 ,	TIPOFAC	DECIMAL	(4,0)	--TIPO DE FACTURA
 ,	INDAPLDEBCRE	DECIMAL	(1,0)	--INDICADOR DE OPERATIVIDAD DE LA TARJETA
----        1- CREDITO	 	 		
----        2- DEBITO	 	 		
----        3- CHIP	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1- CREDITO	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 2- DEBITO	 	 		
+---ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 3- CHIP	 	 		
 ,	CODACT	DECIMAL	(4,0)	--CODIGO ACTIVIDAD ISO
 ,	CODCONECO	DECIMAL	(4,0)	--CODIGO DE CONCEPTO ECONOMICO
 ,	SECOPE	DECIMAL	(12,0)	--SECUENCIA DE LA OPERACION
@@ -209,8 +208,8 @@ drop table IF EXISTS SAT.PCCON001;  CREATE TABLE IF NOT EXISTS SAT.PCCON001  ( 	
 ,	OFIIMPDEB	VARCHAR	(4)	--OFICINA IMPUTACION DEBE
 ,	OFIIMPHAB	VARCHAR	(4)	--OFICINA IMPUTACION HABER
 ,	INDNACINT	DECIMAL	(1,0)	--INDICADOR OPERADOR
---0-      NACIONAL	 	 		
---1-      INTERNACIONAL	 	 		
+--0-ï¿½ï¿½ï¿½ï¿½ï¿½ NACIONAL	 	 		
+--1-ï¿½ï¿½ï¿½ï¿½ï¿½ INTERNACIONAL	 	 		
 ,	NUMOPER	DECIMAL	(10,0)	--NUMERO DE REGISTROS QUE COMPONEN LA TOTALIZACION DE CONCEPTOS
 ,	SIGNO	VARCHAR	(1)	--SIGNO DEL REGISTRO CONTABLE (SIGNO DEL TIPO DE FACTURA O INDICADOR DE NORMAL / CORRECTORA)
 --DATOS DE LINEA	 	 		
@@ -222,7 +221,6 @@ drop table IF EXISTS SAT.PCCON001;  CREATE TABLE IF NOT EXISTS SAT.PCCON001  ( 	
 ,	DESCAPUNTE	VARCHAR	(30)	--DESCRIPCION DEL APUNTE
 ,	CODCONVEN	VARCHAR	(4)	--CODIGO DE CONVENIO
 ,	FILLER1	VARCHAR	(102)	--ESPACIO DISPONIBLE DEL REGISTRO
-,	MIS_DATE	DATE		--Fecha de generación de informacion
 ); COMMIT;	 	 		
 
 ------------------------------
@@ -307,8 +305,7 @@ NUMOPER decimal(10,0) NULL,
 SIGNO varchar(1) NULL,
 LINREF decimal(8,0) NULL,
 TIPOLIN varchar(4) NULL,
-FILLER_0001 varchar(5) NULL,
-MIS_DATE DATE NULL
+FILLER_0001 varchar(5) NULL
 ); COMMIT;
 
 DROP TABLE IF EXISTS "DWH_ETLS"."PCCON001";
@@ -394,8 +391,7 @@ CTADEBETPMP  decimal(30,0) NULL,
 CTAHABERTPMP  decimal(30,0) NULL,
 DESCAPUNTE  varchar(30) NULL,
 CODCONVEN  varchar(4) NULL,
-FILLER1  varchar(102) NULL,
-MIS_DATE DATE NULL
+FILLER1  varchar(102) NULL
 ); commit;
 
 ------------------------------------------------
@@ -427,9 +423,9 @@ select
  @NOMBRE_MALLA = 'MPJ15005'
 ,@OBJECT_NAME = 'ATCON001'
 ,@OBJECT_USER = 'SAT'
-,@VERSION_COMMIT = 'b9fb9d10a40e610b8027db903bc1ec5c16ad6a9d'
+,@VERSION_COMMIT = 'b5116e54c842d177f8065698e748c748d48a6131'
 ,@VERSION_CODE = 'b9fb9d1'
-,@VERSION_DATE = 'February 5, 2019 5:04:23 PM'
+,@VERSION_DATE = 'February 18, 2019 4:39:23 PM'
 ,@CRDATE = NULL
 
 SELECT @CRDATE = create_time 

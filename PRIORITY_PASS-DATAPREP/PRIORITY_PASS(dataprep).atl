@@ -15,7 +15,7 @@ CREATE DATABASE DATASTORE DS_CONTROL::'2578f999-bbb9-48d6-8556-cc368ba0abcd' SET
 <locale_codepage>&lt;default&gt;</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E855CB5B43124D857D724CF129ED4B013D9D18AC096CEE5BC1D7934E395789571D3884F0B2256B33E17B74531F8159</password>
+<password>+0400000000120303000803E83B18A37E50594A6930F7458B5E31438629BA1F735AF31E198205B4395FB60731F75C4C074886821B1EB5DC3C2697</password>
 <server_codepage>&lt;default&gt;</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -40,7 +40,7 @@ CREATE DATABASE DATASTORE DS_TARGET::'623b7ecb-f1e5-4b99-b7f2-a028efa63f86' SET 
 <locale_codepage>iso-8859-1</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E85BBDC8AF3D6DC8656B54A74618C91825CB77598B27DA8890E05BD1A9FF76C26A90BAA243DCBAEBA34ACF83EFBF89</password>
+<password>+0400000000120303000803E852FD53ED0A9D947191D0BE7DB9E8E2A1D24CF8AAE8CFD6C93D23BC97011D80040BC1C532C0484E8CE84484204A6A</password>
 <server_codepage>iso-8859-1</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -59,7 +59,7 @@ ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' ,
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
 ActaName_7 = 'RDate_modified',ActaValue_7 = 'Tue Feb  5 16:55:21 2019' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb  5 17:17:19 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Mon Feb 18 14:16:56 2019' , 
 ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '1' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
 ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '1' , 
@@ -82,7 +82,7 @@ LOAD_DATE DATETIME(6)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb  5 17:17:14 2019' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Mon Feb 18 14:16:51 2019' , 
 ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '1' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
 ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '1' , 
@@ -304,9 +304,7 @@ END
 
 END_TRY
 END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Apr  3 14:15:33 2018', "ActaValue_6" = 'Fri Aug 24 13:26:53 2018', "InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '55', "ui_script_text" = '$L_ID_JOB_TABLE   = SQL(\'DS_CONTROL\', \'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \\\'[$P_JOBNAME]\\\'\');
-
-print(\'<<<<<<<<<<<<<dmVyc2lvbjU=>>>>>>>>>>>\');
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Apr  3 14:15:33 2018', "ActaValue_6" = 'Tue Sep 11 20:49:55 2018', "InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '54', "ui_script_text" = '$L_ID_JOB_TABLE   = SQL(\'DS_CONTROL\', \'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \\\'[$P_JOBNAME]\\\'\');
 
 IF($L_ID_JOB_TABLE IS NOT null)
 begin
@@ -325,7 +323,7 @@ RETURNS  INT
 DECLARE
      $L_ID_JOB_TABLE INT ;
 BEGIN
-$L_ID_JOB_TABLE = sql('DS_CONTROL', 'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \'[$P_JOBNAME]\'');print('<<<<<<<<<<<<<dmVyc2lvbjU=>>>>>>>>>>>');IF (($L_ID_JOB_TABLE IS NOT  NULL ) )
+$L_ID_JOB_TABLE = sql('DS_CONTROL', 'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \'[$P_JOBNAME]\'');IF (($L_ID_JOB_TABLE IS NOT  NULL ) )
 BEGIN
 $P_EXISTEJOB = 1;END
 ELSE
@@ -333,7 +331,7 @@ BEGIN
 $P_EXISTEJOB = 0;END
 RETURN $P_EXISTEJOB;
 END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Wed Apr  4 11:29:53 2018', "ActaValue_6" = 'Wed Jan 23 16:56:22 2019', "InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '50', "ui_script_text" = '##/********************************************************           
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Wed Apr  4 11:29:53 2018', "ActaValue_6" = 'Fri Jan 25 12:15:00 2019', "InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '54', "ui_script_text" = '##/********************************************************           
 ##  * CF_TABLE_NAME                                        *   
 ##  *                                                      *   
 ##  * Author:  Jaime Ascencio | Gyssa                      *   
@@ -347,7 +345,7 @@ END
 #print( \'Validacion de tabla en WF\');
 $P_TABLE_NAME = replace_substr( $P_TABLE_NAME, \'stg.\', \'\');
 
-Print(\'SELECT ID_JOB_TABLE FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \\\'[$P_TABLE_NAME]\\\'\');
+#Print(\'SELECT ID_JOB_TABLE FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \\\'[$P_TABLE_NAME]\\\'\');
  
 $L_REPROCESS   = SQL(\'DS_CONTROL\', \'select VALOR from cnf.PARAMETROS where PARAMETRO = \\\'REPROCESO\\\'\');
 $L_EXIST_TABLE   = SQL(\'DS_CONTROL\', \'SELECT ID_JOB_TABLE FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \\\'[$P_TABLE_NAME]\\\'\');
@@ -431,7 +429,7 @@ DECLARE
      $L_REPROCESS VARCHAR(1) ;
      $L_TBL_TO_REPRO VARCHAR(100) ;
 BEGIN
-$P_TABLE_NAME = replace_substr($P_TABLE_NAME, 'stg.', '');print('SELECT ID_JOB_TABLE FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \'[$P_TABLE_NAME]\'');$L_REPROCESS = sql('DS_CONTROL', 'select VALOR from cnf.PARAMETROS where PARAMETRO = \'REPROCESO\'');$L_EXIST_TABLE = sql('DS_CONTROL', 'SELECT ID_JOB_TABLE FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \'[$P_TABLE_NAME]\'');$L_FILE_EXIST = sql('DS_CONTROL', 'SELECT count(1) FROM CNF.FILE_LIST WHERE filename like (\'[$P_TABLE_NAME]%\') and loaded = 0');IF (($L_EXIST_TABLE IS NOT  NULL ) )
+$P_TABLE_NAME = replace_substr($P_TABLE_NAME, 'stg.', '');$L_REPROCESS = sql('DS_CONTROL', 'select VALOR from cnf.PARAMETROS where PARAMETRO = \'REPROCESO\'');$L_EXIST_TABLE = sql('DS_CONTROL', 'SELECT ID_JOB_TABLE FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \'[$P_TABLE_NAME]\'');$L_FILE_EXIST = sql('DS_CONTROL', 'SELECT count(1) FROM CNF.FILE_LIST WHERE filename like (\'[$P_TABLE_NAME]%\') and loaded = 0');IF (($L_EXIST_TABLE IS NOT  NULL ) )
 BEGIN
 IF (($L_FILE_EXIST > 0) )
 BEGIN
@@ -511,7 +509,7 @@ BEGIN
 END
 RETURN 1;
 END
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Jan 23 10:05:51 2019', "ActaValue_3" = 'Tue Feb  5 16:28:12 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Jan 23 10:05:51 2019', "ActaValue_3" = 'Wed Feb  6 09:39:35 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_PRIORITY_PASS::'efbd0fea-f6d6-4203-a711-cc3814fc685d'
 BEGIN
 
@@ -519,7 +517,7 @@ ALGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Descrip
 GUID::'22f71bc0-d0dc-44b2-bdad-af269dd58f7e' READ TABLE DS_TARGET.STG_SAT.PRIORITY_PASS OUTPUT(PRIORITY_PASS)
 SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
 
-ALGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>407</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '50', "x" = '916', "y" = '-506')
+ALGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>407</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '50', "x" = '916', "y" = '-506')
 GUID::'46c3e350-d01f-4a17-84a7-a160da9b721d' LOAD TABLE DS_TARGET.SAT.PRIORITY_PASS INPUT(Query)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
@@ -592,7 +590,7 @@ SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Jan 23 09:56:14 2019', "ActaValue_3" = 'Tue Feb  5 16:58:20 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Jan 23 09:56:14 2019', "ActaValue_3" = 'Thu Feb 14 18:56:16 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_PRIORITY_PASS::'8764efa4-f85b-4502-8753-b71320e0edcc'
 BEGIN
 
@@ -600,14 +598,14 @@ ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Descrip
 GUID::'1fe578c0-9229-4a85-b017-e28ce821e2c4' READ FILE Dataprep."$G_FILE_NAME" OUTPUT(Dataprep)
 SET("adaptable" = 'no', "cache" = 'yes', "connection_port" = 'no', "file_location" = 'job_server', "name" = 'UNNAMED', "number_of_threads" = '<default>', "read_subfolders" = 'yes', "reader_capture_data_conversion_errors" = 'no', "reader_capture_file_access_errors" = 'yes', "reader_capture_row_format_errors" = 'yes', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'no', "reader_include_filename" = 'no', "reader_log_data_conversion_warnings" = 'yes', "reader_log_row_format_warnings" = 'yes', "reader_log_warnings" = 'yes', "reader_maximum_warnings_to_log" = '-99', "reader_skip_empty_files" = 'yes', "reader_skip_error_handling" = 'no', "reader_write_error_rows_to_file" = 'no', "root_dir" = '$G_FILE_LOCATION', "table_weight" = '0', "transfer_custom" = 'no');
 
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>407</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "x" = '1038', "y" = '-425')
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>407</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "x" = '1038', "y" = '-425')
 GUID::'ba86dd0d-a943-4dc7-b3c6-31850dd06c40' LOAD TABLE DS_TARGET.STG_SAT.PRIORITY_PASS INPUT(Query)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
 <bulk_col_delimiter>/127</bulk_col_delimiter>
 <bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
-<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_generate_files_only>0</bulk_ldr_generate_files_only>
 <bulk_row_delimiter>&#xA;</bulk_row_delimiter>
 <enable_partitioning>no</enable_partitioning>
 <ignore_column_case>yes</ignore_column_case>
@@ -627,7 +625,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 <iq_log_null_constraints>no</iq_log_null_constraints>
 <iq_log_unique_constraints>no</iq_log_unique_constraints>
 <loader_auto_correct>no</loader_auto_correct>
-<loader_bulk_load></loader_bulk_load>
+<loader_bulk_load>1</loader_bulk_load>
 <loader_compare_column>compare_by_name</loader_compare_column>
 <loader_delete_map></loader_delete_map>
 <loader_drop_and_create_table>yes</loader_drop_and_create_table>
@@ -643,7 +641,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 <loader_update_map></loader_update_map>
 <loader_use_user_defined_keys>no</loader_use_user_defined_keys>
 <loader_xact_size>1000</loader_xact_size>
-<mssql_bulk_ldr_mode>append</mssql_bulk_ldr_mode>
+<mssql_bulk_ldr_mode>truncate</mssql_bulk_ldr_mode>
 <mssql_bulk_ldr_packet_size>0</mssql_bulk_ldr_packet_size>
 <overflow_file_format>write_data</overflow_file_format>
 <use_overflow_file>no</use_overflow_file>
@@ -677,7 +675,7 @@ END
 CREATE FILE DATASTORE Dataprep::'0c770c09-affa-497c-b95a-efc505aba3cd'(Correlativo DECIMAL(14, 0) , Cuenta VARCHAR(25) , CuentaTarjeta VARCHAR(20) , Producto VARCHAR(14) , SubProducto VARCHAR(14) , FechaBatch VARCHAR(13) , TipoEmision VARCHAR(14) , Calidad_Participacion VARCHAR(23) , Member_ID VARCHAR(22) , Nombre VARCHAR(30) , Creacion VARCHAR(13) , Vencimiento VARCHAR(13) )
  SET ("abap_file_format" = 'no', "application_type" = '', "blank_pad" = 'leading', "blank_trim" = 'leading', "cache" = 'yes', "column_delimiter" = ',', "column_width" = '1', "column_width1" = '14', "column_width10" = '30', "column_width11" = '13', "column_width12" = '13', "column_width2" = '25', "column_width3" = '20', "column_width4" = '14', "column_width5" = '14', "column_width6" = '13', "column_width7" = '14', "column_width8" = '23', "column_width9" = '22', "date_format" = 'yyyy.mm.dd', "datetime_format" = 'yyyy.mm.dd hh24:mi:ss', "ds_configuration_enabled" = 'no', "file_format" = 'ascii', "file_location" = 'job_server', "file_name" = '$G_FILENAME', "file_type" = 'positional_file', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>', "name" = 'UNNAMED', "number_of_threads" = '<default>', "read_subfolders" = 'yes', "reader_capture_data_conversion_errors" = 'no', "reader_capture_file_access_errors" = 'yes', "reader_capture_row_format_errors" = 'yes', "reader_capture_string_truncation_errors" = 'no', "reader_log_data_conversion_warnings" = 'yes', "reader_log_row_format_warnings" = 'yes', "reader_log_warnings" = 'yes', "reader_maximum_warnings_to_log" = '-99', "reader_skip_empty_files" = 'yes', "reader_skip_error_handling" = 'no', "reader_write_error_rows_to_file" = 'no', "root_dir" = '$G_FILE_LOCATION', "row_delimiter" = '
 ', "skip_row_header" = 'yes', "table_weight" = '0', "time_format" = 'hh24:mi:ss', "transfer_custom" = 'no', "use_root_dir" = 'no', "write_bom" = 'no');
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Jan 22 16:38:52 2019', "ActaValue_3" = 'Fri Jan 25 12:10:42 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Jan 22 16:38:52 2019', "ActaValue_3" = 'Thu Feb 14 18:56:16 2019', "x" = '-1', "y" = '-1')
 CREATE SESSION JOB_PRIORITYPASS::'2ac1d883-c13d-46fd-96eb-9329919f4d29'( )
 DECLARE
      $L_EXISTE_JOB INT ;
@@ -691,7 +689,9 @@ DECLARE
      GLOBAL $G_FILE_NAME VARCHAR(500) ;
      GLOBAL $G_SH_ROUTE VARCHAR(100) ;
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI', "ui_script_text" = '##INICIALIZACIÓN DE VARIABLES
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI', "ui_script_text" = 'print( \'--version: d3eb3bd\');
+
+##INICIALIZACIÓN DE VARIABLES
 $G_JOB_NAME = job_name( );
 
 $G_FILE_LOCATION = CF_DEFINE_UBICACION( );
@@ -706,7 +706,7 @@ print( \'+---------------------INICIO: [$G_JOB_NAME]--------------------------+\
 
 ', "x" = '260', "y" = '-735')
 BEGIN_SCRIPT
-$G_JOB_NAME = job_name();$G_FILE_LOCATION = CF_DEFINE_UBICACION();$G_CURRENT_DATE = RETURN_LOAD_DATE();$G_SH_ROUTE = sql('DS_CONTROL', 'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%SH_ROUTE%\'');print('+---------------------INICIO: [$G_JOB_NAME]--------------------------+');END
+print('--version: d3eb3bd');$G_JOB_NAME = job_name();$G_FILE_LOCATION = CF_DEFINE_UBICACION();$G_CURRENT_DATE = RETURN_LOAD_DATE();$G_SH_ROUTE = sql('DS_CONTROL', 'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%SH_ROUTE%\'');print('+---------------------INICIO: [$G_JOB_NAME]--------------------------+');END
  AlGUIComment ("If_condition" = 'CF_JOBNAME( $G_JOB_NAME,$L_EXISTE_JOB) = 1', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'CDN_JOB', "x" = '835', "y" = '-737')
 IF ((cf_jobname($G_JOB_NAME, $L_EXISTE_JOB) = 1) )
 BEGIN
@@ -801,7 +801,7 @@ END
 
 END_TRY
 END
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Jan 23 09:22:29 2019', "ActaValue_3" = 'Tue Feb  5 17:20:25 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Jan 23 09:22:29 2019', "ActaValue_3" = 'Mon Feb 18 14:17:50 2019', "x" = '-1', "y" = '-1')
 CREATE PLAN WF_PRIORITY_PASS::'b8434f01-835f-4e09-adc7-662fa4a29f58'( )
 DECLARE
      $L_TABLE_NAME VARCHAR(100) ;
@@ -825,7 +825,7 @@ $L_TABLE_NAME  = replace_substr( $L_TABLE_NAME, \'WF_\', \'\' );
 
 # + ----------------------obtener nombre de la tabla
 $G_FILE_NAME = sql( \'DS_CONTROL\', \'SELECT filename FROM CNF.FILE_LIST WHERE tablename like (\\\'[$L_TABLE_NAME]%\\\') and loaded = 0\');
-print( \'SELECT filename FROM CNF.FILE_LIST WHERE tablename like (\\\'[$L_TABLE_NAME]%\\\') and loaded = 0\');
+#print( \'SELECT filename FROM CNF.FILE_LIST WHERE tablename like (\\\'[$L_TABLE_NAME]%\\\') and loaded = 0\');
 print( $G_FILE_NAME );
 
 
@@ -838,7 +838,7 @@ sql( \'DS_TARGET\', \'truncate table STG_SAT.[$L_TABLE_NAME]\');
 
 ', "x" = '209', "y" = '-425')
 BEGIN_SCRIPT
-$L_TABLE_NAME = replace_substr(workflow_name(), '__', '.');$L_TABLE_NAME = replace_substr($L_TABLE_NAME, 'WF_', '');$G_FILE_NAME = sql('DS_CONTROL', 'SELECT filename FROM CNF.FILE_LIST WHERE tablename like (\'[$L_TABLE_NAME]%\') and loaded = 0');print('SELECT filename FROM CNF.FILE_LIST WHERE tablename like (\'[$L_TABLE_NAME]%\') and loaded = 0');print($G_FILE_NAME);$L_TABLE_NAME = ('' || $L_TABLE_NAME);sql('DS_TARGET', 'truncate table STG_SAT.[$L_TABLE_NAME]');END
+$L_TABLE_NAME = replace_substr(workflow_name(), '__', '.');$L_TABLE_NAME = replace_substr($L_TABLE_NAME, 'WF_', '');$G_FILE_NAME = sql('DS_CONTROL', 'SELECT filename FROM CNF.FILE_LIST WHERE tablename like (\'[$L_TABLE_NAME]%\') and loaded = 0');print($G_FILE_NAME);$L_TABLE_NAME = ('' || $L_TABLE_NAME);sql('DS_TARGET', 'truncate table STG_SAT.[$L_TABLE_NAME]');END
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try5586', "x" = '548', "y" = '-425')
 TRY
 BEGIN
@@ -910,9 +910,11 @@ END_TRY
 sql( \'DS_CONTROL\', \'UPDATE CNF.FILE_LIST SET loaded = 1 WHERE filename = \\\'[$G_FILE_NAME]\\\'\');
 sql( \'DS_CONTROL\', \'commit\');
 exec(\'[$G_SH_ROUTE]\'||\'moveFiles.sh\',\'[$G_FILE_NAME]\',8);
+
 $G_FILE_NAME = \'\';
 
-$L_ID_GENERATED  = CF_CONTROL_LOG_FIN( $L_ID_GENERATED, $L_STATUS_JOB );', "x" = '1635', "y" = '-428')
+$L_ID_GENERATED  = CF_CONTROL_LOG_FIN( $L_ID_GENERATED, $L_STATUS_JOB );
+', "x" = '1635', "y" = '-428')
 BEGIN_SCRIPT
 $L_STATUS_JOB = 'FINALIZADO';sql('DS_CONTROL', 'UPDATE CNF.FILE_LIST SET loaded = 1 WHERE filename = \'[$G_FILE_NAME]\'');sql('DS_CONTROL', 'commit');exec(('[$G_SH_ROUTE]' || 'moveFiles.sh'), '[$G_FILE_NAME]', 8);$G_FILE_NAME = '';$L_ID_GENERATED = cf_control_log_fin($L_ID_GENERATED, $L_STATUS_JOB);END
 END

@@ -34,7 +34,6 @@ CREATE TABLE IF NOT EXISTS SAT.TBDOCPER  (
 ,	USUARIOUMO	VARCHAR	(8)	--Usuario última modificación
 ,	CODTERMUMO	VARCHAR	(8)	--Terminal última modificación
 ,	CONTCUR	TIMESTAMP		--Control de concurrencia
-,	MIS_DATE	DATE		--Fecha de generación de informacion
 ); COMMIT;	 	 		
 
 DROP TABLE IF EXISTS "DWH_ETLS"."TBDOCPER";
@@ -58,8 +57,7 @@ CREATE TABLE IF NOT EXISTS "STG_SAT"."TBDOCPER" (
 	"CODOFIUMO" VARCHAR(4) NULL ,
 	"USUARIOUMO" VARCHAR(8) NULL ,
 	"CODTERMUMO" VARCHAR(8) NULL ,
-	"CONTCUR" VARCHAR(26) NULL ,
-	"MIS_DATE"	DATE	NULL
+	"CONTCUR" VARCHAR(26) NULL 
 )  COMMIT;
 
 ------------------------------------------------
@@ -91,9 +89,9 @@ select
  @NOMBRE_MALLA = 'MPJC8010'
 ,@OBJECT_NAME = 'TBDOCPER'
 ,@OBJECT_USER = 'SAT'
-,@VERSION_COMMIT = 'b9fb9d10a40e610b8027db903bc1ec5c16ad6a9d'
-,@VERSION_CODE = 'b9fb9d1'
-,@VERSION_DATE = 'February 5, 2019 5:04:23 PM'
+,@VERSION_COMMIT = 'd309cc5ada2cafeee01b6e7ac3b49abac029a4c0'
+,@VERSION_CODE = 'd309cc5'
+,@VERSION_DATE = 'February 19, 2019 9:02:51 AM'
 ,@CRDATE = NULL
 
 SELECT @CRDATE = create_time 

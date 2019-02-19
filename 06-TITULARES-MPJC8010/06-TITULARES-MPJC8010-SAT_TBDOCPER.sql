@@ -13,5 +13,4 @@ drop table IF EXISTS SAT.TBDOCPER;  CREATE TABLE IF NOT EXISTS SAT.TBDOCPER  ( 	
 ,	USUARIOUMO	VARCHAR	(8)	--Usuario última modificación
 ,	CODTERMUMO	VARCHAR	(8)	--Terminal última modificación
 ,	CONTCUR	TIMESTAMP		--Control de concurrencia
-,	MIS_DATE	DATE		--Fecha de generación de informacion
 ); COMMIT;	 	 		

@@ -1,3 +1,4 @@
+190219: Se limito a leer unicamente 1er registro de los encabezados.
 190218: Se corrige un nombre de malla.
 190212: Correcion cambios de estados actualiza unicamente los cargados en el set actual.
 190212: Cambio de truncate/append en tabla MALLAS_EJECUCION

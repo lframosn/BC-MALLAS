@@ -21,9 +21,4 @@ drop table IF EXISTS STG_SAT.TBDETCUO;  CREATE TABLE IF NOT EXISTS STG_SAT.TBDET
 ,	FECLIQ 	DATE		--Fecha liquidación 
 ,	FECCONTA 	DATE		--Fecha contable 
 ,	ESTCONT 	DECIMAL	(1,0)	--Estado contable. 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación                           
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ); COMMIT;	 	 		

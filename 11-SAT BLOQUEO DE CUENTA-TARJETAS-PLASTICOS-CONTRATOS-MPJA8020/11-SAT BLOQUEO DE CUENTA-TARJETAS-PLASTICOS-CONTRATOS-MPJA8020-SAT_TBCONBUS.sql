@@ -10,10 +10,5 @@ drop table IF EXISTS SAT.TBCONBUS;  CREATE TABLE IF NOT EXISTS SAT.TBCONBUS  ( 	
 --E = Cuenta de empleado	 	 		
 ,	FECALTA 	DATE		--Fecha de alta 
 ,	FECBAJA 	DATE		--Fecha de baja 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación                           
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ,	MIS_DATE	DATE		--Fecha de generación de informacion
 ); COMMIT;	 	 		

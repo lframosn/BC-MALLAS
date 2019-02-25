@@ -25,11 +25,6 @@ drop table IF EXISTS SAT.TBHISMOD;  CREATE TABLE IF NOT EXISTS SAT.TBHISMOD  ( 	
 ,	DATOMOD 	VARCHAR	(2)	--Dato modificado (bancos, bloqueos, …) 
 ,	MOTIVO 	VARCHAR	(2)	--Motivo de la modificación 
 ,	CANALMOD 	VARCHAR	(2)	--Canal de la modificación (en persona, teléfono …) 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación                           
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ,	TABLA 	VARCHAR	(3)	--Nombre de tabla modificada 
 ,	REGANT 	VARCHAR	(1024)	--Registro anterior 
 ,	REGACT 	VARCHAR	(1024)	--Registro actual 

@@ -76,9 +76,4 @@ drop table IF EXISTS STG_SAT.TBINCINT;  CREATE TABLE IF NOT EXISTS STG_SAT.TBINC
 ,	CODTERM 	VARCHAR	(16)	--Código de Terminal 
 ,	LINREF 	DECIMAL	(8,0)	--Referencia de la línea 
 ,	FORPAGO 	DECIMAL	(2,0)	--Forma de pago de la operación en el origen 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación                           
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ); COMMIT;	 	 		

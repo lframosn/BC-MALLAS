@@ -67,9 +67,4 @@ drop table IF EXISTS STG_SAT.TBTARJET;  CREATE TABLE IF NOT EXISTS STG_SAT.TBTAR
 --1  - Tarjeta EMV con estampación Interna 	 	 		
 --2  - Tarjeta EMV con estampación Externa 	 	 		
 ,	HORBLQ 	TIME		--Hora de bloqueo 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación                           
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ); COMMIT;	 	 		

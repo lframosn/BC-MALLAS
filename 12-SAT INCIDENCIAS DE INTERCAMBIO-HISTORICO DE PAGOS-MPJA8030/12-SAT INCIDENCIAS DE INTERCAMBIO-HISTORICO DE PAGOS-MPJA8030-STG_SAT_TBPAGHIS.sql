@@ -51,9 +51,4 @@ drop table IF EXISTS STG_SAT.TBPAGHIS;  CREATE TABLE IF NOT EXISTS STG_SAT.TBPAG
 --06  - Intereses morosidad 	 	 		
 --07  - Impuestos morosidad 	 	 		
 --08  - Seguros 	 	 		
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación 
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ); COMMIT;	 	 		

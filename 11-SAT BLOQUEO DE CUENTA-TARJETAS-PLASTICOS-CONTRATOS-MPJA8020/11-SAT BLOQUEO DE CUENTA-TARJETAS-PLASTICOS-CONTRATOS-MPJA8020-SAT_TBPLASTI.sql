@@ -15,10 +15,5 @@ drop table IF EXISTS SAT.TBPLASTI;  CREATE TABLE IF NOT EXISTS SAT.TBPLASTI  ( 	
 ,	ESTPLAS1 	VARCHAR	(40)	--Datos de estampación a voluntad 
 ,	ESTPLAS2 	VARCHAR	(40)	--Datos de estampación a voluntad 
 ,	RELTAR 	VARCHAR	(70)	--Relación de tarjetas emitidas en el plástico. Ver nota a continuación. 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación                           
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ,	MIS_DATE	DATE		--Fecha de generación de informacion
 ); COMMIT;	 	 		

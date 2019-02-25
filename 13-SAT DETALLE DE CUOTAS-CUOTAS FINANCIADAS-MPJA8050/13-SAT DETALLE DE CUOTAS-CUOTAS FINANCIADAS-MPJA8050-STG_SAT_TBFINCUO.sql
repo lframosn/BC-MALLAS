@@ -36,9 +36,4 @@ drop table IF EXISTS STG_SAT.TBFINCUO;  CREATE TABLE IF NOT EXISTS STG_SAT.TBFIN
 ,	NUMULTCUO  	DECIMAL	(9,0)	--Número de última cuota 
 ,	INTCARPTE 	DECIMAL	(17,2)	--Intereses de carencia pendientes 
 ,	ESTCONT 	DECIMAL	(1,0)	--Estado contable.    
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación                           
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ); COMMIT;	 	 		

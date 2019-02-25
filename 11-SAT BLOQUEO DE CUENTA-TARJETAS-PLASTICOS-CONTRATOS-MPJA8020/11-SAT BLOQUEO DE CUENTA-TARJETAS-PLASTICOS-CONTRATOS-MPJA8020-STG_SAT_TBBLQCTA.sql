@@ -12,9 +12,4 @@ drop table IF EXISTS STG_SAT.TBBLQCTA;  CREATE TABLE IF NOT EXISTS STG_SAT.TBBLQ
 --M – Manual	 	 		
 --A – Automático	 	 		
 ,	MOTBLQ 	DECIMAL	(2,0)	--Motivo de Bloqueo 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación  
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación  
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación    
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación    
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia  
 ); COMMIT;	 	 		

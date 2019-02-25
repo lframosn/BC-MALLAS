@@ -33,10 +33,5 @@ drop table IF EXISTS SAT.TBCODBLQ;  CREATE TABLE IF NOT EXISTS SAT.TBCODBLQ  ( 	
 ,	INDREEM 	VARCHAR	(1)	--Indicador de permiso de reemisión para el estado (S/N) 
 ,	INDCMBPAN 	VARCHAR	(1)	--Indicador de cambio de PAN en la reemisión de la tarjeta (S/N) 
 ,	INDLIQDEU 	VARCHAR	(1)	--Indicador de aceleración de deuda al extracto pendiente 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación                           
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ,	MIS_DATE	DATE		--Fecha de generación de informacion
 ); COMMIT;	 	 		

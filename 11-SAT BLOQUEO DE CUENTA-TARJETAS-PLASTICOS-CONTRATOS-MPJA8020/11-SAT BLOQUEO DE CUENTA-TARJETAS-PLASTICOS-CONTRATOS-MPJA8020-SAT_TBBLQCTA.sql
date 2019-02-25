@@ -12,10 +12,5 @@ drop table IF EXISTS SAT.TBBLQCTA;  CREATE TABLE IF NOT EXISTS SAT.TBBLQCTA  ( 	
 --M – Manual	 	 		
 --A – Automático	 	 		
 ,	MOTBLQ 	DECIMAL	(2,0)	--Motivo de Bloqueo 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación  
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación  
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación    
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación    
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia  
 ,	MIS_DATE	DATE		--Fecha de generación de informacion
 ); COMMIT;	 	 		

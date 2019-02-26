@@ -49,11 +49,6 @@ drop table IF EXISTS SAT.TBCODBLQ;  CREATE TABLE IF NOT EXISTS SAT.TBCODBLQ  ( 	
 ,	INDREEM 	VARCHAR	(1)	--Indicador de permiso de reemisión para el estado (S/N) 
 ,	INDCMBPAN 	VARCHAR	(1)	--Indicador de cambio de PAN en la reemisión de la tarjeta (S/N) 
 ,	INDLIQDEU 	VARCHAR	(1)	--Indicador de aceleración de deuda al extracto pendiente 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación                           
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ,	MIS_DATE	DATE		--Fecha de generación de informacion
 ); COMMIT;	 	 		
 
@@ -92,11 +87,6 @@ drop table IF EXISTS STG_SAT.TBCODBLQ;  CREATE TABLE IF NOT EXISTS STG_SAT.TBCOD
 ,	INDREEM 	VARCHAR	(1)	--Indicador de permiso de reemisión para el estado (S/N) 
 ,	INDCMBPAN 	VARCHAR	(1)	--Indicador de cambio de PAN en la reemisión de la tarjeta (S/N) 
 ,	INDLIQDEU 	VARCHAR	(1)	--Indicador de aceleración de deuda al extracto pendiente 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación                           
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ); COMMIT;	 	 		
 
 ------------------------------------------------
@@ -128,9 +118,9 @@ select
  @NOMBRE_MALLA = 'MPJA8010'
 ,@OBJECT_NAME = 'TBCODBLQ'
 ,@OBJECT_USER = 'SAT'
-,@VERSION_COMMIT = '5d7995d17e50a52b88bcc6f129cd19cc0509138b'
-,@VERSION_CODE = '5d7995d'
-,@VERSION_DATE = 'February 11, 2019 2:03:00 PM'
+,@VERSION_COMMIT = 'ad80167e4747d4f3893275bddf4bd4fd2976bfa2'
+,@VERSION_CODE = 'ad80167'
+,@VERSION_DATE = 'February 25, 2019 5:51:11 PM'
 ,@CRDATE = NULL
 
 SELECT @CRDATE = create_time 

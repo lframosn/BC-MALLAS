@@ -41,11 +41,6 @@ drop table IF EXISTS SAT.TBHISMOD;  CREATE TABLE IF NOT EXISTS SAT.TBHISMOD  ( 	
 ,	DATOMOD 	VARCHAR	(2)	--Dato modificado (bancos, bloqueos, …) 
 ,	MOTIVO 	VARCHAR	(2)	--Motivo de la modificación 
 ,	CANALMOD 	VARCHAR	(2)	--Canal de la modificación (en persona, teléfono …) 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación                           
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ,	TABLA 	VARCHAR	(3)	--Nombre de tabla modificada 
 ,	REGANT 	VARCHAR	(1024)	--Registro anterior 
 ,	REGACT 	VARCHAR	(1024)	--Registro actual 
@@ -80,11 +75,6 @@ drop table IF EXISTS STG_SAT.TBHISMOD;  CREATE TABLE IF NOT EXISTS STG_SAT.TBHIS
 ,	DATOMOD 	VARCHAR	(2)	--Dato modificado (bancos, bloqueos, …) 
 ,	MOTIVO 	VARCHAR	(2)	--Motivo de la modificación 
 ,	CANALMOD 	VARCHAR	(2)	--Canal de la modificación (en persona, teléfono …) 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación                           
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ,	TABLA 	VARCHAR	(3)	--Nombre de tabla modificada 
 ,	REGANT 	VARCHAR	(1024)	--Registro anterior 
 ,	REGACT 	VARCHAR	(1024)	--Registro actual 
@@ -120,9 +110,9 @@ select
  @NOMBRE_MALLA = 'PCJ2001'
 ,@OBJECT_NAME = 'TBHISMOD'
 ,@OBJECT_USER = 'SAT'
-,@VERSION_COMMIT = '90ad9ba9d3b107ffd6e7f02c95ffc32d8b075829'
-,@VERSION_CODE = '90ad9ba'
-,@VERSION_DATE = 'February 7, 2019 1:25:44 PM'
+,@VERSION_COMMIT = 'ad80167e4747d4f3893275bddf4bd4fd2976bfa2'
+,@VERSION_CODE = 'ad80167'
+,@VERSION_DATE = 'February 25, 2019 5:51:11 PM'
 ,@CRDATE = NULL
 
 SELECT @CRDATE = create_time 
@@ -145,9 +135,9 @@ select
  @NOMBRE_MALLA = 'PCJ2001'
 ,@OBJECT_NAME = 'TBHISMOD'
 ,@OBJECT_USER = 'STG_SAT'
-,@VERSION_COMMIT = '90ad9ba9d3b107ffd6e7f02c95ffc32d8b075829'
-,@VERSION_CODE = '90ad9ba'
-,@VERSION_DATE = 'February 7, 2019 1:25:44 PM'
+,@VERSION_COMMIT = 'ad80167e4747d4f3893275bddf4bd4fd2976bfa2'
+,@VERSION_CODE = 'ad80167'
+,@VERSION_DATE = 'February 25, 2019 5:51:11 PM'
 ,@CRDATE = NULL
 
 SELECT @CRDATE = create_time 

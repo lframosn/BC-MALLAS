@@ -92,11 +92,6 @@ drop table IF EXISTS SAT.TBINCINT;  CREATE TABLE IF NOT EXISTS SAT.TBINCINT  ( 	
 ,	CODTERM 	VARCHAR	(16)	--Código de Terminal 
 ,	LINREF 	DECIMAL	(8,0)	--Referencia de la línea 
 ,	FORPAGO 	DECIMAL	(2,0)	--Forma de pago de la operación en el origen 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación                           
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ,	MIS_DATE	DATE		--Fecha de generación de informacion
 ); COMMIT;	 	 		
 drop table IF EXISTS SAT.TBPAGHIS;  CREATE TABLE IF NOT EXISTS SAT.TBPAGHIS  ( 	IDENTIFICADOR_EJECUCION	INTEGER		--IDENTIFICADOR UNICO DE EJECUCION
@@ -152,11 +147,6 @@ drop table IF EXISTS SAT.TBPAGHIS;  CREATE TABLE IF NOT EXISTS SAT.TBPAGHIS  ( 	
 --06  - Intereses morosidad 	 	 		
 --07  - Impuestos morosidad 	 	 		
 --08  - Seguros 	 	 		
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación 
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ,	MIS_DATE	DATE		--Fecha de generación de informacion
 ); COMMIT;	 	 		
 
@@ -239,11 +229,6 @@ drop table IF EXISTS STG_SAT.TBINCINT;  CREATE TABLE IF NOT EXISTS STG_SAT.TBINC
 ,	CODTERM 	VARCHAR	(16)	--Código de Terminal 
 ,	LINREF 	DECIMAL	(8,0)	--Referencia de la línea 
 ,	FORPAGO 	DECIMAL	(2,0)	--Forma de pago de la operación en el origen 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación                           
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ); COMMIT;	 	 		
 drop table IF EXISTS STG_SAT.TBPAGHIS;  CREATE TABLE IF NOT EXISTS STG_SAT.TBPAGHIS  (
 --MPDT125-Historico de Pago	 	 		
@@ -298,11 +283,6 @@ drop table IF EXISTS STG_SAT.TBPAGHIS;  CREATE TABLE IF NOT EXISTS STG_SAT.TBPAG
 --06  - Intereses morosidad 	 	 		
 --07  - Impuestos morosidad 	 	 		
 --08  - Seguros 	 	 		
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación 
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ); COMMIT;	 	 		
 
 
@@ -335,9 +315,9 @@ select
  @NOMBRE_MALLA = 'MPJA8030'
 ,@OBJECT_NAME = 'TBINCINT'
 ,@OBJECT_USER = 'SAT'
-,@VERSION_COMMIT = '8cceb52b10455838c1a8413afde934dbcadf53b3'
-,@VERSION_CODE = '8cceb52'
-,@VERSION_DATE = 'February 8, 2019 10:53:16 AM'
+,@VERSION_COMMIT = 'ad80167e4747d4f3893275bddf4bd4fd2976bfa2'
+,@VERSION_CODE = 'ad80167'
+,@VERSION_DATE = 'February 25, 2019 5:51:11 PM'
 ,@CRDATE = NULL
 
 SELECT @CRDATE = create_time 
@@ -380,9 +360,9 @@ select
  @NOMBRE_MALLA = 'MPJA8030'
 ,@OBJECT_NAME = 'TBINCINT'
 ,@OBJECT_USER = 'STG_SAT'
-,@VERSION_COMMIT = '8cceb52b10455838c1a8413afde934dbcadf53b3'
-,@VERSION_CODE = '8cceb52'
-,@VERSION_DATE = 'February 8, 2019 10:53:16 AM'
+,@VERSION_COMMIT = 'ad80167e4747d4f3893275bddf4bd4fd2976bfa2'
+,@VERSION_CODE = 'ad80167'
+,@VERSION_DATE = 'February 25, 2019 5:51:11 PM'
 ,@CRDATE = NULL
 
 SELECT @CRDATE = create_time 

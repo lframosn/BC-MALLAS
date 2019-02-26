@@ -28,11 +28,6 @@ drop table IF EXISTS SAT.TBBLQCTA;  CREATE TABLE IF NOT EXISTS SAT.TBBLQCTA  ( 	
 --M – Manual	 	 		
 --A – Automático	 	 		
 ,	MOTBLQ 	DECIMAL	(2,0)	--Motivo de Bloqueo 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación  
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación  
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación    
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación    
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia  
 ,	MIS_DATE	DATE		--Fecha de generación de informacion
 ); COMMIT;	 	 		
 drop table IF EXISTS SAT.TBTARJET;  CREATE TABLE IF NOT EXISTS SAT.TBTARJET  ( 	IDENTIFICADOR_EJECUCION	INTEGER		--IDENTIFICADOR UNICO DE EJECUCION
@@ -104,11 +99,6 @@ drop table IF EXISTS SAT.TBTARJET;  CREATE TABLE IF NOT EXISTS SAT.TBTARJET  ( 	
 --1  - Tarjeta EMV con estampación Interna 	 	 		
 --2  - Tarjeta EMV con estampación Externa 	 	 		
 ,	HORBLQ 	TIME		--Hora de bloqueo 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación                           
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ,	MIS_DATE	DATE		--Fecha de generación de informacion
 ); COMMIT;	 	 		
 drop table IF EXISTS SAT.TBPLASTI;  CREATE TABLE IF NOT EXISTS SAT.TBPLASTI  ( 	IDENTIFICADOR_EJECUCION	INTEGER		--IDENTIFICADOR UNICO DE EJECUCION
@@ -128,11 +118,6 @@ drop table IF EXISTS SAT.TBPLASTI;  CREATE TABLE IF NOT EXISTS SAT.TBPLASTI  ( 	
 ,	ESTPLAS1 	VARCHAR	(40)	--Datos de estampación a voluntad 
 ,	ESTPLAS2 	VARCHAR	(40)	--Datos de estampación a voluntad 
 ,	RELTAR 	VARCHAR	(70)	--Relación de tarjetas emitidas en el plástico. Ver nota a continuación. 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación                           
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ,	MIS_DATE	DATE		--Fecha de generación de informacion
 ); COMMIT;	 	 		
 drop table IF EXISTS SAT.TBCONBUS;  CREATE TABLE IF NOT EXISTS SAT.TBCONBUS  ( 	IDENTIFICADOR_EJECUCION	INTEGER		--IDENTIFICADOR UNICO DE EJECUCION
@@ -147,11 +132,6 @@ drop table IF EXISTS SAT.TBCONBUS;  CREATE TABLE IF NOT EXISTS SAT.TBCONBUS  ( 	
 --E = Cuenta de empleado	 	 		
 ,	FECALTA 	DATE		--Fecha de alta 
 ,	FECBAJA 	DATE		--Fecha de baja 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación                           
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ,	MIS_DATE	DATE		--Fecha de generación de informacion
 ); COMMIT;	 	 		
 
@@ -169,11 +149,6 @@ drop table IF EXISTS STG_SAT.TBBLQCTA;  CREATE TABLE IF NOT EXISTS STG_SAT.TBBLQ
 --M – Manual	 	 		
 --A – Automático	 	 		
 ,	MOTBLQ 	DECIMAL	(2,0)	--Motivo de Bloqueo 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación  
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación  
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación    
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación    
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia  
 ); COMMIT;	 	 		
 drop table IF EXISTS STG_SAT.TBTARJET;  CREATE TABLE IF NOT EXISTS STG_SAT.TBTARJET  (
 --MPDT009-Tarjetas	 	 		
@@ -244,11 +219,6 @@ drop table IF EXISTS STG_SAT.TBTARJET;  CREATE TABLE IF NOT EXISTS STG_SAT.TBTAR
 --1  - Tarjeta EMV con estampación Interna 	 	 		
 --2  - Tarjeta EMV con estampación Externa 	 	 		
 ,	HORBLQ 	TIME		--Hora de bloqueo 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación                           
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ); COMMIT;	 	 		
 drop table IF EXISTS STG_SAT.TBPLASTI;  CREATE TABLE IF NOT EXISTS STG_SAT.TBPLASTI  (
 --MPDT008-Plasticos	 	 		
@@ -267,11 +237,6 @@ drop table IF EXISTS STG_SAT.TBPLASTI;  CREATE TABLE IF NOT EXISTS STG_SAT.TBPLA
 ,	ESTPLAS1 	VARCHAR	(40)	--Datos de estampación a voluntad 
 ,	ESTPLAS2 	VARCHAR	(40)	--Datos de estampación a voluntad 
 ,	RELTAR 	VARCHAR	(70)	--Relación de tarjetas emitidas en el plástico. Ver nota a continuación. 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación                           
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ); COMMIT;	 	 		
 drop table IF EXISTS STG_SAT.TBCONBUS;  CREATE TABLE IF NOT EXISTS STG_SAT.TBCONBUS  (
 --MPDT142-Relacion de contratos de tarjeta con estructura business	 	 		
@@ -285,11 +250,6 @@ drop table IF EXISTS STG_SAT.TBCONBUS;  CREATE TABLE IF NOT EXISTS STG_SAT.TBCON
 --E = Cuenta de empleado	 	 		
 ,	FECALTA 	DATE		--Fecha de alta 
 ,	FECBAJA 	DATE		--Fecha de baja 
-,	CODENTUMO 	VARCHAR	(4)	--Entidad última modificación                           
-,	CODOFIUMO 	VARCHAR	(4)	--Oficina última modificación                           
-,	USUARIOUMO 	VARCHAR	(8)	--Usuario última modificación                           
-,	CODTERMUMO 	VARCHAR	(8)	--Terminal última modificación                          
-,	CONTCUR 	TIMESTAMP		--Control de concurrencia                               
 ); COMMIT;	 	 		
 
 ------------------------------------------------
@@ -321,9 +281,9 @@ select
  @NOMBRE_MALLA = 'MPJA8020'
 ,@OBJECT_NAME = 'TBBLQCTA'
 ,@OBJECT_USER = 'SAT'
-,@VERSION_COMMIT = '8cceb52b10455838c1a8413afde934dbcadf53b3'
-,@VERSION_CODE = '8cceb52'
-,@VERSION_DATE = 'February 8, 2019 10:53:16 AM'
+,@VERSION_COMMIT = 'ad80167e4747d4f3893275bddf4bd4fd2976bfa2'
+,@VERSION_CODE = 'ad80167'
+,@VERSION_DATE = 'February 25, 2019 5:51:11 PM'
 ,@CRDATE = NULL
 
 SELECT @CRDATE = create_time 
@@ -407,9 +367,9 @@ select
  @NOMBRE_MALLA = 'MPJA8020'
 ,@OBJECT_NAME = 'TBBLQCTA'
 ,@OBJECT_USER = 'STG_SAT'
-,@VERSION_COMMIT = '8cceb52b10455838c1a8413afde934dbcadf53b3'
-,@VERSION_CODE = '8cceb52'
-,@VERSION_DATE = 'February 8, 2019 10:53:16 AM'
+,@VERSION_COMMIT = 'ad80167e4747d4f3893275bddf4bd4fd2976bfa2'
+,@VERSION_CODE = 'ad80167'
+,@VERSION_DATE = 'February 25, 2019 5:51:11 PM'
 ,@CRDATE = NULL
 
 SELECT @CRDATE = create_time 

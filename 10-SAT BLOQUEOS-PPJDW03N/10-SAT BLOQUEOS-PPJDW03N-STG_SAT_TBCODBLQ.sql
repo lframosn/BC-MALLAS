@@ -1,3 +1,4 @@
+ 
 drop table IF EXISTS STG_SAT.TBCODBLQ;  CREATE TABLE IF NOT EXISTS STG_SAT.TBCODBLQ  (
 --MPDT060 - BLOQUEOS	 	 		
 	CODENT_D	VARCHAR	(4)	--CODIGO DE ENTIDAD
@@ -6,38 +7,38 @@ drop table IF EXISTS STG_SAT.TBCODBLQ;  CREATE TABLE IF NOT EXISTS STG_SAT.TBCOD
 ,	TIPOREG_D	VARCHAR	(1)	--TIPO DE REGISTRO D = DETALLE 
 ,	FILLER_D	VARCHAR	(91)	--FILLER
 ,	NUMREGPROC	DECIMAL	(12,0)	--NUMERO DE REGISTRO PROCESADO
-,	CODENT 	VARCHAR	(4)	--Código de entidad 
-,	CODBLQ 	DECIMAL	(2,0)	--Código de bloqueo 
-,	DESBLQ 	VARCHAR	(30)	--Descripción del bloqueo 
-,	DESBLQRED 	VARCHAR	(10)	--Descripción reducida del bloqueo 
-,	INDAPLEMISOR 	VARCHAR	(1)	--Indicador de aplicación en vertiente emisor:
---C – Contrato de tarjeta	 	 		
---T – Tarjeta	 	 		
---A – Ambos	 	 		
-,	CODBLQSIA 	VARCHAR	(2)	--Código de bloqueo para el SIA o Switch:
---‘00’ – Tarjeta operativa	 	 		
---‘01’ – Denegar sin retener	 	 		
---‘02’ – Denegar en respaldo	 	 		
---‘03’ – Retener tarjeta	 	 		
---‘06’- Denegar tarjeta robada	 	 		
---‘07’- Denegar tarjeta perdida	 	 		
---‘08’- Sospechoso fraude	 	 		
+,	CODENT 	VARCHAR	(4)	--CÃ³digo de entidad 
+,	CODBLQ 	DECIMAL	(2,0)	--CÃ³digo de bloqueo 
+,	DESBLQ 	VARCHAR	(30)	--DescripciÃ³n del bloqueo 
+,	DESBLQRED 	VARCHAR	(10)	--DescripciÃ³n reducida del bloqueo 
+,	INDAPLEMISOR 	VARCHAR	(1)	--Indicador de aplicaciÃ³n en vertiente emisor:
+--C â€“ Contrato de tarjeta	 	 		
+--T â€“ Tarjeta	 	 		
+--A â€“ Ambos	 	 		
+,	CODBLQSIA 	VARCHAR	(2)	--CÃ³digo de bloqueo para el SIA o Switch:
+--â€˜00â€™ â€“ Tarjeta operativa	 	 		
+--â€˜01â€™ â€“ Denegar sin retener	 	 		
+--â€˜02â€™ â€“ Denegar en respaldo	 	 		
+--â€˜03â€™ â€“ Retener tarjeta	 	 		
+--â€˜06â€™- Denegar tarjeta robada	 	 		
+--â€˜07â€™- Denegar tarjeta perdida	 	 		
+--â€˜08â€™- Sospechoso fraude	 	 		
 ,	INDBLQOPE 	VARCHAR	(1)	--Bloquea operatividad:
 --N: Sin bloqueo	 	 		
 --S: Bloqueo de Operaciones	 	 		
 --T: Bloqueo de Operaciones y Pagos	 	 		
-,	INDNOREN 	DECIMAL	(1,0)	--Indicador de no renovación:
---0 – Sí renovar	 	 		
---1 – No renovar	 	 		
-,	INDENVRED 	VARCHAR	(1)	--Indicador de envío a red o franquicia (S/N) 
-,	INDGENCUO 	VARCHAR	(1)	--Indicador de generación de cuota 
-,	INDBONCUO 	VARCHAR	(1)	--Indicador de bonificación de cuota 
+,	INDNOREN 	DECIMAL	(1,0)	--Indicador de no renovaciÃ³n:
+--0 â€“ SÃ­ renovar	 	 		
+--1 â€“ No renovar	 	 		
+,	INDENVRED 	VARCHAR	(1)	--Indicador de envÃ­o a red o franquicia (S/N) 
+,	INDGENCUO 	VARCHAR	(1)	--Indicador de generaciÃ³n de cuota 
+,	INDBONCUO 	VARCHAR	(1)	--Indicador de bonificaciÃ³n de cuota 
 ,	INDBLQCON 	VARCHAR	(1)	--Indicador bloqueo consulta (S/N) 
-,	INDBLQLIQ 	VARCHAR	(1)	--Indicador de bloqueo de liquidación (S/N) 
+,	INDBLQLIQ 	VARCHAR	(1)	--Indicador de bloqueo de liquidaciÃ³n (S/N) 
 ,	PESO 	DECIMAL	(2,0)	--Peso del bloqueo 
 ,	INDREVER 	VARCHAR	(1)	--Indicador de reversibilidad (S/N) 
-,	INDREEM 	VARCHAR	(1)	--Indicador de permiso de reemisión para el estado (S/N) 
-,	INDCMBPAN 	VARCHAR	(1)	--Indicador de cambio de PAN en la reemisión de la tarjeta (S/N) 
-,	INDLIQDEU 	VARCHAR	(1)	--Indicador de aceleración de deuda al extracto pendiente 
+,	INDREEM 	VARCHAR	(1)	--Indicador de permiso de reemisiÃ³n para el estado (S/N) 
+,	INDCMBPAN 	VARCHAR	(1)	--Indicador de cambio de PAN en la reemisiÃ³n de la tarjeta (S/N) 
+,	INDLIQDEU 	VARCHAR	(1)	--Indicador de aceleraciÃ³n de deuda al extracto pendiente 
 ,	FILLER1	VARCHAR	(818)	--FILLER
 ); COMMIT;	 	 		

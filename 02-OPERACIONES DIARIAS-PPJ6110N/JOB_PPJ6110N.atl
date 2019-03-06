@@ -15,7 +15,7 @@ CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET
 <locale_codepage>&lt;default&gt;</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E80584972C2F0989C67B2AF3836FD4085B9FB22E96F5CE69DD63C5F402397C031B55C79CB5D0B19546A780EDC1A068</password>
+<password>+0400000000120303000803E870384BEE5E460D2119B359DD1DCE6AC235EC5C8C9861B76CFCEDE0DF1128AE74C38EDA030B0CD7A6288B603117C2</password>
 <server_codepage>&lt;default&gt;</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -26,7 +26,7 @@ CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET
 </DSConfiguration>
 </DSConfigurations>
 ', "enable_data_transfer" = 'yes', "import_unknown_type" = 'no', "name" = 'DS_CONTROL', "pcache_force_utf16" = 'no');
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Dec 11 10:31:02 2018', "ActaValue_3" = 'Tue Dec 11 10:31:27 2018', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Dec 11 10:31:02 2018', "ActaValue_3" = 'Wed Feb 20 15:51:23 2019', "x" = '-1', "y" = '-1')
 CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="ISO-8859-1" ?>
 <DSConfigurations>
 <DSConfiguration default="true" name="Configuration1">
@@ -40,7 +40,7 @@ CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET 
 <locale_codepage>iso-8859-1</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E8B57CD7AD462A3E99F1807786ED9682F11BB7ACD4267FFA17461589385F55E2969C006C402C660F9689EA2E40ECE2</password>
+<password>+0400000000120303000803E829469FBBA38964B4F7488B5787A68439E766C6E4B9841FF64497C0AE68F89150CC3551DE096ACE1C026E8B1167B3</password>
 <server_codepage>iso-8859-1</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -58,11 +58,11 @@ ActaName_3 = 'RDescription',ActaValue_3 = '' ,
 ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
-ActaName_7 = 'RDate_modified',ActaValue_7 = 'Wed Jan 30 17:33:40 2019' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb 12 15:50:20 2019' , 
-ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '8' , 
+ActaName_7 = 'RDate_modified',ActaValue_7 = 'Thu Feb 14 13:11:20 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Mar  5 14:39:23 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '5' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
-ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '8' , 
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '5' , 
 ActaName_12 = 'RElapsed_Time_For_Load',ActaValue_12 = '0 Seconds' )
 CREATE TABLE DS_TARGET.SAT.PTCEDIA1(IDENTIFICADOR_EJECUCION INT  NULL , 
 CODENT_D VARCHAR(4)  NULL , 
@@ -99,12 +99,12 @@ ActaName_3 = 'RDescription',ActaValue_3 = '' ,
 ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
-ActaName_7 = 'RDate_modified',ActaValue_7 = 'Wed Jan 30 17:33:42 2019' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb 12 15:50:16 2019' , 
-ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '652' , 
+ActaName_7 = 'RDate_modified',ActaValue_7 = 'Thu Feb 14 13:11:20 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Mar  5 14:39:19 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '5' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
-ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '652' , 
-ActaName_12 = 'RElapsed_Time_For_Load',ActaValue_12 = '1 Seconds' )
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '5' , 
+ActaName_12 = 'RElapsed_Time_For_Load',ActaValue_12 = '0 Seconds' )
 CREATE TABLE DS_TARGET.STG_SAT.PTCEDIA1(CODENT_D VARCHAR(4)  NULL , 
 NSECFIC_D DECIMAL(10, 0)  NULL , 
 TIPOCINTA_D DECIMAL(2, 0)  NULL , 
@@ -139,11 +139,11 @@ ActaName_3 = 'RDescription',ActaValue_3 = '' ,
 ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
-ActaName_7 = 'RDate_modified',ActaValue_7 = 'Wed Jan 30 17:33:44 2019' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Feb 12 15:50:31 2019' , 
-ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '642' , 
+ActaName_7 = 'RDate_modified',ActaValue_7 = 'Thu Feb 14 13:11:20 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue Mar  5 14:39:34 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '99' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
-ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '642' , 
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '99' , 
 ActaName_12 = 'RNumber_Of_Updates',ActaValue_12 = '0' , 
 ActaName_13 = 'RNumber_Of_Deletes',ActaValue_13 = '0' , 
 ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '2 Seconds' )
@@ -214,10 +214,10 @@ FILLER1 VARCHAR(373)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Feb 12 15:50:25 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '652' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue Mar  5 14:39:28 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '99' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '652' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '99' , 
 ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
 ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
 ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '1 Seconds' , 
@@ -227,7 +227,7 @@ ActaName_10 = 'RDescription',ActaValue_10 = '' ,
 ActaName_11 = 'REstimated_Row_Count',ActaValue_11 = '50000' , 
 ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'no' , 
 ActaName_13 = 'RSavedAfterCheckOut',ActaValue_13 = 'YES' , 
-ActaName_14 = 'RDate_modified',ActaValue_14 = 'Wed Jan 30 17:47:38 2019' )
+ActaName_14 = 'RDate_modified',ActaValue_14 = 'Thu Feb 14 13:11:21 2019' )
 CREATE TABLE DS_TARGET.STG_SAT.PTOPEDI1(CODENT_D VARCHAR(4)  NULL  SET("Description" = 'PTOPEDI1.CODENT_D', "ui_mapping_text" = 'PTOPEDI1.CODENT_D'), 
 NSECFIC_D DECIMAL(10, 0)  NULL  SET("Description" = 'PTOPEDI1.NSECFIC_D', "ui_mapping_text" = 'PTOPEDI1.NSECFIC_D'), 
 TIPOCINTA_D DECIMAL(2, 0)  NULL  SET("Description" = 'PTOPEDI1.TIPOCINTA_D', "ui_mapping_text" = 'PTOPEDI1.TIPOCINTA_D'), 
@@ -293,349 +293,7 @@ NUMMOVDEB DECIMAL(9, 0)  NULL  SET("Description" = 'PTOPEDI1.NUMMOVDEB', "ui_map
 FILLER1 VARCHAR(373)  NULL  SET("Description" = 'PTOPEDI1.FILLER1', "ui_mapping_text" = 'PTOPEDI1.FILLER1')) 
 SET("db_alias_name" = 'STG_SAT')
 ;
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Fri Dec 14 15:48:11 2018', "ActaValue_6" = 'Wed Jan 23 19:03:22 2019', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '
-
-
-$L_NOMBRE_TABLA = workflow_name( );
-$L_NOMBRE_TABLA = replace_substr( $L_NOMBRE_TABLA , \'WF_\', \'\');
-$L_NOMBRE_TABLA = replace_substr( $L_NOMBRE_TABLA , \'__R\', \'\');
-$L_ID_EJECUCION = $P_ID_EJECUCION ;
-print( \'--------------------ENTRANDO A CUENTA DE DATOS  [$L_ID_EJECUCION]\');
-
-$L_CUANTOS_LLEVA = sql( \'DS_CONTROL\', \'SELECT NUM_FILAS_INS FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-print( \'CUENTA ACTUAL: \' || $L_CUANTOS_LLEVA);
-
-
-IF ($L_CUANTOS_LLEVA IS null )
-begin
-    $L_CUANTOS_LLEVA = 0;	
-end
-
-
-#print( \'SELECT COUNT(*) FROM SAT.[$L_NOMBRE_TABLA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-$L_SUMA = sql( \'DS_TARGET\', \'SELECT COUNT(*) FROM SAT.[$L_NOMBRE_TABLA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-print( $L_SUMA);
-
-
-
-$L_SUMA = $L_SUMA + $L_CUANTOS_LLEVA ;
-
-sql( \'DS_CONTROL\', \'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = [$L_SUMA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-sql( \'DS_CONTROL\', \'COMMIT\');
-
-RETURN 0;
-
-', "x" = '-1', "y" = '-1')
-CREATE FUNCTION CF_CUENTA_DATOS($P_ID_EJECUCION INT  IN )
-RETURNS  INT 
-DECLARE
-     $L_NOMBRE_TABLA VARCHAR(50) ;
-     $L_CUANTOS_LLEVA INT ;
-     $L_SUMA INT ;
-     $L_ID_EJECUCION INT ;
-BEGIN
-$L_NOMBRE_TABLA = workflow_name();$L_NOMBRE_TABLA = replace_substr($L_NOMBRE_TABLA, 'WF_', '');$L_NOMBRE_TABLA = replace_substr($L_NOMBRE_TABLA, '__R', '');$L_ID_EJECUCION = $P_ID_EJECUCION;print('--------------------ENTRANDO A CUENTA DE DATOS  [$L_ID_EJECUCION]');$L_CUANTOS_LLEVA = sql('DS_CONTROL', 'SELECT NUM_FILAS_INS FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');print(('CUENTA ACTUAL: ' || $L_CUANTOS_LLEVA));IF (($L_CUANTOS_LLEVA IS  NULL ) )
-BEGIN
-$L_CUANTOS_LLEVA = 0;END
-$L_SUMA = sql('DS_TARGET', 'SELECT COUNT(*) FROM SAT.[$L_NOMBRE_TABLA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');print($L_SUMA);$L_SUMA = ($L_SUMA + $L_CUANTOS_LLEVA);sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = [$L_SUMA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'COMMIT');RETURN 0;
-END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 13:29:48 2018', "ActaValue_6" = 'Wed Jan 30 19:19:18 2019', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '######################################################################
-## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
-##                                                                  ##
-## 11/12/2018                                                       ##
-##                                                                  ##
-## CREADO POR JAVIER LOPEZ                                          ##
-## GYSSA                                                            ##
-######################################################################
-
-##ELIMINAMOS PREFIJO WF Y REEMPLAZAMOS __ POR . PARA QUE HAGA MATCH CON LO QUE SE TIENE EN LA TABLA DE MALLAS
-$L_NOMBRE_WF = replace_substr(workflow_name( ), \'__\', \'.\');
-$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, \'WF_\', \'\');
-
-
-##OBTENEMOS ID DE MALLA POR MEDIO DE LA TABLA CNF.MALLAS
-$L_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\'\');
-
-
-
-##OBTENEMOS EL ID DE EJECUCIÓN DE LA MALLA QUE ESTÉ CON ESTADO CARGADO
-$L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\\\'CARGADO\\\',\\\'LISTADO\\\') AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
-#print( \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
-print( $L_ID_EJECUCION );
-
-##INICIAMOS VARIABLES
-$L_ESTADO  = \'INICIADO\';
-$L_CURRENT_DATE = sysdate( ) ;
-
-
-try
-    
-	begin
-	##INICIO DE TRANASCCIÓN
-	SQL(\'DS_CONTROL\', \'BEGIN TRANSACTION\');
-
-	##CAMBIO DE ESTADO A INICIADO EN TABLA DE CONTROL PARA LA MALLA QUE SE EJECUTANDO
-	sql( \'DS_CONTROL\', \'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \\\'[$L_ESTADO]\\\' WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-	sql( \'DS_CONTROL\', \'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = 0 WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-	
-
-	SQL(\'DS_CONTROL\', \'COMMIT\');
-    print( \'**********************************************************************\');
-    print( \'****************TERMINANDO INSERCION CONTROL_EJECUCION****************\');
-    print( \'**********************************************************************\');
-	
-
-	print( \'**********************************************************************\');
-	PRINT( \'********TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION*********\');
-	print( \'**********************************************************************\');
-
-    
-
-	RETURN $L_ID_EJECUCION ;		
-	end
-catch ( all  )
-	begin
-	    print( \'********************************************************************************************\');
-		print( \'**********OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION**********\');
-		print( \'********************************************************************************************\');
-		RETURN -1;
-	end
-', "x" = '-1', "y" = '-1')
-CREATE FUNCTION CF_EJECUCION_MALLA( )
-RETURNS  INT 
-DECLARE
-     $L_CURRENT_DATE DATE ;
-     $L_ID_MALLA INT ;
-     $L_NOMBRE_WF VARCHAR(50) ;
-     $L_ESTADO VARCHAR(50) ;
-     $L_REPROCESO INT ;
-     $L_ID_EJECUCION INT ;
-BEGIN
-$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');$L_ID_MALLA = sql('DS_CONTROL', 'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\'CARGADO\',\'LISTADO\') AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]');print($L_ID_EJECUCION);$L_ESTADO = 'INICIADO';$L_CURRENT_DATE = sysdate();TRY
-BEGIN
-sql('DS_CONTROL', 'BEGIN TRANSACTION');sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \'[$L_ESTADO]\' WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = 0 WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'COMMIT');print('**********************************************************************');print('****************TERMINANDO INSERCION CONTROL_EJECUCION****************');print('**********************************************************************');print('**********************************************************************');print('********TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION*********');print('**********************************************************************');RETURN $L_ID_EJECUCION;
-END
-CATCH (210101)
-BEGIN
-print('********************************************************************************************');print('**********OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION**********');print('********************************************************************************************');RETURN -1;
-END
-
-END_TRY
-END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Wed Dec 19 10:28:20 2018', "ActaValue_6" = 'Wed Dec 19 11:23:14 2018', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '
-$L_TABLE = replace_substr( $P_WF, \'WF_\', \'\');
-$L_TABLE = replace_substr( $L_TABLE, \'__R\', \'\');
-
-$L_JOB = replace_substr( job_name( ), \'JOB_\', \'\');
-$L_JOB = replace_substr( $L_JOB , \'__\', \'.\');
-
-
-
-$L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE NOMBRE_ARCHIVO LIKE \\\'[$L_JOB]\\\'\');
-
-
-sql( \'DS_TARGET\', \'DELETE FROM SAT.[$L_TABLE] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-sql( \'DS_TARGET\', \'COMMIT\');
-
-RETURN $L_ID_EJECUCION ;', "x" = '-1', "y" = '-1')
-CREATE FUNCTION CF_ELIMINA_DATOS($P_WF VARCHAR(50)  IN )
-RETURNS  INT 
-DECLARE
-     $L_TABLE VARCHAR(50) ;
-     $L_ID_EJECUCION INT ;
-     $L_JOB VARCHAR(50) ;
-BEGIN
-$L_TABLE = replace_substr($P_WF, 'WF_', '');$L_TABLE = replace_substr($L_TABLE, '__R', '');$L_JOB = replace_substr(job_name(), 'JOB_', '');$L_JOB = replace_substr($L_JOB, '__', '.');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE NOMBRE_ARCHIVO LIKE \'[$L_JOB]\'');sql('DS_TARGET', 'DELETE FROM SAT.[$L_TABLE] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_TARGET', 'COMMIT');RETURN $L_ID_EJECUCION;
-END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 12:14:53 2018', "ActaValue_6" = 'Fri Dec 14 11:25:44 2018', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '######################################################################
-## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
-##                                                                  ##
-## 11/12/2018                                                       ##
-##                                                                  ##
-## CREADO POR JAVIER LOPEZ                                          ##
-## GYSSA                                                            ##
-######################################################################
-
-##ENVIO DE CORREO ELECTRONICO ANTE ERROR
-$L_EMAIL = sql(\'DS_CONTROL\', \'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \\\'%EMAIL_NOTIFICACION%\\\'\');
-
-
-$L_EXEC = smtp_to($L_EMAIL,$P_SBJ,$P_MSG,10,10);
-
-
-RETURN $L_EXEC;', "x" = '-1', "y" = '-1')
-CREATE FUNCTION CF_ENVIO_CORREO($P_SBJ VARCHAR(100)  IN, $P_MSG VARCHAR(1000)  IN )
-RETURNS  INT 
-DECLARE
-     $L_EMAIL VARCHAR(1000) ;
-     $L_EXEC VARCHAR(1000) ;
-BEGIN
-$L_EMAIL = sql('DS_CONTROL', 'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%EMAIL_NOTIFICACION%\'');$L_EXEC = smtp_to($L_EMAIL, $P_SBJ, $P_MSG, 10, 10);RETURN $L_EXEC;
-END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 16:39:09 2018', "ActaValue_6" = 'Fri Dec 14 15:23:09 2018', "InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '54', "ui_script_text" = '######################################################################
-## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
-##                                                                  ##
-## 11/12/2018                                                       ##
-##                                                                  ##
-## CREADO POR JAVIER LOPEZ                                          ##
-## GYSSA                                                            ##
-######################################################################
-
-##ELIMINAMOS PREFIJO WF Y REEMPLAZAMOS __ POR . PARA QUE HAGA MATCH CON LO QUE SE TIENE EN LA TABLA DE MALLAS
-$L_NOMBRE_WF = replace_substr(workflow_name( ), \'__\', \'.\');
-$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, \'WF_\', \'\');
-
-##OBTENEMOS ID DE MALLA POR MEDIO DE LA TABLA CNF.MALLAS
-$L_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\'\');
-
-##OBTENEMOS EL ID DE EJECUCIÓN DE LA MALLA QUE ESTÉ CON ESTADO CARGADO
-$L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
-
-##INICIAMOS VARIABLES
-$L_ESTADO  = \'FINALIZADO\';
-$L_CURRENT_DATE = sysdate( ) ;
-
-try
-    
-	begin
-	##INICIO DE TRANASCCIÓN
-	
-	SQL(\'DS_CONTROL\', \'BEGIN TRANSACTION\');	
-	
-	##CAMBIO DE ESTADO A FINALIZADO EN TABLA DE CONTROL PARA LA MALLA QUE SE EJECUTANDO
-	sql( \'DS_CONTROL\', \'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \\\'[$L_ESTADO]\\\' WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');	
-
-
-	
-	SQL(\'DS_CONTROL\', \'COMMIT\');
-    print( \'**********************************************************\');
-    print( \'**********TERMINANDO INSERCION CONTROL_EJECUCION**********\');
-	print( \'**********************************************************\');
-
-	
-
-	print( \'************************************************************************\');
-	PRINT(\'**********TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION**********\');
-	print( \'************************************************************************\');
-	
-	
-	
-	RETURN $L_ID_EJECUCION ;		
-	end
-catch ( all  )
-	begin
-	    print( \'********************************************************************************************\');
-		print( \'**********OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION**********\');
-		print( \'********************************************************************************************\');
-		RETURN -1;
-	end', "x" = '-1', "y" = '-1')
-CREATE FUNCTION CF_FIN_MALLA( )
-RETURNS  INT 
-DECLARE
-     $L_NOMBRE_WF VARCHAR(50) ;
-     $L_ID_MALLA INT ;
-     $L_ID_EJECUCION INT ;
-     $L_ESTADO VARCHAR(25) ;
-     $L_CURRENT_DATE DATETIME(9) ;
-     $L_CUENTA_DATOS INT ;
-     $L_TABLA_ACTUAL INT ;
-     $L_CUENTA_CONTROL INT ;
-BEGIN
-$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');$L_ID_MALLA = sql('DS_CONTROL', 'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]');$L_ESTADO = 'FINALIZADO';$L_CURRENT_DATE = sysdate();TRY
-BEGIN
-sql('DS_CONTROL', 'BEGIN TRANSACTION');sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \'[$L_ESTADO]\' WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'COMMIT');print('**********************************************************');print('**********TERMINANDO INSERCION CONTROL_EJECUCION**********');print('**********************************************************');print('************************************************************************');print('**********TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION**********');print('************************************************************************');RETURN $L_ID_EJECUCION;
-END
-CATCH (210101)
-BEGIN
-print('********************************************************************************************');print('**********OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION**********');print('********************************************************************************************');RETURN -1;
-END
-
-END_TRY
-END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 14:57:03 2018', "ActaValue_6" = 'Fri Dec 14 11:29:45 2018', "InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '54', "ui_script_text" = '######################################################################
-## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
-##                                                                  ##
-## 11/12/2018                                                       ##
-##                                                                  ##
-## CREADO POR JAVIER LOPEZ                                          ##
-## GYSSA                                                            ##
-######################################################################
-
-##ELIMINAMOS PREFIJO WF Y REEMPLAZAMOS __ POR . PARA QUE HAGA MATCH CON LO QUE SE TIENE EN LA TABLA DE MALLAS
-$L_NOMBRE_WF = replace_substr(workflow_name( ), \'__\', \'.\');
-$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, \'WF_\', \'\');
-
-
-print( \'PROCESO NORMAL INICIO\');
-##OBTENEMOS ID DE MALLA POR MEDIO DE LA TABLA CNF.MALLAS
-print( \'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\'\');
-$L_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\'\');
-
-##SE BUSCA SI EXISTE COMBINACIÓN DE REPROCESO CON ID_MALLA, SI HAY VALOR QUE COINCIDE
-##ES REPROCESO Y ENTRA EN EL FLUJO DEL ELSE, SI NO, ENTRA EN FLUJO DE PRIMER PROCESO
-print( \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
-$L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
-
-
-print( \'SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-$P_TIPO_PROCESO  = sql( \'DS_CONTROL\', \'SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
-
-
-RETURN $P_TIPO_PROCESO;', "x" = '-1', "y" = '-1')
-CREATE FUNCTION CF_PROCESO_NORMAL( )
-RETURNS  INT 
-DECLARE
-     $L_NOMBRE_WF VARCHAR(50) ;
-     $L_ID_MALLA INT ;
-     $L_ID_EJECUCION INT ;
-     $P_TIPO_PROCESO INT ;
-     $L_VALOR_REPROCESO INT ;
-BEGIN
-$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');print('PROCESO NORMAL INICIO');print('SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');$L_ID_MALLA = sql('DS_CONTROL', 'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');print('SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]');print('SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');$P_TIPO_PROCESO = sql('DS_CONTROL', 'SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');RETURN $P_TIPO_PROCESO;
-END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 11:01:08 2018', "ActaValue_6" = 'Wed Jan 30 19:13:26 2019', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '######################################################################
-## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
-##                                                                  ##
-## 11/12/2018                                                       ##
-##                                                                  ##
-## CREADO POR JAVIER LOPEZ                                          ##
-## GYSSA                                                            ##
-######################################################################
-
-##ELIMINA CARACTERES ESPACIALES DEL NOMBRE DEL WF
-$L_NOMBRE_WF = replace_substr(workflow_name( ), \'__\', \'.\');
-$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, \'WF_\', \'\');
-
-$L_VALOR_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\' \');
-$L_VALOR_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\\\'CARGADO\\\',\\\'LISTADO\\\') AND IDENTIFICADOR_MALLA = \' || $L_VALOR_ID_MALLA);
-#print( \'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS_EJECUCION WHERE ESTADO NOT IN (\\\'FINALIZADO\\\',\\\'INICIADO\\\') AND IDENTIFICADOR_MALLA = \' || $L_VALOR_ID_MALLA);
-
-IF($L_VALOR_ID_MALLA IS NOT null)
-begin
-	$L_EXISTE_MALLA = 1;
-
-end
-else begin
-    $L_EXISTE_MALLA = 0	;
-end
-
-RETURN $L_EXISTE_MALLA ;', "x" = '-1', "y" = '-1')
-CREATE FUNCTION CF_VERIFICA_MALLA( )
-RETURNS  INT 
-DECLARE
-     $L_NOMBRE_WF VARCHAR(50) ;
-     $L_EXISTE_MALLA INT ;
-     $L_VALOR_ID_MALLA INT ;
-BEGIN
-$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');$L_VALOR_ID_MALLA = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\' ');$L_VALOR_ID_MALLA = sql('DS_CONTROL', ('SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\'CARGADO\',\'LISTADO\') AND IDENTIFICADOR_MALLA = ' || $L_VALOR_ID_MALLA));IF (($L_VALOR_ID_MALLA IS NOT  NULL ) )
-BEGIN
-$L_EXISTE_MALLA = 1;END
-ELSE
-BEGIN
-$L_EXISTE_MALLA = 0;END
-RETURN $L_EXISTE_MALLA;
-END
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Dec 19 09:26:21 2018', "ActaValue_3" = 'Thu Jan 31 09:49:02 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Dec 19 09:26:21 2018', "ActaValue_3" = 'Thu Feb 14 13:11:24 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_PTCEDIA1::'04947058-1759-4a9e-87a8-afa68b960f5a'
 BEGIN
 
@@ -861,47 +519,12 @@ SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Dec 19 09:26:14 2018', "ActaValue_3" = 'Wed Jan 30 17:32:16 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Dec 19 09:26:14 2018', "ActaValue_3" = 'Thu Feb 14 13:11:24 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_PTCEDIA1::'bd164e58-5dfe-42c7-8caf-9063c1459380'
 BEGIN
 
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Description', "Input_2nd_Column_Name" = 'Type', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>194</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '42', "x" = '90', "y" = '-90')
-GUID::'8458f2ba-f21f-4f10-b647-432861c55b01' READ __BODI_COPYBOOK_COBOL PTCEDIA1 OUTPUT(PTCEDIA1)
-SET("Cbl_capture_data_conversion" = 'no', "cache" = 'no', "connection_port" = 'no', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'yes', "reader_include_filename" = 'no', "table_weight" = '0');
-
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "ui_acta_from_schema_0" = 'PTCEDIA1', "x" = '480', "y" = '-90')
-GUID::'d16c94ed-c7ef-4c58-8b53-11c95a68e74b' CREATE VIEW Query( CODENT_D VARCHAR(4)  SET( "Description" = 'PTCEDIA1.CODENT_D', "ui_mapping_text" = 'PTCEDIA1.CODENT_D') ,
- NSECFIC_D DECIMAL(10, 0)  SET( "Description" = 'PTCEDIA1.NSECFIC_D', "ui_mapping_text" = 'PTCEDIA1.NSECFIC_D') ,
- TIPOCINTA_D DECIMAL(2, 0)  SET( "Description" = 'PTCEDIA1.TIPOCINTA_D', "ui_mapping_text" = 'PTCEDIA1.TIPOCINTA_D') ,
- TIPOREG_D VARCHAR(1)  SET( "Description" = 'PTCEDIA1.TIPOREG_D', "ui_mapping_text" = 'PTCEDIA1.TIPOREG_D') ,
- FILLER_D VARCHAR(91)  SET( "Description" = 'PTCEDIA1.FILLER_D', "ui_mapping_text" = 'PTCEDIA1.FILLER_D') ,
- NUMREGPROC DECIMAL(12, 0)  SET( "Description" = 'PTCEDIA1.NUMREGPROC', "ui_mapping_text" = 'PTCEDIA1.NUMREGPROC') ,
- INDDEBCRE DECIMAL(1, 0)  SET( "Description" = 'PTCEDIA1.INDDEBCRE', "ui_mapping_text" = 'PTCEDIA1.INDDEBCRE') ,
- TIPMOV VARCHAR(1)  SET( "Description" = 'PTCEDIA1.TIPMOV', "ui_mapping_text" = 'PTCEDIA1.TIPMOV') ,
- CODENT VARCHAR(4)  SET( "Description" = 'PTCEDIA1.CODENT', "ui_mapping_text" = 'PTCEDIA1.CODENT') ,
- CENTALTA VARCHAR(4)  SET( "Description" = 'PTCEDIA1.CENTALTA', "ui_mapping_text" = 'PTCEDIA1.CENTALTA') ,
- CUENTA VARCHAR(12)  SET( "Description" = 'PTCEDIA1.CUENTA', "ui_mapping_text" = 'PTCEDIA1.CUENTA') ,
- CLAMON DECIMAL(3, 0)  SET( "Description" = 'PTCEDIA1.CLAMON', "ui_mapping_text" = 'PTCEDIA1.CLAMON') ,
- CODCONECO DECIMAL(4, 0)  SET( "Description" = 'PTCEDIA1.CODCONECO', "ui_mapping_text" = 'PTCEDIA1.CODCONECO') ,
- DESCONECO VARCHAR(30)  SET( "Description" = 'PTCEDIA1.DESCONECO', "ui_mapping_text" = 'PTCEDIA1.DESCONECO') ,
- SIGNOCE VARCHAR(1)  SET( "Description" = 'PTCEDIA1.SIGNOCE', "ui_mapping_text" = 'PTCEDIA1.SIGNOCE') ,
- TIPIMP DECIMAL(2, 0)  SET( "Description" = 'PTCEDIA1.TIPIMP', "ui_mapping_text" = 'PTCEDIA1.TIPIMP') ,
- IMPAPLECO DECIMAL(17, 2)  SET( "Description" = 'PTCEDIA1.IMPAPLECO', "ui_mapping_text" = 'PTCEDIA1.IMPAPLECO') ,
- IMPBRUECO DECIMAL(17, 2)  SET( "Description" = 'PTCEDIA1.IMPBRUECO', "ui_mapping_text" = 'PTCEDIA1.IMPBRUECO') ,
- IMPBONECO DECIMAL(17, 2)  SET( "Description" = 'PTCEDIA1.IMPBONECO', "ui_mapping_text" = 'PTCEDIA1.IMPBONECO') ,
- IMPIMPTO DECIMAL(17, 2)  SET( "Description" = 'PTCEDIA1.IMPIMPTO', "ui_mapping_text" = 'PTCEDIA1.IMPIMPTO') ,
- NUMEXTCTA DECIMAL(3, 0)  SET( "Description" = 'PTCEDIA1.NUMEXTCTA', "ui_mapping_text" = 'PTCEDIA1.NUMEXTCTA') ,
- NUMMOVEXT DECIMAL(7, 0)  SET( "Description" = 'PTCEDIA1.NUMMOVEXT', "ui_mapping_text" = 'PTCEDIA1.NUMMOVEXT') ,
- PORINT DECIMAL(7, 4)  SET( "Description" = 'PTCEDIA1.PORINT', "ui_mapping_text" = 'PTCEDIA1.PORINT') ,
- NUMMOVDEB DECIMAL(9, 0)  SET( "Description" = 'PTCEDIA1.NUMMOVDEB', "ui_mapping_text" = 'PTCEDIA1.NUMMOVDEB') ,
- FILLER1 VARCHAR(724)  SET( "Description" = 'PTCEDIA1.FILLER1', "ui_mapping_text" = 'PTCEDIA1.FILLER1')  )
- AS
-SELECT PTCEDIA1.CODENT_D, PTCEDIA1.NSECFIC_D, PTCEDIA1.TIPOCINTA_D, PTCEDIA1.TIPOREG_D, PTCEDIA1.FILLER_D, PTCEDIA1.NUMREGPROC, PTCEDIA1.INDDEBCRE, PTCEDIA1.TIPMOV, PTCEDIA1.CODENT, PTCEDIA1.CENTALTA, PTCEDIA1.CUENTA, PTCEDIA1.CLAMON, PTCEDIA1.CODCONECO, PTCEDIA1.DESCONECO, PTCEDIA1.SIGNOCE, PTCEDIA1.TIPIMP, PTCEDIA1.IMPAPLECO, PTCEDIA1.IMPBRUECO, PTCEDIA1.IMPBONECO, PTCEDIA1.IMPIMPTO, PTCEDIA1.NUMEXTCTA, PTCEDIA1.NUMMOVEXT, PTCEDIA1.PORINT, PTCEDIA1.NUMMOVDEB, PTCEDIA1.FILLER1 FROM PTCEDIA1 
-SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
-;
-
 ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>416</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "x" = '870', "y" = '-90')
-GUID::'2e8e14dc-e949-4c43-be2d-a1cdebc39682' LOAD TABLE DS_TARGET.STG_SAT.PTCEDIA1 INPUT(Query)
+GUID::'2e8e14dc-e949-4c43-be2d-a1cdebc39682' LOAD TABLE DS_TARGET.STG_SAT.PTCEDIA1 INPUT(Query_1)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
@@ -952,87 +575,49 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 </LDRConfiguration>
 </LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
 
-END
- SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Dec 19 10:37:51 2018', "ActaValue_3" = 'Tue Feb 12 15:32:13 2019', "x" = '-1', "y" = '-1')
-CREATE  DATAFLOW DF_STG_PTOPEDI1::'145bef15-2d63-451a-bd66-98183b99a7b4'
-BEGIN
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>194</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '42', "x" = '90', "y" = '-90')
+GUID::'26496181-c71a-4a43-8149-6812395c4eee' READ __BODI_COPYBOOK_COBOL PPJ6110N OUTPUT(PTCEDIA1_1)
+SET("Cbl_rdr_current_schema" = 'PTCEDIA1', "connection_port" = 'no');
 
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "ui_acta_from_schema_0" = 'PTOPEDI1', "x" = '480', "y" = '-90')
-GUID::'420afa27-cf93-4df1-8f08-cd22268a12ae' CREATE VIEW Query( CODENT_D VARCHAR(4)  SET( "Description" = 'PTOPEDI1.CODENT_D', "ui_mapping_text" = 'PTOPEDI1.CODENT_D') ,
- NSECFIC_D DECIMAL(10, 0)  SET( "Description" = 'PTOPEDI1.NSECFIC_D', "ui_mapping_text" = 'PTOPEDI1.NSECFIC_D') ,
- TIPOCINTA_D DECIMAL(2, 0)  SET( "Description" = 'PTOPEDI1.TIPOCINTA_D', "ui_mapping_text" = 'PTOPEDI1.TIPOCINTA_D') ,
- TIPOREG_D VARCHAR(1)  SET( "Description" = 'PTOPEDI1.TIPOREG_D', "ui_mapping_text" = 'PTOPEDI1.TIPOREG_D') ,
- FILLER_D VARCHAR(91)  SET( "Description" = 'PTOPEDI1.FILLER_D', "ui_mapping_text" = 'PTOPEDI1.FILLER_D') ,
- NUMREGPROC DECIMAL(12, 0)  SET( "Description" = 'PTOPEDI1.NUMREGPROC', "ui_mapping_text" = 'PTOPEDI1.NUMREGPROC') ,
- INDDEBCRE DECIMAL(1, 0)  SET( "Description" = 'PTOPEDI1.INDDEBCRE', "ui_mapping_text" = 'PTOPEDI1.INDDEBCRE') ,
- TIPMOV VARCHAR(1)  SET( "Description" = 'PTOPEDI1.TIPMOV', "ui_mapping_text" = 'PTOPEDI1.TIPMOV') ,
- CODENT VARCHAR(4)  SET( "Description" = 'PTOPEDI1.CODENT', "ui_mapping_text" = 'PTOPEDI1.CODENT') ,
- CENTALTA VARCHAR(4)  SET( "Description" = 'PTOPEDI1.CENTALTA', "ui_mapping_text" = 'PTOPEDI1.CENTALTA') ,
- CUENTA VARCHAR(12)  SET( "Description" = 'PTOPEDI1.CUENTA', "ui_mapping_text" = 'PTOPEDI1.CUENTA') ,
- CLAMON DECIMAL(3, 0)  SET( "Description" = 'PTOPEDI1.CLAMON', "ui_mapping_text" = 'PTOPEDI1.CLAMON') ,
- INDNORCOR DECIMAL(1, 0)  SET( "Description" = 'PTOPEDI1.INDNORCOR', "ui_mapping_text" = 'PTOPEDI1.INDNORCOR') ,
- TIPOFAC DECIMAL(4, 0)  SET( "Description" = 'PTOPEDI1.TIPOFAC', "ui_mapping_text" = 'PTOPEDI1.TIPOFAC') ,
- DESTIPFAC VARCHAR(30)  SET( "Description" = 'PTOPEDI1.DESTIPFAC', "ui_mapping_text" = 'PTOPEDI1.DESTIPFAC') ,
- SIGNOFAC VARCHAR(1)  SET( "Description" = 'PTOPEDI1.SIGNOFAC', "ui_mapping_text" = 'PTOPEDI1.SIGNOFAC') ,
- TIPOFACSIST DECIMAL(4, 0)  SET( "Description" = 'PTOPEDI1.TIPOFACSIST', "ui_mapping_text" = 'PTOPEDI1.TIPOFACSIST') ,
- INFACINF VARCHAR(1)  SET( "Description" = 'PTOPEDI1.INFACINF', "ui_mapping_text" = 'PTOPEDI1.INFACINF') ,
- FECFAC VARCHAR(10)  SET( "Description" = 'PTOPEDI1.FECFAC', "ui_mapping_text" = 'PTOPEDI1.FECFAC') ,
- NUMREFFAC VARCHAR(23)  SET( "Description" = 'PTOPEDI1.NUMREFFAC', "ui_mapping_text" = 'PTOPEDI1.NUMREFFAC') ,
- PAN VARCHAR(22)  SET( "Description" = 'PTOPEDI1.PAN', "ui_mapping_text" = 'PTOPEDI1.PAN') ,
- CLAMONDIV DECIMAL(3, 0)  SET( "Description" = 'PTOPEDI1.CLAMONDIV', "ui_mapping_text" = 'PTOPEDI1.CLAMONDIV') ,
- IMPDIV DECIMAL(17, 2)  SET( "Description" = 'PTOPEDI1.IMPDIV', "ui_mapping_text" = 'PTOPEDI1.IMPDIV') ,
- IMPFAC DECIMAL(17, 2)  SET( "Description" = 'PTOPEDI1.IMPFAC', "ui_mapping_text" = 'PTOPEDI1.IMPFAC') ,
- CMBAPLI DECIMAL(9, 4)  SET( "Description" = 'PTOPEDI1.CMBAPLI', "ui_mapping_text" = 'PTOPEDI1.CMBAPLI') ,
- NUMAUT VARCHAR(6)  SET( "Description" = 'PTOPEDI1.NUMAUT', "ui_mapping_text" = 'PTOPEDI1.NUMAUT') ,
- CODCOM VARCHAR(15)  SET( "Description" = 'PTOPEDI1.CODCOM', "ui_mapping_text" = 'PTOPEDI1.CODCOM') ,
- NOMCOMRED VARCHAR(27)  SET( "Description" = 'PTOPEDI1.NOMCOMRED', "ui_mapping_text" = 'PTOPEDI1.NOMCOMRED') ,
- CODACT DECIMAL(4, 0)  SET( "Description" = 'PTOPEDI1.CODACT', "ui_mapping_text" = 'PTOPEDI1.CODACT') ,
- IMPLIQ DECIMAL(17, 2)  SET( "Description" = 'PTOPEDI1.IMPLIQ', "ui_mapping_text" = 'PTOPEDI1.IMPLIQ') ,
- CLAMONLIQ DECIMAL(3, 0)  SET( "Description" = 'PTOPEDI1.CLAMONLIQ', "ui_mapping_text" = 'PTOPEDI1.CLAMONLIQ') ,
- IMPIMPTO DECIMAL(17, 2)  SET( "Description" = 'PTOPEDI1.IMPIMPTO', "ui_mapping_text" = 'PTOPEDI1.IMPIMPTO') ,
- FECPROCES VARCHAR(10)  SET( "Description" = 'PTOPEDI1.FECPROCES', "ui_mapping_text" = 'PTOPEDI1.FECPROCES') ,
- CODPAIS DECIMAL(3, 0)  SET( "Description" = 'PTOPEDI1.CODPAIS', "ui_mapping_text" = 'PTOPEDI1.CODPAIS') ,
- NOMPOB VARCHAR(26)  SET( "Description" = 'PTOPEDI1.NOMPOB', "ui_mapping_text" = 'PTOPEDI1.NOMPOB') ,
- FECCONTA VARCHAR(10)  SET( "Description" = 'PTOPEDI1.FECCONTA', "ui_mapping_text" = 'PTOPEDI1.FECCONTA') ,
- ORIGENOPE VARCHAR(4)  SET( "Description" = 'PTOPEDI1.ORIGENOPE', "ui_mapping_text" = 'PTOPEDI1.ORIGENOPE') ,
- TIPFRAN DECIMAL(4, 0)  SET( "Description" = 'PTOPEDI1.TIPFRAN', "ui_mapping_text" = 'PTOPEDI1.TIPFRAN') ,
- SECOPE DECIMAL(12, 0)  SET( "Description" = 'PTOPEDI1.SECOPE', "ui_mapping_text" = 'PTOPEDI1.SECOPE') ,
- NUMSECREC DECIMAL(15, 0)  SET( "Description" = 'PTOPEDI1.NUMSECREC', "ui_mapping_text" = 'PTOPEDI1.NUMSECREC') ,
- SESIONRED VARCHAR(12)  SET( "Description" = 'PTOPEDI1.SESIONRED', "ui_mapping_text" = 'PTOPEDI1.SESIONRED') ,
- SIAIDCD VARCHAR(19)  SET( "Description" = 'PTOPEDI1.SIAIDCD', "ui_mapping_text" = 'PTOPEDI1.SIAIDCD') ,
- CALFRAUDE VARCHAR(3)  SET( "Description" = 'PTOPEDI1.CALFRAUDE', "ui_mapping_text" = 'PTOPEDI1.CALFRAUDE') ,
- IDENTCLI VARCHAR(8)  SET( "Description" = 'PTOPEDI1.IDENTCLI', "ui_mapping_text" = 'PTOPEDI1.IDENTCLI') ,
- INDINCEST VARCHAR(1)  SET( "Description" = 'PTOPEDI1.INDINCEST', "ui_mapping_text" = 'PTOPEDI1.INDINCEST') ,
- TIPDOCPAG DECIMAL(2, 0)  SET( "Description" = 'PTOPEDI1.TIPDOCPAG', "ui_mapping_text" = 'PTOPEDI1.TIPDOCPAG') ,
- REFDOCPAG VARCHAR(20)  SET( "Description" = 'PTOPEDI1.REFDOCPAG', "ui_mapping_text" = 'PTOPEDI1.REFDOCPAG') ,
- IMPAMORT DECIMAL(17, 2)  SET( "Description" = 'PTOPEDI1.IMPAMORT', "ui_mapping_text" = 'PTOPEDI1.IMPAMORT') ,
- NUMMOVEXT DECIMAL(7, 0)  SET( "Description" = 'PTOPEDI1.NUMMOVEXT', "ui_mapping_text" = 'PTOPEDI1.NUMMOVEXT') ,
- NUMEXTCTA DECIMAL(3, 0)  SET( "Description" = 'PTOPEDI1.NUMEXTCTA', "ui_mapping_text" = 'PTOPEDI1.NUMEXTCTA') ,
- FECLIQ VARCHAR(10)  SET( "Description" = 'PTOPEDI1.FECLIQ', "ui_mapping_text" = 'PTOPEDI1.FECLIQ') ,
- INDMOVANU DECIMAL(1, 0)  SET( "Description" = 'PTOPEDI1.INDMOVANU', "ui_mapping_text" = 'PTOPEDI1.INDMOVANU') ,
- INDRET DECIMAL(1, 0)  SET( "Description" = 'PTOPEDI1.INDRET', "ui_mapping_text" = 'PTOPEDI1.INDRET') ,
- INDMOVEXT DECIMAL(1, 0)  SET( "Description" = 'PTOPEDI1.INDMOVEXT', "ui_mapping_text" = 'PTOPEDI1.INDMOVEXT') ,
- CODTIPC VARCHAR(4)  SET( "Description" = 'PTOPEDI1.CODTIPC', "ui_mapping_text" = 'PTOPEDI1.CODTIPC') ,
- TOTCUOTAS DECIMAL(9, 0)  SET( "Description" = 'PTOPEDI1.TOTCUOTAS', "ui_mapping_text" = 'PTOPEDI1.TOTCUOTAS') ,
- PORINT DECIMAL(7, 4)  SET( "Description" = 'PTOPEDI1.PORINT', "ui_mapping_text" = 'PTOPEDI1.PORINT') ,
- NUMOPECUO DECIMAL(6, 0)  SET( "Description" = 'PTOPEDI1.NUMOPECUO', "ui_mapping_text" = 'PTOPEDI1.NUMOPECUO') ,
- IMPCUOTA DECIMAL(17, 2)  SET( "Description" = 'PTOPEDI1.IMPCUOTA', "ui_mapping_text" = 'PTOPEDI1.IMPCUOTA') ,
- LINREF DECIMAL(8, 0)  SET( "Description" = 'PTOPEDI1.LINREF', "ui_mapping_text" = 'PTOPEDI1.LINREF') ,
- FORPAGO DECIMAL(2, 0)  SET( "Description" = 'PTOPEDI1.FORPAGO', "ui_mapping_text" = 'PTOPEDI1.FORPAGO') ,
- NUMMOVDEB DECIMAL(9, 0)  SET( "Description" = 'PTOPEDI1.NUMMOVDEB', "ui_mapping_text" = 'PTOPEDI1.NUMMOVDEB') ,
- FILLER1 VARCHAR(373)  SET( "Description" = 'PTOPEDI1.FILLER1', "ui_mapping_text" = 'PTOPEDI1.FILLER1')  )
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "ui_acta_from_schema_0" = 'PTCEDIA1_1', "x" = '480', "y" = '-90')
+GUID::'a9e3e4b4-9ab1-4f65-bce1-04d14cefcfcf' CREATE VIEW Query_1( CODENT_D VARCHAR(4)  SET( "ui_mapping_text" = 'PTCEDIA1_1.CODENT_D') ,
+ NSECFIC_D DECIMAL(10, 0)  SET( "ui_mapping_text" = 'PTCEDIA1_1.NSECFIC_D') ,
+ TIPOCINTA_D DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTCEDIA1_1.TIPOCINTA_D') ,
+ TIPOREG_D VARCHAR(1)  SET( "ui_mapping_text" = 'PTCEDIA1_1.TIPOREG_D') ,
+ FILLER_D VARCHAR(91)  SET( "ui_mapping_text" = 'PTCEDIA1_1.FILLER_D') ,
+ NUMREGPROC DECIMAL(12, 0)  SET( "ui_mapping_text" = 'PTCEDIA1_1.NUMREGPROC') ,
+ INDDEBCRE DECIMAL(1, 0)  SET( "ui_mapping_text" = 'PTCEDIA1_1.INDDEBCRE') ,
+ TIPMOV VARCHAR(1)  SET( "ui_mapping_text" = 'PTCEDIA1_1.TIPMOV') ,
+ CODENT VARCHAR(4)  SET( "ui_mapping_text" = 'PTCEDIA1_1.CODENT') ,
+ CENTALTA VARCHAR(4)  SET( "ui_mapping_text" = 'PTCEDIA1_1.CENTALTA') ,
+ CUENTA VARCHAR(12)  SET( "ui_mapping_text" = 'PTCEDIA1_1.CUENTA') ,
+ CLAMON DECIMAL(3, 0)  SET( "ui_mapping_text" = 'PTCEDIA1_1.CLAMON') ,
+ CODCONECO DECIMAL(4, 0)  SET( "ui_mapping_text" = 'PTCEDIA1_1.CODCONECO') ,
+ DESCONECO VARCHAR(30)  SET( "ui_mapping_text" = 'PTCEDIA1_1.DESCONECO') ,
+ SIGNOCE VARCHAR(1)  SET( "ui_mapping_text" = 'PTCEDIA1_1.SIGNOCE') ,
+ TIPIMP DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTCEDIA1_1.TIPIMP') ,
+ IMPAPLECO DECIMAL(17, 2)  SET( "ui_mapping_text" = 'PTCEDIA1_1.IMPAPLECO') ,
+ IMPBRUECO DECIMAL(17, 2)  SET( "ui_mapping_text" = 'PTCEDIA1_1.IMPBRUECO') ,
+ IMPBONECO DECIMAL(17, 2)  SET( "ui_mapping_text" = 'PTCEDIA1_1.IMPBONECO') ,
+ IMPIMPTO DECIMAL(17, 2)  SET( "ui_mapping_text" = 'PTCEDIA1_1.IMPIMPTO') ,
+ NUMEXTCTA DECIMAL(3, 0)  SET( "ui_mapping_text" = 'PTCEDIA1_1.NUMEXTCTA') ,
+ NUMMOVEXT DECIMAL(7, 0)  SET( "ui_mapping_text" = 'PTCEDIA1_1.NUMMOVEXT') ,
+ PORINT DECIMAL(7, 4)  SET( "ui_mapping_text" = 'PTCEDIA1_1.PORINT') ,
+ NUMMOVDEB DECIMAL(9, 0)  SET( "ui_mapping_text" = 'PTCEDIA1_1.NUMMOVDEB') ,
+ FILLER1 VARCHAR(724)  SET( "ui_mapping_text" = 'PTCEDIA1_1.FILLER1')  )
  AS
-SELECT PTOPEDI1.CODENT_D, PTOPEDI1.NSECFIC_D, PTOPEDI1.TIPOCINTA_D, PTOPEDI1.TIPOREG_D, PTOPEDI1.FILLER_D, PTOPEDI1.NUMREGPROC, PTOPEDI1.INDDEBCRE, PTOPEDI1.TIPMOV, PTOPEDI1.CODENT, PTOPEDI1.CENTALTA, PTOPEDI1.CUENTA, PTOPEDI1.CLAMON, PTOPEDI1.INDNORCOR, PTOPEDI1.TIPOFAC, PTOPEDI1.DESTIPFAC, PTOPEDI1.SIGNOFAC, PTOPEDI1.TIPOFACSIST, PTOPEDI1.INFACINF, PTOPEDI1.FECFAC, PTOPEDI1.NUMREFFAC, PTOPEDI1.PAN, PTOPEDI1.CLAMONDIV, PTOPEDI1.IMPDIV, PTOPEDI1.IMPFAC, PTOPEDI1.CMBAPLI, PTOPEDI1.NUMAUT, PTOPEDI1.CODCOM, PTOPEDI1.NOMCOMRED, PTOPEDI1.CODACT, PTOPEDI1.IMPLIQ, PTOPEDI1.CLAMONLIQ, PTOPEDI1.IMPIMPTO, PTOPEDI1.FECPROCES, PTOPEDI1.CODPAIS, PTOPEDI1.NOMPOB, PTOPEDI1.FECCONTA, PTOPEDI1.ORIGENOPE, PTOPEDI1.TIPFRAN, PTOPEDI1.SECOPE, PTOPEDI1.NUMSECREC, PTOPEDI1.SESIONRED, PTOPEDI1.SIAIDCD, PTOPEDI1.CALFRAUDE, PTOPEDI1.IDENTCLI, PTOPEDI1.INDINCEST, PTOPEDI1.TIPDOCPAG, PTOPEDI1.REFDOCPAG, PTOPEDI1.IMPAMORT, PTOPEDI1.NUMMOVEXT, PTOPEDI1.NUMEXTCTA, PTOPEDI1.FECLIQ, PTOPEDI1.INDMOVANU, PTOPEDI1.INDRET, PTOPEDI1.INDMOVEXT, PTOPEDI1.CODTIPC, PTOPEDI1.TOTCUOTAS, PTOPEDI1.PORINT, PTOPEDI1.NUMOPECUO, PTOPEDI1.IMPCUOTA, PTOPEDI1.LINREF, PTOPEDI1.FORPAGO, PTOPEDI1.NUMMOVDEB, PTOPEDI1.FILLER1 FROM PTOPEDI1 
+SELECT PTCEDIA1_1.CODENT_D, PTCEDIA1_1.NSECFIC_D, PTCEDIA1_1.TIPOCINTA_D, PTCEDIA1_1.TIPOREG_D, PTCEDIA1_1.FILLER_D, PTCEDIA1_1.NUMREGPROC, PTCEDIA1_1.INDDEBCRE, PTCEDIA1_1.TIPMOV, PTCEDIA1_1.CODENT, PTCEDIA1_1.CENTALTA, PTCEDIA1_1.CUENTA, PTCEDIA1_1.CLAMON, PTCEDIA1_1.CODCONECO, PTCEDIA1_1.DESCONECO, PTCEDIA1_1.SIGNOCE, PTCEDIA1_1.TIPIMP, PTCEDIA1_1.IMPAPLECO, PTCEDIA1_1.IMPBRUECO, PTCEDIA1_1.IMPBONECO, PTCEDIA1_1.IMPIMPTO, PTCEDIA1_1.NUMEXTCTA, PTCEDIA1_1.NUMMOVEXT, PTCEDIA1_1.PORINT, PTCEDIA1_1.NUMMOVDEB, PTCEDIA1_1.FILLER1 FROM PTCEDIA1_1 
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Description', "Input_2nd_Column_Name" = 'Type', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>194</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '42', "x" = '90', "y" = '-90')
-GUID::'2e6edab3-9351-4d97-909e-42dafb6e1ef3' READ __BODI_COPYBOOK_COBOL PTOPEDI1 OUTPUT(PTOPEDI1)
-SET("Cbl_capture_data_conversion" = 'no', "cache" = 'no', "connection_port" = 'no', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'yes', "reader_include_filename" = 'no', "table_weight" = '0');
+END
+ SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Dec 19 10:37:51 2018', "ActaValue_3" = 'Thu Feb 14 13:11:24 2019', "x" = '-1', "y" = '-1')
+CREATE  DATAFLOW DF_STG_PTOPEDI1::'145bef15-2d63-451a-bd66-98183b99a7b4'
+BEGIN
 
 ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>413</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "ui_display_name" = 'PTOPEDI1(DS_TARGET.STG_SAT)', "x" = '870', "y" = '-90')
-GUID::'ecd6270a-8ed5-408a-a493-bd906fcf4fb0' LOAD TABLE DS_TARGET.STG_SAT.PTOPEDI1 INPUT(Query)
+GUID::'ecd6270a-8ed5-408a-a493-bd906fcf4fb0' LOAD TABLE DS_TARGET.STG_SAT.PTOPEDI1 INPUT(Query_1)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
@@ -1083,9 +668,82 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 </LDRConfiguration>
 </LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
 
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>194</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '42', "x" = '90', "y" = '-90')
+GUID::'edc03cf9-c3b6-4e48-9a71-fb89be0c584b' READ __BODI_COPYBOOK_COBOL PPJ6110N OUTPUT(PTOPEDI1_1)
+SET("Cbl_rdr_current_schema" = 'PTOPEDI1', "connection_port" = 'no');
+
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "ui_acta_from_schema_0" = 'PTOPEDI1_1', "x" = '480', "y" = '-90')
+GUID::'07b537d4-c758-474e-9462-33d46004bb8d' CREATE VIEW Query_1( CODENT_D VARCHAR(4)  SET( "Description" = 'PTOPEDI1.CODENT_D', "ui_mapping_text" = 'PTOPEDI1_1.CODENT_D') ,
+ NSECFIC_D DECIMAL(10, 0)  SET( "Description" = 'PTOPEDI1.NSECFIC_D', "ui_mapping_text" = 'PTOPEDI1_1.NSECFIC_D') ,
+ TIPOCINTA_D DECIMAL(2, 0)  SET( "Description" = 'PTOPEDI1.TIPOCINTA_D', "ui_mapping_text" = 'PTOPEDI1_1.TIPOCINTA_D') ,
+ TIPOREG_D VARCHAR(1)  SET( "Description" = 'PTOPEDI1.TIPOREG_D', "ui_mapping_text" = 'PTOPEDI1_1.TIPOREG_D') ,
+ FILLER_D VARCHAR(91)  SET( "Description" = 'PTOPEDI1.FILLER_D', "ui_mapping_text" = 'PTOPEDI1_1.FILLER_D') ,
+ NUMREGPROC DECIMAL(12, 0)  SET( "Description" = 'PTOPEDI1.NUMREGPROC', "ui_mapping_text" = 'PTOPEDI1_1.NUMREGPROC') ,
+ INDDEBCRE DECIMAL(1, 0)  SET( "Description" = 'PTOPEDI1.INDDEBCRE', "ui_mapping_text" = 'PTOPEDI1_1.INDDEBCRE') ,
+ TIPMOV VARCHAR(1)  SET( "Description" = 'PTOPEDI1.TIPMOV', "ui_mapping_text" = 'PTOPEDI1_1.TIPMOV') ,
+ CODENT VARCHAR(4)  SET( "Description" = 'PTOPEDI1.CODENT', "ui_mapping_text" = 'PTOPEDI1_1.CODENT') ,
+ CENTALTA VARCHAR(4)  SET( "Description" = 'PTOPEDI1.CENTALTA', "ui_mapping_text" = 'PTOPEDI1_1.CENTALTA') ,
+ CUENTA VARCHAR(12)  SET( "Description" = 'PTOPEDI1.CUENTA', "ui_mapping_text" = 'PTOPEDI1_1.CUENTA') ,
+ CLAMON DECIMAL(3, 0)  SET( "Description" = 'PTOPEDI1.CLAMON', "ui_mapping_text" = 'PTOPEDI1_1.CLAMON') ,
+ INDNORCOR DECIMAL(1, 0)  SET( "Description" = 'PTOPEDI1.INDNORCOR', "ui_mapping_text" = 'PTOPEDI1_1.INDNORCOR') ,
+ TIPOFAC DECIMAL(4, 0)  SET( "Description" = 'PTOPEDI1.TIPOFAC', "ui_mapping_text" = 'PTOPEDI1_1.TIPOFAC') ,
+ DESTIPFAC VARCHAR(30)  SET( "Description" = 'PTOPEDI1.DESTIPFAC', "ui_mapping_text" = 'PTOPEDI1_1.DESTIPFAC') ,
+ SIGNOFAC VARCHAR(1)  SET( "Description" = 'PTOPEDI1.SIGNOFAC', "ui_mapping_text" = 'PTOPEDI1_1.SIGNOFAC') ,
+ TIPOFACSIST DECIMAL(4, 0)  SET( "Description" = 'PTOPEDI1.TIPOFACSIST', "ui_mapping_text" = 'PTOPEDI1_1.TIPOFACSIST') ,
+ INFACINF VARCHAR(1)  SET( "Description" = 'PTOPEDI1.INFACINF', "ui_mapping_text" = 'PTOPEDI1_1.INFACINF') ,
+ FECFAC VARCHAR(10)  SET( "Description" = 'PTOPEDI1.FECFAC', "ui_mapping_text" = 'PTOPEDI1_1.FECFAC') ,
+ NUMREFFAC VARCHAR(23)  SET( "Description" = 'PTOPEDI1.NUMREFFAC', "ui_mapping_text" = 'PTOPEDI1_1.NUMREFFAC') ,
+ PAN VARCHAR(22)  SET( "Description" = 'PTOPEDI1.PAN', "ui_mapping_text" = 'PTOPEDI1_1.PAN') ,
+ CLAMONDIV DECIMAL(3, 0)  SET( "Description" = 'PTOPEDI1.CLAMONDIV', "ui_mapping_text" = 'PTOPEDI1_1.CLAMONDIV') ,
+ IMPDIV DECIMAL(17, 2)  SET( "Description" = 'PTOPEDI1.IMPDIV', "ui_mapping_text" = 'PTOPEDI1_1.IMPDIV') ,
+ IMPFAC DECIMAL(17, 2)  SET( "Description" = 'PTOPEDI1.IMPFAC', "ui_mapping_text" = 'PTOPEDI1_1.IMPFAC') ,
+ CMBAPLI DECIMAL(9, 4)  SET( "Description" = 'PTOPEDI1.CMBAPLI', "ui_mapping_text" = 'PTOPEDI1_1.CMBAPLI') ,
+ NUMAUT VARCHAR(6)  SET( "Description" = 'PTOPEDI1.NUMAUT', "ui_mapping_text" = 'PTOPEDI1_1.NUMAUT') ,
+ CODCOM VARCHAR(15)  SET( "Description" = 'PTOPEDI1.CODCOM', "ui_mapping_text" = 'PTOPEDI1_1.CODCOM') ,
+ NOMCOMRED VARCHAR(27)  SET( "Description" = 'PTOPEDI1.NOMCOMRED', "ui_mapping_text" = 'PTOPEDI1_1.NOMCOMRED') ,
+ CODACT DECIMAL(4, 0)  SET( "Description" = 'PTOPEDI1.CODACT', "ui_mapping_text" = 'PTOPEDI1_1.CODACT') ,
+ IMPLIQ DECIMAL(17, 2)  SET( "Description" = 'PTOPEDI1.IMPLIQ', "ui_mapping_text" = 'PTOPEDI1_1.IMPLIQ') ,
+ CLAMONLIQ DECIMAL(3, 0)  SET( "Description" = 'PTOPEDI1.CLAMONLIQ', "ui_mapping_text" = 'PTOPEDI1_1.CLAMONLIQ') ,
+ IMPIMPTO DECIMAL(17, 2)  SET( "Description" = 'PTOPEDI1.IMPIMPTO', "ui_mapping_text" = 'PTOPEDI1_1.IMPIMPTO') ,
+ FECPROCES VARCHAR(10)  SET( "Description" = 'PTOPEDI1.FECPROCES', "ui_mapping_text" = 'PTOPEDI1_1.FECPROCES') ,
+ CODPAIS DECIMAL(3, 0)  SET( "Description" = 'PTOPEDI1.CODPAIS', "ui_mapping_text" = 'PTOPEDI1_1.CODPAIS') ,
+ NOMPOB VARCHAR(26)  SET( "Description" = 'PTOPEDI1.NOMPOB', "ui_mapping_text" = 'PTOPEDI1_1.NOMPOB') ,
+ FECCONTA VARCHAR(10)  SET( "Description" = 'PTOPEDI1.FECCONTA', "ui_mapping_text" = 'PTOPEDI1_1.FECCONTA') ,
+ ORIGENOPE VARCHAR(4)  SET( "Description" = 'PTOPEDI1.ORIGENOPE', "ui_mapping_text" = 'PTOPEDI1_1.ORIGENOPE') ,
+ TIPFRAN DECIMAL(4, 0)  SET( "Description" = 'PTOPEDI1.TIPFRAN', "ui_mapping_text" = 'PTOPEDI1_1.TIPFRAN') ,
+ SECOPE DECIMAL(12, 0)  SET( "Description" = 'PTOPEDI1.SECOPE', "ui_mapping_text" = 'PTOPEDI1_1.SECOPE') ,
+ NUMSECREC DECIMAL(15, 0)  SET( "Description" = 'PTOPEDI1.NUMSECREC', "ui_mapping_text" = 'PTOPEDI1_1.NUMSECREC') ,
+ SESIONRED VARCHAR(12)  SET( "Description" = 'PTOPEDI1.SESIONRED', "ui_mapping_text" = 'PTOPEDI1_1.SESIONRED') ,
+ SIAIDCD VARCHAR(19)  SET( "Description" = 'PTOPEDI1.SIAIDCD', "ui_mapping_text" = 'PTOPEDI1_1.SIAIDCD') ,
+ CALFRAUDE VARCHAR(3)  SET( "Description" = 'PTOPEDI1.CALFRAUDE', "ui_mapping_text" = 'PTOPEDI1_1.CALFRAUDE') ,
+ IDENTCLI VARCHAR(8)  SET( "Description" = 'PTOPEDI1.IDENTCLI', "ui_mapping_text" = 'PTOPEDI1_1.IDENTCLI') ,
+ INDINCEST VARCHAR(1)  SET( "Description" = 'PTOPEDI1.INDINCEST', "ui_mapping_text" = 'PTOPEDI1_1.INDINCEST') ,
+ TIPDOCPAG DECIMAL(2, 0)  SET( "Description" = 'PTOPEDI1.TIPDOCPAG', "ui_mapping_text" = 'PTOPEDI1_1.TIPDOCPAG') ,
+ REFDOCPAG VARCHAR(20)  SET( "Description" = 'PTOPEDI1.REFDOCPAG', "ui_mapping_text" = 'PTOPEDI1_1.REFDOCPAG') ,
+ IMPAMORT DECIMAL(17, 2)  SET( "Description" = 'PTOPEDI1.IMPAMORT', "ui_mapping_text" = 'PTOPEDI1_1.IMPAMORT') ,
+ NUMMOVEXT DECIMAL(7, 0)  SET( "Description" = 'PTOPEDI1.NUMMOVEXT', "ui_mapping_text" = 'PTOPEDI1_1.NUMMOVEXT') ,
+ NUMEXTCTA DECIMAL(3, 0)  SET( "Description" = 'PTOPEDI1.NUMEXTCTA', "ui_mapping_text" = 'PTOPEDI1_1.NUMEXTCTA') ,
+ FECLIQ VARCHAR(10)  SET( "Description" = 'PTOPEDI1.FECLIQ', "ui_mapping_text" = 'PTOPEDI1_1.FECLIQ') ,
+ INDMOVANU DECIMAL(1, 0)  SET( "Description" = 'PTOPEDI1.INDMOVANU', "ui_mapping_text" = 'PTOPEDI1_1.INDMOVANU') ,
+ INDRET DECIMAL(1, 0)  SET( "Description" = 'PTOPEDI1.INDRET', "ui_mapping_text" = 'PTOPEDI1_1.INDRET') ,
+ INDMOVEXT DECIMAL(1, 0)  SET( "Description" = 'PTOPEDI1.INDMOVEXT', "ui_mapping_text" = 'PTOPEDI1_1.INDMOVEXT') ,
+ CODTIPC VARCHAR(4)  SET( "Description" = 'PTOPEDI1.CODTIPC', "ui_mapping_text" = 'PTOPEDI1_1.CODTIPC') ,
+ TOTCUOTAS DECIMAL(9, 0)  SET( "Description" = 'PTOPEDI1.TOTCUOTAS', "ui_mapping_text" = 'PTOPEDI1_1.TOTCUOTAS') ,
+ PORINT DECIMAL(7, 4)  SET( "Description" = 'PTOPEDI1.PORINT', "ui_mapping_text" = 'PTOPEDI1_1.PORINT') ,
+ NUMOPECUO DECIMAL(6, 0)  SET( "Description" = 'PTOPEDI1.NUMOPECUO', "ui_mapping_text" = 'PTOPEDI1_1.NUMOPECUO') ,
+ IMPCUOTA DECIMAL(17, 2)  SET( "Description" = 'PTOPEDI1.IMPCUOTA', "ui_mapping_text" = 'PTOPEDI1_1.IMPCUOTA') ,
+ LINREF DECIMAL(8, 0)  SET( "Description" = 'PTOPEDI1.LINREF', "ui_mapping_text" = 'PTOPEDI1_1.LINREF') ,
+ FORPAGO DECIMAL(2, 0)  SET( "Description" = 'PTOPEDI1.FORPAGO', "ui_mapping_text" = 'PTOPEDI1_1.FORPAGO') ,
+ NUMMOVDEB DECIMAL(9, 0)  SET( "Description" = 'PTOPEDI1.NUMMOVDEB', "ui_mapping_text" = 'PTOPEDI1_1.NUMMOVDEB') ,
+ FILLER1 VARCHAR(373)  SET( "Description" = 'PTOPEDI1.FILLER1', "ui_mapping_text" = 'PTOPEDI1_1.FILLER1')  )
+ AS
+SELECT PTOPEDI1_1.CODENT_D, PTOPEDI1_1.NSECFIC_D, PTOPEDI1_1.TIPOCINTA_D, PTOPEDI1_1.TIPOREG_D, PTOPEDI1_1.FILLER_D, PTOPEDI1_1.NUMREGPROC, PTOPEDI1_1.INDDEBCRE, PTOPEDI1_1.TIPMOV, PTOPEDI1_1.CODENT, PTOPEDI1_1.CENTALTA, PTOPEDI1_1.CUENTA, PTOPEDI1_1.CLAMON, PTOPEDI1_1.INDNORCOR, PTOPEDI1_1.TIPOFAC, PTOPEDI1_1.DESTIPFAC, PTOPEDI1_1.SIGNOFAC, PTOPEDI1_1.TIPOFACSIST, PTOPEDI1_1.INFACINF, PTOPEDI1_1.FECFAC, PTOPEDI1_1.NUMREFFAC, PTOPEDI1_1.PAN, PTOPEDI1_1.CLAMONDIV, PTOPEDI1_1.IMPDIV, PTOPEDI1_1.IMPFAC, PTOPEDI1_1.CMBAPLI, PTOPEDI1_1.NUMAUT, PTOPEDI1_1.CODCOM, PTOPEDI1_1.NOMCOMRED, PTOPEDI1_1.CODACT, PTOPEDI1_1.IMPLIQ, PTOPEDI1_1.CLAMONLIQ, PTOPEDI1_1.IMPIMPTO, PTOPEDI1_1.FECPROCES, PTOPEDI1_1.CODPAIS, PTOPEDI1_1.NOMPOB, PTOPEDI1_1.FECCONTA, PTOPEDI1_1.ORIGENOPE, PTOPEDI1_1.TIPFRAN, PTOPEDI1_1.SECOPE, PTOPEDI1_1.NUMSECREC, PTOPEDI1_1.SESIONRED, PTOPEDI1_1.SIAIDCD, PTOPEDI1_1.CALFRAUDE, PTOPEDI1_1.IDENTCLI, PTOPEDI1_1.INDINCEST, PTOPEDI1_1.TIPDOCPAG, PTOPEDI1_1.REFDOCPAG, PTOPEDI1_1.IMPAMORT, PTOPEDI1_1.NUMMOVEXT, PTOPEDI1_1.NUMEXTCTA, PTOPEDI1_1.FECLIQ, PTOPEDI1_1.INDMOVANU, PTOPEDI1_1.INDRET, PTOPEDI1_1.INDMOVEXT, PTOPEDI1_1.CODTIPC, PTOPEDI1_1.TOTCUOTAS, PTOPEDI1_1.PORINT, PTOPEDI1_1.NUMOPECUO, PTOPEDI1_1.IMPCUOTA, PTOPEDI1_1.LINREF, PTOPEDI1_1.FORPAGO, PTOPEDI1_1.NUMMOVDEB, PTOPEDI1_1.FILLER1 FROM PTOPEDI1_1 
+SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
+;
+
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaName_4" = 'RDescription', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Dec 19 09:34:16 2018', "ActaValue_3" = 'Fri Feb  1 17:06:07 2019', "ActaValue_4" = '02-OPERACIONES DIARIAS', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaName_4" = 'RDescription', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Dec 19 09:34:16 2018', "ActaValue_3" = 'Tue Mar  5 14:08:36 2019', "ActaValue_4" = '02-OPERACIONES DIARIAS', "x" = '-1', "y" = '-1')
 CREATE SESSION JOB_PPJ6110N::'6f2dade1-5bb6-45c6-83e0-e0e4f88544c1'( )
 DECLARE
      GLOBAL $G_NOMBRE_JOB VARCHAR(50) ;
@@ -1095,6 +753,7 @@ DECLARE
      GLOBAL $G_NOMBRE_ARCHIVO VARCHAR(100) ;
 BEGIN
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>288</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INICIAL', "ui_script_text" = '##INICIALIZACIÓN DE VARIABLES
+print(\'--version: 30f126f\');
 
 $G_NOMBRE_JOB = job_name( );
 $G_FECHA_PROCESO  = sysdate( );
@@ -1104,7 +763,7 @@ sql( \'DS_CONTROL\', \'COMMIT\');
 
 ', "x" = '0', "y" = '0')
 BEGIN_SCRIPT
-$G_NOMBRE_JOB = job_name();$G_FECHA_PROCESO = sysdate();$G_RUTA = sql('DS_CONTROL', 'SELECT VALOR FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'RUTA_ARCHIVO\'');sql('DS_CONTROL', 'COMMIT');END
+print('--version: 30f126f');$G_NOMBRE_JOB = job_name();$G_FECHA_PROCESO = sysdate();$G_RUTA = sql('DS_CONTROL', 'SELECT VALOR FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'RUTA_ARCHIVO\'');sql('DS_CONTROL', 'COMMIT');END
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try182', "x" = '390', "y" = '0')
 TRY
 BEGIN
@@ -1122,15 +781,62 @@ END
 END_TRY
 END
  SET ("job_checkpoint_enabled" = 'no', "job_collect_statistics" = 'no', "job_collect_statistics_monitor" = 'no', "job_create_debug_package" = 'no', "job_enable_assemblers" = 'yes', "job_enable_audit" = 'yes', "job_enable_dataquality" = 'yes', "job_export_repo" = 'no', "job_export_reports" = 'no', "job_guid" = '6f2dade1-5bb6-45c6-83e0-e0e4f88544c1', "job_isrecoverable" = 'no', "job_mode" = 'Multi-Process', "job_monitor_sample_rate" = '1000', "job_monitor_timer_rate" = '5', "job_name" = 'JOB_PPJ6110N', "job_print_version" = 'no', "job_testmode_enabled" = 'no', "job_trace_abapquery" = 'no', "job_trace_all" = 'no', "job_trace_ascomm" = 'no', "job_trace_assemblers" = 'no', "job_trace_audit" = 'no', "job_trace_dataflow" = 'yes', "job_trace_idoc_file" = 'no', "job_trace_memory_loader" = 'no', "job_trace_memory_reader" = 'no', "job_trace_optimized_dataflow" = 'no', "job_trace_parallel_execution" = 'no', "job_trace_rfc_function" = 'no', "job_trace_row" = 'no', "job_trace_script" = 'no', "job_trace_session" = 'yes', "job_trace_sql_only" = 'no', "job_trace_sqlfunctions" = 'no', "job_trace_sqlloaders" = 'no', "job_trace_sqlreaders" = 'no', "job_trace_sqltransforms" = 'no', "job_trace_stored_procedure" = 'no', "job_trace_table" = 'no', "job_trace_table_reader" = 'no', "job_trace_transform" = 'no', "job_trace_userfunction" = 'no', "job_trace_usertransform" = 'no', "job_trace_workflow" = 'yes', "job_type" = 'batch', "job_use_statistics" = 'yes', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Dec 18 11:01:51 2018', "ActaValue_3" = 'Wed Dec 19 09:31:23 2018')
-CREATE __BODI_COPYBOOK_COBOL DATASTORE PTCEDIA1::'a1a9a6ce-67ae-45a0-b184-74dd451d305b' OUTPUT (PTCEDIA1( CODENT_D VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT_D', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTCEDIA1.CODENT_D', "Description" = 'PTCEDIA1.CODENT_D') ,
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Mar  5 11:48:41 2019')
+CREATE __BODI_COPYBOOK_COBOL DATASTORE PPJ6110N::'5622e75d-ad74-4103-b365-4442bdb4cd2e' OUTPUT (ATINTCAB( CODENT VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'ATINTCAB.CODENT', "Description" = 'ATINTCAB.CODENT') ,
+ NSECFIC VARCHAR(10)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '4', "Cbl_field_level" = '2', "Cbl_field_name" = 'NSECFIC', "Cbl_field_original_PIC" = 'X(10)', "Cbl_field_path" = 'ATINTCAB.NSECFIC', "Description" = 'ATINTCAB.NSECFIC') ,
+ TIPOCINTA VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '14', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOCINTA', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'ATINTCAB.TIPOCINTA', "Description" = 'ATINTCAB.TIPOCINTA') ,
+ TIPOREG VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '16', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOREG', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'ATINTCAB.TIPOREG', "Description" = 'ATINTCAB.TIPOREG') ,
+ FECENVIO VARCHAR(10)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '17', "Cbl_field_level" = '2', "Cbl_field_name" = 'FECENVIO', "Cbl_field_original_PIC" = 'X(10)', "Cbl_field_path" = 'ATINTCAB.FECENVIO', "Description" = 'ATINTCAB.FECENVIO') ,
+ HORAENVIO VARCHAR(8)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '27', "Cbl_field_level" = '2', "Cbl_field_name" = 'HORAENVIO', "Cbl_field_original_PIC" = 'X(8)', "Cbl_field_path" = 'ATINTCAB.HORAENVIO', "Description" = 'ATINTCAB.HORAENVIO') ,
+ NUMREGTOT DECIMAL(12, 0)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '35', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMREGTOT', "Cbl_field_original_PIC" = '9(12)', "Cbl_field_path" = 'ATINTCAB.NUMREGTOT', "Cbl_field_precision" = '12', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'ATINTCAB.NUMREGTOT') ,
+ FILLER_TMP VARCHAR(61)  SET( "Cbl_field_internal_length" = '61', "Cbl_field_internal_offset" = '47', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER_TMP', "Cbl_field_original_PIC" = 'X(61)', "Cbl_field_path" = 'ATINTCAB.FILLER_TMP', "Description" = 'ATINTCAB.FILLER_TMP') ,
+ NUMREGPROC DECIMAL(12, 0)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '108', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMREGPROC', "Cbl_field_original_PIC" = '9(12)', "Cbl_field_path" = 'ATINTCAB.NUMREGPROC', "Cbl_field_precision" = '12', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'ATINTCAB.NUMREGPROC') ,
+ CODENT1 VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '120', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT1', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_original_name" = 'CODENT', "Cbl_field_path" = 'ATINTCAB.CODENT', "Description" = 'ATINTCAB.CODENT') ,
+ CENTALTA VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '124', "Cbl_field_level" = '2', "Cbl_field_name" = 'CENTALTA', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'ATINTCAB.CENTALTA', "Description" = 'ATINTCAB.CENTALTA') ,
+ CUENTA VARCHAR(12)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '128', "Cbl_field_level" = '2', "Cbl_field_name" = 'CUENTA', "Cbl_field_original_PIC" = 'X(12)', "Cbl_field_path" = 'ATINTCAB.CUENTA', "Description" = 'ATINTCAB.CUENTA') ,
+ TIPOREG1 VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '140', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOREG1', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_original_name" = 'TIPOREG', "Cbl_field_path" = 'ATINTCAB.TIPOREG', "Description" = 'ATINTCAB.TIPOREG') ,
+ OTROSDATOSCAB VARCHAR(857)  SET( "Cbl_field_internal_length" = '857', "Cbl_field_internal_offset" = '142', "Cbl_field_level" = '2', "Cbl_field_name" = 'OTROSDATOSCAB', "Cbl_field_original_PIC" = 'X(857)', "Cbl_field_path" = 'ATINTCAB.OTROSDATOSCAB', "Description" = 'ATINTCAB.OTROSDATOSCAB') ,
+ ESTADOCINTA VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '999', "Cbl_field_level" = '2', "Cbl_field_name" = 'ESTADOCINTA', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'ATINTCAB.ESTADOCINTA', "Description" = 'ATINTCAB.ESTADOCINTA') ,
+ VALIDACION VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '1000', "Cbl_field_level" = '2', "Cbl_field_name" = 'VALIDACION', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'ATINTCAB.VALIDACION', "Description" = 'ATINTCAB.VALIDACION')  )
+,
+ PTAMDIA2( CODENT_D VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT_D', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTAMDIA2.CODENT_D', "Description" = 'PTAMDIA2.CODENT_D') ,
+ NSECFIC_D DECIMAL(10, 0)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '4', "Cbl_field_level" = '2', "Cbl_field_name" = 'NSECFIC_D', "Cbl_field_original_PIC" = '9(10)', "Cbl_field_path" = 'PTAMDIA2.NSECFIC_D', "Cbl_field_precision" = '10', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTAMDIA2.NSECFIC_D') ,
+ TIPOCINTA_D DECIMAL(2, 0)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '14', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOCINTA_D', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'PTAMDIA2.TIPOCINTA_D', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTAMDIA2.TIPOCINTA_D') ,
+ TIPOREG_D VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '16', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOREG_D', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'PTAMDIA2.TIPOREG_D', "Description" = 'PTAMDIA2.TIPOREG_D') ,
+ FILLER_D VARCHAR(91)  SET( "Cbl_field_internal_length" = '91', "Cbl_field_internal_offset" = '17', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER_D', "Cbl_field_original_PIC" = 'X(91)', "Cbl_field_path" = 'PTAMDIA2.FILLER_D', "Description" = 'PTAMDIA2.FILLER_D') ,
+ NUMREGPROC DECIMAL(12, 0)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '108', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMREGPROC', "Cbl_field_original_PIC" = '9(12)', "Cbl_field_path" = 'PTAMDIA2.NUMREGPROC', "Cbl_field_precision" = '12', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTAMDIA2.NUMREGPROC') ,
+ INDDEBCRE DECIMAL(1, 0)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '120', "Cbl_field_level" = '2', "Cbl_field_name" = 'INDDEBCRE', "Cbl_field_original_PIC" = '9(1)', "Cbl_field_path" = 'PTAMDIA2.INDDEBCRE', "Cbl_field_precision" = '1', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTAMDIA2.INDDEBCRE') ,
+ TIPMOV VARCHAR(1)  SET( "Cbl_field_id_col" = 'yes', "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '121', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPMOV', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'PTAMDIA2.TIPMOV', "Description" = 'PTAMDIA2.TIPMOV') ,
+ CODENT VARCHAR(3)  SET( "Cbl_field_internal_length" = '3', "Cbl_field_internal_offset" = '122', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT', "Cbl_field_original_PIC" = 'X(3)', "Cbl_field_path" = 'PTAMDIA2.CODENT', "Description" = 'PTAMDIA2.CODENT') ,
+ CENTALTA VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '125', "Cbl_field_level" = '2', "Cbl_field_name" = 'CENTALTA', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTAMDIA2.CENTALTA', "Description" = 'PTAMDIA2.CENTALTA') ,
+ CUENTA VARCHAR(12)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '129', "Cbl_field_level" = '2', "Cbl_field_name" = 'CUENTA', "Cbl_field_original_PIC" = 'X(12)', "Cbl_field_path" = 'PTAMDIA2.CUENTA', "Description" = 'PTAMDIA2.CUENTA') ,
+ NUMEXTPG DECIMAL(15, 0)  SET( "Cbl_field_internal_length" = '15', "Cbl_field_internal_offset" = '141', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMEXTPG', "Cbl_field_original_PIC" = '9(15)', "Cbl_field_path" = 'PTAMDIA2.NUMEXTPG', "Cbl_field_precision" = '15', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTAMDIA2.NUMEXTPG') ,
+ NUMMOVPG DECIMAL(7, 0)  SET( "Cbl_field_internal_length" = '7', "Cbl_field_internal_offset" = '156', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMMOVPG', "Cbl_field_original_PIC" = '9(7)', "Cbl_field_path" = 'PTAMDIA2.NUMMOVPG', "Cbl_field_precision" = '7', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTAMDIA2.NUMMOVPG') ,
+ CLAMON DECIMAL(3, 0)  SET( "Cbl_field_internal_length" = '3', "Cbl_field_internal_offset" = '163', "Cbl_field_level" = '2', "Cbl_field_name" = 'CLAMON', "Cbl_field_original_PIC" = '9(3)', "Cbl_field_path" = 'PTAMDIA2.CLAMON', "Cbl_field_precision" = '3', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTAMDIA2.CLAMON') ,
+ TIPDEU VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '166', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPDEU', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'PTAMDIA2.TIPDEU', "Description" = 'PTAMDIA2.TIPDEU') ,
+ TIPOLIN VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '168', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOLIN', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTAMDIA2.TIPOLIN', "Description" = 'PTAMDIA2.TIPOLIN') ,
+ TIPIMP DECIMAL(2, 0)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '172', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPIMP', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'PTAMDIA2.TIPIMP', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTAMDIA2.TIPIMP') ,
+ INDNORCOR DECIMAL(1, 0)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '174', "Cbl_field_level" = '2', "Cbl_field_name" = 'INDNORCOR', "Cbl_field_original_PIC" = '9(1)', "Cbl_field_path" = 'PTAMDIA2.INDNORCOR', "Cbl_field_precision" = '1', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTAMDIA2.INDNORCOR') ,
+ NUMREFAPL DECIMAL(15, 0)  SET( "Cbl_field_internal_length" = '15', "Cbl_field_internal_offset" = '175', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMREFAPL', "Cbl_field_original_PIC" = '9(15)', "Cbl_field_path" = 'PTAMDIA2.NUMREFAPL', "Cbl_field_precision" = '15', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTAMDIA2.NUMREFAPL') ,
+ IMPSALDIS DECIMAL(17, 2)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '190', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPSALDIS', "Cbl_field_original_PIC" = '9(15)V99', "Cbl_field_path" = 'PTAMDIA2.IMPSALDIS', "Cbl_field_precision" = '17', "Cbl_field_scale" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTAMDIA2.IMPSALDIS') ,
+ IMPAPL DECIMAL(17, 2)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '207', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPAPL', "Cbl_field_original_PIC" = '9(15)V99', "Cbl_field_path" = 'PTAMDIA2.IMPAPL', "Cbl_field_precision" = '17', "Cbl_field_scale" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTAMDIA2.IMPAPL') ,
+ IMPRECAPL DECIMAL(17, 2)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '224', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPRECAPL', "Cbl_field_original_PIC" = '9(15)V99', "Cbl_field_path" = 'PTAMDIA2.IMPRECAPL', "Cbl_field_precision" = '17', "Cbl_field_scale" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTAMDIA2.IMPRECAPL') ,
+ NUMSECREC DECIMAL(15, 0)  SET( "Cbl_field_internal_length" = '15', "Cbl_field_internal_offset" = '241', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMSECREC', "Cbl_field_original_PIC" = '9(15)', "Cbl_field_path" = 'PTAMDIA2.NUMSECREC', "Cbl_field_precision" = '15', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTAMDIA2.NUMSECREC') ,
+ IMPAPLAPL DECIMAL(17, 2)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '256', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPAPLAPL', "Cbl_field_original_PIC" = '9(15)V99', "Cbl_field_path" = 'PTAMDIA2.IMPAPLAPL', "Cbl_field_precision" = '17', "Cbl_field_scale" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTAMDIA2.IMPAPLAPL') ,
+ FECAPL VARCHAR(10)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '273', "Cbl_field_level" = '2', "Cbl_field_name" = 'FECAPL', "Cbl_field_original_PIC" = 'X(10)', "Cbl_field_path" = 'PTAMDIA2.FECAPL', "Description" = 'PTAMDIA2.FECAPL') ,
+ NUMORDEN DECIMAL(3, 0)  SET( "Cbl_field_internal_length" = '3', "Cbl_field_internal_offset" = '283', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMORDEN', "Cbl_field_original_PIC" = '9(3)', "Cbl_field_path" = 'PTAMDIA2.NUMORDEN', "Cbl_field_precision" = '3', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTAMDIA2.NUMORDEN') ,
+ TIPOLINORI VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '286', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOLINORI', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTAMDIA2.TIPOLINORI', "Description" = 'PTAMDIA2.TIPOLINORI') ,
+ TIPIMPORI DECIMAL(2, 0)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '290', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPIMPORI', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'PTAMDIA2.TIPIMPORI', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTAMDIA2.TIPIMPORI') ,
+ FILLER1 VARCHAR(708)  SET( "Cbl_field_internal_length" = '708', "Cbl_field_internal_offset" = '292', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER1', "Cbl_field_original_PIC" = 'X(708)', "Cbl_field_path" = 'PTAMDIA2.FILLER1', "Description" = 'PTAMDIA2.FILLER1')  )
+,
+ PTCEDIA1( CODENT_D VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT_D', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTCEDIA1.CODENT_D', "Description" = 'PTCEDIA1.CODENT_D') ,
  NSECFIC_D DECIMAL(10, 0)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '4', "Cbl_field_level" = '2', "Cbl_field_name" = 'NSECFIC_D', "Cbl_field_original_PIC" = '9(10)', "Cbl_field_path" = 'PTCEDIA1.NSECFIC_D', "Cbl_field_precision" = '10', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTCEDIA1.NSECFIC_D') ,
  TIPOCINTA_D DECIMAL(2, 0)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '14', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOCINTA_D', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'PTCEDIA1.TIPOCINTA_D', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTCEDIA1.TIPOCINTA_D') ,
  TIPOREG_D VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '16', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOREG_D', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'PTCEDIA1.TIPOREG_D', "Description" = 'PTCEDIA1.TIPOREG_D') ,
  FILLER_D VARCHAR(91)  SET( "Cbl_field_internal_length" = '91', "Cbl_field_internal_offset" = '17', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER_D', "Cbl_field_original_PIC" = 'X(91)', "Cbl_field_path" = 'PTCEDIA1.FILLER_D', "Description" = 'PTCEDIA1.FILLER_D') ,
  NUMREGPROC DECIMAL(12, 0)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '108', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMREGPROC', "Cbl_field_original_PIC" = '9(12)', "Cbl_field_path" = 'PTCEDIA1.NUMREGPROC', "Cbl_field_precision" = '12', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTCEDIA1.NUMREGPROC') ,
  INDDEBCRE DECIMAL(1, 0)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '120', "Cbl_field_level" = '2', "Cbl_field_name" = 'INDDEBCRE', "Cbl_field_original_PIC" = '9(1)', "Cbl_field_path" = 'PTCEDIA1.INDDEBCRE', "Cbl_field_precision" = '1', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTCEDIA1.INDDEBCRE') ,
- TIPMOV VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '121', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPMOV', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'PTCEDIA1.TIPMOV', "Description" = 'PTCEDIA1.TIPMOV') ,
+ TIPMOV VARCHAR(1)  SET( "Cbl_field_id_col" = 'yes', "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '121', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPMOV', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'PTCEDIA1.TIPMOV', "Description" = 'PTCEDIA1.TIPMOV') ,
  CODENT VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '122', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTCEDIA1.CODENT', "Description" = 'PTCEDIA1.CODENT') ,
  CENTALTA VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '126', "Cbl_field_level" = '2', "Cbl_field_name" = 'CENTALTA', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTCEDIA1.CENTALTA', "Description" = 'PTCEDIA1.CENTALTA') ,
  CUENTA VARCHAR(12)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '130', "Cbl_field_level" = '2', "Cbl_field_name" = 'CUENTA', "Cbl_field_original_PIC" = 'X(12)', "Cbl_field_path" = 'PTCEDIA1.CUENTA', "Description" = 'PTCEDIA1.CUENTA') ,
@@ -1148,17 +854,15 @@ CREATE __BODI_COPYBOOK_COBOL DATASTORE PTCEDIA1::'a1a9a6ce-67ae-45a0-b184-74dd45
  PORINT DECIMAL(7, 4)  SET( "Cbl_field_internal_length" = '7', "Cbl_field_internal_offset" = '260', "Cbl_field_level" = '2', "Cbl_field_name" = 'PORINT', "Cbl_field_original_PIC" = '9(3)V9999', "Cbl_field_path" = 'PTCEDIA1.PORINT', "Cbl_field_precision" = '7', "Cbl_field_scale" = '4', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTCEDIA1.PORINT') ,
  NUMMOVDEB DECIMAL(9, 0)  SET( "Cbl_field_internal_length" = '9', "Cbl_field_internal_offset" = '267', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMMOVDEB', "Cbl_field_original_PIC" = '9(9)', "Cbl_field_path" = 'PTCEDIA1.NUMMOVDEB', "Cbl_field_precision" = '9', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTCEDIA1.NUMMOVDEB') ,
  FILLER1 VARCHAR(724)  SET( "Cbl_field_internal_length" = '724', "Cbl_field_internal_offset" = '276', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER1', "Cbl_field_original_PIC" = 'X(724)', "Cbl_field_path" = 'PTCEDIA1.FILLER1', "Description" = 'PTCEDIA1.FILLER1')  )
-)
- SET ("Cbl_expand_occurs" = 'yes', "Cbl_file_dir" = '$G_RUTA', "Cbl_file_name" = '$G_NOMBRE_ARCHIVO', "Cbl_file_type" = 'F', "Cbl_has_record_mark" = 'no', "Cbl_ignore_redefines" = 'no', "Cbl_is_big_endian" = 'yes', "Cbl_rdr_hv_action" = 'Nothing', "Cbl_rdr_hvalue" = '0xFF', "Cbl_rdr_lv_action" = 'Nothing', "Cbl_rdr_lvalue" = '0x40', "Cbl_rec_size" = '1001', "Cbl_rec_trailer" = '1', "Cbl_schema_file" = 'C:\\Users\\CL50607\\Desktop\\Archivos Mallas\\Operaciones diarias v0101 181217\\PTCEDIA1.cpy', "Cbl_source_begin_pos" = '1', "Cbl_source_end_pos" = '9999', "Cbl_source_format" = 'smart', "application_type" = '', "ds_configuration_enabled" = 'no', "locale_codepage" = 'cp1252', "locale_language" = '<default>', "locale_territory" = '<default>');
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Dec 19 10:46:06 2018', "ActaValue_3" = 'Wed Dec 19 10:49:53 2018')
-CREATE __BODI_COPYBOOK_COBOL DATASTORE PTOPEDI1::'4e0a73c7-3feb-4346-a85c-d997390efe61' OUTPUT (PTOPEDI1( CODENT_D VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT_D', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTOPEDI1.CODENT_D', "Description" = 'PTOPEDI1.CODENT_D') ,
+,
+ PTOPEDI1( CODENT_D VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT_D', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTOPEDI1.CODENT_D', "Description" = 'PTOPEDI1.CODENT_D') ,
  NSECFIC_D DECIMAL(10, 0)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '4', "Cbl_field_level" = '2', "Cbl_field_name" = 'NSECFIC_D', "Cbl_field_original_PIC" = '9(10)', "Cbl_field_path" = 'PTOPEDI1.NSECFIC_D', "Cbl_field_precision" = '10', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.NSECFIC_D') ,
  TIPOCINTA_D DECIMAL(2, 0)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '14', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOCINTA_D', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'PTOPEDI1.TIPOCINTA_D', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.TIPOCINTA_D') ,
  TIPOREG_D VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '16', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOREG_D', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'PTOPEDI1.TIPOREG_D', "Description" = 'PTOPEDI1.TIPOREG_D') ,
  FILLER_D VARCHAR(91)  SET( "Cbl_field_internal_length" = '91', "Cbl_field_internal_offset" = '17', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER_D', "Cbl_field_original_PIC" = 'X(91)', "Cbl_field_path" = 'PTOPEDI1.FILLER_D', "Description" = 'PTOPEDI1.FILLER_D') ,
  NUMREGPROC DECIMAL(12, 0)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '108', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMREGPROC', "Cbl_field_original_PIC" = '9(12)', "Cbl_field_path" = 'PTOPEDI1.NUMREGPROC', "Cbl_field_precision" = '12', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.NUMREGPROC') ,
  INDDEBCRE DECIMAL(1, 0)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '120', "Cbl_field_level" = '2', "Cbl_field_name" = 'INDDEBCRE', "Cbl_field_original_PIC" = '9(1)', "Cbl_field_path" = 'PTOPEDI1.INDDEBCRE', "Cbl_field_precision" = '1', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.INDDEBCRE') ,
- TIPMOV VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '121', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPMOV', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'PTOPEDI1.TIPMOV', "Description" = 'PTOPEDI1.TIPMOV') ,
+ TIPMOV VARCHAR(1)  SET( "Cbl_field_id_col" = 'yes', "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '121', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPMOV', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'PTOPEDI1.TIPMOV', "Description" = 'PTOPEDI1.TIPMOV') ,
  CODENT VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '122', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTOPEDI1.CODENT', "Description" = 'PTOPEDI1.CODENT') ,
  CENTALTA VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '126', "Cbl_field_level" = '2', "Cbl_field_name" = 'CENTALTA', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTOPEDI1.CENTALTA', "Description" = 'PTOPEDI1.CENTALTA') ,
  CUENTA VARCHAR(12)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '130', "Cbl_field_level" = '2', "Cbl_field_name" = 'CUENTA', "Cbl_field_original_PIC" = 'X(12)', "Cbl_field_path" = 'PTOPEDI1.CUENTA', "Description" = 'PTOPEDI1.CUENTA') ,
@@ -1215,8 +919,8 @@ CREATE __BODI_COPYBOOK_COBOL DATASTORE PTOPEDI1::'4e0a73c7-3feb-4346-a85c-d99739
  NUMMOVDEB DECIMAL(9, 0)  SET( "Cbl_field_internal_length" = '9', "Cbl_field_internal_offset" = '618', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMMOVDEB', "Cbl_field_original_PIC" = '9(9)', "Cbl_field_path" = 'PTOPEDI1.NUMMOVDEB', "Cbl_field_precision" = '9', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.NUMMOVDEB') ,
  FILLER1 VARCHAR(373)  SET( "Cbl_field_internal_length" = '373', "Cbl_field_internal_offset" = '627', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER1', "Cbl_field_original_PIC" = 'X(373)', "Cbl_field_path" = 'PTOPEDI1.FILLER1', "Description" = 'PTOPEDI1.FILLER1')  )
 )
- SET ("Cbl_expand_occurs" = 'yes', "Cbl_file_dir" = '$G_RUTA', "Cbl_file_name" = '$G_NOMBRE_ARCHIVO', "Cbl_file_type" = 'F', "Cbl_has_record_mark" = 'no', "Cbl_ignore_redefines" = 'no', "Cbl_is_big_endian" = 'yes', "Cbl_rdr_hv_action" = 'Nothing', "Cbl_rdr_hvalue" = '0xFF', "Cbl_rdr_lv_action" = 'Nothing', "Cbl_rdr_lvalue" = '0x40', "Cbl_rec_size" = '1001', "Cbl_rec_trailer" = '1', "Cbl_schema_file" = 'C:\\Users\\CL50607\\Desktop\\Archivos Mallas\\Operaciones diarias v0101 181217\\PTOPEDI1.cpy', "Cbl_source_begin_pos" = '1', "Cbl_source_end_pos" = '9999', "Cbl_source_format" = 'smart', "application_type" = '', "ds_configuration_enabled" = 'no', "locale_codepage" = 'cp1252', "locale_language" = '<default>', "locale_territory" = '<default>');
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Jan 24 10:14:37 2019', "ActaValue_3" = 'Thu Jan 24 11:45:32 2019', "x" = '-1', "y" = '-1')
+ SET ("Cbl_expand_occurs" = 'yes', "Cbl_field_id_col(PTAMDIA2)" = '7', "Cbl_field_id_col(PTCEDIA1)" = '7', "Cbl_field_id_col(PTOPEDI1)" = '7', "Cbl_field_id_val(PTAMDIA2)7_1" = '0', "Cbl_field_id_val(PTCEDIA1)7_1" = '2', "Cbl_field_id_val(PTOPEDI1)7_1" = '1', "Cbl_file_dir" = '$G_RUTA', "Cbl_file_name" = '$G_NOMBRE_ARCHIVO', "Cbl_file_type" = 'F', "Cbl_has_record_mark" = 'no', "Cbl_ignore_redefines" = 'no', "Cbl_is_big_endian" = 'yes', "Cbl_rdr_hv_action" = 'Nothing', "Cbl_rdr_hvalue" = '0xFF', "Cbl_rdr_lv_action" = 'Nothing', "Cbl_rdr_lvalue" = '0x40', "Cbl_rec_size" = '1001', "Cbl_rec_trailer" = '1', "Cbl_schema_file" = 'C:\\BC\\SAT\\cobol copybooks\\02-OPERACIONES DIARIAS-PPJ6110N-FULL.cpy', "Cbl_source_begin_pos" = '1', "Cbl_source_end_pos" = '9999', "Cbl_source_format" = 'smart', "application_type" = '', "ds_configuration_enabled" = 'no', "locale_codepage" = 'cp1252', "locale_language" = '<default>', "locale_territory" = '<default>');
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Jan 24 10:14:37 2019', "ActaValue_3" = 'Tue Mar  5 16:33:35 2019', "x" = '-1', "y" = '-1')
 CREATE PLAN WF_PPJ6110N::'108bf41f-3fb0-4780-8485-f88b6cb295c6'( )
 DECLARE
      $L_NOMBRE_WF VARCHAR(50) ;
@@ -1245,9 +949,9 @@ CF_ENVIO_CORREO(\'INICIO DE PROCESO [$L_NOMBRE_WF]\', \'SE INICIA LA EJECUCIÓN 
 ', "x" = '90', "y" = '-90')
 BEGIN_SCRIPT
 $L_ID_EJECUCION_MALLA = CF_EJECUCION_MALLA();$G_ID_EJECUCION = $L_ID_EJECUCION_MALLA;print('--------------------------------EJECUCIÓN DATOS');print($G_ID_EJECUCION);$G_NOMBRE_ARCHIVO = sql('DS_CONTROL', 'SELECT NOMBRE_ARCHIVO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$G_ID_EJECUCION]');cf_envio_correo('INICIO DE PROCESO [$L_NOMBRE_WF]', 'SE INICIA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]');END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>272</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>272</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '384', "y" = '-419')
 CALL PLAN WF_PTCEDIA1::'c57ab699-4393-4076-a07d-aa7272d35f70'();
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>269</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '994', "y" = '-88')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>269</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '738', "y" = '-659')
 CALL PLAN WF_PTOPEDI1::'8d50ba03-3ebb-4d63-a4db-a947ba89efe2'();
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SC_FIN', "ui_script_text" = '##ENVIO DE CORREO DE FIN DE PROCESO
 CF_ENVIO_CORREO(\'FIN DE PROCESO [$L_NOMBRE_WF]\', \'SE FINALIZA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]\');
@@ -1259,7 +963,7 @@ CF_FIN_MALLA();
 
 
 
-', "x" = '90', "y" = '-480')
+', "x" = '1260', "y" = '-90')
 BEGIN_SCRIPT
 cf_envio_correo('FIN DE PROCESO [$L_NOMBRE_WF]', 'SE FINALIZA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]');CF_FIN_MALLA();END
 END
@@ -1275,12 +979,12 @@ print( $G_ID_EJECUCION );
 
 
 CF_ENVIO_CORREO(\'INICIO DE PROCESO [$L_NOMBRE_WF]\', \'SE INICIA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]\');
-', "x" = '480', "y" = '-90')
+', "x" = '90', "y" = '-90')
 BEGIN_SCRIPT
 $G_ID_EJECUCION = CF_EJECUCION_MALLA();print('--------------------------------EJECUCIÓN DATOS');print($G_ID_EJECUCION);cf_envio_correo('INICIO DE PROCESO [$L_NOMBRE_WF]', 'SE INICIA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]');END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>313</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '870', "y" = '-90')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>313</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '313', "y" = '-378')
 CALL PLAN WF_PTCEDIA1_R::'64a21d2f-38b0-4b95-a003-e0bf0dd305e4'();
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>310</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1200', "y" = '-175')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>310</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1003', "y" = '-491')
 CALL PLAN WF_PTOPEDI1_R::'7d62d1c2-8644-4c40-bfbf-0fe167547c77'();
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SC_FIN', "ui_script_text" = '##ENVIO DE CORREO DE FIN DE PROCESO
 CF_ENVIO_CORREO(\'FIN DE PROCESO [$L_NOMBRE_WF]\', \'SE FINALIZA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]\');
@@ -1292,7 +996,7 @@ CF_FIN_MALLA();
 
 
 
-', "x" = '90', "y" = '-480')
+', "x" = '1260', "y" = '-90')
 BEGIN_SCRIPT
 cf_envio_correo('FIN DE PROCESO [$L_NOMBRE_WF]', 'SE FINALIZA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]');CF_FIN_MALLA();END
 END

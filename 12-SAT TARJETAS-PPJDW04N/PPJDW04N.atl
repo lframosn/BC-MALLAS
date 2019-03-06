@@ -15,7 +15,7 @@ CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET
 <locale_codepage>&lt;default&gt;</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E8B2B70131F20FB0FEB0CEA447C3E2C3BFC87682A00C5B2AE350D2174CC204275E156B6C8FCE4A17B3C0ED26EDCE4B</password>
+<password>+0400000000120303000803E80B52BABA2F2F199B0BC64CA2360578B720937747DD207F4E12C341B70D2AB5422D82EAB64D4B02248B88761F96CD</password>
 <server_codepage>&lt;default&gt;</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -40,7 +40,7 @@ CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET 
 <locale_codepage>iso-8859-1</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E834CF9C14CC4EE376062A2B13A627755B4722E765825E3E432C36C705AB6EC9059319299BC609F2DDD1FEFBA25ACB</password>
+<password>+0400000000120303000803E8FE41CDD5F610ABAE6AF81F401E5E198973715F1CA3EA3435FE302072FFE249ED3E79516B3574C9D8F82406C26708</password>
 <server_codepage>iso-8859-1</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -65,7 +65,7 @@ ActaName_10 = 'REstimated_Row_Count',ActaValue_10 = '50000' ,
 ActaName_11 = 'RSavedAfterCheckOut',ActaValue_11 = 'YES' , 
 ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'no' , 
 ActaName_13 = 'RDate_created',ActaValue_13 = 'Tue Mar  5 16:17:01 2019' , 
-ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Wed Mar  6 10:29:50 2019' , 
+ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Wed Mar  6 14:04:46 2019' , 
 ActaName_15 = 'RDate_modified',ActaValue_15 = 'Wed Mar  6 09:41:39 2019' )
 CREATE TABLE DS_TARGET.SAT.TBTARJET(IDENTIFICADOR_EJECUCION INT  NULL , 
 CODENT_D VARCHAR(4)  NULL , 
@@ -130,82 +130,82 @@ FILLER1 VARCHAR(539)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Wed Mar  6 10:29:44 2019' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Wed Mar  6 14:04:40 2019' , 
 ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '5' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
 ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '5' , 
 ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
 ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
-ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '3 Seconds' , 
+ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '2 Seconds' , 
 ActaName_8 = 'RDatabase_Object_Type',ActaValue_8 = 'TABLE' , 
 ActaName_9 = 'RTable_Type',ActaValue_9 = 'TABLE' , 
 ActaName_10 = 'RDescription',ActaValue_10 = '' , 
 ActaName_11 = 'REstimated_Row_Count',ActaValue_11 = '50000' , 
 ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'yes' , 
 ActaName_13 = 'RSavedAfterCheckOut',ActaValue_13 = 'YES' , 
-ActaName_14 = 'RDate_modified',ActaValue_14 = 'Wed Mar  6 09:41:40 2019' )
-CREATE TABLE DS_TARGET.STG_SAT.TBTARJET(CODENT_D VARCHAR(4)  NULL  SET("Description" = 'TBTARJET.CODENT_D'), 
-NSECFIC_D DECIMAL(10, 0)  NULL  SET("Description" = 'TBTARJET.NSECFIC_D'), 
-TIPOCINTA_D DECIMAL(2, 0)  NULL  SET("Description" = 'TBTARJET.TIPOCINTA_D'), 
-TIPOREG_D VARCHAR(1)  NULL  SET("Description" = 'TBTARJET.TIPOREG_D'), 
-FILLER_D VARCHAR(91)  NULL  SET("Description" = 'TBTARJET.FILLER_D'), 
-NUMREGPROC DECIMAL(12, 0)  NULL  SET("Description" = 'TBTARJET.NUMREGPROC'), 
-CODENT VARCHAR(4)  NULL  SET("Description" = 'TBTARJET.CODENT'), 
-CODMAR DECIMAL(2, 0)  NULL  SET("Description" = 'TBTARJET.CODMAR'), 
-INDTIPT DECIMAL(2, 0)  NULL  SET("Description" = 'TBTARJET.INDTIPT'), 
-CENTALTA VARCHAR(4)  NULL  SET("Description" = 'TBTARJET.CENTALTA'), 
-CUENTA VARCHAR(12)  NULL  SET("Description" = 'TBTARJET.CUENTA'), 
-NUMBENCTA DECIMAL(5, 0)  NULL  SET("Description" = 'TBTARJET.NUMBENCTA'), 
-NUMPLASTICO DECIMAL(12, 0)  NULL  SET("Description" = 'TBTARJET.NUMPLASTICO'), 
-TIPBON VARCHAR(6)  NULL  SET("Description" = 'TBTARJET.TIPBON'), 
-PAN VARCHAR(22)  NULL  SET("Description" = 'TBTARJET.PAN'), 
-PANANT VARCHAR(22)  NULL  SET("Description" = 'TBTARJET.PANANT'), 
-FECALTA VARCHAR(10)  NULL  SET("Description" = 'TBTARJET.FECALTA'), 
-FECULTUSO VARCHAR(10)  NULL  SET("Description" = 'TBTARJET.FECULTUSO'), 
-INDSITTAR DECIMAL(2, 0)  NULL  SET("Description" = 'TBTARJET.INDSITTAR'), 
-INDULTTAR VARCHAR(2)  NULL  SET("Description" = 'TBTARJET.INDULTTAR'), 
-INDNOREN DECIMAL(1, 0)  NULL  SET("Description" = 'TBTARJET.INDNOREN'), 
-CODBLQ DECIMAL(2, 0)  NULL  SET("Description" = 'TBTARJET.CODBLQ'), 
-FECULTBLQ VARCHAR(10)  NULL  SET("Description" = 'TBTARJET.FECULTBLQ'), 
-TEXBLQ VARCHAR(30)  NULL  SET("Description" = 'TBTARJET.TEXBLQ'), 
-FECBAJA VARCHAR(10)  NULL  SET("Description" = 'TBTARJET.FECBAJA'), 
-MOTBAJA VARCHAR(2)  NULL  SET("Description" = 'TBTARJET.MOTBAJA'), 
-FECCADTAR DECIMAL(6, 0)  NULL  SET("Description" = 'TBTARJET.FECCADTAR'), 
-FECCADTARANT DECIMAL(6, 0)  NULL  SET("Description" = 'TBTARJET.FECCADTARANT'), 
-FECCOBCUO DECIMAL(6, 0)  NULL  SET("Description" = 'TBTARJET.FECCOBCUO'), 
-OFFSET1 DECIMAL(4, 0)  NULL  SET("Description" = 'TBTARJET.OFFSET1'), 
-OFFSET2 DECIMAL(4, 0)  NULL  SET("Description" = 'TBTARJET.OFFSET2'), 
-PVV1 VARCHAR(4)  NULL  SET("Description" = 'TBTARJET.PVV1'), 
-PVV2 VARCHAR(4)  NULL  SET("Description" = 'TBTARJET.PVV2'), 
-CODCLAVE VARCHAR(3)  NULL  SET("Description" = 'TBTARJET.CODCLAVE'), 
-CODCLVANT VARCHAR(3)  NULL  SET("Description" = 'TBTARJET.CODCLVANT'), 
-NUMACT1 DECIMAL(1, 0)  NULL  SET("Description" = 'TBTARJET.NUMACT1'), 
-NUMACT2 DECIMAL(1, 0)  NULL  SET("Description" = 'TBTARJET.NUMACT2'), 
-NUMANT1 DECIMAL(1, 0)  NULL  SET("Description" = 'TBTARJET.NUMANT1'), 
-NUMANT2 DECIMAL(1, 0)  NULL  SET("Description" = 'TBTARJET.NUMANT2'), 
-INDCAMLIM VARCHAR(1)  NULL  SET("Description" = 'TBTARJET.INDCAMLIM'), 
-INDACTLIM VARCHAR(1)  NULL  SET("Description" = 'TBTARJET.INDACTLIM'), 
-INDRESACT VARCHAR(1)  NULL  SET("Description" = 'TBTARJET.INDRESACT'), 
-INDRESCOM VARCHAR(1)  NULL  SET("Description" = 'TBTARJET.INDRESCOM'), 
-INDLIMFAC VARCHAR(1)  NULL  SET("Description" = 'TBTARJET.INDLIMFAC'), 
-VISAPHONE DECIMAL(4, 0)  NULL  SET("Description" = 'TBTARJET.VISAPHONE'), 
-NUMKPIN DECIMAL(2, 0)  NULL  SET("Description" = 'TBTARJET.NUMKPIN'), 
-IDEMPLEADO VARCHAR(20)  NULL  SET("Description" = 'TBTARJET.IDEMPLEADO'), 
-NOMBENRED VARCHAR(35)  NULL  SET("Description" = 'TBTARJET.NOMBENRED'), 
-INDFOTO VARCHAR(1)  NULL  SET("Description" = 'TBTARJET.INDFOTO'), 
-REFFOTO VARCHAR(30)  NULL  SET("Description" = 'TBTARJET.REFFOTO'), 
-CODBARR DECIMAL(14, 0)  NULL  SET("Description" = 'TBTARJET.CODBARR'), 
-CODPROMO VARCHAR(3)  NULL  SET("Description" = 'TBTARJET.CODPROMO'), 
-INDEXECUO VARCHAR(1)  NULL  SET("Description" = 'TBTARJET.INDEXECUO'), 
-INDTAREME VARCHAR(1)  NULL  SET("Description" = 'TBTARJET.INDTAREME'), 
-INDAPLIREST VARCHAR(1)  NULL  SET("Description" = 'TBTARJET.INDAPLIREST'), 
-INDTARPROV VARCHAR(1)  NULL  SET("Description" = 'TBTARJET.INDTARPROV'), 
-INDTAREMV DECIMAL(1, 0)  NULL  SET("Description" = 'TBTARJET.INDTAREMV'), 
-HORBLQ VARCHAR(8)  NULL  SET("Description" = 'TBTARJET.HORBLQ'), 
-FILLER1 VARCHAR(539)  NULL  SET("Description" = 'TBTARJET.FILLER1')) 
+ActaName_14 = 'RDate_modified',ActaValue_14 = 'Wed Mar  6 14:03:48 2019' )
+CREATE TABLE DS_TARGET.STG_SAT.TBTARJET(CODENT_D VARCHAR(4)  NULL  SET("Description" = 'TBTARJET.CODENT_D', "ui_mapping_text" = 'TBTARJET.CODENT_D'), 
+NSECFIC_D DECIMAL(10, 0)  NULL  SET("Description" = 'TBTARJET.NSECFIC_D', "ui_mapping_text" = 'TBTARJET.NSECFIC_D'), 
+TIPOCINTA_D DECIMAL(2, 0)  NULL  SET("Description" = 'TBTARJET.TIPOCINTA_D', "ui_mapping_text" = 'TBTARJET.TIPOCINTA_D'), 
+TIPOREG_D VARCHAR(1)  NULL  SET("Description" = 'TBTARJET.TIPOREG_D', "ui_mapping_text" = 'TBTARJET.TIPOREG_D'), 
+FILLER_D VARCHAR(91)  NULL  SET("Description" = 'TBTARJET.FILLER_D', "ui_mapping_text" = 'TBTARJET.FILLER_D'), 
+NUMREGPROC DECIMAL(12, 0)  NULL  SET("Description" = 'TBTARJET.NUMREGPROC', "ui_mapping_text" = 'TBTARJET.NUMREGPROC'), 
+CODENT VARCHAR(4)  NULL  SET("Description" = 'TBTARJET.CODENT', "ui_mapping_text" = 'TBTARJET.CODENT'), 
+CODMAR DECIMAL(2, 0)  NULL  SET("Description" = 'TBTARJET.CODMAR', "ui_mapping_text" = 'TBTARJET.CODMAR'), 
+INDTIPT DECIMAL(2, 0)  NULL  SET("Description" = 'TBTARJET.INDTIPT', "ui_mapping_text" = 'TBTARJET.INDTIPT'), 
+CENTALTA VARCHAR(4)  NULL  SET("Description" = 'TBTARJET.CENTALTA', "ui_mapping_text" = 'TBTARJET.CENTALTA'), 
+CUENTA VARCHAR(12)  NULL  SET("Description" = 'TBTARJET.CUENTA', "ui_mapping_text" = 'TBTARJET.CUENTA'), 
+NUMBENCTA DECIMAL(5, 0)  NULL  SET("Description" = 'TBTARJET.NUMBENCTA', "ui_mapping_text" = 'TBTARJET.NUMBENCTA'), 
+NUMPLASTICO DECIMAL(12, 0)  NULL  SET("Description" = 'TBTARJET.NUMPLASTICO', "ui_mapping_text" = 'TBTARJET.NUMPLASTICO'), 
+TIPBON VARCHAR(6)  NULL  SET("Description" = 'TBTARJET.TIPBON', "ui_mapping_text" = 'TBTARJET.TIPBON'), 
+PAN VARCHAR(22)  NULL  SET("Description" = 'TBTARJET.PAN', "ui_mapping_text" = 'TBTARJET.PAN'), 
+PANANT VARCHAR(22)  NULL  SET("Description" = 'TBTARJET.PANANT', "ui_mapping_text" = 'TBTARJET.PANANT'), 
+FECALTA VARCHAR(10)  NULL  SET("Description" = 'TBTARJET.FECALTA', "ui_mapping_text" = 'TBTARJET.FECALTA'), 
+FECULTUSO VARCHAR(10)  NULL  SET("Description" = 'TBTARJET.FECULTUSO', "ui_mapping_text" = 'TBTARJET.FECULTUSO'), 
+INDSITTAR DECIMAL(2, 0)  NULL  SET("Description" = 'TBTARJET.INDSITTAR', "ui_mapping_text" = 'TBTARJET.INDSITTAR'), 
+INDULTTAR VARCHAR(2)  NULL  SET("Description" = 'TBTARJET.INDULTTAR', "ui_mapping_text" = 'TBTARJET.INDULTTAR'), 
+INDNOREN DECIMAL(1, 0)  NULL  SET("Description" = 'TBTARJET.INDNOREN', "ui_mapping_text" = 'TBTARJET.INDNOREN'), 
+CODBLQ DECIMAL(2, 0)  NULL  SET("Description" = 'TBTARJET.CODBLQ', "ui_mapping_text" = 'TBTARJET.CODBLQ'), 
+FECULTBLQ VARCHAR(10)  NULL  SET("Description" = 'TBTARJET.FECULTBLQ', "ui_mapping_text" = 'TBTARJET.FECULTBLQ'), 
+TEXBLQ VARCHAR(30)  NULL  SET("Description" = 'TBTARJET.TEXBLQ', "ui_mapping_text" = 'TBTARJET.TEXBLQ'), 
+FECBAJA VARCHAR(10)  NULL  SET("Description" = 'TBTARJET.FECBAJA', "ui_mapping_text" = 'TBTARJET.FECBAJA'), 
+MOTBAJA VARCHAR(2)  NULL  SET("Description" = 'TBTARJET.MOTBAJA', "ui_mapping_text" = 'TBTARJET.MOTBAJA'), 
+FECCADTAR DECIMAL(6, 0)  NULL  SET("Description" = 'TBTARJET.FECCADTAR', "ui_mapping_text" = 'TBTARJET.FECCADTAR'), 
+FECCADTARANT DECIMAL(6, 0)  NULL  SET("Description" = 'TBTARJET.FECCADTARANT', "ui_mapping_text" = 'TBTARJET.FECCADTARANT'), 
+FECCOBCUO DECIMAL(6, 0)  NULL  SET("Description" = 'TBTARJET.FECCOBCUO', "ui_mapping_text" = 'TBTARJET.FECCOBCUO'), 
+OFFSET1 DECIMAL(4, 0)  NULL  SET("Description" = 'TBTARJET.OFFSET1', "ui_mapping_text" = 'TBTARJET.OFFSET1'), 
+OFFSET2 DECIMAL(4, 0)  NULL  SET("Description" = 'TBTARJET.OFFSET2', "ui_mapping_text" = 'TBTARJET.OFFSET2'), 
+PVV1 VARCHAR(4)  NULL  SET("Description" = 'TBTARJET.PVV1', "ui_mapping_text" = 'TBTARJET.PVV1'), 
+PVV2 VARCHAR(4)  NULL  SET("Description" = 'TBTARJET.PVV2', "ui_mapping_text" = 'TBTARJET.PVV2'), 
+CODCLAVE VARCHAR(3)  NULL  SET("Description" = 'TBTARJET.CODCLAVE', "ui_mapping_text" = 'TBTARJET.CODCLAVE'), 
+CODCLVANT VARCHAR(3)  NULL  SET("Description" = 'TBTARJET.CODCLVANT', "ui_mapping_text" = 'TBTARJET.CODCLVANT'), 
+NUMACT1 DECIMAL(1, 0)  NULL  SET("Description" = 'TBTARJET.NUMACT1', "ui_mapping_text" = 'TBTARJET.NUMACT1'), 
+NUMACT2 DECIMAL(1, 0)  NULL  SET("Description" = 'TBTARJET.NUMACT2', "ui_mapping_text" = 'TBTARJET.NUMACT2'), 
+NUMANT1 DECIMAL(1, 0)  NULL  SET("Description" = 'TBTARJET.NUMANT1', "ui_mapping_text" = 'TBTARJET.NUMANT1'), 
+NUMANT2 DECIMAL(1, 0)  NULL  SET("Description" = 'TBTARJET.NUMANT2', "ui_mapping_text" = 'TBTARJET.NUMANT2'), 
+INDCAMLIM VARCHAR(1)  NULL  SET("Description" = 'TBTARJET.INDCAMLIM', "ui_mapping_text" = 'TBTARJET.INDCAMLIM'), 
+INDACTLIM VARCHAR(1)  NULL  SET("Description" = 'TBTARJET.INDACTLIM', "ui_mapping_text" = 'TBTARJET.INDACTLIM'), 
+INDRESACT VARCHAR(1)  NULL  SET("Description" = 'TBTARJET.INDRESACT', "ui_mapping_text" = 'TBTARJET.INDRESACT'), 
+INDRESCOM VARCHAR(1)  NULL  SET("Description" = 'TBTARJET.INDRESCOM', "ui_mapping_text" = 'TBTARJET.INDRESCOM'), 
+INDLIMFAC VARCHAR(1)  NULL  SET("Description" = 'TBTARJET.INDLIMFAC', "ui_mapping_text" = 'TBTARJET.INDLIMFAC'), 
+VISAPHONE DECIMAL(4, 0)  NULL  SET("Description" = 'TBTARJET.VISAPHONE', "ui_mapping_text" = 'TBTARJET.VISAPHONE'), 
+NUMKPIN DECIMAL(2, 0)  NULL  SET("Description" = 'TBTARJET.NUMKPIN', "ui_mapping_text" = 'TBTARJET.NUMKPIN'), 
+IDEMPLEADO VARCHAR(20)  NULL  SET("Description" = 'TBTARJET.IDEMPLEADO', "ui_mapping_text" = 'TBTARJET.IDEMPLEADO'), 
+NOMBENRED VARCHAR(35)  NULL  SET("Description" = 'TBTARJET.NOMBENRED', "ui_mapping_text" = 'TBTARJET.NOMBENRED'), 
+INDFOTO VARCHAR(1)  NULL  SET("Description" = 'TBTARJET.INDFOTO', "ui_mapping_text" = 'TBTARJET.INDFOTO'), 
+REFFOTO VARCHAR(30)  NULL  SET("Description" = 'TBTARJET.REFFOTO', "ui_mapping_text" = 'TBTARJET.REFFOTO'), 
+CODBARR DECIMAL(14, 0)  NULL  SET("Description" = 'TBTARJET.CODBARR', "ui_mapping_text" = 'TBTARJET.CODBARR'), 
+CODPROMO VARCHAR(3)  NULL  SET("Description" = 'TBTARJET.CODPROMO', "ui_mapping_text" = 'TBTARJET.CODPROMO'), 
+INDEXECUO VARCHAR(1)  NULL  SET("Description" = 'TBTARJET.INDEXECUO', "ui_mapping_text" = 'TBTARJET.INDEXECUO'), 
+INDTAREME VARCHAR(1)  NULL  SET("Description" = 'TBTARJET.INDTAREME', "ui_mapping_text" = 'TBTARJET.INDTAREME'), 
+INDAPLIREST VARCHAR(1)  NULL  SET("Description" = 'TBTARJET.INDAPLIREST', "ui_mapping_text" = 'TBTARJET.INDAPLIREST'), 
+INDTARPROV VARCHAR(1)  NULL  SET("Description" = 'TBTARJET.INDTARPROV', "ui_mapping_text" = 'TBTARJET.INDTARPROV'), 
+INDTAREMV DECIMAL(1, 0)  NULL  SET("Description" = 'TBTARJET.INDTAREMV', "ui_mapping_text" = 'TBTARJET.INDTAREMV'), 
+HORBLQ VARCHAR(8)  NULL  SET("Description" = 'TBTARJET.HORBLQ', "ui_mapping_text" = 'TBTARJET.HORBLQ'), 
+FILLER1 VARCHAR(539)  NULL  SET("Description" = 'TBTARJET.FILLER1', "ui_mapping_text" = 'TBTARJET.FILLER1')) 
 SET("db_alias_name" = 'STG_SAT')
 ;
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Feb  5 09:48:39 2019', "ActaValue_3" = 'Wed Mar  6 09:01:18 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Feb  5 09:48:39 2019', "ActaValue_3" = 'Wed Mar  6 09:41:40 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_TBTARJET::'36e1ef8c-c9ef-449d-a5dc-8ea5477d8e5b'
 BEGIN
 
@@ -213,7 +213,8 @@ ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Descrip
 GUID::'990e6eb6-4d5c-4fbf-90ee-14804c6c7345' READ __BODI_COPYBOOK_COBOL PPJDW04N OUTPUT(TBTARJET)
 SET("Cbl_capture_data_conversion" = 'no', "cache" = 'no', "connection_port" = 'no', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'yes', "reader_include_filename" = 'no', "table_weight" = '0');
 
-ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '64', "ui_acta_from_schema_0" = 'TBTARJET', "ui_where_text" = 'TBTARJET.TIPOREG_D = \'D\'', "x" = '480', "y" = '-90')
+ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '64', "ui_acta_from_schema_0" = 'TBTARJET', "ui_where_text" = 'TBTARJET.TIPOREG_D = \'D\'
+', "x" = '480', "y" = '-90')
 GUID::'3b885fed-dfdb-4013-8a50-c19eb4033aa8' CREATE VIEW Query( CODENT_D VARCHAR(4)  SET( "Description" = 'TBTARJET.CODENT_D', "ui_mapping_text" = 'TBTARJET.CODENT_D') ,
  NSECFIC_D DECIMAL(10, 0)  SET( "Description" = 'TBTARJET.NSECFIC_D', "ui_mapping_text" = 'TBTARJET.NSECFIC_D') ,
  TIPOCINTA_D DECIMAL(2, 0)  SET( "Description" = 'TBTARJET.TIPOCINTA_D', "ui_mapping_text" = 'TBTARJET.TIPOCINTA_D') ,
@@ -278,7 +279,7 @@ SELECT TBTARJET.CODENT_D, TBTARJET.NSECFIC_D, TBTARJET.TIPOCINTA_D, TBTARJET.TIP
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
-ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>425</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '64', "x" = '870', "y" = '-90')
+ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = '', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>425</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '64', "x" = '870', "y" = '-90')
 GUID::'afa2a515-e1c1-4cb8-b30d-bafddbefd3d8' LOAD TABLE DS_TARGET.STG_SAT.TBTARJET INPUT(Query)
 SET("connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
@@ -345,7 +346,7 @@ END
 </Notifications>
 </Audit>
 ', "Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Feb  5 10:02:19 2019', "ActaValue_3" = 'Tue Mar  5 16:19:31 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Feb  5 10:02:19 2019', "ActaValue_3" = 'Wed Mar  6 09:41:40 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_TBTARJET::'ae27088c-ee7e-4bc1-8134-dc97ad24401c'
 BEGIN
 
@@ -412,10 +413,10 @@ GUID::'e367a33c-4354-4acd-b357-c883110d490b' CREATE VIEW Query( IDENTIFICADOR_EJ
  INDAPLIREST VARCHAR(1)  SET( "ui_mapping_text" = 'TBTARJET.INDAPLIREST') ,
  INDTARPROV VARCHAR(1)  SET( "ui_mapping_text" = 'TBTARJET.INDTARPROV') ,
  INDTAREMV DECIMAL(1, 0)  SET( "ui_mapping_text" = 'TBTARJET.INDTAREMV') ,
- HORBLQ TIME  SET( "ui_mapping_text" = 'TBTARJET.HORBLQ') ,
+ HORBLQ TIME  SET( "ui_mapping_text" = 'replace_substr(TBTARJET.HORBLQ,\'.\',\':\')') ,
  FILLER1 VARCHAR(539)  SET( "ui_mapping_text" = 'TBTARJET.FILLER1')  )
  AS
-SELECT $G_ID_EJECUCION, TBTARJET.CODENT_D, TBTARJET.NSECFIC_D, TBTARJET.TIPOCINTA_D, TBTARJET.TIPOREG_D, TBTARJET.FILLER_D, TBTARJET.NUMREGPROC, TBTARJET.CODENT, TBTARJET.CODMAR, TBTARJET.INDTIPT, TBTARJET.CENTALTA, TBTARJET.CUENTA, TBTARJET.NUMBENCTA, TBTARJET.NUMPLASTICO, TBTARJET.TIPBON, TBTARJET.PAN, TBTARJET.PANANT, TBTARJET.FECALTA, TBTARJET.FECULTUSO, TBTARJET.INDSITTAR, TBTARJET.INDULTTAR, TBTARJET.INDNOREN, TBTARJET.CODBLQ, TBTARJET.FECULTBLQ, TBTARJET.TEXBLQ, TBTARJET.FECBAJA, TBTARJET.MOTBAJA, TBTARJET.FECCADTAR, TBTARJET.FECCADTARANT, TBTARJET.FECCOBCUO, TBTARJET.OFFSET1, TBTARJET.OFFSET2, TBTARJET.PVV1, TBTARJET.PVV2, TBTARJET.CODCLAVE, TBTARJET.CODCLVANT, TBTARJET.NUMACT1, TBTARJET.NUMACT2, TBTARJET.NUMANT1, TBTARJET.NUMANT2, TBTARJET.INDCAMLIM, TBTARJET.INDACTLIM, TBTARJET.INDRESACT, TBTARJET.INDRESCOM, TBTARJET.INDLIMFAC, TBTARJET.VISAPHONE, TBTARJET.NUMKPIN, TBTARJET.IDEMPLEADO, TBTARJET.NOMBENRED, TBTARJET.INDFOTO, TBTARJET.REFFOTO, TBTARJET.CODBARR, TBTARJET.CODPROMO, TBTARJET.INDEXECUO, TBTARJET.INDTAREME, TBTARJET.INDAPLIREST, TBTARJET.INDTARPROV, TBTARJET.INDTAREMV, TBTARJET.HORBLQ, TBTARJET.FILLER1 FROM TBTARJET 
+SELECT $G_ID_EJECUCION, TBTARJET.CODENT_D, TBTARJET.NSECFIC_D, TBTARJET.TIPOCINTA_D, TBTARJET.TIPOREG_D, TBTARJET.FILLER_D, TBTARJET.NUMREGPROC, TBTARJET.CODENT, TBTARJET.CODMAR, TBTARJET.INDTIPT, TBTARJET.CENTALTA, TBTARJET.CUENTA, TBTARJET.NUMBENCTA, TBTARJET.NUMPLASTICO, TBTARJET.TIPBON, TBTARJET.PAN, TBTARJET.PANANT, TBTARJET.FECALTA, TBTARJET.FECULTUSO, TBTARJET.INDSITTAR, TBTARJET.INDULTTAR, TBTARJET.INDNOREN, TBTARJET.CODBLQ, TBTARJET.FECULTBLQ, TBTARJET.TEXBLQ, TBTARJET.FECBAJA, TBTARJET.MOTBAJA, TBTARJET.FECCADTAR, TBTARJET.FECCADTARANT, TBTARJET.FECCOBCUO, TBTARJET.OFFSET1, TBTARJET.OFFSET2, TBTARJET.PVV1, TBTARJET.PVV2, TBTARJET.CODCLAVE, TBTARJET.CODCLVANT, TBTARJET.NUMACT1, TBTARJET.NUMACT2, TBTARJET.NUMANT1, TBTARJET.NUMANT2, TBTARJET.INDCAMLIM, TBTARJET.INDACTLIM, TBTARJET.INDRESACT, TBTARJET.INDRESCOM, TBTARJET.INDLIMFAC, TBTARJET.VISAPHONE, TBTARJET.NUMKPIN, TBTARJET.IDEMPLEADO, TBTARJET.NOMBENRED, TBTARJET.INDFOTO, TBTARJET.REFFOTO, TBTARJET.CODBARR, TBTARJET.CODPROMO, TBTARJET.INDEXECUO, TBTARJET.INDTAREME, TBTARJET.INDAPLIREST, TBTARJET.INDTARPROV, TBTARJET.INDTAREMV, replace_substr(TBTARJET.HORBLQ, '.', ':'), TBTARJET.FILLER1 FROM TBTARJET 
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 

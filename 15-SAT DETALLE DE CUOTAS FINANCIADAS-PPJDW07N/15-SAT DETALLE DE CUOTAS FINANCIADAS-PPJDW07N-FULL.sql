@@ -46,37 +46,34 @@ drop table IF EXISTS SAT.TBDETCUO;  CREATE TABLE IF NOT EXISTS SAT.TBDETCUO  ( 	
 ,	FILLER	VARCHAR	(738)	--Filler
 ); COMMIT;	 	 		
 
-drop table IF EXISTS STG_SAT.TBDETCUO;  CREATE TABLE IF NOT EXISTS STG_SAT.TBDETCUO  (
---MPDT207-Detalle de cuotas	 	 		
- 	CODENT_D	VARCHAR	(4)	--CODIGO DE ENTIDAD
-,	NSECFIC_D	DECIMAL	(10,0)	--NUMERO DE SECUENCIA DE LA CINTA
-,	TIPOCINTA_D	DECIMAL	(2,0)	--TIPO DE LA CINTA
-,	TIPOREG_D	VARCHAR	(1)	--TIPO DE REGISTRO D = DETALLE 
-,	FILLER_D	VARCHAR	(91)	--FILLER
-,	NUMREGPROC	DECIMAL	(12,0)	--NUMERO DE REGISTRO PROCESADO
-,	CODENT 	VARCHAR	(4)	--Código de entidad 
-,	CENTALTA 	VARCHAR	(4)	--Centro de alta cuenta de tarjeta 
-,	CUENTA 	VARCHAR	(12)	--Cuenta de tarjeta 
-,	CLAMON 	DECIMAL	(3,0)	--Código de moneda 
-,	NUMOPECUO 	DECIMAL	(6,0)	--Número de operación en compra en cuotas 
-,	NUMFINAN 	DECIMAL	(3,0)	--Número de financiación 
-,	NUMCUOTA 	DECIMAL	(9,0)	--Número de cuota 
-,	FECPROCUO 	DATE		--Fecha de cobro de la cuota 
-,	IMPCUOTA 	DECIMAL	(17,2)	--Importe de la cuota 
-,	IMPCAPITAL 	DECIMAL	(17,2)	--Importe capital 
-,	IMPINTERESES 	DECIMAL	(17,2)	--Importe interés 
-,	IMPIMPTO 	DECIMAL	(17,2)	--Importe del impuesto 
-,	ESTCUO 	DECIMAL	(2,0)	--Estado de la cuota: 
---01  - Pendiente 	 	 		
---02  - Liquidada 	 	 		
---03  - Cancelada 	 	 		
---04  - Vencida 	 	 		
---05  - Anticipada	 	 		
-,	FECLIQ 	DATE		--Fecha liquidación 
-,	FECCONTA 	DATE		--Fecha contable 
-,	ESTCONT 	DECIMAL	(1,0)	--Estado contable. 
-,	FILLER	VARCHAR	(738)	--Filler
-); COMMIT;	 	 		
+drop table IF EXISTS "STG_SAT"."TBDETCUO";  
+
+CREATE TABLE IF NOT EXISTS "STG_SAT"."TBDETCUO" (
+	"CODENT_D" VARCHAR(4) NULL,
+	"NSECFIC_D" DECIMAL(10,0) NULL,
+	"TIPOCINTA_D" DECIMAL(2,0) NULL,
+	"TIPOREG_D" VARCHAR(1) NULL,
+	"FILLER_D" VARCHAR(91) NULL,
+	"NUMREGPROC" DECIMAL(12,0) NULL,
+	"CODENT" VARCHAR(4) NULL,
+	"CENTALTA" VARCHAR(4) NULL,
+	"CUENTA" VARCHAR(12) NULL,
+	"CLAMON" DECIMAL(3,0) NULL,
+	"NUMOPECUO" DECIMAL(6,0) NULL,
+	"NUMFINAN" DECIMAL(3,0) NULL,
+	"NUMCUOTA" DECIMAL(9,0) NULL,
+	"FECPROCUO" VARCHAR(10) NULL,
+	"IMPCUOTA" DECIMAL(17,2) NULL,
+	"IMPCAPITAL" DECIMAL(17,2) NULL,
+	"IMPINTERESES" DECIMAL(17,2) NULL,
+	"IMPIMPTO" DECIMAL(17,2) NULL,
+	"ESTCUO" DECIMAL(2,0) NULL,
+	"FECLIQ" VARCHAR(10) NULL,
+	"FECCONTA" VARCHAR(10) NULL,
+	"ESTCONT" DECIMAL(1,0) NULL,
+	"FILLER_0001" VARCHAR(738) NULL 
+) COMMIT;
+
 
 ------------------------------------------------
 ---- CONTROL DE VERSION ------------------------
@@ -130,6 +127,9 @@ select
 
 select 
  @OBJECT_USER = 'STG_SAT'
+,@VERSION_COMMIT = 'a4e0e49dff6ec76dd6fe81fe73a37d26925809c9'
+,@VERSION_CODE = 'a4e0e49'
+,@VERSION_DATE = 'March 14, 2019 3:43:42 PM'
 ,@CRDATE = NULL
 
 SELECT @CRDATE = create_time 

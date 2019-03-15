@@ -15,7 +15,7 @@ CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET
 <locale_codepage>&lt;default&gt;</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E8091DAD1234DB7FC9CF94F2553EFABCE59E647FB8B4D934A920C43EA36D0DE22F410FE02BF0D8691CD8D41F0B1212</password>
+<password>+0400000000120303000803E848E2E04013917BEB739C47AA617800ED2B9B203A5B1F1B493215F7316F2CD553FA2B689F55723E26668EAC03E611</password>
 <server_codepage>&lt;default&gt;</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -40,7 +40,7 @@ CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET 
 <locale_codepage>iso-8859-1</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E88DDBD0283C67B6685B8E2965FD5E28FF4554BC1CCCA9C134C4D2C95560DE4C071FBB5C52EBB923869757C32D17EC</password>
+<password>+0400000000120303000803E825658473497A97D5B6FC73A0E979C58D1F91A83B9C250B81FBE0BA28EA9B248F6341A4164AA64A59E3E52D52DE3E</password>
 <server_codepage>iso-8859-1</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -729,7 +729,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Mar 13 15:55:53 2019', "ActaValue_3" = 'Thu Mar 14 17:03:01 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Mar 13 15:55:53 2019', "ActaValue_3" = 'Fri Mar 15 09:25:28 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_SSS_CASO::'7a9a9224-73a9-40ca-b283-581a24478ef4'
 BEGIN
 
@@ -771,7 +771,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
 <bulk_col_delimiter>/127</bulk_col_delimiter>
 <bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
-<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_generate_files_only>0</bulk_ldr_generate_files_only>
 <bulk_row_delimiter>&#xA;</bulk_row_delimiter>
 <enable_partitioning>no</enable_partitioning>
 <ignore_column_case>yes</ignore_column_case>
@@ -791,7 +791,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 <iq_log_null_constraints>no</iq_log_null_constraints>
 <iq_log_unique_constraints>no</iq_log_unique_constraints>
 <loader_auto_correct>no</loader_auto_correct>
-<loader_bulk_load></loader_bulk_load>
+<loader_bulk_load>1</loader_bulk_load>
 <loader_compare_column>compare_by_name</loader_compare_column>
 <loader_delete_map></loader_delete_map>
 <loader_drop_and_create_table>yes</loader_drop_and_create_table>
@@ -807,7 +807,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 <loader_update_map></loader_update_map>
 <loader_use_user_defined_keys>no</loader_use_user_defined_keys>
 <loader_xact_size>1000</loader_xact_size>
-<mssql_bulk_ldr_mode>append</mssql_bulk_ldr_mode>
+<mssql_bulk_ldr_mode>truncate</mssql_bulk_ldr_mode>
 <mssql_bulk_ldr_packet_size>0</mssql_bulk_ldr_packet_size>
 <overflow_file_format>write_data</overflow_file_format>
 <use_overflow_file>no</use_overflow_file>
@@ -818,18 +818,18 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Mar 14 17:03:01 2019', "ActaValue_3" = 'Thu Mar 14 17:06:53 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Mar 14 17:03:01 2019', "ActaValue_3" = 'Fri Mar 15 09:07:18 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_SSS_ESTADO::'b97a7bdf-ba41-4144-82ba-92fbe414787c'
 BEGIN
 
-ALGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = '', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>438</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '70', "x" = '870', "y" = '-90')
+ALGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>438</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '70', "x" = '870', "y" = '-90')
 GUID::'928825f9-76b1-4d6c-8495-72dbae4f91eb' LOAD TABLE DS_TARGET.STG_SAT.SSS_ESTADO INPUT(Query)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
 <bulk_col_delimiter>/127</bulk_col_delimiter>
 <bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
-<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_generate_files_only>0</bulk_ldr_generate_files_only>
 <bulk_row_delimiter>&#xA;</bulk_row_delimiter>
 <enable_partitioning>no</enable_partitioning>
 <ignore_column_case>yes</ignore_column_case>
@@ -849,7 +849,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 <iq_log_null_constraints>no</iq_log_null_constraints>
 <iq_log_unique_constraints>no</iq_log_unique_constraints>
 <loader_auto_correct>no</loader_auto_correct>
-<loader_bulk_load></loader_bulk_load>
+<loader_bulk_load>1</loader_bulk_load>
 <loader_compare_column>compare_by_name</loader_compare_column>
 <loader_delete_map></loader_delete_map>
 <loader_drop_and_create_table>yes</loader_drop_and_create_table>
@@ -865,7 +865,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 <loader_update_map></loader_update_map>
 <loader_use_user_defined_keys>no</loader_use_user_defined_keys>
 <loader_xact_size>1000</loader_xact_size>
-<mssql_bulk_ldr_mode>append</mssql_bulk_ldr_mode>
+<mssql_bulk_ldr_mode>truncate</mssql_bulk_ldr_mode>
 <mssql_bulk_ldr_packet_size>0</mssql_bulk_ldr_packet_size>
 <overflow_file_format>write_data</overflow_file_format>
 <use_overflow_file>no</use_overflow_file>
@@ -876,7 +876,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 
 ALGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>341</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '70', "x" = '90', "y" = '-90')
 GUID::'ab8d77ae-e895-4b77-a616-2d6b5d3f43a9' READ FILE SSS_ESTADOS."SQLESTADOS.txt" OUTPUT(SSS_ESTADOS)
-SET("cache" = 'yes', "connection_port" = 'no', "file_location" = 'job_server', "name" = 'UNNAMED', "read_subfolders" = 'yes', "reader_capture_data_conversion_errors" = 'no', "reader_capture_file_access_errors" = 'yes', "reader_capture_row_format_errors" = 'yes', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'no', "reader_include_filename" = 'no', "reader_log_data_conversion_warnings" = 'yes', "reader_log_row_format_warnings" = 'yes', "reader_log_warnings" = 'yes', "reader_maximum_warnings_to_log" = '-99', "reader_skip_empty_files" = 'yes', "reader_skip_error_handling" = 'no', "reader_write_error_rows_to_file" = 'no', "root_dir" = '/data/SAT/sentinel', "table_weight" = '0', "transfer_custom" = 'no');
+SET("adaptable" = 'no', "cache" = 'yes', "connection_port" = 'no', "file_location" = 'job_server', "name" = 'UNNAMED', "number_of_threads" = '<default>', "read_subfolders" = 'yes', "reader_capture_data_conversion_errors" = 'no', "reader_capture_file_access_errors" = 'yes', "reader_capture_row_format_errors" = 'yes', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'no', "reader_include_filename" = 'no', "reader_log_data_conversion_warnings" = 'yes', "reader_log_row_format_warnings" = 'yes', "reader_log_warnings" = 'yes', "reader_maximum_warnings_to_log" = '-99', "reader_skip_empty_files" = 'yes', "reader_skip_error_handling" = 'no', "reader_write_error_rows_to_file" = 'no', "root_dir" = '/data/SAT/sentinel', "table_weight" = '0', "transfer_custom" = 'no');
 
 ALGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '70', "ui_acta_from_schema_0" = 'SSS_ESTADOS', "x" = '480', "y" = '-90')
 GUID::'bb9d9e03-ccba-4016-9739-5f261b302b00' CREATE VIEW Query( ID_ESTADO INT  SET( "ui_mapping_text" = 'SSS_ESTADOS.ID_ESTADO') ,

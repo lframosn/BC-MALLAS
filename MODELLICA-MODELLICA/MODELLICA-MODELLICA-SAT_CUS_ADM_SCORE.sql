@@ -94,6 +94,6 @@ drop table IF EXISTS SAT.CUS_ADM_SCORE;  CREATE TABLE IF NOT EXISTS SAT.CUS_ADM_
 ,	C_B3U_6M_SUM	DECIMAL	(11,0)	--Vector de flags que indica si el maximo de bucket es mayor o igual a 3 para los ultimos 6 meses
 ,	SCORE_BUREAU_CUSCATLAN	DECIMAL	(28,6)	--
 ,	VALORES_SCORE	VARCHAR	(255)	--
-,   MIS_DATE DATE NULL
+,   SYSTEMDATE DATE NULL
 ,   LOAD_DATE datetime NULL DEFAULT getdate()
 ); COMMIT;	 	 		

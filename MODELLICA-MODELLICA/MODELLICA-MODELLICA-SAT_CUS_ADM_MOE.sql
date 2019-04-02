@@ -137,6 +137,6 @@ drop table IF EXISTS SAT.CUS_ADM_MOE;  CREATE TABLE IF NOT EXISTS SAT.CUS_ADM_MO
 ,	UMBRAL_SOLICITADO	VARCHAR	(255)	--Preguntas que debe responder correctamente para autenticar
 ,	VERIFICAR_IDENTIDAD	VARCHAR	(255)	--Indica si debe verificar la identidad (Si o No)
 ,	CODIGO_DOC	VARCHAR	(255)	--Abreviarura de 3 letras de la Documentacion
-,   MIS_DATE DATE NULL
+,   SYSTEMDATE DATE NULL
 ,   LOAD_DATE datetime NULL DEFAULT getdate()
 ); COMMIT;	 	 		

@@ -9,3 +9,4 @@
 190206:	Se identifico el problema para archivos con más de ocho caracteres hasta el primer punto, a diferencia de los anteriores que era de 8.
 		Debido a que el patrón con el que se toma el substring del nombre no encontraba coincidencias en las mallas a procesar, y por tal motivo no era cargada a la tabla.
 		Se corrige para ver archivos de N caracteres hasta el primer punto.
+190404: Se incorporó la capacidad de poder leer de otro formato de encabezado IMPEXTENC

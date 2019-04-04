@@ -1,0 +1,2041 @@
+#__AW_Repository_Version '14.2.10.0000';
+#__AW_Product_Version '14.2.10.1748';
+#__AW_ATL_Locale 'spa_sv.utf-8';
+ AlGUIComment ("x" = '-1', "y" = '-1')
+CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="ISO-8859-1" ?>
+<DSConfigurations>
+<DSConfiguration default="true" name="Configuration1">
+<case_sensitive>yes</case_sensitive>
+<database_type>Sybase IQ</database_type>
+<db_dsnless>yes</db_dsnless>
+<db_port_no>2638</db_port_no>
+<iq_use_linked_remoteserver>no</iq_use_linked_remoteserver>
+<js_db_on_same_machine>no</js_db_on_same_machine>
+<loader_xact_size>1000</loader_xact_size>
+<locale_codepage>&lt;default&gt;</locale_codepage>
+<locale_language>&lt;default&gt;</locale_language>
+<locale_territory>&lt;default&gt;</locale_territory>
+<password>+0400000000120303000803E872447E673BAC18703C73BF6744FB4F02D35605B90D8B548A7FD12D85874A7AAB9A3EFA5C12075A908028B7554177</password>
+<server_codepage>&lt;default&gt;</server_codepage>
+<sql_server_database>IDWDEV</sql_server_database>
+<sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
+<sybase_iq_version>Sybase IQ 16.x</sybase_iq_version>
+<sybiq_engine_name>svbclsapiq01da_IDWDEV</sybiq_engine_name>
+<use_named_pipe>no</use_named_pipe>
+<user>dba</user>
+</DSConfiguration>
+</DSConfigurations>
+', "enable_data_transfer" = 'yes', "import_unknown_type" = 'no', "name" = 'DS_CONTROL', "pcache_force_utf16" = 'no');
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Dec 11 10:31:02 2018', "ActaValue_3" = 'Wed Feb 20 15:51:23 2019', "x" = '-1', "y" = '-1')
+CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="ISO-8859-1" ?>
+<DSConfigurations>
+<DSConfiguration default="true" name="Configuration1">
+<case_sensitive>yes</case_sensitive>
+<database_type>Sybase IQ</database_type>
+<db_dsnless>yes</db_dsnless>
+<db_port_no>2638</db_port_no>
+<iq_use_linked_remoteserver>no</iq_use_linked_remoteserver>
+<js_db_on_same_machine>no</js_db_on_same_machine>
+<loader_xact_size>10000</loader_xact_size>
+<locale_codepage>iso-8859-1</locale_codepage>
+<locale_language>&lt;default&gt;</locale_language>
+<locale_territory>&lt;default&gt;</locale_territory>
+<password>+0400000000120303000803E8064C454A05CD79A40278AFA6F5A37109C397B4E1B34F77171140D722FB1F9F06E6A8421FB28753B8803966AAED19</password>
+<server_codepage>iso-8859-1</server_codepage>
+<sql_server_database>IDWDEV</sql_server_database>
+<sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
+<sybase_iq_version>Sybase IQ 16.x</sybase_iq_version>
+<sybiq_engine_name>svbclsapiq01da_IDWDEV</sybiq_engine_name>
+<use_named_pipe>no</use_named_pipe>
+<user>DWH_ETLS</user>
+</DSConfiguration>
+</DSConfigurations>
+', "enable_data_transfer" = 'yes', "import_unknown_type" = 'no', "name" = 'DS_TARGET', "pcache_force_utf16" = 'no', "unknown_type_size" = '255');
+
+ AlGUIComment (ActaName_1 = 'RDatabase_Object_Type',ActaValue_1 = 'TABLE' , 
+ActaName_2 = 'RTable_Type',ActaValue_2 = 'TABLE' , 
+ActaName_3 = 'RDescription',ActaValue_3 = '' , 
+ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
+ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
+ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
+ActaName_7 = 'RDate_created',ActaValue_7 = 'Fri Mar 29 16:21:55 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Wed Apr  3 15:33:45 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '2507' , 
+ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '2507' , 
+ActaName_12 = 'RNumber_Of_Updates',ActaValue_12 = '0' , 
+ActaName_13 = 'RNumber_Of_Deletes',ActaValue_13 = '0' , 
+ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '1 Seconds' )
+CREATE TABLE DS_TARGET.SAT.SFCIMPEXT_BON(IDENTIFICADOR_EJECUCION INT  NULL , 
+TIPOREGI VARCHAR(1)  NULL , 
+CODENTID VARCHAR(8)  NULL , 
+CODCINTA VARCHAR(2)  NULL , 
+NUMSECUE DECIMAL(8, 0)  NULL , 
+TIPODATO VARCHAR(2)  NULL , 
+PUNTBONI DECIMAL(13, 0)  NULL , 
+FILLER1 VARCHAR(511)  NULL ) 
+SET("db_alias_name" = 'SAT')
+;
+
+ AlGUIComment (ActaName_1 = 'RDatabase_Object_Type',ActaValue_1 = 'TABLE' , 
+ActaName_2 = 'RTable_Type',ActaValue_2 = 'TABLE' , 
+ActaName_3 = 'RDescription',ActaValue_3 = '' , 
+ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
+ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
+ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
+ActaName_7 = 'RDate_created',ActaValue_7 = 'Fri Mar 29 16:21:50 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Wed Apr  3 15:33:40 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '2507' , 
+ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '2507' , 
+ActaName_12 = 'RElapsed_Time_For_Load',ActaValue_12 = '0 Seconds' )
+CREATE TABLE DS_TARGET.STG_SAT.SFCIMPEXT_BON(TIPOREGI VARCHAR(1)  NULL , 
+CODENTID VARCHAR(8)  NULL , 
+CODCINTA VARCHAR(2)  NULL , 
+NUMSECUE DECIMAL(8, 0)  NULL , 
+TIPODATO VARCHAR(2)  NULL , 
+PUNTBONI DECIMAL(13, 0)  NULL , 
+FILLER1 VARCHAR(511)  NULL ) 
+SET("db_alias_name" = 'STG_SAT')
+;
+
+ AlGUIComment (ActaName_1 = 'RDatabase_Object_Type',ActaValue_1 = 'TABLE' , 
+ActaName_2 = 'RTable_Type',ActaValue_2 = 'TABLE' , 
+ActaName_3 = 'RDescription',ActaValue_3 = '' , 
+ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
+ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
+ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
+ActaName_7 = 'RDate_created',ActaValue_7 = 'Fri Mar 29 16:01:08 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Wed Apr  3 15:33:36 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '2507' , 
+ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '2507' , 
+ActaName_12 = 'RNumber_Of_Updates',ActaValue_12 = '0' , 
+ActaName_13 = 'RNumber_Of_Deletes',ActaValue_13 = '0' , 
+ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '1 Seconds' )
+CREATE TABLE DS_TARGET.SAT.SFCIMPEXT_CAD(IDENTIFICADOR_EJECUCION INT  NULL , 
+TIPOREGI VARCHAR(1)  NULL , 
+CODENTID VARCHAR(8)  NULL , 
+CODCINTA VARCHAR(2)  NULL , 
+NUMSECUE DECIMAL(8, 0)  NULL , 
+TIPODATO VARCHAR(2)  NULL , 
+PUNTCADU DECIMAL(13, 0)  NULL , 
+FECHPROR VARCHAR(8)  NULL , 
+FILLER1 VARCHAR(503)  NULL ) 
+SET("db_alias_name" = 'SAT')
+;
+
+ AlGUIComment (ActaName_1 = 'RTotal_Number_Of_Rows_Processed',ActaValue_1 = '2507' , 
+ActaName_2 = 'RNumber_Of_Rows_Rejected',ActaValue_2 = '0' , 
+ActaName_3 = 'RNumber_Of_Inserts',ActaValue_3 = '2507' , 
+ActaName_4 = 'RDatabase_Object_Type',ActaValue_4 = 'TABLE' , 
+ActaName_5 = 'RTable_Type',ActaValue_5 = 'TABLE' , 
+ActaName_6 = 'RDescription',ActaValue_6 = '' , 
+ActaName_7 = 'REstimated_Row_Count',ActaValue_7 = '50000' , 
+ActaName_8 = 'RSavedAfterCheckOut',ActaValue_8 = 'YES' , 
+ActaName_9 = 'RLoader_Is_Template_Table',ActaValue_9 = 'no' , 
+ActaName_10 = 'RDate_created',ActaValue_10 = 'Fri Mar 29 16:01:11 2019' , 
+ActaName_11 = 'RDate_last_loaded',ActaValue_11 = 'Wed Apr  3 15:33:31 2019' , 
+ActaName_12 = 'RElapsed_Time_For_Load',ActaValue_12 = '1 Seconds' )
+CREATE TABLE DS_TARGET.STG_SAT.SFCIMPEXT_CAD(TIPOREGI VARCHAR(1)  NULL , 
+CODENTID VARCHAR(8)  NULL , 
+CODCINTA VARCHAR(2)  NULL , 
+NUMSECUE DECIMAL(8, 0)  NULL , 
+TIPODATO VARCHAR(2)  NULL , 
+PUNTCADU DECIMAL(13, 0)  NULL , 
+FECHPROR VARCHAR(8)  NULL , 
+FILLER1 VARCHAR(503)  NULL ) 
+SET("db_alias_name" = 'STG_SAT')
+;
+
+ AlGUIComment (ActaName_1 = 'RDatabase_Object_Type',ActaValue_1 = 'TABLE' , 
+ActaName_2 = 'RTable_Type',ActaValue_2 = 'TABLE' , 
+ActaName_3 = 'RDescription',ActaValue_3 = '' , 
+ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
+ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
+ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
+ActaName_7 = 'RDate_modified',ActaValue_7 = 'Fri Mar 29 13:52:13 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Wed Apr  3 15:33:07 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '2508' , 
+ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '2508' , 
+ActaName_12 = 'RNumber_Of_Updates',ActaValue_12 = '0' , 
+ActaName_13 = 'RNumber_Of_Deletes',ActaValue_13 = '0' , 
+ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '0 Seconds' )
+CREATE TABLE DS_TARGET.SAT.SFCIMPEXT_CTA(IDENTIFICADOR_EJECUCION INT  NULL , 
+TIPOREGI VARCHAR(1)  NULL , 
+CODENTID VARCHAR(8)  NULL , 
+CODCINTA VARCHAR(2)  NULL , 
+NUMSECUE DECIMAL(8, 0)  NULL , 
+TIPODATO VARCHAR(2)  NULL , 
+CODAPLRE VARCHAR(8)  NULL , 
+CODPROGR VARCHAR(8)  NULL , 
+DESCCPRO VARCHAR(20)  NULL , 
+NUMEXTRA DECIMAL(6, 0)  NULL , 
+FECHPENV VARCHAR(8)  NULL , 
+FECHPROC VARCHAR(8)  NULL , 
+TIPIDCLI VARCHAR(2)  NULL , 
+DESCTIDC VARCHAR(30)  NULL , 
+IDCLIENT VARCHAR(20)  NULL , 
+CODCUENT VARCHAR(20)  NULL , 
+FECHALTA VARCHAR(8)  NULL , 
+INDBLQAC VARCHAR(1)  NULL , 
+FECBLQAC VARCHAR(8)  NULL , 
+TEXBLQAC VARCHAR(120)  NULL , 
+INDBLQRD VARCHAR(1)  NULL , 
+FECBLQRD VARCHAR(8)  NULL , 
+TEXBLOQRD VARCHAR(120)  NULL , 
+CODCATAL VARCHAR(8)  NULL , 
+DESCATAL VARCHAR(120)  NULL ) 
+SET("db_alias_name" = 'SAT')
+;
+
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Wed Apr  3 15:33:02 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '2508' , 
+ActaName_3 = 'RDatabase_Object_Type',ActaValue_3 = 'TABLE' , 
+ActaName_4 = 'RTable_Type',ActaValue_4 = 'TABLE' , 
+ActaName_5 = 'RDescription',ActaValue_5 = '' , 
+ActaName_6 = 'REstimated_Row_Count',ActaValue_6 = '50000' , 
+ActaName_7 = 'RSavedAfterCheckOut',ActaValue_7 = 'YES' , 
+ActaName_8 = 'RLoader_Is_Template_Table',ActaValue_8 = 'no' , 
+ActaName_9 = 'RDate_modified',ActaValue_9 = 'Fri Mar 29 13:52:10 2019' , 
+ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '2508' , 
+ActaName_12 = 'RElapsed_Time_For_Load',ActaValue_12 = '0 Seconds' )
+CREATE TABLE DS_TARGET.STG_SAT.SFCIMPEXT_CTA(TIPOREGI VARCHAR(1)  NULL , 
+CODENTID VARCHAR(8)  NULL , 
+CODCINTA VARCHAR(2)  NULL , 
+NUMSECUE DECIMAL(8, 0)  NULL , 
+TIPODATO VARCHAR(2)  NULL , 
+CODAPLRE VARCHAR(8)  NULL , 
+CODPROGR VARCHAR(8)  NULL , 
+DESCCPRO VARCHAR(20)  NULL , 
+NUMEXTRA DECIMAL(6, 0)  NULL , 
+FECHPENV VARCHAR(8)  NULL , 
+FECHPROC VARCHAR(8)  NULL , 
+TIPIDCLI VARCHAR(2)  NULL , 
+DESCTIDC VARCHAR(30)  NULL , 
+IDCLIENT VARCHAR(20)  NULL , 
+CODCUENT VARCHAR(20)  NULL , 
+FECHALTA VARCHAR(8)  NULL , 
+INDBLQAC VARCHAR(1)  NULL , 
+FECBLQAC VARCHAR(8)  NULL , 
+TEXBLQAC VARCHAR(120)  NULL , 
+INDBLQRD VARCHAR(1)  NULL , 
+FECBLQRD VARCHAR(8)  NULL , 
+TEXBLOQRD VARCHAR(120)  NULL , 
+CODCATAL VARCHAR(8)  NULL , 
+DESCATAL VARCHAR(120)  NULL ) 
+SET("db_alias_name" = 'STG_SAT')
+;
+
+ AlGUIComment (ActaName_1 = 'RDatabase_Object_Type',ActaValue_1 = 'TABLE' , 
+ActaName_2 = 'RTable_Type',ActaValue_2 = 'TABLE' , 
+ActaName_3 = 'RDescription',ActaValue_3 = '' , 
+ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
+ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
+ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
+ActaName_7 = 'RDate_created',ActaValue_7 = 'Fri Mar 29 15:42:18 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Wed Apr  3 15:33:16 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '409' , 
+ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '409' , 
+ActaName_12 = 'RNumber_Of_Updates',ActaValue_12 = '0' , 
+ActaName_13 = 'RNumber_Of_Deletes',ActaValue_13 = '0' , 
+ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '0 Seconds' )
+CREATE TABLE DS_TARGET.SAT.SFCIMPEXT_MOV(IDENTIFICADOR_EJECUCION INT  NULL , 
+TIPOREGI VARCHAR(1)  NULL , 
+CODENTID VARCHAR(8)  NULL , 
+CODCINTA VARCHAR(2)  NULL , 
+NUMSECUE DECIMAL(8, 0)  NULL , 
+TIPODATO VARCHAR(2)  NULL , 
+FECALTMV VARCHAR(8)  NULL , 
+TEXEXTRA VARCHAR(120)  NULL , 
+PUNOBTEN DECIMAL(13, 0)  NULL , 
+FILLER1 VARCHAR(383)  NULL ) 
+SET("db_alias_name" = 'SAT')
+;
+
+ AlGUIComment (ActaName_1 = 'RDatabase_Object_Type',ActaValue_1 = 'TABLE' , 
+ActaName_2 = 'RTable_Type',ActaValue_2 = 'TABLE' , 
+ActaName_3 = 'RDescription',ActaValue_3 = '' , 
+ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
+ActaName_5 = 'RTotal_Number_Of_Rows_Processed',ActaValue_5 = '409' , 
+ActaName_6 = 'RNumber_Of_Rows_Rejected',ActaValue_6 = '0' , 
+ActaName_7 = 'RNumber_Of_Inserts',ActaValue_7 = '409' , 
+ActaName_8 = 'RElapsed_Time_For_Load',ActaValue_8 = '1 Seconds' , 
+ActaName_9 = 'RSavedAfterCheckOut',ActaValue_9 = 'YES' , 
+ActaName_10 = 'RLoader_Is_Template_Table',ActaValue_10 = 'no' , 
+ActaName_11 = 'RDate_created',ActaValue_11 = 'Fri Mar 29 15:42:15 2019' , 
+ActaName_12 = 'RDate_last_loaded',ActaValue_12 = 'Wed Apr  3 15:33:12 2019' )
+CREATE TABLE DS_TARGET.STG_SAT.SFCIMPEXT_MOV(TIPOREGI VARCHAR(1)  NULL , 
+CODENTID VARCHAR(8)  NULL , 
+CODCINTA VARCHAR(2)  NULL , 
+NUMSECUE DECIMAL(8, 0)  NULL , 
+TIPODATO VARCHAR(2)  NULL , 
+FECALTMV VARCHAR(8)  NULL , 
+TEXEXTRA VARCHAR(120)  NULL , 
+PUNOBTEN DECIMAL(13, 0)  NULL , 
+FILLER1 VARCHAR(383)  NULL ) 
+SET("db_alias_name" = 'STG_SAT')
+;
+
+ AlGUIComment (ActaName_1 = 'RDatabase_Object_Type',ActaValue_1 = 'TABLE' , 
+ActaName_2 = 'RTable_Type',ActaValue_2 = 'TABLE' , 
+ActaName_3 = 'RDescription',ActaValue_3 = '' , 
+ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
+ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
+ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
+ActaName_7 = 'RDate_modified',ActaValue_7 = 'Fri Mar 29 15:54:13 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Wed Apr  3 15:33:26 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '22572' , 
+ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '22572' , 
+ActaName_12 = 'RNumber_Of_Updates',ActaValue_12 = '0' , 
+ActaName_13 = 'RNumber_Of_Deletes',ActaValue_13 = '0' , 
+ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '0 Seconds' )
+CREATE TABLE DS_TARGET.SAT.SFCIMPEXT_PTO(IDENTIFICADOR_EJECUCION INT  NULL , 
+TIPOREGI VARCHAR(1)  NULL , 
+CODENTID VARCHAR(8)  NULL , 
+CODCINTA VARCHAR(2)  NULL , 
+NUMSECUE DECIMAL(8, 0)  NULL , 
+TIPODATO VARCHAR(2)  NULL , 
+TIPOPUNT VARCHAR(2)  NULL , 
+SALULTEX DECIMAL(13, 0)  NULL , 
+SALACTUA DECIMAL(13, 0)  NULL , 
+FILLER1 VARCHAR(496)  NULL ) 
+SET("db_alias_name" = 'SAT')
+;
+
+ AlGUIComment (ActaName_1 = 'RDatabase_Object_Type',ActaValue_1 = 'TABLE' , 
+ActaName_2 = 'RTable_Type',ActaValue_2 = 'TABLE' , 
+ActaName_3 = 'RDescription',ActaValue_3 = '' , 
+ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
+ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
+ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
+ActaName_7 = 'RDate_modified',ActaValue_7 = 'Fri Mar 29 15:54:05 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Wed Apr  3 15:33:21 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '22572' , 
+ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '22572' , 
+ActaName_12 = 'RElapsed_Time_For_Load',ActaValue_12 = '1 Seconds' )
+CREATE TABLE DS_TARGET.STG_SAT.SFCIMPEXT_PTO(TIPOREGI VARCHAR(1)  NULL , 
+CODENTID VARCHAR(8)  NULL , 
+CODCINTA VARCHAR(2)  NULL , 
+NUMSECUE DECIMAL(8, 0)  NULL , 
+TIPODATO VARCHAR(2)  NULL , 
+TIPOPUNT VARCHAR(2)  NULL , 
+SALULTEX DECIMAL(13, 0)  NULL , 
+SALACTUA DECIMAL(13, 0)  NULL , 
+FILLER1 VARCHAR(496)  NULL ) 
+SET("db_alias_name" = 'STG_SAT')
+;
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 29 15:04:11 2019')
+CREATE __BODI_COPYBOOK_COBOL DATASTORE B7540412::'5698f650-0ce6-4a63-b293-bc95f646adea' OUTPUT (IMPEXTENC( TIPOREGI VARCHAR(1)  SET( "Cbl_field_id_col" = 'yes', "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOREGI', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'IMPEXTENC.TIPOREGI', "Description" = 'IMPEXTENC.TIPOREGI') ,
+ CODENTID VARCHAR(8)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '1', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENTID', "Cbl_field_original_PIC" = 'X(8)', "Cbl_field_path" = 'IMPEXTENC.CODENTID', "Description" = 'IMPEXTENC.CODENTID') ,
+ CODCINTA VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '9', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODCINTA', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'IMPEXTENC.CODCINTA', "Description" = 'IMPEXTENC.CODCINTA') ,
+ NUMSECUE DECIMAL(8, 0)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '11', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMSECUE', "Cbl_field_original_PIC" = '9(8)', "Cbl_field_path" = 'IMPEXTENC.NUMSECUE', "Cbl_field_precision" = '8', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'IMPEXTENC.NUMSECUE') ,
+ NUMTOTRE DECIMAL(9, 0)  SET( "Cbl_field_internal_length" = '9', "Cbl_field_internal_offset" = '19', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMTOTRE', "Cbl_field_original_PIC" = '9(9)', "Cbl_field_path" = 'IMPEXTENC.NUMTOTRE', "Cbl_field_precision" = '9', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'IMPEXTENC.NUMTOTRE') ,
+ FECENVIO VARCHAR(8)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '28', "Cbl_field_level" = '2', "Cbl_field_name" = 'FECENVIO', "Cbl_field_original_PIC" = 'X(8)', "Cbl_field_path" = 'IMPEXTENC.FECENVIO', "Description" = 'IMPEXTENC.FECENVIO') ,
+ HORAENVI VARCHAR(8)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '36', "Cbl_field_level" = '2', "Cbl_field_name" = 'HORAENVI', "Cbl_field_original_PIC" = 'X(8)', "Cbl_field_path" = 'IMPEXTENC.HORAENVI', "Description" = 'IMPEXTENC.HORAENVI')  )
+,
+ SFCIMPEXT_BON( TIPOREGI VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOREGI', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'SFCIMPEXT_BON.TIPOREGI', "Description" = 'SFCIMPEXT_BON.TIPOREGI') ,
+ CODENTID VARCHAR(8)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '1', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENTID', "Cbl_field_original_PIC" = 'X(8)', "Cbl_field_path" = 'SFCIMPEXT_BON.CODENTID', "Description" = 'SFCIMPEXT_BON.CODENTID') ,
+ CODCINTA VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '9', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODCINTA', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'SFCIMPEXT_BON.CODCINTA', "Description" = 'SFCIMPEXT_BON.CODCINTA') ,
+ NUMSECUE DECIMAL(8, 0)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '11', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMSECUE', "Cbl_field_original_PIC" = '9(8)', "Cbl_field_path" = 'SFCIMPEXT_BON.NUMSECUE', "Cbl_field_precision" = '8', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'SFCIMPEXT_BON.NUMSECUE') ,
+ TIPODATO DECIMAL(2, 0)  SET( "Cbl_field_id_col" = 'yes', "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '19', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPODATO', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'SFCIMPEXT_BON.TIPODATO', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'SFCIMPEXT_BON.TIPODATO') ,
+ PUNTBONI DECIMAL(13, 0)  SET( "Cbl_field_internal_length" = '13', "Cbl_field_internal_offset" = '21', "Cbl_field_level" = '2', "Cbl_field_name" = 'PUNTBONI', "Cbl_field_original_PIC" = '9(13)', "Cbl_field_path" = 'SFCIMPEXT_BON.PUNTBONI', "Cbl_field_precision" = '13', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'SFCIMPEXT_BON.PUNTBONI') ,
+ FILLER1 VARCHAR(511)  SET( "Cbl_field_internal_length" = '511', "Cbl_field_internal_offset" = '34', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER1', "Cbl_field_original_PIC" = 'X(511)', "Cbl_field_path" = 'SFCIMPEXT_BON.FILLER1', "Description" = 'SFCIMPEXT_BON.FILLER1')  )
+,
+ SFCIMPEXT_CAD( TIPOREGI VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOREGI', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'SFCIMPEXT_CAD.TIPOREGI', "Description" = 'SFCIMPEXT_CAD.TIPOREGI') ,
+ CODENTID VARCHAR(8)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '1', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENTID', "Cbl_field_original_PIC" = 'X(8)', "Cbl_field_path" = 'SFCIMPEXT_CAD.CODENTID', "Description" = 'SFCIMPEXT_CAD.CODENTID') ,
+ CODCINTA VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '9', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODCINTA', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'SFCIMPEXT_CAD.CODCINTA', "Description" = 'SFCIMPEXT_CAD.CODCINTA') ,
+ NUMSECUE DECIMAL(8, 0)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '11', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMSECUE', "Cbl_field_original_PIC" = '9(8)', "Cbl_field_path" = 'SFCIMPEXT_CAD.NUMSECUE', "Cbl_field_precision" = '8', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'SFCIMPEXT_CAD.NUMSECUE') ,
+ TIPODATO DECIMAL(2, 0)  SET( "Cbl_field_id_col" = 'yes', "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '19', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPODATO', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'SFCIMPEXT_CAD.TIPODATO', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'SFCIMPEXT_CAD.TIPODATO') ,
+ PUNTCADU DECIMAL(13, 0)  SET( "Cbl_field_internal_length" = '13', "Cbl_field_internal_offset" = '21', "Cbl_field_level" = '2', "Cbl_field_name" = 'PUNTCADU', "Cbl_field_original_PIC" = '9(13)', "Cbl_field_path" = 'SFCIMPEXT_CAD.PUNTCADU', "Cbl_field_precision" = '13', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'SFCIMPEXT_CAD.PUNTCADU') ,
+ FECHPROR VARCHAR(8)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '34', "Cbl_field_level" = '2', "Cbl_field_name" = 'FECHPROR', "Cbl_field_original_PIC" = 'X(8)', "Cbl_field_path" = 'SFCIMPEXT_CAD.FECHPROR', "Description" = 'SFCIMPEXT_CAD.FECHPROR') ,
+ FILLER1 VARCHAR(503)  SET( "Cbl_field_internal_length" = '503', "Cbl_field_internal_offset" = '42', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER1', "Cbl_field_original_PIC" = 'X(503)', "Cbl_field_path" = 'SFCIMPEXT_CAD.FILLER1', "Description" = 'SFCIMPEXT_CAD.FILLER1')  )
+,
+ SFCIMPEXT_CTA( TIPOREGI VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOREGI', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'SFCIMPEXT_CTA.TIPOREGI', "Description" = 'SFCIMPEXT_CTA.TIPOREGI') ,
+ CODENTID VARCHAR(8)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '1', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENTID', "Cbl_field_original_PIC" = 'X(8)', "Cbl_field_path" = 'SFCIMPEXT_CTA.CODENTID', "Description" = 'SFCIMPEXT_CTA.CODENTID') ,
+ CODCINTA VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '9', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODCINTA', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'SFCIMPEXT_CTA.CODCINTA', "Description" = 'SFCIMPEXT_CTA.CODCINTA') ,
+ NUMSECUE DECIMAL(8, 0)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '11', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMSECUE', "Cbl_field_original_PIC" = '9(8)', "Cbl_field_path" = 'SFCIMPEXT_CTA.NUMSECUE', "Cbl_field_precision" = '8', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'SFCIMPEXT_CTA.NUMSECUE') ,
+ TIPODATO DECIMAL(2, 0)  SET( "Cbl_field_id_col" = 'yes', "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '19', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPODATO', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'SFCIMPEXT_CTA.TIPODATO', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'SFCIMPEXT_CTA.TIPODATO') ,
+ CODAPLRE VARCHAR(8)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '21', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODAPLRE', "Cbl_field_original_PIC" = 'X(8)', "Cbl_field_path" = 'SFCIMPEXT_CTA.CODAPLRE', "Description" = 'SFCIMPEXT_CTA.CODAPLRE') ,
+ CODPROGR VARCHAR(8)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '29', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODPROGR', "Cbl_field_original_PIC" = 'X(8)', "Cbl_field_path" = 'SFCIMPEXT_CTA.CODPROGR', "Description" = 'SFCIMPEXT_CTA.CODPROGR') ,
+ DESCCPRO VARCHAR(20)  SET( "Cbl_field_internal_length" = '20', "Cbl_field_internal_offset" = '37', "Cbl_field_level" = '2', "Cbl_field_name" = 'DESCCPRO', "Cbl_field_original_PIC" = 'X(20)', "Cbl_field_path" = 'SFCIMPEXT_CTA.DESCCPRO', "Description" = 'SFCIMPEXT_CTA.DESCCPRO') ,
+ NUMEXTRA DECIMAL(6, 0)  SET( "Cbl_field_internal_length" = '6', "Cbl_field_internal_offset" = '57', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMEXTRA', "Cbl_field_original_PIC" = '9(6)', "Cbl_field_path" = 'SFCIMPEXT_CTA.NUMEXTRA', "Cbl_field_precision" = '6', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'SFCIMPEXT_CTA.NUMEXTRA') ,
+ FECHPENV VARCHAR(8)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '63', "Cbl_field_level" = '2', "Cbl_field_name" = 'FECHPENV', "Cbl_field_original_PIC" = 'X(8)', "Cbl_field_path" = 'SFCIMPEXT_CTA.FECHPENV', "Description" = 'SFCIMPEXT_CTA.FECHPENV') ,
+ FECHPROC VARCHAR(8)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '71', "Cbl_field_level" = '2', "Cbl_field_name" = 'FECHPROC', "Cbl_field_original_PIC" = 'X(8)', "Cbl_field_path" = 'SFCIMPEXT_CTA.FECHPROC', "Description" = 'SFCIMPEXT_CTA.FECHPROC') ,
+ TIPIDCLI VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '79', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPIDCLI', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'SFCIMPEXT_CTA.TIPIDCLI', "Description" = 'SFCIMPEXT_CTA.TIPIDCLI') ,
+ DESCTIDC VARCHAR(30)  SET( "Cbl_field_internal_length" = '30', "Cbl_field_internal_offset" = '81', "Cbl_field_level" = '2', "Cbl_field_name" = 'DESCTIDC', "Cbl_field_original_PIC" = 'X(30)', "Cbl_field_path" = 'SFCIMPEXT_CTA.DESCTIDC', "Description" = 'SFCIMPEXT_CTA.DESCTIDC') ,
+ IDCLIENT VARCHAR(20)  SET( "Cbl_field_internal_length" = '20', "Cbl_field_internal_offset" = '111', "Cbl_field_level" = '2', "Cbl_field_name" = 'IDCLIENT', "Cbl_field_original_PIC" = 'X(20)', "Cbl_field_path" = 'SFCIMPEXT_CTA.IDCLIENT', "Description" = 'SFCIMPEXT_CTA.IDCLIENT') ,
+ CODCUENT VARCHAR(20)  SET( "Cbl_field_internal_length" = '20', "Cbl_field_internal_offset" = '131', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODCUENT', "Cbl_field_original_PIC" = 'X(20)', "Cbl_field_path" = 'SFCIMPEXT_CTA.CODCUENT', "Description" = 'SFCIMPEXT_CTA.CODCUENT') ,
+ FECHALTA VARCHAR(8)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '151', "Cbl_field_level" = '2', "Cbl_field_name" = 'FECHALTA', "Cbl_field_original_PIC" = 'X(8)', "Cbl_field_path" = 'SFCIMPEXT_CTA.FECHALTA', "Description" = 'SFCIMPEXT_CTA.FECHALTA') ,
+ INDBLQAC VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '159', "Cbl_field_level" = '2', "Cbl_field_name" = 'INDBLQAC', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'SFCIMPEXT_CTA.INDBLQAC', "Description" = 'SFCIMPEXT_CTA.INDBLQAC') ,
+ FECBLQAC VARCHAR(8)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '160', "Cbl_field_level" = '2', "Cbl_field_name" = 'FECBLQAC', "Cbl_field_original_PIC" = 'X(8)', "Cbl_field_path" = 'SFCIMPEXT_CTA.FECBLQAC', "Description" = 'SFCIMPEXT_CTA.FECBLQAC') ,
+ TEXBLQAC VARCHAR(120)  SET( "Cbl_field_internal_length" = '120', "Cbl_field_internal_offset" = '168', "Cbl_field_level" = '2', "Cbl_field_name" = 'TEXBLQAC', "Cbl_field_original_PIC" = 'X(120)', "Cbl_field_path" = 'SFCIMPEXT_CTA.TEXBLQAC', "Description" = 'SFCIMPEXT_CTA.TEXBLQAC') ,
+ INDBLQRD VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '288', "Cbl_field_level" = '2', "Cbl_field_name" = 'INDBLQRD', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'SFCIMPEXT_CTA.INDBLQRD', "Description" = 'SFCIMPEXT_CTA.INDBLQRD') ,
+ FECBLQRD VARCHAR(8)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '289', "Cbl_field_level" = '2', "Cbl_field_name" = 'FECBLQRD', "Cbl_field_original_PIC" = 'X(8)', "Cbl_field_path" = 'SFCIMPEXT_CTA.FECBLQRD', "Description" = 'SFCIMPEXT_CTA.FECBLQRD') ,
+ TEXBLOQRD VARCHAR(120)  SET( "Cbl_field_internal_length" = '120', "Cbl_field_internal_offset" = '297', "Cbl_field_level" = '2', "Cbl_field_name" = 'TEXBLOQRD', "Cbl_field_original_PIC" = 'X(120)', "Cbl_field_path" = 'SFCIMPEXT_CTA.TEXBLOQRD', "Description" = 'SFCIMPEXT_CTA.TEXBLOQRD') ,
+ CODCATAL VARCHAR(8)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '417', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODCATAL', "Cbl_field_original_PIC" = 'X(8)', "Cbl_field_path" = 'SFCIMPEXT_CTA.CODCATAL', "Description" = 'SFCIMPEXT_CTA.CODCATAL') ,
+ DESCATAL VARCHAR(120)  SET( "Cbl_field_internal_length" = '120', "Cbl_field_internal_offset" = '425', "Cbl_field_level" = '2', "Cbl_field_name" = 'DESCATAL', "Cbl_field_original_PIC" = 'X(120)', "Cbl_field_path" = 'SFCIMPEXT_CTA.DESCATAL', "Description" = 'SFCIMPEXT_CTA.DESCATAL')  )
+,
+ SFCIMPEXT_MOV( TIPOREGI VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOREGI', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'SFCIMPEXT_MOV.TIPOREGI', "Description" = 'SFCIMPEXT_MOV.TIPOREGI') ,
+ CODENTID VARCHAR(8)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '1', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENTID', "Cbl_field_original_PIC" = 'X(8)', "Cbl_field_path" = 'SFCIMPEXT_MOV.CODENTID', "Description" = 'SFCIMPEXT_MOV.CODENTID') ,
+ CODCINTA VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '9', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODCINTA', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'SFCIMPEXT_MOV.CODCINTA', "Description" = 'SFCIMPEXT_MOV.CODCINTA') ,
+ NUMSECUE DECIMAL(8, 0)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '11', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMSECUE', "Cbl_field_original_PIC" = '9(8)', "Cbl_field_path" = 'SFCIMPEXT_MOV.NUMSECUE', "Cbl_field_precision" = '8', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'SFCIMPEXT_MOV.NUMSECUE') ,
+ TIPODATO DECIMAL(2, 0)  SET( "Cbl_field_id_col" = 'yes', "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '19', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPODATO', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'SFCIMPEXT_MOV.TIPODATO', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'SFCIMPEXT_MOV.TIPODATO') ,
+ FECALTMV VARCHAR(8)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '21', "Cbl_field_level" = '2', "Cbl_field_name" = 'FECALTMV', "Cbl_field_original_PIC" = 'X(8)', "Cbl_field_path" = 'SFCIMPEXT_MOV.FECALTMV', "Description" = 'SFCIMPEXT_MOV.FECALTMV') ,
+ TEXEXTRA VARCHAR(120)  SET( "Cbl_field_internal_length" = '120', "Cbl_field_internal_offset" = '29', "Cbl_field_level" = '2', "Cbl_field_name" = 'TEXEXTRA', "Cbl_field_original_PIC" = 'X(120)', "Cbl_field_path" = 'SFCIMPEXT_MOV.TEXEXTRA', "Description" = 'SFCIMPEXT_MOV.TEXEXTRA') ,
+ PUNOBTEN DECIMAL(13, 0)  SET( "Cbl_field_internal_length" = '13', "Cbl_field_internal_offset" = '149', "Cbl_field_level" = '2', "Cbl_field_name" = 'PUNOBTEN', "Cbl_field_original_PIC" = '9(13)', "Cbl_field_path" = 'SFCIMPEXT_MOV.PUNOBTEN', "Cbl_field_precision" = '13', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'SFCIMPEXT_MOV.PUNOBTEN') ,
+ FILLER1 VARCHAR(383)  SET( "Cbl_field_internal_length" = '383', "Cbl_field_internal_offset" = '162', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER1', "Cbl_field_original_PIC" = 'X(383)', "Cbl_field_path" = 'SFCIMPEXT_MOV.FILLER1', "Description" = 'SFCIMPEXT_MOV.FILLER1')  )
+,
+ SFCIMPEXT_PTO( TIPOREGI VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOREGI', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'SFCIMPEXT_PTO.TIPOREGI', "Description" = 'SFCIMPEXT_PTO.TIPOREGI') ,
+ CODENTID VARCHAR(8)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '1', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENTID', "Cbl_field_original_PIC" = 'X(8)', "Cbl_field_path" = 'SFCIMPEXT_PTO.CODENTID', "Description" = 'SFCIMPEXT_PTO.CODENTID') ,
+ CODCINTA VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '9', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODCINTA', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'SFCIMPEXT_PTO.CODCINTA', "Description" = 'SFCIMPEXT_PTO.CODCINTA') ,
+ NUMSECUE DECIMAL(8, 0)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '11', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMSECUE', "Cbl_field_original_PIC" = '9(8)', "Cbl_field_path" = 'SFCIMPEXT_PTO.NUMSECUE', "Cbl_field_precision" = '8', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'SFCIMPEXT_PTO.NUMSECUE') ,
+ TIPODATO DECIMAL(2, 0)  SET( "Cbl_field_id_col" = 'yes', "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '19', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPODATO', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'SFCIMPEXT_PTO.TIPODATO', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'SFCIMPEXT_PTO.TIPODATO') ,
+ TIPOPUNT VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '21', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOPUNT', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'SFCIMPEXT_PTO.TIPOPUNT', "Description" = 'SFCIMPEXT_PTO.TIPOPUNT') ,
+ SALULTEX DECIMAL(13, 0)  SET( "Cbl_field_internal_length" = '13', "Cbl_field_internal_offset" = '23', "Cbl_field_level" = '2', "Cbl_field_name" = 'SALULTEX', "Cbl_field_original_PIC" = '9(13)', "Cbl_field_path" = 'SFCIMPEXT_PTO.SALULTEX', "Cbl_field_precision" = '13', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'SFCIMPEXT_PTO.SALULTEX') ,
+ SALACTUA DECIMAL(13, 0)  SET( "Cbl_field_internal_length" = '13', "Cbl_field_internal_offset" = '36', "Cbl_field_level" = '2', "Cbl_field_name" = 'SALACTUA', "Cbl_field_original_PIC" = '9(13)', "Cbl_field_path" = 'SFCIMPEXT_PTO.SALACTUA', "Cbl_field_precision" = '13', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'SFCIMPEXT_PTO.SALACTUA') ,
+ FILLER1 VARCHAR(496)  SET( "Cbl_field_internal_length" = '496', "Cbl_field_internal_offset" = '49', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER1', "Cbl_field_original_PIC" = 'X(496)', "Cbl_field_path" = 'SFCIMPEXT_PTO.FILLER1', "Description" = 'SFCIMPEXT_PTO.FILLER1')  )
+)
+ SET ("Cbl_expand_occurs" = 'yes', "Cbl_field_id_col(IMPEXTENC)" = '0', "Cbl_field_id_col(SFCIMPEXT_BON)" = '4', "Cbl_field_id_col(SFCIMPEXT_CAD)" = '4', "Cbl_field_id_col(SFCIMPEXT_CTA)" = '4', "Cbl_field_id_col(SFCIMPEXT_MOV)" = '4', "Cbl_field_id_col(SFCIMPEXT_PTO)" = '4', "Cbl_field_id_val(IMPEXTENC)0_1" = 'C', "Cbl_field_id_val(SFCIMPEXT_BON)4_1" = '07', "Cbl_field_id_val(SFCIMPEXT_CAD)4_1" = '6', "Cbl_field_id_val(SFCIMPEXT_CTA)4_1" = '1', "Cbl_field_id_val(SFCIMPEXT_MOV)4_1" = '2', "Cbl_field_id_val(SFCIMPEXT_PTO)4_1" = '3', "Cbl_file_dir" = '$G_RUTA', "Cbl_file_name" = '$G_NOMBRE_ARCHIVO', "Cbl_file_type" = 'F', "Cbl_has_record_mark" = 'no', "Cbl_ignore_redefines" = 'no', "Cbl_is_big_endian" = 'yes', "Cbl_rdr_hv_action" = 'Nothing', "Cbl_rdr_hvalue" = '0xFF', "Cbl_rdr_lv_action" = 'Nothing', "Cbl_rdr_lvalue" = '0x40', "Cbl_rec_size" = '546', "Cbl_rec_trailer" = '1', "Cbl_schema_file" = 'C:\\Users\\JA50603\\Downloads\\09-LIQUIDACION DE PUNTOS-SFC-B7540412-SFC-FULL.cpy', "Cbl_source_begin_pos" = '1', "Cbl_source_end_pos" = '9999', "Cbl_source_format" = 'smart', "application_type" = '', "ds_configuration_enabled" = 'no', "locale_codepage" = 'cp1252', "locale_language" = '<default>', "locale_territory" = '<default>');
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Fri Dec 14 15:48:11 2018', "ActaValue_6" = 'Wed Jan 23 19:03:22 2019', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '
+
+
+$L_NOMBRE_TABLA = workflow_name( );
+$L_NOMBRE_TABLA = replace_substr( $L_NOMBRE_TABLA , \'WF_\', \'\');
+$L_NOMBRE_TABLA = replace_substr( $L_NOMBRE_TABLA , \'__R\', \'\');
+$L_ID_EJECUCION = $P_ID_EJECUCION ;
+print( \'--------------------ENTRANDO A CUENTA DE DATOS  [$L_ID_EJECUCION]\');
+
+$L_CUANTOS_LLEVA = sql( \'DS_CONTROL\', \'SELECT NUM_FILAS_INS FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
+print( \'CUENTA ACTUAL: \' || $L_CUANTOS_LLEVA);
+
+
+IF ($L_CUANTOS_LLEVA IS null )
+begin
+    $L_CUANTOS_LLEVA = 0;	
+end
+
+
+#print( \'SELECT COUNT(*) FROM SAT.[$L_NOMBRE_TABLA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
+$L_SUMA = sql( \'DS_TARGET\', \'SELECT COUNT(*) FROM SAT.[$L_NOMBRE_TABLA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
+print( $L_SUMA);
+
+
+
+$L_SUMA = $L_SUMA + $L_CUANTOS_LLEVA ;
+
+sql( \'DS_CONTROL\', \'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = [$L_SUMA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
+sql( \'DS_CONTROL\', \'COMMIT\');
+
+RETURN 0;
+
+', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_CUENTA_DATOS($P_ID_EJECUCION INT  IN )
+RETURNS  INT 
+DECLARE
+     $L_NOMBRE_TABLA VARCHAR(50) ;
+     $L_CUANTOS_LLEVA INT ;
+     $L_SUMA INT ;
+     $L_ID_EJECUCION INT ;
+BEGIN
+$L_NOMBRE_TABLA = workflow_name();$L_NOMBRE_TABLA = replace_substr($L_NOMBRE_TABLA, 'WF_', '');$L_NOMBRE_TABLA = replace_substr($L_NOMBRE_TABLA, '__R', '');$L_ID_EJECUCION = $P_ID_EJECUCION;print('--------------------ENTRANDO A CUENTA DE DATOS  [$L_ID_EJECUCION]');$L_CUANTOS_LLEVA = sql('DS_CONTROL', 'SELECT NUM_FILAS_INS FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');print(('CUENTA ACTUAL: ' || $L_CUANTOS_LLEVA));IF (($L_CUANTOS_LLEVA IS  NULL ) )
+BEGIN
+$L_CUANTOS_LLEVA = 0;END
+$L_SUMA = sql('DS_TARGET', 'SELECT COUNT(*) FROM SAT.[$L_NOMBRE_TABLA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');print($L_SUMA);$L_SUMA = ($L_SUMA + $L_CUANTOS_LLEVA);sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = [$L_SUMA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'COMMIT');RETURN 0;
+END
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 13:29:48 2018', "ActaValue_6" = 'Wed Feb 27 16:45:37 2019', "InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '70', "ui_script_text" = '######################################################################
+## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
+##                                                                  ##
+## 11/12/2018                                                       ##
+##                                                                  ##
+## CREADO POR JAVIER LOPEZ                                          ##
+## GYSSA                                                            ##
+######################################################################
+
+##ELIMINAMOS PREFIJO WF Y REEMPLAZAMOS __ POR . PARA QUE HAGA MATCH CON LO QUE SE TIENE EN LA TABLA DE MALLAS
+$L_NOMBRE_WF = replace_substr(workflow_name( ), \'__\', \'.\');
+$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, \'WF_\', \'\');
+
+
+##OBTENEMOS ID DE MALLA POR MEDIO DE LA TABLA CNF.MALLAS
+$L_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\'\');
+
+
+
+##OBTENEMOS EL ID DE EJECUCIÓN DE LA MALLA QUE ESTÉ CON ESTADO CARGADO
+$L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\\\'CARGADO\\\',\\\'LISTADO\\\') AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
+#print( \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
+
+
+##TEST si tiene reproceso
+IF($L_ID_EJECUCION IS null)
+begin
+    $L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO != \\\'FINALIZADO\\\' AND REPROCESO = 1 AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
+end
+
+print( $L_ID_EJECUCION );
+
+
+##INICIAMOS VARIABLES
+$L_ESTADO  = \'INICIADO\';
+$L_CURRENT_DATE = sysdate( ) ;
+
+
+try
+    
+	begin
+	##INICIO DE TRANASCCIÓN
+	SQL(\'DS_CONTROL\', \'BEGIN TRANSACTION\');
+
+	##CAMBIO DE ESTADO A INICIADO EN TABLA DE CONTROL PARA LA MALLA QUE SE EJECUTANDO
+	sql( \'DS_CONTROL\', \'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \\\'[$L_ESTADO]\\\' WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
+	sql( \'DS_CONTROL\', \'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = 0 WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
+	
+
+	SQL(\'DS_CONTROL\', \'COMMIT\');
+    print( \'**********************************************************************\');
+    print( \'****************TERMINANDO INSERCION CONTROL_EJECUCION****************\');
+    print( \'**********************************************************************\');
+	
+
+	print( \'**********************************************************************\');
+	PRINT( \'********TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION*********\');
+	print( \'**********************************************************************\');
+
+    
+
+	RETURN $L_ID_EJECUCION ;		
+	end
+catch ( all  )
+	begin
+	    print( \'********************************************************************************************\');
+		print( \'**********OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION**********\');
+		print( \'********************************************************************************************\');
+		RETURN -1;
+	end
+', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_EJECUCION_MALLA( )
+RETURNS  INT 
+DECLARE
+     $L_CURRENT_DATE DATE ;
+     $L_ID_MALLA INT ;
+     $L_NOMBRE_WF VARCHAR(50) ;
+     $L_ESTADO VARCHAR(50) ;
+     $L_REPROCESO INT ;
+     $L_ID_EJECUCION INT ;
+BEGIN
+$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');$L_ID_MALLA = sql('DS_CONTROL', 'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\'CARGADO\',\'LISTADO\') AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]');IF (($L_ID_EJECUCION IS  NULL ) )
+BEGIN
+$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO != \'FINALIZADO\' AND REPROCESO = 1 AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]');END
+print($L_ID_EJECUCION);$L_ESTADO = 'INICIADO';$L_CURRENT_DATE = sysdate();TRY
+BEGIN
+sql('DS_CONTROL', 'BEGIN TRANSACTION');sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \'[$L_ESTADO]\' WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = 0 WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'COMMIT');print('**********************************************************************');print('****************TERMINANDO INSERCION CONTROL_EJECUCION****************');print('**********************************************************************');print('**********************************************************************');print('********TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION*********');print('**********************************************************************');RETURN $L_ID_EJECUCION;
+END
+CATCH (210101)
+BEGIN
+print('********************************************************************************************');print('**********OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION**********');print('********************************************************************************************');RETURN -1;
+END
+
+END_TRY
+END
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Wed Dec 19 10:28:20 2018', "ActaValue_6" = 'Wed Feb 27 17:10:49 2019', "InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '70', "ui_script_text" = '
+$L_TABLE = replace_substr( $P_WF, \'WF_\', \'\');
+$L_TABLE = replace_substr( $L_TABLE, \'__R\', \'\');
+
+$L_JOB = replace_substr( job_name( ), \'JOB_\', \'\');
+$L_JOB = replace_substr( $L_JOB , \'__\', \'.\');
+
+$L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE NOMBRE_ARCHIVO LIKE \\\'[$L_JOB]\\\'\');
+
+sql( \'DS_TARGET\', \'DELETE FROM SAT.[$L_TABLE] WHERE IDENTIFICADOR_EJECUCION = [$G_ID_EJECUCION]\');
+sql( \'DS_TARGET\', \'COMMIT\');
+
+RETURN $L_ID_EJECUCION ;', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_ELIMINA_DATOS($P_WF VARCHAR(50)  IN )
+RETURNS  INT 
+DECLARE
+     $L_TABLE VARCHAR(50) ;
+     $L_ID_EJECUCION INT ;
+     $L_JOB VARCHAR(50) ;
+BEGIN
+$L_TABLE = replace_substr($P_WF, 'WF_', '');$L_TABLE = replace_substr($L_TABLE, '__R', '');$L_JOB = replace_substr(job_name(), 'JOB_', '');$L_JOB = replace_substr($L_JOB, '__', '.');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE NOMBRE_ARCHIVO LIKE \'[$L_JOB]\'');sql('DS_TARGET', 'DELETE FROM SAT.[$L_TABLE] WHERE IDENTIFICADOR_EJECUCION = [$G_ID_EJECUCION]');sql('DS_TARGET', 'COMMIT');RETURN $L_ID_EJECUCION;
+END
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 12:14:53 2018', "ActaValue_6" = 'Fri Dec 14 11:25:44 2018', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '######################################################################
+## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
+##                                                                  ##
+## 11/12/2018                                                       ##
+##                                                                  ##
+## CREADO POR JAVIER LOPEZ                                          ##
+## GYSSA                                                            ##
+######################################################################
+
+##ENVIO DE CORREO ELECTRONICO ANTE ERROR
+$L_EMAIL = sql(\'DS_CONTROL\', \'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \\\'%EMAIL_NOTIFICACION%\\\'\');
+
+
+$L_EXEC = smtp_to($L_EMAIL,$P_SBJ,$P_MSG,10,10);
+
+
+RETURN $L_EXEC;', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_ENVIO_CORREO($P_SBJ VARCHAR(100)  IN, $P_MSG VARCHAR(1000)  IN )
+RETURNS  INT 
+DECLARE
+     $L_EMAIL VARCHAR(1000) ;
+     $L_EXEC VARCHAR(1000) ;
+BEGIN
+$L_EMAIL = sql('DS_CONTROL', 'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%EMAIL_NOTIFICACION%\'');$L_EXEC = smtp_to($L_EMAIL, $P_SBJ, $P_MSG, 10, 10);RETURN $L_EXEC;
+END
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 16:39:09 2018', "ActaValue_6" = 'Mon Feb 18 20:28:17 2019', "InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '54', "ui_script_text" = '######################################################################
+## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
+##                                                                  ##
+## 11/12/2018                                                       ##
+##                                                                  ##
+## CREADO POR JAVIER LOPEZ                                          ##
+## GYSSA                                                            ##
+######################################################################
+
+##ELIMINAMOS PREFIJO WF Y REEMPLAZAMOS __ POR . PARA QUE HAGA MATCH CON LO QUE SE TIENE EN LA TABLA DE MALLAS
+$L_NOMBRE_WF = replace_substr(workflow_name( ), \'__\', \'.\');
+$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, \'WF_\', \'\');
+
+##OBTENEMOS ID DE MALLA POR MEDIO DE LA TABLA CNF.MALLAS
+$L_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\'\');
+
+##OBTENEMOS EL ID DE EJECUCIÓN DE LA MALLA QUE ESTÉ CON ESTADO CARGADO
+$L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO = \\\'INICIADO\\\' AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
+
+##INICIAMOS VARIABLES
+$L_ESTADO  = \'FINALIZADO\';
+$L_CURRENT_DATE = sysdate( ) ;
+
+
+print(\'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \\\'[$L_ESTADO]\\\' WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
+try
+    
+	begin
+	##INICIO DE TRANASCCIÓN
+	
+	SQL(\'DS_CONTROL\', \'BEGIN TRANSACTION\');	
+	
+	##CAMBIO DE ESTADO A FINALIZADO EN TABLA DE CONTROL PARA LA MALLA QUE SE EJECUTANDO
+	sql( \'DS_CONTROL\', \'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \\\'[$L_ESTADO]\\\' WHERE ESTADO = \\\'INICIADO\\\' AND IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');	
+
+
+	
+	SQL(\'DS_CONTROL\', \'COMMIT\');
+    print( \'**********************************************************\');
+    print( \'**********TERMINANDO INSERCION CONTROL_EJECUCION**********\');
+	print( \'**********************************************************\');
+
+	
+
+	print( \'************************************************************************\');
+	PRINT(\'**********TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION**********\');
+	print( \'************************************************************************\');
+	
+	
+	
+	RETURN $L_ID_EJECUCION ;		
+	end
+catch ( all  )
+	begin
+	    print( \'********************************************************************************************\');
+		print( \'**********OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION**********\');
+		print( \'********************************************************************************************\');
+		RETURN -1;
+	end', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_FIN_MALLA( )
+RETURNS  INT 
+DECLARE
+     $L_NOMBRE_WF VARCHAR(50) ;
+     $L_ID_MALLA INT ;
+     $L_ID_EJECUCION INT ;
+     $L_ESTADO VARCHAR(25) ;
+     $L_CURRENT_DATE DATETIME(9) ;
+     $L_CUENTA_DATOS INT ;
+     $L_TABLA_ACTUAL INT ;
+     $L_CUENTA_CONTROL INT ;
+BEGIN
+$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');$L_ID_MALLA = sql('DS_CONTROL', 'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO = \'INICIADO\' AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]');$L_ESTADO = 'FINALIZADO';$L_CURRENT_DATE = sysdate();print('UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \'[$L_ESTADO]\' WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');TRY
+BEGIN
+sql('DS_CONTROL', 'BEGIN TRANSACTION');sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \'[$L_ESTADO]\' WHERE ESTADO = \'INICIADO\' AND IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'COMMIT');print('**********************************************************');print('**********TERMINANDO INSERCION CONTROL_EJECUCION**********');print('**********************************************************');print('************************************************************************');print('**********TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION**********');print('************************************************************************');RETURN $L_ID_EJECUCION;
+END
+CATCH (210101)
+BEGIN
+print('********************************************************************************************');print('**********OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION**********');print('********************************************************************************************');RETURN -1;
+END
+
+END_TRY
+END
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 14:57:03 2018', "ActaValue_6" = 'Wed Feb 27 15:18:03 2019', "InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '70', "ui_script_text" = '######################################################################
+## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
+##                                                                  ##
+## 11/12/2018                                                       ##
+##                                                                  ##
+## CREADO POR JAVIER LOPEZ                                          ##
+## GYSSA                                                            ##
+######################################################################
+
+##ELIMINAMOS PREFIJO WF Y REEMPLAZAMOS __ POR . PARA QUE HAGA MATCH CON LO QUE SE TIENE EN LA TABLA DE MALLAS
+$L_NOMBRE_WF = replace_substr(workflow_name( ), \'__\', \'.\');
+$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, \'WF_\', \'\');
+
+
+print( \'PROCESO NORMAL INICIO\');
+##OBTENEMOS ID DE MALLA POR MEDIO DE LA TABLA CNF.MALLAS
+print( \'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\'\');
+$L_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\'\');
+
+##SE BUSCA SI EXISTE COMBINACIÓN DE REPROCESO CON ID_MALLA, SI HAY VALOR QUE COINCIDE
+##ES REPROCESO Y ENTRA EN EL FLUJO DEL ELSE, SI NO, ENTRA EN FLUJO DE PRIMER PROCESO
+print( \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO != \\\'FINALIZADO\\\' AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
+$L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO != \\\'FINALIZADO\\\' AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
+
+
+print( \'SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
+$P_TIPO_PROCESO  = sql( \'DS_CONTROL\', \'SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
+
+
+RETURN $P_TIPO_PROCESO;', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_PROCESO_NORMAL( )
+RETURNS  INT 
+DECLARE
+     $L_NOMBRE_WF VARCHAR(50) ;
+     $L_ID_MALLA INT ;
+     $L_ID_EJECUCION INT ;
+     $P_TIPO_PROCESO INT ;
+     $L_VALOR_REPROCESO INT ;
+BEGIN
+$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');print('PROCESO NORMAL INICIO');print('SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');$L_ID_MALLA = sql('DS_CONTROL', 'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');print('SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO != \'FINALIZADO\' AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO != \'FINALIZADO\' AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]');print('SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');$P_TIPO_PROCESO = sql('DS_CONTROL', 'SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');RETURN $P_TIPO_PROCESO;
+END
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Wed Apr  3 10:59:13 2019', "ActaValue_6" = 'Wed Apr  3 15:01:36 2019', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '
+$L_w_ind = lower( substr($P_w_numPacked,13,1));
+
+try
+	begin
+
+IF ($L_w_ind = \'p\')
+
+begin
+	$P_w_numPacked = substr($P_w_numPacked,1,12)||\'0\';
+    return to_decimal($P_w_numPacked,\'.\',\',\',0)*-1;
+end
+
+else if ($L_w_ind = \'q\')
+
+begin
+	$P_w_numPacked = substr($P_w_numPacked,1,12)||\'1\';
+    return to_decimal($P_w_numPacked,\'.\',\',\',0)*-1;	
+end
+
+
+else if ($L_w_ind = \'r\')
+
+begin
+	$P_w_numPacked = substr($P_w_numPacked,1,12)||\'2\';
+    return to_decimal($P_w_numPacked,\'.\',\',\',0)*-1;	
+end
+
+
+else if ($L_w_ind = \'s\')
+
+begin
+	$P_w_numPacked = substr($P_w_numPacked,1,12)||\'3\';
+    return to_decimal($P_w_numPacked,\'.\',\',\',0)*-1;	
+end
+
+
+else if ($L_w_ind = \'t\')
+
+begin
+	$P_w_numPacked = substr($P_w_numPacked,1,12)||\'4\';
+    return to_decimal($P_w_numPacked,\'.\',\',\',0)*-1;	
+end
+
+
+else if ($L_w_ind = \'u\')
+
+begin
+	$P_w_numPacked = substr($P_w_numPacked,1,12)||\'5\';
+    return to_decimal($P_w_numPacked,\'.\',\',\',0)*-1;	
+end
+
+
+else if ($L_w_ind = \'v\')
+
+begin
+	$P_w_numPacked = substr($P_w_numPacked,1,12)||\'6\';
+    return to_decimal($P_w_numPacked,\'.\',\',\',0)*-1;	
+end
+
+
+else if ($L_w_ind = \'w\')
+
+begin
+	$P_w_numPacked = substr($P_w_numPacked,1,12)||\'7\';
+    return to_decimal($P_w_numPacked,\'.\',\',\',0)*-1;	
+end
+
+
+else if ($L_w_ind = \'x\')
+
+begin
+	$P_w_numPacked = substr($P_w_numPacked,1,12)||\'8\';
+    return to_decimal($P_w_numPacked,\'.\',\',\',0)*-1;	
+end
+
+
+else if ($L_w_ind = \'y\')
+
+begin
+	$P_w_numPacked = substr($P_w_numPacked,1,12)||\'9\';
+    return to_decimal($P_w_numPacked,\'.\',\',\',0)*-1;	
+end
+
+else 
+
+	return to_decimal($P_w_numPacked,\'.\',\',\',0);
+
+
+
+#return $w_numPacked  ;
+#return $P_w_result  ;
+
+
+	end
+
+catch ( all  )
+	begin
+        print( \'ERROR EN EJECUCIÓN DE FUNCION\');     
+		Return  -1;
+	end
+
+
+', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_UnpackNumSignSAT($P_w_numPacked VARCHAR(17)  IN )
+RETURNS  DOUBLE 
+DECLARE
+     $L_w_ind VARCHAR(17) ;
+BEGIN
+$L_w_ind = lower(substr($P_w_numPacked, 13, 1));TRY
+BEGIN
+IF (($L_w_ind = 'p') )
+BEGIN
+$P_w_numPacked = (substr($P_w_numPacked, 1, 12) || '0');RETURN (to_decimal($P_w_numPacked, '.', ',', 0) * -1);
+END
+ELSE
+IF (($L_w_ind = 'q') )
+BEGIN
+$P_w_numPacked = (substr($P_w_numPacked, 1, 12) || '1');RETURN (to_decimal($P_w_numPacked, '.', ',', 0) * -1);
+END
+ELSE
+IF (($L_w_ind = 'r') )
+BEGIN
+$P_w_numPacked = (substr($P_w_numPacked, 1, 12) || '2');RETURN (to_decimal($P_w_numPacked, '.', ',', 0) * -1);
+END
+ELSE
+IF (($L_w_ind = 's') )
+BEGIN
+$P_w_numPacked = (substr($P_w_numPacked, 1, 12) || '3');RETURN (to_decimal($P_w_numPacked, '.', ',', 0) * -1);
+END
+ELSE
+IF (($L_w_ind = 't') )
+BEGIN
+$P_w_numPacked = (substr($P_w_numPacked, 1, 12) || '4');RETURN (to_decimal($P_w_numPacked, '.', ',', 0) * -1);
+END
+ELSE
+IF (($L_w_ind = 'u') )
+BEGIN
+$P_w_numPacked = (substr($P_w_numPacked, 1, 12) || '5');RETURN (to_decimal($P_w_numPacked, '.', ',', 0) * -1);
+END
+ELSE
+IF (($L_w_ind = 'v') )
+BEGIN
+$P_w_numPacked = (substr($P_w_numPacked, 1, 12) || '6');RETURN (to_decimal($P_w_numPacked, '.', ',', 0) * -1);
+END
+ELSE
+IF (($L_w_ind = 'w') )
+BEGIN
+$P_w_numPacked = (substr($P_w_numPacked, 1, 12) || '7');RETURN (to_decimal($P_w_numPacked, '.', ',', 0) * -1);
+END
+ELSE
+IF (($L_w_ind = 'x') )
+BEGIN
+$P_w_numPacked = (substr($P_w_numPacked, 1, 12) || '8');RETURN (to_decimal($P_w_numPacked, '.', ',', 0) * -1);
+END
+ELSE
+IF (($L_w_ind = 'y') )
+BEGIN
+$P_w_numPacked = (substr($P_w_numPacked, 1, 12) || '9');RETURN (to_decimal($P_w_numPacked, '.', ',', 0) * -1);
+END
+ELSE
+RETURN to_decimal($P_w_numPacked, '.', ',', 0);
+END
+CATCH (210101)
+BEGIN
+print('ERROR EN EJECUCIÓN DE FUNCION');RETURN -1;
+END
+
+END_TRY
+END
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 11:01:08 2018', "ActaValue_6" = 'Wed Feb 27 16:22:00 2019', "InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '70', "ui_script_text" = '######################################################################
+## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
+##                                                                  ##
+## 11/12/2018                                                       ##
+##                                                                  ##
+## CREADO POR JAVIER LOPEZ                                          ##
+## MODIFICADO POR: JAIME ASCENCIO                                   ##
+## VALIDACION DE REPROCESO                                          ##
+## GYSSA                                                            ##
+######################################################################
+
+##ELIMINA CARACTERES ESPACIALES DEL NOMBRE DEL WF
+$L_NOMBRE_WF = replace_substr(workflow_name( ), \'__\', \'.\');
+$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, \'WF_\', \'\');
+
+$L_VALOR_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\' \');
+$L_VALOR_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\\\'CARGADO\\\',\\\'LISTADO\\\') AND IDENTIFICADOR_MALLA = \' || $L_VALOR_ID_MALLA);
+
+##TEST si tiene reproceso
+IF($L_VALOR_ID_MALLA IS null)
+begin
+    $L_VALOR_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\' \');
+	$L_VALOR_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO != \\\'FINALIZADO\\\' AND REPROCESO = 1 AND IDENTIFICADOR_MALLA = \' || $L_VALOR_ID_MALLA);
+end
+
+
+IF($L_VALOR_ID_MALLA IS NOT null)
+begin
+	$L_EXISTE_MALLA = 1;
+end
+else begin
+    $L_EXISTE_MALLA = 0	;
+end
+
+RETURN $L_EXISTE_MALLA ;', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_VERIFICA_MALLA( )
+RETURNS  INT 
+DECLARE
+     $L_NOMBRE_WF VARCHAR(50) ;
+     $L_EXISTE_MALLA INT ;
+     $L_VALOR_ID_MALLA INT ;
+BEGIN
+$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');$L_VALOR_ID_MALLA = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\' ');$L_VALOR_ID_MALLA = sql('DS_CONTROL', ('SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\'CARGADO\',\'LISTADO\') AND IDENTIFICADOR_MALLA = ' || $L_VALOR_ID_MALLA));IF (($L_VALOR_ID_MALLA IS  NULL ) )
+BEGIN
+$L_VALOR_ID_MALLA = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\' ');$L_VALOR_ID_MALLA = sql('DS_CONTROL', ('SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO != \'FINALIZADO\' AND REPROCESO = 1 AND IDENTIFICADOR_MALLA = ' || $L_VALOR_ID_MALLA));END
+IF (($L_VALOR_ID_MALLA IS NOT  NULL ) )
+BEGIN
+$L_EXISTE_MALLA = 1;END
+ELSE
+BEGIN
+$L_EXISTE_MALLA = 0;END
+RETURN $L_EXISTE_MALLA;
+END
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 29 16:30:03 2019', "ActaValue_3" = 'Fri Mar 29 16:21:08 2019', "x" = '-1', "y" = '-1')
+CREATE  DATAFLOW DF_SFCIMPEXT_BON::'794e120d-d7bb-4925-ac9f-1818495b0924'
+BEGIN
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>372</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
+GUID::'5a341402-d341-4e9e-a376-276fd56f1963' READ TABLE DS_TARGET.STG_SAT.SFCIMPEXT_BON OUTPUT(SFCIMPEXT_BON)
+SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>416</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
+GUID::'b76da935-44bb-49e1-b239-46e8d7e7f0c1' LOAD TABLE DS_TARGET.SAT.SFCIMPEXT_BON INPUT(Query)
+SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
+<LDRConfigurations>
+<LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_row_delimiter>&#xA;</bulk_row_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<iq_blk_ldr_binary>yes</iq_blk_ldr_binary>
+<iq_blk_ldr_block_size>500000</iq_blk_ldr_block_size>
+<iq_checkpoint>no</iq_checkpoint>
+<iq_ignore_all_constraints></iq_ignore_all_constraints>
+<iq_ignore_conversion_error>no</iq_ignore_conversion_error>
+<iq_ignore_dataval_constraints></iq_ignore_dataval_constraints>
+<iq_ignore_foreignkey_constraints></iq_ignore_foreignkey_constraints>
+<iq_ignore_null_constraints></iq_ignore_null_constraints>
+<iq_ignore_unique_constraints></iq_ignore_unique_constraints>
+<iq_log_dataval_constraints>no</iq_log_dataval_constraints>
+<iq_log_foreignkey_constraints>no</iq_log_foreignkey_constraints>
+<iq_log_null_constraints>no</iq_log_null_constraints>
+<iq_log_unique_constraints>no</iq_log_unique_constraints>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_post_load1></loader_post_load1>
+<loader_pre_load1></loader_pre_load1>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<mssql_bulk_ldr_mode>append</mssql_bulk_ldr_mode>
+<mssql_bulk_ldr_packet_size>0</mssql_bulk_ldr_packet_size>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+<sql_text></sql_text>
+</LDRConfiguration>
+</LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'SFCIMPEXT_BON', "x" = '480', "y" = '-90')
+GUID::'16ee2002-acd0-4e9f-88fb-b5e896cae5ef' CREATE VIEW Query( IDENTIFICADOR_EJECUCION INT  SET( "ui_mapping_text" = '$G_ID_EJECUCION') ,
+ TIPOREGI VARCHAR(1)  SET( "ui_mapping_text" = 'SFCIMPEXT_BON.TIPOREGI') ,
+ CODENTID VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_BON.CODENTID') ,
+ CODCINTA VARCHAR(2)  SET( "ui_mapping_text" = 'SFCIMPEXT_BON.CODCINTA') ,
+ NUMSECUE DECIMAL(8, 0)  SET( "ui_mapping_text" = 'SFCIMPEXT_BON.NUMSECUE') ,
+ TIPODATO VARCHAR(2)  SET( "ui_mapping_text" = 'SFCIMPEXT_BON.TIPODATO') ,
+ PUNTBONI DECIMAL(13, 0)  SET( "ui_mapping_text" = 'SFCIMPEXT_BON.PUNTBONI') ,
+ FILLER1 VARCHAR(511)  SET( "ui_mapping_text" = 'SFCIMPEXT_BON.FILLER1')  )
+ AS
+SELECT $G_ID_EJECUCION, SFCIMPEXT_BON.TIPOREGI, SFCIMPEXT_BON.CODENTID, SFCIMPEXT_BON.CODCINTA, SFCIMPEXT_BON.NUMSECUE, SFCIMPEXT_BON.TIPODATO, SFCIMPEXT_BON.PUNTBONI, SFCIMPEXT_BON.FILLER1 FROM SFCIMPEXT_BON 
+SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
+;
+
+END
+ SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 29 16:19:36 2019', "ActaValue_3" = 'Fri Mar 29 15:58:06 2019', "x" = '-1', "y" = '-1')
+CREATE  DATAFLOW DF_SFCIMPEXT_CAD::'5b807451-07cb-45f5-8b26-732cb7c429dc'
+BEGIN
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>372</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
+GUID::'f06b178a-f01f-48e1-b5c7-a2b6a31af73f' READ TABLE DS_TARGET.STG_SAT.SFCIMPEXT_CAD OUTPUT(SFCIMPEXT_CAD)
+SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'SFCIMPEXT_CAD', "x" = '480', "y" = '-90')
+GUID::'5f4ff4d9-f778-41f3-8318-5556434d1a7b' CREATE VIEW Query( IDENTIFICADOR_EJECUCION INT  SET( "ui_mapping_text" = '$G_ID_EJECUCION') ,
+ TIPOREGI VARCHAR(1)  SET( "ui_mapping_text" = 'SFCIMPEXT_CAD.TIPOREGI') ,
+ CODENTID VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_CAD.CODENTID') ,
+ CODCINTA VARCHAR(2)  SET( "ui_mapping_text" = 'SFCIMPEXT_CAD.CODCINTA') ,
+ NUMSECUE DECIMAL(8, 0)  SET( "ui_mapping_text" = 'SFCIMPEXT_CAD.NUMSECUE') ,
+ TIPODATO VARCHAR(2)  SET( "ui_mapping_text" = 'SFCIMPEXT_CAD.TIPODATO') ,
+ PUNTCADU DECIMAL(13, 0)  SET( "ui_mapping_text" = 'SFCIMPEXT_CAD.PUNTCADU') ,
+ FECHPROR VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_CAD.FECHPROR') ,
+ FILLER1 VARCHAR(503)  SET( "ui_mapping_text" = 'SFCIMPEXT_CAD.FILLER1')  )
+ AS
+SELECT $G_ID_EJECUCION, SFCIMPEXT_CAD.TIPOREGI, SFCIMPEXT_CAD.CODENTID, SFCIMPEXT_CAD.CODCINTA, SFCIMPEXT_CAD.NUMSECUE, SFCIMPEXT_CAD.TIPODATO, SFCIMPEXT_CAD.PUNTCADU, SFCIMPEXT_CAD.FECHPROR, SFCIMPEXT_CAD.FILLER1 FROM SFCIMPEXT_CAD 
+SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
+;
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>416</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
+GUID::'66616b2a-1f98-4fbc-9e5c-76e9e0a48ccc' LOAD TABLE DS_TARGET.SAT.SFCIMPEXT_CAD INPUT(Query)
+SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
+<LDRConfigurations>
+<LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_row_delimiter>&#xA;</bulk_row_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<iq_blk_ldr_binary>yes</iq_blk_ldr_binary>
+<iq_blk_ldr_block_size>500000</iq_blk_ldr_block_size>
+<iq_checkpoint>no</iq_checkpoint>
+<iq_ignore_all_constraints></iq_ignore_all_constraints>
+<iq_ignore_conversion_error>no</iq_ignore_conversion_error>
+<iq_ignore_dataval_constraints></iq_ignore_dataval_constraints>
+<iq_ignore_foreignkey_constraints></iq_ignore_foreignkey_constraints>
+<iq_ignore_null_constraints></iq_ignore_null_constraints>
+<iq_ignore_unique_constraints></iq_ignore_unique_constraints>
+<iq_log_dataval_constraints>no</iq_log_dataval_constraints>
+<iq_log_foreignkey_constraints>no</iq_log_foreignkey_constraints>
+<iq_log_null_constraints>no</iq_log_null_constraints>
+<iq_log_unique_constraints>no</iq_log_unique_constraints>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_post_load1></loader_post_load1>
+<loader_pre_load1></loader_pre_load1>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<mssql_bulk_ldr_mode>append</mssql_bulk_ldr_mode>
+<mssql_bulk_ldr_packet_size>0</mssql_bulk_ldr_packet_size>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+<sql_text></sql_text>
+</LDRConfiguration>
+</LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
+
+END
+ SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Dec 18 11:26:23 2018', "ActaValue_3" = 'Fri Mar 29 15:32:20 2019', "x" = '-1', "y" = '-1')
+CREATE  DATAFLOW DF_SFCIMPEXT_CTA::'d571e5c8-d8b4-48e8-bc9d-26d7d5564eba'
+BEGIN
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>369</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
+GUID::'66d8443b-a5bd-4203-91c1-452d59d02a2c' READ TABLE DS_TARGET.STG_SAT.SFCIMPEXT_CTA OUTPUT(SFCIMPEXT_CTA)
+SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>413</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
+GUID::'b3081c5e-d705-4f4f-8132-2c68e5e1080f' LOAD TABLE DS_TARGET.SAT.SFCIMPEXT_CTA INPUT(Query)
+SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
+<LDRConfigurations>
+<LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_row_delimiter>&#xA;</bulk_row_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<iq_blk_ldr_binary>yes</iq_blk_ldr_binary>
+<iq_blk_ldr_block_size>500000</iq_blk_ldr_block_size>
+<iq_checkpoint>no</iq_checkpoint>
+<iq_ignore_all_constraints></iq_ignore_all_constraints>
+<iq_ignore_conversion_error>no</iq_ignore_conversion_error>
+<iq_ignore_dataval_constraints></iq_ignore_dataval_constraints>
+<iq_ignore_foreignkey_constraints></iq_ignore_foreignkey_constraints>
+<iq_ignore_null_constraints></iq_ignore_null_constraints>
+<iq_ignore_unique_constraints></iq_ignore_unique_constraints>
+<iq_log_dataval_constraints>no</iq_log_dataval_constraints>
+<iq_log_foreignkey_constraints>no</iq_log_foreignkey_constraints>
+<iq_log_null_constraints>no</iq_log_null_constraints>
+<iq_log_unique_constraints>no</iq_log_unique_constraints>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_post_load1></loader_post_load1>
+<loader_pre_load1></loader_pre_load1>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<mssql_bulk_ldr_mode>append</mssql_bulk_ldr_mode>
+<mssql_bulk_ldr_packet_size>0</mssql_bulk_ldr_packet_size>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+<sql_text></sql_text>
+</LDRConfiguration>
+</LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'SFCIMPEXT_CTA', "x" = '480', "y" = '-90')
+GUID::'630010d4-3366-4ecc-b880-82cbbff2f3d8' CREATE VIEW Query( IDENTIFICADOR_EJECUCION INT  SET( "ui_mapping_text" = '$G_ID_EJECUCION') ,
+ TIPOREGI VARCHAR(1)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.TIPOREGI') ,
+ CODENTID VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.CODENTID') ,
+ CODCINTA VARCHAR(2)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.CODCINTA') ,
+ NUMSECUE DECIMAL(8, 0)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.NUMSECUE') ,
+ TIPODATO VARCHAR(2)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.TIPODATO') ,
+ CODAPLRE VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.CODAPLRE') ,
+ CODPROGR VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.CODPROGR') ,
+ DESCCPRO VARCHAR(20)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.DESCCPRO') ,
+ NUMEXTRA DECIMAL(6, 0)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.NUMEXTRA') ,
+ FECHPENV VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.FECHPENV') ,
+ FECHPROC VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.FECHPROC') ,
+ TIPIDCLI VARCHAR(2)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.TIPIDCLI') ,
+ DESCTIDC VARCHAR(30)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.DESCTIDC') ,
+ IDCLIENT VARCHAR(20)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.IDCLIENT') ,
+ CODCUENT VARCHAR(20)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.CODCUENT') ,
+ FECHALTA VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.FECHALTA') ,
+ INDBLQAC VARCHAR(1)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.INDBLQAC') ,
+ FECBLQAC VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.FECBLQAC') ,
+ TEXBLQAC VARCHAR(120)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.TEXBLQAC') ,
+ INDBLQRD VARCHAR(1)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.INDBLQRD') ,
+ FECBLQRD VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.FECBLQRD') ,
+ TEXBLOQRD VARCHAR(120)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.TEXBLOQRD') ,
+ CODCATAL VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.CODCATAL') ,
+ DESCATAL VARCHAR(120)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.DESCATAL')  )
+ AS
+SELECT $G_ID_EJECUCION, SFCIMPEXT_CTA.TIPOREGI, SFCIMPEXT_CTA.CODENTID, SFCIMPEXT_CTA.CODCINTA, SFCIMPEXT_CTA.NUMSECUE, SFCIMPEXT_CTA.TIPODATO, SFCIMPEXT_CTA.CODAPLRE, SFCIMPEXT_CTA.CODPROGR, SFCIMPEXT_CTA.DESCCPRO, SFCIMPEXT_CTA.NUMEXTRA, SFCIMPEXT_CTA.FECHPENV, SFCIMPEXT_CTA.FECHPROC, SFCIMPEXT_CTA.TIPIDCLI, SFCIMPEXT_CTA.DESCTIDC, SFCIMPEXT_CTA.IDCLIENT, SFCIMPEXT_CTA.CODCUENT, SFCIMPEXT_CTA.FECHALTA, SFCIMPEXT_CTA.INDBLQAC, SFCIMPEXT_CTA.FECBLQAC, SFCIMPEXT_CTA.TEXBLQAC, SFCIMPEXT_CTA.INDBLQRD, SFCIMPEXT_CTA.FECBLQRD, SFCIMPEXT_CTA.TEXBLOQRD, SFCIMPEXT_CTA.CODCATAL, SFCIMPEXT_CTA.DESCATAL FROM SFCIMPEXT_CTA 
+SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
+;
+
+END
+ SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 29 15:42:47 2019', "ActaValue_3" = 'Fri Mar 29 15:44:17 2019', "x" = '-1', "y" = '-1')
+CREATE  DATAFLOW DF_SFCIMPEXT_MOV::'d864d5c4-42c9-441a-98c8-3cfe1ae9c18a'
+BEGIN
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>378</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
+GUID::'87ea31fa-3258-4c9d-b79b-0b8f2cc66cae' READ TABLE DS_TARGET.STG_SAT.SFCIMPEXT_MOV OUTPUT(SFCIMPEXT_MOV)
+SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>422</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
+GUID::'2f9e3c0d-1770-4bc9-9da7-35bbe9669f9d' LOAD TABLE DS_TARGET.SAT.SFCIMPEXT_MOV INPUT(Query)
+SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
+<LDRConfigurations>
+<LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_row_delimiter>&#xA;</bulk_row_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<iq_blk_ldr_binary>yes</iq_blk_ldr_binary>
+<iq_blk_ldr_block_size>500000</iq_blk_ldr_block_size>
+<iq_checkpoint>no</iq_checkpoint>
+<iq_ignore_all_constraints></iq_ignore_all_constraints>
+<iq_ignore_conversion_error>no</iq_ignore_conversion_error>
+<iq_ignore_dataval_constraints></iq_ignore_dataval_constraints>
+<iq_ignore_foreignkey_constraints></iq_ignore_foreignkey_constraints>
+<iq_ignore_null_constraints></iq_ignore_null_constraints>
+<iq_ignore_unique_constraints></iq_ignore_unique_constraints>
+<iq_log_dataval_constraints>no</iq_log_dataval_constraints>
+<iq_log_foreignkey_constraints>no</iq_log_foreignkey_constraints>
+<iq_log_null_constraints>no</iq_log_null_constraints>
+<iq_log_unique_constraints>no</iq_log_unique_constraints>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_post_load1></loader_post_load1>
+<loader_pre_load1></loader_pre_load1>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<mssql_bulk_ldr_mode>append</mssql_bulk_ldr_mode>
+<mssql_bulk_ldr_packet_size>0</mssql_bulk_ldr_packet_size>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+<sql_text></sql_text>
+</LDRConfiguration>
+</LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'SFCIMPEXT_MOV', "x" = '480', "y" = '-90')
+GUID::'18dfb27b-17c4-4882-8c26-e09be0608ed9' CREATE VIEW Query( IDENTIFICADOR_EJECUCION INT  SET( "ui_mapping_text" = '$G_ID_EJECUCION') ,
+ TIPOREGI VARCHAR(1)  SET( "ui_mapping_text" = 'SFCIMPEXT_MOV.TIPOREGI') ,
+ CODENTID VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_MOV.CODENTID') ,
+ CODCINTA VARCHAR(2)  SET( "ui_mapping_text" = 'SFCIMPEXT_MOV.CODCINTA') ,
+ NUMSECUE DECIMAL(8, 0)  SET( "ui_mapping_text" = 'SFCIMPEXT_MOV.NUMSECUE') ,
+ TIPODATO VARCHAR(2)  SET( "ui_mapping_text" = 'SFCIMPEXT_MOV.TIPODATO') ,
+ FECALTMV VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_MOV.FECALTMV') ,
+ TEXEXTRA VARCHAR(120)  SET( "ui_mapping_text" = 'SFCIMPEXT_MOV.TEXEXTRA') ,
+ PUNOBTEN DECIMAL(13, 0)  SET( "ui_mapping_text" = 'SFCIMPEXT_MOV.PUNOBTEN') ,
+ FILLER1 VARCHAR(383)  SET( "ui_mapping_text" = 'SFCIMPEXT_MOV.FILLER1')  )
+ AS
+SELECT $G_ID_EJECUCION, SFCIMPEXT_MOV.TIPOREGI, SFCIMPEXT_MOV.CODENTID, SFCIMPEXT_MOV.CODCINTA, SFCIMPEXT_MOV.NUMSECUE, SFCIMPEXT_MOV.TIPODATO, SFCIMPEXT_MOV.FECALTMV, SFCIMPEXT_MOV.TEXEXTRA, SFCIMPEXT_MOV.PUNOBTEN, SFCIMPEXT_MOV.FILLER1 FROM SFCIMPEXT_MOV 
+SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
+;
+
+END
+ SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 29 15:48:40 2019', "ActaValue_3" = 'Fri Mar 29 15:56:28 2019', "x" = '-1', "y" = '-1')
+CREATE  DATAFLOW DF_SFCIMPEXT_PTO::'0eb3780c-8025-4066-95ad-0168ebd71def'
+BEGIN
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>366</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
+GUID::'a0efa12b-723f-487e-83a4-a8115b44be41' READ TABLE DS_TARGET.STG_SAT.SFCIMPEXT_PTO OUTPUT(SFCIMPEXT_PTO)
+SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'SFCIMPEXT_PTO', "x" = '480', "y" = '-90')
+GUID::'9274bb36-cf53-4c9c-845c-62d37a1f5bdb' CREATE VIEW Query( IDENTIFICADOR_EJECUCION INT  SET( "ui_mapping_text" = '$G_ID_EJECUCION') ,
+ TIPOREGI VARCHAR(1)  SET( "ui_mapping_text" = 'SFCIMPEXT_PTO.TIPOREGI') ,
+ CODENTID VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_PTO.CODENTID') ,
+ CODCINTA VARCHAR(2)  SET( "ui_mapping_text" = 'SFCIMPEXT_PTO.CODCINTA') ,
+ NUMSECUE DECIMAL(8, 0)  SET( "ui_mapping_text" = 'SFCIMPEXT_PTO.NUMSECUE') ,
+ TIPODATO VARCHAR(2)  SET( "ui_mapping_text" = 'SFCIMPEXT_PTO.TIPODATO') ,
+ TIPOPUNT VARCHAR(2)  SET( "ui_mapping_text" = 'SFCIMPEXT_PTO.TIPOPUNT') ,
+ SALULTEX DECIMAL(13, 0)  SET( "ui_mapping_text" = 'SFCIMPEXT_PTO.SALULTEX') ,
+ SALACTUA DECIMAL(13, 0)  SET( "ui_mapping_text" = 'SFCIMPEXT_PTO.SALACTUA') ,
+ FILLER1 VARCHAR(496)  SET( "ui_mapping_text" = 'SFCIMPEXT_PTO.FILLER1')  )
+ AS
+SELECT $G_ID_EJECUCION, SFCIMPEXT_PTO.TIPOREGI, SFCIMPEXT_PTO.CODENTID, SFCIMPEXT_PTO.CODCINTA, SFCIMPEXT_PTO.NUMSECUE, SFCIMPEXT_PTO.TIPODATO, SFCIMPEXT_PTO.TIPOPUNT, SFCIMPEXT_PTO.SALULTEX, SFCIMPEXT_PTO.SALACTUA, SFCIMPEXT_PTO.FILLER1 FROM SFCIMPEXT_PTO 
+SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
+;
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>410</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
+GUID::'3e9614a8-83ed-47af-b3e1-630dd3cbb506' LOAD TABLE DS_TARGET.SAT.SFCIMPEXT_PTO INPUT(Query)
+SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
+<LDRConfigurations>
+<LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_row_delimiter>&#xA;</bulk_row_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<iq_blk_ldr_binary>yes</iq_blk_ldr_binary>
+<iq_blk_ldr_block_size>500000</iq_blk_ldr_block_size>
+<iq_checkpoint>no</iq_checkpoint>
+<iq_ignore_all_constraints></iq_ignore_all_constraints>
+<iq_ignore_conversion_error>no</iq_ignore_conversion_error>
+<iq_ignore_dataval_constraints></iq_ignore_dataval_constraints>
+<iq_ignore_foreignkey_constraints></iq_ignore_foreignkey_constraints>
+<iq_ignore_null_constraints></iq_ignore_null_constraints>
+<iq_ignore_unique_constraints></iq_ignore_unique_constraints>
+<iq_log_dataval_constraints>no</iq_log_dataval_constraints>
+<iq_log_foreignkey_constraints>no</iq_log_foreignkey_constraints>
+<iq_log_null_constraints>no</iq_log_null_constraints>
+<iq_log_unique_constraints>no</iq_log_unique_constraints>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_post_load1></loader_post_load1>
+<loader_pre_load1></loader_pre_load1>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<mssql_bulk_ldr_mode>append</mssql_bulk_ldr_mode>
+<mssql_bulk_ldr_packet_size>0</mssql_bulk_ldr_packet_size>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+<sql_text></sql_text>
+</LDRConfiguration>
+</LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
+
+END
+ SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 29 16:30:03 2019', "ActaValue_3" = 'Fri Mar 29 16:34:00 2019', "x" = '-1', "y" = '-1')
+CREATE  DATAFLOW DF_STG_SFCIMPEXT_BON::'a67bf4d4-80a6-4ae3-9600-2ad180f932c7'
+BEGIN
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>194</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
+GUID::'fe712136-9874-4732-92bb-d6d26e34f6ec' READ __BODI_COPYBOOK_COBOL B7540412 OUTPUT(SFCIMPEXT_BON)
+SET("Cbl_rdr_current_schema" = 'SFCIMPEXT_BON', "connection_port" = 'no');
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'SFCIMPEXT_BON', "x" = '480', "y" = '-90')
+GUID::'47694552-47b2-479b-82f0-293775528963' CREATE VIEW Query( TIPOREGI VARCHAR(1)  SET( "ui_mapping_text" = 'SFCIMPEXT_BON.TIPOREGI') ,
+ CODENTID VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_BON.CODENTID') ,
+ CODCINTA VARCHAR(2)  SET( "ui_mapping_text" = 'SFCIMPEXT_BON.CODCINTA') ,
+ NUMSECUE DECIMAL(8, 0)  SET( "ui_mapping_text" = 'SFCIMPEXT_BON.NUMSECUE') ,
+ TIPODATO VARCHAR(2)  SET( "ui_mapping_text" = '\'0\' || to_char(SFCIMPEXT_BON.TIPODATO)') ,
+ PUNTBONI DECIMAL(13, 0)  SET( "ui_mapping_text" = 'CF_UnpackNumSignSAT(SFCIMPEXT_BON.PUNTBONI)') ,
+ FILLER1 VARCHAR(511)  SET( "ui_mapping_text" = 'SFCIMPEXT_BON.FILLER1')  )
+ AS
+SELECT SFCIMPEXT_BON.TIPOREGI, SFCIMPEXT_BON.CODENTID, SFCIMPEXT_BON.CODCINTA, SFCIMPEXT_BON.NUMSECUE, ('0' || to_char(SFCIMPEXT_BON.TIPODATO)), cf_unpacknumsignsat(SFCIMPEXT_BON.PUNTBONI), SFCIMPEXT_BON.FILLER1 FROM SFCIMPEXT_BON 
+SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
+;
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = '', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>416</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
+GUID::'113301c0-3b26-43ad-ad8c-2a8627550db2' LOAD TABLE DS_TARGET.STG_SAT.SFCIMPEXT_BON INPUT(Query)
+SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
+<LDRConfigurations>
+<LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_generate_files_only>0</bulk_ldr_generate_files_only>
+<bulk_row_delimiter>&#xA;</bulk_row_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<iq_blk_ldr_binary>yes</iq_blk_ldr_binary>
+<iq_blk_ldr_block_size>500000</iq_blk_ldr_block_size>
+<iq_checkpoint>no</iq_checkpoint>
+<iq_ignore_all_constraints></iq_ignore_all_constraints>
+<iq_ignore_conversion_error>no</iq_ignore_conversion_error>
+<iq_ignore_dataval_constraints></iq_ignore_dataval_constraints>
+<iq_ignore_foreignkey_constraints></iq_ignore_foreignkey_constraints>
+<iq_ignore_null_constraints></iq_ignore_null_constraints>
+<iq_ignore_unique_constraints></iq_ignore_unique_constraints>
+<iq_log_dataval_constraints>no</iq_log_dataval_constraints>
+<iq_log_foreignkey_constraints>no</iq_log_foreignkey_constraints>
+<iq_log_null_constraints>no</iq_log_null_constraints>
+<iq_log_unique_constraints>no</iq_log_unique_constraints>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load>1</loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_post_load1></loader_post_load1>
+<loader_pre_load1></loader_pre_load1>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<mssql_bulk_ldr_mode>truncate</mssql_bulk_ldr_mode>
+<mssql_bulk_ldr_packet_size>0</mssql_bulk_ldr_packet_size>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+<sql_text></sql_text>
+</LDRConfiguration>
+</LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
+
+END
+ SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 29 16:19:36 2019', "ActaValue_3" = 'Fri Mar 29 16:34:00 2019', "x" = '-1', "y" = '-1')
+CREATE  DATAFLOW DF_STG_SFCIMPEXT_CAD::'a2071663-3c8c-4651-b9af-ca9c307dbb16'
+BEGIN
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>416</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
+GUID::'d09d3a5b-f4e1-43a9-8b1d-b098a697ec7b' LOAD TABLE DS_TARGET.STG_SAT.SFCIMPEXT_CAD INPUT(Query)
+SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
+<LDRConfigurations>
+<LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_generate_files_only>0</bulk_ldr_generate_files_only>
+<bulk_row_delimiter>&#xA;</bulk_row_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<iq_blk_ldr_binary>yes</iq_blk_ldr_binary>
+<iq_blk_ldr_block_size>500000</iq_blk_ldr_block_size>
+<iq_checkpoint>no</iq_checkpoint>
+<iq_ignore_all_constraints></iq_ignore_all_constraints>
+<iq_ignore_conversion_error>no</iq_ignore_conversion_error>
+<iq_ignore_dataval_constraints></iq_ignore_dataval_constraints>
+<iq_ignore_foreignkey_constraints></iq_ignore_foreignkey_constraints>
+<iq_ignore_null_constraints></iq_ignore_null_constraints>
+<iq_ignore_unique_constraints></iq_ignore_unique_constraints>
+<iq_log_dataval_constraints>no</iq_log_dataval_constraints>
+<iq_log_foreignkey_constraints>no</iq_log_foreignkey_constraints>
+<iq_log_null_constraints>no</iq_log_null_constraints>
+<iq_log_unique_constraints>no</iq_log_unique_constraints>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load>1</loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_post_load1></loader_post_load1>
+<loader_pre_load1></loader_pre_load1>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<mssql_bulk_ldr_mode>truncate</mssql_bulk_ldr_mode>
+<mssql_bulk_ldr_packet_size>0</mssql_bulk_ldr_packet_size>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+<sql_text></sql_text>
+</LDRConfiguration>
+</LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'SFCIMPEXT_CAD', "x" = '480', "y" = '-90')
+GUID::'1ea9a47c-ce81-48b3-a2b7-9ea31f44becc' CREATE VIEW Query( TIPOREGI VARCHAR(1)  SET( "ui_mapping_text" = 'SFCIMPEXT_CAD.TIPOREGI') ,
+ CODENTID VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_CAD.CODENTID') ,
+ CODCINTA VARCHAR(2)  SET( "ui_mapping_text" = 'SFCIMPEXT_CAD.CODCINTA') ,
+ NUMSECUE DECIMAL(8, 0)  SET( "ui_mapping_text" = 'SFCIMPEXT_CAD.NUMSECUE') ,
+ TIPODATO VARCHAR(2)  SET( "ui_mapping_text" = '\'0\' || to_char(SFCIMPEXT_CAD.TIPODATO)') ,
+ PUNTCADU DECIMAL(13, 0)  SET( "ui_mapping_text" = 'CF_UnpackNumSignSAT(SFCIMPEXT_CAD.PUNTCADU)') ,
+ FECHPROR VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_CAD.FECHPROR') ,
+ FILLER1 VARCHAR(503)  SET( "ui_mapping_text" = 'SFCIMPEXT_CAD.FILLER1')  )
+ AS
+SELECT SFCIMPEXT_CAD.TIPOREGI, SFCIMPEXT_CAD.CODENTID, SFCIMPEXT_CAD.CODCINTA, SFCIMPEXT_CAD.NUMSECUE, ('0' || to_char(SFCIMPEXT_CAD.TIPODATO)), cf_unpacknumsignsat(SFCIMPEXT_CAD.PUNTCADU), SFCIMPEXT_CAD.FECHPROR, SFCIMPEXT_CAD.FILLER1 FROM SFCIMPEXT_CAD 
+SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
+;
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>194</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
+GUID::'c0bcebba-7924-4e9c-8369-87a9d707cbf6' READ __BODI_COPYBOOK_COBOL B7540412 OUTPUT(SFCIMPEXT_CAD)
+SET("Cbl_rdr_current_schema" = 'SFCIMPEXT_CAD', "connection_port" = 'no');
+
+END
+ SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 29 11:32:38 2019', "ActaValue_3" = 'Fri Mar 29 16:30:04 2019', "x" = '-1', "y" = '-1')
+CREATE  DATAFLOW DF_STG_SFCIMPEXT_CTA::'c15f8b96-5f9a-4d62-ab8c-6474031d9aaf'
+BEGIN
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Description', "Input_2nd_Column_Name" = 'Type', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = '', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>194</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
+GUID::'256949a3-5c6c-4c14-8b6f-9427eb3afaa8' READ __BODI_COPYBOOK_COBOL B7540412 OUTPUT(SFCIMPEXT_CTA)
+SET("Cbl_capture_data_conversion" = 'no', "Cbl_rdr_current_schema" = 'SFCIMPEXT_CTA', "cache" = 'no', "connection_port" = 'no', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'yes', "reader_include_filename" = 'no', "table_weight" = '0');
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>413</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
+GUID::'6510e45f-61cf-438e-8ef0-0178a0015c91' LOAD TABLE DS_TARGET.STG_SAT.SFCIMPEXT_CTA INPUT(Query)
+SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
+<LDRConfigurations>
+<LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_generate_files_only>0</bulk_ldr_generate_files_only>
+<bulk_row_delimiter>&#xA;</bulk_row_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<iq_blk_ldr_binary>yes</iq_blk_ldr_binary>
+<iq_blk_ldr_block_size>500000</iq_blk_ldr_block_size>
+<iq_checkpoint>no</iq_checkpoint>
+<iq_ignore_all_constraints></iq_ignore_all_constraints>
+<iq_ignore_conversion_error>no</iq_ignore_conversion_error>
+<iq_ignore_dataval_constraints></iq_ignore_dataval_constraints>
+<iq_ignore_foreignkey_constraints></iq_ignore_foreignkey_constraints>
+<iq_ignore_null_constraints></iq_ignore_null_constraints>
+<iq_ignore_unique_constraints></iq_ignore_unique_constraints>
+<iq_log_dataval_constraints>no</iq_log_dataval_constraints>
+<iq_log_foreignkey_constraints>no</iq_log_foreignkey_constraints>
+<iq_log_null_constraints>no</iq_log_null_constraints>
+<iq_log_unique_constraints>no</iq_log_unique_constraints>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load>1</loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_post_load1></loader_post_load1>
+<loader_pre_load1></loader_pre_load1>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<mssql_bulk_ldr_mode>truncate</mssql_bulk_ldr_mode>
+<mssql_bulk_ldr_packet_size>0</mssql_bulk_ldr_packet_size>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+<sql_text></sql_text>
+</LDRConfiguration>
+</LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'SFCIMPEXT_CTA', "x" = '480', "y" = '-90')
+GUID::'e2312b7d-7cec-47b8-8490-ff281cf9fc4e' CREATE VIEW Query( TIPOREGI VARCHAR(1)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.TIPOREGI') ,
+ CODENTID VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.CODENTID') ,
+ CODCINTA VARCHAR(2)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.CODCINTA') ,
+ NUMSECUE DECIMAL(8, 0)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.NUMSECUE') ,
+ TIPODATO VARCHAR(2)  SET( "ui_mapping_text" = '\'0\' || to_char(SFCIMPEXT_CTA.TIPODATO)') ,
+ CODAPLRE VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.CODAPLRE') ,
+ CODPROGR VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.CODPROGR') ,
+ DESCCPRO VARCHAR(20)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.DESCCPRO') ,
+ NUMEXTRA DECIMAL(6, 0)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.NUMEXTRA') ,
+ FECHPENV VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.FECHPENV') ,
+ FECHPROC VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.FECHPROC') ,
+ TIPIDCLI VARCHAR(2)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.TIPIDCLI') ,
+ DESCTIDC VARCHAR(30)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.DESCTIDC') ,
+ IDCLIENT VARCHAR(20)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.IDCLIENT') ,
+ CODCUENT VARCHAR(20)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.CODCUENT') ,
+ FECHALTA VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.FECHALTA') ,
+ INDBLQAC VARCHAR(1)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.INDBLQAC') ,
+ FECBLQAC VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.FECBLQAC') ,
+ TEXBLQAC VARCHAR(120)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.TEXBLQAC') ,
+ INDBLQRD VARCHAR(1)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.INDBLQRD') ,
+ FECBLQRD VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.FECBLQRD') ,
+ TEXBLOQRD VARCHAR(120)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.TEXBLOQRD') ,
+ CODCATAL VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.CODCATAL') ,
+ DESCATAL VARCHAR(120)  SET( "ui_mapping_text" = 'SFCIMPEXT_CTA.DESCATAL')  )
+ AS
+SELECT SFCIMPEXT_CTA.TIPOREGI, SFCIMPEXT_CTA.CODENTID, SFCIMPEXT_CTA.CODCINTA, SFCIMPEXT_CTA.NUMSECUE, ('0' || to_char(SFCIMPEXT_CTA.TIPODATO)), SFCIMPEXT_CTA.CODAPLRE, SFCIMPEXT_CTA.CODPROGR, SFCIMPEXT_CTA.DESCCPRO, SFCIMPEXT_CTA.NUMEXTRA, SFCIMPEXT_CTA.FECHPENV, SFCIMPEXT_CTA.FECHPROC, SFCIMPEXT_CTA.TIPIDCLI, SFCIMPEXT_CTA.DESCTIDC, SFCIMPEXT_CTA.IDCLIENT, SFCIMPEXT_CTA.CODCUENT, SFCIMPEXT_CTA.FECHALTA, SFCIMPEXT_CTA.INDBLQAC, SFCIMPEXT_CTA.FECBLQAC, SFCIMPEXT_CTA.TEXBLQAC, SFCIMPEXT_CTA.INDBLQRD, SFCIMPEXT_CTA.FECBLQRD, SFCIMPEXT_CTA.TEXBLOQRD, SFCIMPEXT_CTA.CODCATAL, SFCIMPEXT_CTA.DESCATAL FROM SFCIMPEXT_CTA 
+SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
+;
+
+END
+ SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 29 15:42:47 2019', "ActaValue_3" = 'Fri Mar 29 15:48:40 2019', "x" = '-1', "y" = '-1')
+CREATE  DATAFLOW DF_STG_SFCIMPEXT_MOV::'bc2bfd43-5c8b-4fd5-82ed-55b973ec9ecf'
+BEGIN
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>194</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
+GUID::'cfdff265-f968-4f8d-a0d0-1729977de95c' READ __BODI_COPYBOOK_COBOL B7540412 OUTPUT(SFCIMPEXT_MOV)
+SET("Cbl_rdr_current_schema" = 'SFCIMPEXT_MOV', "connection_port" = 'no');
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'SFCIMPEXT_MOV', "x" = '480', "y" = '-90')
+GUID::'4ceed74a-0a59-4143-b7e6-0cebb43f8f04' CREATE VIEW Query( TIPOREGI VARCHAR(1)  SET( "ui_mapping_text" = 'SFCIMPEXT_MOV.TIPOREGI') ,
+ CODENTID VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_MOV.CODENTID') ,
+ CODCINTA VARCHAR(2)  SET( "ui_mapping_text" = 'SFCIMPEXT_MOV.CODCINTA') ,
+ NUMSECUE DECIMAL(8, 0)  SET( "ui_mapping_text" = 'SFCIMPEXT_MOV.NUMSECUE') ,
+ TIPODATO VARCHAR(2)  SET( "ui_mapping_text" = '\'0\' || to_char(SFCIMPEXT_MOV.TIPODATO)') ,
+ FECALTMV VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_MOV.FECALTMV') ,
+ TEXEXTRA VARCHAR(120)  SET( "ui_mapping_text" = 'SFCIMPEXT_MOV.TEXEXTRA') ,
+ PUNOBTEN DECIMAL(13, 0)  SET( "ui_mapping_text" = 'CF_UnpackNumSignSAT(SFCIMPEXT_MOV.PUNOBTEN)') ,
+ FILLER1 VARCHAR(383)  SET( "ui_mapping_text" = 'SFCIMPEXT_MOV.FILLER1')  )
+ AS
+SELECT SFCIMPEXT_MOV.TIPOREGI, SFCIMPEXT_MOV.CODENTID, SFCIMPEXT_MOV.CODCINTA, SFCIMPEXT_MOV.NUMSECUE, ('0' || to_char(SFCIMPEXT_MOV.TIPODATO)), SFCIMPEXT_MOV.FECALTMV, SFCIMPEXT_MOV.TEXEXTRA, cf_unpacknumsignsat(SFCIMPEXT_MOV.PUNOBTEN), SFCIMPEXT_MOV.FILLER1 FROM SFCIMPEXT_MOV 
+SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
+;
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>422</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
+GUID::'68f8603a-5cae-4ee4-a168-45365566362b' LOAD TABLE DS_TARGET.STG_SAT.SFCIMPEXT_MOV INPUT(Query)
+SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
+<LDRConfigurations>
+<LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_generate_files_only>0</bulk_ldr_generate_files_only>
+<bulk_row_delimiter>&#xA;</bulk_row_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<iq_blk_ldr_binary>yes</iq_blk_ldr_binary>
+<iq_blk_ldr_block_size>500000</iq_blk_ldr_block_size>
+<iq_checkpoint>no</iq_checkpoint>
+<iq_ignore_all_constraints></iq_ignore_all_constraints>
+<iq_ignore_conversion_error>no</iq_ignore_conversion_error>
+<iq_ignore_dataval_constraints></iq_ignore_dataval_constraints>
+<iq_ignore_foreignkey_constraints></iq_ignore_foreignkey_constraints>
+<iq_ignore_null_constraints></iq_ignore_null_constraints>
+<iq_ignore_unique_constraints></iq_ignore_unique_constraints>
+<iq_log_dataval_constraints>no</iq_log_dataval_constraints>
+<iq_log_foreignkey_constraints>no</iq_log_foreignkey_constraints>
+<iq_log_null_constraints>no</iq_log_null_constraints>
+<iq_log_unique_constraints>no</iq_log_unique_constraints>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load>1</loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_post_load1></loader_post_load1>
+<loader_pre_load1></loader_pre_load1>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<mssql_bulk_ldr_mode>truncate</mssql_bulk_ldr_mode>
+<mssql_bulk_ldr_packet_size>0</mssql_bulk_ldr_packet_size>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+<sql_text></sql_text>
+</LDRConfiguration>
+</LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
+
+END
+ SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 29 15:48:40 2019', "ActaValue_3" = 'Wed Apr  3 15:40:00 2019', "x" = '-1', "y" = '-1')
+CREATE  DATAFLOW DF_STG_SFCIMPEXT_PTO::'72030a98-8e52-435d-8739-a99eca456fe8'
+BEGIN
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Name" = '143', "Output_Width_Type" = '116', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'SFCIMPEXT_PTO', "x" = '480', "y" = '-90')
+GUID::'b50ed1ca-170f-44a5-97c7-6812f893a7e7' CREATE VIEW Query( TIPOREGI VARCHAR(1)  SET( "ui_mapping_text" = 'SFCIMPEXT_PTO.TIPOREGI') ,
+ CODENTID VARCHAR(8)  SET( "ui_mapping_text" = 'SFCIMPEXT_PTO.CODENTID') ,
+ CODCINTA VARCHAR(2)  SET( "ui_mapping_text" = 'SFCIMPEXT_PTO.CODCINTA') ,
+ NUMSECUE DECIMAL(8, 0)  SET( "ui_mapping_text" = 'SFCIMPEXT_PTO.NUMSECUE') ,
+ TIPODATO VARCHAR(2)  SET( "ui_mapping_text" = '\'0\' || to_char(SFCIMPEXT_PTO.TIPODATO)') ,
+ TIPOPUNT VARCHAR(2)  SET( "ui_mapping_text" = 'SFCIMPEXT_PTO.TIPOPUNT') ,
+ SALULTEX DECIMAL(13, 0)  SET( "ui_mapping_text" = 'CF_UnpackNumSignSAT(SFCIMPEXT_PTO.SALULTEX)') ,
+ SALACTUA DECIMAL(13, 0)  SET( "ui_mapping_text" = 'CF_UnpackNumSignSAT(SFCIMPEXT_PTO.SALACTUA)') ,
+ FILLER1 VARCHAR(496)  SET( "ui_mapping_text" = 'SFCIMPEXT_PTO.FILLER1')  )
+ AS
+SELECT SFCIMPEXT_PTO.TIPOREGI, SFCIMPEXT_PTO.CODENTID, SFCIMPEXT_PTO.CODCINTA, SFCIMPEXT_PTO.NUMSECUE, ('0' || to_char(SFCIMPEXT_PTO.TIPODATO)), SFCIMPEXT_PTO.TIPOPUNT, cf_unpacknumsignsat(SFCIMPEXT_PTO.SALULTEX), cf_unpacknumsignsat(SFCIMPEXT_PTO.SALACTUA), SFCIMPEXT_PTO.FILLER1 FROM SFCIMPEXT_PTO 
+SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
+;
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>194</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
+GUID::'9d6f84d8-f8e7-41a0-a5ae-096e232ccd67' READ __BODI_COPYBOOK_COBOL B7540412 OUTPUT(SFCIMPEXT_PTO)
+SET("Cbl_rdr_current_schema" = 'SFCIMPEXT_PTO', "connection_port" = 'no');
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>672</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
+GUID::'320dab1d-7681-4df7-b210-fdcab466015a' LOAD TABLE DS_TARGET.STG_SAT.SFCIMPEXT_PTO INPUT(Query)
+SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
+<LDRConfigurations>
+<LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_generate_files_only>0</bulk_ldr_generate_files_only>
+<bulk_row_delimiter>&#xA;</bulk_row_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<iq_blk_ldr_binary>yes</iq_blk_ldr_binary>
+<iq_blk_ldr_block_size>500000</iq_blk_ldr_block_size>
+<iq_checkpoint>no</iq_checkpoint>
+<iq_ignore_all_constraints></iq_ignore_all_constraints>
+<iq_ignore_conversion_error>no</iq_ignore_conversion_error>
+<iq_ignore_dataval_constraints></iq_ignore_dataval_constraints>
+<iq_ignore_foreignkey_constraints></iq_ignore_foreignkey_constraints>
+<iq_ignore_null_constraints></iq_ignore_null_constraints>
+<iq_ignore_unique_constraints></iq_ignore_unique_constraints>
+<iq_log_dataval_constraints>no</iq_log_dataval_constraints>
+<iq_log_foreignkey_constraints>no</iq_log_foreignkey_constraints>
+<iq_log_null_constraints>no</iq_log_null_constraints>
+<iq_log_unique_constraints>no</iq_log_unique_constraints>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load>1</loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_post_load1></loader_post_load1>
+<loader_pre_load1></loader_pre_load1>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<mssql_bulk_ldr_mode>truncate</mssql_bulk_ldr_mode>
+<mssql_bulk_ldr_packet_size>0</mssql_bulk_ldr_packet_size>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+<sql_text></sql_text>
+</LDRConfiguration>
+</LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
+
+END
+ SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaName_4" = 'RDescription', "ActaName_5" = 'RVersion', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 29 11:32:39 2019', "ActaValue_3" = 'Fri Mar 29 15:20:18 2019', "ActaValue_4" = '01-POSICIONES DE CREDITO', "ActaValue_5" = '9d025a2acc2e01074feea66c1014a71488a04c30', "x" = '-1', "y" = '-1')
+CREATE SESSION JOB_B7540412::'06a51474-9638-48c2-8191-899267dc871c'( )
+DECLARE
+     GLOBAL $G_NOMBRE_JOB VARCHAR(50) ;
+     GLOBAL $G_FECHA_PROCESO DATETIME(9) ;
+     GLOBAL $G_ID_EJECUCION INT ;
+     GLOBAL $G_RUTA VARCHAR(1000) ;
+     GLOBAL $G_NOMBRE_ARCHIVO VARCHAR(1000) ;
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>288</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INICIAL', "ui_script_text" = 'print(\'--version: 6a55545\');
+
+##INICIALIZACIÓN DE VARIABLES
+
+$G_NOMBRE_JOB = job_name( );
+$G_FECHA_PROCESO  = sysdate( );
+
+$G_RUTA = sql( \'DS_CONTROL\', \'SELECT VALOR FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \\\'RUTA_ARCHIVO\\\'\');
+sql( \'DS_CONTROL\', \'COMMIT\');
+
+
+
+
+', "x" = '90', "y" = '-90')
+BEGIN_SCRIPT
+print('--version: 6a55545');$G_NOMBRE_JOB = job_name();$G_FECHA_PROCESO = sysdate();$G_RUTA = sql('DS_CONTROL', 'SELECT VALOR FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'RUTA_ARCHIVO\'');sql('DS_CONTROL', 'COMMIT');END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try182', "x" = '480', "y" = '-90')
+TRY
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>275</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '870', "y" = '-90')
+CALL PLAN WF_B7540412::'15606039-76e9-471a-9b93-fe59d32ec5a5'();
+END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch186', "x" = '1260', "y" = '-90')
+CATCH (210101)
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>291</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_ERROR', "ui_script_text" = 'print(error_message() );', "x" = '994', "y" = '-303')
+BEGIN_SCRIPT
+print(error_message());END
+END
+
+END_TRY
+END
+ SET ("job_checkpoint_enabled" = 'no', "job_collect_statistics" = 'no', "job_collect_statistics_monitor" = 'no', "job_create_debug_package" = 'no', "job_enable_assemblers" = 'yes', "job_enable_audit" = 'yes', "job_enable_dataquality" = 'yes', "job_export_repo" = 'no', "job_export_reports" = 'no', "job_guid" = '06a51474-9638-48c2-8191-899267dc871c', "job_isrecoverable" = 'no', "job_mode" = 'Multi-Process', "job_monitor_sample_rate" = '1000', "job_monitor_timer_rate" = '5', "job_name" = 'JOB_B7540412', "job_print_version" = 'no', "job_testmode_enabled" = 'no', "job_trace_abapquery" = 'no', "job_trace_all" = 'no', "job_trace_ascomm" = 'no', "job_trace_assemblers" = 'no', "job_trace_audit" = 'no', "job_trace_dataflow" = 'yes', "job_trace_idoc_file" = 'no', "job_trace_memory_loader" = 'no', "job_trace_memory_reader" = 'no', "job_trace_optimized_dataflow" = 'no', "job_trace_parallel_execution" = 'no', "job_trace_rfc_function" = 'no', "job_trace_row" = 'no', "job_trace_script" = 'no', "job_trace_session" = 'yes', "job_trace_sql_only" = 'no', "job_trace_sqlfunctions" = 'no', "job_trace_sqlloaders" = 'no', "job_trace_sqlreaders" = 'no', "job_trace_sqltransforms" = 'no', "job_trace_stored_procedure" = 'no', "job_trace_table" = 'no', "job_trace_table_reader" = 'no', "job_trace_transform" = 'no', "job_trace_userfunction" = 'no', "job_trace_usertransform" = 'no', "job_trace_workflow" = 'yes', "job_type" = 'batch', "job_use_statistics" = 'yes', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 29 11:10:43 2019', "ActaValue_3" = 'Fri Mar 29 16:32:15 2019', "x" = '-1', "y" = '-1')
+CREATE PLAN WF_B7540412::'15606039-76e9-471a-9b93-fe59d32ec5a5'( )
+DECLARE
+     $L_NOMBRE_WF VARCHAR(50) ;
+     $L_CONTADOR INT ;
+     $L_ID_EJECUCION_MALLA INT ;
+BEGIN
+ AlGUIComment ("If_condition" = 'CF_VERIFICA_MALLA() = 1', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>375</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'CDN_EXISTE_MALLA', "x" = '1013', "y" = '-322')
+IF ((CF_VERIFICA_MALLA() = 1) )
+BEGIN
+ AlGUIComment ("If_condition" = '(CF_PROCESO_NORMAL() = 0) ', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>294</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'TIPO_PROCESO', "x" = '1006', "y" = '-384')
+IF ((CF_PROCESO_NORMAL() = 0) )
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>328</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INICIO_DF', "ui_script_text" = '
+$L_ID_EJECUCION_MALLA = CF_EJECUCION_MALLA();
+
+
+$G_ID_EJECUCION  = $L_ID_EJECUCION_MALLA ;
+print( \'--------------------------------EJECUCIÓN DATOS\');
+print( $G_ID_EJECUCION );
+
+$G_NOMBRE_ARCHIVO = sql( \'DS_CONTROL\', \'SELECT NOMBRE_ARCHIVO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$G_ID_EJECUCION]\');
+
+print( $G_NOMBRE_ARCHIVO );
+
+
+CF_ENVIO_CORREO(\'INICIO DE PROCESO [$L_NOMBRE_WF]\', \'SE INICIA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]\');
+
+', "x" = '90', "y" = '-90')
+BEGIN_SCRIPT
+$L_ID_EJECUCION_MALLA = CF_EJECUCION_MALLA();$G_ID_EJECUCION = $L_ID_EJECUCION_MALLA;print('--------------------------------EJECUCIÓN DATOS');print($G_ID_EJECUCION);$G_NOMBRE_ARCHIVO = sql('DS_CONTROL', 'SELECT NOMBRE_ARCHIVO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$G_ID_EJECUCION]');print($G_NOMBRE_ARCHIVO);cf_envio_correo('INICIO DE PROCESO [$L_NOMBRE_WF]', 'SE INICIA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]');END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>378</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
+CALL PLAN WF_SFCIMPEXT_CTA::'b0885e3c-6718-4a14-9375-76be8f174186'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>388</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '870', "y" = '-90')
+CALL PLAN WF_SFCIMPEXT_MOV::'35298f92-56c5-4677-901d-ca987e942aa0'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>375</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1260', "y" = '-90')
+CALL PLAN WF_SFCIMPEXT_PTO::'5a6219bc-f3ab-4f8a-b524-24bedc30f4b9'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>382</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1650', "y" = '-90')
+CALL PLAN WF_SFCIMPEXT_CAD::'eb559c62-9ea0-4787-93c6-95d384e30ebd'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>382</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '2040', "y" = '-90')
+CALL PLAN WF_SFCIMPEXT_BON::'040f4439-b5a7-46c6-a825-35a73b5719ac'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SC_FIN', "ui_script_text" = '##ENVIO DE CORREO DE FIN DE PROCESO
+CF_ENVIO_CORREO(\'FIN DE PROCESO [$L_NOMBRE_WF]\', \'SE FINALIZA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]\');
+
+##CAMBIO ESTADO DE MALLA A FINALIZADO
+CF_FIN_MALLA();
+
+
+
+
+
+', "x" = '2430', "y" = '-90')
+BEGIN_SCRIPT
+cf_envio_correo('FIN DE PROCESO [$L_NOMBRE_WF]', 'SE FINALIZA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]');CF_FIN_MALLA();END
+END
+ELSE
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>328</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INICIO_DF', "ui_script_text" = '
+$L_ID_EJECUCION_MALLA = CF_EJECUCION_MALLA();
+
+
+$G_ID_EJECUCION  = $L_ID_EJECUCION_MALLA ;
+print( \'--------------------------------EJECUCIÓN DATOS REPROCESO\');
+print( $G_ID_EJECUCION );
+
+$G_NOMBRE_ARCHIVO = sql( \'DS_CONTROL\', \'SELECT NOMBRE_ARCHIVO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$G_ID_EJECUCION]\');
+
+
+CF_ENVIO_CORREO(\'INICIO DE PROCESO [$L_NOMBRE_WF]\', \'SE INICIA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]\');
+
+', "x" = '90', "y" = '-90')
+BEGIN_SCRIPT
+$L_ID_EJECUCION_MALLA = CF_EJECUCION_MALLA();$G_ID_EJECUCION = $L_ID_EJECUCION_MALLA;print('--------------------------------EJECUCIÓN DATOS REPROCESO');print($G_ID_EJECUCION);$G_NOMBRE_ARCHIVO = sql('DS_CONTROL', 'SELECT NOMBRE_ARCHIVO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$G_ID_EJECUCION]');cf_envio_correo('INICIO DE PROCESO [$L_NOMBRE_WF]', 'SE INICIA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]');END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>425</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
+CALL PLAN WF_SFCIMPEXT_CTA__R::'06f1b962-5d55-414f-b1c3-5559c86023e2'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>435</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '870', "y" = '-90')
+CALL PLAN WF_SFCIMPEXT_MOV__R::'5f018361-61bb-48b5-8636-f1194285a096'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>422</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1260', "y" = '-90')
+CALL PLAN WF_SFCIMPEXT_PTO__R::'5df80a72-fc35-4dee-9e33-e59e15a8c838'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>428</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1650', "y" = '-90')
+CALL PLAN WF_SFCIMPEXT_CAD__R::'dc712215-7f06-4e6b-b661-d884c1e5ad2f'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>428</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '2040', "y" = '-90')
+CALL PLAN WF_SFCIMPEXT_BON__R::'dc761a22-6989-41d9-982f-6a16b1b6bf63'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SC_FIN', "ui_script_text" = '##ENVIO DE CORREO DE FIN DE PROCESO
+CF_ENVIO_CORREO(\'FIN DE PROCESO [$L_NOMBRE_WF]\', \'SE FINALIZA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]\');
+
+##CAMBIO ESTADO DE MALLA A FINALIZADO
+CF_FIN_MALLA();
+
+
+
+
+
+', "x" = '2430', "y" = '-90')
+BEGIN_SCRIPT
+cf_envio_correo('FIN DE PROCESO [$L_NOMBRE_WF]', 'SE FINALIZA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]');CF_FIN_MALLA();END
+END
+END
+ELSE
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>300</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SC_ERROR_404', "ui_script_text" = '##ERROR NO EXISTE MALLA
+PRINT(\'SCRIPT NO EXISTE LA MALLA\');
+##CF_NO_EXISTE_MALLA();
+
+##CF_ENVIO_CORREO(\'ERROR AL EJECUTAR [$L_NOMBRE_WF], NO EXISTE EN CATALOGO DE MALLAS\', \'NO SE ENCONTRÓ MALLA\');
+
+print( \'LA MALLA NO EXISTE\');', "x" = '978', "y" = '-334')
+BEGIN_SCRIPT
+print('SCRIPT NO EXISTE LA MALLA');print('LA MALLA NO EXISTE');END
+END
+END
+ SET ("run_once" = 'no', "unit_of_recovery" = 'no', "workflow_type" = 'Regular')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_modified', "ActaName_3" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 29 15:57:14 2019', "ActaValue_3" = 'Fri Mar 29 16:19:36 2019', "x" = '-1', "y" = '-1')
+CREATE PLAN WF_SFCIMPEXT_BON::'040f4439-b5a7-46c6-a825-35a73b5719ac'( )
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>416</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '90', "y" = '-90')
+CALL DATAFLOW DF_STG_SFCIMPEXT_BON::'a67bf4d4-80a6-4ae3-9600-2ad180f932c7'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>372</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
+CALL DATAFLOW DF_SFCIMPEXT_BON::'794e120d-d7bb-4925-ac9f-1818495b0924'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Script6593', "ui_script_text" = 'CF_CUENTA_DATOS($G_ID_EJECUCION );', "x" = '870', "y" = '-90')
+BEGIN_SCRIPT
+cf_cuenta_datos($G_ID_EJECUCION);END
+END
+ SET ("run_once" = 'no', "unit_of_recovery" = 'no', "workflow_type" = 'Regular')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_modified', "ActaName_3" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 29 15:58:06 2019', "ActaValue_3" = 'Fri Mar 29 16:30:04 2019', "x" = '-1', "y" = '-1')
+CREATE PLAN WF_SFCIMPEXT_BON__R::'dc761a22-6989-41d9-982f-6a16b1b6bf63'( )
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Script5266', "ui_script_text" = 'print( \'WF ABAJO\');
+print( workflow_name( ));
+
+CF_ELIMINA_DATOS(workflow_name( ));', "x" = '90', "y" = '-90')
+BEGIN_SCRIPT
+print('WF ABAJO');print(workflow_name());cf_elimina_datos(workflow_name());END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>416</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
+CALL DATAFLOW DF_STG_SFCIMPEXT_BON::'a67bf4d4-80a6-4ae3-9600-2ad180f932c7'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>372</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '870', "y" = '-90')
+CALL DATAFLOW DF_SFCIMPEXT_BON::'794e120d-d7bb-4925-ac9f-1818495b0924'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Script6593', "ui_script_text" = 'CF_CUENTA_DATOS($G_ID_EJECUCION );', "x" = '1260', "y" = '-90')
+BEGIN_SCRIPT
+cf_cuenta_datos($G_ID_EJECUCION);END
+END
+ SET ("run_once" = 'no', "unit_of_recovery" = 'no', "workflow_type" = 'Regular')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_modified', "ActaName_3" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 29 15:57:14 2019', "ActaValue_3" = 'Fri Mar 29 15:56:28 2019', "x" = '-1', "y" = '-1')
+CREATE PLAN WF_SFCIMPEXT_CAD::'eb559c62-9ea0-4787-93c6-95d384e30ebd'( )
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>416</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '90', "y" = '-90')
+CALL DATAFLOW DF_STG_SFCIMPEXT_CAD::'a2071663-3c8c-4651-b9af-ca9c307dbb16'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>372</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
+CALL DATAFLOW DF_SFCIMPEXT_CAD::'5b807451-07cb-45f5-8b26-732cb7c429dc'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Script6593', "ui_script_text" = 'CF_CUENTA_DATOS($G_ID_EJECUCION );', "x" = '870', "y" = '-90')
+BEGIN_SCRIPT
+cf_cuenta_datos($G_ID_EJECUCION);END
+END
+ SET ("run_once" = 'no', "unit_of_recovery" = 'no', "workflow_type" = 'Regular')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_modified', "ActaName_3" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 29 15:58:06 2019', "ActaValue_3" = 'Fri Mar 29 16:19:36 2019', "x" = '-1', "y" = '-1')
+CREATE PLAN WF_SFCIMPEXT_CAD__R::'dc712215-7f06-4e6b-b661-d884c1e5ad2f'( )
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Script5266', "ui_script_text" = 'print( \'WF ABAJO\');
+print( workflow_name( ));
+
+CF_ELIMINA_DATOS(workflow_name( ));', "x" = '90', "y" = '-90')
+BEGIN_SCRIPT
+print('WF ABAJO');print(workflow_name());cf_elimina_datos(workflow_name());END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>416</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
+CALL DATAFLOW DF_STG_SFCIMPEXT_CAD::'a2071663-3c8c-4651-b9af-ca9c307dbb16'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>372</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '870', "y" = '-90')
+CALL DATAFLOW DF_SFCIMPEXT_CAD::'5b807451-07cb-45f5-8b26-732cb7c429dc'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Script6593', "ui_script_text" = 'CF_CUENTA_DATOS($G_ID_EJECUCION );', "x" = '1260', "y" = '-90')
+BEGIN_SCRIPT
+cf_cuenta_datos($G_ID_EJECUCION);END
+END
+ SET ("run_once" = 'no', "unit_of_recovery" = 'no', "workflow_type" = 'Regular')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_modified', "ActaName_3" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 29 16:38:34 2019', "ActaValue_3" = 'Fri Mar 29 11:32:40 2019', "x" = '-1', "y" = '-1')
+CREATE PLAN WF_SFCIMPEXT_CTA::'b0885e3c-6718-4a14-9375-76be8f174186'( )
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>416</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '90', "y" = '-90')
+CALL DATAFLOW DF_STG_SFCIMPEXT_CTA::'c15f8b96-5f9a-4d62-ab8c-6474031d9aaf'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>369</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '506', "y" = '-731')
+CALL DATAFLOW DF_SFCIMPEXT_CTA::'d571e5c8-d8b4-48e8-bc9d-26d7d5564eba'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Script6593', "ui_script_text" = 'CF_CUENTA_DATOS($G_ID_EJECUCION );', "x" = '870', "y" = '-90')
+BEGIN_SCRIPT
+cf_cuenta_datos($G_ID_EJECUCION);END
+END
+ SET ("run_once" = 'no', "unit_of_recovery" = 'no', "workflow_type" = 'Regular')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_modified', "ActaName_3" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 29 15:34:15 2019', "ActaValue_3" = 'Fri Mar 29 11:16:58 2019', "x" = '-1', "y" = '-1')
+CREATE PLAN WF_SFCIMPEXT_CTA__R::'06f1b962-5d55-414f-b1c3-5559c86023e2'( )
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Script5266', "ui_script_text" = 'print( \'WF ABAJO\');
+print( workflow_name( ));
+
+CF_ELIMINA_DATOS(workflow_name( ));', "x" = '90', "y" = '-90')
+BEGIN_SCRIPT
+print('WF ABAJO');print(workflow_name());cf_elimina_datos(workflow_name());END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>444</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
+CALL DATAFLOW DF_STG_SFCIMPEXT_CTA::'c15f8b96-5f9a-4d62-ab8c-6474031d9aaf'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>369</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '870', "y" = '-90')
+CALL DATAFLOW DF_SFCIMPEXT_CTA::'d571e5c8-d8b4-48e8-bc9d-26d7d5564eba'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Script6593', "ui_script_text" = 'CF_CUENTA_DATOS($G_ID_EJECUCION );', "x" = '1260', "y" = '-90')
+BEGIN_SCRIPT
+cf_cuenta_datos($G_ID_EJECUCION);END
+END
+ SET ("run_once" = 'no', "unit_of_recovery" = 'no', "workflow_type" = 'Regular')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_modified', "ActaName_3" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 29 15:32:20 2019', "ActaValue_3" = 'Fri Mar 29 11:32:40 2019', "x" = '-1', "y" = '-1')
+CREATE PLAN WF_SFCIMPEXT_MOV::'35298f92-56c5-4677-901d-ca987e942aa0'( )
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>416</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '90', "y" = '-90')
+CALL DATAFLOW DF_STG_SFCIMPEXT_MOV::'bc2bfd43-5c8b-4fd5-82ed-55b973ec9ecf'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>378</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
+CALL DATAFLOW DF_SFCIMPEXT_MOV::'d864d5c4-42c9-441a-98c8-3cfe1ae9c18a'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Script6593', "ui_script_text" = 'CF_CUENTA_DATOS($G_ID_EJECUCION );', "x" = '870', "y" = '-90')
+BEGIN_SCRIPT
+cf_cuenta_datos($G_ID_EJECUCION);END
+END
+ SET ("run_once" = 'no', "unit_of_recovery" = 'no', "workflow_type" = 'Regular')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_modified', "ActaName_3" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 29 15:48:40 2019', "ActaValue_3" = 'Fri Mar 29 15:42:47 2019', "x" = '-1', "y" = '-1')
+CREATE PLAN WF_SFCIMPEXT_MOV__R::'5f018361-61bb-48b5-8636-f1194285a096'( )
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Script5266', "ui_script_text" = 'print( \'WF ABAJO\');
+print( workflow_name( ));
+
+CF_ELIMINA_DATOS(workflow_name( ));', "x" = '90', "y" = '-90')
+BEGIN_SCRIPT
+print('WF ABAJO');print(workflow_name());cf_elimina_datos(workflow_name());END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>453</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
+CALL DATAFLOW DF_STG_SFCIMPEXT_MOV::'bc2bfd43-5c8b-4fd5-82ed-55b973ec9ecf'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>378</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '870', "y" = '-90')
+CALL DATAFLOW DF_SFCIMPEXT_MOV::'d864d5c4-42c9-441a-98c8-3cfe1ae9c18a'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Script6593', "ui_script_text" = 'CF_CUENTA_DATOS($G_ID_EJECUCION );', "x" = '1260', "y" = '-90')
+BEGIN_SCRIPT
+cf_cuenta_datos($G_ID_EJECUCION);END
+END
+ SET ("run_once" = 'no', "unit_of_recovery" = 'no', "workflow_type" = 'Regular')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_modified', "ActaName_3" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 29 15:57:14 2019', "ActaValue_3" = 'Fri Mar 29 15:56:28 2019', "x" = '-1', "y" = '-1')
+CREATE PLAN WF_SFCIMPEXT_PTO::'5a6219bc-f3ab-4f8a-b524-24bedc30f4b9'( )
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>416</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '284', "y" = '-769')
+CALL DATAFLOW DF_STG_SFCIMPEXT_PTO::'72030a98-8e52-435d-8739-a99eca456fe8'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>366</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1134', "y" = '-963')
+CALL DATAFLOW DF_SFCIMPEXT_PTO::'0eb3780c-8025-4066-95ad-0168ebd71def'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Script6593', "ui_script_text" = 'CF_CUENTA_DATOS($G_ID_EJECUCION );', "x" = '870', "y" = '-90')
+BEGIN_SCRIPT
+cf_cuenta_datos($G_ID_EJECUCION);END
+END
+ SET ("run_once" = 'no', "unit_of_recovery" = 'no', "workflow_type" = 'Regular')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_modified', "ActaName_3" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 29 15:48:40 2019', "ActaValue_3" = 'Fri Mar 29 15:56:28 2019', "x" = '-1', "y" = '-1')
+CREATE PLAN WF_SFCIMPEXT_PTO__R::'5df80a72-fc35-4dee-9e33-e59e15a8c838'( )
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Script5266', "ui_script_text" = 'print( \'WF ABAJO\');
+print( workflow_name( ));
+
+CF_ELIMINA_DATOS(workflow_name( ));', "x" = '90', "y" = '-90')
+BEGIN_SCRIPT
+print('WF ABAJO');print(workflow_name());cf_elimina_datos(workflow_name());END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>441</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
+CALL DATAFLOW DF_STG_SFCIMPEXT_PTO::'72030a98-8e52-435d-8739-a99eca456fe8'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>366</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '870', "y" = '-90')
+CALL DATAFLOW DF_SFCIMPEXT_PTO::'0eb3780c-8025-4066-95ad-0168ebd71def'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Script6593', "ui_script_text" = 'CF_CUENTA_DATOS($G_ID_EJECUCION );', "x" = '1260', "y" = '-90')
+BEGIN_SCRIPT
+cf_cuenta_datos($G_ID_EJECUCION);END
+END
+ SET ("run_once" = 'no', "unit_of_recovery" = 'no', "workflow_type" = 'Regular')

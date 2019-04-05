@@ -1,0 +1,69 @@
+DROP TABLE IF EXISTS SAT.TB_BALANCE_SALDOS_DIARIOS;
+COMMIT;
+CREATE TABLE IF NOT EXISTS SAT.TB_BALANCE_SALDOS_DIARIOS (
+ IDENTIFICADOR_EJECUCION INTEGER
+,FECENVIO          date
+,CODENT_D          varchar(4)
+,CUENTA          varchar(12)
+,PAN_TI          varchar(22)
+,CODBLQ_PAN          decimal(2,0)
+,UNICO          varchar(22)
+,FECCADTAR          decimal(6,0)
+,MOTBLQ_PAN          decimal(2,0)
+,NUMORDEN          decimal(12,0)
+,FECULTCAR          date
+,PRODUCTO          varchar(2)
+,SUBPRODU          varchar(4)
+,LIMCRECTA          decimal(17,2)
+,LIMCRECTATEM          decimal(17,2)
+,FECINITEM          date
+,FECFINTEM          date
+,SALAUTCRE          decimal(17,2)
+,SALDISCRE          decimal(17,2)
+,LIMCRECTAC          decimal(17,2)
+,SALAUTCREC          decimal(17,2)
+,SALDISCREC          decimal(17,2)
+,SALDISP_C          numeric(18,2)
+,ANR_BALANCE_MTH          numeric(20,4)
+,FECPROVEN          date
+,FECULTVEN          date
+,FECRESOL          date
+,IDENTCLI          varchar(8)
+,CODESTCTA          decimal(2,0)
+,FECULTESTCTA          date
+,CODCONVEN          varchar(4)
+,INDCTAEMP          decimal(1,0)
+,INDDOMCARCRE          varchar(1)
+,CTACARGO          varchar(30)
+,FORPAGO          decimal(2,0)
+,INDSITCTA          decimal(1,0)
+,COMISIONES          decimal(17,2)
+,INTERESES          decimal(17,2)
+,CAPITAL          decimal(17,2)
+,GRUPOLIQ          decimal(2,0)
+,CODBLQULT          decimal(2,0)
+,IMPMINORIGINAL          decimal(17,2)
+,IMPMINPENDIENTE          decimal(17,2)
+,IMP_PAGADO          numeric(18,2)
+,MOTBLQ          decimal(2,0)
+,CODVIAJFRE          varchar(25)
+,FECALTAVIAJ          varchar(10)
+,INDCLICUMM          varchar(1)
+,INDCLICUMC          varchar(1)
+,FECCLICUM          varchar(10)
+,CLASIFRISAT          varchar(2)
+,CLASIFRIREG          varchar(2)
+,CLASIFRIMDE          varchar(5)
+,TASAEFECMAX          decimal(7,4)
+,TIPOREG          varchar(2)
+,SITUACION          decimal(2,0)
+,IMPCONT          decimal(17,2)
+,IMPAGO          decimal(17,2)
+,IMPAPL          decimal(17,2)
+,IMP_PENDIENTE          numeric(18,2)
+,FECULTAPL          date
+,FECENVCOB          date
+,BALMASALTO          decimal(17,2)
+,FECHA_BALMASALTO          date
+)
+COMMIT;

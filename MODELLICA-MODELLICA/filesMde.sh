@@ -11,5 +11,5 @@
 ##  ********************************************************/ 
 
 
-cd /datos/SAT/mde/
+cd /data/SAT/mde
   ls -I listadoArchivos.txt -I All.xml *.xml > listadoArchivosXML.txt

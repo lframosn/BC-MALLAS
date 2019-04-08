@@ -18,7 +18,7 @@ archivodestinoMOE=MOEDecHistory_cus_adm.dat
 archivoSCO=DecHistory_cus_adm_score.dat
 archivodestinoSCO=SCODecHistory_cus_adm_score.dat
 
-cd /datos/SAT/mde
+cd /data/SAT/mde
 
 #### procesamiento MOE
 

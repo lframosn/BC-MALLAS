@@ -10,6 +10,6 @@
 ##  ********************************************************/
 
 
-cd /datos/SAT/mde
+cd /data/SAT/mde
 mv $1 ./procesados
 

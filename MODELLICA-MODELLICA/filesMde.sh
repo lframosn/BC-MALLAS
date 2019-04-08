@@ -1,13 +1,13 @@
 ##/********************************************************           
-##  * filesMde.sh		                                   *   
+##  * filesMde.sh		                           *   
 ##  *                                                      *   
-##  * Author:  Mario Valdez | Gyssa                      *   
+##  * Author:  Mario Valdez | Gyssa                        *   
 ##  *                                                      *   
 ##  * Purpose:  Generar un archivo listando todos los      * 
-##              archivo cuyo nombre incluya .xml        *   
+##              archivo cuyo nombre incluya .xml           *   
 ##  *                                                      *   
-##  * Usage:                     *   
-##  *      JOB_LOAD_FILESNAMES		                   *   
+##  * Usage:                    			   *   
+##  *      JOB_LOAD_FILESNAMES_MDE                         *   
 ##  ********************************************************/ 
 
 

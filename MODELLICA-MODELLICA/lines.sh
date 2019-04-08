@@ -1,3 +1,18 @@
+##/********************************************************
+##  * files.sh                                             *
+##  *                                                      *
+##  * Author:  Mario Valdez | Gyssa                        *
+##  *                                                      *
+##  * Purpose:  recibe un archivo que resumen n            *
+##		transacciones en formato xml y este es     *
+##		divido en xml individuales                 *
+##  *                                                      *
+##  * Usage:                                               *
+##  *      JOB_LOAD_FILESNAMES_MDE                         *
+##  ********************************************************/
+
+
+
 archivoMOE=DecHistory_cus_adm.dat
 archivodestinoMOE=MOEDecHistory_cus_adm.dat
 archivoSCO=DecHistory_cus_adm_score.dat

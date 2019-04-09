@@ -68,6 +68,7 @@ SELECT   B.FECENVIO
         ,B.FECENVCOB         
         ,B.BALMASALTO        
         ,B.FECHA_BALMASALTO   
+		,B.IMP_LIN_DEUDA
         ,M.DIASMORA
         ,M.BUCKET_MORA
         ,M.MONTO_MORAINICIAL

@@ -65,5 +65,6 @@ CREATE TABLE IF NOT EXISTS SAT.TB_BALANCE_SALDOS_DIARIOS (
 ,FECENVCOB          date
 ,BALMASALTO          decimal(17,2)
 ,FECHA_BALMASALTO          date
+,IMP_LIN_DEUDA          numeric(18,2)
 )
 COMMIT;

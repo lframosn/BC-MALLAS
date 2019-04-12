@@ -1,2 +1,3 @@
 190305: Se agrega el tipo de movimiento (TIPMOV) 3 al copyobook para poder descartar este tipo de movimiento.
 190212: Correccion al ETL con respecto al tipo de movimiento. Que aplique el filtro para cada tipo de movimiento
+190412: unsigned function

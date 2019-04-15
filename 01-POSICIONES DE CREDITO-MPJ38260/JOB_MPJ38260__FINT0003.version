@@ -2,3 +2,4 @@
 190219: duplicados STG_SAT en tipo de record CU corregido.
 190205:	Correccion de ETL y revisión estructura de tablas completa.
 190411: incorporacion unsigned data.
+190415: cambios en los registros DC y CU. nuevos campos y mod/fillers.

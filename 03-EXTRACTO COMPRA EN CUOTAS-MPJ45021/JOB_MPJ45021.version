@@ -1,2 +1,3 @@
 190205: Flujo del ETL y revisión de todas las estructuras de tablas
-199411: incorporacion de unsigned.
+190411: incorporacion de unsigned.
+190415: Cambio tipo de registro FI, filler recortado

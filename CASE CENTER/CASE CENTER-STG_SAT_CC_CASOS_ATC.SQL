@@ -1,18 +1,21 @@
-drop table IF EXISTS STG_SAT.CC_CASOS_ATC;  CREATE TABLE IF NOT EXISTS STG_SAT.CC_CASOS_ATC  ( 	NUMERO_DE_CASO	VARCHAR	(21)	--numero de caso
-,	CODIGO_GESTION	VARCHAR	(10)	--codigo gestion
-,	GESTION_DESCRIPCION	VARCHAR	(100)	--gestion descripcion
-,	FECHA_APERTURA	VARCHAR(23)		--fecha apertura
-,	FECHA_MODIFICACION	VARCHAR(23)		--fecha modificacion
-,	DESCRIPCION_DEL_CASO	VARCHAR	(6000)	--descripcion del caso
-,	PAN	VARCHAR	(22)	--pan
-,	NUMERO_DE_CONTRATO	VARCHAR	(12)	--numero de contrato
-,	NOMBRE_1	VARCHAR	(40)	--nombre 1
-,	APELLIDO_1	VARCHAR	(36)	--apellido 1
-,	APELLIDO_2	VARCHAR	(36)	--apellido 2
-,	RECORD_ID_CASECENTER	VARCHAR	(30)	--record id casecenter
-,	CUSCAID	VARCHAR	(255)	--cuscaid
-,	CREATED_BY	VARCHAR	(255)	--created by
-,	ESTADO	VARCHAR	(50)	--estado
-,	MIS_DATE	DATE		--fecha de proceso
-,	LOAD_DATE	DATE default getdate()		--Fecha en que se realiza la carga
-); COMMIT;	 	 		
+drop table IF EXISTS "STG_SAT"."CC_CASOS_ATC";  
+COMMIT;
+
+CREATE TABLE IF NOT EXISTS  "STG_SAT"."CC_CASOS_ATC" (
+	"numero_de_caso" VARCHAR(21) NULL,
+	"codigo_gestion" VARCHAR(14) NULL,
+	"gestion_descripcion" VARCHAR(19) NULL,
+	"fecha_apertura" VARCHAR(23) NULL,
+	"fecha_modificacion" VARCHAR(23) NULL,
+	"descripcion_del_caso" VARCHAR(20) NULL,
+	"pan" VARCHAR(17) NULL,
+	"numero_de_contrato" VARCHAR(18) NULL,
+	"nombre_1" VARCHAR(15) NULL,
+	"apellido_1" VARCHAR(10) NULL,
+	"apellido_2" VARCHAR(10) NULL,
+	"record_id_casecenter" VARCHAR(24) NULL,
+	"cuscaid" VARCHAR(8) NULL,
+	"created_by" VARCHAR(33) NULL,
+	"estado" VARCHAR(8) NULL
+); COMMIT;
+

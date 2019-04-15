@@ -98,70 +98,6 @@ drop table IF EXISTS SAT.CC_CONTROVERSIAS;  CREATE TABLE IF NOT EXISTS SAT.CC_CO
 ,	LOAD_DATE	DATE default getdate()		--Fecha en que se realiza la carga
 ); COMMIT;	 	 		
 
-
-drop table IF EXISTS SAT.CC_REFINANCIAMIENTOS;  CREATE TABLE IF NOT EXISTS SAT.CC_REFINANCIAMIENTOS  ( 	ID_SOLICITUD	VARCHAR	(21)	--id solicitud
-,	TIPO_SOLICITUD	VARCHAR	(1)	--tipo solicitud
-,	TIPO_SOLICITANTE	VARCHAR	(1)	--tipo solicitante
-,	SOURCE_CODE	VARCHAR	(8)	--source code
-,	INDICADOR_EMPLEADO	VARCHAR	(2)	--indicador empleado
-,	SUBPRODUCTO	VARCHAR	(4)	--subproducto
-,	LINEA_SUGERIDA_1	VARCHAR	(17)	--linea sugerida 1
-,	USER_ACCOUNT_NUMBER_1	VARCHAR	(30)	--user account number 1
-,	PRIMER_NOMBRE	VARCHAR	(40)	--primer nombre
-,	SEGUNDO_NOMBRE	VARCHAR	(40)	--segundo nombre
-,	APELLIDO	VARCHAR	(36)	--apellido
-,	SEGUNDO_APELLIDO	VARCHAR	(36)	--segundo apellido
-,	APELLIDO_CASADA	VARCHAR	(36)	--apellido casada
-,	FECHA_DE_NACIMIENTO	TIMESTAMP		--fecha de nacimiento
-,	SEXO	VARCHAR	(1)	--sexo
-,	ESTADO_CIVIL	VARCHAR	(1)	--estado civil
-,	TIPO_IDENTIFICACION_1	VARCHAR	(1)	--tipo identificacion 1
-,	NUMERO_IDENTIFICACION_1	VARCHAR	(14)	--numero identificacion 1
-,	PAIS_EMISION_ID_1	VARCHAR	(3)	--pais emision id 1
-,	TIPO_IDENITFICACION_2	VARCHAR	(1)	--tipo idenitficacion 2
-,	NUMERO_IDENTIFICACION_2	VARCHAR	(10)	--numero identificacion 2
-,	PAIS_EMISION_ID_2	VARCHAR	(3)	--pais emision id 2
-,	NACIONALIDAD	VARCHAR	(3)	--nacionalidad
-,	PAIS_DE_NACIMIENTO	VARCHAR	(3)	--pais de nacimiento
-,	FIGURA_PUBLICA	VARCHAR	(2)	--figura publica
-,	EMAIL	VARCHAR	(100)	--email
-,	DIRECCION_CORRESPONDENCIA	VARCHAR	(255)	--direccion correspondencia
-,	DIRECCION_CASA	VARCHAR	(255)	--direccion casa
-,	CODIGO_DE_AREA_CASA	VARCHAR	(3)	--codigo de area casa
-,	NUMERO_DE_TELEFONO_CASA	VARCHAR	(8)	--numero de telefono casa
-,	CODIGO_DE_AREA_MOVIL	VARCHAR	(3)	--codigo de area movil
-,	NUMERO_DE_TELEFONO_MOVIL	VARCHAR	(8)	--numero de telefono movil
-,	CODIGO_DE_AREA_OTRO	VARCHAR	(3)	--codigo de area otro
-,	NUMERO_DE_TELEFONO_OTRO	VARCHAR	(8)	--numero de telefono otro
-,	LUGAR_DE_TRABAJO	VARCHAR	(255)	--lugar de trabajo
-,	INGRESOS	VARCHAR	(255)	--ingresos
-,	DIRECCION_TRABAJO	VARCHAR	(255)	--direccion trabajo
-,	CODIGO_DE_AREA_TRABAJO	VARCHAR	(3)	--codigo de area trabajo
-,	NUMERO_DE_TELEFONO_TRABAJO	VARCHAR	(8)	--numero de telefono trabajo
-,	NOMBRE_REFERENCIA_1	VARCHAR	(255)	--nombre referencia 1
-,	NUMERO_DE_TELEFONO_REFERENCIA_1	VARCHAR	(8)	--numero de telefono referencia 1
-,	TIPO_REFERENCIA_1	VARCHAR	(2)	--tipo referencia 1
-,	NOMBRE_REFERENCIA_2	VARCHAR	(255)	--nombre referencia 2
-,	NUMERO_DE_TELEFONO_REFERENCIA_2	VARCHAR	(8)	--numero de telefono referencia 2
-,	TIPO_DE_REFERENCIA_2	VARCHAR	(2)	--tipo de referencia 2
-,	NOMBRE_REFERENCIA_3	VARCHAR	(255)	--nombre referencia 3
-,	NUMERO_DE_TELEFONO_REFERENCIA_3	VARCHAR	(8)	--numero de telefono referencia 3
-,	TIPO_REFERENCIA_3	VARCHAR	(2)	--tipo referencia 3
-,	NOMBRE_REFERENCIA_4	VARCHAR	(255)	--nombre referencia 4
-,	NUMERO_DE_TELEFONO_REFERENCIA_4	VARCHAR	(8)	--numero de telefono referencia 4
-,	TIPO_REFERENCIA_4	VARCHAR	(2)	--tipo referencia 4
-,	RECORD_ID_CASE_CENTER	VARCHAR	(24)	--record id case center
-,	CUSCAID	VARCHAR	(255)	--cuscaid
-,	FECHA_CREACION	TIMESTAMP		--fecha creacion
-,	FECHA_ETAPA	TIMESTAMP		--fecha etapa
-,	FECHA_APROBACION	TIMESTAMP		--fecha aprobacion
-,	ESTADO	VARCHAR	(50)	--estado
-,	PAN	VARCHAR	(22)	--pan
-,	MIS_DATE	DATE		--fecha de proceso
-,	LOAD_DATE	DATE default getdate()		--Fecha en que se realiza la carga
-); COMMIT;	 	 		
-
-
 drop table IF EXISTS SAT.CC_TARJETAS_ADICIONALES;  CREATE TABLE IF NOT EXISTS SAT.CC_TARJETAS_ADICIONALES  ( 	PAN	VARCHAR	(22)	--pan
 ,	SOLICITUD	VARCHAR	(21)	--solicitud
 ,	NUMERO_CLIENTE	VARCHAR	(8)	--numero de cliente
@@ -270,11 +206,11 @@ drop table IF EXISTS SAT.CC_TARJETAS_ADICIONALES;  CREATE TABLE IF NOT EXISTS SA
 ); COMMIT;	 	 		
 
 drop table IF EXISTS SAT.CC_SOLICITUDES_BALCON;  CREATE TABLE IF NOT EXISTS SAT.CC_SOLICITUDES_BALCON  ( 	NRO_SEGUIMIENTO	VARCHAR	(255)	--nro seguimiento
-,	ESTADO_BANDEJA	VARCHAR	(30)	--estado bandeja
+,	ESTADO_BANDEJA	VARCHAR	(12)	--estado bandeja
 ,	FECHA_CREACION_SOLICITUD	TIMESTAMP		--fecha creacion solicitud
 ,	NUMERO_DE_TARJETA	VARCHAR	(22)	--numero de tarjeta
 ,	PRODUCTO_COLOCADO	VARCHAR	(6)	--producto colocado
-,	TIPO_DE_PRODUCTO	VARCHAR	(50)	--tipo de producto
+,	TIPO_DE_PRODUCTO	VARCHAR	(2)	--tipo de producto
 ,	NUMERO_DE_CUENTA	VARCHAR	(30)	--numero de cuenta
 ,	NOMBRE_COMPLETO	VARCHAR	(35)	--nombre completo
 ,	TIPO_DOCUMENTO	VARCHAR	(10)	--tipo documento
@@ -469,97 +405,6 @@ drop table IF EXISTS SAT.CC_SOLICITUDES_TARJETAS;  CREATE TABLE IF NOT EXISTS SA
 ,	LOAD_DATE	DATE default getdate()		--Fecha en que se realiza la carga	
 ); COMMIT;	 	 			
 
-drop table IF EXISTS SAT.CC_SOLICITUDES_EXTRAFINA;  CREATE TABLE IF NOT EXISTS SAT.CC_SOLICITUDES_EXTRAFINA  ( 	NRO_SEGUIMIENTO	VARCHAR	(255)	--nro seguimiento
-,	ESTADO_BANDEJA	VARCHAR	(30)	--estado bandeja
-,	FECHA_DE_CREACION	TIMESTAMP		--fecha de creacion
-,	NO_DE_TARJETA	VARCHAR	(22)	--numero de tarjeta
-,	PRODUCTO_COLOCADO	VARCHAR	(6)	--producto colocado
-,	TIPO_PRODUCTO	VARCHAR	(50)	--tipo producto
-,	NO_CUENTA	VARCHAR	(30)	--numero de cuenta
-,	NOMBRE_COMPLETO	VARCHAR	(35)	--nombre completo
-,	TIPO_DOCUMENTO	VARCHAR	(10)	--tipo documento
-,	NO_DOCUMENTO	VARCHAR	(30)	--numero documento
-,	PROFESION	VARCHAR	(35)	--profesion
-,	DEPARTAMENTO_CASA	VARCHAR	(30)	--departamento casa
-,	MUNICIPIO_CASA	VARCHAR	(50)	--municipio casa
-,	DIRECCION_CASA	VARCHAR	(255)	--direccion casa
-,	TELEFONO_CASA	VARCHAR	(8)	--telefono casa
-,	REFERENCIA_CASA	VARCHAR	(255)	--referencia casa
-,	OTRO_CONTACTO	VARCHAR	(8)	--otro contacto
-,	NIT	VARCHAR	(14)	--nit
-,	FECHA_NACIMIENTO	DATE		--fecha nacimiento
-,	ESTADO_CIVIL	VARCHAR	(11)	--estado civil
-,	SEXO	VARCHAR	(9)	--sexo
-,	LUGAR_TRABAJO	VARCHAR	(255)	--lugar de trabajo
-,	DEPARTAMENTO_OFICINA	VARCHAR	(30)	--departamento oficina
-,	MUNICIPIO_OFICINA	VARCHAR	(50)	--municipio oficina
-,	DIRECCION_OFICINA	VARCHAR	(255)	--direccion oficina
-,	TELEFONO_OFICINA	VARCHAR	(8)	--telefono oficina
-,	REFERENCIA_OFICINA	VARCHAR	(255)	--referencia oficina
-,	PROCEDENCIA_FONDOS	VARCHAR	(255)	--procedencia de fondos
-,	LUGAR_PROCEDENCIA	VARCHAR	(255)	--lugar de procedencia
-,	PAGOS_ADIC_PROYECTADOS	VARCHAR	(255)	--pagos adicionales proyectados
-,	COMO_REALIZARA_PAGOS_ADIC	VARCHAR	(255)	--como realizara pagos adicionales
-,	REL_NUMBER	VARCHAR	(255)	--rel number
-,	FECHA_CORTE_TARJETA	DATE		--fecha corte tarjeta
-,	SUB_PRODUCTO	VARCHAR	(4)	--sub producto
-,	TIPO_CUOTA	VARCHAR	(8)	--tipo cuota
-,	PLAZO	VARCHAR	(3)	--plazo
-,	PRESTAMO	VARCHAR	(17)	--prestamo
-,	INTERES_NOMINAL	VARCHAR	(7)	--interes nominal
-,	COMISION_DESEMBOLSO	VARCHAR	(17)	--comision de desembolso
-,	ORIGEN	VARCHAR	(255)	--origen
-,	LUGAR_ENTREGA	VARCHAR	(255)	--lugar de entrega
-,	AGENCIA	VARCHAR	(100)	--agencia
-,	DEPARTAMENTO_CONTRATO	VARCHAR	(30)	--departamento de contrato
-,	MUNICIPIO_CONTRATO	VARCHAR	(50)	--municipio de contrato
-,	NORMAL_MONTO_EFECTIVO	VARCHAR	(17)	--normal monto en efectivo
-,	NORMAL_MONTO_CHEQUE	VARCHAR	(17)	--normal monto en cheque
-,	CANTIDAD_CHEQUES	VARCHAR	(3)	--cantidad cheques
-,	TOP_UP_MONTO_CHEQUES	VARCHAR	(17)	--top up monto cheques
-,	CUENTA_BANCARIA_AHORRO1	VARCHAR	(30)	--cuenta bancaria ahorro 1
-,	CUENTA_BANCARIA_AHORRO2	VARCHAR	(30)	--cuenta bancaria ahorro 2
-,	CUENTA_BANCARIA_AHORRO3	VARCHAR	(30)	--cuenta bancaria ahorro 3
-,	NO_CUENTA_BANCARIA_AHORRO1	VARCHAR	(30)	--numero cuenta bancaria ahorro 1
-,	NO_CUENTA_BANCARIA_AHORRO2	VARCHAR	(30)	--numero cuenta bancaria ahorro 2
-,	NO_CUENTA_BANCARIA_AHORRO3	VARCHAR	(30)	--numero cuenta bancaria ahorro 3
-,	MONTO_CUENTA_BANCARIA_AHORRO1	VARCHAR	(30)	--monto cuenta bancaria ahorro 1
-,	MONTO_CUENTA_BANCARIA_AHORRO2	VARCHAR	(30)	--monto cuenta bancaria ahorro 2
-,	MONTO_CUENTA_BANCARIA_AHORRO3	VARCHAR	(30)	--monto cuenta bancaria ahorro 3
-,	NO_DE_TARJETA1	VARCHAR	(22)	--numero de tarjeta 1
-,	NO_DE_TARJETA2	VARCHAR	(22)	--numero de tarjeta 2
-,	NO_DE_TARJETA3	VARCHAR	(22)	--numero de tarjeta 3
-,	NO_DE_TARJETA4	VARCHAR	(22)	--numero de tarjeta 4
-,	TARJETA_CREDITO_MONTO1	VARCHAR	(17)	--tarjeta de credito monto 1
-,	TARJETA_CREDITO_MONTO2	VARCHAR	(17)	--tarjeta de credito monto 2
-,	TARJETA_CREDITO_MONTO3	VARCHAR	(17)	--tarjeta de credito monto 3
-,	TARJETA_CREDITO_MONTO4	VARCHAR	(17)	--tarjeta de credito monto 4
-,	NO_DE_REFERENCIA1	VARCHAR	(22)	--numero de referencia 1
-,	NO_DE_REFERENCIA2	VARCHAR	(22)	--numero de referencia 2
-,	NO_DE_REFERENCIA3	VARCHAR	(22)	--numero de referencia 3
-,	NO_DE_REFERENCIA4	VARCHAR	(22)	--numero de referencia 4
-,	TARJETA_CREDITO_MONTO_INT1	VARCHAR	(7)	--tarjeta de credito monto int 1
-,	TARJETA_CREDITO_MONTO_INT2	VARCHAR	(7)	--tarjeta de credito monto int 2
-,	TARJETA_CREDITO_MONTO_INT3	VARCHAR	(7)	--tarjeta de credito monto int 3
-,	TARJETA_CREDITO_MONTO_INT4	VARCHAR	(7)	--tarjeta de credito monto int 4
-,	CUENTA_ABONAR_ENDOSO1	VARCHAR	(30)	--cuenta a abonar endoso 1
-,	CUENTA_ABONAR_ENDOSO2	VARCHAR	(30)	--cuenta a abonar endoso 2
-,	CUENTA_ABONAR_ENDOSO3	VARCHAR	(30)	--cuenta a abonar endoso 3
-,	INSTITUTO_COMPRAR_CARTERA1	VARCHAR	(255)	--instituto a comprar cartera 1
-,	INSTITUTO_COMPRAR_CARTERA2	VARCHAR	(255)	--instituto a comprar cartera 2
-,	INSTITUTO_COMPRAR_CARTERA3	VARCHAR	(255)	--instituto a comprar cartera 3
-,	MONTO_CHEQUE1	VARCHAR	(17)	--monto de cheque 1
-,	MONTO_CHEQUE2	VARCHAR	(17)	--monto de cheque 2
-,	MONTO_CHEQUE3	VARCHAR	(17)	--monto de cheque 3
-,	CUSCAID	VARCHAR	(255)	--cuscaid
-,	MODIFIED_BY	VARCHAR	(255)	--modified by
-,	MODIFIED	VARCHAR	(23)	--modified
-,	FECHA_ENVIO_IMPRESION	VARCHAR	(23)	--fecha de envio para impresion
-,	RECORD_ID_CASE_CENTER	VARCHAR	(24)	--record id case center
-,	MIS_DATE	DATE		--fecha de proceso
-,	LOAD_DATE	DATE default getdate()		--Fecha en que se realiza la carga
-); COMMIT;	 	 		
-
 -------------------- TABLAS STAGE ------------------
 
 drop table IF EXISTS STG_SAT.CC_CASOS_ATC;  CREATE TABLE IF NOT EXISTS STG_SAT.CC_CASOS_ATC  ( 	NUMERO_DE_CASO	VARCHAR	(21)	--numero de caso
@@ -577,68 +422,6 @@ drop table IF EXISTS STG_SAT.CC_CASOS_ATC;  CREATE TABLE IF NOT EXISTS STG_SAT.C
 ,	CUSCAID	VARCHAR	(255)	--cuscaid
 ,	CREATED_BY	VARCHAR	(255)	--created by
 ,	ESTADO	VARCHAR	(50)	--estado
-,	MIS_DATE	DATE		--fecha de proceso
-,	LOAD_DATE	DATE default getdate()		--Fecha en que se realiza la carga
-); COMMIT;	 	 		
-
-drop table IF EXISTS STG_SAT.CC_REFINANCIAMIENTOS;  CREATE TABLE IF NOT EXISTS STG_SAT.CC_REFINANCIAMIENTOS  ( 	ID_SOLICITUD	VARCHAR	(21)	--id solicitud
-,	TIPO_SOLICITUD	VARCHAR	(1)	--tipo solicitud
-,	TIPO_SOLICITANTE	VARCHAR	(1)	--tipo solicitante
-,	SOURCE_CODE	VARCHAR	(8)	--source code
-,	INDICADOR_EMPLEADO	VARCHAR	(2)	--indicador empleado
-,	SUBPRODUCTO	VARCHAR	(4)	--subproducto
-,	LINEA_SUGERIDA_1	VARCHAR	(17)	--linea sugerida 1
-,	USER_ACCOUNT_NUMBER_1	VARCHAR	(30)	--user account number 1
-,	PRIMER_NOMBRE	VARCHAR	(40)	--primer nombre
-,	SEGUNDO_NOMBRE	VARCHAR	(40)	--segundo nombre
-,	APELLIDO	VARCHAR	(36)	--apellido
-,	SEGUNDO_APELLIDO	VARCHAR	(36)	--segundo apellido
-,	APELLIDO_CASADA	VARCHAR	(36)	--apellido casada
-,	FECHA_DE_NACIMIENTO	VARCHAR(23)		--fecha de nacimiento
-,	SEXO	VARCHAR	(1)	--sexo
-,	ESTADO_CIVIL	VARCHAR	(1)	--estado civil
-,	TIPO_IDENTIFICACION_1	VARCHAR	(1)	--tipo identificacion 1
-,	NUMERO_IDENTIFICACION_1	VARCHAR	(14)	--numero identificacion 1
-,	PAIS_EMISION_ID_1	VARCHAR	(3)	--pais emision id 1
-,	TIPO_IDENITFICACION_2	VARCHAR	(1)	--tipo idenitficacion 2
-,	NUMERO_IDENTIFICACION_2	VARCHAR	(10)	--numero identificacion 2
-,	PAIS_EMISION_ID_2	VARCHAR	(3)	--pais emision id 2
-,	NACIONALIDAD	VARCHAR	(3)	--nacionalidad
-,	PAIS_DE_NACIMIENTO	VARCHAR	(3)	--pais de nacimiento
-,	FIGURA_PUBLICA	VARCHAR	(2)	--figura publica
-,	EMAIL	VARCHAR	(100)	--email
-,	DIRECCION_CORRESPONDENCIA	VARCHAR	(255)	--direccion correspondencia
-,	DIRECCION_CASA	VARCHAR	(255)	--direccion casa
-,	CODIGO_DE_AREA_CASA	VARCHAR	(3)	--codigo de area casa
-,	NUMERO_DE_TELEFONO_CASA	VARCHAR	(8)	--numero de telefono casa
-,	CODIGO_DE_AREA_MOVIL	VARCHAR	(3)	--codigo de area movil
-,	NUMERO_DE_TELEFONO_MOVIL	VARCHAR	(8)	--numero de telefono movil
-,	CODIGO_DE_AREA_OTRO	VARCHAR	(3)	--codigo de area otro
-,	NUMERO_DE_TELEFONO_OTRO	VARCHAR	(8)	--numero de telefono otro
-,	LUGAR_DE_TRABAJO	VARCHAR	(255)	--lugar de trabajo
-,	INGRESOS	VARCHAR	(255)	--ingresos
-,	DIRECCION_TRABAJO	VARCHAR	(255)	--direccion trabajo
-,	CODIGO_DE_AREA_TRABAJO	VARCHAR	(3)	--codigo de area trabajo
-,	NUMERO_DE_TELEFONO_TRABAJO	VARCHAR	(8)	--numero de telefono trabajo
-,	NOMBRE_REFERENCIA_1	VARCHAR	(255)	--nombre referencia 1
-,	NUMERO_DE_TELEFONO_REFERENCIA_1	VARCHAR	(8)	--numero de telefono referencia 1
-,	TIPO_REFERENCIA_1	VARCHAR	(2)	--tipo referencia 1
-,	NOMBRE_REFERENCIA_2	VARCHAR	(255)	--nombre referencia 2
-,	NUMERO_DE_TELEFONO_REFERENCIA_2	VARCHAR	(8)	--numero de telefono referencia 2
-,	TIPO_DE_REFERENCIA_2	VARCHAR	(2)	--tipo de referencia 2
-,	NOMBRE_REFERENCIA_3	VARCHAR	(255)	--nombre referencia 3
-,	NUMERO_DE_TELEFONO_REFERENCIA_3	VARCHAR	(8)	--numero de telefono referencia 3
-,	TIPO_REFERENCIA_3	VARCHAR	(2)	--tipo referencia 3
-,	NOMBRE_REFERENCIA_4	VARCHAR	(255)	--nombre referencia 4
-,	NUMERO_DE_TELEFONO_REFERENCIA_4	VARCHAR	(8)	--numero de telefono referencia 4
-,	TIPO_REFERENCIA_4	VARCHAR	(2)	--tipo referencia 4
-,	RECORD_ID_CASE_CENTER	VARCHAR	(24)	--record id case center
-,	CUSCAID	VARCHAR	(255)	--cuscaid
-,	FECHA_CREACION	VARCHAR(23)		--fecha creacion
-,	FECHA_ETAPA	VARCHAR(23)		--fecha etapa
-,	FECHA_APROBACION	VARCHAR(23) --fecha aprobacion
-,	ESTADO	VARCHAR	(50)	--estado
-,	PAN	VARCHAR	(22)	--pan
 ,	MIS_DATE	DATE		--fecha de proceso
 ,	LOAD_DATE	DATE default getdate()		--Fecha en que se realiza la carga
 ); COMMIT;	 	 		
@@ -961,150 +744,56 @@ drop table IF EXISTS STG_SAT.CC_SOLICITUDES_TARJETAS;  CREATE TABLE IF NOT EXIST
 ,	LOAD_DATE	DATE default getdate()		--Fecha en que se realiza la carga	
 ); COMMIT;	 	 			
 
-drop table IF EXISTS "STG_SAT"."CC_SOLICITUDES_BALCON";  
-COMMIT;
-
-drop table IF EXISTS STG_SAT.CC_SOLICITUDES_BALCON;  CREATE TABLE IF NOT EXISTS STG_SAT.CC_SOLICITUDES_BALCON  ( 	NRO_SEGUIMIENTO	VARCHAR	(255)
-,	ESTADO_BANDEJA	VARCHAR	(30)
-,	FECHA_CREACION_SOLICITUD	VARCHAR(23)	
-,	NUMERO_DE_TARJETA	VARCHAR	(22)
-,	PRODUCTO_COLOCADO	VARCHAR	(6)
-,	TIPO_DE_PRODUCTO	VARCHAR	(50)
-,	NUMERO_DE_CUENTA	VARCHAR	(30)
-,	NOMBRE_COMPLETO	VARCHAR	(35)
-,	TIPO_DOCUMENTO	VARCHAR	(10)
-,	NUMERO_DOCUMENTO	VARCHAR	(30)
-,	DIRECCION_CASA	VARCHAR	(255)
-,	TELEFONO_CASA	VARCHAR	(8)
-,	REFERENCIA_CASA	VARCHAR	(255)
-,	DIRECCION_TRABAJO	VARCHAR	(255)
-,	TELEFONO_TRABAJO	VARCHAR	(8)
-,	REFERENCIA_TRABAJO	VARCHAR	(255)
-,	NUMERO_CONTACTO_1	VARCHAR	(8)
-,	NUMERO_CONTACTO_2	VARCHAR	(8)
-,	BALCON_PARA_TERCERO	VARCHAR	(15)
-,	NOMBRE_DE_TERCERO	VARCHAR	(255)
-,	MONTO_ESTADO_DE_CUENTA	VARCHAR	(17)
-,	MONTO_MAXIMO_AUTORIZADO	VARCHAR	(17)
-,	LIMITE_DE_CREDITO	VARCHAR	(17)
-,	LIMITE_DISPONIBLE	VARCHAR	(17)
-,	SUB_PRODUCTO	VARCHAR	(4)
-,	TIPO_CUOTA	VARCHAR	(8)
-,	CUOTAS	VARCHAR	(3)
-,	TASA_PREFERENCIAL	VARCHAR	(7)
-,	FECHA_DE_CORTE	DATE	
-,	LUGAR_DE_ENTREGA	VARCHAR	(10)
-,	AGENCIA	VARCHAR	(100)
-,	MONTO_CHEQUES_SOLICITADOS	VARCHAR	(17)
-,	CANTIDAD_CHEQUES_SOLICITADOS	VARCHAR	(1)
-,	NORMAL_MONTO_ESTCTA	VARCHAR	(17)
-,	NORMAL_MONTO_MAX_AUTORIZADO	VARCHAR	(17)
-,	NORMAL_BALCON_MAS_ESTCTA	VARCHAR	(17)
-,	INSTITUTO_1	VARCHAR	(255)
-,	INSTITUTO_2	VARCHAR	(255)
-,	INSTITUTO_3	VARCHAR	(255)
-,	ENDOSO_1	VARCHAR	(30)
-,	ENDOSO_2	VARCHAR	(30)
-,	ENDOSO_3	VARCHAR	(30)
-,	MONTO_A_EMITIR_1	VARCHAR	(17)
-,	MONTO_A_EMITIR_2	VARCHAR	(17)
-,	MONTO_A_EMITIR_3	VARCHAR	(17)
-,	RECORD_ID_CASE_CENTER	VARCHAR	(24)
-,	CUSCAID	VARCHAR	(255)
-,	MODIFIED	VARCHAR(23)	
-,	MODIFIED_BY	VARCHAR	(255)
-,	FEC_ENVIO_IMPRESION	VARCHAR	(23)
-,	MIS_DATE	DATE	
-,	LOAD_DATE	DATE default getdate()	
-); COMMIT;	 	 	
-
-drop table IF EXISTS STG_SAT.CC_SOLICITUDES_EXTRAFINA;  CREATE TABLE IF NOT EXISTS STG_SAT.CC_SOLICITUDES_EXTRAFINA  ( 	NRO_SEGUIMIENTO	VARCHAR	(255)	--nro seguimiento
-,	ESTADO_BANDEJA	VARCHAR	(30)	--estado bandeja
-,	FECHA_DE_CREACION	VARCHAR(23)		--fecha de creacion
-,	NO_DE_TARJETA	VARCHAR	(22)	--numero de tarjeta
+drop table IF EXISTS STG_SAT.CC_SOLICITUDES_BALCON;  CREATE TABLE IF NOT EXISTS STG_SAT.CC_SOLICITUDES_BALCON  ( 	NRO_SEGUIMIENTO	VARCHAR	(255)	--nro seguimiento
+,	ESTADO_BANDEJA	VARCHAR	(12)	--estado bandeja
+,	FECHA_CREACION_SOLICITUD	VARCHAR(23)		--fecha creacion solicitud
+,	NUMERO_DE_TARJETA	VARCHAR	(22)	--numero de tarjeta
 ,	PRODUCTO_COLOCADO	VARCHAR	(6)	--producto colocado
-,	TIPO_PRODUCTO	VARCHAR	(50)	--tipo producto
-,	NO_CUENTA	VARCHAR	(30)	--numero de cuenta
+,	TIPO_DE_PRODUCTO	VARCHAR	(2)	--tipo de producto
+,	NUMERO_DE_CUENTA	VARCHAR	(30)	--numero de cuenta
 ,	NOMBRE_COMPLETO	VARCHAR	(35)	--nombre completo
 ,	TIPO_DOCUMENTO	VARCHAR	(10)	--tipo documento
-,	NO_DOCUMENTO	VARCHAR	(30)	--numero documento
-,	PROFESION	VARCHAR	(35)	--profesion
-,	DEPARTAMENTO_CASA	VARCHAR	(30)	--departamento casa
-,	MUNICIPIO_CASA	VARCHAR	(50)	--municipio casa
+,	NUMERO_DOCUMENTO	VARCHAR	(30)	--numero documento
 ,	DIRECCION_CASA	VARCHAR	(255)	--direccion casa
 ,	TELEFONO_CASA	VARCHAR	(8)	--telefono casa
 ,	REFERENCIA_CASA	VARCHAR	(255)	--referencia casa
-,	OTRO_CONTACTO	VARCHAR	(8)	--otro contacto
-,	NIT	VARCHAR	(14)	--nit
-,	FECHA_NACIMIENTO	DATE		--fecha nacimiento
-,	ESTADO_CIVIL	VARCHAR	(11)	--estado civil
-,	SEXO	VARCHAR	(9)	--sexo
-,	LUGAR_TRABAJO	VARCHAR	(255)	--lugar de trabajo
-,	DEPARTAMENTO_OFICINA	VARCHAR	(30)	--departamento oficina
-,	MUNICIPIO_OFICINA	VARCHAR	(50)	--municipio oficina
-,	DIRECCION_OFICINA	VARCHAR	(255)	--direccion oficina
-,	TELEFONO_OFICINA	VARCHAR	(8)	--telefono oficina
-,	REFERENCIA_OFICINA	VARCHAR	(255)	--referencia oficina
-,	PROCEDENCIA_FONDOS	VARCHAR	(255)	--procedencia de fondos
-,	LUGAR_PROCEDENCIA	VARCHAR	(255)	--lugar de procedencia
-,	PAGOS_ADIC_PROYECTADOS	VARCHAR	(255)	--pagos adicionales proyectados
-,	COMO_REALIZARA_PAGOS_ADIC	VARCHAR	(255)	--como realizara pagos adicionales
-,	REL_NUMBER	VARCHAR	(255)	--rel number
-,	FECHA_CORTE_TARJETA	DATE		--fecha corte tarjeta
+,	DIRECCION_TRABAJO	VARCHAR	(255)	--direccion trabajo
+,	TELEFONO_TRABAJO	VARCHAR	(8)	--telefono trabajo
+,	REFERENCIA_TRABAJO	VARCHAR	(255)	--referencia trabajo
+,	NUMERO_CONTACTO_1	VARCHAR	(8)	--numero contacto 1
+,	NUMERO_CONTACTO_2	VARCHAR	(8)	--numero contacto 2
+,	BALCON_PARA_TERCERO	VARCHAR	(15)	--balcon para tercero
+,	NOMBRE_DE_TERCERO	VARCHAR	(255)	--nombre de tercero
+,	MONTO_ESTADO_DE_CUENTA	VARCHAR	(17)	--monto estado de cuenta
+,	MONTO_MAXIMO_AUTORIZADO	VARCHAR	(17)	--monto maximo autorizado
+,	LIMITE_DE_CREDITO	VARCHAR	(17)	--limite de credito
+,	LIMITE_DISPONIBLE	VARCHAR	(17)	--limite disponible
 ,	SUB_PRODUCTO	VARCHAR	(4)	--sub producto
 ,	TIPO_CUOTA	VARCHAR	(8)	--tipo cuota
-,	PLAZO	VARCHAR	(3)	--plazo
-,	PRESTAMO	VARCHAR	(17)	--prestamo
-,	INTERES_NOMINAL	VARCHAR	(7)	--interes nominal
-,	COMISION_DESEMBOLSO	VARCHAR	(17)	--comision de desembolso
-,	ORIGEN	VARCHAR	(255)	--origen
-,	LUGAR_ENTREGA	VARCHAR	(255)	--lugar de entrega
+,	CUOTAS	VARCHAR	(3)	--cuotas
+,	TASA_PREFERENCIAL	VARCHAR	(7)	--tasa preferencial
+,	FECHA_DE_CORTE	DATE		--fecha de corte
+,	LUGAR_DE_ENTREGA	VARCHAR	(10)	--lugar de entrega
 ,	AGENCIA	VARCHAR	(100)	--agencia
-,	DEPARTAMENTO_CONTRATO	VARCHAR	(30)	--departamento de contrato
-,	MUNICIPIO_CONTRATO	VARCHAR	(50)	--municipio de contrato
-,	NORMAL_MONTO_EFECTIVO	VARCHAR	(17)	--normal monto en efectivo
-,	NORMAL_MONTO_CHEQUE	VARCHAR	(17)	--normal monto en cheque
-,	CANTIDAD_CHEQUES	VARCHAR	(3)	--cantidad cheques
-,	TOP_UP_MONTO_CHEQUES	VARCHAR	(17)	--top up monto cheques
-,	CUENTA_BANCARIA_AHORRO1	VARCHAR	(30)	--cuenta bancaria ahorro 1
-,	CUENTA_BANCARIA_AHORRO2	VARCHAR	(30)	--cuenta bancaria ahorro 2
-,	CUENTA_BANCARIA_AHORRO3	VARCHAR	(30)	--cuenta bancaria ahorro 3
-,	NO_CUENTA_BANCARIA_AHORRO1	VARCHAR	(30)	--numero cuenta bancaria ahorro 1
-,	NO_CUENTA_BANCARIA_AHORRO2	VARCHAR	(30)	--numero cuenta bancaria ahorro 2
-,	NO_CUENTA_BANCARIA_AHORRO3	VARCHAR	(30)	--numero cuenta bancaria ahorro 3
-,	MONTO_CUENTA_BANCARIA_AHORRO1	VARCHAR	(30)	--monto cuenta bancaria ahorro 1
-,	MONTO_CUENTA_BANCARIA_AHORRO2	VARCHAR	(30)	--monto cuenta bancaria ahorro 2
-,	MONTO_CUENTA_BANCARIA_AHORRO3	VARCHAR	(30)	--monto cuenta bancaria ahorro 3
-,	NO_DE_TARJETA1	VARCHAR	(22)	--numero de tarjeta 1
-,	NO_DE_TARJETA2	VARCHAR	(22)	--numero de tarjeta 2
-,	NO_DE_TARJETA3	VARCHAR	(22)	--numero de tarjeta 3
-,	NO_DE_TARJETA4	VARCHAR	(22)	--numero de tarjeta 4
-,	TARJETA_CREDITO_MONTO1	VARCHAR	(17)	--tarjeta de credito monto 1
-,	TARJETA_CREDITO_MONTO2	VARCHAR	(17)	--tarjeta de credito monto 2
-,	TARJETA_CREDITO_MONTO3	VARCHAR	(17)	--tarjeta de credito monto 3
-,	TARJETA_CREDITO_MONTO4	VARCHAR	(17)	--tarjeta de credito monto 4
-,	NO_DE_REFERENCIA1	VARCHAR	(22)	--numero de referencia 1
-,	NO_DE_REFERENCIA2	VARCHAR	(22)	--numero de referencia 2
-,	NO_DE_REFERENCIA3	VARCHAR	(22)	--numero de referencia 3
-,	NO_DE_REFERENCIA4	VARCHAR	(22)	--numero de referencia 4
-,	TARJETA_CREDITO_MONTO_INT1	VARCHAR	(7)	--tarjeta de credito monto int 1
-,	TARJETA_CREDITO_MONTO_INT2	VARCHAR	(7)	--tarjeta de credito monto int 2
-,	TARJETA_CREDITO_MONTO_INT3	VARCHAR	(7)	--tarjeta de credito monto int 3
-,	TARJETA_CREDITO_MONTO_INT4	VARCHAR	(7)	--tarjeta de credito monto int 4
-,	CUENTA_ABONAR_ENDOSO1	VARCHAR	(30)	--cuenta a abonar endoso 1
-,	CUENTA_ABONAR_ENDOSO2	VARCHAR	(30)	--cuenta a abonar endoso 2
-,	CUENTA_ABONAR_ENDOSO3	VARCHAR	(30)	--cuenta a abonar endoso 3
-,	INSTITUTO_COMPRAR_CARTERA1	VARCHAR	(255)	--instituto a comprar cartera 1
-,	INSTITUTO_COMPRAR_CARTERA2	VARCHAR	(255)	--instituto a comprar cartera 2
-,	INSTITUTO_COMPRAR_CARTERA3	VARCHAR	(255)	--instituto a comprar cartera 3
-,	MONTO_CHEQUE1	VARCHAR	(17)	--monto de cheque 1
-,	MONTO_CHEQUE2	VARCHAR	(17)	--monto de cheque 2
-,	MONTO_CHEQUE3	VARCHAR	(17)	--monto de cheque 3
-,	CUSCAID	VARCHAR	(255)	--cuscaid
-,	MODIFIED_BY	VARCHAR	(255)	--modified by
-,	MODIFIED	VARCHAR	(23)	--modified
-,	FECHA_ENVIO_IMPRESION	VARCHAR	(23)	--fecha de envio para impresion
+,	MONTO_CHEQUES_SOLICITADOS	VARCHAR	(17)	--monto cheques solicitados
+,	CANTIDAD_CHEQUES_SOLICITADOS	VARCHAR	(1)	--cantidad cheques solicitados
+,	NORMAL_MONTO_ESTCTA	VARCHAR	(17)	--normal monto de estado de cuenta
+,	NORMAL_MONTO_MAX_AUTORIZADO	VARCHAR	(17)	--normal monto maximo autorizado
+,	NORMAL_BALCON_MAS_ESTCTA	VARCHAR	(17)	--normal balcon 25 mas de estado de cuenta
+,	INSTITUTO_1	VARCHAR	(255)	--instituto 1
+,	INSTITUTO_2	VARCHAR	(255)	--instituto 2
+,	INSTITUTO_3	VARCHAR	(255)	--instituto 3
+,	ENDOSO_1	VARCHAR	(30)	--endoso 1
+,	ENDOSO_2	VARCHAR	(30)	--endoso 2
+,	ENDOSO_3	VARCHAR	(30)	--endoso 3
+,	MONTO_A_EMITIR_1	VARCHAR	(17)	--monto a emitir 1
+,	MONTO_A_EMITIR_2	VARCHAR	(17)	--monto a emitir 2
+,	MONTO_A_EMITIR_3	VARCHAR	(17)	--monto a emitir 3
 ,	RECORD_ID_CASE_CENTER	VARCHAR	(24)	--record id case center
+,	CUSCAID	VARCHAR	(255)	--cuscaid
+,	MODIFIED	VARCHAR(23)		--modified
+,	MODIFIED_BY	VARCHAR	(255)	--modified by
+,	FEC_ENVIO_IMPRESION	VARCHAR	(23)	--fecha de envio para impresion
 ,	MIS_DATE	DATE		--fecha de proceso
 ,	LOAD_DATE	DATE default getdate()		--Fecha en que se realiza la carga
 ); COMMIT;	 	 		
@@ -1161,26 +850,6 @@ select
 
 select 
  @OBJECT_NAME = 'CC_CONTROVERSIAS'
-,@CRDATE = NULL
-
-SELECT @CRDATE = create_time 
-FROM SYSUSERS U, SYSTABLE T, SYSIQTABLE S
-where T.table_name = @OBJECT_NAME
-  and T.creator = U.uid
-  and U.name = @OBJECT_USER
-  and T.table_id = S.table_id
-if @CRDATE IS NULL SELECT @CRDATE = getdate()
-
-IF EXISTS(SELECT 1 from CNF.VERSION_OBJETOS where OBJECT_NAME = @OBJECT_NAME AND OBJECT_USER = @OBJECT_USER AND VERSION_CODE = @VERSION_CODE)
-  DELETE CNF.VERSION_OBJETOS where OBJECT_NAME = @OBJECT_NAME AND OBJECT_USER = @OBJECT_USER AND VERSION_CODE = @VERSION_CODE
-insert CNF.VERSION_OBJETOS (
- NOMBRE_MALLA, OBJECT_NAME ,OBJECT_USER ,VERSION_COMMIT ,VERSION_CODE ,VERSION_DATE ,CRDATE
-)
-select 
- @NOMBRE_MALLA, @OBJECT_NAME ,@OBJECT_USER ,@VERSION_COMMIT,@VERSION_CODE ,@VERSION_DATE ,@CRDATE 
-
-select 
- @OBJECT_NAME = 'CC_REFINANCIAMIENTOS'
 ,@CRDATE = NULL
 
 SELECT @CRDATE = create_time 
@@ -1288,26 +957,6 @@ select
 
 select 
  @OBJECT_NAME = 'CC_CONTROVERSIAS'
-,@CRDATE = NULL
-
-SELECT @CRDATE = create_time 
-FROM SYSUSERS U, SYSTABLE T, SYSIQTABLE S
-where T.table_name = @OBJECT_NAME
-  and T.creator = U.uid
-  and U.name = @OBJECT_USER
-  and T.table_id = S.table_id
-if @CRDATE IS NULL SELECT @CRDATE = getdate()
-
-IF EXISTS(SELECT 1 from CNF.VERSION_OBJETOS where OBJECT_NAME = @OBJECT_NAME AND OBJECT_USER = @OBJECT_USER AND VERSION_CODE = @VERSION_CODE)
-  DELETE CNF.VERSION_OBJETOS where OBJECT_NAME = @OBJECT_NAME AND OBJECT_USER = @OBJECT_USER AND VERSION_CODE = @VERSION_CODE
-insert CNF.VERSION_OBJETOS (
- NOMBRE_MALLA, OBJECT_NAME ,OBJECT_USER ,VERSION_COMMIT ,VERSION_CODE ,VERSION_DATE ,CRDATE
-)
-select 
- @NOMBRE_MALLA, @OBJECT_NAME ,@OBJECT_USER ,@VERSION_COMMIT,@VERSION_CODE ,@VERSION_DATE ,@CRDATE 
-
-select 
- @OBJECT_NAME = 'CC_REFINANCIAMIENTOS'
 ,@CRDATE = NULL
 
 SELECT @CRDATE = create_time 

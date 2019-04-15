@@ -1,9 +1,9 @@
 drop table IF EXISTS SAT.CC_SOLICITUDES_BALCON;  CREATE TABLE IF NOT EXISTS SAT.CC_SOLICITUDES_BALCON  ( 	NRO_SEGUIMIENTO	VARCHAR	(255)	--nro seguimiento
-,	ESTADO_BANDEJA	VARCHAR	(12)	--estado bandeja
+,	ESTADO_BANDEJA	VARCHAR	(30)	--estado bandeja
 ,	FECHA_CREACION_SOLICITUD	TIMESTAMP		--fecha creacion solicitud
 ,	NUMERO_DE_TARJETA	VARCHAR	(22)	--numero de tarjeta
 ,	PRODUCTO_COLOCADO	VARCHAR	(6)	--producto colocado
-,	TIPO_DE_PRODUCTO	VARCHAR	(2)	--tipo de producto
+,	TIPO_DE_PRODUCTO	VARCHAR	(50)	--tipo de producto
 ,	NUMERO_DE_CUENTA	VARCHAR	(30)	--numero de cuenta
 ,	NOMBRE_COMPLETO	VARCHAR	(35)	--nombre completo
 ,	TIPO_DOCUMENTO	VARCHAR	(10)	--tipo documento

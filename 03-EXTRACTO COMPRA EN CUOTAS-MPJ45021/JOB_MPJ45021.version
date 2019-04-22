@@ -1,3 +1,4 @@
 190205: Flujo del ETL y revisión de todas las estructuras de tablas
 190411: incorporacion de unsigned.
 190415: Cambio tipo de registro FI, filler recortado
+190422: Cambio en tipo de registro CU, campo interes anual y filler modificados.

@@ -1,7 +1,7 @@
 #__AW_Repository_Version '14.2.10.0000';
 #__AW_Product_Version '14.2.10.1748';
 #__AW_ATL_Locale 'spa_sv.utf-8';
- AlGUIComment ("x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Feb 20 15:23:05 2018', "ActaValue_3" = 'Fri Apr  6 16:33:59 2018', "x" = '-1', "y" = '-1')
 CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="ISO-8859-1" ?>
 <DSConfigurations>
 <DSConfiguration default="true" name="Configuration1">
@@ -15,43 +15,18 @@ CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET
 <locale_codepage>&lt;default&gt;</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E84949D9AF44F05669706C30682273031D5C59633175B61073EA4D56203D6B2CBC12091FE2A588DBF2B449931039AE</password>
+<password>+0400000000120303000803E8A93D361FFA392C79006FDDD01072731EB1E1513043291EB9E37826390000C277542731D85AE66E4AB86F8FDBDAC1</password>
 <server_codepage>&lt;default&gt;</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
 <sybase_iq_version>Sybase IQ 16.x</sybase_iq_version>
 <sybiq_engine_name>svbclsapiq01da_IDWDEV</sybiq_engine_name>
 <use_named_pipe>no</use_named_pipe>
-<user>dba</user>
+<user>DWH_ETLS</user>
 </DSConfiguration>
 </DSConfigurations>
-', "enable_data_transfer" = 'yes', "import_unknown_type" = 'no', "name" = 'DS_CONTROL', "pcache_force_utf16" = 'no');
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Apr  6 15:57:52 2018', "ActaValue_3" = 'Tue Jul 24 17:16:33 2018', "x" = '-1', "y" = '-1')
-CREATE DATABASE DATASTORE DS_SRC_COB_REMESAS::'048b4e3e-a89e-469c-8d81-c219046271b4' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="ISO-8859-1" ?>
-<DSConfigurations>
-<DSConfiguration default="true" name="Configuration1">
-<case_sensitive>yes</case_sensitive>
-<cdc_ra_password>+0400000000120303000803E89FF54CE6F72A4A0F7A4FB7879C092EE8F79C2532ABB916704E8DD65FDA2887CC9EDEAD4E1B52120BAB2575BEB4</cdc_ra_password>
-<cdc_ra_user>sa</cdc_ra_user>
-<cdc_rs_password>+0400000000120303000803E8DA57B0135EBFDF4A8BA3F24B98EFD0AD3B8FC429890F286372E7E240D8664DD7CFEDD81E6D8B44FECDE34947A1</cdc_rs_password>
-<cdc_rs_retention>0</cdc_rs_retention>
-<cdc_rs_server>SAMPLE_RS</cdc_rs_server>
-<cdc_rs_user>ds</cdc_rs_user>
-<database_type>Sybase</database_type>
-<loader_xact_size>1000</loader_xact_size>
-<locale_codepage>&lt;default&gt;</locale_codepage>
-<locale_language>&lt;default&gt;</locale_language>
-<locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E872248B9462434BECFE201D41E2A2D2AAEEBD556E22C0E591F8B7DF2807F76922449F05B7CA3EF4222F011F7B6AA74B416A</password>
-<server_codepage>&lt;default&gt;</server_codepage>
-<sql_server_database>cob_remesas</sql_server_database>
-<sql_server_dataserver>SYB_SVCCOBIS01DA</sql_server_dataserver>
-<sybase_version>Sybase ASE 15.x</sybase_version>
-<user>DWH_cobis_sv</user>
-</DSConfiguration>
-</DSConfigurations>
-', "enable_data_transfer" = 'yes', "import_unknown_type" = 'no', "name" = 'DS_SRC_COB_REMESAS', "pcache_force_utf16" = 'no', "unknown_type_size" = '255');
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Dec 11 10:31:02 2018', "ActaValue_3" = 'Wed Feb 20 15:51:23 2019', "x" = '-1', "y" = '-1')
+', "enable_data_transfer" = 'yes', "import_unknown_type" = 'no', "name" = 'DS_CONTROL', "pcache_force_utf16" = 'no', "unknown_type_size" = '255');
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Feb 13 15:29:23 2018', "ActaValue_3" = 'Mon Sep 17 13:36:16 2018', "x" = '-1', "y" = '-1')
 CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="ISO-8859-1" ?>
 <DSConfigurations>
 <DSConfiguration default="true" name="Configuration1">
@@ -65,7 +40,7 @@ CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET 
 <locale_codepage>iso-8859-1</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E8D03E40562C31B78854C8BD8E744C27B9D1BF350E1DA45FE6840B528E4D161834FBA2FD799B13D6256E99D9C173EC</password>
+<password>+0400000000120303000803E87ADFB17D204023AEBC28A5C28BF6CF59C9F3CAB4D400F4432B634C1A203319C6F228CD7FEF7CC8D0892327E98CFE</password>
 <server_codepage>iso-8859-1</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -83,8 +58,8 @@ ActaName_3 = 'RDescription',ActaValue_3 = '' ,
 ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
-ActaName_7 = 'RDate_modified',ActaValue_7 = 'Fri Apr  5 19:31:00 2019' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Fri Apr  5 20:16:04 2019' , 
+ActaName_7 = 'RDate_modified',ActaValue_7 = 'Mon Apr 22 11:37:14 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Mon Apr 22 16:38:28 2019' , 
 ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '1' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
 ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '1' , 
@@ -236,20 +211,20 @@ FILENAME VARCHAR(1000)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Fri Apr  5 20:15:55 2019' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Mon Apr 22 16:38:19 2019' , 
 ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '107' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
 ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '107' , 
 ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
 ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
-ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '0 Seconds' , 
+ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '1 Seconds' , 
 ActaName_8 = 'RDatabase_Object_Type',ActaValue_8 = 'TABLE' , 
 ActaName_9 = 'RTable_Type',ActaValue_9 = 'TABLE' , 
 ActaName_10 = 'RDescription',ActaValue_10 = '' , 
 ActaName_11 = 'REstimated_Row_Count',ActaValue_11 = '50000' , 
 ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'yes' , 
 ActaName_13 = 'RSavedAfterCheckOut',ActaValue_13 = 'YES' , 
-ActaName_14 = 'RDate_modified',ActaValue_14 = 'Fri Apr  5 19:31:01 2019' )
+ActaName_14 = 'RDate_modified',ActaValue_14 = 'Mon Apr 22 11:37:14 2019' )
 CREATE TABLE DS_TARGET.STG_SAT.CUS_ADM_MOE(name VARCHAR(1024)  NULL  SET("Native Type" = 'String', "Required" = 'No', "XML Type" = 'ATTRIBUTE', "ui_mapping_text" = 'mde_moe_20190322.block.name'), 
 name_1 VARCHAR(1024)  NULL  SET("Native Type" = 'String', "Required" = 'No', "XML Type" = 'ATTRIBUTE', "ui_mapping_text" = 'mde_moe_20190322.block.subdictionary.name'), 
 id VARCHAR(1024)  NULL  SET("Native Type" = 'String', "Required" = 'No', "XML Type" = 'ATTRIBUTE', "ui_mapping_text" = 'mde_moe_20190322.block.subdictionary.v.id'), 
@@ -425,9 +400,7 @@ END
 
 END_TRY
 END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Apr  3 14:15:33 2018', "ActaValue_6" = 'Fri Apr  5 19:31:29 2019', "InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '$L_ID_JOB_TABLE   = SQL(\'DS_CONTROL\', \'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \\\'[$P_JOBNAME]\\\'\');
-
-print(\'<<<<<<<<<<<<<b7a5dc5>>>>>>>>>>>\');
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Apr  3 14:15:33 2018', "ActaValue_6" = 'Mon Apr 22 15:40:21 2019', "InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '54', "ui_script_text" = '$L_ID_JOB_TABLE   = SQL(\'DS_CONTROL\', \'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \\\'[$P_JOBNAME]\\\'\');
 
 IF($L_ID_JOB_TABLE IS NOT null)
 begin
@@ -446,7 +419,7 @@ RETURNS  INT
 DECLARE
      $L_ID_JOB_TABLE INT ;
 BEGIN
-$L_ID_JOB_TABLE = sql('DS_CONTROL', 'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \'[$P_JOBNAME]\'');print('<<<<<<<<<<<<<b7a5dc5>>>>>>>>>>>');IF (($L_ID_JOB_TABLE IS NOT  NULL ) )
+$L_ID_JOB_TABLE = sql('DS_CONTROL', 'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \'[$P_JOBNAME]\'');IF (($L_ID_JOB_TABLE IS NOT  NULL ) )
 BEGIN
 $P_EXISTEJOB = 1;END
 ELSE
@@ -454,12 +427,12 @@ BEGIN
 $P_EXISTEJOB = 0;END
 RETURN $P_EXISTEJOB;
 END
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 22 15:50:37 2019', "ActaValue_3" = 'Thu Apr  4 11:36:52 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 22 15:50:37 2019', "ActaValue_3" = 'Mon Apr 22 15:52:48 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_ADM_MOE::'4ca1945a-fa04-4802-bd23-6024b39bcccb'
 BEGIN
 
 ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>366</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '42', "ui_display_name" = 'REV_PIV_ADM_MOE', "x" = '480', "y" = '-90')
-GUID::'ed454d33-b2df-45e1-ae5c-7d38c311a74d' CALL TRANSFORM Reverse_Pivot() INPUT(CUS_ADM_MOE) OUTPUT(REV_PIV_ADM_MOE( DI_FILENAME VARCHAR(100)  SET( "Description" = 'This column holds the source file information.') ,
+GUID::'ed454d33-b2df-45e1-ae5c-7d38c311a74d' CALL TRANSFORM Reverse_Pivot() INPUT(CUS_ADM_MOE) OUTPUT(REV_PIV_ADM_MOE_1( DI_FILENAME VARCHAR(100)  SET( "Description" = 'This column holds the source file information.') ,
  EDAD_v VARCHAR(1024) ,
  TIPO_CLIENTE_v VARCHAR(1024) ,
  POLICY_INDICATOR_v VARCHAR(1024) ,
@@ -607,162 +580,162 @@ ALGUIComment ("InputSchema_WidthProp" = '51', "Input_1st_Column_Name" = 'Type', 
 GUID::'1881c318-6d2d-44aa-a10d-e51b767c0819' READ TABLE DS_TARGET.STG_SAT.CUS_ADM_MOE OUTPUT(CUS_ADM_MOE)
 SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
 
-ALGUIComment ("InputSchema_WidthProp" = '51', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Name" = '235', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Name" = '216', "Output_Width_Type" = '128', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'REV_PIV_ADM_MOE', "x" = '870', "y" = '-90')
-GUID::'94ef0573-9180-47d7-8158-cb022df9abf9' CREATE VIEW Query( EDAD DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.EDAD_v') ,
- TIPO_CLIENTE DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.TIPO_CLIENTE_v') ,
- POLICY_INDICATOR DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.POLICY_INDICATOR_v') ,
- RAC DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.RAC_v') ,
- LOGO VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.LOGO_v') ,
- SOURCECODE VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.SOURCECODE_v') ,
- TIPOEMPLEO VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.TIPOEMPLEO_v') ,
- TIEMPOEMPLEO DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.TIEMPOEMPLEO_v') ,
- LOGO2 VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.LOGO2_v') ,
- INGRESOS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.INGRESOS_v') ,
- FORZAJE_SCORE DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.FORZAJE_SCORE_v') ,
- TIPO_PCCD DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.TIPO_PCCD_v') ,
- PERFIL_CLIENTE VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.PERFIL_CLIENTE_v') ,
- MATCH_INTERNO DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.MATCH_INTERNO_v') ,
- SUMACUOTA_CARDS_SSF DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.SUMACUOTA_CARDS_SSF_v') ,
- SUMACUOTA_HIPOTECAS_SSF DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.SUMACUOTA_HIPOTECAS_SSF_v') ,
- SUMACUOTA_PREST_CONSUMO_SSF DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.SUMACUOTA_PREST_CONSUMO_SSF_v') ,
- SUMACUOTA_SOBREGIROS_SSF DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.SUMACUOTA_SOBREGIROS_SSF_v') ,
- SUMACUOTA_REFI_SSF DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.SUMACUOTA_REFI_SSF_v') ,
- MORAACTUAL_ALL_SSF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.MORAACTUAL_ALL_SSF_v') ,
- REFERENCIA_MASANTIGUA_SSF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.REFERENCIA_MASANTIGUA_SSF_v') ,
- CONTEO_WO_SSF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.CONTEO_WO_SSF_v') ,
- LIMITEPCCD_6MESES_SSF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.LIMITEPCCD_6MESES_SSF_v') ,
- LIMITEPCCD_12MESES_SSF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.LIMITEPCCD_12MESES_SSF_v') ,
- CONTEO_REFIS_SSF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.CONTEO_REFIS_SSF_v') ,
- MAYOR_ANT_TC_SSF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.MAYOR_ANT_TC_SSF_v') ,
- SCORE_BUREAU_EQFX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.SCORE_BUREAU_EQFX_v') ,
- LIMITEPCCD_6MESES_EQFX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.LIMITEPCCD_6MESES_EQFX_v') ,
- LIMITEPCCD_12MESES_EQFX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.LIMITEPCCD_12MESES_EQFX_v') ,
- MORAACTUAL_EQFX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.MORAACTUAL_EQFX_v') ,
- NUMEROMESES_EQFX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.NUMEROMESES_EQFX_v') ,
- ANTMAXTC_EQFX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.ANTMAXTC_EQFX_v') ,
- TC_JURIDICO_EQFX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.TC_JURIDICO_EQFX_v') ,
- TOTAL_JUICIOS_EQFX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.TOTAL_JUICIOS_EQFX_v') ,
- SUMCUOACTOT_EQFX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.SUMCUOACTOT_EQFX_v') ,
- FLAG_EXPATRIADO DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.FLAG_EXPATRIADO_v') ,
- FLAG_VIP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.FLAG_VIP_v') ,
- MOB_VISA DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.MOB_VISA_v') ,
- MOB_MASTER DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.MOB_MASTER_v') ,
- BEH_SCORE_VISA DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.BEH_SCORE_VISA_v') ,
- BEH_SCORE_MASTER DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.BEH_SCORE_MASTER_v') ,
- TOTAL_DPD DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.TOTAL_DPD_v') ,
- NUM_TC DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.NUM_TC_v') ,
- VISA_BALANCE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.VISA_BALANCE_v') ,
- VISA_LINE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.VISA_LINE_v') ,
- MASTER_BALANCE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.MASTER_BALANCE_v') ,
- MASTER_LINE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.MASTER_LINE_v') ,
- BLOCK_CODE_VISA VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.BLOCK_CODE_VISA_v') ,
- BLOCK_CODE_MASTER VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.BLOCK_CODE_MASTER_v') ,
- RW_BALANCE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.RW_BALANCE_v') ,
- VISA_WRITE_OFF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.VISA_WRITE_OFF_v') ,
- MASTER_WRITE_OFF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.MASTER_WRITE_OFF_v') ,
- IL_WRITE_OFF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.IL_WRITE_OFF_v') ,
- MORTG_WRITE_OFF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.MORTG_WRITE_OFF_v') ,
- AUTO_WRITE_OFF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.AUTO_WRITE_OFF_v') ,
- MONTHS_LAST_CLI DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.MONTHS_LAST_CLI_v') ,
- FLAG_PRE_REJECTION VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.FLAG_PRE_REJECTION_v') ,
- MOB_YOUNGEST_EXTRA DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.MOB_YOUNGEST_EXTRA_v') ,
- NEG_REFERENCES VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.NEG_REFERENCES_v') ,
- RW_CC_BALANCE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.RW_CC_BALANCE_v') ,
- IL_CC_BALANCE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.IL_CC_BALANCE_v') ,
- RC_LINE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.RC_LINE_v') ,
- RC_BALANCE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.RC_BALANCE_v') ,
- EXTRA_BALANCE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.EXTRA_BALANCE_v') ,
- IL_BALANCE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.IL_BALANCE_v') ,
- OD_LINE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.OD_LINE_v') ,
- OD_BALANCE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.OD_BALANCE_v') ,
- AUTO_BALANCE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.AUTO_BALANCE_v') ,
- DDA_OVERLIMIT DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.DDA_OVERLIMIT_v') ,
- VAREXTRA3 DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.VAREXTRA3_v') ,
- SCORE_INTERNO DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.SCORE_INTERNO_v') ,
- FLAG_REWRITE DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.FLAG_REWRITE_v') ,
- MOB_REWRITE DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.MOB_REWRITE_v') ,
- RC_WRITE_OFF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.RC_WRITE_OFF_v') ,
- SOB_WRITE_OFF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.SOB_WRITE_OFF_v') ,
- SUMACUOTAS_TARJETAS_COBIS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.SUMACUOTAS_TARJETAS_COBIS_v') ,
- SUMACUOTAS_HIPOTECAS_COBIS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.SUMACUOTAS_HIPOTECAS_COBIS_v') ,
- SUMACUOTAS_PERSONALES_COBIS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.SUMACUOTAS_PERSONALES_COBIS_v') ,
- TIPOEMPRESA VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.TIPOEMPRESA_v') ,
- FLAG_ORO DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.FLAG_ORO_v') ,
- FLAG_PEP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.FLAG_PEP_v') ,
- FLAG_EXTRANJERO DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.FLAG_EXTRANJERO_v') ,
- FLAG_CREDOMATIC DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.FLAG_CREDOMATIC_v') ,
- FLAG_AFP_ELECTRONICO DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.FLAG_AFP_ELECTRONICO_v') ,
- REASONCODE VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.REASONCODE_v') ,
- AUX2 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.AUX2_v') ,
- PREVIOUS_REASONCODE VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.PREVIOUS_REASONCODE_v') ,
- AUX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.AUX_v') ,
- CUOTASINTERNAS_COBIS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.CUOTASINTERNAS_COBIS_v') ,
- TARGET_MARKET VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.TARGET_MARKET_v') ,
- FLAG_PLANILLERO DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.FLAG_PLANILLERO_v') ,
- FLAG_HIT DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.FLAG_HIT_v') ,
- PROGRAMA VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.PROGRAMA_v') ,
- LIMITE_PCCD_SSF DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.LIMITE_PCCD_SSF_v') ,
- FLAG_XS DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.FLAG_XS_v') ,
- REASONCODES VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.REASONCODES_v') ,
- FLAG_PCCD DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.FLAG_PCCD_v') ,
- CAP_MUE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.CAP_MUE_v') ,
- MUE_DISPUESTO DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.MUE_DISPUESTO_v') ,
- DEBT_BURDEN_INICIAL_SSF DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.DEBT_BURDEN_INICIAL_SSF_v') ,
- DEBT_BURDEN_FINAL DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.DEBT_BURDEN_FINAL_v') ,
- MULTIPLICADOR DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.MULTIPLICADOR_v') ,
- LINEA_MAXIMA DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.LINEA_MAXIMA_v') ,
- MUE_DISPONIBLE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.MUE_DISPONIBLE_v') ,
- LIMMAXLOGO DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.LIMMAXLOGO_v') ,
- LIMMINLOGO DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.LIMMINLOGO_v') ,
- LINEA_TIMESINCOME DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.LINEA_TIMESINCOME_v') ,
- LINEA_DISPDEBTBURDEN DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.LINEA_DISPDEBTBURDEN_v') ,
- LINEADISPMUE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.LINEADISPMUE_v') ,
- LINEA_CAP_PRODUCTO DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.LINEA_CAP_PRODUCTO_v') ,
- LIMITE_NUEVA_LINEA DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.LIMITE_NUEVA_LINEA_v') ,
- EMPLEADO_CUSCATLAN DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.EMPLEADO_CUSCATLAN_v') ,
- LINEAMINIMA DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.LINEAMINIMA_v') ,
- FLAG_NORMALSALES DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.FLAG_NORMALSALES_v') ,
- EXPCREDITICIA_ALL DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.EXPCREDITICIA_ALL_v') ,
- EXPPCCD_ALL DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.EXPPCCD_ALL_v') ,
- LIMITE_PCCD_EQFX DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.LIMITE_PCCD_EQFX_v') ,
- LIMITE_PCCD DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.LIMITE_PCCD_v') ,
- EMPLEO_EMPRESA VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.EMPLEO_EMPRESA_v') ,
- GASTOS_NUEVA_LINEA DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.GASTOS_NUEVA_LINEA_v') ,
- LIMMAXLOGO2 DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.LIMMAXLOGO2_v') ,
- LIMMINLOGO2 DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.LIMMINLOGO2_v') ,
- CAP_DB DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.CAP_DB_v') ,
- DEBT_BURDEN_FINAL_SSF DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.DEBT_BURDEN_FINAL_SSF_v') ,
- LIMITEFINAL_LINEA1 DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.LIMITEFINAL_LINEA1_v') ,
- LIMITEFINAL_LINEA2 DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.LIMITEFINAL_LINEA2_v') ,
- CAPACIDADEDEUDAMIENTOMENSUAL DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.CAPACIDADEDEUDAMIENTOMENSUAL_v') ,
- DEBT_BURDEN_INICIAL_ALL DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.DEBT_BURDEN_INICIAL_ALL_v') ,
- DEBT_BURDEN_FINAL_ALL DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.DEBT_BURDEN_FINAL_ALL_v') ,
- TASA_X_LOGO DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.TASA_X_LOGO_v') ,
- MUE_FINAL2 DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.MUE_FINAL2_v') ,
- MUE_FINAL3 DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.MUE_FINAL3_v') ,
- PERFIL_DOCUMENTACION VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.PERFIL_DOCUMENTACION_v') ,
- DOCUMENTACION VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.DOCUMENTACION_v') ,
- ESTRATEGIA_AUTENTICACION VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.ESTRATEGIA_AUTENTICACION_v') ,
- PRODUCTO_AUTENTICACION VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.PRODUCTO_AUTENTICACION_v') ,
- UMBRAL_SOLICITADO VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.UMBRAL_SOLICITADO_v') ,
- VERIFICAR_IDENTIDAD VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.VERIFICAR_IDENTIDAD_v') ,
- CODIGO_DOC VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.CODIGO_DOC_v') ,
- SYSTEMDATE DATE  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.SYSTEMDATE_v') ,
+ALGUIComment ("InputSchema_WidthProp" = '51', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Name" = '235', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Name" = '216', "Output_Width_Type" = '128', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'REV_PIV_ADM_MOE_1', "x" = '870', "y" = '-90')
+GUID::'94ef0573-9180-47d7-8158-cb022df9abf9' CREATE VIEW Query( EDAD DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.EDAD_v') ,
+ TIPO_CLIENTE DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.TIPO_CLIENTE_v') ,
+ POLICY_INDICATOR DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.POLICY_INDICATOR_v') ,
+ RAC DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.RAC_v') ,
+ LOGO VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LOGO_v') ,
+ SOURCECODE VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SOURCECODE_v') ,
+ TIPOEMPLEO VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.TIPOEMPLEO_v') ,
+ TIEMPOEMPLEO DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.TIEMPOEMPLEO_v') ,
+ LOGO2 VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LOGO2_v') ,
+ INGRESOS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.INGRESOS_v') ,
+ FORZAJE_SCORE DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.FORZAJE_SCORE_v') ,
+ TIPO_PCCD DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.TIPO_PCCD_v') ,
+ PERFIL_CLIENTE VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.PERFIL_CLIENTE_v') ,
+ MATCH_INTERNO DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.MATCH_INTERNO_v') ,
+ SUMACUOTA_CARDS_SSF DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SUMACUOTA_CARDS_SSF_v') ,
+ SUMACUOTA_HIPOTECAS_SSF DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SUMACUOTA_HIPOTECAS_SSF_v') ,
+ SUMACUOTA_PREST_CONSUMO_SSF DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SUMACUOTA_PREST_CONSUMO_SSF_v') ,
+ SUMACUOTA_SOBREGIROS_SSF DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SUMACUOTA_SOBREGIROS_SSF_v') ,
+ SUMACUOTA_REFI_SSF DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SUMACUOTA_REFI_SSF_v') ,
+ MORAACTUAL_ALL_SSF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.MORAACTUAL_ALL_SSF_v') ,
+ REFERENCIA_MASANTIGUA_SSF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.REFERENCIA_MASANTIGUA_SSF_v') ,
+ CONTEO_WO_SSF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.CONTEO_WO_SSF_v') ,
+ LIMITEPCCD_6MESES_SSF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LIMITEPCCD_6MESES_SSF_v') ,
+ LIMITEPCCD_12MESES_SSF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LIMITEPCCD_12MESES_SSF_v') ,
+ CONTEO_REFIS_SSF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.CONTEO_REFIS_SSF_v') ,
+ MAYOR_ANT_TC_SSF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.MAYOR_ANT_TC_SSF_v') ,
+ SCORE_BUREAU_EQFX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SCORE_BUREAU_EQFX_v') ,
+ LIMITEPCCD_6MESES_EQFX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LIMITEPCCD_6MESES_EQFX_v') ,
+ LIMITEPCCD_12MESES_EQFX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LIMITEPCCD_12MESES_EQFX_v') ,
+ MORAACTUAL_EQFX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.MORAACTUAL_EQFX_v') ,
+ NUMEROMESES_EQFX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.NUMEROMESES_EQFX_v') ,
+ ANTMAXTC_EQFX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.ANTMAXTC_EQFX_v') ,
+ TC_JURIDICO_EQFX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.TC_JURIDICO_EQFX_v') ,
+ TOTAL_JUICIOS_EQFX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.TOTAL_JUICIOS_EQFX_v') ,
+ SUMCUOACTOT_EQFX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SUMCUOACTOT_EQFX_v') ,
+ FLAG_EXPATRIADO DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.FLAG_EXPATRIADO_v') ,
+ FLAG_VIP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.FLAG_VIP_v') ,
+ MOB_VISA DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.MOB_VISA_v') ,
+ MOB_MASTER DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.MOB_MASTER_v') ,
+ BEH_SCORE_VISA DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.BEH_SCORE_VISA_v') ,
+ BEH_SCORE_MASTER DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.BEH_SCORE_MASTER_v') ,
+ TOTAL_DPD DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.TOTAL_DPD_v') ,
+ NUM_TC DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.NUM_TC_v') ,
+ VISA_BALANCE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.VISA_BALANCE_v') ,
+ VISA_LINE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.VISA_LINE_v') ,
+ MASTER_BALANCE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.MASTER_BALANCE_v') ,
+ MASTER_LINE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.MASTER_LINE_v') ,
+ BLOCK_CODE_VISA VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.BLOCK_CODE_VISA_v') ,
+ BLOCK_CODE_MASTER VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.BLOCK_CODE_MASTER_v') ,
+ RW_BALANCE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.RW_BALANCE_v') ,
+ VISA_WRITE_OFF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.VISA_WRITE_OFF_v') ,
+ MASTER_WRITE_OFF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.MASTER_WRITE_OFF_v') ,
+ IL_WRITE_OFF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.IL_WRITE_OFF_v') ,
+ MORTG_WRITE_OFF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.MORTG_WRITE_OFF_v') ,
+ AUTO_WRITE_OFF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.AUTO_WRITE_OFF_v') ,
+ MONTHS_LAST_CLI DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.MONTHS_LAST_CLI_v') ,
+ FLAG_PRE_REJECTION VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.FLAG_PRE_REJECTION_v') ,
+ MOB_YOUNGEST_EXTRA DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.MOB_YOUNGEST_EXTRA_v') ,
+ NEG_REFERENCES VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.NEG_REFERENCES_v') ,
+ RW_CC_BALANCE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.RW_CC_BALANCE_v') ,
+ IL_CC_BALANCE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.IL_CC_BALANCE_v') ,
+ RC_LINE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.RC_LINE_v') ,
+ RC_BALANCE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.RC_BALANCE_v') ,
+ EXTRA_BALANCE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.EXTRA_BALANCE_v') ,
+ IL_BALANCE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.IL_BALANCE_v') ,
+ OD_LINE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.OD_LINE_v') ,
+ OD_BALANCE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.OD_BALANCE_v') ,
+ AUTO_BALANCE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.AUTO_BALANCE_v') ,
+ DDA_OVERLIMIT DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.DDA_OVERLIMIT_v') ,
+ VAREXTRA3 DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.VAREXTRA3_v') ,
+ SCORE_INTERNO DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SCORE_INTERNO_v') ,
+ FLAG_REWRITE DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.FLAG_REWRITE_v') ,
+ MOB_REWRITE DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.MOB_REWRITE_v') ,
+ RC_WRITE_OFF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.RC_WRITE_OFF_v') ,
+ SOB_WRITE_OFF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SOB_WRITE_OFF_v') ,
+ SUMACUOTAS_TARJETAS_COBIS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SUMACUOTAS_TARJETAS_COBIS_v') ,
+ SUMACUOTAS_HIPOTECAS_COBIS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SUMACUOTAS_HIPOTECAS_COBIS_v') ,
+ SUMACUOTAS_PERSONALES_COBIS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SUMACUOTAS_PERSONALES_COBIS_v') ,
+ TIPOEMPRESA VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.TIPOEMPRESA_v') ,
+ FLAG_ORO DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.FLAG_ORO_v') ,
+ FLAG_PEP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.FLAG_PEP_v') ,
+ FLAG_EXTRANJERO DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.FLAG_EXTRANJERO_v') ,
+ FLAG_CREDOMATIC DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.FLAG_CREDOMATIC_v') ,
+ FLAG_AFP_ELECTRONICO DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.FLAG_AFP_ELECTRONICO_v') ,
+ REASONCODE VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.REASONCODE_v') ,
+ AUX2 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.AUX2_v') ,
+ PREVIOUS_REASONCODE VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.PREVIOUS_REASONCODE_v') ,
+ AUX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.AUX_v') ,
+ CUOTASINTERNAS_COBIS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.CUOTASINTERNAS_COBIS_v') ,
+ TARGET_MARKET VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.TARGET_MARKET_v') ,
+ FLAG_PLANILLERO DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.FLAG_PLANILLERO_v') ,
+ FLAG_HIT DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.FLAG_HIT_v') ,
+ PROGRAMA VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.PROGRAMA_v') ,
+ LIMITE_PCCD_SSF DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LIMITE_PCCD_SSF_v') ,
+ FLAG_XS DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.FLAG_XS_v') ,
+ REASONCODES VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.REASONCODES_v') ,
+ FLAG_PCCD DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.FLAG_PCCD_v') ,
+ CAP_MUE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.CAP_MUE_v') ,
+ MUE_DISPUESTO DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.MUE_DISPUESTO_v') ,
+ DEBT_BURDEN_INICIAL_SSF DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.DEBT_BURDEN_INICIAL_SSF_v') ,
+ DEBT_BURDEN_FINAL DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.DEBT_BURDEN_FINAL_v') ,
+ MULTIPLICADOR DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.MULTIPLICADOR_v') ,
+ LINEA_MAXIMA DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LINEA_MAXIMA_v') ,
+ MUE_DISPONIBLE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.MUE_DISPONIBLE_v') ,
+ LIMMAXLOGO DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LIMMAXLOGO_v') ,
+ LIMMINLOGO DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LIMMINLOGO_v') ,
+ LINEA_TIMESINCOME DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LINEA_TIMESINCOME_v') ,
+ LINEA_DISPDEBTBURDEN DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LINEA_DISPDEBTBURDEN_v') ,
+ LINEADISPMUE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LINEADISPMUE_v') ,
+ LINEA_CAP_PRODUCTO DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LINEA_CAP_PRODUCTO_v') ,
+ LIMITE_NUEVA_LINEA DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LIMITE_NUEVA_LINEA_v') ,
+ EMPLEADO_CUSCATLAN DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.EMPLEADO_CUSCATLAN_v') ,
+ LINEAMINIMA DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LINEAMINIMA_v') ,
+ FLAG_NORMALSALES DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.FLAG_NORMALSALES_v') ,
+ EXPCREDITICIA_ALL DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.EXPCREDITICIA_ALL_v') ,
+ EXPPCCD_ALL DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.EXPPCCD_ALL_v') ,
+ LIMITE_PCCD_EQFX DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LIMITE_PCCD_EQFX_v') ,
+ LIMITE_PCCD DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LIMITE_PCCD_v') ,
+ EMPLEO_EMPRESA VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.EMPLEO_EMPRESA_v') ,
+ GASTOS_NUEVA_LINEA DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.GASTOS_NUEVA_LINEA_v') ,
+ LIMMAXLOGO2 DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LIMMAXLOGO2_v') ,
+ LIMMINLOGO2 DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LIMMINLOGO2_v') ,
+ CAP_DB DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.CAP_DB_v') ,
+ DEBT_BURDEN_FINAL_SSF DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.DEBT_BURDEN_FINAL_SSF_v') ,
+ LIMITEFINAL_LINEA1 DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LIMITEFINAL_LINEA1_v') ,
+ LIMITEFINAL_LINEA2 DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LIMITEFINAL_LINEA2_v') ,
+ CAPACIDADEDEUDAMIENTOMENSUAL DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.CAPACIDADEDEUDAMIENTOMENSUAL_v') ,
+ DEBT_BURDEN_INICIAL_ALL DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.DEBT_BURDEN_INICIAL_ALL_v') ,
+ DEBT_BURDEN_FINAL_ALL DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.DEBT_BURDEN_FINAL_ALL_v') ,
+ TASA_X_LOGO DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.TASA_X_LOGO_v') ,
+ MUE_FINAL2 DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.MUE_FINAL2_v') ,
+ MUE_FINAL3 DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.MUE_FINAL3_v') ,
+ PERFIL_DOCUMENTACION VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.PERFIL_DOCUMENTACION_v') ,
+ DOCUMENTACION VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.DOCUMENTACION_v') ,
+ ESTRATEGIA_AUTENTICACION VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.ESTRATEGIA_AUTENTICACION_v') ,
+ PRODUCTO_AUTENTICACION VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.PRODUCTO_AUTENTICACION_v') ,
+ UMBRAL_SOLICITADO VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.UMBRAL_SOLICITADO_v') ,
+ VERIFICAR_IDENTIDAD VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.VERIFICAR_IDENTIDAD_v') ,
+ CODIGO_DOC VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.CODIGO_DOC_v') ,
+ SYSTEMDATE DATE  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SYSTEMDATE_v') ,
  LOAD_DATE DATETIME(9)  SET( "ui_mapping_text" = 'sysdate( )') ,
- FILENAME VARCHAR(1000)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE.DI_FILENAME')  )
+ FILENAME VARCHAR(1000)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.DI_FILENAME')  )
  AS
-SELECT REV_PIV_ADM_MOE.EDAD_v, REV_PIV_ADM_MOE.TIPO_CLIENTE_v, REV_PIV_ADM_MOE.POLICY_INDICATOR_v, REV_PIV_ADM_MOE.RAC_v, REV_PIV_ADM_MOE.LOGO_v, REV_PIV_ADM_MOE.SOURCECODE_v, REV_PIV_ADM_MOE.TIPOEMPLEO_v, REV_PIV_ADM_MOE.TIEMPOEMPLEO_v, REV_PIV_ADM_MOE.LOGO2_v, REV_PIV_ADM_MOE.INGRESOS_v, REV_PIV_ADM_MOE.FORZAJE_SCORE_v, REV_PIV_ADM_MOE.TIPO_PCCD_v, REV_PIV_ADM_MOE.PERFIL_CLIENTE_v, REV_PIV_ADM_MOE.MATCH_INTERNO_v, REV_PIV_ADM_MOE.SUMACUOTA_CARDS_SSF_v, REV_PIV_ADM_MOE.SUMACUOTA_HIPOTECAS_SSF_v, REV_PIV_ADM_MOE.SUMACUOTA_PREST_CONSUMO_SSF_v, REV_PIV_ADM_MOE.SUMACUOTA_SOBREGIROS_SSF_v, REV_PIV_ADM_MOE.SUMACUOTA_REFI_SSF_v, REV_PIV_ADM_MOE.MORAACTUAL_ALL_SSF_v, REV_PIV_ADM_MOE.REFERENCIA_MASANTIGUA_SSF_v, REV_PIV_ADM_MOE.CONTEO_WO_SSF_v, REV_PIV_ADM_MOE.LIMITEPCCD_6MESES_SSF_v, REV_PIV_ADM_MOE.LIMITEPCCD_12MESES_SSF_v, REV_PIV_ADM_MOE.CONTEO_REFIS_SSF_v, REV_PIV_ADM_MOE.MAYOR_ANT_TC_SSF_v, REV_PIV_ADM_MOE.SCORE_BUREAU_EQFX_v, REV_PIV_ADM_MOE.LIMITEPCCD_6MESES_EQFX_v, REV_PIV_ADM_MOE.LIMITEPCCD_12MESES_EQFX_v, REV_PIV_ADM_MOE.MORAACTUAL_EQFX_v, REV_PIV_ADM_MOE.NUMEROMESES_EQFX_v, REV_PIV_ADM_MOE.ANTMAXTC_EQFX_v, REV_PIV_ADM_MOE.TC_JURIDICO_EQFX_v, REV_PIV_ADM_MOE.TOTAL_JUICIOS_EQFX_v, REV_PIV_ADM_MOE.SUMCUOACTOT_EQFX_v, REV_PIV_ADM_MOE.FLAG_EXPATRIADO_v, REV_PIV_ADM_MOE.FLAG_VIP_v, REV_PIV_ADM_MOE.MOB_VISA_v, REV_PIV_ADM_MOE.MOB_MASTER_v, REV_PIV_ADM_MOE.BEH_SCORE_VISA_v, REV_PIV_ADM_MOE.BEH_SCORE_MASTER_v, REV_PIV_ADM_MOE.TOTAL_DPD_v, REV_PIV_ADM_MOE.NUM_TC_v, REV_PIV_ADM_MOE.VISA_BALANCE_v, REV_PIV_ADM_MOE.VISA_LINE_v, REV_PIV_ADM_MOE.MASTER_BALANCE_v, REV_PIV_ADM_MOE.MASTER_LINE_v, REV_PIV_ADM_MOE.BLOCK_CODE_VISA_v, REV_PIV_ADM_MOE.BLOCK_CODE_MASTER_v, REV_PIV_ADM_MOE.RW_BALANCE_v, REV_PIV_ADM_MOE.VISA_WRITE_OFF_v, REV_PIV_ADM_MOE.MASTER_WRITE_OFF_v, REV_PIV_ADM_MOE.IL_WRITE_OFF_v, REV_PIV_ADM_MOE.MORTG_WRITE_OFF_v, REV_PIV_ADM_MOE.AUTO_WRITE_OFF_v, REV_PIV_ADM_MOE.MONTHS_LAST_CLI_v, REV_PIV_ADM_MOE.FLAG_PRE_REJECTION_v, REV_PIV_ADM_MOE.MOB_YOUNGEST_EXTRA_v, REV_PIV_ADM_MOE.NEG_REFERENCES_v, REV_PIV_ADM_MOE.RW_CC_BALANCE_v, REV_PIV_ADM_MOE.IL_CC_BALANCE_v, REV_PIV_ADM_MOE.RC_LINE_v, REV_PIV_ADM_MOE.RC_BALANCE_v, REV_PIV_ADM_MOE.EXTRA_BALANCE_v, REV_PIV_ADM_MOE.IL_BALANCE_v, REV_PIV_ADM_MOE.OD_LINE_v, REV_PIV_ADM_MOE.OD_BALANCE_v, REV_PIV_ADM_MOE.AUTO_BALANCE_v, REV_PIV_ADM_MOE.DDA_OVERLIMIT_v, REV_PIV_ADM_MOE.VAREXTRA3_v, REV_PIV_ADM_MOE.SCORE_INTERNO_v, REV_PIV_ADM_MOE.FLAG_REWRITE_v, REV_PIV_ADM_MOE.MOB_REWRITE_v, REV_PIV_ADM_MOE.RC_WRITE_OFF_v, REV_PIV_ADM_MOE.SOB_WRITE_OFF_v, REV_PIV_ADM_MOE.SUMACUOTAS_TARJETAS_COBIS_v, REV_PIV_ADM_MOE.SUMACUOTAS_HIPOTECAS_COBIS_v, REV_PIV_ADM_MOE.SUMACUOTAS_PERSONALES_COBIS_v, REV_PIV_ADM_MOE.TIPOEMPRESA_v, REV_PIV_ADM_MOE.FLAG_ORO_v, REV_PIV_ADM_MOE.FLAG_PEP_v, REV_PIV_ADM_MOE.FLAG_EXTRANJERO_v, REV_PIV_ADM_MOE.FLAG_CREDOMATIC_v, REV_PIV_ADM_MOE.FLAG_AFP_ELECTRONICO_v, REV_PIV_ADM_MOE.REASONCODE_v, REV_PIV_ADM_MOE.AUX2_v, REV_PIV_ADM_MOE.PREVIOUS_REASONCODE_v, REV_PIV_ADM_MOE.AUX_v, REV_PIV_ADM_MOE.CUOTASINTERNAS_COBIS_v, REV_PIV_ADM_MOE.TARGET_MARKET_v, REV_PIV_ADM_MOE.FLAG_PLANILLERO_v, REV_PIV_ADM_MOE.FLAG_HIT_v, REV_PIV_ADM_MOE.PROGRAMA_v, REV_PIV_ADM_MOE.LIMITE_PCCD_SSF_v, REV_PIV_ADM_MOE.FLAG_XS_v, REV_PIV_ADM_MOE.REASONCODES_v, REV_PIV_ADM_MOE.FLAG_PCCD_v, REV_PIV_ADM_MOE.CAP_MUE_v, REV_PIV_ADM_MOE.MUE_DISPUESTO_v, REV_PIV_ADM_MOE.DEBT_BURDEN_INICIAL_SSF_v, REV_PIV_ADM_MOE.DEBT_BURDEN_FINAL_v, REV_PIV_ADM_MOE.MULTIPLICADOR_v, REV_PIV_ADM_MOE.LINEA_MAXIMA_v, REV_PIV_ADM_MOE.MUE_DISPONIBLE_v, REV_PIV_ADM_MOE.LIMMAXLOGO_v, REV_PIV_ADM_MOE.LIMMINLOGO_v, REV_PIV_ADM_MOE.LINEA_TIMESINCOME_v, REV_PIV_ADM_MOE.LINEA_DISPDEBTBURDEN_v, REV_PIV_ADM_MOE.LINEADISPMUE_v, REV_PIV_ADM_MOE.LINEA_CAP_PRODUCTO_v, REV_PIV_ADM_MOE.LIMITE_NUEVA_LINEA_v, REV_PIV_ADM_MOE.EMPLEADO_CUSCATLAN_v, REV_PIV_ADM_MOE.LINEAMINIMA_v, REV_PIV_ADM_MOE.FLAG_NORMALSALES_v, REV_PIV_ADM_MOE.EXPCREDITICIA_ALL_v, REV_PIV_ADM_MOE.EXPPCCD_ALL_v, REV_PIV_ADM_MOE.LIMITE_PCCD_EQFX_v, REV_PIV_ADM_MOE.LIMITE_PCCD_v, REV_PIV_ADM_MOE.EMPLEO_EMPRESA_v, REV_PIV_ADM_MOE.GASTOS_NUEVA_LINEA_v, REV_PIV_ADM_MOE.LIMMAXLOGO2_v, REV_PIV_ADM_MOE.LIMMINLOGO2_v, REV_PIV_ADM_MOE.CAP_DB_v, REV_PIV_ADM_MOE.DEBT_BURDEN_FINAL_SSF_v, REV_PIV_ADM_MOE.LIMITEFINAL_LINEA1_v, REV_PIV_ADM_MOE.LIMITEFINAL_LINEA2_v, REV_PIV_ADM_MOE.CAPACIDADEDEUDAMIENTOMENSUAL_v, REV_PIV_ADM_MOE.DEBT_BURDEN_INICIAL_ALL_v, REV_PIV_ADM_MOE.DEBT_BURDEN_FINAL_ALL_v, REV_PIV_ADM_MOE.TASA_X_LOGO_v, REV_PIV_ADM_MOE.MUE_FINAL2_v, REV_PIV_ADM_MOE.MUE_FINAL3_v, REV_PIV_ADM_MOE.PERFIL_DOCUMENTACION_v, REV_PIV_ADM_MOE.DOCUMENTACION_v, REV_PIV_ADM_MOE.ESTRATEGIA_AUTENTICACION_v, REV_PIV_ADM_MOE.PRODUCTO_AUTENTICACION_v, REV_PIV_ADM_MOE.UMBRAL_SOLICITADO_v, REV_PIV_ADM_MOE.VERIFICAR_IDENTIDAD_v, REV_PIV_ADM_MOE.CODIGO_DOC_v, REV_PIV_ADM_MOE.SYSTEMDATE_v, sysdate(), REV_PIV_ADM_MOE.DI_FILENAME FROM REV_PIV_ADM_MOE 
+SELECT REV_PIV_ADM_MOE_1.EDAD_v, REV_PIV_ADM_MOE_1.TIPO_CLIENTE_v, REV_PIV_ADM_MOE_1.POLICY_INDICATOR_v, REV_PIV_ADM_MOE_1.RAC_v, REV_PIV_ADM_MOE_1.LOGO_v, REV_PIV_ADM_MOE_1.SOURCECODE_v, REV_PIV_ADM_MOE_1.TIPOEMPLEO_v, REV_PIV_ADM_MOE_1.TIEMPOEMPLEO_v, REV_PIV_ADM_MOE_1.LOGO2_v, REV_PIV_ADM_MOE_1.INGRESOS_v, REV_PIV_ADM_MOE_1.FORZAJE_SCORE_v, REV_PIV_ADM_MOE_1.TIPO_PCCD_v, REV_PIV_ADM_MOE_1.PERFIL_CLIENTE_v, REV_PIV_ADM_MOE_1.MATCH_INTERNO_v, REV_PIV_ADM_MOE_1.SUMACUOTA_CARDS_SSF_v, REV_PIV_ADM_MOE_1.SUMACUOTA_HIPOTECAS_SSF_v, REV_PIV_ADM_MOE_1.SUMACUOTA_PREST_CONSUMO_SSF_v, REV_PIV_ADM_MOE_1.SUMACUOTA_SOBREGIROS_SSF_v, REV_PIV_ADM_MOE_1.SUMACUOTA_REFI_SSF_v, REV_PIV_ADM_MOE_1.MORAACTUAL_ALL_SSF_v, REV_PIV_ADM_MOE_1.REFERENCIA_MASANTIGUA_SSF_v, REV_PIV_ADM_MOE_1.CONTEO_WO_SSF_v, REV_PIV_ADM_MOE_1.LIMITEPCCD_6MESES_SSF_v, REV_PIV_ADM_MOE_1.LIMITEPCCD_12MESES_SSF_v, REV_PIV_ADM_MOE_1.CONTEO_REFIS_SSF_v, REV_PIV_ADM_MOE_1.MAYOR_ANT_TC_SSF_v, REV_PIV_ADM_MOE_1.SCORE_BUREAU_EQFX_v, REV_PIV_ADM_MOE_1.LIMITEPCCD_6MESES_EQFX_v, REV_PIV_ADM_MOE_1.LIMITEPCCD_12MESES_EQFX_v, REV_PIV_ADM_MOE_1.MORAACTUAL_EQFX_v, REV_PIV_ADM_MOE_1.NUMEROMESES_EQFX_v, REV_PIV_ADM_MOE_1.ANTMAXTC_EQFX_v, REV_PIV_ADM_MOE_1.TC_JURIDICO_EQFX_v, REV_PIV_ADM_MOE_1.TOTAL_JUICIOS_EQFX_v, REV_PIV_ADM_MOE_1.SUMCUOACTOT_EQFX_v, REV_PIV_ADM_MOE_1.FLAG_EXPATRIADO_v, REV_PIV_ADM_MOE_1.FLAG_VIP_v, REV_PIV_ADM_MOE_1.MOB_VISA_v, REV_PIV_ADM_MOE_1.MOB_MASTER_v, REV_PIV_ADM_MOE_1.BEH_SCORE_VISA_v, REV_PIV_ADM_MOE_1.BEH_SCORE_MASTER_v, REV_PIV_ADM_MOE_1.TOTAL_DPD_v, REV_PIV_ADM_MOE_1.NUM_TC_v, REV_PIV_ADM_MOE_1.VISA_BALANCE_v, REV_PIV_ADM_MOE_1.VISA_LINE_v, REV_PIV_ADM_MOE_1.MASTER_BALANCE_v, REV_PIV_ADM_MOE_1.MASTER_LINE_v, REV_PIV_ADM_MOE_1.BLOCK_CODE_VISA_v, REV_PIV_ADM_MOE_1.BLOCK_CODE_MASTER_v, REV_PIV_ADM_MOE_1.RW_BALANCE_v, REV_PIV_ADM_MOE_1.VISA_WRITE_OFF_v, REV_PIV_ADM_MOE_1.MASTER_WRITE_OFF_v, REV_PIV_ADM_MOE_1.IL_WRITE_OFF_v, REV_PIV_ADM_MOE_1.MORTG_WRITE_OFF_v, REV_PIV_ADM_MOE_1.AUTO_WRITE_OFF_v, REV_PIV_ADM_MOE_1.MONTHS_LAST_CLI_v, REV_PIV_ADM_MOE_1.FLAG_PRE_REJECTION_v, REV_PIV_ADM_MOE_1.MOB_YOUNGEST_EXTRA_v, REV_PIV_ADM_MOE_1.NEG_REFERENCES_v, REV_PIV_ADM_MOE_1.RW_CC_BALANCE_v, REV_PIV_ADM_MOE_1.IL_CC_BALANCE_v, REV_PIV_ADM_MOE_1.RC_LINE_v, REV_PIV_ADM_MOE_1.RC_BALANCE_v, REV_PIV_ADM_MOE_1.EXTRA_BALANCE_v, REV_PIV_ADM_MOE_1.IL_BALANCE_v, REV_PIV_ADM_MOE_1.OD_LINE_v, REV_PIV_ADM_MOE_1.OD_BALANCE_v, REV_PIV_ADM_MOE_1.AUTO_BALANCE_v, REV_PIV_ADM_MOE_1.DDA_OVERLIMIT_v, REV_PIV_ADM_MOE_1.VAREXTRA3_v, REV_PIV_ADM_MOE_1.SCORE_INTERNO_v, REV_PIV_ADM_MOE_1.FLAG_REWRITE_v, REV_PIV_ADM_MOE_1.MOB_REWRITE_v, REV_PIV_ADM_MOE_1.RC_WRITE_OFF_v, REV_PIV_ADM_MOE_1.SOB_WRITE_OFF_v, REV_PIV_ADM_MOE_1.SUMACUOTAS_TARJETAS_COBIS_v, REV_PIV_ADM_MOE_1.SUMACUOTAS_HIPOTECAS_COBIS_v, REV_PIV_ADM_MOE_1.SUMACUOTAS_PERSONALES_COBIS_v, REV_PIV_ADM_MOE_1.TIPOEMPRESA_v, REV_PIV_ADM_MOE_1.FLAG_ORO_v, REV_PIV_ADM_MOE_1.FLAG_PEP_v, REV_PIV_ADM_MOE_1.FLAG_EXTRANJERO_v, REV_PIV_ADM_MOE_1.FLAG_CREDOMATIC_v, REV_PIV_ADM_MOE_1.FLAG_AFP_ELECTRONICO_v, REV_PIV_ADM_MOE_1.REASONCODE_v, REV_PIV_ADM_MOE_1.AUX2_v, REV_PIV_ADM_MOE_1.PREVIOUS_REASONCODE_v, REV_PIV_ADM_MOE_1.AUX_v, REV_PIV_ADM_MOE_1.CUOTASINTERNAS_COBIS_v, REV_PIV_ADM_MOE_1.TARGET_MARKET_v, REV_PIV_ADM_MOE_1.FLAG_PLANILLERO_v, REV_PIV_ADM_MOE_1.FLAG_HIT_v, REV_PIV_ADM_MOE_1.PROGRAMA_v, REV_PIV_ADM_MOE_1.LIMITE_PCCD_SSF_v, REV_PIV_ADM_MOE_1.FLAG_XS_v, REV_PIV_ADM_MOE_1.REASONCODES_v, REV_PIV_ADM_MOE_1.FLAG_PCCD_v, REV_PIV_ADM_MOE_1.CAP_MUE_v, REV_PIV_ADM_MOE_1.MUE_DISPUESTO_v, REV_PIV_ADM_MOE_1.DEBT_BURDEN_INICIAL_SSF_v, REV_PIV_ADM_MOE_1.DEBT_BURDEN_FINAL_v, REV_PIV_ADM_MOE_1.MULTIPLICADOR_v, REV_PIV_ADM_MOE_1.LINEA_MAXIMA_v, REV_PIV_ADM_MOE_1.MUE_DISPONIBLE_v, REV_PIV_ADM_MOE_1.LIMMAXLOGO_v, REV_PIV_ADM_MOE_1.LIMMINLOGO_v, REV_PIV_ADM_MOE_1.LINEA_TIMESINCOME_v, REV_PIV_ADM_MOE_1.LINEA_DISPDEBTBURDEN_v, REV_PIV_ADM_MOE_1.LINEADISPMUE_v, REV_PIV_ADM_MOE_1.LINEA_CAP_PRODUCTO_v, REV_PIV_ADM_MOE_1.LIMITE_NUEVA_LINEA_v, REV_PIV_ADM_MOE_1.EMPLEADO_CUSCATLAN_v, REV_PIV_ADM_MOE_1.LINEAMINIMA_v, REV_PIV_ADM_MOE_1.FLAG_NORMALSALES_v, REV_PIV_ADM_MOE_1.EXPCREDITICIA_ALL_v, REV_PIV_ADM_MOE_1.EXPPCCD_ALL_v, REV_PIV_ADM_MOE_1.LIMITE_PCCD_EQFX_v, REV_PIV_ADM_MOE_1.LIMITE_PCCD_v, REV_PIV_ADM_MOE_1.EMPLEO_EMPRESA_v, REV_PIV_ADM_MOE_1.GASTOS_NUEVA_LINEA_v, REV_PIV_ADM_MOE_1.LIMMAXLOGO2_v, REV_PIV_ADM_MOE_1.LIMMINLOGO2_v, REV_PIV_ADM_MOE_1.CAP_DB_v, REV_PIV_ADM_MOE_1.DEBT_BURDEN_FINAL_SSF_v, REV_PIV_ADM_MOE_1.LIMITEFINAL_LINEA1_v, REV_PIV_ADM_MOE_1.LIMITEFINAL_LINEA2_v, REV_PIV_ADM_MOE_1.CAPACIDADEDEUDAMIENTOMENSUAL_v, REV_PIV_ADM_MOE_1.DEBT_BURDEN_INICIAL_ALL_v, REV_PIV_ADM_MOE_1.DEBT_BURDEN_FINAL_ALL_v, REV_PIV_ADM_MOE_1.TASA_X_LOGO_v, REV_PIV_ADM_MOE_1.MUE_FINAL2_v, REV_PIV_ADM_MOE_1.MUE_FINAL3_v, REV_PIV_ADM_MOE_1.PERFIL_DOCUMENTACION_v, REV_PIV_ADM_MOE_1.DOCUMENTACION_v, REV_PIV_ADM_MOE_1.ESTRATEGIA_AUTENTICACION_v, REV_PIV_ADM_MOE_1.PRODUCTO_AUTENTICACION_v, REV_PIV_ADM_MOE_1.UMBRAL_SOLICITADO_v, REV_PIV_ADM_MOE_1.VERIFICAR_IDENTIDAD_v, REV_PIV_ADM_MOE_1.CODIGO_DOC_v, REV_PIV_ADM_MOE_1.SYSTEMDATE_v, sysdate(), REV_PIV_ADM_MOE_1.DI_FILENAME FROM REV_PIV_ADM_MOE_1 
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
-ALGUIComment ("InputSchema_WidthProp" = '51', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = '', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>444</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '1260', "y" = '-90')
+ALGUIComment ("InputSchema_WidthProp" = '51', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>444</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '1260', "y" = '-90')
 GUID::'a55b5979-3e37-4edc-b276-93871c282998' LOAD TABLE DS_TARGET.SAT.CUS_ADM_MOE INPUT(Query)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
 <bulk_col_delimiter>/127</bulk_col_delimiter>
 <bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
-<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_generate_files_only>0</bulk_ldr_generate_files_only>
 <bulk_row_delimiter>&#xA;</bulk_row_delimiter>
 <enable_partitioning>no</enable_partitioning>
 <ignore_column_case>yes</ignore_column_case>
@@ -782,7 +755,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 <iq_log_null_constraints>no</iq_log_null_constraints>
 <iq_log_unique_constraints>no</iq_log_unique_constraints>
 <loader_auto_correct>no</loader_auto_correct>
-<loader_bulk_load></loader_bulk_load>
+<loader_bulk_load>0</loader_bulk_load>
 <loader_compare_column>compare_by_name</loader_compare_column>
 <loader_delete_map></loader_delete_map>
 <loader_drop_and_create_table>yes</loader_drop_and_create_table>
@@ -900,7 +873,7 @@ SET("connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configur
 
 END
  SET ("Cache_type" = 'in_memory_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 22 11:33:30 2019', "ActaValue_3" = 'Fri Apr  5 19:31:04 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 22 11:33:30 2019', "ActaValue_3" = 'Mon Apr 22 11:37:17 2019', "x" = '-1', "y" = '-1')
 CREATE SESSION JOB_ADM_MOE::'3d951ad1-fc17-41cd-af47-1ee6877ec6ca'( )
 DECLARE
      $L_EXISTE_JOB INT ;
@@ -918,23 +891,18 @@ DECLARE
      GLOBAL $G_VAR_NUM_FILE INT ;
      GLOBAL $G_RUTA VARCHAR(150) ;
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI', "ui_script_text" = 'print(\'version: b7a5dc5\');
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI', "ui_script_text" = 'print(\'--version: dd5afcd\');
 
 $G_JOB_NAME = job_name( );
 
 $G_FILE_LOCATION = CF_DEFINE_UBICACION( );
 
-$G_CURRENT_DATE = RETURN_LOAD_DATE( );
-
-$G_SH_ROUTE = sql(\'DS_CONTROL\', \'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \\\'%MDE%\\\'\');
+$G_SH_ROUTE = sql(\'DS_CONTROL\', \'SELECT VALOR FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \\\'%MDE%\\\'\');
 
 $G_RUTA = $G_SH_ROUTE ;
-
-
-
 ', "x" = '90', "y" = '-90')
 BEGIN_SCRIPT
-print('version: b7a5dc5');$G_JOB_NAME = job_name();$G_FILE_LOCATION = CF_DEFINE_UBICACION();$G_CURRENT_DATE = RETURN_LOAD_DATE();$G_SH_ROUTE = sql('DS_CONTROL', 'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%MDE%\'');$G_RUTA = $G_SH_ROUTE;END
+print('--version: dd5afcd');$G_JOB_NAME = job_name();$G_FILE_LOCATION = CF_DEFINE_UBICACION();$G_SH_ROUTE = sql('DS_CONTROL', 'SELECT VALOR FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%MDE%\'');$G_RUTA = $G_SH_ROUTE;END
  AlGUIComment ("If_condition" = 'CF_JOBNAME( $G_JOB_NAME,$L_EXISTE_JOB) = 1', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'CDN_JOB', "x" = '480', "y" = '-90')
 IF ((cf_jobname($G_JOB_NAME, $L_EXISTE_JOB) = 1) )
 BEGIN
@@ -960,69 +928,7 @@ $L_FECHA = sysdate();sql('DS_CONTROL', 'INSERT INTO LOG_EJECUCION(ERROR_NUMBER, 
 END
 END
  SET ("job_checkpoint_enabled" = 'no', "job_collect_statistics" = 'no', "job_collect_statistics_monitor" = 'no', "job_create_debug_package" = 'no', "job_enable_assemblers" = 'yes', "job_enable_audit" = 'yes', "job_enable_dataquality" = 'yes', "job_export_repo" = 'no', "job_export_reports" = 'no', "job_guid" = '3d951ad1-fc17-41cd-af47-1ee6877ec6ca', "job_isrecoverable" = 'no', "job_mode" = 'Multi-Process', "job_monitor_sample_rate" = '1000', "job_monitor_timer_rate" = '5', "job_name" = 'JOB_ADM_MOE', "job_print_version" = 'no', "job_testmode_enabled" = 'no', "job_trace_abapquery" = 'no', "job_trace_all" = 'no', "job_trace_ascomm" = 'no', "job_trace_assemblers" = 'no', "job_trace_audit" = 'no', "job_trace_dataflow" = 'yes', "job_trace_idoc_file" = 'no', "job_trace_memory_loader" = 'no', "job_trace_memory_reader" = 'no', "job_trace_optimized_dataflow" = 'no', "job_trace_parallel_execution" = 'no', "job_trace_rfc_function" = 'no', "job_trace_row" = 'no', "job_trace_script" = 'no', "job_trace_session" = 'yes', "job_trace_sql_only" = 'no', "job_trace_sqlfunctions" = 'no', "job_trace_sqlloaders" = 'no', "job_trace_sqlreaders" = 'no', "job_trace_sqltransforms" = 'no', "job_trace_stored_procedure" = 'no', "job_trace_table" = 'no', "job_trace_table_reader" = 'no', "job_trace_transform" = 'no', "job_trace_userfunction" = 'no', "job_trace_usertransform" = 'no', "job_trace_workflow" = 'yes', "job_type" = 'batch', "job_use_statistics" = 'yes', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Apr  4 09:59:31 2019')
-CREATE __AL_PROJECT MODELLICA JOB_ADM_MOE;
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RDescription', "ActaName_3" = 'RParallelizable', "ActaName_4" = 'RisScriptValidationFunction', "ActaName_5" = 'RSavedAfterCheckOut', "ActaName_6" = 'RDate_created', "ActaName_7" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'Regresa la fecha de última carga del job ejecutándose', "ActaValue_3" = 'no', "ActaValue_4" = 'no', "ActaValue_5" = 'YES', "ActaValue_6" = 'Thu Mar  1 15:21:33 2018', "ActaValue_7" = 'Wed Sep 12 14:13:57 2018', "InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '50', "ui_script_text" = '##/********************************************************           
-##  * CF_TABLE_NAME                                        *   
-##  *                                                      *   
-##  * Author:  Jaime Ascencio | Gyssa                      *   
-##  *                                                      *   
-##  * Purpose: Se obtiene la fecha de carga de la tabla de *   
-##  * control de cobis.                                    *   
-##  * Usage:                                               *   
-##  *      Ejecutada por cada JOB 05SEP2018                *   
-##  ********************************************************/ 
-
-
-$L_JOB_NAME = job_name( );
-$L_TABLE_NAME  = replace_substr( workflow_name( ), \'WF_\', \'\');
-$L_CAT_JOB = sql( \'DS_CONTROL\', \'SELECT ID_JOB_TABLE FROM CNF.CAT_JOBS WHERE NOMBRE_JOB = \\\'[$L_JOB_NAME]\\\' \');
-
-
-
-try
-	begin
-		IF($L_CAT_JOB is not null)
-			begin
-				$L_LOAD_DATE = sql( \'DS_SRC_COB_REMESAS\', \'select rc_fecha_control from cob_remesas..edw_registro_control\' );
-				print( \'///////////////////////////////////////FECHA DE CARGA\');
-				print( $L_LOAD_DATE );
-			end
-   
-    Return $L_LOAD_DATE ;
-
-	end
-catch ( all  )
-	begin
-        print( \'///////////////////////////////////////NO fue posible obtener la fecha de carga\');
-		Return to_date(\'1900/01/01\',\'YYYY/MM/DD\'); 
-	end
-
-', "x" = '-1', "y" = '-1')
-CREATE FUNCTION RETURN_LOAD_DATE( )
-RETURNS  DATETIME(9) 
-DECLARE
-     $L_JOB_NAME VARCHAR(512) ;
-     $L_TABLE_NAME VARCHAR(100) ;
-     $L_CAT_JOB INT ;
-     $L_ID_CONTROL INT ;
-     $L_LOAD_DATE DATE ;
-BEGIN
-$L_JOB_NAME = job_name();$L_TABLE_NAME = replace_substr(workflow_name(), 'WF_', '');$L_CAT_JOB = sql('DS_CONTROL', 'SELECT ID_JOB_TABLE FROM CNF.CAT_JOBS WHERE NOMBRE_JOB = \'[$L_JOB_NAME]\' ');TRY
-BEGIN
-IF (($L_CAT_JOB IS NOT  NULL ) )
-BEGIN
-$L_LOAD_DATE = sql('DS_SRC_COB_REMESAS', 'select rc_fecha_control from cob_remesas..edw_registro_control');print('///////////////////////////////////////FECHA DE CARGA');print($L_LOAD_DATE);END
-RETURN $L_LOAD_DATE;
-END
-CATCH (210101)
-BEGIN
-print('///////////////////////////////////////NO fue posible obtener la fecha de carga');RETURN to_date('1900/01/01', 'YYYY/MM/DD');
-END
-
-END_TRY
-END
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Apr  5 19:12:55 2019', "ActaValue_3" = 'Fri Apr  5 19:31:04 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Apr  5 19:12:55 2019', "ActaValue_3" = 'Mon Apr 22 09:38:06 2019', "x" = '-1', "y" = '-1')
 CREATE PLAN WF_CUS_ADM_MOE::'cb375fd9-3310-4d2f-8b89-3d053457b2f0'( )
 DECLARE
      $L_TABLE_NAME VARCHAR(100) ;
@@ -1040,7 +946,6 @@ DECLARE
      $L_CONDICIONAL INT ;
 BEGIN
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>285</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI_WF', "ui_script_text" = '
-
 $L_TABLE_NAME = replace_substr( workflow_name( ), \'__\', \'.\');
 
 
@@ -1082,20 +987,16 @@ $G_COUNTER = sql('DS_CONTROL', 'SELECT isnull (MIN(ROW_ID),0) FROM CNF.FILE_LIST
 WHILE (($G_COUNTER < $G_VAR_NUM_FILE) )
 BEGIN
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Script8205', "ui_script_text" = '
-
 $G_RUTA = \'/datos/SAT/mde/\';
-
 
 $G_FILE_NAME = sql(\'DS_CONTROL\', \'SELECT FILENAME FROM CNF.FILE_LIST_MDE WHERE LOADED <> 1 AND upper(FILENAME) like \\\'%DECHISTORY_CUS_ADM.DAT%\\\' AND ROW_ID = \'|| $G_COUNTER);
 
 $G_FILE_NAME = $G_RUTA || $G_FILE_NAME ;
-	
 
-
-$L_CONDICIONAL = sql(\'DS_CONTROL\', \'select MIN(ROW_ID) from STG_SAT.ListadoArchivos\');
+$L_CONDICIONAL = sql(\'DS_CONTROL\', \'select MIN(ROW_ID) FROM CNF.FILE_LIST_MDE\');
 ', "x" = '90', "y" = '-90')
 BEGIN_SCRIPT
-$G_RUTA = '/datos/SAT/mde/';$G_FILE_NAME = sql('DS_CONTROL', ('SELECT FILENAME FROM CNF.FILE_LIST_MDE WHERE LOADED <> 1 AND upper(FILENAME) like \'%DECHISTORY_CUS_ADM.DAT%\' AND ROW_ID = ' || $G_COUNTER));$G_FILE_NAME = ($G_RUTA || $G_FILE_NAME);$L_CONDICIONAL = sql('DS_CONTROL', 'select MIN(ROW_ID) from STG_SAT.ListadoArchivos');END
+$G_RUTA = '/datos/SAT/mde/';$G_FILE_NAME = sql('DS_CONTROL', ('SELECT FILENAME FROM CNF.FILE_LIST_MDE WHERE LOADED <> 1 AND upper(FILENAME) like \'%DECHISTORY_CUS_ADM.DAT%\' AND ROW_ID = ' || $G_COUNTER));$G_FILE_NAME = ($G_RUTA || $G_FILE_NAME);$L_CONDICIONAL = sql('DS_CONTROL', 'select MIN(ROW_ID) FROM CNF.FILE_LIST_MDE');END
  AlGUIComment ("If_condition" = '$L_CONDICIONAL <> 0 ', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>257</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'ADM_MOE_IF', "x" = '480', "y" = '-90')
 IF (($L_CONDICIONAL != 0) )
 BEGIN
@@ -1115,7 +1016,6 @@ BEGIN_SCRIPT
 print('Error en bucle, variable $L_CONDICIONAL distinta de cero');END
 END
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Script4742', "ui_script_text" = '
-
 sql(\'DS_CONTROL\', \'update CNF.FILE_LIST_MDE  set LOADED = 1 where row_id = \'||$G_COUNTER);
 sql( \'DS_CONTROL\', \'commit\');
 

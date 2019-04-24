@@ -3,3 +3,4 @@
 190205:	Correccion de ETL y revisión estructura de tablas completa.
 190411: incorporacion unsigned data.
 190415: cambios en los registros DC y CU. nuevos campos y mod/fillers.
+190424: cambios para conversion de empaquetados y decimales.

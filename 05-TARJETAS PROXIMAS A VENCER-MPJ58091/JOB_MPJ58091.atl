@@ -15,7 +15,7 @@ CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET
 <locale_codepage>&lt;default&gt;</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E8FEF7FDC160D4BD4F36D70032DAFD45A66C039BBF6B1C0D2AD95A10F3F1124C35E46263D31C86B255C3667E04AAF0</password>
+<password>+0400000000120303000803E89BB16BE2B5D6EB86F04BD8CA7FC7833AB4FB3E85748CDBF0A4AF49E91AF3360A21D44898959080D637F76AF93829</password>
 <server_codepage>&lt;default&gt;</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -40,7 +40,7 @@ CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET 
 <locale_codepage>iso-8859-1</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E87F2A12EADE0C1CE57916C3A1D9AC0A67AF9098EEC7DFA787EC110D3BE8BA524B1418AD3D2912E03392F91687A177</password>
+<password>+0400000000120303000803E86409E322AB5FF3B3A0BAC7311B61D3CBAB005A239C48B20E99DF37A04B3E7A06D8FF9C78BC29BD84C25F415C66DD</password>
 <server_codepage>iso-8859-1</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -65,7 +65,7 @@ ActaName_10 = 'REstimated_Row_Count',ActaValue_10 = '50000' ,
 ActaName_11 = 'RSavedAfterCheckOut',ActaValue_11 = 'YES' , 
 ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'no' , 
 ActaName_13 = 'RDate_created',ActaValue_13 = 'Tue Jan  8 15:22:33 2019' , 
-ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Fri Apr 12 14:54:53 2019' , 
+ActaName_14 = 'RDate_last_loaded',ActaValue_14 = 'Wed Apr 24 09:40:18 2019' , 
 ActaName_15 = 'RDate_modified',ActaValue_15 = 'Thu Apr 11 15:05:53 2019' )
 CREATE TABLE DS_TARGET.SAT.ATINTVTO(IDENTIFICADOR_EJECUCION INT  NULL , 
 CODENT_D VARCHAR(4)  NULL , 
@@ -96,7 +96,7 @@ ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' ,
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
 ActaName_7 = 'RDate_created',ActaValue_7 = 'Tue Feb  5 14:26:29 2019' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Fri Apr 12 14:54:49 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Wed Apr 24 09:40:12 2019' , 
 ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '1' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
 ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '1' , 
@@ -435,7 +435,7 @@ DECLARE
 BEGIN
 $L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');print('PROCESO NORMAL INICIO');print('SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');$L_ID_MALLA = sql('DS_CONTROL', 'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');print('SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO != \'FINALIZADO\' AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO != \'FINALIZADO\' AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]');print('SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');$P_TIPO_PROCESO = sql('DS_CONTROL', 'SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');RETURN $P_TIPO_PROCESO;
 END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Wed Apr  3 10:59:13 2019', "ActaValue_6" = 'Thu Apr 11 13:41:13 2019', "InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '50', "ui_script_text" = '##/********************************************************           
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Wed Apr  3 10:59:13 2019', "ActaValue_6" = 'Tue Apr 23 17:02:38 2019', "InputSchema_WidthProp" = '51', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '54', "ui_script_text" = '##/********************************************************           
 ##  * CF_UnpackNumSignSAT                                  *   
 ##  *                                                      *   
 ##  * Author:  Mario Valdez | Gyssa                        *   
@@ -444,11 +444,11 @@ END
 ##              los empaquetados y coloca un numero        *   
 ##  *                                                      *   
 ##  * Usage:                                               *   
-##  *   CF_UnpackNumSignSAT(valor[in]);                                                   *   
+##  *   CF_UnpackNumSignSAT(valor[in]);                    *   
 ##  ********************************************************/ 
 
 $L_lenght_field = length($P_w_numPacked);
-$L_w_ind = lower( substr($P_w_numPacked,$L_lenght_field,1));
+$L_w_ind = lower(substr($P_w_numPacked,$L_lenght_field,1));
 
 try
  begin
@@ -475,7 +475,7 @@ decode(($L_w_ind)=\'p\',substr($P_w_numPacked,1,$L_lenght_field - 1)||\'0\',
 );
 
 
- if(ascii($L_w_ind) >= 112 and ascii($L_w_ind) <= 121 )
+if(ascii($L_w_ind) >= 112 and ascii($L_w_ind) <= 121 )
  begin
   $P_w_numPacked = to_decimal($P_w_numPacked,\'.\',\',\',0) * -1;
  end
@@ -486,7 +486,9 @@ decode(($L_w_ind)=\'p\',substr($P_w_numPacked,1,$L_lenght_field - 1)||\'0\',
 catch(all)
  begin
   return $P_w_numPacked;
- end', "x" = '-1', "y" = '-1')
+ end
+
+', "x" = '-1', "y" = '-1')
 CREATE FUNCTION CF_UnpackNumSignSAT($P_w_numPacked VARCHAR(17)  IN )
 RETURNS  DOUBLE 
 DECLARE
@@ -648,15 +650,11 @@ SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Jan  8 15:23:50 2019', "ActaValue_3" = 'Thu Apr 11 15:05:58 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Jan  8 15:23:50 2019', "ActaValue_3" = 'Tue Apr 23 17:24:27 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_ATINTVTO::'9500cde6-cba0-45ff-8a19-11f834004eac'
 BEGIN
 
-ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Description', "Input_2nd_Column_Name" = 'Type', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = '', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>194</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
-GUID::'9441cdeb-21ba-4518-937b-6b88705c435b' READ __BODI_COPYBOOK_COBOL MPJ58091 OUTPUT(ATINTVTO)
-SET("Cbl_capture_data_conversion" = 'no', "Cbl_rdr_current_schema" = 'ATINTVTO', "cache" = 'no', "connection_port" = 'no', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'yes', "reader_include_filename" = 'no', "table_weight" = '0');
-
-ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'ATINTVTO', "x" = '480', "y" = '-90')
+ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Name" = '158', "Output_Width_Type" = '118', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'ATINTVTO', "x" = '480', "y" = '-90')
 GUID::'933fd20f-6a45-4c39-bf5b-8d270824e9b7' CREATE VIEW Query( CODENT_D VARCHAR(4)  SET( "Description" = 'ATINTVTO.CODENT_D', "ui_mapping_text" = 'ATINTVTO.CODENT_D') ,
  NSECFIC_D DECIMAL(10, 0)  SET( "Description" = 'ATINTVTO.NSECFIC_D', "ui_mapping_text" = 'CF_UnpackNumSignSAT(ATINTVTO.NSECFIC_D)') ,
  TIPOCINTA_D DECIMAL(2, 0)  SET( "Description" = 'ATINTVTO.TIPOCINTA_D', "ui_mapping_text" = 'CF_UnpackNumSignSAT(ATINTVTO.TIPOCINTA_D)') ,
@@ -680,7 +678,7 @@ SELECT ATINTVTO.CODENT_D, cf_unpacknumsignsat(ATINTVTO.NSECFIC_D), cf_unpacknums
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
-ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = '', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>425</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
+ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>425</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
 GUID::'00a4e4f2-f5e3-4af9-b62d-f38cae884f3f' LOAD TABLE DS_TARGET.STG_SAT.ATINTVTO INPUT(Query)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
@@ -732,9 +730,13 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 </LDRConfiguration>
 </LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
 
+ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>241</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
+GUID::'ced258e6-5d61-410e-acd8-84458ae0827d' READ __BODI_COPYBOOK_COBOL MPJ58091_X01 OUTPUT(ATINTVTO)
+SET("Cbl_rdr_current_schema" = 'ATINTVTO', "connection_port" = 'no');
+
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaName_4" = 'RDescription', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Jan  8 16:39:12 2019', "ActaValue_3" = 'Thu Apr 11 15:10:47 2019', "ActaValue_4" = '05-TARJETAS PROXIMAS A VENCER', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaName_4" = 'RDescription', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Jan  8 16:39:12 2019', "ActaValue_3" = 'Tue Apr 23 17:24:28 2019', "ActaValue_4" = '05-TARJETAS PROXIMAS A VENCER', "x" = '-1', "y" = '-1')
 CREATE SESSION JOB_MPJ58091::'3cf195fc-1a7b-40f7-bf13-ed4ea0a8930f'( )
 DECLARE
      GLOBAL $G_NOMBRE_JOB VARCHAR(50) ;
@@ -745,7 +747,7 @@ DECLARE
 BEGIN
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>288</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INICIAL', "ui_script_text" = '##INICIALIZACIÓN DE VARIABLES
 
-print(\'version: c61b10c\');
+print(\'version: f6a1298\');
 
 $G_NOMBRE_JOB = job_name( );
 $G_FECHA_PROCESO  = sysdate( );
@@ -755,7 +757,7 @@ sql( \'DS_CONTROL\', \'COMMIT\');
 
 ', "x" = '90', "y" = '-90')
 BEGIN_SCRIPT
-print('version: c61b10c');$G_NOMBRE_JOB = job_name();$G_FECHA_PROCESO = sysdate();$G_RUTA = sql('DS_CONTROL', 'SELECT VALOR FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'RUTA_ARCHIVO\'');sql('DS_CONTROL', 'COMMIT');END
+print('version: f6a1298');$G_NOMBRE_JOB = job_name();$G_FECHA_PROCESO = sysdate();$G_RUTA = sql('DS_CONTROL', 'SELECT VALOR FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'RUTA_ARCHIVO\'');sql('DS_CONTROL', 'COMMIT');END
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try182', "x" = '480', "y" = '-90')
 TRY
 BEGIN
@@ -864,8 +866,8 @@ print('☺');print('No Existe malla para ser procesada.');END
 END
 END
  SET ("run_once" = 'no', "unit_of_recovery" = 'no', "workflow_type" = 'Regular')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Jan  8 15:19:25 2019', "ActaValue_3" = 'Thu Jan 24 18:03:46 2019')
-CREATE __BODI_COPYBOOK_COBOL DATASTORE MPJ58091::'4a771cb4-ab74-4a45-860a-6f7daa9a3a4e' OUTPUT (ATINTCAB( CODENT VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'ATINTCAB.CODENT', "Description" = 'ATINTCAB.CODENT') ,
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Apr 23 17:20:19 2019')
+CREATE __BODI_COPYBOOK_COBOL DATASTORE MPJ58091_X01::'448bfe34-6482-4711-8f93-c9f40a1e0009' OUTPUT (ATINTCAB( CODENT VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'ATINTCAB.CODENT', "Description" = 'ATINTCAB.CODENT') ,
  NSECFIC VARCHAR(10)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '4', "Cbl_field_level" = '2', "Cbl_field_name" = 'NSECFIC', "Cbl_field_original_PIC" = 'X(10)', "Cbl_field_path" = 'ATINTCAB.NSECFIC', "Description" = 'ATINTCAB.NSECFIC') ,
  TIPOCINTA VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '14', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOCINTA', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'ATINTCAB.TIPOCINTA', "Description" = 'ATINTCAB.TIPOCINTA') ,
  TIPOREG VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '16', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOREG', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'ATINTCAB.TIPOREG', "Description" = 'ATINTCAB.TIPOREG') ,
@@ -878,19 +880,19 @@ CREATE __BODI_COPYBOOK_COBOL DATASTORE MPJ58091::'4a771cb4-ab74-4a45-860a-6f7daa
  CENTALTA VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '124', "Cbl_field_level" = '2', "Cbl_field_name" = 'CENTALTA', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'ATINTCAB.CENTALTA', "Description" = 'ATINTCAB.CENTALTA') ,
  CUENTA VARCHAR(12)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '128', "Cbl_field_level" = '2', "Cbl_field_name" = 'CUENTA', "Cbl_field_original_PIC" = 'X(12)', "Cbl_field_path" = 'ATINTCAB.CUENTA', "Description" = 'ATINTCAB.CUENTA') ,
  TIPOREG1 VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '140', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOREG1', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_original_name" = 'TIPOREG', "Cbl_field_path" = 'ATINTCAB.TIPOREG', "Description" = 'ATINTCAB.TIPOREG') ,
- OTROSDATOSCAB VARCHAR(976)  SET( "Cbl_field_internal_length" = '976', "Cbl_field_internal_offset" = '142', "Cbl_field_level" = '2', "Cbl_field_name" = 'OTROSDATOSCAB', "Cbl_field_original_PIC" = 'X(976)', "Cbl_field_path" = 'ATINTCAB.OTROSDATOSCAB', "Description" = 'ATINTCAB.OTROSDATOSCAB') ,
- ESTADOCINTA VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '1118', "Cbl_field_level" = '2', "Cbl_field_name" = 'ESTADOCINTA', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'ATINTCAB.ESTADOCINTA', "Description" = 'ATINTCAB.ESTADOCINTA') ,
- VALIDACION VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '1119', "Cbl_field_level" = '2', "Cbl_field_name" = 'VALIDACION', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'ATINTCAB.VALIDACION', "Description" = 'ATINTCAB.VALIDACION')  )
+ OTROSDATOSCAB VARCHAR(857)  SET( "Cbl_field_internal_length" = '857', "Cbl_field_internal_offset" = '142', "Cbl_field_level" = '2', "Cbl_field_name" = 'OTROSDATOSCAB', "Cbl_field_original_PIC" = 'X(857)', "Cbl_field_path" = 'ATINTCAB.OTROSDATOSCAB', "Description" = 'ATINTCAB.OTROSDATOSCAB') ,
+ ESTADOCINTA VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '999', "Cbl_field_level" = '2', "Cbl_field_name" = 'ESTADOCINTA', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'ATINTCAB.ESTADOCINTA', "Description" = 'ATINTCAB.ESTADOCINTA') ,
+ VALIDACION VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '1000', "Cbl_field_level" = '2', "Cbl_field_name" = 'VALIDACION', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'ATINTCAB.VALIDACION', "Description" = 'ATINTCAB.VALIDACION')  )
 ,
  ATINTVTO( CODENT_D VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT_D', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'ATINTVTO.CODENT_D', "Description" = 'ATINTVTO.CODENT_D') ,
- NSECFIC_D DECIMAL(10, 0)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '4', "Cbl_field_level" = '2', "Cbl_field_name" = 'NSECFIC_D', "Cbl_field_original_PIC" = '9(10)', "Cbl_field_path" = 'ATINTVTO.NSECFIC_D', "Cbl_field_precision" = '10', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'ATINTVTO.NSECFIC_D') ,
- TIPOCINTA_D DECIMAL(2, 0)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '14', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOCINTA_D', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'ATINTVTO.TIPOCINTA_D', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'ATINTVTO.TIPOCINTA_D') ,
+ NSECFIC_D VARCHAR(10)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '4', "Cbl_field_level" = '2', "Cbl_field_name" = 'NSECFIC_D', "Cbl_field_original_PIC" = 'X(10)', "Cbl_field_path" = 'ATINTVTO.NSECFIC_D', "Description" = 'ATINTVTO.NSECFIC_D') ,
+ TIPOCINTA_D VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '14', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOCINTA_D', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'ATINTVTO.TIPOCINTA_D', "Description" = 'ATINTVTO.TIPOCINTA_D') ,
  TIPOREG_D VARCHAR(1)  SET( "Cbl_field_id_col" = 'yes', "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '16', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOREG_D', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'ATINTVTO.TIPOREG_D', "Description" = 'ATINTVTO.TIPOREG_D') ,
  FILLER_D VARCHAR(91)  SET( "Cbl_field_internal_length" = '91', "Cbl_field_internal_offset" = '17', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER_D', "Cbl_field_original_PIC" = 'X(91)', "Cbl_field_path" = 'ATINTVTO.FILLER_D', "Description" = 'ATINTVTO.FILLER_D') ,
- NUMREGPROC DECIMAL(12, 0)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '108', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMREGPROC', "Cbl_field_original_PIC" = '9(12)', "Cbl_field_path" = 'ATINTVTO.NUMREGPROC', "Cbl_field_precision" = '12', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'ATINTVTO.NUMREGPROC') ,
+ NUMREGPROC VARCHAR(12)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '108', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMREGPROC', "Cbl_field_original_PIC" = 'X(12)', "Cbl_field_path" = 'ATINTVTO.NUMREGPROC', "Description" = 'ATINTVTO.NUMREGPROC') ,
  CODENT VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '120', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'ATINTVTO.CODENT', "Description" = 'ATINTVTO.CODENT') ,
- CODMAR DECIMAL(2, 0)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '124', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODMAR', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'ATINTVTO.CODMAR', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'ATINTVTO.CODMAR') ,
- INDTIPT DECIMAL(2, 0)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '126', "Cbl_field_level" = '2', "Cbl_field_name" = 'INDTIPT', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'ATINTVTO.INDTIPT', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'ATINTVTO.INDTIPT') ,
+ CODMAR VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '124', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODMAR', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'ATINTVTO.CODMAR', "Description" = 'ATINTVTO.CODMAR') ,
+ INDTIPT VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '126', "Cbl_field_level" = '2', "Cbl_field_name" = 'INDTIPT', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'ATINTVTO.INDTIPT', "Description" = 'ATINTVTO.INDTIPT') ,
  CENTALTA VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '128', "Cbl_field_level" = '2', "Cbl_field_name" = 'CENTALTA', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'ATINTVTO.CENTALTA', "Description" = 'ATINTVTO.CENTALTA') ,
  CUENTA VARCHAR(12)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '132', "Cbl_field_level" = '2', "Cbl_field_name" = 'CUENTA', "Cbl_field_original_PIC" = 'X(12)', "Cbl_field_path" = 'ATINTVTO.CUENTA', "Description" = 'ATINTVTO.CUENTA') ,
  CALPART VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '144', "Cbl_field_level" = '2', "Cbl_field_name" = 'CALPART', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'ATINTVTO.CALPART', "Description" = 'ATINTVTO.CALPART') ,
@@ -898,10 +900,10 @@ CREATE __BODI_COPYBOOK_COBOL DATASTORE MPJ58091::'4a771cb4-ab74-4a45-860a-6f7daa
  TIPBON VARCHAR(6)  SET( "Cbl_field_internal_length" = '6', "Cbl_field_internal_offset" = '154', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPBON', "Cbl_field_original_PIC" = 'X(6)', "Cbl_field_path" = 'ATINTVTO.TIPBON', "Description" = 'ATINTVTO.TIPBON') ,
  PAN VARCHAR(22)  SET( "Cbl_field_internal_length" = '22', "Cbl_field_internal_offset" = '160', "Cbl_field_level" = '2', "Cbl_field_name" = 'PAN', "Cbl_field_original_PIC" = 'X(22)', "Cbl_field_path" = 'ATINTVTO.PAN', "Description" = 'ATINTVTO.PAN') ,
  FECALTA VARCHAR(10)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '182', "Cbl_field_level" = '2', "Cbl_field_name" = 'FECALTA', "Cbl_field_original_PIC" = 'X(10)', "Cbl_field_path" = 'ATINTVTO.FECALTA', "Description" = 'ATINTVTO.FECALTA') ,
- FECCADTAR DECIMAL(6, 0)  SET( "Cbl_field_internal_length" = '6', "Cbl_field_internal_offset" = '192', "Cbl_field_level" = '2', "Cbl_field_name" = 'FECCADTAR', "Cbl_field_original_PIC" = '9(6)', "Cbl_field_path" = 'ATINTVTO.FECCADTAR', "Cbl_field_precision" = '6', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'ATINTVTO.FECCADTAR') ,
- CODBLQ DECIMAL(2, 0)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '198', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODBLQ', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'ATINTVTO.CODBLQ', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'ATINTVTO.CODBLQ')  )
+ FECCADTAR VARCHAR(6)  SET( "Cbl_field_internal_length" = '6', "Cbl_field_internal_offset" = '192', "Cbl_field_level" = '2', "Cbl_field_name" = 'FECCADTAR', "Cbl_field_original_PIC" = 'X(6)', "Cbl_field_path" = 'ATINTVTO.FECCADTAR', "Description" = 'ATINTVTO.FECCADTAR') ,
+ CODBLQ VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '198', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODBLQ', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'ATINTVTO.CODBLQ', "Description" = 'ATINTVTO.CODBLQ')  )
 )
- SET ("Cbl_expand_occurs" = 'yes', "Cbl_field_id_col(ATINTVTO)" = '3', "Cbl_field_id_val(ATINTVTO)3_1" = 'D', "Cbl_file_dir" = '$G_RUTA', "Cbl_file_name" = '$G_NOMBRE_ARCHIVO', "Cbl_file_type" = 'F', "Cbl_has_record_mark" = 'no', "Cbl_ignore_redefines" = 'no', "Cbl_is_big_endian" = 'yes', "Cbl_rdr_hv_action" = 'Nothing', "Cbl_rdr_hvalue" = '0xFF', "Cbl_rdr_lv_action" = 'Nothing', "Cbl_rdr_lvalue" = '0x40', "Cbl_rec_size" = '201', "Cbl_rec_trailer" = '1', "Cbl_schema_file" = 'C:\\BC\\SAT\\MPJ58091\\MPJ58091.cpy', "Cbl_source_begin_pos" = '1', "Cbl_source_end_pos" = '9999', "Cbl_source_format" = 'smart', "application_type" = '', "ds_configuration_enabled" = 'no', "locale_codepage" = 'cp1252', "locale_language" = '<default>', "locale_territory" = '<default>');
+ SET ("Cbl_expand_occurs" = 'yes', "Cbl_field_id_col(ATINTVTO)" = '3', "Cbl_field_id_val(ATINTVTO)3_1" = 'D', "Cbl_file_dir" = '$G_RUTA', "Cbl_file_name" = '$G_NOMBRE_ARCHIVO', "Cbl_file_type" = 'F', "Cbl_has_record_mark" = 'no', "Cbl_ignore_redefines" = 'no', "Cbl_is_big_endian" = 'yes', "Cbl_rdr_hv_action" = 'Nothing', "Cbl_rdr_hvalue" = '0xFF', "Cbl_rdr_lv_action" = 'Nothing', "Cbl_rdr_lvalue" = '0x40', "Cbl_rec_size" = '201', "Cbl_rec_trailer" = '1', "Cbl_schema_file" = 'C:\\Users\\JA50603\\Downloads\\05-TARJETAS PROXIMAS A VENCER-MPJ58091-SAT_ATINTVTO.cpy', "Cbl_source_begin_pos" = '1', "Cbl_source_end_pos" = '9999', "Cbl_source_format" = 'smart', "application_type" = '', "ds_configuration_enabled" = 'no', "locale_codepage" = 'cp1252', "locale_language" = '<default>', "locale_territory" = '<default>');
  AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Jan 24 18:03:46 2019', "ActaValue_3" = 'Tue Jan  8 15:28:02 2019', "x" = '-1', "y" = '-1')
 CREATE PLAN WF_ATINTVTO::'71977f1d-b97c-4f71-8c1d-f133a6098877'( )
 BEGIN

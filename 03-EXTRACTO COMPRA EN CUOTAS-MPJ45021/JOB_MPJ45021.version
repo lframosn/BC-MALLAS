@@ -2,3 +2,4 @@
 190411: incorporacion de unsigned.
 190415: Cambio tipo de registro FI, filler recortado
 190422: Cambio en tipo de registro CU, campo interes anual y filler modificados.
+190424: desempaquetado de decimales.

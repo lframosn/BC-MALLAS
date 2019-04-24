@@ -15,7 +15,7 @@ CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET
 <locale_codepage>&lt;default&gt;</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E8AB904302B4CCD2D46CB1397EFFE51FC0554FBEA76E333C260D3E1204BD9A695BBFB46084E81DEA046CCB909EEE5A</password>
+<password>+0400000000120303000803E82DCC25B4896ADAF2C8C974E1AD55BBB818D0EC17022F1F0E76F50BBC901AF2227CFFE8BED662F5226405CB147543</password>
 <server_codepage>&lt;default&gt;</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -40,7 +40,7 @@ CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET 
 <locale_codepage>iso-8859-1</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E85A70EE68335444F4B57453116EBBC6053F202FF997E75660BE40E3F1388FFCE17A2ED43B89DA7464798D474CBC5A</password>
+<password>+0400000000120303000803E8EB593F16113020534F7A5ECE27483C0B32FF660ADDE1C4C2E79AA81B534464C4E2D2D57097C6E1894E4BB5B4C32F</password>
 <server_codepage>iso-8859-1</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -59,11 +59,11 @@ ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' ,
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
 ActaName_7 = 'RDate_modified',ActaValue_7 = 'Thu Apr 11 16:06:11 2019' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Fri Apr 12 15:19:07 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Wed Apr 24 15:09:22 2019' , 
 ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '3' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
 ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '3' , 
-ActaName_12 = 'RElapsed_Time_For_Load',ActaValue_12 = '2 Seconds' )
+ActaName_12 = 'RElapsed_Time_For_Load',ActaValue_12 = '0 Seconds' )
 CREATE TABLE DS_TARGET.SAT.PTCEDIA1(IDENTIFICADOR_EJECUCION INT  NULL , 
 CODENT_D VARCHAR(4)  NULL , 
 NSECFIC_D DECIMAL(10, 0)  NULL , 
@@ -100,7 +100,7 @@ ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' ,
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
 ActaName_7 = 'RDate_modified',ActaValue_7 = 'Thu Apr 11 16:06:11 2019' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Fri Apr 12 15:19:00 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Wed Apr 24 15:09:18 2019' , 
 ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '3' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
 ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '3' , 
@@ -140,7 +140,7 @@ ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' ,
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
 ActaName_7 = 'RDate_modified',ActaValue_7 = 'Thu Apr 11 16:06:12 2019' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Fri Apr 12 15:19:21 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Wed Apr 24 15:09:35 2019' , 
 ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '3' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
 ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '3' , 
@@ -214,13 +214,13 @@ FILLER1 VARCHAR(373)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Fri Apr 12 15:19:13 2019' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Wed Apr 24 15:09:28 2019' , 
 ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '3' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
 ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '3' , 
 ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
 ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
-ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '1 Seconds' , 
+ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '2 Seconds' , 
 ActaName_8 = 'RDatabase_Object_Type',ActaValue_8 = 'TABLE' , 
 ActaName_9 = 'RTable_Type',ActaValue_9 = 'TABLE' , 
 ActaName_10 = 'RDescription',ActaValue_10 = '' , 
@@ -604,7 +604,7 @@ DECLARE
 BEGIN
 $L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');print('PROCESO NORMAL INICIO');print('SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');$L_ID_MALLA = sql('DS_CONTROL', 'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');print('SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO != \'FINALIZADO\' AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO != \'FINALIZADO\' AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]');print('SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');$P_TIPO_PROCESO = sql('DS_CONTROL', 'SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');RETURN $P_TIPO_PROCESO;
 END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Wed Apr  3 10:59:13 2019', "ActaValue_6" = 'Thu Apr 11 13:41:13 2019', "InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '50', "ui_script_text" = '##/********************************************************           
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Wed Apr  3 10:59:13 2019', "ActaValue_6" = 'Tue Apr 23 17:02:38 2019', "InputSchema_WidthProp" = '51', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '54', "ui_script_text" = '##/********************************************************           
 ##  * CF_UnpackNumSignSAT                                  *   
 ##  *                                                      *   
 ##  * Author:  Mario Valdez | Gyssa                        *   
@@ -613,11 +613,11 @@ END
 ##              los empaquetados y coloca un numero        *   
 ##  *                                                      *   
 ##  * Usage:                                               *   
-##  *   CF_UnpackNumSignSAT(valor[in]);                                                   *   
+##  *   CF_UnpackNumSignSAT(valor[in]);                    *   
 ##  ********************************************************/ 
 
 $L_lenght_field = length($P_w_numPacked);
-$L_w_ind = lower( substr($P_w_numPacked,$L_lenght_field,1));
+$L_w_ind = lower(substr($P_w_numPacked,$L_lenght_field,1));
 
 try
  begin
@@ -644,7 +644,7 @@ decode(($L_w_ind)=\'p\',substr($P_w_numPacked,1,$L_lenght_field - 1)||\'0\',
 );
 
 
- if(ascii($L_w_ind) >= 112 and ascii($L_w_ind) <= 121 )
+if(ascii($L_w_ind) >= 112 and ascii($L_w_ind) <= 121 )
  begin
   $P_w_numPacked = to_decimal($P_w_numPacked,\'.\',\',\',0) * -1;
  end
@@ -655,7 +655,9 @@ decode(($L_w_ind)=\'p\',substr($P_w_numPacked,1,$L_lenght_field - 1)||\'0\',
 catch(all)
  begin
   return $P_w_numPacked;
- end', "x" = '-1', "y" = '-1')
+ end
+
+', "x" = '-1', "y" = '-1')
 CREATE FUNCTION CF_UnpackNumSignSAT($P_w_numPacked VARCHAR(17)  IN )
 RETURNS  DOUBLE 
 DECLARE
@@ -956,7 +958,7 @@ SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Dec 19 09:26:14 2018', "ActaValue_3" = 'Thu Apr 11 16:06:20 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Dec 19 09:26:14 2018', "ActaValue_3" = 'Wed Apr 24 15:03:26 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_PTCEDIA1::'bd164e58-5dfe-42c7-8caf-9063c1459380'
 BEGIN
 
@@ -1012,44 +1014,44 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 </LDRConfiguration>
 </LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
 
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>194</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '42', "x" = '90', "y" = '-90')
-GUID::'26496181-c71a-4a43-8149-6812395c4eee' READ __BODI_COPYBOOK_COBOL PPJ6110N OUTPUT(PTCEDIA1_1)
-SET("Cbl_rdr_current_schema" = 'PTCEDIA1', "connection_port" = 'no');
-
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "ui_acta_from_schema_0" = 'PTCEDIA1_1', "x" = '480', "y" = '-90')
-GUID::'a9e3e4b4-9ab1-4f65-bce1-04d14cefcfcf' CREATE VIEW Query_1( CODENT_D VARCHAR(4)  SET( "ui_mapping_text" = 'PTCEDIA1_1.CODENT_D') ,
- NSECFIC_D DECIMAL(10, 0)  SET( "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_1.NSECFIC_D)') ,
- TIPOCINTA_D DECIMAL(2, 0)  SET( "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_1.TIPOCINTA_D)') ,
- TIPOREG_D VARCHAR(1)  SET( "ui_mapping_text" = 'PTCEDIA1_1.TIPOREG_D') ,
- FILLER_D VARCHAR(91)  SET( "ui_mapping_text" = 'PTCEDIA1_1.FILLER_D') ,
- NUMREGPROC DECIMAL(12, 0)  SET( "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_1.NUMREGPROC)') ,
- INDDEBCRE DECIMAL(1, 0)  SET( "ui_mapping_text" = 'PTCEDIA1_1.INDDEBCRE') ,
- TIPMOV VARCHAR(1)  SET( "ui_mapping_text" = 'PTCEDIA1_1.TIPMOV') ,
- CODENT VARCHAR(4)  SET( "ui_mapping_text" = 'PTCEDIA1_1.CODENT') ,
- CENTALTA VARCHAR(4)  SET( "ui_mapping_text" = 'PTCEDIA1_1.CENTALTA') ,
- CUENTA VARCHAR(12)  SET( "ui_mapping_text" = 'PTCEDIA1_1.CUENTA') ,
- CLAMON DECIMAL(3, 0)  SET( "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_1.CLAMON)') ,
- CODCONECO DECIMAL(4, 0)  SET( "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_1.CODCONECO)') ,
- DESCONECO VARCHAR(30)  SET( "ui_mapping_text" = 'PTCEDIA1_1.DESCONECO') ,
- SIGNOCE VARCHAR(1)  SET( "ui_mapping_text" = 'PTCEDIA1_1.SIGNOCE') ,
- TIPIMP DECIMAL(2, 0)  SET( "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_1.TIPIMP)') ,
- IMPAPLECO DECIMAL(17, 2)  SET( "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_1.IMPAPLECO)') ,
- IMPBRUECO DECIMAL(17, 2)  SET( "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_1.IMPBRUECO)') ,
- IMPBONECO DECIMAL(17, 2)  SET( "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_1.IMPBONECO)') ,
- IMPIMPTO DECIMAL(17, 2)  SET( "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_1.IMPIMPTO)') ,
- NUMEXTCTA DECIMAL(3, 0)  SET( "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_1.NUMEXTCTA)') ,
- NUMMOVEXT DECIMAL(7, 0)  SET( "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_1.NUMMOVEXT)') ,
- PORINT DECIMAL(7, 4)  SET( "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_1.PORINT)') ,
- NUMMOVDEB DECIMAL(9, 0)  SET( "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_1.NUMMOVDEB)') ,
- FILLER1 VARCHAR(724)  SET( "ui_mapping_text" = 'PTCEDIA1_1.FILLER1')  )
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '58', "ui_acta_from_schema_0" = 'PTCEDIA1_2', "x" = '480', "y" = '-90')
+GUID::'a9e3e4b4-9ab1-4f65-bce1-04d14cefcfcf' CREATE VIEW Query_1( CODENT_D VARCHAR(4)  SET( "Description" = 'PTCEDIA1.CODENT_D', "ui_mapping_text" = 'PTCEDIA1_2.CODENT_D') ,
+ NSECFIC_D VARCHAR(10)  SET( "Description" = 'PTCEDIA1.NSECFIC_D', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_2.NSECFIC_D)') ,
+ TIPOCINTA_D VARCHAR(2)  SET( "Description" = 'PTCEDIA1.TIPOCINTA_D', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_2.TIPOCINTA_D)') ,
+ TIPOREG_D VARCHAR(1)  SET( "Description" = 'PTCEDIA1.TIPOREG_D', "ui_mapping_text" = 'PTCEDIA1_2.TIPOREG_D') ,
+ FILLER_D VARCHAR(91)  SET( "Description" = 'PTCEDIA1.FILLER_D', "ui_mapping_text" = 'PTCEDIA1_2.FILLER_D') ,
+ NUMREGPROC VARCHAR(12)  SET( "Description" = 'PTCEDIA1.NUMREGPROC', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_2.NUMREGPROC)') ,
+ INDDEBCRE DECIMAL(1, 0)  SET( "Description" = 'PTCEDIA1.INDDEBCRE', "ui_mapping_text" = 'PTCEDIA1_2.INDDEBCRE') ,
+ TIPMOV VARCHAR(1)  SET( "Description" = 'PTCEDIA1.TIPMOV', "ui_mapping_text" = 'PTCEDIA1_2.TIPMOV') ,
+ CODENT VARCHAR(4)  SET( "Description" = 'PTCEDIA1.CODENT', "ui_mapping_text" = 'PTCEDIA1_2.CODENT') ,
+ CENTALTA VARCHAR(4)  SET( "Description" = 'PTCEDIA1.CENTALTA', "ui_mapping_text" = 'PTCEDIA1_2.CENTALTA') ,
+ CUENTA VARCHAR(12)  SET( "Description" = 'PTCEDIA1.CUENTA', "ui_mapping_text" = 'PTCEDIA1_2.CUENTA') ,
+ CLAMON VARCHAR(3)  SET( "Description" = 'PTCEDIA1.CLAMON', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_2.CLAMON)') ,
+ CODCONECO VARCHAR(4)  SET( "Description" = 'PTCEDIA1.CODCONECO', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_2.CODCONECO)') ,
+ DESCONECO VARCHAR(30)  SET( "Description" = 'PTCEDIA1.DESCONECO', "ui_mapping_text" = 'PTCEDIA1_2.DESCONECO') ,
+ SIGNOCE VARCHAR(1)  SET( "Description" = 'PTCEDIA1.SIGNOCE', "ui_mapping_text" = 'PTCEDIA1_2.SIGNOCE') ,
+ TIPIMP VARCHAR(2)  SET( "Description" = 'PTCEDIA1.TIPIMP', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_2.TIPIMP)') ,
+ IMPAPLECO VARCHAR(17)  SET( "Description" = 'PTCEDIA1.IMPAPLECO', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_2.IMPAPLECO)') ,
+ IMPBRUECO VARCHAR(17)  SET( "Description" = 'PTCEDIA1.IMPBRUECO', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_2.IMPBRUECO)') ,
+ IMPBONECO VARCHAR(17)  SET( "Description" = 'PTCEDIA1.IMPBONECO', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_2.IMPBONECO)') ,
+ IMPIMPTO VARCHAR(17)  SET( "Description" = 'PTCEDIA1.IMPIMPTO', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_2.IMPIMPTO)') ,
+ NUMEXTCTA VARCHAR(3)  SET( "Description" = 'PTCEDIA1.NUMEXTCTA', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_2.NUMEXTCTA)') ,
+ NUMMOVEXT VARCHAR(7)  SET( "Description" = 'PTCEDIA1.NUMMOVEXT', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_2.NUMMOVEXT)') ,
+ PORINT VARCHAR(7)  SET( "Description" = 'PTCEDIA1.PORINT', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_2.PORINT)') ,
+ NUMMOVDEB VARCHAR(9)  SET( "Description" = 'PTCEDIA1.NUMMOVDEB', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTCEDIA1_2.NUMMOVDEB)') ,
+ FILLER1 VARCHAR(724)  SET( "Description" = 'PTCEDIA1.FILLER1', "ui_mapping_text" = 'PTCEDIA1_2.FILLER1')  )
  AS
-SELECT PTCEDIA1_1.CODENT_D, cf_unpacknumsignsat(PTCEDIA1_1.NSECFIC_D), cf_unpacknumsignsat(PTCEDIA1_1.TIPOCINTA_D), PTCEDIA1_1.TIPOREG_D, PTCEDIA1_1.FILLER_D, cf_unpacknumsignsat(PTCEDIA1_1.NUMREGPROC), PTCEDIA1_1.INDDEBCRE, PTCEDIA1_1.TIPMOV, PTCEDIA1_1.CODENT, PTCEDIA1_1.CENTALTA, PTCEDIA1_1.CUENTA, cf_unpacknumsignsat(PTCEDIA1_1.CLAMON), cf_unpacknumsignsat(PTCEDIA1_1.CODCONECO), PTCEDIA1_1.DESCONECO, PTCEDIA1_1.SIGNOCE, cf_unpacknumsignsat(PTCEDIA1_1.TIPIMP), cf_unpacknumsignsat(PTCEDIA1_1.IMPAPLECO), cf_unpacknumsignsat(PTCEDIA1_1.IMPBRUECO), cf_unpacknumsignsat(PTCEDIA1_1.IMPBONECO), cf_unpacknumsignsat(PTCEDIA1_1.IMPIMPTO), cf_unpacknumsignsat(PTCEDIA1_1.NUMEXTCTA), cf_unpacknumsignsat(PTCEDIA1_1.NUMMOVEXT), cf_unpacknumsignsat(PTCEDIA1_1.PORINT), cf_unpacknumsignsat(PTCEDIA1_1.NUMMOVDEB), PTCEDIA1_1.FILLER1 FROM PTCEDIA1_1 
+SELECT PTCEDIA1_2.CODENT_D, cf_unpacknumsignsat(PTCEDIA1_2.NSECFIC_D), cf_unpacknumsignsat(PTCEDIA1_2.TIPOCINTA_D), PTCEDIA1_2.TIPOREG_D, PTCEDIA1_2.FILLER_D, cf_unpacknumsignsat(PTCEDIA1_2.NUMREGPROC), PTCEDIA1_2.INDDEBCRE, PTCEDIA1_2.TIPMOV, PTCEDIA1_2.CODENT, PTCEDIA1_2.CENTALTA, PTCEDIA1_2.CUENTA, cf_unpacknumsignsat(PTCEDIA1_2.CLAMON), cf_unpacknumsignsat(PTCEDIA1_2.CODCONECO), PTCEDIA1_2.DESCONECO, PTCEDIA1_2.SIGNOCE, cf_unpacknumsignsat(PTCEDIA1_2.TIPIMP), cf_unpacknumsignsat(PTCEDIA1_2.IMPAPLECO), cf_unpacknumsignsat(PTCEDIA1_2.IMPBRUECO), cf_unpacknumsignsat(PTCEDIA1_2.IMPBONECO), cf_unpacknumsignsat(PTCEDIA1_2.IMPIMPTO), cf_unpacknumsignsat(PTCEDIA1_2.NUMEXTCTA), cf_unpacknumsignsat(PTCEDIA1_2.NUMMOVEXT), cf_unpacknumsignsat(PTCEDIA1_2.PORINT), cf_unpacknumsignsat(PTCEDIA1_2.NUMMOVDEB), PTCEDIA1_2.FILLER1 FROM PTCEDIA1_2 
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '42', "x" = '90', "y" = '-90')
+GUID::'f52e3f65-b487-4e0f-9e53-746ea2156df7' READ __BODI_COPYBOOK_COBOL PPJ6110N_X01 OUTPUT(PTCEDIA1_2)
+SET("Cbl_rdr_current_schema" = 'PTCEDIA1', "connection_port" = 'no');
+
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Dec 19 10:37:51 2018', "ActaValue_3" = 'Thu Apr 11 16:06:20 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Dec 19 10:37:51 2018', "ActaValue_3" = 'Wed Apr 24 14:04:37 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_PTOPEDI1::'145bef15-2d63-451a-bd66-98183b99a7b4'
 BEGIN
 
@@ -1105,82 +1107,82 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 </LDRConfiguration>
 </LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
 
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>194</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '42', "x" = '90', "y" = '-90')
-GUID::'edc03cf9-c3b6-4e48-9a71-fb89be0c584b' READ __BODI_COPYBOOK_COBOL PPJ6110N OUTPUT(PTOPEDI1_1)
-SET("Cbl_rdr_current_schema" = 'PTOPEDI1', "connection_port" = 'no');
-
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "ui_acta_from_schema_0" = 'PTOPEDI1_1', "x" = '480', "y" = '-90')
-GUID::'07b537d4-c758-474e-9462-33d46004bb8d' CREATE VIEW Query_1( CODENT_D VARCHAR(4)  SET( "Description" = 'PTOPEDI1.CODENT_D', "ui_mapping_text" = 'PTOPEDI1_1.CODENT_D') ,
- NSECFIC_D DECIMAL(10, 0)  SET( "Description" = 'PTOPEDI1.NSECFIC_D', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.NSECFIC_D)') ,
- TIPOCINTA_D DECIMAL(2, 0)  SET( "Description" = 'PTOPEDI1.TIPOCINTA_D', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.TIPOCINTA_D)') ,
- TIPOREG_D VARCHAR(1)  SET( "Description" = 'PTOPEDI1.TIPOREG_D', "ui_mapping_text" = 'PTOPEDI1_1.TIPOREG_D') ,
- FILLER_D VARCHAR(91)  SET( "Description" = 'PTOPEDI1.FILLER_D', "ui_mapping_text" = 'PTOPEDI1_1.FILLER_D') ,
- NUMREGPROC DECIMAL(12, 0)  SET( "Description" = 'PTOPEDI1.NUMREGPROC', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.NUMREGPROC)') ,
- INDDEBCRE DECIMAL(1, 0)  SET( "Description" = 'PTOPEDI1.INDDEBCRE', "ui_mapping_text" = 'PTOPEDI1_1.INDDEBCRE') ,
- TIPMOV VARCHAR(1)  SET( "Description" = 'PTOPEDI1.TIPMOV', "ui_mapping_text" = 'PTOPEDI1_1.TIPMOV') ,
- CODENT VARCHAR(4)  SET( "Description" = 'PTOPEDI1.CODENT', "ui_mapping_text" = 'PTOPEDI1_1.CODENT') ,
- CENTALTA VARCHAR(4)  SET( "Description" = 'PTOPEDI1.CENTALTA', "ui_mapping_text" = 'PTOPEDI1_1.CENTALTA') ,
- CUENTA VARCHAR(12)  SET( "Description" = 'PTOPEDI1.CUENTA', "ui_mapping_text" = 'PTOPEDI1_1.CUENTA') ,
- CLAMON DECIMAL(3, 0)  SET( "Description" = 'PTOPEDI1.CLAMON', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.CLAMON)') ,
- INDNORCOR DECIMAL(1, 0)  SET( "Description" = 'PTOPEDI1.INDNORCOR', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.INDNORCOR)') ,
- TIPOFAC DECIMAL(4, 0)  SET( "Description" = 'PTOPEDI1.TIPOFAC', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.TIPOFAC)') ,
- DESTIPFAC VARCHAR(30)  SET( "Description" = 'PTOPEDI1.DESTIPFAC', "ui_mapping_text" = 'PTOPEDI1_1.DESTIPFAC') ,
- SIGNOFAC VARCHAR(1)  SET( "Description" = 'PTOPEDI1.SIGNOFAC', "ui_mapping_text" = 'PTOPEDI1_1.SIGNOFAC') ,
- TIPOFACSIST DECIMAL(4, 0)  SET( "Description" = 'PTOPEDI1.TIPOFACSIST', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.TIPOFACSIST)') ,
- INFACINF VARCHAR(1)  SET( "Description" = 'PTOPEDI1.INFACINF', "ui_mapping_text" = 'PTOPEDI1_1.INFACINF') ,
- FECFAC VARCHAR(10)  SET( "Description" = 'PTOPEDI1.FECFAC', "ui_mapping_text" = 'PTOPEDI1_1.FECFAC') ,
- NUMREFFAC VARCHAR(23)  SET( "Description" = 'PTOPEDI1.NUMREFFAC', "ui_mapping_text" = 'PTOPEDI1_1.NUMREFFAC') ,
- PAN VARCHAR(22)  SET( "Description" = 'PTOPEDI1.PAN', "ui_mapping_text" = 'PTOPEDI1_1.PAN') ,
- CLAMONDIV DECIMAL(3, 0)  SET( "Description" = 'PTOPEDI1.CLAMONDIV', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.CLAMONDIV)') ,
- IMPDIV DECIMAL(17, 2)  SET( "Description" = 'PTOPEDI1.IMPDIV', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.IMPDIV)') ,
- IMPFAC DECIMAL(17, 2)  SET( "Description" = 'PTOPEDI1.IMPFAC', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.IMPFAC)') ,
- CMBAPLI DECIMAL(9, 4)  SET( "Description" = 'PTOPEDI1.CMBAPLI', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.CMBAPLI)') ,
- NUMAUT VARCHAR(6)  SET( "Description" = 'PTOPEDI1.NUMAUT', "ui_mapping_text" = 'PTOPEDI1_1.NUMAUT') ,
- CODCOM VARCHAR(15)  SET( "Description" = 'PTOPEDI1.CODCOM', "ui_mapping_text" = 'PTOPEDI1_1.CODCOM') ,
- NOMCOMRED VARCHAR(27)  SET( "Description" = 'PTOPEDI1.NOMCOMRED', "ui_mapping_text" = 'PTOPEDI1_1.NOMCOMRED') ,
- CODACT DECIMAL(4, 0)  SET( "Description" = 'PTOPEDI1.CODACT', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.CODACT)') ,
- IMPLIQ DECIMAL(17, 2)  SET( "Description" = 'PTOPEDI1.IMPLIQ', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.IMPLIQ)') ,
- CLAMONLIQ DECIMAL(3, 0)  SET( "Description" = 'PTOPEDI1.CLAMONLIQ', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.CLAMONLIQ)') ,
- IMPIMPTO DECIMAL(17, 2)  SET( "Description" = 'PTOPEDI1.IMPIMPTO', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.IMPIMPTO)') ,
- FECPROCES VARCHAR(10)  SET( "Description" = 'PTOPEDI1.FECPROCES', "ui_mapping_text" = 'PTOPEDI1_1.FECPROCES') ,
- CODPAIS DECIMAL(3, 0)  SET( "Description" = 'PTOPEDI1.CODPAIS', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.CODPAIS)') ,
- NOMPOB VARCHAR(26)  SET( "Description" = 'PTOPEDI1.NOMPOB', "ui_mapping_text" = 'PTOPEDI1_1.NOMPOB') ,
- FECCONTA VARCHAR(10)  SET( "Description" = 'PTOPEDI1.FECCONTA', "ui_mapping_text" = 'PTOPEDI1_1.FECCONTA') ,
- ORIGENOPE VARCHAR(4)  SET( "Description" = 'PTOPEDI1.ORIGENOPE', "ui_mapping_text" = 'PTOPEDI1_1.ORIGENOPE') ,
- TIPFRAN DECIMAL(4, 0)  SET( "Description" = 'PTOPEDI1.TIPFRAN', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.TIPFRAN)') ,
- SECOPE DECIMAL(12, 0)  SET( "Description" = 'PTOPEDI1.SECOPE', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.SECOPE)') ,
- NUMSECREC DECIMAL(15, 0)  SET( "Description" = 'PTOPEDI1.NUMSECREC', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.NUMSECREC)') ,
- SESIONRED VARCHAR(12)  SET( "Description" = 'PTOPEDI1.SESIONRED', "ui_mapping_text" = 'PTOPEDI1_1.SESIONRED') ,
- SIAIDCD VARCHAR(19)  SET( "Description" = 'PTOPEDI1.SIAIDCD', "ui_mapping_text" = 'PTOPEDI1_1.SIAIDCD') ,
- CALFRAUDE VARCHAR(3)  SET( "Description" = 'PTOPEDI1.CALFRAUDE', "ui_mapping_text" = 'PTOPEDI1_1.CALFRAUDE') ,
- IDENTCLI VARCHAR(8)  SET( "Description" = 'PTOPEDI1.IDENTCLI', "ui_mapping_text" = 'PTOPEDI1_1.IDENTCLI') ,
- INDINCEST VARCHAR(1)  SET( "Description" = 'PTOPEDI1.INDINCEST', "ui_mapping_text" = 'PTOPEDI1_1.INDINCEST') ,
- TIPDOCPAG DECIMAL(2, 0)  SET( "Description" = 'PTOPEDI1.TIPDOCPAG', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.TIPDOCPAG)') ,
- REFDOCPAG VARCHAR(20)  SET( "Description" = 'PTOPEDI1.REFDOCPAG', "ui_mapping_text" = 'PTOPEDI1_1.REFDOCPAG') ,
- IMPAMORT DECIMAL(17, 2)  SET( "Description" = 'PTOPEDI1.IMPAMORT', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.IMPAMORT)') ,
- NUMMOVEXT DECIMAL(7, 0)  SET( "Description" = 'PTOPEDI1.NUMMOVEXT', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.NUMMOVEXT)') ,
- NUMEXTCTA DECIMAL(3, 0)  SET( "Description" = 'PTOPEDI1.NUMEXTCTA', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.NUMEXTCTA)') ,
- FECLIQ VARCHAR(10)  SET( "Description" = 'PTOPEDI1.FECLIQ', "ui_mapping_text" = 'PTOPEDI1_1.FECLIQ') ,
- INDMOVANU DECIMAL(1, 0)  SET( "Description" = 'PTOPEDI1.INDMOVANU', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.INDMOVANU)') ,
- INDRET DECIMAL(1, 0)  SET( "Description" = 'PTOPEDI1.INDRET', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.INDRET)') ,
- INDMOVEXT DECIMAL(1, 0)  SET( "Description" = 'PTOPEDI1.INDMOVEXT', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.INDMOVEXT)') ,
- CODTIPC VARCHAR(4)  SET( "Description" = 'PTOPEDI1.CODTIPC', "ui_mapping_text" = 'PTOPEDI1_1.CODTIPC') ,
- TOTCUOTAS DECIMAL(9, 0)  SET( "Description" = 'PTOPEDI1.TOTCUOTAS', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.TOTCUOTAS)') ,
- PORINT DECIMAL(7, 4)  SET( "Description" = 'PTOPEDI1.PORINT', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.PORINT)') ,
- NUMOPECUO DECIMAL(6, 0)  SET( "Description" = 'PTOPEDI1.NUMOPECUO', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.NUMOPECUO)') ,
- IMPCUOTA DECIMAL(17, 2)  SET( "Description" = 'PTOPEDI1.IMPCUOTA', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.IMPCUOTA)') ,
- LINREF DECIMAL(8, 0)  SET( "Description" = 'PTOPEDI1.LINREF', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.LINREF)') ,
- FORPAGO DECIMAL(2, 0)  SET( "Description" = 'PTOPEDI1.FORPAGO', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.FORPAGO)') ,
- NUMMOVDEB DECIMAL(9, 0)  SET( "Description" = 'PTOPEDI1.NUMMOVDEB', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_1.NUMMOVDEB)') ,
- FILLER1 VARCHAR(373)  SET( "Description" = 'PTOPEDI1.FILLER1', "ui_mapping_text" = 'PTOPEDI1_1.FILLER1')  )
+ALGUIComment ("InputSchema_WidthProp" = '40', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '58', "ui_acta_from_schema_0" = 'PTOPEDI1_2', "x" = '480', "y" = '-90')
+GUID::'07b537d4-c758-474e-9462-33d46004bb8d' CREATE VIEW Query_1( CODENT_D VARCHAR(4)  SET( "Description" = 'PTOPEDI1.CODENT_D', "ui_mapping_text" = 'PTOPEDI1_2.CODENT_D') ,
+ NSECFIC_D VARCHAR(10)  SET( "Description" = 'PTOPEDI1.NSECFIC_D', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.NSECFIC_D)') ,
+ TIPOCINTA_D VARCHAR(2)  SET( "Description" = 'PTOPEDI1.TIPOCINTA_D', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.TIPOCINTA_D)') ,
+ TIPOREG_D VARCHAR(1)  SET( "Description" = 'PTOPEDI1.TIPOREG_D', "ui_mapping_text" = 'PTOPEDI1_2.TIPOREG_D') ,
+ FILLER_D VARCHAR(91)  SET( "Description" = 'PTOPEDI1.FILLER_D', "ui_mapping_text" = 'PTOPEDI1_2.FILLER_D') ,
+ NUMREGPROC VARCHAR(12)  SET( "Description" = 'PTOPEDI1.NUMREGPROC', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.NUMREGPROC)') ,
+ INDDEBCRE DECIMAL(1, 0)  SET( "Description" = 'PTOPEDI1.INDDEBCRE', "ui_mapping_text" = 'PTOPEDI1_2.INDDEBCRE') ,
+ TIPMOV VARCHAR(1)  SET( "Description" = 'PTOPEDI1.TIPMOV', "ui_mapping_text" = 'PTOPEDI1_2.TIPMOV') ,
+ CODENT VARCHAR(4)  SET( "Description" = 'PTOPEDI1.CODENT', "ui_mapping_text" = 'PTOPEDI1_2.CODENT') ,
+ CENTALTA VARCHAR(4)  SET( "Description" = 'PTOPEDI1.CENTALTA', "ui_mapping_text" = 'PTOPEDI1_2.CENTALTA') ,
+ CUENTA VARCHAR(12)  SET( "Description" = 'PTOPEDI1.CUENTA', "ui_mapping_text" = 'PTOPEDI1_2.CUENTA') ,
+ CLAMON VARCHAR(3)  SET( "Description" = 'PTOPEDI1.CLAMON', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.CLAMON)') ,
+ INDNORCOR VARCHAR(1)  SET( "Description" = 'PTOPEDI1.INDNORCOR', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.INDNORCOR)') ,
+ TIPOFAC VARCHAR(4)  SET( "Description" = 'PTOPEDI1.TIPOFAC', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.TIPOFAC)') ,
+ DESTIPFAC VARCHAR(30)  SET( "Description" = 'PTOPEDI1.DESTIPFAC', "ui_mapping_text" = 'PTOPEDI1_2.DESTIPFAC') ,
+ SIGNOFAC VARCHAR(1)  SET( "Description" = 'PTOPEDI1.SIGNOFAC', "ui_mapping_text" = 'PTOPEDI1_2.SIGNOFAC') ,
+ TIPOFACSIST VARCHAR(4)  SET( "Description" = 'PTOPEDI1.TIPOFACSIST', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.TIPOFACSIST)') ,
+ INFACINF VARCHAR(1)  SET( "Description" = 'PTOPEDI1.INFACINF', "ui_mapping_text" = 'PTOPEDI1_2.INFACINF') ,
+ FECFAC VARCHAR(10)  SET( "Description" = 'PTOPEDI1.FECFAC', "ui_mapping_text" = 'PTOPEDI1_2.FECFAC') ,
+ NUMREFFAC VARCHAR(23)  SET( "Description" = 'PTOPEDI1.NUMREFFAC', "ui_mapping_text" = 'PTOPEDI1_2.NUMREFFAC') ,
+ PAN VARCHAR(22)  SET( "Description" = 'PTOPEDI1.PAN', "ui_mapping_text" = 'PTOPEDI1_2.PAN') ,
+ CLAMONDIV VARCHAR(3)  SET( "Description" = 'PTOPEDI1.CLAMONDIV', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.CLAMONDIV)') ,
+ IMPDIV VARCHAR(17)  SET( "Description" = 'PTOPEDI1.IMPDIV', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.IMPDIV)') ,
+ IMPFAC VARCHAR(17)  SET( "Description" = 'PTOPEDI1.IMPFAC', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.IMPFAC)') ,
+ CMBAPLI VARCHAR(9)  SET( "Description" = 'PTOPEDI1.CMBAPLI', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.CMBAPLI)') ,
+ NUMAUT VARCHAR(6)  SET( "Description" = 'PTOPEDI1.NUMAUT', "ui_mapping_text" = 'PTOPEDI1_2.NUMAUT') ,
+ CODCOM VARCHAR(15)  SET( "Description" = 'PTOPEDI1.CODCOM', "ui_mapping_text" = 'PTOPEDI1_2.CODCOM') ,
+ NOMCOMRED VARCHAR(27)  SET( "Description" = 'PTOPEDI1.NOMCOMRED', "ui_mapping_text" = 'PTOPEDI1_2.NOMCOMRED') ,
+ CODACT VARCHAR(4)  SET( "Description" = 'PTOPEDI1.CODACT', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.CODACT)') ,
+ IMPLIQ VARCHAR(17)  SET( "Description" = 'PTOPEDI1.IMPLIQ', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.IMPLIQ)') ,
+ CLAMONLIQ VARCHAR(3)  SET( "Description" = 'PTOPEDI1.CLAMONLIQ', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.CLAMONLIQ)') ,
+ IMPIMPTO VARCHAR(17)  SET( "Description" = 'PTOPEDI1.IMPIMPTO', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.IMPIMPTO)') ,
+ FECPROCES VARCHAR(10)  SET( "Description" = 'PTOPEDI1.FECPROCES', "ui_mapping_text" = 'PTOPEDI1_2.FECPROCES') ,
+ CODPAIS VARCHAR(3)  SET( "Description" = 'PTOPEDI1.CODPAIS', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.CODPAIS)') ,
+ NOMPOB VARCHAR(26)  SET( "Description" = 'PTOPEDI1.NOMPOB', "ui_mapping_text" = 'PTOPEDI1_2.NOMPOB') ,
+ FECCONTA VARCHAR(10)  SET( "Description" = 'PTOPEDI1.FECCONTA', "ui_mapping_text" = 'PTOPEDI1_2.FECCONTA') ,
+ ORIGENOPE VARCHAR(4)  SET( "Description" = 'PTOPEDI1.ORIGENOPE', "ui_mapping_text" = 'PTOPEDI1_2.ORIGENOPE') ,
+ TIPFRAN VARCHAR(4)  SET( "Description" = 'PTOPEDI1.TIPFRAN', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.TIPFRAN)') ,
+ SECOPE VARCHAR(12)  SET( "Description" = 'PTOPEDI1.SECOPE', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.SECOPE)') ,
+ NUMSECREC VARCHAR(15)  SET( "Description" = 'PTOPEDI1.NUMSECREC', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.NUMSECREC)') ,
+ SESIONRED VARCHAR(12)  SET( "Description" = 'PTOPEDI1.SESIONRED', "ui_mapping_text" = 'PTOPEDI1_2.SESIONRED') ,
+ SIAIDCD VARCHAR(19)  SET( "Description" = 'PTOPEDI1.SIAIDCD', "ui_mapping_text" = 'PTOPEDI1_2.SIAIDCD') ,
+ CALFRAUDE VARCHAR(3)  SET( "Description" = 'PTOPEDI1.CALFRAUDE', "ui_mapping_text" = 'PTOPEDI1_2.CALFRAUDE') ,
+ IDENTCLI VARCHAR(8)  SET( "Description" = 'PTOPEDI1.IDENTCLI', "ui_mapping_text" = 'PTOPEDI1_2.IDENTCLI') ,
+ INDINCEST VARCHAR(1)  SET( "Description" = 'PTOPEDI1.INDINCEST', "ui_mapping_text" = 'PTOPEDI1_2.INDINCEST') ,
+ TIPDOCPAG VARCHAR(2)  SET( "Description" = 'PTOPEDI1.TIPDOCPAG', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.TIPDOCPAG)') ,
+ REFDOCPAG VARCHAR(20)  SET( "Description" = 'PTOPEDI1.REFDOCPAG', "ui_mapping_text" = 'PTOPEDI1_2.REFDOCPAG') ,
+ IMPAMORT VARCHAR(17)  SET( "Description" = 'PTOPEDI1.IMPAMORT', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.IMPAMORT)') ,
+ NUMMOVEXT VARCHAR(7)  SET( "Description" = 'PTOPEDI1.NUMMOVEXT', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.NUMMOVEXT)') ,
+ NUMEXTCTA VARCHAR(3)  SET( "Description" = 'PTOPEDI1.NUMEXTCTA', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.NUMEXTCTA)') ,
+ FECLIQ VARCHAR(10)  SET( "Description" = 'PTOPEDI1.FECLIQ', "ui_mapping_text" = 'PTOPEDI1_2.FECLIQ') ,
+ INDMOVANU VARCHAR(1)  SET( "Description" = 'PTOPEDI1.INDMOVANU', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.INDMOVANU)') ,
+ INDRET VARCHAR(1)  SET( "Description" = 'PTOPEDI1.INDRET', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.INDRET)') ,
+ INDMOVEXT VARCHAR(1)  SET( "Description" = 'PTOPEDI1.INDMOVEXT', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.INDMOVEXT)') ,
+ CODTIPC VARCHAR(4)  SET( "Description" = 'PTOPEDI1.CODTIPC', "ui_mapping_text" = 'PTOPEDI1_2.CODTIPC') ,
+ TOTCUOTAS VARCHAR(9)  SET( "Description" = 'PTOPEDI1.TOTCUOTAS', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.TOTCUOTAS)') ,
+ PORINT VARCHAR(7)  SET( "Description" = 'PTOPEDI1.PORINT', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.PORINT)') ,
+ NUMOPECUO VARCHAR(6)  SET( "Description" = 'PTOPEDI1.NUMOPECUO', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.NUMOPECUO)') ,
+ IMPCUOTA VARCHAR(17)  SET( "Description" = 'PTOPEDI1.IMPCUOTA', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.IMPCUOTA)') ,
+ LINREF VARCHAR(8)  SET( "Description" = 'PTOPEDI1.LINREF', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.LINREF)') ,
+ FORPAGO VARCHAR(2)  SET( "Description" = 'PTOPEDI1.FORPAGO', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.FORPAGO)') ,
+ NUMMOVDEB VARCHAR(9)  SET( "Description" = 'PTOPEDI1.NUMMOVDEB', "ui_mapping_text" = 'CF_UnpackNumSignSAT(PTOPEDI1_2.NUMMOVDEB)') ,
+ FILLER1 VARCHAR(373)  SET( "Description" = 'PTOPEDI1.FILLER1', "ui_mapping_text" = 'PTOPEDI1_2.FILLER1')  )
  AS
-SELECT PTOPEDI1_1.CODENT_D, cf_unpacknumsignsat(PTOPEDI1_1.NSECFIC_D), cf_unpacknumsignsat(PTOPEDI1_1.TIPOCINTA_D), PTOPEDI1_1.TIPOREG_D, PTOPEDI1_1.FILLER_D, cf_unpacknumsignsat(PTOPEDI1_1.NUMREGPROC), PTOPEDI1_1.INDDEBCRE, PTOPEDI1_1.TIPMOV, PTOPEDI1_1.CODENT, PTOPEDI1_1.CENTALTA, PTOPEDI1_1.CUENTA, cf_unpacknumsignsat(PTOPEDI1_1.CLAMON), cf_unpacknumsignsat(PTOPEDI1_1.INDNORCOR), cf_unpacknumsignsat(PTOPEDI1_1.TIPOFAC), PTOPEDI1_1.DESTIPFAC, PTOPEDI1_1.SIGNOFAC, cf_unpacknumsignsat(PTOPEDI1_1.TIPOFACSIST), PTOPEDI1_1.INFACINF, PTOPEDI1_1.FECFAC, PTOPEDI1_1.NUMREFFAC, PTOPEDI1_1.PAN, cf_unpacknumsignsat(PTOPEDI1_1.CLAMONDIV), cf_unpacknumsignsat(PTOPEDI1_1.IMPDIV), cf_unpacknumsignsat(PTOPEDI1_1.IMPFAC), cf_unpacknumsignsat(PTOPEDI1_1.CMBAPLI), PTOPEDI1_1.NUMAUT, PTOPEDI1_1.CODCOM, PTOPEDI1_1.NOMCOMRED, cf_unpacknumsignsat(PTOPEDI1_1.CODACT), cf_unpacknumsignsat(PTOPEDI1_1.IMPLIQ), cf_unpacknumsignsat(PTOPEDI1_1.CLAMONLIQ), cf_unpacknumsignsat(PTOPEDI1_1.IMPIMPTO), PTOPEDI1_1.FECPROCES, cf_unpacknumsignsat(PTOPEDI1_1.CODPAIS), PTOPEDI1_1.NOMPOB, PTOPEDI1_1.FECCONTA, PTOPEDI1_1.ORIGENOPE, cf_unpacknumsignsat(PTOPEDI1_1.TIPFRAN), cf_unpacknumsignsat(PTOPEDI1_1.SECOPE), cf_unpacknumsignsat(PTOPEDI1_1.NUMSECREC), PTOPEDI1_1.SESIONRED, PTOPEDI1_1.SIAIDCD, PTOPEDI1_1.CALFRAUDE, PTOPEDI1_1.IDENTCLI, PTOPEDI1_1.INDINCEST, cf_unpacknumsignsat(PTOPEDI1_1.TIPDOCPAG), PTOPEDI1_1.REFDOCPAG, cf_unpacknumsignsat(PTOPEDI1_1.IMPAMORT), cf_unpacknumsignsat(PTOPEDI1_1.NUMMOVEXT), cf_unpacknumsignsat(PTOPEDI1_1.NUMEXTCTA), PTOPEDI1_1.FECLIQ, cf_unpacknumsignsat(PTOPEDI1_1.INDMOVANU), cf_unpacknumsignsat(PTOPEDI1_1.INDRET), cf_unpacknumsignsat(PTOPEDI1_1.INDMOVEXT), PTOPEDI1_1.CODTIPC, cf_unpacknumsignsat(PTOPEDI1_1.TOTCUOTAS), cf_unpacknumsignsat(PTOPEDI1_1.PORINT), cf_unpacknumsignsat(PTOPEDI1_1.NUMOPECUO), cf_unpacknumsignsat(PTOPEDI1_1.IMPCUOTA), cf_unpacknumsignsat(PTOPEDI1_1.LINREF), cf_unpacknumsignsat(PTOPEDI1_1.FORPAGO), cf_unpacknumsignsat(PTOPEDI1_1.NUMMOVDEB), PTOPEDI1_1.FILLER1 FROM PTOPEDI1_1 
+SELECT PTOPEDI1_2.CODENT_D, cf_unpacknumsignsat(PTOPEDI1_2.NSECFIC_D), cf_unpacknumsignsat(PTOPEDI1_2.TIPOCINTA_D), PTOPEDI1_2.TIPOREG_D, PTOPEDI1_2.FILLER_D, cf_unpacknumsignsat(PTOPEDI1_2.NUMREGPROC), PTOPEDI1_2.INDDEBCRE, PTOPEDI1_2.TIPMOV, PTOPEDI1_2.CODENT, PTOPEDI1_2.CENTALTA, PTOPEDI1_2.CUENTA, cf_unpacknumsignsat(PTOPEDI1_2.CLAMON), cf_unpacknumsignsat(PTOPEDI1_2.INDNORCOR), cf_unpacknumsignsat(PTOPEDI1_2.TIPOFAC), PTOPEDI1_2.DESTIPFAC, PTOPEDI1_2.SIGNOFAC, cf_unpacknumsignsat(PTOPEDI1_2.TIPOFACSIST), PTOPEDI1_2.INFACINF, PTOPEDI1_2.FECFAC, PTOPEDI1_2.NUMREFFAC, PTOPEDI1_2.PAN, cf_unpacknumsignsat(PTOPEDI1_2.CLAMONDIV), cf_unpacknumsignsat(PTOPEDI1_2.IMPDIV), cf_unpacknumsignsat(PTOPEDI1_2.IMPFAC), cf_unpacknumsignsat(PTOPEDI1_2.CMBAPLI), PTOPEDI1_2.NUMAUT, PTOPEDI1_2.CODCOM, PTOPEDI1_2.NOMCOMRED, cf_unpacknumsignsat(PTOPEDI1_2.CODACT), cf_unpacknumsignsat(PTOPEDI1_2.IMPLIQ), cf_unpacknumsignsat(PTOPEDI1_2.CLAMONLIQ), cf_unpacknumsignsat(PTOPEDI1_2.IMPIMPTO), PTOPEDI1_2.FECPROCES, cf_unpacknumsignsat(PTOPEDI1_2.CODPAIS), PTOPEDI1_2.NOMPOB, PTOPEDI1_2.FECCONTA, PTOPEDI1_2.ORIGENOPE, cf_unpacknumsignsat(PTOPEDI1_2.TIPFRAN), cf_unpacknumsignsat(PTOPEDI1_2.SECOPE), cf_unpacknumsignsat(PTOPEDI1_2.NUMSECREC), PTOPEDI1_2.SESIONRED, PTOPEDI1_2.SIAIDCD, PTOPEDI1_2.CALFRAUDE, PTOPEDI1_2.IDENTCLI, PTOPEDI1_2.INDINCEST, cf_unpacknumsignsat(PTOPEDI1_2.TIPDOCPAG), PTOPEDI1_2.REFDOCPAG, cf_unpacknumsignsat(PTOPEDI1_2.IMPAMORT), cf_unpacknumsignsat(PTOPEDI1_2.NUMMOVEXT), cf_unpacknumsignsat(PTOPEDI1_2.NUMEXTCTA), PTOPEDI1_2.FECLIQ, cf_unpacknumsignsat(PTOPEDI1_2.INDMOVANU), cf_unpacknumsignsat(PTOPEDI1_2.INDRET), cf_unpacknumsignsat(PTOPEDI1_2.INDMOVEXT), PTOPEDI1_2.CODTIPC, cf_unpacknumsignsat(PTOPEDI1_2.TOTCUOTAS), cf_unpacknumsignsat(PTOPEDI1_2.PORINT), cf_unpacknumsignsat(PTOPEDI1_2.NUMOPECUO), cf_unpacknumsignsat(PTOPEDI1_2.IMPCUOTA), cf_unpacknumsignsat(PTOPEDI1_2.LINREF), cf_unpacknumsignsat(PTOPEDI1_2.FORPAGO), cf_unpacknumsignsat(PTOPEDI1_2.NUMMOVDEB), PTOPEDI1_2.FILLER1 FROM PTOPEDI1_2 
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '42', "x" = '100', "y" = '-472')
+GUID::'62d6de96-4460-4bb7-bb0c-2393ffcbb38e' READ __BODI_COPYBOOK_COBOL PPJ6110N_X01 OUTPUT(PTOPEDI1_2)
+SET("Cbl_rdr_current_schema" = 'PTOPEDI1', "connection_port" = 'no');
+
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaName_4" = 'RDescription', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Dec 19 09:34:16 2018', "ActaValue_3" = 'Thu Apr 11 16:06:20 2019', "ActaValue_4" = '02-OPERACIONES DIARIAS', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaName_4" = 'RDescription', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Dec 19 09:34:16 2018', "ActaValue_3" = 'Wed Apr 24 15:03:27 2019', "ActaValue_4" = '02-OPERACIONES DIARIAS', "x" = '-1', "y" = '-1')
 CREATE SESSION JOB_PPJ6110N::'6f2dade1-5bb6-45c6-83e0-e0e4f88544c1'( )
 DECLARE
      GLOBAL $G_NOMBRE_JOB VARCHAR(50) ;
@@ -1190,7 +1192,7 @@ DECLARE
      GLOBAL $G_NOMBRE_ARCHIVO VARCHAR(100) ;
 BEGIN
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>288</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INICIAL', "ui_script_text" = '##INICIALIZACIÓN DE VARIABLES
-print(\'--version: 58a3542\');
+print(\'--version: 9f677c4\');
 
 $G_NOMBRE_JOB = job_name( );
 $G_FECHA_PROCESO  = sysdate( );
@@ -1200,7 +1202,7 @@ sql( \'DS_CONTROL\', \'COMMIT\');
 
 ', "x" = '0', "y" = '0')
 BEGIN_SCRIPT
-print('--version: 58a3542');$G_NOMBRE_JOB = job_name();$G_FECHA_PROCESO = sysdate();$G_RUTA = sql('DS_CONTROL', 'SELECT VALOR FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'RUTA_ARCHIVO\'');sql('DS_CONTROL', 'COMMIT');END
+print('--version: 9f677c4');$G_NOMBRE_JOB = job_name();$G_FECHA_PROCESO = sysdate();$G_RUTA = sql('DS_CONTROL', 'SELECT VALOR FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'RUTA_ARCHIVO\'');sql('DS_CONTROL', 'COMMIT');END
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try182', "x" = '390', "y" = '0')
 TRY
 BEGIN
@@ -1218,8 +1220,8 @@ END
 END_TRY
 END
  SET ("job_checkpoint_enabled" = 'no', "job_collect_statistics" = 'no', "job_collect_statistics_monitor" = 'no', "job_create_debug_package" = 'no', "job_enable_assemblers" = 'yes', "job_enable_audit" = 'yes', "job_enable_dataquality" = 'yes', "job_export_repo" = 'no', "job_export_reports" = 'no', "job_guid" = '6f2dade1-5bb6-45c6-83e0-e0e4f88544c1', "job_isrecoverable" = 'no', "job_mode" = 'Multi-Process', "job_monitor_sample_rate" = '1000', "job_monitor_timer_rate" = '5', "job_name" = 'JOB_PPJ6110N', "job_print_version" = 'no', "job_testmode_enabled" = 'no', "job_trace_abapquery" = 'no', "job_trace_all" = 'no', "job_trace_ascomm" = 'no', "job_trace_assemblers" = 'no', "job_trace_audit" = 'no', "job_trace_dataflow" = 'yes', "job_trace_idoc_file" = 'no', "job_trace_memory_loader" = 'no', "job_trace_memory_reader" = 'no', "job_trace_optimized_dataflow" = 'no', "job_trace_parallel_execution" = 'no', "job_trace_rfc_function" = 'no', "job_trace_row" = 'no', "job_trace_script" = 'no', "job_trace_session" = 'yes', "job_trace_sql_only" = 'no', "job_trace_sqlfunctions" = 'no', "job_trace_sqlloaders" = 'no', "job_trace_sqlreaders" = 'no', "job_trace_sqltransforms" = 'no', "job_trace_stored_procedure" = 'no', "job_trace_table" = 'no', "job_trace_table_reader" = 'no', "job_trace_transform" = 'no', "job_trace_userfunction" = 'no', "job_trace_usertransform" = 'no', "job_trace_workflow" = 'yes', "job_type" = 'batch', "job_use_statistics" = 'yes', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Mar  5 11:48:41 2019')
-CREATE __BODI_COPYBOOK_COBOL DATASTORE PPJ6110N::'5622e75d-ad74-4103-b365-4442bdb4cd2e' OUTPUT (ATINTCAB( CODENT VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'ATINTCAB.CODENT', "Description" = 'ATINTCAB.CODENT') ,
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Apr 24 13:44:41 2019')
+CREATE __BODI_COPYBOOK_COBOL DATASTORE PPJ6110N_X01::'9e09d164-c5c5-487f-a393-16e8251f6aca' OUTPUT (ATINTCAB( CODENT VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'ATINTCAB.CODENT', "Description" = 'ATINTCAB.CODENT') ,
  NSECFIC VARCHAR(10)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '4', "Cbl_field_level" = '2', "Cbl_field_name" = 'NSECFIC', "Cbl_field_original_PIC" = 'X(10)', "Cbl_field_path" = 'ATINTCAB.NSECFIC', "Description" = 'ATINTCAB.NSECFIC') ,
  TIPOCINTA VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '14', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOCINTA', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'ATINTCAB.TIPOCINTA', "Description" = 'ATINTCAB.TIPOCINTA') ,
  TIPOREG VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '16', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOREG', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'ATINTCAB.TIPOREG', "Description" = 'ATINTCAB.TIPOREG') ,
@@ -1237,11 +1239,11 @@ CREATE __BODI_COPYBOOK_COBOL DATASTORE PPJ6110N::'5622e75d-ad74-4103-b365-4442bd
  VALIDACION VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '1000', "Cbl_field_level" = '2', "Cbl_field_name" = 'VALIDACION', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'ATINTCAB.VALIDACION', "Description" = 'ATINTCAB.VALIDACION')  )
 ,
  PTAMDIA2( CODENT_D VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT_D', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTAMDIA2.CODENT_D', "Description" = 'PTAMDIA2.CODENT_D') ,
- NSECFIC_D DECIMAL(10, 0)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '4', "Cbl_field_level" = '2', "Cbl_field_name" = 'NSECFIC_D', "Cbl_field_original_PIC" = '9(10)', "Cbl_field_path" = 'PTAMDIA2.NSECFIC_D', "Cbl_field_precision" = '10', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTAMDIA2.NSECFIC_D') ,
- TIPOCINTA_D DECIMAL(2, 0)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '14', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOCINTA_D', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'PTAMDIA2.TIPOCINTA_D', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTAMDIA2.TIPOCINTA_D') ,
+ NSECFIC_D VARCHAR(10)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '4', "Cbl_field_level" = '2', "Cbl_field_name" = 'NSECFIC_D', "Cbl_field_original_PIC" = 'X(10)', "Cbl_field_path" = 'PTAMDIA2.NSECFIC_D', "Description" = 'PTAMDIA2.NSECFIC_D') ,
+ TIPOCINTA_D VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '14', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOCINTA_D', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'PTAMDIA2.TIPOCINTA_D', "Description" = 'PTAMDIA2.TIPOCINTA_D') ,
  TIPOREG_D VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '16', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOREG_D', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'PTAMDIA2.TIPOREG_D', "Description" = 'PTAMDIA2.TIPOREG_D') ,
  FILLER_D VARCHAR(91)  SET( "Cbl_field_internal_length" = '91', "Cbl_field_internal_offset" = '17', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER_D', "Cbl_field_original_PIC" = 'X(91)', "Cbl_field_path" = 'PTAMDIA2.FILLER_D', "Description" = 'PTAMDIA2.FILLER_D') ,
- NUMREGPROC DECIMAL(12, 0)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '108', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMREGPROC', "Cbl_field_original_PIC" = '9(12)', "Cbl_field_path" = 'PTAMDIA2.NUMREGPROC', "Cbl_field_precision" = '12', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTAMDIA2.NUMREGPROC') ,
+ NUMREGPROC VARCHAR(12)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '108', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMREGPROC', "Cbl_field_original_PIC" = 'X(12)', "Cbl_field_path" = 'PTAMDIA2.NUMREGPROC', "Description" = 'PTAMDIA2.NUMREGPROC') ,
  INDDEBCRE DECIMAL(1, 0)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '120', "Cbl_field_level" = '2', "Cbl_field_name" = 'INDDEBCRE', "Cbl_field_original_PIC" = '9(1)', "Cbl_field_path" = 'PTAMDIA2.INDDEBCRE', "Cbl_field_precision" = '1', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTAMDIA2.INDDEBCRE') ,
  TIPMOV VARCHAR(1)  SET( "Cbl_field_id_col" = 'yes', "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '121', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPMOV', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'PTAMDIA2.TIPMOV', "Description" = 'PTAMDIA2.TIPMOV') ,
  CODENT VARCHAR(3)  SET( "Cbl_field_internal_length" = '3', "Cbl_field_internal_offset" = '122', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT', "Cbl_field_original_PIC" = 'X(3)', "Cbl_field_path" = 'PTAMDIA2.CODENT', "Description" = 'PTAMDIA2.CODENT') ,
@@ -1267,96 +1269,96 @@ CREATE __BODI_COPYBOOK_COBOL DATASTORE PPJ6110N::'5622e75d-ad74-4103-b365-4442bd
  FILLER1 VARCHAR(708)  SET( "Cbl_field_internal_length" = '708', "Cbl_field_internal_offset" = '292', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER1', "Cbl_field_original_PIC" = 'X(708)', "Cbl_field_path" = 'PTAMDIA2.FILLER1', "Description" = 'PTAMDIA2.FILLER1')  )
 ,
  PTCEDIA1( CODENT_D VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT_D', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTCEDIA1.CODENT_D', "Description" = 'PTCEDIA1.CODENT_D') ,
- NSECFIC_D DECIMAL(10, 0)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '4', "Cbl_field_level" = '2', "Cbl_field_name" = 'NSECFIC_D', "Cbl_field_original_PIC" = '9(10)', "Cbl_field_path" = 'PTCEDIA1.NSECFIC_D', "Cbl_field_precision" = '10', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTCEDIA1.NSECFIC_D') ,
- TIPOCINTA_D DECIMAL(2, 0)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '14', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOCINTA_D', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'PTCEDIA1.TIPOCINTA_D', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTCEDIA1.TIPOCINTA_D') ,
+ NSECFIC_D VARCHAR(10)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '4', "Cbl_field_level" = '2', "Cbl_field_name" = 'NSECFIC_D', "Cbl_field_original_PIC" = 'X(10)', "Cbl_field_path" = 'PTCEDIA1.NSECFIC_D', "Description" = 'PTCEDIA1.NSECFIC_D') ,
+ TIPOCINTA_D VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '14', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOCINTA_D', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'PTCEDIA1.TIPOCINTA_D', "Description" = 'PTCEDIA1.TIPOCINTA_D') ,
  TIPOREG_D VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '16', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOREG_D', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'PTCEDIA1.TIPOREG_D', "Description" = 'PTCEDIA1.TIPOREG_D') ,
  FILLER_D VARCHAR(91)  SET( "Cbl_field_internal_length" = '91', "Cbl_field_internal_offset" = '17', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER_D', "Cbl_field_original_PIC" = 'X(91)', "Cbl_field_path" = 'PTCEDIA1.FILLER_D', "Description" = 'PTCEDIA1.FILLER_D') ,
- NUMREGPROC DECIMAL(12, 0)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '108', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMREGPROC', "Cbl_field_original_PIC" = '9(12)', "Cbl_field_path" = 'PTCEDIA1.NUMREGPROC', "Cbl_field_precision" = '12', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTCEDIA1.NUMREGPROC') ,
+ NUMREGPROC VARCHAR(12)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '108', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMREGPROC', "Cbl_field_original_PIC" = 'X(12)', "Cbl_field_path" = 'PTCEDIA1.NUMREGPROC', "Description" = 'PTCEDIA1.NUMREGPROC') ,
  INDDEBCRE DECIMAL(1, 0)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '120', "Cbl_field_level" = '2', "Cbl_field_name" = 'INDDEBCRE', "Cbl_field_original_PIC" = '9(1)', "Cbl_field_path" = 'PTCEDIA1.INDDEBCRE', "Cbl_field_precision" = '1', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTCEDIA1.INDDEBCRE') ,
  TIPMOV VARCHAR(1)  SET( "Cbl_field_id_col" = 'yes', "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '121', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPMOV', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'PTCEDIA1.TIPMOV', "Description" = 'PTCEDIA1.TIPMOV') ,
  CODENT VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '122', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTCEDIA1.CODENT', "Description" = 'PTCEDIA1.CODENT') ,
  CENTALTA VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '126', "Cbl_field_level" = '2', "Cbl_field_name" = 'CENTALTA', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTCEDIA1.CENTALTA', "Description" = 'PTCEDIA1.CENTALTA') ,
  CUENTA VARCHAR(12)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '130', "Cbl_field_level" = '2', "Cbl_field_name" = 'CUENTA', "Cbl_field_original_PIC" = 'X(12)', "Cbl_field_path" = 'PTCEDIA1.CUENTA', "Description" = 'PTCEDIA1.CUENTA') ,
- CLAMON DECIMAL(3, 0)  SET( "Cbl_field_internal_length" = '3', "Cbl_field_internal_offset" = '142', "Cbl_field_level" = '2', "Cbl_field_name" = 'CLAMON', "Cbl_field_original_PIC" = '9(3)', "Cbl_field_path" = 'PTCEDIA1.CLAMON', "Cbl_field_precision" = '3', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTCEDIA1.CLAMON') ,
- CODCONECO DECIMAL(4, 0)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '145', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODCONECO', "Cbl_field_original_PIC" = '9(4)', "Cbl_field_path" = 'PTCEDIA1.CODCONECO', "Cbl_field_precision" = '4', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTCEDIA1.CODCONECO') ,
+ CLAMON VARCHAR(3)  SET( "Cbl_field_internal_length" = '3', "Cbl_field_internal_offset" = '142', "Cbl_field_level" = '2', "Cbl_field_name" = 'CLAMON', "Cbl_field_original_PIC" = 'X(3)', "Cbl_field_path" = 'PTCEDIA1.CLAMON', "Description" = 'PTCEDIA1.CLAMON') ,
+ CODCONECO VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '145', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODCONECO', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTCEDIA1.CODCONECO', "Description" = 'PTCEDIA1.CODCONECO') ,
  DESCONECO VARCHAR(30)  SET( "Cbl_field_internal_length" = '30', "Cbl_field_internal_offset" = '149', "Cbl_field_level" = '2', "Cbl_field_name" = 'DESCONECO', "Cbl_field_original_PIC" = 'X(30)', "Cbl_field_path" = 'PTCEDIA1.DESCONECO', "Description" = 'PTCEDIA1.DESCONECO') ,
  SIGNOCE VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '179', "Cbl_field_level" = '2', "Cbl_field_name" = 'SIGNOCE', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'PTCEDIA1.SIGNOCE', "Description" = 'PTCEDIA1.SIGNOCE') ,
- TIPIMP DECIMAL(2, 0)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '180', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPIMP', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'PTCEDIA1.TIPIMP', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTCEDIA1.TIPIMP') ,
- IMPAPLECO DECIMAL(17, 2)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '182', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPAPLECO', "Cbl_field_original_PIC" = '9(15)V99', "Cbl_field_path" = 'PTCEDIA1.IMPAPLECO', "Cbl_field_precision" = '17', "Cbl_field_scale" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTCEDIA1.IMPAPLECO') ,
- IMPBRUECO DECIMAL(17, 2)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '199', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPBRUECO', "Cbl_field_original_PIC" = '9(15)V99', "Cbl_field_path" = 'PTCEDIA1.IMPBRUECO', "Cbl_field_precision" = '17', "Cbl_field_scale" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTCEDIA1.IMPBRUECO') ,
- IMPBONECO DECIMAL(17, 2)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '216', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPBONECO', "Cbl_field_original_PIC" = '9(15)V99', "Cbl_field_path" = 'PTCEDIA1.IMPBONECO', "Cbl_field_precision" = '17', "Cbl_field_scale" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTCEDIA1.IMPBONECO') ,
- IMPIMPTO DECIMAL(17, 2)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '233', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPIMPTO', "Cbl_field_original_PIC" = '9(15)V99', "Cbl_field_path" = 'PTCEDIA1.IMPIMPTO', "Cbl_field_precision" = '17', "Cbl_field_scale" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTCEDIA1.IMPIMPTO') ,
- NUMEXTCTA DECIMAL(3, 0)  SET( "Cbl_field_internal_length" = '3', "Cbl_field_internal_offset" = '250', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMEXTCTA', "Cbl_field_original_PIC" = '9(3)', "Cbl_field_path" = 'PTCEDIA1.NUMEXTCTA', "Cbl_field_precision" = '3', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTCEDIA1.NUMEXTCTA') ,
- NUMMOVEXT DECIMAL(7, 0)  SET( "Cbl_field_internal_length" = '7', "Cbl_field_internal_offset" = '253', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMMOVEXT', "Cbl_field_original_PIC" = '9(7)', "Cbl_field_path" = 'PTCEDIA1.NUMMOVEXT', "Cbl_field_precision" = '7', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTCEDIA1.NUMMOVEXT') ,
- PORINT DECIMAL(7, 4)  SET( "Cbl_field_internal_length" = '7', "Cbl_field_internal_offset" = '260', "Cbl_field_level" = '2', "Cbl_field_name" = 'PORINT', "Cbl_field_original_PIC" = '9(3)V9999', "Cbl_field_path" = 'PTCEDIA1.PORINT', "Cbl_field_precision" = '7', "Cbl_field_scale" = '4', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTCEDIA1.PORINT') ,
- NUMMOVDEB DECIMAL(9, 0)  SET( "Cbl_field_internal_length" = '9', "Cbl_field_internal_offset" = '267', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMMOVDEB', "Cbl_field_original_PIC" = '9(9)', "Cbl_field_path" = 'PTCEDIA1.NUMMOVDEB', "Cbl_field_precision" = '9', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTCEDIA1.NUMMOVDEB') ,
+ TIPIMP VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '180', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPIMP', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'PTCEDIA1.TIPIMP', "Description" = 'PTCEDIA1.TIPIMP') ,
+ IMPAPLECO VARCHAR(17)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '182', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPAPLECO', "Cbl_field_original_PIC" = 'X(17)', "Cbl_field_path" = 'PTCEDIA1.IMPAPLECO', "Description" = 'PTCEDIA1.IMPAPLECO') ,
+ IMPBRUECO VARCHAR(17)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '199', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPBRUECO', "Cbl_field_original_PIC" = 'X(17)', "Cbl_field_path" = 'PTCEDIA1.IMPBRUECO', "Description" = 'PTCEDIA1.IMPBRUECO') ,
+ IMPBONECO VARCHAR(17)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '216', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPBONECO', "Cbl_field_original_PIC" = 'X(17)', "Cbl_field_path" = 'PTCEDIA1.IMPBONECO', "Description" = 'PTCEDIA1.IMPBONECO') ,
+ IMPIMPTO VARCHAR(17)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '233', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPIMPTO', "Cbl_field_original_PIC" = 'X(17)', "Cbl_field_path" = 'PTCEDIA1.IMPIMPTO', "Description" = 'PTCEDIA1.IMPIMPTO') ,
+ NUMEXTCTA VARCHAR(3)  SET( "Cbl_field_internal_length" = '3', "Cbl_field_internal_offset" = '250', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMEXTCTA', "Cbl_field_original_PIC" = 'X(3)', "Cbl_field_path" = 'PTCEDIA1.NUMEXTCTA', "Description" = 'PTCEDIA1.NUMEXTCTA') ,
+ NUMMOVEXT VARCHAR(7)  SET( "Cbl_field_internal_length" = '7', "Cbl_field_internal_offset" = '253', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMMOVEXT', "Cbl_field_original_PIC" = 'X(7)', "Cbl_field_path" = 'PTCEDIA1.NUMMOVEXT', "Description" = 'PTCEDIA1.NUMMOVEXT') ,
+ PORINT VARCHAR(7)  SET( "Cbl_field_internal_length" = '7', "Cbl_field_internal_offset" = '260', "Cbl_field_level" = '2', "Cbl_field_name" = 'PORINT', "Cbl_field_original_PIC" = 'X(7)', "Cbl_field_path" = 'PTCEDIA1.PORINT', "Description" = 'PTCEDIA1.PORINT') ,
+ NUMMOVDEB VARCHAR(9)  SET( "Cbl_field_internal_length" = '9', "Cbl_field_internal_offset" = '267', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMMOVDEB', "Cbl_field_original_PIC" = 'X(9)', "Cbl_field_path" = 'PTCEDIA1.NUMMOVDEB', "Description" = 'PTCEDIA1.NUMMOVDEB') ,
  FILLER1 VARCHAR(724)  SET( "Cbl_field_internal_length" = '724', "Cbl_field_internal_offset" = '276', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER1', "Cbl_field_original_PIC" = 'X(724)', "Cbl_field_path" = 'PTCEDIA1.FILLER1', "Description" = 'PTCEDIA1.FILLER1')  )
 ,
  PTOPEDI1( CODENT_D VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT_D', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTOPEDI1.CODENT_D', "Description" = 'PTOPEDI1.CODENT_D') ,
- NSECFIC_D DECIMAL(10, 0)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '4', "Cbl_field_level" = '2', "Cbl_field_name" = 'NSECFIC_D', "Cbl_field_original_PIC" = '9(10)', "Cbl_field_path" = 'PTOPEDI1.NSECFIC_D', "Cbl_field_precision" = '10', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.NSECFIC_D') ,
- TIPOCINTA_D DECIMAL(2, 0)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '14', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOCINTA_D', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'PTOPEDI1.TIPOCINTA_D', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.TIPOCINTA_D') ,
+ NSECFIC_D VARCHAR(10)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '4', "Cbl_field_level" = '2', "Cbl_field_name" = 'NSECFIC_D', "Cbl_field_original_PIC" = 'X(10)', "Cbl_field_path" = 'PTOPEDI1.NSECFIC_D', "Description" = 'PTOPEDI1.NSECFIC_D') ,
+ TIPOCINTA_D VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '14', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOCINTA_D', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'PTOPEDI1.TIPOCINTA_D', "Description" = 'PTOPEDI1.TIPOCINTA_D') ,
  TIPOREG_D VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '16', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOREG_D', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'PTOPEDI1.TIPOREG_D', "Description" = 'PTOPEDI1.TIPOREG_D') ,
  FILLER_D VARCHAR(91)  SET( "Cbl_field_internal_length" = '91', "Cbl_field_internal_offset" = '17', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER_D', "Cbl_field_original_PIC" = 'X(91)', "Cbl_field_path" = 'PTOPEDI1.FILLER_D', "Description" = 'PTOPEDI1.FILLER_D') ,
- NUMREGPROC DECIMAL(12, 0)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '108', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMREGPROC', "Cbl_field_original_PIC" = '9(12)', "Cbl_field_path" = 'PTOPEDI1.NUMREGPROC', "Cbl_field_precision" = '12', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.NUMREGPROC') ,
+ NUMREGPROC VARCHAR(12)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '108', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMREGPROC', "Cbl_field_original_PIC" = 'X(12)', "Cbl_field_path" = 'PTOPEDI1.NUMREGPROC', "Description" = 'PTOPEDI1.NUMREGPROC') ,
  INDDEBCRE DECIMAL(1, 0)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '120', "Cbl_field_level" = '2', "Cbl_field_name" = 'INDDEBCRE', "Cbl_field_original_PIC" = '9(1)', "Cbl_field_path" = 'PTOPEDI1.INDDEBCRE', "Cbl_field_precision" = '1', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.INDDEBCRE') ,
  TIPMOV VARCHAR(1)  SET( "Cbl_field_id_col" = 'yes', "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '121', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPMOV', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'PTOPEDI1.TIPMOV', "Description" = 'PTOPEDI1.TIPMOV') ,
  CODENT VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '122', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTOPEDI1.CODENT', "Description" = 'PTOPEDI1.CODENT') ,
  CENTALTA VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '126', "Cbl_field_level" = '2', "Cbl_field_name" = 'CENTALTA', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTOPEDI1.CENTALTA', "Description" = 'PTOPEDI1.CENTALTA') ,
  CUENTA VARCHAR(12)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '130', "Cbl_field_level" = '2', "Cbl_field_name" = 'CUENTA', "Cbl_field_original_PIC" = 'X(12)', "Cbl_field_path" = 'PTOPEDI1.CUENTA', "Description" = 'PTOPEDI1.CUENTA') ,
- CLAMON DECIMAL(3, 0)  SET( "Cbl_field_internal_length" = '3', "Cbl_field_internal_offset" = '142', "Cbl_field_level" = '2', "Cbl_field_name" = 'CLAMON', "Cbl_field_original_PIC" = '9(3)', "Cbl_field_path" = 'PTOPEDI1.CLAMON', "Cbl_field_precision" = '3', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.CLAMON') ,
- INDNORCOR DECIMAL(1, 0)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '145', "Cbl_field_level" = '2', "Cbl_field_name" = 'INDNORCOR', "Cbl_field_original_PIC" = '9(1)', "Cbl_field_path" = 'PTOPEDI1.INDNORCOR', "Cbl_field_precision" = '1', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.INDNORCOR') ,
- TIPOFAC DECIMAL(4, 0)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '146', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOFAC', "Cbl_field_original_PIC" = '9(4)', "Cbl_field_path" = 'PTOPEDI1.TIPOFAC', "Cbl_field_precision" = '4', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.TIPOFAC') ,
+ CLAMON VARCHAR(3)  SET( "Cbl_field_internal_length" = '3', "Cbl_field_internal_offset" = '142', "Cbl_field_level" = '2', "Cbl_field_name" = 'CLAMON', "Cbl_field_original_PIC" = 'X(3)', "Cbl_field_path" = 'PTOPEDI1.CLAMON', "Description" = 'PTOPEDI1.CLAMON') ,
+ INDNORCOR VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '145', "Cbl_field_level" = '2', "Cbl_field_name" = 'INDNORCOR', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'PTOPEDI1.INDNORCOR', "Description" = 'PTOPEDI1.INDNORCOR') ,
+ TIPOFAC VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '146', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOFAC', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTOPEDI1.TIPOFAC', "Description" = 'PTOPEDI1.TIPOFAC') ,
  DESTIPFAC VARCHAR(30)  SET( "Cbl_field_internal_length" = '30', "Cbl_field_internal_offset" = '150', "Cbl_field_level" = '2', "Cbl_field_name" = 'DESTIPFAC', "Cbl_field_original_PIC" = 'X(30)', "Cbl_field_path" = 'PTOPEDI1.DESTIPFAC', "Description" = 'PTOPEDI1.DESTIPFAC') ,
  SIGNOFAC VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '180', "Cbl_field_level" = '2', "Cbl_field_name" = 'SIGNOFAC', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'PTOPEDI1.SIGNOFAC', "Description" = 'PTOPEDI1.SIGNOFAC') ,
- TIPOFACSIST DECIMAL(4, 0)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '181', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOFACSIST', "Cbl_field_original_PIC" = '9(4)', "Cbl_field_path" = 'PTOPEDI1.TIPOFACSIST', "Cbl_field_precision" = '4', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.TIPOFACSIST') ,
+ TIPOFACSIST VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '181', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOFACSIST', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTOPEDI1.TIPOFACSIST', "Description" = 'PTOPEDI1.TIPOFACSIST') ,
  INFACINF VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '185', "Cbl_field_level" = '2', "Cbl_field_name" = 'INFACINF', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'PTOPEDI1.INFACINF', "Description" = 'PTOPEDI1.INFACINF') ,
  FECFAC VARCHAR(10)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '186', "Cbl_field_level" = '2', "Cbl_field_name" = 'FECFAC', "Cbl_field_original_PIC" = 'X(10)', "Cbl_field_path" = 'PTOPEDI1.FECFAC', "Description" = 'PTOPEDI1.FECFAC') ,
  NUMREFFAC VARCHAR(23)  SET( "Cbl_field_internal_length" = '23', "Cbl_field_internal_offset" = '196', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMREFFAC', "Cbl_field_original_PIC" = 'X(23)', "Cbl_field_path" = 'PTOPEDI1.NUMREFFAC', "Description" = 'PTOPEDI1.NUMREFFAC') ,
  PAN VARCHAR(22)  SET( "Cbl_field_internal_length" = '22', "Cbl_field_internal_offset" = '219', "Cbl_field_level" = '2', "Cbl_field_name" = 'PAN', "Cbl_field_original_PIC" = 'X(22)', "Cbl_field_path" = 'PTOPEDI1.PAN', "Description" = 'PTOPEDI1.PAN') ,
- CLAMONDIV DECIMAL(3, 0)  SET( "Cbl_field_internal_length" = '3', "Cbl_field_internal_offset" = '241', "Cbl_field_level" = '2', "Cbl_field_name" = 'CLAMONDIV', "Cbl_field_original_PIC" = '9(3)', "Cbl_field_path" = 'PTOPEDI1.CLAMONDIV', "Cbl_field_precision" = '3', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.CLAMONDIV') ,
- IMPDIV DECIMAL(17, 2)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '244', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPDIV', "Cbl_field_original_PIC" = '9(15)V99', "Cbl_field_path" = 'PTOPEDI1.IMPDIV', "Cbl_field_precision" = '17', "Cbl_field_scale" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.IMPDIV') ,
- IMPFAC DECIMAL(17, 2)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '261', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPFAC', "Cbl_field_original_PIC" = '9(15)V99', "Cbl_field_path" = 'PTOPEDI1.IMPFAC', "Cbl_field_precision" = '17', "Cbl_field_scale" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.IMPFAC') ,
- CMBAPLI DECIMAL(9, 4)  SET( "Cbl_field_internal_length" = '9', "Cbl_field_internal_offset" = '278', "Cbl_field_level" = '2', "Cbl_field_name" = 'CMBAPLI', "Cbl_field_original_PIC" = '9(5)V9999', "Cbl_field_path" = 'PTOPEDI1.CMBAPLI', "Cbl_field_precision" = '9', "Cbl_field_scale" = '4', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.CMBAPLI') ,
+ CLAMONDIV VARCHAR(3)  SET( "Cbl_field_internal_length" = '3', "Cbl_field_internal_offset" = '241', "Cbl_field_level" = '2', "Cbl_field_name" = 'CLAMONDIV', "Cbl_field_original_PIC" = 'X(3)', "Cbl_field_path" = 'PTOPEDI1.CLAMONDIV', "Description" = 'PTOPEDI1.CLAMONDIV') ,
+ IMPDIV VARCHAR(17)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '244', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPDIV', "Cbl_field_original_PIC" = 'X(17)', "Cbl_field_path" = 'PTOPEDI1.IMPDIV', "Description" = 'PTOPEDI1.IMPDIV') ,
+ IMPFAC VARCHAR(17)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '261', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPFAC', "Cbl_field_original_PIC" = 'X(17)', "Cbl_field_path" = 'PTOPEDI1.IMPFAC', "Description" = 'PTOPEDI1.IMPFAC') ,
+ CMBAPLI VARCHAR(9)  SET( "Cbl_field_internal_length" = '9', "Cbl_field_internal_offset" = '278', "Cbl_field_level" = '2', "Cbl_field_name" = 'CMBAPLI', "Cbl_field_original_PIC" = 'X(9)', "Cbl_field_path" = 'PTOPEDI1.CMBAPLI', "Description" = 'PTOPEDI1.CMBAPLI') ,
  NUMAUT VARCHAR(6)  SET( "Cbl_field_internal_length" = '6', "Cbl_field_internal_offset" = '287', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMAUT', "Cbl_field_original_PIC" = 'X(6)', "Cbl_field_path" = 'PTOPEDI1.NUMAUT', "Description" = 'PTOPEDI1.NUMAUT') ,
  CODCOM VARCHAR(15)  SET( "Cbl_field_internal_length" = '15', "Cbl_field_internal_offset" = '293', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODCOM', "Cbl_field_original_PIC" = 'X(15)', "Cbl_field_path" = 'PTOPEDI1.CODCOM', "Description" = 'PTOPEDI1.CODCOM') ,
  NOMCOMRED VARCHAR(27)  SET( "Cbl_field_internal_length" = '27', "Cbl_field_internal_offset" = '308', "Cbl_field_level" = '2', "Cbl_field_name" = 'NOMCOMRED', "Cbl_field_original_PIC" = 'X(27)', "Cbl_field_path" = 'PTOPEDI1.NOMCOMRED', "Description" = 'PTOPEDI1.NOMCOMRED') ,
- CODACT DECIMAL(4, 0)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '335', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODACT', "Cbl_field_original_PIC" = '9(4)', "Cbl_field_path" = 'PTOPEDI1.CODACT', "Cbl_field_precision" = '4', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.CODACT') ,
- IMPLIQ DECIMAL(17, 2)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '339', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPLIQ', "Cbl_field_original_PIC" = '9(15)V99', "Cbl_field_path" = 'PTOPEDI1.IMPLIQ', "Cbl_field_precision" = '17', "Cbl_field_scale" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.IMPLIQ') ,
- CLAMONLIQ DECIMAL(3, 0)  SET( "Cbl_field_internal_length" = '3', "Cbl_field_internal_offset" = '356', "Cbl_field_level" = '2', "Cbl_field_name" = 'CLAMONLIQ', "Cbl_field_original_PIC" = '9(3)', "Cbl_field_path" = 'PTOPEDI1.CLAMONLIQ', "Cbl_field_precision" = '3', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.CLAMONLIQ') ,
- IMPIMPTO DECIMAL(17, 2)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '359', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPIMPTO', "Cbl_field_original_PIC" = '9(15)V99', "Cbl_field_path" = 'PTOPEDI1.IMPIMPTO', "Cbl_field_precision" = '17', "Cbl_field_scale" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.IMPIMPTO') ,
+ CODACT VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '335', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODACT', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTOPEDI1.CODACT', "Description" = 'PTOPEDI1.CODACT') ,
+ IMPLIQ VARCHAR(17)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '339', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPLIQ', "Cbl_field_original_PIC" = 'X(17)', "Cbl_field_path" = 'PTOPEDI1.IMPLIQ', "Description" = 'PTOPEDI1.IMPLIQ') ,
+ CLAMONLIQ VARCHAR(3)  SET( "Cbl_field_internal_length" = '3', "Cbl_field_internal_offset" = '356', "Cbl_field_level" = '2', "Cbl_field_name" = 'CLAMONLIQ', "Cbl_field_original_PIC" = 'X(3)', "Cbl_field_path" = 'PTOPEDI1.CLAMONLIQ', "Description" = 'PTOPEDI1.CLAMONLIQ') ,
+ IMPIMPTO VARCHAR(17)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '359', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPIMPTO', "Cbl_field_original_PIC" = 'X(17)', "Cbl_field_path" = 'PTOPEDI1.IMPIMPTO', "Description" = 'PTOPEDI1.IMPIMPTO') ,
  FECPROCES VARCHAR(10)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '376', "Cbl_field_level" = '2', "Cbl_field_name" = 'FECPROCES', "Cbl_field_original_PIC" = 'X(10)', "Cbl_field_path" = 'PTOPEDI1.FECPROCES', "Description" = 'PTOPEDI1.FECPROCES') ,
- CODPAIS DECIMAL(3, 0)  SET( "Cbl_field_internal_length" = '3', "Cbl_field_internal_offset" = '386', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODPAIS', "Cbl_field_original_PIC" = '9(3)', "Cbl_field_path" = 'PTOPEDI1.CODPAIS', "Cbl_field_precision" = '3', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.CODPAIS') ,
+ CODPAIS VARCHAR(3)  SET( "Cbl_field_internal_length" = '3', "Cbl_field_internal_offset" = '386', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODPAIS', "Cbl_field_original_PIC" = 'X(3)', "Cbl_field_path" = 'PTOPEDI1.CODPAIS', "Description" = 'PTOPEDI1.CODPAIS') ,
  NOMPOB VARCHAR(26)  SET( "Cbl_field_internal_length" = '26', "Cbl_field_internal_offset" = '389', "Cbl_field_level" = '2', "Cbl_field_name" = 'NOMPOB', "Cbl_field_original_PIC" = 'X(26)', "Cbl_field_path" = 'PTOPEDI1.NOMPOB', "Description" = 'PTOPEDI1.NOMPOB') ,
  FECCONTA VARCHAR(10)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '415', "Cbl_field_level" = '2', "Cbl_field_name" = 'FECCONTA', "Cbl_field_original_PIC" = 'X(10)', "Cbl_field_path" = 'PTOPEDI1.FECCONTA', "Description" = 'PTOPEDI1.FECCONTA') ,
  ORIGENOPE VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '425', "Cbl_field_level" = '2', "Cbl_field_name" = 'ORIGENOPE', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTOPEDI1.ORIGENOPE', "Description" = 'PTOPEDI1.ORIGENOPE') ,
- TIPFRAN DECIMAL(4, 0)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '429', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPFRAN', "Cbl_field_original_PIC" = '9(4)', "Cbl_field_path" = 'PTOPEDI1.TIPFRAN', "Cbl_field_precision" = '4', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.TIPFRAN') ,
- SECOPE DECIMAL(12, 0)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '433', "Cbl_field_level" = '2', "Cbl_field_name" = 'SECOPE', "Cbl_field_original_PIC" = '9(12)', "Cbl_field_path" = 'PTOPEDI1.SECOPE', "Cbl_field_precision" = '12', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.SECOPE') ,
- NUMSECREC DECIMAL(15, 0)  SET( "Cbl_field_internal_length" = '15', "Cbl_field_internal_offset" = '445', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMSECREC', "Cbl_field_original_PIC" = '9(15)', "Cbl_field_path" = 'PTOPEDI1.NUMSECREC', "Cbl_field_precision" = '15', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.NUMSECREC') ,
+ TIPFRAN VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '429', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPFRAN', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTOPEDI1.TIPFRAN', "Description" = 'PTOPEDI1.TIPFRAN') ,
+ SECOPE VARCHAR(12)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '433', "Cbl_field_level" = '2', "Cbl_field_name" = 'SECOPE', "Cbl_field_original_PIC" = 'X(12)', "Cbl_field_path" = 'PTOPEDI1.SECOPE', "Description" = 'PTOPEDI1.SECOPE') ,
+ NUMSECREC VARCHAR(15)  SET( "Cbl_field_internal_length" = '15', "Cbl_field_internal_offset" = '445', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMSECREC', "Cbl_field_original_PIC" = 'X(15)', "Cbl_field_path" = 'PTOPEDI1.NUMSECREC', "Description" = 'PTOPEDI1.NUMSECREC') ,
  SESIONRED VARCHAR(12)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '460', "Cbl_field_level" = '2', "Cbl_field_name" = 'SESIONRED', "Cbl_field_original_PIC" = 'X(12)', "Cbl_field_path" = 'PTOPEDI1.SESIONRED', "Description" = 'PTOPEDI1.SESIONRED') ,
  SIAIDCD VARCHAR(19)  SET( "Cbl_field_internal_length" = '19', "Cbl_field_internal_offset" = '472', "Cbl_field_level" = '2', "Cbl_field_name" = 'SIAIDCD', "Cbl_field_original_PIC" = 'X(19)', "Cbl_field_path" = 'PTOPEDI1.SIAIDCD', "Description" = 'PTOPEDI1.SIAIDCD') ,
  CALFRAUDE VARCHAR(3)  SET( "Cbl_field_internal_length" = '3', "Cbl_field_internal_offset" = '491', "Cbl_field_level" = '2', "Cbl_field_name" = 'CALFRAUDE', "Cbl_field_original_PIC" = 'X(3)', "Cbl_field_path" = 'PTOPEDI1.CALFRAUDE', "Description" = 'PTOPEDI1.CALFRAUDE') ,
  IDENTCLI VARCHAR(8)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '494', "Cbl_field_level" = '2', "Cbl_field_name" = 'IDENTCLI', "Cbl_field_original_PIC" = 'X(8)', "Cbl_field_path" = 'PTOPEDI1.IDENTCLI', "Description" = 'PTOPEDI1.IDENTCLI') ,
  INDINCEST VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '502', "Cbl_field_level" = '2', "Cbl_field_name" = 'INDINCEST', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'PTOPEDI1.INDINCEST', "Description" = 'PTOPEDI1.INDINCEST') ,
- TIPDOCPAG DECIMAL(2, 0)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '503', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPDOCPAG', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'PTOPEDI1.TIPDOCPAG', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.TIPDOCPAG') ,
+ TIPDOCPAG VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '503', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPDOCPAG', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'PTOPEDI1.TIPDOCPAG', "Description" = 'PTOPEDI1.TIPDOCPAG') ,
  REFDOCPAG VARCHAR(20)  SET( "Cbl_field_internal_length" = '20', "Cbl_field_internal_offset" = '505', "Cbl_field_level" = '2', "Cbl_field_name" = 'REFDOCPAG', "Cbl_field_original_PIC" = 'X(20)', "Cbl_field_path" = 'PTOPEDI1.REFDOCPAG', "Description" = 'PTOPEDI1.REFDOCPAG') ,
- IMPAMORT DECIMAL(17, 2)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '525', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPAMORT', "Cbl_field_original_PIC" = '9(15)V99', "Cbl_field_path" = 'PTOPEDI1.IMPAMORT', "Cbl_field_precision" = '17', "Cbl_field_scale" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.IMPAMORT') ,
- NUMMOVEXT DECIMAL(7, 0)  SET( "Cbl_field_internal_length" = '7', "Cbl_field_internal_offset" = '542', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMMOVEXT', "Cbl_field_original_PIC" = '9(7)', "Cbl_field_path" = 'PTOPEDI1.NUMMOVEXT', "Cbl_field_precision" = '7', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.NUMMOVEXT') ,
- NUMEXTCTA DECIMAL(3, 0)  SET( "Cbl_field_internal_length" = '3', "Cbl_field_internal_offset" = '549', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMEXTCTA', "Cbl_field_original_PIC" = '9(3)', "Cbl_field_path" = 'PTOPEDI1.NUMEXTCTA', "Cbl_field_precision" = '3', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.NUMEXTCTA') ,
+ IMPAMORT VARCHAR(17)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '525', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPAMORT', "Cbl_field_original_PIC" = 'X(17)', "Cbl_field_path" = 'PTOPEDI1.IMPAMORT', "Description" = 'PTOPEDI1.IMPAMORT') ,
+ NUMMOVEXT VARCHAR(7)  SET( "Cbl_field_internal_length" = '7', "Cbl_field_internal_offset" = '542', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMMOVEXT', "Cbl_field_original_PIC" = 'X(7)', "Cbl_field_path" = 'PTOPEDI1.NUMMOVEXT', "Description" = 'PTOPEDI1.NUMMOVEXT') ,
+ NUMEXTCTA VARCHAR(3)  SET( "Cbl_field_internal_length" = '3', "Cbl_field_internal_offset" = '549', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMEXTCTA', "Cbl_field_original_PIC" = 'X(3)', "Cbl_field_path" = 'PTOPEDI1.NUMEXTCTA', "Description" = 'PTOPEDI1.NUMEXTCTA') ,
  FECLIQ VARCHAR(10)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '552', "Cbl_field_level" = '2', "Cbl_field_name" = 'FECLIQ', "Cbl_field_original_PIC" = 'X(10)', "Cbl_field_path" = 'PTOPEDI1.FECLIQ', "Description" = 'PTOPEDI1.FECLIQ') ,
- INDMOVANU DECIMAL(1, 0)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '562', "Cbl_field_level" = '2', "Cbl_field_name" = 'INDMOVANU', "Cbl_field_original_PIC" = '9(1)', "Cbl_field_path" = 'PTOPEDI1.INDMOVANU', "Cbl_field_precision" = '1', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.INDMOVANU') ,
- INDRET DECIMAL(1, 0)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '563', "Cbl_field_level" = '2', "Cbl_field_name" = 'INDRET', "Cbl_field_original_PIC" = '9(1)', "Cbl_field_path" = 'PTOPEDI1.INDRET', "Cbl_field_precision" = '1', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.INDRET') ,
- INDMOVEXT DECIMAL(1, 0)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '564', "Cbl_field_level" = '2', "Cbl_field_name" = 'INDMOVEXT', "Cbl_field_original_PIC" = '9(1)', "Cbl_field_path" = 'PTOPEDI1.INDMOVEXT', "Cbl_field_precision" = '1', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.INDMOVEXT') ,
+ INDMOVANU VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '562', "Cbl_field_level" = '2', "Cbl_field_name" = 'INDMOVANU', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'PTOPEDI1.INDMOVANU', "Description" = 'PTOPEDI1.INDMOVANU') ,
+ INDRET VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '563', "Cbl_field_level" = '2', "Cbl_field_name" = 'INDRET', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'PTOPEDI1.INDRET', "Description" = 'PTOPEDI1.INDRET') ,
+ INDMOVEXT VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '564', "Cbl_field_level" = '2', "Cbl_field_name" = 'INDMOVEXT', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'PTOPEDI1.INDMOVEXT', "Description" = 'PTOPEDI1.INDMOVEXT') ,
  CODTIPC VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '565', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODTIPC', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'PTOPEDI1.CODTIPC', "Description" = 'PTOPEDI1.CODTIPC') ,
- TOTCUOTAS DECIMAL(9, 0)  SET( "Cbl_field_internal_length" = '9', "Cbl_field_internal_offset" = '569', "Cbl_field_level" = '2', "Cbl_field_name" = 'TOTCUOTAS', "Cbl_field_original_PIC" = '9(9)', "Cbl_field_path" = 'PTOPEDI1.TOTCUOTAS', "Cbl_field_precision" = '9', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.TOTCUOTAS') ,
- PORINT DECIMAL(7, 4)  SET( "Cbl_field_internal_length" = '7', "Cbl_field_internal_offset" = '578', "Cbl_field_level" = '2', "Cbl_field_name" = 'PORINT', "Cbl_field_original_PIC" = '9(3)V9999', "Cbl_field_path" = 'PTOPEDI1.PORINT', "Cbl_field_precision" = '7', "Cbl_field_scale" = '4', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.PORINT') ,
- NUMOPECUO DECIMAL(6, 0)  SET( "Cbl_field_internal_length" = '6', "Cbl_field_internal_offset" = '585', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMOPECUO', "Cbl_field_original_PIC" = '9(6)', "Cbl_field_path" = 'PTOPEDI1.NUMOPECUO', "Cbl_field_precision" = '6', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.NUMOPECUO') ,
- IMPCUOTA DECIMAL(17, 2)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '591', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPCUOTA', "Cbl_field_original_PIC" = '9(15)V99', "Cbl_field_path" = 'PTOPEDI1.IMPCUOTA', "Cbl_field_precision" = '17', "Cbl_field_scale" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.IMPCUOTA') ,
- LINREF DECIMAL(8, 0)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '608', "Cbl_field_level" = '2', "Cbl_field_name" = 'LINREF', "Cbl_field_original_PIC" = '9(8)', "Cbl_field_path" = 'PTOPEDI1.LINREF', "Cbl_field_precision" = '8', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.LINREF') ,
- FORPAGO DECIMAL(2, 0)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '616', "Cbl_field_level" = '2', "Cbl_field_name" = 'FORPAGO', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'PTOPEDI1.FORPAGO', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.FORPAGO') ,
- NUMMOVDEB DECIMAL(9, 0)  SET( "Cbl_field_internal_length" = '9', "Cbl_field_internal_offset" = '618', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMMOVDEB', "Cbl_field_original_PIC" = '9(9)', "Cbl_field_path" = 'PTOPEDI1.NUMMOVDEB', "Cbl_field_precision" = '9', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'PTOPEDI1.NUMMOVDEB') ,
+ TOTCUOTAS VARCHAR(9)  SET( "Cbl_field_internal_length" = '9', "Cbl_field_internal_offset" = '569', "Cbl_field_level" = '2', "Cbl_field_name" = 'TOTCUOTAS', "Cbl_field_original_PIC" = 'X(9)', "Cbl_field_path" = 'PTOPEDI1.TOTCUOTAS', "Description" = 'PTOPEDI1.TOTCUOTAS') ,
+ PORINT VARCHAR(7)  SET( "Cbl_field_internal_length" = '7', "Cbl_field_internal_offset" = '578', "Cbl_field_level" = '2', "Cbl_field_name" = 'PORINT', "Cbl_field_original_PIC" = 'X(7)', "Cbl_field_path" = 'PTOPEDI1.PORINT', "Description" = 'PTOPEDI1.PORINT') ,
+ NUMOPECUO VARCHAR(6)  SET( "Cbl_field_internal_length" = '6', "Cbl_field_internal_offset" = '585', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMOPECUO', "Cbl_field_original_PIC" = 'X(6)', "Cbl_field_path" = 'PTOPEDI1.NUMOPECUO', "Description" = 'PTOPEDI1.NUMOPECUO') ,
+ IMPCUOTA VARCHAR(17)  SET( "Cbl_field_internal_length" = '17', "Cbl_field_internal_offset" = '591', "Cbl_field_level" = '2', "Cbl_field_name" = 'IMPCUOTA', "Cbl_field_original_PIC" = 'X(17)', "Cbl_field_path" = 'PTOPEDI1.IMPCUOTA', "Description" = 'PTOPEDI1.IMPCUOTA') ,
+ LINREF VARCHAR(8)  SET( "Cbl_field_internal_length" = '8', "Cbl_field_internal_offset" = '608', "Cbl_field_level" = '2', "Cbl_field_name" = 'LINREF', "Cbl_field_original_PIC" = 'X(8)', "Cbl_field_path" = 'PTOPEDI1.LINREF', "Description" = 'PTOPEDI1.LINREF') ,
+ FORPAGO VARCHAR(2)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '616', "Cbl_field_level" = '2', "Cbl_field_name" = 'FORPAGO', "Cbl_field_original_PIC" = 'X(2)', "Cbl_field_path" = 'PTOPEDI1.FORPAGO', "Description" = 'PTOPEDI1.FORPAGO') ,
+ NUMMOVDEB VARCHAR(9)  SET( "Cbl_field_internal_length" = '9', "Cbl_field_internal_offset" = '618', "Cbl_field_level" = '2', "Cbl_field_name" = 'NUMMOVDEB', "Cbl_field_original_PIC" = 'X(9)', "Cbl_field_path" = 'PTOPEDI1.NUMMOVDEB', "Description" = 'PTOPEDI1.NUMMOVDEB') ,
  FILLER1 VARCHAR(373)  SET( "Cbl_field_internal_length" = '373', "Cbl_field_internal_offset" = '627', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER1', "Cbl_field_original_PIC" = 'X(373)', "Cbl_field_path" = 'PTOPEDI1.FILLER1', "Description" = 'PTOPEDI1.FILLER1')  )
 )
- SET ("Cbl_expand_occurs" = 'yes', "Cbl_field_id_col(PTAMDIA2)" = '7', "Cbl_field_id_col(PTCEDIA1)" = '7', "Cbl_field_id_col(PTOPEDI1)" = '7', "Cbl_field_id_val(PTAMDIA2)7_1" = '0', "Cbl_field_id_val(PTCEDIA1)7_1" = '2', "Cbl_field_id_val(PTOPEDI1)7_1" = '1', "Cbl_file_dir" = '$G_RUTA', "Cbl_file_name" = '$G_NOMBRE_ARCHIVO', "Cbl_file_type" = 'F', "Cbl_has_record_mark" = 'no', "Cbl_ignore_redefines" = 'no', "Cbl_is_big_endian" = 'yes', "Cbl_rdr_hv_action" = 'Nothing', "Cbl_rdr_hvalue" = '0xFF', "Cbl_rdr_lv_action" = 'Nothing', "Cbl_rdr_lvalue" = '0x40', "Cbl_rec_size" = '1001', "Cbl_rec_trailer" = '1', "Cbl_schema_file" = 'C:\\BC\\SAT\\cobol copybooks\\02-OPERACIONES DIARIAS-PPJ6110N-FULL.cpy', "Cbl_source_begin_pos" = '1', "Cbl_source_end_pos" = '9999', "Cbl_source_format" = 'smart', "application_type" = '', "ds_configuration_enabled" = 'no', "locale_codepage" = 'cp1252', "locale_language" = '<default>', "locale_territory" = '<default>');
+ SET ("Cbl_expand_occurs" = 'yes', "Cbl_field_id_col(PTAMDIA2)" = '7', "Cbl_field_id_col(PTCEDIA1)" = '7', "Cbl_field_id_col(PTOPEDI1)" = '7', "Cbl_field_id_val(PTAMDIA2)7_1" = '0', "Cbl_field_id_val(PTCEDIA1)7_1" = '2', "Cbl_field_id_val(PTOPEDI1)7_1" = '1', "Cbl_file_dir" = '$G_RUTA', "Cbl_file_name" = '$G_NOMBRE_ARCHIVO', "Cbl_file_type" = 'F', "Cbl_has_record_mark" = 'no', "Cbl_ignore_redefines" = 'no', "Cbl_is_big_endian" = 'yes', "Cbl_rdr_hv_action" = 'Nothing', "Cbl_rdr_hvalue" = '0xFF', "Cbl_rdr_lv_action" = 'Nothing', "Cbl_rdr_lvalue" = '0x40', "Cbl_rec_size" = '1001', "Cbl_rec_trailer" = '1', "Cbl_schema_file" = 'C:\\Users\\JA50603\\Downloads\\02-OPERACIONES DIARIAS-PPJ6110N-FULL.cpy.new', "Cbl_source_begin_pos" = '1', "Cbl_source_end_pos" = '9999', "Cbl_source_format" = 'smart', "application_type" = '', "ds_configuration_enabled" = 'no', "locale_codepage" = 'cp1252', "locale_language" = '<default>', "locale_territory" = '<default>');
  AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Jan 24 10:14:37 2019', "ActaValue_3" = 'Tue Mar  5 16:33:35 2019', "x" = '-1', "y" = '-1')
 CREATE PLAN WF_PPJ6110N::'108bf41f-3fb0-4780-8485-f88b6cb295c6'( )
 DECLARE

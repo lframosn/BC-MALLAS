@@ -105,5 +105,5 @@ AS
       ,FECENVIO1               
       ,CODESTCTA               
       ,GRUPOLIQ                
-  FROM SAT.SP_AUTORIZACIONES('V') 
+  FROM SAT.SP_AUTORIZACIONES('L') 
      

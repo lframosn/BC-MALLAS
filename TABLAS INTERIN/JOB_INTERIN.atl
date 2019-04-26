@@ -1,0 +1,496 @@
+#__AW_Repository_Version '14.2.10.0000';
+#__AW_Product_Version '14.2.10.1748';
+#__AW_ATL_Locale 'spa_sv.utf-8';
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Feb 20 15:23:05 2018', "ActaValue_3" = 'Fri Apr  6 16:33:59 2018', "x" = '-1', "y" = '-1')
+CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="ISO-8859-1" ?>
+<DSConfigurations>
+<DSConfiguration default="true" name="Configuration1">
+<case_sensitive>yes</case_sensitive>
+<database_type>Sybase IQ</database_type>
+<db_dsnless>yes</db_dsnless>
+<db_port_no>2638</db_port_no>
+<iq_use_linked_remoteserver>no</iq_use_linked_remoteserver>
+<js_db_on_same_machine>no</js_db_on_same_machine>
+<loader_xact_size>1000</loader_xact_size>
+<locale_codepage>&lt;default&gt;</locale_codepage>
+<locale_language>&lt;default&gt;</locale_language>
+<locale_territory>&lt;default&gt;</locale_territory>
+<password>+0400000000120303000803E88D42613F0817326192AE11404A8EE1DF7D710BCCC238CE76278C00E2D540A4CE40A3359F6BEDE2A54C4DEB7666FF</password>
+<server_codepage>&lt;default&gt;</server_codepage>
+<sql_server_database>IDWDEV</sql_server_database>
+<sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
+<sybase_iq_version>Sybase IQ 16.x</sybase_iq_version>
+<sybiq_engine_name>svbclsapiq01da_IDWDEV</sybiq_engine_name>
+<use_named_pipe>no</use_named_pipe>
+<user>DWH_ETLS</user>
+</DSConfiguration>
+</DSConfigurations>
+', "enable_data_transfer" = 'yes', "import_unknown_type" = 'no', "name" = 'DS_CONTROL', "pcache_force_utf16" = 'no', "unknown_type_size" = '255');
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Feb 13 15:29:23 2018', "ActaValue_3" = 'Mon Sep 17 13:36:16 2018', "x" = '-1', "y" = '-1')
+CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="ISO-8859-1" ?>
+<DSConfigurations>
+<DSConfiguration default="true" name="Configuration1">
+<case_sensitive>yes</case_sensitive>
+<database_type>Sybase IQ</database_type>
+<db_dsnless>yes</db_dsnless>
+<db_port_no>2638</db_port_no>
+<iq_use_linked_remoteserver>no</iq_use_linked_remoteserver>
+<js_db_on_same_machine>no</js_db_on_same_machine>
+<loader_xact_size>10000</loader_xact_size>
+<locale_codepage>iso-8859-1</locale_codepage>
+<locale_language>&lt;default&gt;</locale_language>
+<locale_territory>&lt;default&gt;</locale_territory>
+<password>+0400000000120303000803E822784F296332D35677D130BC836704A05C8DC225FACB2183E810DB00E4B7B8D118CF32D72DD5E8135FA2FB9E1CC1</password>
+<server_codepage>iso-8859-1</server_codepage>
+<sql_server_database>IDWDEV</sql_server_database>
+<sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
+<sybase_iq_version>Sybase IQ 16.x</sybase_iq_version>
+<sybiq_engine_name>svbclsapiq01da_IDWDEV</sybiq_engine_name>
+<use_named_pipe>no</use_named_pipe>
+<user>DWH_ETLS</user>
+</DSConfiguration>
+</DSConfigurations>
+', "enable_data_transfer" = 'yes', "import_unknown_type" = 'no', "name" = 'DS_TARGET', "pcache_force_utf16" = 'no', "unknown_type_size" = '255');
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RDescription', "ActaName_3" = 'RParallelizable', "ActaName_4" = 'RisScriptValidationFunction', "ActaName_5" = 'RSavedAfterCheckOut', "ActaName_6" = 'RDate_created', "ActaName_7" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'PARA CAPTURAR EL INICIO DE LOS JOBS', "ActaValue_3" = 'no', "ActaValue_4" = 'no', "ActaValue_5" = 'YES', "ActaValue_6" = 'Tue Apr  3 17:39:19 2018', "ActaValue_7" = 'Wed Sep 12 08:51:58 2018', "InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '50', "ui_script_text" = '$L_CURRENT_DATE = sysdate( ) ;
+$L_CAT_JOB = $P_CAT_JOB ;
+$L_STATUS_JOB = $P_STATUS_JOB ;
+print( \'----------------ID: [$L_CAT_JOB]----------------\');
+
+try
+    
+	begin
+	SQL(\'DS_CONTROL\', \'BEGIN TRANSACTION\');
+	#print( \'begin cf_control_log_edw\');
+	
+	#print( \'INSERT INTO CNF.CONTROL_EJECUCION(ID_CAT_JOB, FECHA, ESTADO, COUNT_FILA) VALUES([$L_CAT_JOB], \\\'[$L_CURRENT_DATE]\\\', \\\'[$L_STATUS_JOB]\\\', 0)\');
+	
+	SQL(\'DS_CONTROL\', \'INSERT INTO CNF.CONTROL_EJECUCION(ID_CAT_JOB, FECHA, ESTADO, COUNT_FILA) VALUES([$L_CAT_JOB], \\\'[$L_CURRENT_DATE]\\\', \\\'[$L_STATUS_JOB]\\\', 0)\');
+	
+	
+
+    #print( \'TERMINANDO INSERCION CONTROL_EJECUCION\');
+
+	$L_ID_GENERATED = sql( \'DS_CONTROL\', \'SELECT MAX(ID_CONTROL) FROM CNF.CONTROL_EJECUCION WHERE ID_CAT_JOB = [$L_CAT_JOB]\');
+	#print( $L_ID_GENERATED );
+    SQL(\'DS_CONTROL\', \'COMMIT TRANSACTION;\');
+	SQL(\'DS_CONTROL\', \'COMMIT;\');
+
+    $P_ID_GENERATED = $L_ID_GENERATED ;	
+
+	PRINT(\'TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION\');
+	RETURN $P_ID_GENERATED ;		
+	end
+catch ( all  )
+	begin
+		print( \'OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION\');
+		RETURN -1;
+	end', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_CONTROL_LOG_EDW($P_CURRENT_DATE VARCHAR(25)  IN, $P_CAT_JOB INT  IN, $P_STATUS_JOB VARCHAR(25)  IN, $P_ID_GENERATED INT  OUT )
+RETURNS  INT 
+DECLARE
+     $L_CURRENT_DATE VARCHAR(25) ;
+     $L_CAT_JOB INT ;
+     $L_STATUS_JOB VARCHAR(25) ;
+     $L_ID_GENERATED INT ;
+BEGIN
+$L_CURRENT_DATE = sysdate();$L_CAT_JOB = $P_CAT_JOB;$L_STATUS_JOB = $P_STATUS_JOB;print('----------------ID: [$L_CAT_JOB]----------------');TRY
+BEGIN
+sql('DS_CONTROL', 'BEGIN TRANSACTION');sql('DS_CONTROL', 'INSERT INTO CNF.CONTROL_EJECUCION(ID_CAT_JOB, FECHA, ESTADO, COUNT_FILA) VALUES([$L_CAT_JOB], \'[$L_CURRENT_DATE]\', \'[$L_STATUS_JOB]\', 0)');$L_ID_GENERATED = sql('DS_CONTROL', 'SELECT MAX(ID_CONTROL) FROM CNF.CONTROL_EJECUCION WHERE ID_CAT_JOB = [$L_CAT_JOB]');sql('DS_CONTROL', 'COMMIT TRANSACTION;');sql('DS_CONTROL', 'COMMIT;');$P_ID_GENERATED = $L_ID_GENERATED;print('TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION');RETURN $P_ID_GENERATED;
+END
+CATCH (210101)
+BEGIN
+print('OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION');RETURN -1;
+END
+
+END_TRY
+END
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RDescription', "ActaName_3" = 'RParallelizable', "ActaName_4" = 'RisScriptValidationFunction', "ActaName_5" = 'RSavedAfterCheckOut', "ActaName_6" = 'RDate_created', "ActaName_7" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'PARA DEFINIR QUE UN JOB FUE FINALIZADO CON EXITO', "ActaValue_3" = 'no', "ActaValue_4" = 'no', "ActaValue_5" = 'YES', "ActaValue_6" = 'Tue Feb 20 17:24:23 2018', "ActaValue_7" = 'Wed Sep 12 08:51:58 2018', "InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '50', "ui_script_text" = '$L_ID_GENERATED = $P_ID_GENERATED ;
+$L_STATUS_JOB = $P_STATUS_JOB ;
+
+try
+	begin
+	IF ($L_ID_GENERATED is not null)
+	begin
+        SQL(\'DS_CONTROL\', \'BEGIN TRANSACTION\');
+	    SQL(\'DS_CONTROL\', \'UPDATE CNF.CONTROL_EJECUCION SET ESTADO = \\\'[$L_STATUS_JOB]\\\' WHERE ID_CONTROL = [$L_ID_GENERATED]\');
+	    SQL(\'DS_CONTROL\', \'COMMIT TRANSACTION;\');
+		SQL(\'DS_CONTROL\', \'COMMIT;\');
+	    print( \'Terminando la modificacion en tabla\' );
+	end
+	RETURN $L_ID_GENERATED ;
+	end
+catch ( all  )
+	begin
+        print( \'NO SE PUDO INSERTAR EN LA TABLA DE LOG\');                
+		Return  -1;
+	end', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_CONTROL_LOG_FIN($P_ID_GENERATED INT  IN, $P_STATUS_JOB VARCHAR(25)  IN )
+RETURNS  INT 
+DECLARE
+     $L_ID_GENERATED INT ;
+     $L_STATUS_JOB VARCHAR(25) ;
+BEGIN
+$L_ID_GENERATED = $P_ID_GENERATED;$L_STATUS_JOB = $P_STATUS_JOB;TRY
+BEGIN
+IF (($L_ID_GENERATED IS NOT  NULL ) )
+BEGIN
+sql('DS_CONTROL', 'BEGIN TRANSACTION');sql('DS_CONTROL', 'UPDATE CNF.CONTROL_EJECUCION SET ESTADO = \'[$L_STATUS_JOB]\' WHERE ID_CONTROL = [$L_ID_GENERATED]');sql('DS_CONTROL', 'COMMIT TRANSACTION;');sql('DS_CONTROL', 'COMMIT;');print('Terminando la modificacion en tabla');END
+RETURN $L_ID_GENERATED;
+END
+CATCH (210101)
+BEGIN
+print('NO SE PUDO INSERTAR EN LA TABLA DE LOG');RETURN -1;
+END
+
+END_TRY
+END
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RDescription', "ActaName_3" = 'RParallelizable', "ActaName_4" = 'RisScriptValidationFunction', "ActaName_5" = 'RSavedAfterCheckOut', "ActaName_6" = 'RDate_created', "ActaName_7" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'Envio de notificaciones por emial.', "ActaValue_3" = 'no', "ActaValue_4" = 'no', "ActaValue_5" = 'YES', "ActaValue_6" = 'Mon Jul 16 09:49:37 2018', "ActaValue_7" = 'Fri Jul 13 15:22:25 2018', "InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '50', "ui_script_text" = '##/********************************************************           
+##  * CF_TABLE_NAME                                        *   
+##  *                                                      *   
+##  * Author:  Jaime Ascencio | Gyssa                      *   
+##  *                                                      *   
+##  * Purpose: Envio de email a una lista de notifica.     *   
+##  *                                                      *   
+##  * Usage:                                               *   
+##  *      Ejecutada por cada WF 13JUL2018                 *   
+##  ********************************************************/ 
+
+
+$L_EMAIL = sql(\'DS_CONTROL\', \'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \\\'%EMAIL_NOTIFICACION%\\\'\');
+
+#concatenar mensaje chilero....
+
+
+
+$L_EXEC = smtp_to($L_EMAIL,$P_SBJ,$P_MSG,10,10);
+
+return $L_EXEC;', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_EMAIL_NOTIFICATION($P_SBJ VARCHAR(256)  IN, $P_MSG VARCHAR(5000)  IN )
+RETURNS  INT 
+DECLARE
+     $L_EMAIL VARCHAR(100) ;
+     $L_EXEC INT ;
+BEGIN
+$L_EMAIL = sql('DS_CONTROL', 'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%EMAIL_NOTIFICACION%\'');$L_EXEC = smtp_to($L_EMAIL, $P_SBJ, $P_MSG, 10, 10);RETURN $L_EXEC;
+END
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Apr  3 14:15:33 2018', "ActaValue_6" = 'Fri Aug 24 13:26:53 2018', "InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '55', "ui_script_text" = '$L_ID_JOB_TABLE   = SQL(\'DS_CONTROL\', \'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \\\'[$P_JOBNAME]\\\'\');
+
+print(\'<<<<<<<<<<<<<dmVyc2lvbjU=>>>>>>>>>>>\');
+
+IF($L_ID_JOB_TABLE IS NOT null)
+begin
+ $P_EXISTEJOB = 1;	
+end
+else 
+begin
+ $P_EXISTEJOB = 0;	
+end
+
+return $P_EXISTEJOB ;
+
+', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_JOBNAME($P_JOBNAME VARCHAR(100)  IN, $P_EXISTEJOB INT  OUT )
+RETURNS  INT 
+DECLARE
+     $L_ID_JOB_TABLE INT ;
+BEGIN
+$L_ID_JOB_TABLE = sql('DS_CONTROL', 'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \'[$P_JOBNAME]\'');print('<<<<<<<<<<<<<dmVyc2lvbjU=>>>>>>>>>>>');IF (($L_ID_JOB_TABLE IS NOT  NULL ) )
+BEGIN
+$P_EXISTEJOB = 1;END
+ELSE
+BEGIN
+$P_EXISTEJOB = 0;END
+RETURN $P_EXISTEJOB;
+END
+ AlGUIComment ("ANNOTATION_0" = 'ALGUICOMMENT( x = \'256\', y = \'-330\',ObjectDesc=\'Descripcion: plantilla adaptada para ejecutar esquemas sat.\',UI_DATA_XML=\'<UIDATA><MAINICON><LOCATION><X>-256</X><Y>330</Y></LOCATION><SIZE><CX>0</CX><CY>0</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>1288</CX><CY>200</CY></SIZE><VISIBLE>1</VISIBLE></DESCRIPTION></UIDATA>\' )
+', "ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Apr 26 10:56:49 2019', "ActaValue_3" = 'Fri Apr 26 15:26:25 2019', "x" = '-1', "y" = '-1')
+CREATE SESSION JOB_INTERIN::'723642f4-e67b-462a-bc2d-ee74a726f960'( )
+DECLARE
+     $L_EXISTE_JOB INT ;
+     $L_FECHA DATE ;
+     $L_ID_GENERATED INT ;
+     $L_STATUS_JOB VARCHAR(25) ;
+     $L_RECUPERA_SP VARCHAR(4) ;
+     $L_ID_JOB_TABLA INT ;
+     $L_COUNT_RECORDS INT ;
+     $L_TABLE_NAME VARCHAR(25) ;
+     GLOBAL $G_JOB_NAME VARCHAR(100) ;
+     GLOBAL $G_CURRENT_DATE VARCHAR(25) ;
+     GLOBAL $G_JOB_EXIST INT ;
+     GLOBAL $G_FILE_LOCATION VARCHAR(1000) ;
+     GLOBAL $G_FILE_NAME VARCHAR(500) ;
+     GLOBAL $G_SH_ROUTE VARCHAR(100) ;
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI', "ui_script_text" = 'print( \'--version: b1688fa\');
+
+##INICIALIZACIÓN DE VARIABLES
+$G_JOB_NAME = job_name( );
+
+##--$G_FILE_LOCATION = CF_DEFINE_UBICACION( );
+
+print( \'+---------------------INICIO: [$G_JOB_NAME]--------------------------☺\');
+
+
+
+', "x" = '260', "y" = '-735')
+BEGIN_SCRIPT
+print('--version: b1688fa');$G_JOB_NAME = job_name();print('+---------------------INICIO: [$G_JOB_NAME]--------------------------☺');END
+ AlGUIComment ("If_condition" = 'CF_JOBNAME( $G_JOB_NAME,$L_EXISTE_JOB) = 1', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'CDN_JOB', "x" = '835', "y" = '-737')
+IF ((cf_jobname($G_JOB_NAME, $L_EXISTE_JOB) = 1) )
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try4697', "x" = '68', "y" = '-65')
+TRY
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>353</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SP_BUCKET_MORA', "ui_script_text" = '$L_TABLE_NAME = \'TB_BUCKET_MORA\';
+
+$G_CURRENT_DATE = sql( \'DS_TARGET\', \'select dateadd(DD,1,convert(date,valor)) from cnf.parametros where parametro = \\\'INTERIN_ULTFEC_BUCKET_MORA\\\'\' );
+
+$L_STATUS_JOB = \'INICIADO\';
+$L_ID_JOB_TABLA = sql( \'DS_TARGET\', \'SELECT ID_JOB_TABLE FROM CNF.CAT_JOBS WHERE NOMBRE_JOB = \\\'[$G_JOB_NAME]\\\' and NOMBRE_TABLA = \\\'[$L_TABLE_NAME]\\\'\');
+
+$L_ID_GENERATED  = CF_CONTROL_LOG_EDW($G_CURRENT_DATE, $L_ID_JOB_TABLA , $L_STATUS_JOB, $L_ID_GENERATED );
+
+
+PRINT( \'INICIO DE TRABAJO, INFORMACION ALMACENADA EN TABLA TBL_CONTROL_EJECUCION\');
+
+
+try
+	begin
+
+	IF($G_CURRENT_DATE is not null)
+	begin
+	  $L_RECUPERA_SP = sql(\'DS_TARGET\', \'exec SAT.SP_BUCKET_MORA \\\'G\\\',\\\'\' ||  $G_CURRENT_DATE || \'\\\'\');
+
+	  print(\'exec SAT.SP_BUCKET_MORA \\\'G\\\',\\\'\' ||  $G_CURRENT_DATE || \'\\\'\') ;
+
+	  $L_COUNT_RECORDS = sql( \'DS_TARGET\', \'SELECT COUNT(*) FROM SAT.TB_BUCKET_MORA where FECENVIO = \\\'\'|| $G_CURRENT_DATE || \'\\\'\' );
+ 
+	  sql( \'DS_TARGET\', \'UPDATE CNF.CONTROL_EJECUCION SET COUNT_FILA = \' || $L_COUNT_RECORDS || \' WHERE ID_CONTROL = [$L_ID_GENERATED]\');
+      sql( \'DS_TARGET\', \'COMMIT\');
+
+	  $L_STATUS_JOB = \'FINALIZADO\';
+      $L_ID_GENERATED  = CF_CONTROL_LOG_FIN( $L_ID_GENERATED, $L_STATUS_JOB );
+    end
+	else
+	begin
+	   $L_STATUS_JOB = \'NO EJECUTADO\';
+       $L_ID_GENERATED  = CF_CONTROL_LOG_FIN( $L_ID_GENERATED, $L_STATUS_JOB );
+    end
+    end
+catch ( all )
+	begin
+	
+	$L_STATUS_JOB = \'ERROR\';
+    $L_ID_GENERATED  = CF_CONTROL_LOG_FIN( $L_ID_GENERATED, $L_STATUS_JOB );
+
+    SQL(\'DS_CONTROL\', \'INSERT INTO CNF.LOG_EJECUCION(ERROR_NUMBER, ERROR_CONTEXT, ERROR_MESSAGE, ERROR_TIMESTAMP) VALUES(0,\\\'sat.sps_interin\\\', \\\'Fallo ejecucion \' || replace_substr(error_message( ),\'\\\'\',\'\')  || \'\\\',\\\'\' || sysdate() || \'\\\')\');
+    end', "x" = '451', "y" = '-63')
+BEGIN_SCRIPT
+$L_TABLE_NAME = 'TB_BUCKET_MORA';$G_CURRENT_DATE = sql('DS_TARGET', 'select dateadd(DD,1,convert(date,valor)) from cnf.parametros where parametro = \'INTERIN_ULTFEC_BUCKET_MORA\'');$L_STATUS_JOB = 'INICIADO';$L_ID_JOB_TABLA = sql('DS_TARGET', 'SELECT ID_JOB_TABLE FROM CNF.CAT_JOBS WHERE NOMBRE_JOB = \'[$G_JOB_NAME]\' and NOMBRE_TABLA = \'[$L_TABLE_NAME]\'');$L_ID_GENERATED = cf_control_log_edw($G_CURRENT_DATE, $L_ID_JOB_TABLA, $L_STATUS_JOB, $L_ID_GENERATED);print('INICIO DE TRABAJO, INFORMACION ALMACENADA EN TABLA TBL_CONTROL_EJECUCION');TRY
+BEGIN
+IF (($G_CURRENT_DATE IS NOT  NULL ) )
+BEGIN
+$L_RECUPERA_SP = sql('DS_TARGET', (('exec SAT.SP_BUCKET_MORA \'G\',\'' || $G_CURRENT_DATE) || '\''));print((('exec SAT.SP_BUCKET_MORA \'G\',\'' || $G_CURRENT_DATE) || '\''));$L_COUNT_RECORDS = sql('DS_TARGET', (('SELECT COUNT(*) FROM SAT.TB_BUCKET_MORA where FECENVIO = \'' || $G_CURRENT_DATE) || '\''));sql('DS_TARGET', (('UPDATE CNF.CONTROL_EJECUCION SET COUNT_FILA = ' || $L_COUNT_RECORDS) || ' WHERE ID_CONTROL = [$L_ID_GENERATED]'));sql('DS_TARGET', 'COMMIT');$L_STATUS_JOB = 'FINALIZADO';$L_ID_GENERATED = cf_control_log_fin($L_ID_GENERATED, $L_STATUS_JOB);END
+ELSE
+BEGIN
+$L_STATUS_JOB = 'NO EJECUTADO';$L_ID_GENERATED = cf_control_log_fin($L_ID_GENERATED, $L_STATUS_JOB);END
+END
+CATCH (210101)
+BEGIN
+$L_STATUS_JOB = 'ERROR';$L_ID_GENERATED = cf_control_log_fin($L_ID_GENERATED, $L_STATUS_JOB);sql('DS_CONTROL', (((('INSERT INTO CNF.LOG_EJECUCION(ERROR_NUMBER, ERROR_CONTEXT, ERROR_MESSAGE, ERROR_TIMESTAMP) VALUES(0,\'sat.sps_interin\', \'Fallo ejecucion ' || replace_substr(error_message(), '\'', '')) || '\',\'') || sysdate()) || '\')'));END
+
+END_TRY
+END
+END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch4702', "x" = '848', "y" = '-65')
+CATCH (210101)
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Script612', "ui_script_text" = 'CF_EMAIL_NOTIFICATION(\'ERROR EN EJECUCIÓN DE JOB\', error_message( ));', "x" = '859', "y" = '-313')
+BEGIN_SCRIPT
+cf_email_notification('ERROR EN EJECUCIÓN DE JOB', error_message());END
+END
+
+END_TRY
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try5512', "x" = '1216', "y" = '-65')
+TRY
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>447</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SP_BALANCE_SALDOS...', "ui_script_text" = '$L_TABLE_NAME = \'TB_BALANCE_SALDOS_DIARIOS\';
+
+$G_CURRENT_DATE = sql( \'DS_TARGET\', \'select dateadd(DD,1,convert(date,valor)) from cnf.parametros where parametro = \\\'INTERIN_ULTFEC_BALANCE_SALDOS_DIARIOS\\\'\' );
+
+$L_STATUS_JOB = \'INICIADO\';
+$L_ID_JOB_TABLA = sql( \'DS_TARGET\', \'SELECT ID_JOB_TABLE FROM CNF.CAT_JOBS WHERE NOMBRE_JOB = \\\'[$G_JOB_NAME]\\\' and NOMBRE_TABLA = \\\'[$L_TABLE_NAME]\\\'\');
+
+$L_ID_GENERATED  = CF_CONTROL_LOG_EDW($G_CURRENT_DATE, $L_ID_JOB_TABLA , $L_STATUS_JOB, $L_ID_GENERATED );
+
+
+PRINT( \'INICIO DE TRABAJO, INFORMACION ALMACENADA EN TABLA TBL_CONTROL_EJECUCION\');
+
+
+try
+	begin
+
+	IF($G_CURRENT_DATE is not null)
+	begin
+	  $L_RECUPERA_SP = sql(\'DS_TARGET\', \'exec SAT.SP_BALANCE_SALDOS_DIARIOS \\\'G\\\',\\\'\' ||  $G_CURRENT_DATE || \'\\\'\');
+
+	  print(\'exec SAT.SP_BALANCE_SALDOS_DIARIOS \\\'G\\\',\\\'\' ||  $G_CURRENT_DATE || \'\\\'\');
+
+	  $L_COUNT_RECORDS = sql( \'DS_TARGET\', \'SELECT COUNT(*) FROM SAT.TB_BALANCE_SALDOS_DIARIOS where FECENVIO = \\\'\'|| $G_CURRENT_DATE || \'\\\'\' );
+ 
+	  sql( \'DS_TARGET\', \'UPDATE CNF.CONTROL_EJECUCION SET COUNT_FILA = \' || $L_COUNT_RECORDS || \' WHERE ID_CONTROL = [$L_ID_GENERATED]\');
+      sql( \'DS_TARGET\', \'COMMIT\');
+
+	  $L_STATUS_JOB = \'FINALIZADO\';
+      $L_ID_GENERATED  = CF_CONTROL_LOG_FIN( $L_ID_GENERATED, $L_STATUS_JOB );
+    end
+	else
+	begin
+	   $L_STATUS_JOB = \'NO EJECUTADO\';
+       $L_ID_GENERATED  = CF_CONTROL_LOG_FIN( $L_ID_GENERATED, $L_STATUS_JOB );
+    end
+    end
+catch ( all )
+	begin
+	
+	$L_STATUS_JOB = \'ERROR\';
+    $L_ID_GENERATED  = CF_CONTROL_LOG_FIN( $L_ID_GENERATED, $L_STATUS_JOB );
+
+    SQL(\'DS_CONTROL\', \'INSERT INTO CNF.LOG_EJECUCION(ERROR_NUMBER, ERROR_CONTEXT, ERROR_MESSAGE, ERROR_TIMESTAMP) VALUES(0,\\\'sat.sps_interin\\\', \\\'Fallo ejecucion \' || replace_substr(error_message( ),\'\\\'\',\'\')  || \'\\\',\\\'\' || sysdate() || \'\\\')\');
+    end', "x" = '1618', "y" = '-65')
+BEGIN_SCRIPT
+$L_TABLE_NAME = 'TB_BALANCE_SALDOS_DIARIOS';$G_CURRENT_DATE = sql('DS_TARGET', 'select dateadd(DD,1,convert(date,valor)) from cnf.parametros where parametro = \'INTERIN_ULTFEC_BALANCE_SALDOS_DIARIOS\'');$L_STATUS_JOB = 'INICIADO';$L_ID_JOB_TABLA = sql('DS_TARGET', 'SELECT ID_JOB_TABLE FROM CNF.CAT_JOBS WHERE NOMBRE_JOB = \'[$G_JOB_NAME]\' and NOMBRE_TABLA = \'[$L_TABLE_NAME]\'');$L_ID_GENERATED = cf_control_log_edw($G_CURRENT_DATE, $L_ID_JOB_TABLA, $L_STATUS_JOB, $L_ID_GENERATED);print('INICIO DE TRABAJO, INFORMACION ALMACENADA EN TABLA TBL_CONTROL_EJECUCION');TRY
+BEGIN
+IF (($G_CURRENT_DATE IS NOT  NULL ) )
+BEGIN
+$L_RECUPERA_SP = sql('DS_TARGET', (('exec SAT.SP_BALANCE_SALDOS_DIARIOS \'G\',\'' || $G_CURRENT_DATE) || '\''));print((('exec SAT.SP_BALANCE_SALDOS_DIARIOS \'G\',\'' || $G_CURRENT_DATE) || '\''));$L_COUNT_RECORDS = sql('DS_TARGET', (('SELECT COUNT(*) FROM SAT.TB_BALANCE_SALDOS_DIARIOS where FECENVIO = \'' || $G_CURRENT_DATE) || '\''));sql('DS_TARGET', (('UPDATE CNF.CONTROL_EJECUCION SET COUNT_FILA = ' || $L_COUNT_RECORDS) || ' WHERE ID_CONTROL = [$L_ID_GENERATED]'));sql('DS_TARGET', 'COMMIT');$L_STATUS_JOB = 'FINALIZADO';$L_ID_GENERATED = cf_control_log_fin($L_ID_GENERATED, $L_STATUS_JOB);END
+ELSE
+BEGIN
+$L_STATUS_JOB = 'NO EJECUTADO';$L_ID_GENERATED = cf_control_log_fin($L_ID_GENERATED, $L_STATUS_JOB);END
+END
+CATCH (210101)
+BEGIN
+$L_STATUS_JOB = 'ERROR';$L_ID_GENERATED = cf_control_log_fin($L_ID_GENERATED, $L_STATUS_JOB);sql('DS_CONTROL', (((('INSERT INTO CNF.LOG_EJECUCION(ERROR_NUMBER, ERROR_CONTEXT, ERROR_MESSAGE, ERROR_TIMESTAMP) VALUES(0,\'sat.sps_interin\', \'Fallo ejecucion ' || replace_substr(error_message(), '\'', '')) || '\',\'') || sysdate()) || '\')'));END
+
+END_TRY
+END
+END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch5516', "x" = '1996', "y" = '-65')
+CATCH (210101)
+BEGIN
+END
+
+END_TRY
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try7976', "x" = '67', "y" = '-295')
+TRY
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>394</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SP_AUTORIZACIONES', "ui_script_text" = '
+$L_TABLE_NAME = \'TB_BALANCE_SALDOS_DIARIOS\';
+
+$G_CURRENT_DATE = sql( \'DS_TARGET\', \'select dateadd(DD,1,convert(date,valor)) from cnf.parametros where parametro = \\\'INTERIN_ULTFEC_AUTORIZACIONES\\\'\' );
+
+$L_STATUS_JOB = \'INICIADO\';
+$L_ID_JOB_TABLA = sql( \'DS_TARGET\', \'SELECT ID_JOB_TABLE FROM CNF.CAT_JOBS WHERE NOMBRE_JOB = \\\'[$G_JOB_NAME]\\\' and NOMBRE_TABLA = \\\'[$L_TABLE_NAME]\\\'\');
+
+$L_ID_GENERATED  = CF_CONTROL_LOG_EDW($G_CURRENT_DATE, $L_ID_JOB_TABLA , $L_STATUS_JOB, $L_ID_GENERATED );
+
+
+PRINT( \'INICIO DE TRABAJO, INFORMACION ALMACENADA EN TABLA TBL_CONTROL_EJECUCION\');
+
+
+try
+	begin
+
+	IF($G_CURRENT_DATE is not null)
+	begin
+	  $L_RECUPERA_SP = sql(\'DS_TARGET\', \'exec SAT.SP_AUTORIZACIONES \\\'G\\\',\\\'\' ||  $G_CURRENT_DATE || \'\\\'\');
+
+	  print(\'exec SAT.SP_AUTORIZACIONES \\\'G\\\',\\\'\' ||  $G_CURRENT_DATE || \'\\\'\');
+
+	  $L_COUNT_RECORDS = sql( \'DS_TARGET\', \'SELECT COUNT(*) FROM SAT.TB_AUTORIZACIONES where FECENVIO = \\\'\'|| $G_CURRENT_DATE || \'\\\'\' );
+ 
+	  sql( \'DS_TARGET\', \'UPDATE CNF.CONTROL_EJECUCION SET COUNT_FILA = \' || $L_COUNT_RECORDS || \' WHERE ID_CONTROL = [$L_ID_GENERATED]\');
+      sql( \'DS_TARGET\', \'COMMIT\');
+
+	  $L_STATUS_JOB = \'FINALIZADO\';
+      $L_ID_GENERATED  = CF_CONTROL_LOG_FIN( $L_ID_GENERATED, $L_STATUS_JOB );
+    end
+	else
+	begin
+	   $L_STATUS_JOB = \'NO EJECUTADO\';
+       $L_ID_GENERATED  = CF_CONTROL_LOG_FIN( $L_ID_GENERATED, $L_STATUS_JOB );
+    end
+    end
+catch ( all )
+	begin
+	
+	$L_STATUS_JOB = \'ERROR\';
+    $L_ID_GENERATED  = CF_CONTROL_LOG_FIN( $L_ID_GENERATED, $L_STATUS_JOB );
+
+    SQL(\'DS_CONTROL\', \'INSERT INTO CNF.LOG_EJECUCION(ERROR_NUMBER, ERROR_CONTEXT, ERROR_MESSAGE, ERROR_TIMESTAMP) VALUES(0,\\\'sat.sps_interin\\\', \\\'Fallo ejecucion \' || replace_substr(error_message( ),\'\\\'\',\'\')  || \'\\\',\\\'\' || sysdate() || \'\\\')\');
+    end', "x" = '451', "y" = '-294')
+BEGIN_SCRIPT
+$L_TABLE_NAME = 'TB_BALANCE_SALDOS_DIARIOS';$G_CURRENT_DATE = sql('DS_TARGET', 'select dateadd(DD,1,convert(date,valor)) from cnf.parametros where parametro = \'INTERIN_ULTFEC_AUTORIZACIONES\'');$L_STATUS_JOB = 'INICIADO';$L_ID_JOB_TABLA = sql('DS_TARGET', 'SELECT ID_JOB_TABLE FROM CNF.CAT_JOBS WHERE NOMBRE_JOB = \'[$G_JOB_NAME]\' and NOMBRE_TABLA = \'[$L_TABLE_NAME]\'');$L_ID_GENERATED = cf_control_log_edw($G_CURRENT_DATE, $L_ID_JOB_TABLA, $L_STATUS_JOB, $L_ID_GENERATED);print('INICIO DE TRABAJO, INFORMACION ALMACENADA EN TABLA TBL_CONTROL_EJECUCION');TRY
+BEGIN
+IF (($G_CURRENT_DATE IS NOT  NULL ) )
+BEGIN
+$L_RECUPERA_SP = sql('DS_TARGET', (('exec SAT.SP_AUTORIZACIONES \'G\',\'' || $G_CURRENT_DATE) || '\''));print((('exec SAT.SP_AUTORIZACIONES \'G\',\'' || $G_CURRENT_DATE) || '\''));$L_COUNT_RECORDS = sql('DS_TARGET', (('SELECT COUNT(*) FROM SAT.TB_AUTORIZACIONES where FECENVIO = \'' || $G_CURRENT_DATE) || '\''));sql('DS_TARGET', (('UPDATE CNF.CONTROL_EJECUCION SET COUNT_FILA = ' || $L_COUNT_RECORDS) || ' WHERE ID_CONTROL = [$L_ID_GENERATED]'));sql('DS_TARGET', 'COMMIT');$L_STATUS_JOB = 'FINALIZADO';$L_ID_GENERATED = cf_control_log_fin($L_ID_GENERATED, $L_STATUS_JOB);END
+ELSE
+BEGIN
+$L_STATUS_JOB = 'NO EJECUTADO';$L_ID_GENERATED = cf_control_log_fin($L_ID_GENERATED, $L_STATUS_JOB);END
+END
+CATCH (210101)
+BEGIN
+$L_STATUS_JOB = 'ERROR';$L_ID_GENERATED = cf_control_log_fin($L_ID_GENERATED, $L_STATUS_JOB);sql('DS_CONTROL', (((('INSERT INTO CNF.LOG_EJECUCION(ERROR_NUMBER, ERROR_CONTEXT, ERROR_MESSAGE, ERROR_TIMESTAMP) VALUES(0,\'sat.sps_interin\', \'Fallo ejecucion ' || replace_substr(error_message(), '\'', '')) || '\',\'') || sysdate()) || '\')'));END
+
+END_TRY
+END
+END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch7980', "x" = '847', "y" = '-295')
+CATCH (210101)
+BEGIN
+END
+
+END_TRY
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try10333', "x" = '1219', "y" = '-295')
+TRY
+BEGIN
+END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>235</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch10337', "x" = '1999', "y" = '-295')
+CATCH (210101)
+BEGIN
+END
+
+END_TRY
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try12678', "x" = '61', "y" = '-518')
+TRY
+BEGIN
+END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>235</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch12682', "x" = '841', "y" = '-518')
+CATCH (210101)
+BEGIN
+END
+
+END_TRY
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try14949', "x" = '1218', "y" = '-516')
+TRY
+BEGIN
+END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>235</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch14953', "x" = '1998', "y" = '-516')
+CATCH (210101)
+BEGIN
+END
+
+END_TRY
+END
+ELSE
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>413</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_CDT_JOB_ER...', "ui_script_text" = '$L_FECHA = sysdate( );
+SQL(\'DS_CONTROL\', \'INSERT INTO LOG_EJECUCION(ERROR_NUMBER, ERROR_CONTEXT, ERROR_MESSAGE, ERROR_TIMESTAMP) VALUES(0, \\\'No existe Job ingresado con nombre [$G_JOB_NAME]\\\', \\\'\\\', \\\'[$L_FECHA]\\\')\');', "x" = '1034', "y" = '-575')
+BEGIN_SCRIPT
+$L_FECHA = sysdate();sql('DS_CONTROL', 'INSERT INTO LOG_EJECUCION(ERROR_NUMBER, ERROR_CONTEXT, ERROR_MESSAGE, ERROR_TIMESTAMP) VALUES(0, \'No existe Job ingresado con nombre [$G_JOB_NAME]\', \'\', \'[$L_FECHA]\')');END
+END
+END
+ SET ("job_checkpoint_enabled" = 'no', "job_collect_statistics" = 'no', "job_collect_statistics_monitor" = 'no', "job_create_debug_package" = 'no', "job_enable_assemblers" = 'yes', "job_enable_audit" = 'yes', "job_enable_dataquality" = 'yes', "job_export_repo" = 'no', "job_export_reports" = 'no', "job_guid" = '723642f4-e67b-462a-bc2d-ee74a726f960', "job_isrecoverable" = 'no', "job_mode" = 'Multi-Process', "job_monitor_sample_rate" = '1000', "job_monitor_timer_rate" = '5', "job_name" = 'JOB_INTERIN', "job_print_version" = 'no', "job_testmode_enabled" = 'no', "job_trace_abapquery" = 'no', "job_trace_all" = 'no', "job_trace_ascomm" = 'no', "job_trace_assemblers" = 'no', "job_trace_audit" = 'no', "job_trace_dataflow" = 'yes', "job_trace_idoc_file" = 'no', "job_trace_memory_loader" = 'no', "job_trace_memory_reader" = 'no', "job_trace_optimized_dataflow" = 'no', "job_trace_parallel_execution" = 'no', "job_trace_rfc_function" = 'no', "job_trace_row" = 'no', "job_trace_script" = 'no', "job_trace_session" = 'yes', "job_trace_sql_only" = 'no', "job_trace_sqlfunctions" = 'no', "job_trace_sqlloaders" = 'no', "job_trace_sqlreaders" = 'no', "job_trace_sqltransforms" = 'no', "job_trace_stored_procedure" = 'no', "job_trace_table" = 'no', "job_trace_table_reader" = 'no', "job_trace_transform" = 'no', "job_trace_userfunction" = 'no', "job_trace_usertransform" = 'no', "job_trace_workflow" = 'yes', "job_type" = 'batch', "job_use_statistics" = 'yes', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Apr 26 15:29:27 2019')
+CREATE __AL_PROJECT PRJ_INTERIN JOB_INTERIN;

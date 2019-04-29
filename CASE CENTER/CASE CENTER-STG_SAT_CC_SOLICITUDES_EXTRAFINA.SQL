@@ -85,4 +85,6 @@ drop table IF EXISTS STG_SAT.CC_SOLICITUDES_EXTRAFINA;  CREATE TABLE IF NOT EXIS
 ,	MODIFIED	TIMESTAMP		--modified
 ,	FECHA_DE_ENVIO_PARA_IMPRESION	TIMESTAMP		--fecha de envio para impresion
 ,	RECORD_ID_CASE_CENTER	VARCHAR	(24)	--record id case center
+,	MIS_DATE	DATE		--fecha de proceso
+,	LOAD_DATE	DATE default getdate()		--Fecha en que se realiza la carga
 ); COMMIT;	 	 		

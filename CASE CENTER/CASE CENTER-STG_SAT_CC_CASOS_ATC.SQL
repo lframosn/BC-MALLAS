@@ -13,4 +13,6 @@ drop table IF EXISTS STG_SAT.CC_CASOS_ATC;  CREATE TABLE IF NOT EXISTS STG_SAT.C
 ,	CUSCAID	VARCHAR	(255)	--cuscaid
 ,	CREATED_BY	VARCHAR	(255)	--created by
 ,	ESTADO	VARCHAR	(50)	--estado
+,	MIS_DATE	DATE		--fecha de proceso
+,	LOAD_DATE	DATE default getdate()		--Fecha en que se realiza la carga
 ); COMMIT;	 	 		

@@ -101,4 +101,6 @@ drop table IF EXISTS STG_SAT.CC_TARJETAS_ADICIONALES;  CREATE TABLE IF NOT EXIST
 ,	FECHA_MODIFICACION	TIMESTAMP		--fecha modificacion
 ,	FECHA_APROBACION	VARCHAR	(10)	--fecha aprobacion
 ,	ESTADO	VARCHAR	(50)	--estado
+,	MIS_DATE	DATE		--fecha de proceso
+,	LOAD_DATE	DATE default getdate()		--Fecha en que se realiza la carga
 ); COMMIT;	 	 		

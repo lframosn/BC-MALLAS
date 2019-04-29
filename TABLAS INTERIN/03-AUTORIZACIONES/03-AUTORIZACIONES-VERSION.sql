@@ -24,17 +24,18 @@ declare
 ,@CRDATE DATETIME
 ,@OBJECT_TYPE_STR CHAR(128)
 
+
 select 
  @NOMBRE_MALLA = 'N/A.CONTROL INTERNO'
-,@OBJECT_NAME = 'SP_AUTORIZACIONES'
+,@OBJECT_NAME = 'TB_AUTORIZACIONES'
+,@OBJECT_TYPE_STR = 'TABLE'
 ,@OBJECT_USER = 'SAT'
 ,@VERSION_COMMIT = 'be05b2a5cbcca92b6b1a04aa5afdd53beaac2026'
 ,@VERSION_CODE = 'be05b2a'
 ,@VERSION_DATE = 'April 22, 2019 1:48:33 PM'
-,@OBJECT_TYPE_STR = 'PROCEDURE'
 ,@CRDATE = NULL
 
-select @CRDATE = creation_time_utc from sys.SYSOBJECT S, SYSOBJECTS O, SYSUSERS U
+select @CRDATE = max(creation_time_utc) from sys.SYSOBJECT S, SYSOBJECTS O, SYSUSERS U
 where S.object_type_str = @OBJECT_TYPE_STR 
 AND O.name = object_name(S.object_id)
 and O.uid = U.uid
@@ -51,11 +52,14 @@ select
  @NOMBRE_MALLA, @OBJECT_NAME ,@OBJECT_USER ,@VERSION_COMMIT,@VERSION_CODE ,@VERSION_DATE ,@CRDATE 
 
 select 
- @OBJECT_NAME = 'TB_AUTORIZACIONES'
-,@OBJECT_TYPE_STR = 'TABLE'
+ @OBJECT_NAME = 'SP_AUTORIZACIONES'
+,@VERSION_COMMIT = '668b3b2942a029c0512f7e1799714b2454137aec'
+,@VERSION_CODE = '668b3b2' 
+,@VERSION_DATE = 'April 26, 2019 3:36:32 PM'
+,@OBJECT_TYPE_STR = 'PROCEDURE'
 ,@CRDATE = NULL
 
-select @CRDATE = max(creation_time_utc) from sys.SYSOBJECT S, SYSOBJECTS O, SYSUSERS U
+select @CRDATE = creation_time_utc from sys.SYSOBJECT S, SYSOBJECTS O, SYSUSERS U
 where S.object_type_str = @OBJECT_TYPE_STR 
 AND O.name = object_name(S.object_id)
 and O.uid = U.uid

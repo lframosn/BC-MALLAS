@@ -18,36 +18,36 @@ drop table IF EXISTS SAT.CC_SOLICITUDES_BALCON;  CREATE TABLE IF NOT EXISTS SAT.
 ,	NUMERO_CONTACTO_2	VARCHAR	(8)	--numero contacto 2
 ,	BALCON_PARA_TERCERO	VARCHAR	(15)	--balcon para tercero
 ,	NOMBRE_DE_TERCERO	VARCHAR	(255)	--nombre de tercero
-,	MONTO_ESTADO_DE_CUENTA	VARCHAR	(17)	--monto estado de cuenta
-,	MONTO_MAXIMO_AUTORIZADO	VARCHAR	(17)	--monto maximo autorizado
-,	LIMITE_DE_CREDITO	VARCHAR	(17)	--limite de credito
-,	LIMITE_DISPONIBLE	VARCHAR	(17)	--limite disponible
+,	MONTO_ESTADO_DE_CUENTA	DECIMAL	(17,2)	--monto estado de cuenta
+,	MONTO_MAXIMO_AUTORIZADO	DECIMAL	(17,2)	--monto maximo autorizado
+,	LIMITE_DE_CREDITO	DECIMAL	(17,2)	--limite de credito
+,	LIMITE_DISPONIBLE	DECIMAL	(17,2)	--limite disponible
 ,	SUB_PRODUCTO	VARCHAR	(4)	--sub producto
 ,	TIPO_CUOTA	VARCHAR	(8)	--tipo cuota
-,	CUOTAS	VARCHAR	(3)	--cuotas
-,	TASA_PREFERENCIAL	VARCHAR	(7)	--tasa preferencial
+,	CUOTAS	DECIMAL	(3,0)	--cuotas
+,	TASA_PREFERENCIAL	DECIMAL	(7,2)	--tasa preferencial
 ,	FECHA_DE_CORTE	DATE		--fecha de corte
 ,	LUGAR_DE_ENTREGA	VARCHAR	(10)	--lugar de entrega
 ,	AGENCIA	VARCHAR	(100)	--agencia
-,	MONTO_CHEQUES_SOLICITADOS	VARCHAR	(17)	--monto cheques solicitados
-,	CANTIDAD_CHEQUES_SOLICITADOS	VARCHAR	(1)	--cantidad cheques solicitados
-,	NORMAL_MONTO_ESTCTA	VARCHAR	(17)	--normal monto de estado de cuenta
-,	NORMAL_MONTO_MAX_AUTORIZADO	VARCHAR	(17)	--normal monto maximo autorizado
-,	NORMAL_BALCON_MAS_ESTCTA	VARCHAR	(17)	--normal balcon 25 mas de estado de cuenta
+,	MONTO_CHEQUES_SOLICITADOS	DECIMAL	(17,0)	--monto cheques solicitados
+,	CANTIDAD_CHEQUES_SOLICITADOS	DECIMAL	(1,0)	--cantidad cheques solicitados
+,	NORMAL_MONTO_DE_ESTADO_CUENTA	DECIMAL	(17,2)	--normal monto de estado de cuenta
+,	NORMAL_MONTO_MAXIMO_AUTORIZADO	DECIMAL	(17,2)	--normal monto maximo autorizado
+,	NORMAL_BALCON_25MAS_ESTADO_CTA	DECIMAL	(17,2)	--normal balcon 25 mas de estado de cuenta
 ,	INSTITUTO_1	VARCHAR	(255)	--instituto 1
 ,	INSTITUTO_2	VARCHAR	(255)	--instituto 2
 ,	INSTITUTO_3	VARCHAR	(255)	--instituto 3
 ,	ENDOSO_1	VARCHAR	(30)	--endoso 1
 ,	ENDOSO_2	VARCHAR	(30)	--endoso 2
 ,	ENDOSO_3	VARCHAR	(30)	--endoso 3
-,	MONTO_A_EMITIR_1	VARCHAR	(17)	--monto a emitir 1
-,	MONTO_A_EMITIR_2	VARCHAR	(17)	--monto a emitir 2
-,	MONTO_A_EMITIR_3	VARCHAR	(17)	--monto a emitir 3
+,	MONTO_A_EMITIR_1	DECIMAL	(17,2)	--monto a emitir 1
+,	MONTO_A_EMITIR_2	DECIMAL	(17,2)	--monto a emitir 2
+,	MONTO_A_EMITIR_3	DECIMAL	(17,2)	--monto a emitir 3
 ,	RECORD_ID_CASE_CENTER	VARCHAR	(24)	--record id case center
 ,	CUSCAID	VARCHAR	(255)	--cuscaid
 ,	MODIFIED	TIMESTAMP		--modified
 ,	MODIFIED_BY	VARCHAR	(255)	--modified by
-,	FEC_ENVIO_IMPRESION	VARCHAR	(23)	--fecha de envio para impresion
+,	FECHA_DE_ENVIO_PARA_IMPRESION	TIMESTAMP		--fecha de envio para impresion
 ,	MIS_DATE	DATE		--fecha de proceso
 ,	LOAD_DATE	DATE default getdate()		--Fecha en que se realiza la carga
 ); COMMIT;	 	 		

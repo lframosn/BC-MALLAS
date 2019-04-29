@@ -6,9 +6,9 @@ drop table IF EXISTS SAT.CC_TARJETAS_ADICIONALES;  CREATE TABLE IF NOT EXISTS SA
 ,	CALPARTICIP_BENEFTJADIC1_CONTRA	VARCHAR	(2)	--calidad participacion beneficiario tarjeta adicional 1 en contrato
 ,	CODIGO_TIPO_TJADIC1	VARCHAR	(2)	--codigo tipo de tarjeta adicional 1
 ,	CODIGO_MARCA_TJADIC1	VARCHAR	(2)	--codigo marca de tarjeta adicional 1
-,	TIPO_IDENTIF_1_ADIC1	VARCHAR	(1)	--tipo identificacion 1 adicional 1
+,	TIPO_IDENTIF_1_ADIC1	VARCHAR	(3)	--tipo identificacion 1 adicional 1
 ,	NUMERO_IDENTIF_1_ADIC1	VARCHAR	(14)	--numero identificacion 1 adicional 1
-,	TIPO_IDENTIF_2_ADIC1	VARCHAR	(1)	--tipo identificacion 2 adicional 1
+,	TIPO_IDENTIF_2_ADIC1	VARCHAR	(3)	--tipo identificacion 2 adicional 1
 ,	NUMERO_IDENTIF_2_ADIC1	VARCHAR	(10)	--numero identificacion 2 adicional 1
 ,	PRIMER_NOMBRE_ADIC1	VARCHAR	(40)	--primer nombre adicional 1
 ,	SEGUNDO_NOMBRE_ADIC1	VARCHAR	(40)	--segundo nombre adicional 1
@@ -36,7 +36,7 @@ drop table IF EXISTS SAT.CC_TARJETAS_ADICIONALES;  CREATE TABLE IF NOT EXISTS SA
 ,	TELEFONO_CASA_ADIC2	VARCHAR	(8)	--telefono casa adicional 2
 ,	TELEFONO_TRABAJO_ADIC2	VARCHAR	(8)	--telefono trabajo adicional 2
 ,	CELULAR_ADIC2	VARCHAR	(8)	--celular adicional 2
-,	LIMITE_ADIC2	VARCHAR	(17)	--limite adicional 2
+,	LIMITE_ADIC2	DECIMAL	(17,2)	--limite adicional 2
 ,	INDIC_EXENCION_CUOTAS_ADIC2	VARCHAR	(1)	--indicador exención de cuotas adicional 2
 ,	INDIC_TJ_EMV_ADIC2	VARCHAR	(1)	--indicador tarjeta emv adicional 2
 ,	CALPARTICIP_BENEFTJADIC3_CONTRA	VARCHAR	(2)	--calidad participacion beneficiario tarjeta adicional 3 en contrato
@@ -55,7 +55,7 @@ drop table IF EXISTS SAT.CC_TARJETAS_ADICIONALES;  CREATE TABLE IF NOT EXISTS SA
 ,	TELEFONO_CASA_ADIC3	VARCHAR	(8)	--telefono casa adicional 3
 ,	TELEFONO_TRABAJO_ADIC3	VARCHAR	(8)	--telefono trabajo adicional 3
 ,	CELULAR_ADIC3	VARCHAR	(8)	--celular adicional 3
-,	LIMITE_ADIC3	VARCHAR	(17)	--limite adicional 3
+,	LIMITE_ADIC3	DECIMAL	(17,2)	--limite adicional 3
 ,	INDIC_EXENCION_CUOTAS_ADIC3	VARCHAR	(1)	--indicador exención de cuotas adicional 3
 ,	INDIC_TJ_EMV_ADIC3	VARCHAR	(1)	--indicador tarjeta emv adicional 3
 ,	CALPARTICIP_BENEFTJADIC4_CONTRA	VARCHAR	(2)	--calidad participacion beneficiario tarjeta adicional 4 en contrato
@@ -74,7 +74,7 @@ drop table IF EXISTS SAT.CC_TARJETAS_ADICIONALES;  CREATE TABLE IF NOT EXISTS SA
 ,	TELEFONO_CASA_ADIC4	VARCHAR	(8)	--telefono casa adicional 4
 ,	TELEFONO_TRABAJO_ADIC4	VARCHAR	(8)	--telefono trabajo adicional 4
 ,	CELULAR_ADIC4	VARCHAR	(8)	--celular adicional 4
-,	LIMITE_ADIC4	VARCHAR	(17)	--limite adicional 4
+,	LIMITE_ADIC4	DECIMAL	(17,2)	--limite adicional 4
 ,	INDIC_EXENCION_CUOTAS_ADIC4	VARCHAR	(1)	--indicador exención de cuotas adicional 4
 ,	INDIC_TJ_EMV_ADIC4	VARCHAR	(1)	--indicador tarjeta emv adicional 4
 ,	CALPARTICIP_BENEFTJADIC5_CONTRA	VARCHAR	(2)	--calidad participacion beneficiario tarjeta adicional 5 en contrato
@@ -93,11 +93,11 @@ drop table IF EXISTS SAT.CC_TARJETAS_ADICIONALES;  CREATE TABLE IF NOT EXISTS SA
 ,	TELEFONO_CASA_ADIC5	VARCHAR	(8)	--telefono casa adicional 5
 ,	TELEFONO_TRABAJO_ADIC5	VARCHAR	(8)	--telefono trabajo adicional 5
 ,	CELULAR_ADIC5	VARCHAR	(8)	--celular adicional 5
-,	LIMITE_ADIC5	VARCHAR	(17)	--limite adicional 5
+,	LIMITE_ADIC5	DECIMAL	(17,2)	--limite adicional 5
 ,	INDIC_EXENCION_CUOTAS_ADIC5	VARCHAR	(1)	--indicador exención de cuotas adicional 5
 ,	INDIC_TJ_EMV_ADIC5	VARCHAR	(1)	--indicador tarjeta emv adicional 5
 ,	CUSCAID	VARCHAR	(255)	--cuscaid
-,	FECHA_INGRESO	TIMESTAMP		--fecha ingreso
+,	FECHA_INGRESO	DATE		--fecha ingreso
 ,	FECHA_MODIFICACION	TIMESTAMP		--fecha modificacion
 ,	FECHA_APROBACION	VARCHAR	(10)	--fecha aprobacion
 ,	ESTADO	VARCHAR	(50)	--estado

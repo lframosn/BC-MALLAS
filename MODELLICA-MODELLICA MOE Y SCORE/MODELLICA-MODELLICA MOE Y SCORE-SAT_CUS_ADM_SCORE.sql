@@ -17,11 +17,11 @@ drop table IF EXISTS SAT.CUS_ADM_SCORE;  CREATE TABLE IF NOT EXISTS SAT.CUS_ADM_
 ,	MINMOB_G_CARDS	DECIMAL	(28,6)	--Minimo MOB (Months on book) de referencias tarjetas en los ultimos 9 meses
 ,	COUNT_CARDS_6M	DECIMAL	(28,6)	--Suma de referencias tarjetas de MOB menor o igual que 6 en mes 1
 ,	COUNT_PIL_6M	DECIMAL	(28,6)	--Suma de referencias PIL de MOB menor o igual que 6 en mes 1
-,	NUMREFACT_REFI	DECIMAL	(11,0)	--Numero de referencias tipo producto refinanciamiento en Bucket actual
-,	NUMREFACT_SOBR	DECIMAL	(11,0)	--Numero de referencias tipo producto sobregiro en Bucket actual
-,	NUMREFACT_CARDS	DECIMAL	(11,0)	--Numero de referencias tipo producto tarjeta en Bucket actual
-,	NUMREFACT_HIPO	DECIMAL	(11,0)	--Numero de referencias tipo producto hipoteca en Bucket actual
-,	NUMREFACT_PIL	DECIMAL	(11,0)	--Numero de referencias tipo producto PIL en Bucket actual
+,	NUMREFACT_REFI	DECIMAL	(11,0)	DEFAULT 0 --Numero de referencias tipo producto refinanciamiento en Bucket actual
+,	NUMREFACT_SOBR	DECIMAL	(11,0)	DEFAULT 0 --Numero de referencias tipo producto sobregiro en Bucket actual
+,	NUMREFACT_CARDS	DECIMAL	(11,0)	DEFAULT 0 --Numero de referencias tipo producto tarjeta en Bucket actual
+,	NUMREFACT_HIPO	DECIMAL	(11,0)	DEFAULT 0 --Numero de referencias tipo producto hipoteca en Bucket actual
+,	NUMREFACT_PIL	DECIMAL	(11,0)	DEFAULT 0 --Numero de referencias tipo producto PIL en Bucket actual
 ,	REFMORA_PERC_TOTALREF	DECIMAL	(11,0)	--Ratio de la suma de referencias en mora (refEnMora) con respecto la suma de las referencias actuales (totalRef)
 ,	UTIL_CARDS_ACTUAL	DECIMAL	(28,6)	--Ratio de saldo vigente actual en tarjetas con respecto al monto otorgado actual
 ,	V_BAL1M9M	DECIMAL	(11,0)	--Flag que indica si el balance actual es el masimo de los balances de los ultimos 9 meses
@@ -43,10 +43,11 @@ drop table IF EXISTS SAT.CUS_ADM_SCORE;  CREATE TABLE IF NOT EXISTS SAT.CUS_ADM_
 ,	BUCKET_0_7M	DECIMAL	(28,6)	--Maximo Bucket de mes 7
 ,	BUCKET_0_8M	DECIMAL	(28,6)	--Maximo Bucket de mes 8
 ,	BUCKET_0_9M	DECIMAL	(28,6)	--Maximo Bucket de mes 9
-,	REFINANCIAMIENTO	DECIMAL	(28,6)	--
-,	SOBREGIRO	DECIMAL	(28,6)	--
+,	REFINANCIAMIENTO	DECIMAL	(28,6)	DEFAULT 0 --
+,	SOBREGIRO	DECIMAL	(28,6)	DEFAULT 0 --
 ,	REFERENCIAS_CASTIGADAS	DECIMAL	(11,0)	--
 ,	MAX_CARDS_UTIL	DECIMAL	(28,6)	--
+,	NRO_SOLICITUD	VARCHAR	(255)	--
 ,	NF_B0	DECIMAL	(11,0)	--
 ,	MAX_BUCKET_OBS_B2TOB3	DECIMAL	(11,0)	--
 ,	MAX_BUCKET_OBS_B4UP	DECIMAL	(11,0)	--
@@ -94,7 +95,7 @@ drop table IF EXISTS SAT.CUS_ADM_SCORE;  CREATE TABLE IF NOT EXISTS SAT.CUS_ADM_
 ,	C_B3U_6M_SUM	DECIMAL	(11,0)	--Vector de flags que indica si el maximo de bucket es mayor o igual a 3 para los ultimos 6 meses
 ,	SCORE_BUREAU_CUSCATLAN	DECIMAL	(28,6)	--
 ,	VALORES_SCORE	VARCHAR	(255)	--
-,   SYSTEMDATE DATE NULL
-,   LOAD_DATE datetime NULL DEFAULT getdate()
-,   FILENAME varchar(1000) null
+,	SYSTEMDATE	DATE		--
+,	LOAD_DATE	DATE default getdate()		--
+,	FILENAME	VARCHAR	(1000)	--
 ); COMMIT;	 	 		

@@ -2,7 +2,7 @@
 #__AW_Product_Version '14.2.10.1748';
 #__AW_ATL_Locale 'spa_sv.utf-8';
  AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Feb 20 15:23:05 2018', "ActaValue_3" = 'Fri Apr  6 16:33:59 2018', "x" = '-1', "y" = '-1')
-CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="ISO-8859-1" ?>
+CREATE DATABASE DATASTORE DS_CONTROL::'2578f999-bbb9-48d6-8556-cc368ba0abcd' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="WINDOWS-1252" ?>
 <DSConfigurations>
 <DSConfiguration default="true" name="Configuration1">
 <case_sensitive>yes</case_sensitive>
@@ -15,7 +15,7 @@ CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET
 <locale_codepage>&lt;default&gt;</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E8DE412D30991CEC5E5B1AFBD489B9286B97E5C8FB81CF8408C42AC8EBED2ECB1AE228C0D49AE06E499EDA6F988EF1</password>
+<password>+0400000000120303000803E8D6A35C06C3F5CF16BFD082B093A0CCA1EE81D2E2D85BD7FF4D7B9B279638CAEF99F89041F05E1ECAB7BFE68A1B21</password>
 <server_codepage>&lt;default&gt;</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -27,7 +27,7 @@ CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET
 </DSConfigurations>
 ', "enable_data_transfer" = 'yes', "import_unknown_type" = 'no', "name" = 'DS_CONTROL', "pcache_force_utf16" = 'no', "unknown_type_size" = '255');
  AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Feb 13 15:29:23 2018', "ActaValue_3" = 'Mon Sep 17 13:36:16 2018', "x" = '-1', "y" = '-1')
-CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="ISO-8859-1" ?>
+CREATE DATABASE DATASTORE DS_TARGET::'623b7ecb-f1e5-4b99-b7f2-a028efa63f86' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="WINDOWS-1252" ?>
 <DSConfigurations>
 <DSConfiguration default="true" name="Configuration1">
 <case_sensitive>yes</case_sensitive>
@@ -40,7 +40,7 @@ CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET 
 <locale_codepage>iso-8859-1</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E895F035F3670A660E348A5C023DEC47FB30337CAEDA00A523BFA0560C63C86C73A4514FB7D808AF67945D0F3C867F</password>
+<password>+0400000000120303000803E8A325C64F4E50206291A77D2E09DBE2D6111F4899940A5AD0857AD531F43875C5984C9075713C2C409B4834BC366D</password>
 <server_codepage>iso-8859-1</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -58,8 +58,8 @@ ActaName_3 = 'RDescription',ActaValue_3 = '' ,
 ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
-ActaName_7 = 'RDate_modified',ActaValue_7 = 'Wed Apr 24 11:26:21 2019' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Wed Apr 24 11:27:03 2019' , 
+ActaName_7 = 'RDate_modified',ActaValue_7 = 'Thu May  2 14:51:27 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Thu May  2 16:25:53 2019' , 
 ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '1' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
 ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '1' , 
@@ -115,6 +115,7 @@ REFINANCIAMIENTO DECIMAL(28, 6)  NULL ,
 SOBREGIRO DECIMAL(28, 6)  NULL , 
 REFERENCIAS_CASTIGADAS DECIMAL(11, 0)  NULL , 
 MAX_CARDS_UTIL DECIMAL(28, 6)  NULL , 
+NRO_SOLICITUD VARCHAR(255)  NULL , 
 NF_B0 DECIMAL(11, 0)  NULL , 
 MAX_BUCKET_OBS_B2TOB3 DECIMAL(11, 0)  NULL , 
 MAX_BUCKET_OBS_B4UP DECIMAL(11, 0)  NULL , 
@@ -163,25 +164,25 @@ C_B3U_6M_SUM DECIMAL(11, 0)  NULL ,
 SCORE_BUREAU_CUSCATLAN DECIMAL(28, 6)  NULL , 
 VALORES_SCORE VARCHAR(255)  NULL , 
 SYSTEMDATE DATE  NULL , 
-LOAD_DATE DATETIME(6)  NULL , 
+LOAD_DATE DATE  NULL , 
 FILENAME VARCHAR(1000)  NULL ) 
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Wed Apr 24 11:26:56 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '106' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Thu May  2 16:25:46 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '103' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '106' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '103' , 
 ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
 ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
-ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '1 Seconds' , 
+ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '3 Seconds' , 
 ActaName_8 = 'RDatabase_Object_Type',ActaValue_8 = 'TABLE' , 
 ActaName_9 = 'RTable_Type',ActaValue_9 = 'TABLE' , 
 ActaName_10 = 'RDescription',ActaValue_10 = '' , 
 ActaName_11 = 'REstimated_Row_Count',ActaValue_11 = '50000' , 
 ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'yes' , 
 ActaName_13 = 'RSavedAfterCheckOut',ActaValue_13 = 'YES' , 
-ActaName_14 = 'RDate_modified',ActaValue_14 = 'Wed Apr 24 11:26:21 2019' )
+ActaName_14 = 'RDate_modified',ActaValue_14 = 'Tue Apr 23 18:02:47 2019' )
 CREATE TABLE DS_TARGET.STG_SAT.CUS_ADM_SCORE(name VARCHAR(1024)  NULL  SET("Content_Type" = 'NAME', "Native Type" = 'String', "Required" = 'No', "XML Type" = 'ATTRIBUTE'), 
 name_1 VARCHAR(1024)  NULL  SET("Content_Type" = 'NAME', "Native Type" = 'String', "Required" = 'No', "XML Type" = 'ATTRIBUTE'), 
 id VARCHAR(1024)  NULL  SET("Native Type" = 'String', "Required" = 'No', "XML Type" = 'ATTRIBUTE'), 
@@ -357,7 +358,9 @@ END
 
 END_TRY
 END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Apr  3 14:15:33 2018', "ActaValue_6" = 'Mon Apr 22 15:40:21 2019', "InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '54', "ui_script_text" = '$L_ID_JOB_TABLE   = SQL(\'DS_CONTROL\', \'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \\\'[$P_JOBNAME]\\\'\');
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Apr  3 14:15:33 2018', "ActaValue_6" = 'Fri Aug 24 13:26:53 2018', "InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '55', "ui_script_text" = '$L_ID_JOB_TABLE   = SQL(\'DS_CONTROL\', \'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \\\'[$P_JOBNAME]\\\'\');
+
+print(\'<<<<<<<<<<<<<dmVyc2lvbjU=>>>>>>>>>>>\');
 
 IF($L_ID_JOB_TABLE IS NOT null)
 begin
@@ -376,7 +379,7 @@ RETURNS  INT
 DECLARE
      $L_ID_JOB_TABLE INT ;
 BEGIN
-$L_ID_JOB_TABLE = sql('DS_CONTROL', 'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \'[$P_JOBNAME]\'');IF (($L_ID_JOB_TABLE IS NOT  NULL ) )
+$L_ID_JOB_TABLE = sql('DS_CONTROL', 'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \'[$P_JOBNAME]\'');print('<<<<<<<<<<<<<dmVyc2lvbjU=>>>>>>>>>>>');IF (($L_ID_JOB_TABLE IS NOT  NULL ) )
 BEGIN
 $P_EXISTEJOB = 1;END
 ELSE
@@ -384,7 +387,7 @@ BEGIN
 $P_EXISTEJOB = 0;END
 RETURN $P_EXISTEJOB;
 END
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Mar 21 11:42:14 2019', "ActaValue_3" = 'Fri Apr  5 21:14:37 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Mar 21 11:42:14 2019', "ActaValue_3" = 'Thu May  2 14:56:16 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_ADM_SCR::'2776c380-e757-4bd2-8f1f-64b73f2856d6'
 BEGIN
 
@@ -485,16 +488,124 @@ GUID::'91c9e37c-f9db-47ec-a36c-bc547d8584c5' CALL TRANSFORM Reverse_Pivot() INPU
  C_B3U_6M_SUM_v VARCHAR(1024) ,
  SCORE_BUREAU_CUSCATLAN_v VARCHAR(1024) ,
  VALORES_SCORE_v VARCHAR(1024) ,
- SYSTEMDATE_v VARCHAR(1024)  )
+ SYSTEMDATE_v VARCHAR(1024) ,
+ NRO_SOLICITUD_v VARCHAR(1024) ,
+ COMB_UTILMAXMINMOBMR_CARDS_v VARCHAR(1024)  )
 )
-SET("axis_column" = 'id', "axis_value1" = 'M_BUCKET_NF', "axis_value10" = 'MESES_SOBR_CARDS', "axis_value11" = 'RATIO_UTIL_CARDS', "axis_value12" = 'V_UTIL_CARDS1', "axis_value13" = 'MR_UTIL_CARDS1', "axis_value14" = 'AGE', "axis_value15" = 'BUCKET_0_1M', "axis_value16" = 'MAXMOB_G_CARDS', "axis_value17" = 'MINMOB_G_CARDS', "axis_value18" = 'COUNT_CARDS_6M', "axis_value19" = 'COUNT_PIL_6M', "axis_value2" = 'MAX_BUCKET_OBS', "axis_value20" = 'NUMREFACT_REFI', "axis_value21" = 'NUMREFACT_SOBR', "axis_value22" = 'NUMREFACT_CARDS', "axis_value23" = 'NUMREFACT_HIPO', "axis_value24" = 'NUMREFACT_PIL', "axis_value25" = 'REFMORA_PERC_TOTALREF', "axis_value26" = 'UTIL_CARDS_ACTUAL', "axis_value27" = 'V_BAL1M9M', "axis_value28" = 'NUMREF_ALL_1', "axis_value29" = 'NUMREF_ALL_9', "axis_value3" = 'MAXMOB', "axis_value30" = 'PR_REVOL', "axis_value31" = 'PR_DECRE', "axis_value32" = 'LE_T2', "axis_value33" = 'LE_T3', "axis_value34" = 'LE_T4', "axis_value35" = 'LE_T5', "axis_value36" = 'LE_T6', "axis_value37" = 'LE_T7', "axis_value38" = 'BUCKET_0_2M', "axis_value39" = 'BUCKET_0_3M', "axis_value4" = 'TOTALREFENMORA', "axis_value40" = 'BUCKET_0_4M', "axis_value41" = 'BUCKET_0_5M', "axis_value42" = 'BUCKET_0_6M', "axis_value43" = 'BUCKET_0_7M', "axis_value44" = 'BUCKET_0_8M', "axis_value45" = 'BUCKET_0_9M', "axis_value46" = 'REFINANCIAMIENTO', "axis_value47" = 'SOBREGIRO', "axis_value48" = 'REFERENCIAS_CASTIGADAS', "axis_value49" = 'MAX_CARDS_UTIL', "axis_value5" = 'N_REF_RIESGO', "axis_value50" = 'NF_B0', "axis_value51" = 'MAX_BUCKET_OBS_B2TOB3', "axis_value52" = 'MAX_BUCKET_OBS_B4UP', "axis_value53" = 'TOTALREFENMORA_1', "axis_value54" = 'TOTALREFENMORA_2', "axis_value55" = 'TOTALREFENMORA_3UP', "axis_value56" = 'SR_1', "axis_value57" = 'ES_B_ALL1', "axis_value58" = 'REFINANCIAMIENTO_SC', "axis_value59" = 'SOBREGIRO_SC', "axis_value6" = 'UTIL_CARDS_T1', "axis_value60" = 'REFERENCIAS_CASTIGADAS_SC', "axis_value61" = 'PR_REVOL_1DOWN', "axis_value62" = 'PR_DECRE_90DOWN', "axis_value63" = 'NUEVAS_REFERENCIAS', "axis_value64" = 'V_BAL1M9M_B0', "axis_value65" = 'ON_THE_EDGE', "axis_value66" = 'ROLL_BACK_ART', "axis_value67" = 'REFMORA_PERC_TOTALREF_52UP', "axis_value68" = 'COMB_UTILMAXMOB_CARDS', "axis_value69" = 'C_B3U_6M_1TO2', "axis_value7" = 'MAX_MR_U_CARDS', "axis_value70" = 'C_B3U_6M_3UP', "axis_value71" = 'C_NREFI_NSOBR_NPIL_YCARDS', "axis_value72" = 'C_NREFI_NSOBR_YPIL_YCARDS_YHIPO', "axis_value73" = 'UTIL_CARDS_T1_0TO29', "axis_value74" = 'NUMREFMORA_CARDS_NOT0', "axis_value75" = 'MAX_SOBRG_CARDS_EQUAL2', "axis_value76" = 'MAX_SOBRG_CARDS_3UP', "axis_value77" = 'MAX_MR_U_CARDS_77DOWN', "axis_value78" = 'MAX_MR_U_CARDS_115UP', "axis_value79" = 'RATIO_UTIL_CARDS_77DOWN', "axis_value8" = 'NUMREFMORA_CARDS', "axis_value80" = 'N_REF_RIESGO_1UP', "axis_value81" = 'V_UTIL_CARDS1_LESS', "axis_value82" = 'MAXMOB_G_CARDS_9DOWN', "axis_value83" = 'MAXMOB_13DOWN', "axis_value84" = 'AGE_58UP', "axis_value85" = 'AGE_27DOWN', "axis_value86" = 'MESES_SOBR_CARDS_2UP_FN', "axis_value87" = 'MINMOB_G_CARDS_48UP', "axis_value88" = 'MR_UTIL_CARDS1_43DOWN', "axis_value89" = 'PIL_CARDS_6M', "axis_value9" = 'MAX_SOBRG_CARDS', "axis_value90" = 'BETA', "axis_value91" = 'SCORE_LOG', "axis_value92" = 'MEJORA', "axis_value93" = 'C_B3U_6M_SUM', "axis_value94" = 'SCORE_BUREAU_CUSCATLAN', "axis_value95" = 'VALORES_SCORE', "axis_value96" = 'SYSTEMDATE', "collision_resolution" = 'Last_Row', "nonpivot_column1" = 'DI_FILENAME', "pivot_column1" = 'v', "pivot_column_default1" = '0', "pivot_column_prefix1" = 'M_BUCKET_NF', "pivot_column_prefix10" = 'MESES_SOBR_CARDS', "pivot_column_prefix11" = 'RATIO_UTIL_CARDS', "pivot_column_prefix12" = 'V_UTIL_CARDS1', "pivot_column_prefix13" = 'MR_UTIL_CARDS1', "pivot_column_prefix14" = 'AGE', "pivot_column_prefix15" = 'BUCKET_0_1M', "pivot_column_prefix16" = 'MAXMOB_G_CARDS', "pivot_column_prefix17" = 'MINMOB_G_CARDS', "pivot_column_prefix18" = 'COUNT_CARDS_6M', "pivot_column_prefix19" = 'COUNT_PIL_6M', "pivot_column_prefix2" = 'MAX_BUCKET_OBS', "pivot_column_prefix20" = 'NUMREFACT_REFI', "pivot_column_prefix21" = 'NUMREFACT_SOBR', "pivot_column_prefix22" = 'NUMREFACT_CARDS', "pivot_column_prefix23" = 'NUMREFACT_HIPO', "pivot_column_prefix24" = 'NUMREFACT_PIL', "pivot_column_prefix25" = 'REFMORA_PERC_TOTALREF', "pivot_column_prefix26" = 'UTIL_CARDS_ACTUAL', "pivot_column_prefix27" = 'V_BAL1M9M', "pivot_column_prefix28" = 'NUMREF_ALL_1', "pivot_column_prefix29" = 'NUMREF_ALL_9', "pivot_column_prefix3" = 'MAXMOB', "pivot_column_prefix30" = 'PR_REVOL', "pivot_column_prefix31" = 'PR_DECRE', "pivot_column_prefix32" = 'LE_T2', "pivot_column_prefix33" = 'LE_T3', "pivot_column_prefix34" = 'LE_T4', "pivot_column_prefix35" = 'LE_T5', "pivot_column_prefix36" = 'LE_T6', "pivot_column_prefix37" = 'LE_T7', "pivot_column_prefix38" = 'BUCKET_0_2M', "pivot_column_prefix39" = 'BUCKET_0_3M', "pivot_column_prefix4" = 'TOTALREFENMORA', "pivot_column_prefix40" = 'BUCKET_0_4M', "pivot_column_prefix41" = 'BUCKET_0_5M', "pivot_column_prefix42" = 'BUCKET_0_6M', "pivot_column_prefix43" = 'BUCKET_0_7M', "pivot_column_prefix44" = 'BUCKET_0_8M', "pivot_column_prefix45" = 'BUCKET_0_9M', "pivot_column_prefix46" = 'REFINANCIAMIENTO', "pivot_column_prefix47" = 'SOBREGIRO', "pivot_column_prefix48" = 'REFERENCIAS_CASTIGADAS', "pivot_column_prefix49" = 'MAX_CARDS_UTIL', "pivot_column_prefix5" = 'N_REF_RIESGO', "pivot_column_prefix50" = 'NF_B0', "pivot_column_prefix51" = 'MAX_BUCKET_OBS_B2TOB3', "pivot_column_prefix52" = 'MAX_BUCKET_OBS_B4UP', "pivot_column_prefix53" = 'TOTALREFENMORA_1', "pivot_column_prefix54" = 'TOTALREFENMORA_2', "pivot_column_prefix55" = 'TOTALREFENMORA_3UP', "pivot_column_prefix56" = 'SR_1', "pivot_column_prefix57" = 'ES_B_ALL1', "pivot_column_prefix58" = 'REFINANCIAMIENTO_SC', "pivot_column_prefix59" = 'SOBREGIRO_SC', "pivot_column_prefix6" = 'UTIL_CARDS_T1', "pivot_column_prefix60" = 'REFERENCIAS_CASTIGADAS_SC', "pivot_column_prefix61" = 'PR_REVOL_1DOWN', "pivot_column_prefix62" = 'PR_DECRE_90DOWN', "pivot_column_prefix63" = 'NUEVAS_REFERENCIAS', "pivot_column_prefix64" = 'V_BAL1M9M_B0', "pivot_column_prefix65" = 'ON_THE_EDGE', "pivot_column_prefix66" = 'ROLL_BACK_ART', "pivot_column_prefix67" = 'REFMORA_PERC_TOTALREF_52UP', "pivot_column_prefix68" = 'COMB_UTILMAXMOB_CARDS', "pivot_column_prefix69" = 'C_B3U_6M_1TO2', "pivot_column_prefix7" = 'MAX_MR_U_CARDS', "pivot_column_prefix70" = 'C_B3U_6M_3UP', "pivot_column_prefix71" = 'C_NREFI_NSOBR_NPIL_YCARDS', "pivot_column_prefix72" = 'C_NREFI_NSOBR_YPIL_YCARDS_YHIPO', "pivot_column_prefix73" = 'UTIL_CARDS_T1_0TO29', "pivot_column_prefix74" = 'NUMREFMORA_CARDS_NOT0', "pivot_column_prefix75" = 'MAX_SOBRG_CARDS_EQUAL2', "pivot_column_prefix76" = 'MAX_SOBRG_CARDS_3UP', "pivot_column_prefix77" = 'MAX_MR_U_CARDS_77DOWN', "pivot_column_prefix78" = 'MAX_MR_U_CARDS_115UP', "pivot_column_prefix79" = 'RATIO_UTIL_CARDS_77DOWN', "pivot_column_prefix8" = 'NUMREFMORA_CARDS', "pivot_column_prefix80" = 'N_REF_RIESGO_1UP', "pivot_column_prefix81" = 'V_UTIL_CARDS1_LESS', "pivot_column_prefix82" = 'MAXMOB_G_CARDS_9DOWN', "pivot_column_prefix83" = 'MAXMOB_13DOWN', "pivot_column_prefix84" = 'AGE_58UP', "pivot_column_prefix85" = 'AGE_27DOWN', "pivot_column_prefix86" = 'MESES_SOBR_CARDS_2UP_FN', "pivot_column_prefix87" = 'MINMOB_G_CARDS_48UP', "pivot_column_prefix88" = 'MR_UTIL_CARDS1_43DOWN', "pivot_column_prefix89" = 'PIL_CARDS_6M', "pivot_column_prefix9" = 'MAX_SOBRG_CARDS', "pivot_column_prefix90" = 'BETA', "pivot_column_prefix91" = 'SCORE_LOG', "pivot_column_prefix92" = 'MEJORA', "pivot_column_prefix93" = 'C_B3U_6M_SUM', "pivot_column_prefix94" = 'SCORE_BUREAU_CUSCATLAN', "pivot_column_prefix95" = 'VALORES_SCORE', "pivot_column_prefix96" = 'SYSTEMDATE', "source_is_sorted" = 'yes', "total_axis_values" = '96');
+SET("axis_column" = 'id', "axis_value1" = 'M_BUCKET_NF', "axis_value10" = 'MESES_SOBR_CARDS', "axis_value11" = 'RATIO_UTIL_CARDS', "axis_value12" = 'V_UTIL_CARDS1', "axis_value13" = 'MR_UTIL_CARDS1', "axis_value14" = 'AGE', "axis_value15" = 'BUCKET_0_1M', "axis_value16" = 'MAXMOB_G_CARDS', "axis_value17" = 'MINMOB_G_CARDS', "axis_value18" = 'COUNT_CARDS_6M', "axis_value19" = 'COUNT_PIL_6M', "axis_value2" = 'MAX_BUCKET_OBS', "axis_value20" = 'NUMREFACT_REFI', "axis_value21" = 'NUMREFACT_SOBR', "axis_value22" = 'NUMREFACT_CARDS', "axis_value23" = 'NUMREFACT_HIPO', "axis_value24" = 'NUMREFACT_PIL', "axis_value25" = 'REFMORA_PERC_TOTALREF', "axis_value26" = 'UTIL_CARDS_ACTUAL', "axis_value27" = 'V_BAL1M9M', "axis_value28" = 'NUMREF_ALL_1', "axis_value29" = 'NUMREF_ALL_9', "axis_value3" = 'MAXMOB', "axis_value30" = 'PR_REVOL', "axis_value31" = 'PR_DECRE', "axis_value32" = 'LE_T2', "axis_value33" = 'LE_T3', "axis_value34" = 'LE_T4', "axis_value35" = 'LE_T5', "axis_value36" = 'LE_T6', "axis_value37" = 'LE_T7', "axis_value38" = 'BUCKET_0_2M', "axis_value39" = 'BUCKET_0_3M', "axis_value4" = 'TOTALREFENMORA', "axis_value40" = 'BUCKET_0_4M', "axis_value41" = 'BUCKET_0_5M', "axis_value42" = 'BUCKET_0_6M', "axis_value43" = 'BUCKET_0_7M', "axis_value44" = 'BUCKET_0_8M', "axis_value45" = 'BUCKET_0_9M', "axis_value46" = 'REFINANCIAMIENTO', "axis_value47" = 'SOBREGIRO', "axis_value48" = 'REFERENCIAS_CASTIGADAS', "axis_value49" = 'MAX_CARDS_UTIL', "axis_value5" = 'N_REF_RIESGO', "axis_value50" = 'NF_B0', "axis_value51" = 'MAX_BUCKET_OBS_B2TOB3', "axis_value52" = 'MAX_BUCKET_OBS_B4UP', "axis_value53" = 'TOTALREFENMORA_1', "axis_value54" = 'TOTALREFENMORA_2', "axis_value55" = 'TOTALREFENMORA_3UP', "axis_value56" = 'SR_1', "axis_value57" = 'ES_B_ALL1', "axis_value58" = 'REFINANCIAMIENTO_SC', "axis_value59" = 'SOBREGIRO_SC', "axis_value6" = 'UTIL_CARDS_T1', "axis_value60" = 'REFERENCIAS_CASTIGADAS_SC', "axis_value61" = 'PR_REVOL_1DOWN', "axis_value62" = 'PR_DECRE_90DOWN', "axis_value63" = 'NUEVAS_REFERENCIAS', "axis_value64" = 'V_BAL1M9M_B0', "axis_value65" = 'ON_THE_EDGE', "axis_value66" = 'ROLL_BACK_ART', "axis_value67" = 'REFMORA_PERC_TOTALREF_52UP', "axis_value68" = 'COMB_UTILMAXMOB_CARDS', "axis_value69" = 'C_B3U_6M_1TO2', "axis_value7" = 'MAX_MR_U_CARDS', "axis_value70" = 'C_B3U_6M_3UP', "axis_value71" = 'C_NREFI_NSOBR_NPIL_YCARDS', "axis_value72" = 'C_NREFI_NSOBR_YPIL_YCARDS_YHIPO', "axis_value73" = 'UTIL_CARDS_T1_0TO29', "axis_value74" = 'NUMREFMORA_CARDS_NOT0', "axis_value75" = 'MAX_SOBRG_CARDS_EQUAL2', "axis_value76" = 'MAX_SOBRG_CARDS_3UP', "axis_value77" = 'MAX_MR_U_CARDS_77DOWN', "axis_value78" = 'MAX_MR_U_CARDS_115UP', "axis_value79" = 'RATIO_UTIL_CARDS_77DOWN', "axis_value8" = 'NUMREFMORA_CARDS', "axis_value80" = 'N_REF_RIESGO_1UP', "axis_value81" = 'V_UTIL_CARDS1_LESS', "axis_value82" = 'MAXMOB_G_CARDS_9DOWN', "axis_value83" = 'MAXMOB_13DOWN', "axis_value84" = 'AGE_58UP', "axis_value85" = 'AGE_27DOWN', "axis_value86" = 'MESES_SOBR_CARDS_2UP_FN', "axis_value87" = 'MINMOB_G_CARDS_48UP', "axis_value88" = 'MR_UTIL_CARDS1_43DOWN', "axis_value89" = 'PIL_CARDS_6M', "axis_value9" = 'MAX_SOBRG_CARDS', "axis_value90" = 'BETA', "axis_value91" = 'SCORE_LOG', "axis_value92" = 'MEJORA', "axis_value93" = 'C_B3U_6M_SUM', "axis_value94" = 'SCORE_BUREAU_CUSCATLAN', "axis_value95" = 'VALORES_SCORE', "axis_value96" = 'SYSTEMDATE', "axis_value97" = 'NRO_SOLICITUD', "axis_value98" = 'COMB_UTILMAXMINMOBMR_CARDS', "collision_resolution" = 'Last_Row', "nonpivot_column1" = 'DI_FILENAME', "pivot_column1" = 'v', "pivot_column_default1" = '0', "pivot_column_prefix1" = 'M_BUCKET_NF', "pivot_column_prefix10" = 'MESES_SOBR_CARDS', "pivot_column_prefix11" = 'RATIO_UTIL_CARDS', "pivot_column_prefix12" = 'V_UTIL_CARDS1', "pivot_column_prefix13" = 'MR_UTIL_CARDS1', "pivot_column_prefix14" = 'AGE', "pivot_column_prefix15" = 'BUCKET_0_1M', "pivot_column_prefix16" = 'MAXMOB_G_CARDS', "pivot_column_prefix17" = 'MINMOB_G_CARDS', "pivot_column_prefix18" = 'COUNT_CARDS_6M', "pivot_column_prefix19" = 'COUNT_PIL_6M', "pivot_column_prefix2" = 'MAX_BUCKET_OBS', "pivot_column_prefix20" = 'NUMREFACT_REFI', "pivot_column_prefix21" = 'NUMREFACT_SOBR', "pivot_column_prefix22" = 'NUMREFACT_CARDS', "pivot_column_prefix23" = 'NUMREFACT_HIPO', "pivot_column_prefix24" = 'NUMREFACT_PIL', "pivot_column_prefix25" = 'REFMORA_PERC_TOTALREF', "pivot_column_prefix26" = 'UTIL_CARDS_ACTUAL', "pivot_column_prefix27" = 'V_BAL1M9M', "pivot_column_prefix28" = 'NUMREF_ALL_1', "pivot_column_prefix29" = 'NUMREF_ALL_9', "pivot_column_prefix3" = 'MAXMOB', "pivot_column_prefix30" = 'PR_REVOL', "pivot_column_prefix31" = 'PR_DECRE', "pivot_column_prefix32" = 'LE_T2', "pivot_column_prefix33" = 'LE_T3', "pivot_column_prefix34" = 'LE_T4', "pivot_column_prefix35" = 'LE_T5', "pivot_column_prefix36" = 'LE_T6', "pivot_column_prefix37" = 'LE_T7', "pivot_column_prefix38" = 'BUCKET_0_2M', "pivot_column_prefix39" = 'BUCKET_0_3M', "pivot_column_prefix4" = 'TOTALREFENMORA', "pivot_column_prefix40" = 'BUCKET_0_4M', "pivot_column_prefix41" = 'BUCKET_0_5M', "pivot_column_prefix42" = 'BUCKET_0_6M', "pivot_column_prefix43" = 'BUCKET_0_7M', "pivot_column_prefix44" = 'BUCKET_0_8M', "pivot_column_prefix45" = 'BUCKET_0_9M', "pivot_column_prefix46" = 'REFINANCIAMIENTO', "pivot_column_prefix47" = 'SOBREGIRO', "pivot_column_prefix48" = 'REFERENCIAS_CASTIGADAS', "pivot_column_prefix49" = 'MAX_CARDS_UTIL', "pivot_column_prefix5" = 'N_REF_RIESGO', "pivot_column_prefix50" = 'NF_B0', "pivot_column_prefix51" = 'MAX_BUCKET_OBS_B2TOB3', "pivot_column_prefix52" = 'MAX_BUCKET_OBS_B4UP', "pivot_column_prefix53" = 'TOTALREFENMORA_1', "pivot_column_prefix54" = 'TOTALREFENMORA_2', "pivot_column_prefix55" = 'TOTALREFENMORA_3UP', "pivot_column_prefix56" = 'SR_1', "pivot_column_prefix57" = 'ES_B_ALL1', "pivot_column_prefix58" = 'REFINANCIAMIENTO_SC', "pivot_column_prefix59" = 'SOBREGIRO_SC', "pivot_column_prefix6" = 'UTIL_CARDS_T1', "pivot_column_prefix60" = 'REFERENCIAS_CASTIGADAS_SC', "pivot_column_prefix61" = 'PR_REVOL_1DOWN', "pivot_column_prefix62" = 'PR_DECRE_90DOWN', "pivot_column_prefix63" = 'NUEVAS_REFERENCIAS', "pivot_column_prefix64" = 'V_BAL1M9M_B0', "pivot_column_prefix65" = 'ON_THE_EDGE', "pivot_column_prefix66" = 'ROLL_BACK_ART', "pivot_column_prefix67" = 'REFMORA_PERC_TOTALREF_52UP', "pivot_column_prefix68" = 'COMB_UTILMAXMOB_CARDS', "pivot_column_prefix69" = 'C_B3U_6M_1TO2', "pivot_column_prefix7" = 'MAX_MR_U_CARDS', "pivot_column_prefix70" = 'C_B3U_6M_3UP', "pivot_column_prefix71" = 'C_NREFI_NSOBR_NPIL_YCARDS', "pivot_column_prefix72" = 'C_NREFI_NSOBR_YPIL_YCARDS_YHIPO', "pivot_column_prefix73" = 'UTIL_CARDS_T1_0TO29', "pivot_column_prefix74" = 'NUMREFMORA_CARDS_NOT0', "pivot_column_prefix75" = 'MAX_SOBRG_CARDS_EQUAL2', "pivot_column_prefix76" = 'MAX_SOBRG_CARDS_3UP', "pivot_column_prefix77" = 'MAX_MR_U_CARDS_77DOWN', "pivot_column_prefix78" = 'MAX_MR_U_CARDS_115UP', "pivot_column_prefix79" = 'RATIO_UTIL_CARDS_77DOWN', "pivot_column_prefix8" = 'NUMREFMORA_CARDS', "pivot_column_prefix80" = 'N_REF_RIESGO_1UP', "pivot_column_prefix81" = 'V_UTIL_CARDS1_LESS', "pivot_column_prefix82" = 'MAXMOB_G_CARDS_9DOWN', "pivot_column_prefix83" = 'MAXMOB_13DOWN', "pivot_column_prefix84" = 'AGE_58UP', "pivot_column_prefix85" = 'AGE_27DOWN', "pivot_column_prefix86" = 'MESES_SOBR_CARDS_2UP_FN', "pivot_column_prefix87" = 'MINMOB_G_CARDS_48UP', "pivot_column_prefix88" = 'MR_UTIL_CARDS1_43DOWN', "pivot_column_prefix89" = 'PIL_CARDS_6M', "pivot_column_prefix9" = 'MAX_SOBRG_CARDS', "pivot_column_prefix90" = 'BETA', "pivot_column_prefix91" = 'SCORE_LOG', "pivot_column_prefix92" = 'MEJORA', "pivot_column_prefix93" = 'C_B3U_6M_SUM', "pivot_column_prefix94" = 'SCORE_BUREAU_CUSCATLAN', "pivot_column_prefix95" = 'VALORES_SCORE', "pivot_column_prefix96" = 'SYSTEMDATE', "pivot_column_prefix97" = 'NRO_SOLICITUD', "pivot_column_prefix98" = 'COMB_UTILMAXMINMOBMR_CARDS', "source_is_sorted" = 'yes', "total_axis_values" = '98');
 
 ALGUIComment ("InputSchema_WidthProp" = '46', "Input_1st_Column_Name" = 'Description', "Input_2nd_Column_Name" = 'Type', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = '', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>397</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '42', "x" = '90', "y" = '-90')
 GUID::'b93298bb-f88d-4c72-b1c0-676bf16a1505' READ TABLE DS_TARGET.STG_SAT.CUS_ADM_SCORE OUTPUT(CUS_ADM_SCORE)
 SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
 
-ALGUIComment ("InputSchema_WidthProp" = '46', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>619</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "x" = '1260', "y" = '-90')
-GUID::'b2714c45-9651-4046-b492-e4ff5bad1478' LOAD TABLE DS_TARGET.SAT.CUS_ADM_SCORE INPUT(Query)
+ALGUIComment ("InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Name" = '318', "Input_Width_Type" = '95', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Name" = '274', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "ui_acta_from_schema_0" = 'REV_PIV_01', "x" = '870', "y" = '-90')
+GUID::'97125c44-94b6-4d77-a6f8-f625fa4589f2' CREATE VIEW Query( M_BUCKET_NF DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.M_BUCKET_NF_v') ,
+ MAX_BUCKET_OBS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.MAX_BUCKET_OBS_v') ,
+ MAXMOB DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.MAXMOB_v') ,
+ TOTALREFENMORA DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.TOTALREFENMORA_v') ,
+ N_REF_RIESGO DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.N_REF_RIESGO_v') ,
+ UTIL_CARDS_T1 DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.UTIL_CARDS_T1_v') ,
+ MAX_MR_U_CARDS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.MAX_MR_U_CARDS_v') ,
+ NUMREFMORA_CARDS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.NUMREFMORA_CARDS_v') ,
+ MAX_SOBRG_CARDS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.MAX_SOBRG_CARDS_v') ,
+ MESES_SOBR_CARDS DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MESES_SOBR_CARDS_v') ,
+ RATIO_UTIL_CARDS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.RATIO_UTIL_CARDS_v') ,
+ V_UTIL_CARDS1 DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.V_UTIL_CARDS1_v') ,
+ MR_UTIL_CARDS1 DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.MR_UTIL_CARDS1_v') ,
+ AGE DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.AGE_v') ,
+ BUCKET_0_1M DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.BUCKET_0_1M_v') ,
+ MAXMOB_G_CARDS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.MAXMOB_G_CARDS_v') ,
+ MINMOB_G_CARDS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.MINMOB_G_CARDS_v') ,
+ COUNT_CARDS_6M DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.COUNT_CARDS_6M_v') ,
+ COUNT_PIL_6M DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.COUNT_PIL_6M_v') ,
+ NUMREFACT_REFI DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.NUMREFACT_REFI_v') ,
+ NUMREFACT_SOBR DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.NUMREFACT_SOBR_v') ,
+ NUMREFACT_CARDS DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.NUMREFACT_CARDS_v') ,
+ NUMREFACT_HIPO DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.NUMREFACT_HIPO_v') ,
+ NUMREFACT_PIL DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.NUMREFACT_PIL_v') ,
+ REFMORA_PERC_TOTALREF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.REFMORA_PERC_TOTALREF_v') ,
+ UTIL_CARDS_ACTUAL DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.UTIL_CARDS_ACTUAL_v') ,
+ V_BAL1M9M DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.V_BAL1M9M_v') ,
+ NUMREF_ALL_1 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.NUMREF_ALL_1_v') ,
+ NUMREF_ALL_9 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.NUMREF_ALL_9_v') ,
+ PR_REVOL DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.PR_REVOL_v') ,
+ PR_DECRE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.PR_DECRE_v') ,
+ LE_T2 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.LE_T2_v') ,
+ LE_T3 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.LE_T3_v') ,
+ LE_T4 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.LE_T4_v') ,
+ LE_T5 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.LE_T5_v') ,
+ LE_T6 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.LE_T6_v') ,
+ LE_T7 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.LE_T7_v') ,
+ BUCKET_0_2M DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.BUCKET_0_2M_v') ,
+ BUCKET_0_3M DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.BUCKET_0_3M_v') ,
+ BUCKET_0_4M DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.BUCKET_0_4M_v') ,
+ BUCKET_0_5M DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.BUCKET_0_5M_v') ,
+ BUCKET_0_6M DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.BUCKET_0_6M_v') ,
+ BUCKET_0_7M DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.BUCKET_0_7M_v') ,
+ BUCKET_0_8M DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.BUCKET_0_8M_v') ,
+ BUCKET_0_9M DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.BUCKET_0_9M_v') ,
+ REFINANCIAMIENTO DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.REFINANCIAMIENTO_v') ,
+ SOBREGIRO DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.SOBREGIRO_v') ,
+ REFERENCIAS_CASTIGADAS DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.REFERENCIAS_CASTIGADAS_v') ,
+ MAX_CARDS_UTIL DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.MAX_CARDS_UTIL_v') ,
+ NRO_SOLICITUD VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_01.NRO_SOLICITUD_v') ,
+ NF_B0 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.NF_B0_v') ,
+ MAX_BUCKET_OBS_B2TOB3 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MAX_BUCKET_OBS_B2TOB3_v') ,
+ MAX_BUCKET_OBS_B4UP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MAX_BUCKET_OBS_B4UP_v') ,
+ TOTALREFENMORA_1 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.TOTALREFENMORA_1_v') ,
+ TOTALREFENMORA_2 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.TOTALREFENMORA_2_v') ,
+ TOTALREFENMORA_3UP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.TOTALREFENMORA_3UP_v') ,
+ SR_1 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.SR_1_v') ,
+ ES_B_ALL1 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.ES_B_ALL1_v') ,
+ REFINANCIAMIENTO_SC DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.REFINANCIAMIENTO_SC_v') ,
+ SOBREGIRO_SC DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.SOBREGIRO_SC_v') ,
+ REFERENCIAS_CASTIGADAS_SC DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.REFERENCIAS_CASTIGADAS_SC_v') ,
+ PR_REVOL_1DOWN DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.PR_REVOL_1DOWN_v') ,
+ PR_DECRE_90DOWN DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.PR_DECRE_90DOWN_v') ,
+ NUEVAS_REFERENCIAS DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.NUEVAS_REFERENCIAS_v') ,
+ V_BAL1M9M_B0 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.V_BAL1M9M_B0_v') ,
+ ON_THE_EDGE DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.ON_THE_EDGE_v') ,
+ ROLL_BACK_ART DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.ROLL_BACK_ART_v') ,
+ REFMORA_PERC_TOTALREF_52UP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.REFMORA_PERC_TOTALREF_52UP_v') ,
+ COMB_UTILMAXMOB_CARDS DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.COMB_UTILMAXMOB_CARDS_v') ,
+ COMB_UTILMAXMINMOBMR_CARDS DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.COMB_UTILMAXMINMOBMR_CARDS_v') ,
+ C_B3U_6M_1TO2 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.C_B3U_6M_1TO2_v') ,
+ C_B3U_6M_3UP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.C_B3U_6M_3UP_v') ,
+ C_NREFI_NSOBR_NPIL_YCARDS DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.C_NREFI_NSOBR_NPIL_YCARDS_v') ,
+ C_NREFI_NSOBR_YPIL_YCARDS_YHIPO DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.C_NREFI_NSOBR_YPIL_YCARDS_YHIPO_v') ,
+ UTIL_CARDS_T1_0TO29 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.UTIL_CARDS_T1_0TO29_v') ,
+ NUMREFMORA_CARDS_NOT0 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.NUMREFMORA_CARDS_NOT0_v') ,
+ MAX_SOBRG_CARDS_EQUAL2 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MAX_SOBRG_CARDS_EQUAL2_v') ,
+ MAX_SOBRG_CARDS_3UP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MAX_SOBRG_CARDS_3UP_v') ,
+ MAX_MR_U_CARDS_77DOWN DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MAX_MR_U_CARDS_77DOWN_v') ,
+ MAX_MR_U_CARDS_115UP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MAX_MR_U_CARDS_115UP_v') ,
+ RATIO_UTIL_CARDS_77DOWN DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.RATIO_UTIL_CARDS_77DOWN_v') ,
+ N_REF_RIESGO_1UP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.N_REF_RIESGO_1UP_v') ,
+ V_UTIL_CARDS1_LESS DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.V_UTIL_CARDS1_LESS_v') ,
+ MAXMOB_G_CARDS_9DOWN DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MAXMOB_G_CARDS_9DOWN_v') ,
+ MAXMOB_13DOWN DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MAXMOB_13DOWN_v') ,
+ AGE_58UP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.AGE_58UP_v') ,
+ AGE_27DOWN DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.AGE_27DOWN_v') ,
+ MESES_SOBR_CARDS_2UP_FN DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MESES_SOBR_CARDS_2UP_FN_v') ,
+ MINMOB_G_CARDS_48UP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MINMOB_G_CARDS_48UP_v') ,
+ MR_UTIL_CARDS1_43DOWN DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MR_UTIL_CARDS1_43DOWN_v') ,
+ PIL_CARDS_6M DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.PIL_CARDS_6M_v') ,
+ BETA DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.BETA_v') ,
+ SCORE_LOG DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.SCORE_LOG_v') ,
+ MEJORA DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MEJORA_v') ,
+ C_B3U_6M_SUM DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.C_B3U_6M_SUM_v') ,
+ SCORE_BUREAU_CUSCATLAN DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.SCORE_BUREAU_CUSCATLAN_v') ,
+ VALORES_SCORE VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_01.VALORES_SCORE_v') ,
+ SYSTEMDATE DATE  SET( "ui_mapping_text" = 'REV_PIV_01.SYSTEMDATE_v') ,
+ LOAD_DATE DATE  SET( "ui_mapping_text" = 'sysdate( )') ,
+ FILENAME VARCHAR(1000)  SET( "ui_mapping_text" = 'REV_PIV_01.DI_FILENAME')  )
+ AS
+SELECT REV_PIV_01.M_BUCKET_NF_v, REV_PIV_01.MAX_BUCKET_OBS_v, REV_PIV_01.MAXMOB_v, REV_PIV_01.TOTALREFENMORA_v, REV_PIV_01.N_REF_RIESGO_v, REV_PIV_01.UTIL_CARDS_T1_v, REV_PIV_01.MAX_MR_U_CARDS_v, REV_PIV_01.NUMREFMORA_CARDS_v, REV_PIV_01.MAX_SOBRG_CARDS_v, REV_PIV_01.MESES_SOBR_CARDS_v, REV_PIV_01.RATIO_UTIL_CARDS_v, REV_PIV_01.V_UTIL_CARDS1_v, REV_PIV_01.MR_UTIL_CARDS1_v, REV_PIV_01.AGE_v, REV_PIV_01.BUCKET_0_1M_v, REV_PIV_01.MAXMOB_G_CARDS_v, REV_PIV_01.MINMOB_G_CARDS_v, REV_PIV_01.COUNT_CARDS_6M_v, REV_PIV_01.COUNT_PIL_6M_v, REV_PIV_01.NUMREFACT_REFI_v, REV_PIV_01.NUMREFACT_SOBR_v, REV_PIV_01.NUMREFACT_CARDS_v, REV_PIV_01.NUMREFACT_HIPO_v, REV_PIV_01.NUMREFACT_PIL_v, REV_PIV_01.REFMORA_PERC_TOTALREF_v, REV_PIV_01.UTIL_CARDS_ACTUAL_v, REV_PIV_01.V_BAL1M9M_v, REV_PIV_01.NUMREF_ALL_1_v, REV_PIV_01.NUMREF_ALL_9_v, REV_PIV_01.PR_REVOL_v, REV_PIV_01.PR_DECRE_v, REV_PIV_01.LE_T2_v, REV_PIV_01.LE_T3_v, REV_PIV_01.LE_T4_v, REV_PIV_01.LE_T5_v, REV_PIV_01.LE_T6_v, REV_PIV_01.LE_T7_v, REV_PIV_01.BUCKET_0_2M_v, REV_PIV_01.BUCKET_0_3M_v, REV_PIV_01.BUCKET_0_4M_v, REV_PIV_01.BUCKET_0_5M_v, REV_PIV_01.BUCKET_0_6M_v, REV_PIV_01.BUCKET_0_7M_v, REV_PIV_01.BUCKET_0_8M_v, REV_PIV_01.BUCKET_0_9M_v, REV_PIV_01.REFINANCIAMIENTO_v, REV_PIV_01.SOBREGIRO_v, REV_PIV_01.REFERENCIAS_CASTIGADAS_v, REV_PIV_01.MAX_CARDS_UTIL_v, REV_PIV_01.NRO_SOLICITUD_v, REV_PIV_01.NF_B0_v, REV_PIV_01.MAX_BUCKET_OBS_B2TOB3_v, REV_PIV_01.MAX_BUCKET_OBS_B4UP_v, REV_PIV_01.TOTALREFENMORA_1_v, REV_PIV_01.TOTALREFENMORA_2_v, REV_PIV_01.TOTALREFENMORA_3UP_v, REV_PIV_01.SR_1_v, REV_PIV_01.ES_B_ALL1_v, REV_PIV_01.REFINANCIAMIENTO_SC_v, REV_PIV_01.SOBREGIRO_SC_v, REV_PIV_01.REFERENCIAS_CASTIGADAS_SC_v, REV_PIV_01.PR_REVOL_1DOWN_v, REV_PIV_01.PR_DECRE_90DOWN_v, REV_PIV_01.NUEVAS_REFERENCIAS_v, REV_PIV_01.V_BAL1M9M_B0_v, REV_PIV_01.ON_THE_EDGE_v, REV_PIV_01.ROLL_BACK_ART_v, REV_PIV_01.REFMORA_PERC_TOTALREF_52UP_v, REV_PIV_01.COMB_UTILMAXMOB_CARDS_v, REV_PIV_01.COMB_UTILMAXMINMOBMR_CARDS_v, REV_PIV_01.C_B3U_6M_1TO2_v, REV_PIV_01.C_B3U_6M_3UP_v, REV_PIV_01.C_NREFI_NSOBR_NPIL_YCARDS_v, REV_PIV_01.C_NREFI_NSOBR_YPIL_YCARDS_YHIPO_v, REV_PIV_01.UTIL_CARDS_T1_0TO29_v, REV_PIV_01.NUMREFMORA_CARDS_NOT0_v, REV_PIV_01.MAX_SOBRG_CARDS_EQUAL2_v, REV_PIV_01.MAX_SOBRG_CARDS_3UP_v, REV_PIV_01.MAX_MR_U_CARDS_77DOWN_v, REV_PIV_01.MAX_MR_U_CARDS_115UP_v, REV_PIV_01.RATIO_UTIL_CARDS_77DOWN_v, REV_PIV_01.N_REF_RIESGO_1UP_v, REV_PIV_01.V_UTIL_CARDS1_LESS_v, REV_PIV_01.MAXMOB_G_CARDS_9DOWN_v, REV_PIV_01.MAXMOB_13DOWN_v, REV_PIV_01.AGE_58UP_v, REV_PIV_01.AGE_27DOWN_v, REV_PIV_01.MESES_SOBR_CARDS_2UP_FN_v, REV_PIV_01.MINMOB_G_CARDS_48UP_v, REV_PIV_01.MR_UTIL_CARDS1_43DOWN_v, REV_PIV_01.PIL_CARDS_6M_v, REV_PIV_01.BETA_v, REV_PIV_01.SCORE_LOG_v, REV_PIV_01.MEJORA_v, REV_PIV_01.C_B3U_6M_SUM_v, REV_PIV_01.SCORE_BUREAU_CUSCATLAN_v, REV_PIV_01.VALORES_SCORE_v, REV_PIV_01.SYSTEMDATE_v, sysdate(), REV_PIV_01.DI_FILENAME FROM REV_PIV_01 
+SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
+;
+
+ALGUIComment ("InputSchema_WidthProp" = '46', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>441</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "x" = '1260', "y" = '-90')
+GUID::'8e0f3dc9-5b05-47d2-a228-2e9fe0953fa4' LOAD TABLE DS_TARGET.SAT.CUS_ADM_SCORE INPUT(Query)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
@@ -544,110 +655,6 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 <sql_text></sql_text>
 </LDRConfiguration>
 </LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
-
-ALGUIComment ("InputSchema_WidthProp" = '46', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "ui_acta_from_schema_0" = 'REV_PIV_01', "x" = '870', "y" = '-90')
-GUID::'4005bb27-c8b4-4335-bd2d-da4f89d7c026' CREATE VIEW Query( M_BUCKET_NF DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.M_BUCKET_NF_v') ,
- MAX_BUCKET_OBS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.MAX_BUCKET_OBS_v') ,
- MAXMOB DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.MAXMOB_v') ,
- TOTALREFENMORA DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.TOTALREFENMORA_v') ,
- N_REF_RIESGO DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.N_REF_RIESGO_v') ,
- UTIL_CARDS_T1 DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.UTIL_CARDS_T1_v') ,
- MAX_MR_U_CARDS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.MAX_MR_U_CARDS_v') ,
- NUMREFMORA_CARDS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.NUMREFMORA_CARDS_v') ,
- MAX_SOBRG_CARDS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.MAX_SOBRG_CARDS_v') ,
- MESES_SOBR_CARDS DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MESES_SOBR_CARDS_v') ,
- RATIO_UTIL_CARDS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.RATIO_UTIL_CARDS_v') ,
- V_UTIL_CARDS1 DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.V_UTIL_CARDS1_v') ,
- MR_UTIL_CARDS1 DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.MR_UTIL_CARDS1_v') ,
- AGE DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.AGE_v') ,
- BUCKET_0_1M DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.BUCKET_0_1M_v') ,
- MAXMOB_G_CARDS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.MAXMOB_G_CARDS_v') ,
- MINMOB_G_CARDS DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.MINMOB_G_CARDS_v') ,
- COUNT_CARDS_6M DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.COUNT_CARDS_6M_v') ,
- COUNT_PIL_6M DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.COUNT_PIL_6M_v') ,
- NUMREFACT_REFI DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.NUMREFACT_REFI_v') ,
- NUMREFACT_SOBR DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.NUMREFACT_SOBR_v') ,
- NUMREFACT_CARDS DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.NUMREFACT_CARDS_v') ,
- NUMREFACT_HIPO DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.NUMREFACT_HIPO_v') ,
- NUMREFACT_PIL DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.NUMREFACT_PIL_v') ,
- REFMORA_PERC_TOTALREF DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.REFMORA_PERC_TOTALREF_v') ,
- UTIL_CARDS_ACTUAL DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.UTIL_CARDS_ACTUAL_v') ,
- V_BAL1M9M DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.V_BAL1M9M_v') ,
- NUMREF_ALL_1 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.NUMREF_ALL_1_v') ,
- NUMREF_ALL_9 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.NUMREF_ALL_9_v') ,
- PR_REVOL DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.PR_REVOL_v') ,
- PR_DECRE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.PR_DECRE_v') ,
- LE_T2 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.LE_T2_v') ,
- LE_T3 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.LE_T3_v') ,
- LE_T4 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.LE_T4_v') ,
- LE_T5 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.LE_T5_v') ,
- LE_T6 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.LE_T6_v') ,
- LE_T7 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.LE_T7_v') ,
- BUCKET_0_2M DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.BUCKET_0_2M_v') ,
- BUCKET_0_3M DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.BUCKET_0_3M_v') ,
- BUCKET_0_4M DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.BUCKET_0_4M_v') ,
- BUCKET_0_5M DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.BUCKET_0_5M_v') ,
- BUCKET_0_6M DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.BUCKET_0_6M_v') ,
- BUCKET_0_7M DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.BUCKET_0_7M_v') ,
- BUCKET_0_8M DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.BUCKET_0_8M_v') ,
- BUCKET_0_9M DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.BUCKET_0_9M_v') ,
- REFINANCIAMIENTO DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.REFINANCIAMIENTO_v') ,
- SOBREGIRO DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.SOBREGIRO_v') ,
- REFERENCIAS_CASTIGADAS DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.REFERENCIAS_CASTIGADAS_v') ,
- MAX_CARDS_UTIL DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.MAX_CARDS_UTIL_v') ,
- NF_B0 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.NF_B0_v') ,
- MAX_BUCKET_OBS_B2TOB3 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MAX_BUCKET_OBS_B2TOB3_v') ,
- MAX_BUCKET_OBS_B4UP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MAX_BUCKET_OBS_B4UP_v') ,
- TOTALREFENMORA_1 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.TOTALREFENMORA_1_v') ,
- TOTALREFENMORA_2 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.TOTALREFENMORA_2_v') ,
- TOTALREFENMORA_3UP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.TOTALREFENMORA_3UP_v') ,
- SR_1 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.SR_1_v') ,
- ES_B_ALL1 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.ES_B_ALL1_v') ,
- REFINANCIAMIENTO_SC DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.REFINANCIAMIENTO_SC_v') ,
- SOBREGIRO_SC DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.SOBREGIRO_SC_v') ,
- REFERENCIAS_CASTIGADAS_SC DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.REFERENCIAS_CASTIGADAS_SC_v') ,
- PR_REVOL_1DOWN DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.PR_REVOL_1DOWN_v') ,
- PR_DECRE_90DOWN DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.PR_DECRE_90DOWN_v') ,
- NUEVAS_REFERENCIAS DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.NUEVAS_REFERENCIAS_v') ,
- V_BAL1M9M_B0 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.V_BAL1M9M_B0_v') ,
- ON_THE_EDGE DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.ON_THE_EDGE_v') ,
- ROLL_BACK_ART DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.ROLL_BACK_ART_v') ,
- REFMORA_PERC_TOTALREF_52UP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.REFMORA_PERC_TOTALREF_52UP_v') ,
- COMB_UTILMAXMOB_CARDS DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.COMB_UTILMAXMOB_CARDS_v') ,
- C_B3U_6M_1TO2 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.C_B3U_6M_1TO2_v') ,
- C_B3U_6M_3UP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.C_B3U_6M_3UP_v') ,
- C_NREFI_NSOBR_NPIL_YCARDS DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.C_NREFI_NSOBR_NPIL_YCARDS_v') ,
- C_NREFI_NSOBR_YPIL_YCARDS_YHIPO DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.C_NREFI_NSOBR_YPIL_YCARDS_YHIPO_v') ,
- UTIL_CARDS_T1_0TO29 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.UTIL_CARDS_T1_0TO29_v') ,
- NUMREFMORA_CARDS_NOT0 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.NUMREFMORA_CARDS_NOT0_v') ,
- MAX_SOBRG_CARDS_EQUAL2 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MAX_SOBRG_CARDS_EQUAL2_v') ,
- MAX_SOBRG_CARDS_3UP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MAX_SOBRG_CARDS_3UP_v') ,
- MAX_MR_U_CARDS_77DOWN DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MAX_MR_U_CARDS_77DOWN_v') ,
- MAX_MR_U_CARDS_115UP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MAX_MR_U_CARDS_115UP_v') ,
- RATIO_UTIL_CARDS_77DOWN DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.RATIO_UTIL_CARDS_77DOWN_v') ,
- N_REF_RIESGO_1UP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.N_REF_RIESGO_1UP_v') ,
- V_UTIL_CARDS1_LESS DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.V_UTIL_CARDS1_LESS_v') ,
- MAXMOB_G_CARDS_9DOWN DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MAXMOB_G_CARDS_9DOWN_v') ,
- MAXMOB_13DOWN DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MAXMOB_13DOWN_v') ,
- AGE_58UP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.AGE_58UP_v') ,
- AGE_27DOWN DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.AGE_27DOWN_v') ,
- MESES_SOBR_CARDS_2UP_FN DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MESES_SOBR_CARDS_2UP_FN_v') ,
- MINMOB_G_CARDS_48UP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MINMOB_G_CARDS_48UP_v') ,
- MR_UTIL_CARDS1_43DOWN DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MR_UTIL_CARDS1_43DOWN_v') ,
- PIL_CARDS_6M DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.PIL_CARDS_6M_v') ,
- BETA DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.BETA_v') ,
- SCORE_LOG DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.SCORE_LOG_v') ,
- MEJORA DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.MEJORA_v') ,
- C_B3U_6M_SUM DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_01.C_B3U_6M_SUM_v') ,
- SCORE_BUREAU_CUSCATLAN DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_01.SCORE_BUREAU_CUSCATLAN_v') ,
- VALORES_SCORE VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_01.VALORES_SCORE_v') ,
- SYSTEMDATE DATE  SET( "ui_mapping_text" = 'REV_PIV_01.SYSTEMDATE_v') ,
- LOAD_DATE DATETIME(9)  SET( "ui_mapping_text" = 'sysdate()') ,
- FILENAME VARCHAR(1000)  SET( "ui_mapping_text" = 'REV_PIV_01.DI_FILENAME')  )
- AS
-SELECT REV_PIV_01.M_BUCKET_NF_v, REV_PIV_01.MAX_BUCKET_OBS_v, REV_PIV_01.MAXMOB_v, REV_PIV_01.TOTALREFENMORA_v, REV_PIV_01.N_REF_RIESGO_v, REV_PIV_01.UTIL_CARDS_T1_v, REV_PIV_01.MAX_MR_U_CARDS_v, REV_PIV_01.NUMREFMORA_CARDS_v, REV_PIV_01.MAX_SOBRG_CARDS_v, REV_PIV_01.MESES_SOBR_CARDS_v, REV_PIV_01.RATIO_UTIL_CARDS_v, REV_PIV_01.V_UTIL_CARDS1_v, REV_PIV_01.MR_UTIL_CARDS1_v, REV_PIV_01.AGE_v, REV_PIV_01.BUCKET_0_1M_v, REV_PIV_01.MAXMOB_G_CARDS_v, REV_PIV_01.MINMOB_G_CARDS_v, REV_PIV_01.COUNT_CARDS_6M_v, REV_PIV_01.COUNT_PIL_6M_v, REV_PIV_01.NUMREFACT_REFI_v, REV_PIV_01.NUMREFACT_SOBR_v, REV_PIV_01.NUMREFACT_CARDS_v, REV_PIV_01.NUMREFACT_HIPO_v, REV_PIV_01.NUMREFACT_PIL_v, REV_PIV_01.REFMORA_PERC_TOTALREF_v, REV_PIV_01.UTIL_CARDS_ACTUAL_v, REV_PIV_01.V_BAL1M9M_v, REV_PIV_01.NUMREF_ALL_1_v, REV_PIV_01.NUMREF_ALL_9_v, REV_PIV_01.PR_REVOL_v, REV_PIV_01.PR_DECRE_v, REV_PIV_01.LE_T2_v, REV_PIV_01.LE_T3_v, REV_PIV_01.LE_T4_v, REV_PIV_01.LE_T5_v, REV_PIV_01.LE_T6_v, REV_PIV_01.LE_T7_v, REV_PIV_01.BUCKET_0_2M_v, REV_PIV_01.BUCKET_0_3M_v, REV_PIV_01.BUCKET_0_4M_v, REV_PIV_01.BUCKET_0_5M_v, REV_PIV_01.BUCKET_0_6M_v, REV_PIV_01.BUCKET_0_7M_v, REV_PIV_01.BUCKET_0_8M_v, REV_PIV_01.BUCKET_0_9M_v, REV_PIV_01.REFINANCIAMIENTO_v, REV_PIV_01.SOBREGIRO_v, REV_PIV_01.REFERENCIAS_CASTIGADAS_v, REV_PIV_01.MAX_CARDS_UTIL_v, REV_PIV_01.NF_B0_v, REV_PIV_01.MAX_BUCKET_OBS_B2TOB3_v, REV_PIV_01.MAX_BUCKET_OBS_B4UP_v, REV_PIV_01.TOTALREFENMORA_1_v, REV_PIV_01.TOTALREFENMORA_2_v, REV_PIV_01.TOTALREFENMORA_3UP_v, REV_PIV_01.SR_1_v, REV_PIV_01.ES_B_ALL1_v, REV_PIV_01.REFINANCIAMIENTO_SC_v, REV_PIV_01.SOBREGIRO_SC_v, REV_PIV_01.REFERENCIAS_CASTIGADAS_SC_v, REV_PIV_01.PR_REVOL_1DOWN_v, REV_PIV_01.PR_DECRE_90DOWN_v, REV_PIV_01.NUEVAS_REFERENCIAS_v, REV_PIV_01.V_BAL1M9M_B0_v, REV_PIV_01.ON_THE_EDGE_v, REV_PIV_01.ROLL_BACK_ART_v, REV_PIV_01.REFMORA_PERC_TOTALREF_52UP_v, REV_PIV_01.COMB_UTILMAXMOB_CARDS_v, REV_PIV_01.C_B3U_6M_1TO2_v, REV_PIV_01.C_B3U_6M_3UP_v, REV_PIV_01.C_NREFI_NSOBR_NPIL_YCARDS_v, REV_PIV_01.C_NREFI_NSOBR_YPIL_YCARDS_YHIPO_v, REV_PIV_01.UTIL_CARDS_T1_0TO29_v, REV_PIV_01.NUMREFMORA_CARDS_NOT0_v, REV_PIV_01.MAX_SOBRG_CARDS_EQUAL2_v, REV_PIV_01.MAX_SOBRG_CARDS_3UP_v, REV_PIV_01.MAX_MR_U_CARDS_77DOWN_v, REV_PIV_01.MAX_MR_U_CARDS_115UP_v, REV_PIV_01.RATIO_UTIL_CARDS_77DOWN_v, REV_PIV_01.N_REF_RIESGO_1UP_v, REV_PIV_01.V_UTIL_CARDS1_LESS_v, REV_PIV_01.MAXMOB_G_CARDS_9DOWN_v, REV_PIV_01.MAXMOB_13DOWN_v, REV_PIV_01.AGE_58UP_v, REV_PIV_01.AGE_27DOWN_v, REV_PIV_01.MESES_SOBR_CARDS_2UP_FN_v, REV_PIV_01.MINMOB_G_CARDS_48UP_v, REV_PIV_01.MR_UTIL_CARDS1_43DOWN_v, REV_PIV_01.PIL_CARDS_6M_v, REV_PIV_01.BETA_v, REV_PIV_01.SCORE_LOG_v, REV_PIV_01.MEJORA_v, REV_PIV_01.C_B3U_6M_SUM_v, REV_PIV_01.SCORE_BUREAU_CUSCATLAN_v, REV_PIV_01.VALORES_SCORE_v, REV_PIV_01.SYSTEMDATE_v, sysdate(), REV_PIV_01.DI_FILENAME FROM REV_PIV_01 
-SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
-;
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
@@ -742,7 +749,7 @@ SET("connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configur
 
 END
  SET ("Cache_type" = 'in_memory_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Mar 19 15:10:21 2019', "ActaValue_3" = 'Wed Apr 24 11:26:24 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Mar 19 15:10:21 2019', "ActaValue_3" = 'Thu May  2 16:30:21 2019', "x" = '-1', "y" = '-1')
 CREATE SESSION JOB_ADM_SCORE::'df01c993-8b14-4032-95ba-2a3783f05622'( )
 DECLARE
      $L_EXISTE_JOB INT ;
@@ -760,7 +767,7 @@ DECLARE
      GLOBAL $G_VAR_NUM_FILE INT ;
      GLOBAL $G_RUTA VARCHAR(200) ;
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI', "ui_script_text" = 'print(\'--version: cd59d1f\');
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI', "ui_script_text" = 'print(\'--version: b129255\');
 
 
 $G_JOB_NAME = job_name( );
@@ -776,7 +783,7 @@ $G_RUTA = $G_SH_ROUTE ;
 
 ', "x" = '90', "y" = '-90')
 BEGIN_SCRIPT
-print('--version: cd59d1f');$G_JOB_NAME = job_name();$G_FILE_LOCATION = CF_DEFINE_UBICACION();$G_SH_ROUTE = sql('DS_CONTROL', 'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%MDE%\'');$G_RUTA = $G_SH_ROUTE;END
+print('--version: b129255');$G_JOB_NAME = job_name();$G_FILE_LOCATION = CF_DEFINE_UBICACION();$G_SH_ROUTE = sql('DS_CONTROL', 'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%MDE%\'');$G_RUTA = $G_SH_ROUTE;END
  AlGUIComment ("If_condition" = 'CF_JOBNAME( $G_JOB_NAME,$L_EXISTE_JOB) = 1', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'CDN_JOB', "x" = '480', "y" = '-90')
 IF ((cf_jobname($G_JOB_NAME, $L_EXISTE_JOB) = 1) )
 BEGIN
@@ -802,7 +809,7 @@ $L_FECHA = sysdate();sql('DS_CONTROL', 'INSERT INTO LOG_EJECUCION(ERROR_NUMBER, 
 END
 END
  SET ("job_checkpoint_enabled" = 'no', "job_collect_statistics" = 'no', "job_collect_statistics_monitor" = 'no', "job_create_debug_package" = 'no', "job_enable_assemblers" = 'yes', "job_enable_audit" = 'yes', "job_enable_dataquality" = 'yes', "job_export_repo" = 'no', "job_export_reports" = 'no', "job_guid" = 'df01c993-8b14-4032-95ba-2a3783f05622', "job_isrecoverable" = 'no', "job_mode" = 'Multi-Process', "job_monitor_sample_rate" = '1000', "job_monitor_timer_rate" = '5', "job_name" = 'JOB_ADM_SCORE', "job_print_version" = 'no', "job_testmode_enabled" = 'no', "job_trace_abapquery" = 'no', "job_trace_all" = 'no', "job_trace_ascomm" = 'no', "job_trace_assemblers" = 'no', "job_trace_audit" = 'no', "job_trace_dataflow" = 'yes', "job_trace_idoc_file" = 'no', "job_trace_memory_loader" = 'no', "job_trace_memory_reader" = 'no', "job_trace_optimized_dataflow" = 'no', "job_trace_parallel_execution" = 'no', "job_trace_rfc_function" = 'no', "job_trace_row" = 'no', "job_trace_script" = 'no', "job_trace_session" = 'yes', "job_trace_sql_only" = 'no', "job_trace_sqlfunctions" = 'no', "job_trace_sqlloaders" = 'no', "job_trace_sqlreaders" = 'no', "job_trace_sqltransforms" = 'no', "job_trace_stored_procedure" = 'no', "job_trace_table" = 'no', "job_trace_table_reader" = 'no', "job_trace_transform" = 'no', "job_trace_userfunction" = 'no', "job_trace_usertransform" = 'no', "job_trace_workflow" = 'yes', "job_type" = 'batch', "job_use_statistics" = 'yes', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Apr  5 14:51:28 2019', "ActaValue_3" = 'Tue Apr 23 18:02:49 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Apr  5 14:51:28 2019', "ActaValue_3" = 'Thu May  2 16:33:12 2019', "x" = '-1', "y" = '-1')
 CREATE PLAN WF_CUS_ADM_SCORE::'7e7e1a27-d65c-4c0a-a1a5-e746a0d8425b'( )
 DECLARE
      $L_TABLE_NAME VARCHAR(100) ;
@@ -846,12 +853,12 @@ $L_TABLE_NAME = replace_substr(workflow_name(), '__', '.');$L_TABLE_NAME = repla
 TRY
 BEGIN
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>357</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_ADM_SCRE', "ui_script_text" = '
-$G_COUNTER = sql(\'DS_CONTROL\',\'SELECT isnull (MIN(ROW_ID),0) FROM CNF.FILE_LIST_MDE where loaded is null or loaded <> 1 and upper(FILENAME) like \\\'%DECHISTORY_CUS_ADM_SCORE.DAT%\\\'\');
+$G_COUNTER = sql(\'DS_CONTROL\',\'SELECT isnull (MIN(ROW_ID),0) FROM CNF.FILE_LIST_MDE where loaded is null or loaded <> 1 and upper(FILENAME) like \\\'%DECHISTORY_CUS_ADM_SCORE%\\\'\');
 
-$G_VAR_NUM_FILE = $G_COUNTER + sql(\'DS_CONTROL\',\'select count(1) from CNF.FILE_LIST_MDE where loaded is null or loaded <> 1 and upper(FILENAME) like \\\'%DECHISTORY_CUS_ADM_SCORE.DAT%\\\'\');
+$G_VAR_NUM_FILE = $G_COUNTER + sql(\'DS_CONTROL\',\'select count(1) from CNF.FILE_LIST_MDE where loaded is null or loaded <> 1 and upper(FILENAME) like \\\'%DECHISTORY_CUS_ADM_SCORE%\\\'\');
 ', "x" = '870', "y" = '-90')
 BEGIN_SCRIPT
-$G_COUNTER = sql('DS_CONTROL', 'SELECT isnull (MIN(ROW_ID),0) FROM CNF.FILE_LIST_MDE where loaded is null or loaded <> 1 and upper(FILENAME) like \'%DECHISTORY_CUS_ADM_SCORE.DAT%\'');$G_VAR_NUM_FILE = ($G_COUNTER + sql('DS_CONTROL', 'select count(1) from CNF.FILE_LIST_MDE where loaded is null or loaded <> 1 and upper(FILENAME) like \'%DECHISTORY_CUS_ADM_SCORE.DAT%\''));END
+$G_COUNTER = sql('DS_CONTROL', 'SELECT isnull (MIN(ROW_ID),0) FROM CNF.FILE_LIST_MDE where loaded is null or loaded <> 1 and upper(FILENAME) like \'%DECHISTORY_CUS_ADM_SCORE%\'');$G_VAR_NUM_FILE = ($G_COUNTER + sql('DS_CONTROL', 'select count(1) from CNF.FILE_LIST_MDE where loaded is null or loaded <> 1 and upper(FILENAME) like \'%DECHISTORY_CUS_ADM_SCORE%\''));END
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>335</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'ADM_SCRE_LOOP', "x" = '1260', "y" = '-90')
 WHILE (($G_COUNTER < $G_VAR_NUM_FILE) )
 BEGIN

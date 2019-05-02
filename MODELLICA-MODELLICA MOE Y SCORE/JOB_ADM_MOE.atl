@@ -2,7 +2,7 @@
 #__AW_Product_Version '14.2.10.1748';
 #__AW_ATL_Locale 'spa_sv.utf-8';
  AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Feb 20 15:23:05 2018', "ActaValue_3" = 'Fri Apr  6 16:33:59 2018', "x" = '-1', "y" = '-1')
-CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="ISO-8859-1" ?>
+CREATE DATABASE DATASTORE DS_CONTROL::'2578f999-bbb9-48d6-8556-cc368ba0abcd' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="WINDOWS-1252" ?>
 <DSConfigurations>
 <DSConfiguration default="true" name="Configuration1">
 <case_sensitive>yes</case_sensitive>
@@ -15,7 +15,7 @@ CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET
 <locale_codepage>&lt;default&gt;</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E8EAD85EBD2EFB22E18A3D988706B7F94CF4B647F505BD9ECFAC50070757B150C30FD04643E8599706C032B99B046C</password>
+<password>+0400000000120303000803E8863809582799AEC118145BFB72216B6537CA33636E056A6454911EFCF55F49BC1EB863F5996D8623A1A0258995AC</password>
 <server_codepage>&lt;default&gt;</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -27,7 +27,7 @@ CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET
 </DSConfigurations>
 ', "enable_data_transfer" = 'yes', "import_unknown_type" = 'no', "name" = 'DS_CONTROL', "pcache_force_utf16" = 'no', "unknown_type_size" = '255');
  AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Feb 13 15:29:23 2018', "ActaValue_3" = 'Mon Sep 17 13:36:16 2018', "x" = '-1', "y" = '-1')
-CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="ISO-8859-1" ?>
+CREATE DATABASE DATASTORE DS_TARGET::'623b7ecb-f1e5-4b99-b7f2-a028efa63f86' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="WINDOWS-1252" ?>
 <DSConfigurations>
 <DSConfiguration default="true" name="Configuration1">
 <case_sensitive>yes</case_sensitive>
@@ -40,7 +40,7 @@ CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET 
 <locale_codepage>iso-8859-1</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E86F2B852333C0327D230A31096DBC507B5D382CFE3F2D7D850C2BBB3C9AF56185059D776CD053870881E5717B9CBF</password>
+<password>+0400000000120303000803E86B799EA07FCB374C5C51695756012F2005661743B79DD22549CC26420A106E40BC6B9444A14DD1204CEB081687D1</password>
 <server_codepage>iso-8859-1</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -52,20 +52,20 @@ CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET 
 </DSConfigurations>
 ', "enable_data_transfer" = 'yes', "import_unknown_type" = 'no', "name" = 'DS_TARGET', "pcache_force_utf16" = 'no', "unknown_type_size" = '255');
 
- AlGUIComment (ActaName_1 = 'RDatabase_Object_Type',ActaValue_1 = 'TABLE' , 
-ActaName_2 = 'RTable_Type',ActaValue_2 = 'TABLE' , 
-ActaName_3 = 'RDescription',ActaValue_3 = '' , 
-ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
-ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
-ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
-ActaName_7 = 'RDate_modified',ActaValue_7 = 'Wed Apr 24 11:25:48 2019' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Wed Apr 24 11:23:24 2019' , 
-ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '1' , 
-ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
-ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '1' , 
-ActaName_12 = 'RNumber_Of_Updates',ActaValue_12 = '0' , 
-ActaName_13 = 'RNumber_Of_Deletes',ActaValue_13 = '0' , 
-ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '4 Seconds' )
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Thu May  2 16:40:52 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '1' , 
+ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '1' , 
+ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
+ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
+ActaName_7 = 'RDatabase_Object_Type',ActaValue_7 = 'TABLE' , 
+ActaName_8 = 'RTable_Type',ActaValue_8 = 'TABLE' , 
+ActaName_9 = 'RDescription',ActaValue_9 = '' , 
+ActaName_10 = 'REstimated_Row_Count',ActaValue_10 = '50000' , 
+ActaName_11 = 'RSavedAfterCheckOut',ActaValue_11 = 'YES' , 
+ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'no' , 
+ActaName_13 = 'RDate_modified',ActaValue_13 = 'Thu May  2 14:22:46 2019' , 
+ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '9 Seconds' )
 CREATE TABLE DS_TARGET.SAT.CUS_ADM_MOE(EDAD DECIMAL(28, 6)  NULL , 
 TIPO_CLIENTE DECIMAL(11, 0)  NULL , 
 POLICY_INDICATOR DECIMAL(11, 0)  NULL , 
@@ -80,6 +80,12 @@ FORZAJE_SCORE DECIMAL(11, 0)  NULL ,
 TIPO_PCCD DECIMAL(11, 0)  NULL , 
 PERFIL_CLIENTE VARCHAR(255)  NULL , 
 MATCH_INTERNO DECIMAL(11, 0)  NULL , 
+GRADUADO VARCHAR(255)  NULL , 
+UNIVERSIDAD VARCHAR(255)  NULL , 
+GARANTIA_DEPOSITO DECIMAL(28, 6)  NULL , 
+MISMA_EMPRESA DECIMAL(11, 0)  NULL , 
+INGRESO_BASE DECIMAL(28, 6)  NULL , 
+NRO_SOLICITUD VARCHAR(255)  NULL , 
 SUMACUOTA_CARDS_SSF DECIMAL(28, 6)  NULL , 
 SUMACUOTA_HIPOTECAS_SSF DECIMAL(28, 6)  NULL , 
 SUMACUOTA_PREST_CONSUMO_SSF DECIMAL(28, 6)  NULL , 
@@ -101,6 +107,10 @@ ANTMAXTC_EQFX DECIMAL(11, 0)  NULL ,
 TC_JURIDICO_EQFX DECIMAL(11, 0)  NULL , 
 TOTAL_JUICIOS_EQFX DECIMAL(11, 0)  NULL , 
 SUMCUOACTOT_EQFX DECIMAL(11, 0)  NULL , 
+SE_CONSULTO_EQUIFAX VARCHAR(255)  NULL , 
+LIMITE_SUPERIOR_EQFX DECIMAL(28, 6)  NULL , 
+LIMITE_INFERIOR_EQFX DECIMAL(28, 6)  NULL , 
+CUARTIL_EQFX DECIMAL(11, 0)  NULL , 
 FLAG_EXPATRIADO DECIMAL(11, 0)  NULL , 
 FLAG_VIP DECIMAL(11, 0)  NULL , 
 MOB_VISA DECIMAL(11, 0)  NULL , 
@@ -205,26 +215,53 @@ PRODUCTO_AUTENTICACION VARCHAR(255)  NULL ,
 UMBRAL_SOLICITADO VARCHAR(255)  NULL , 
 VERIFICAR_IDENTIDAD VARCHAR(255)  NULL , 
 CODIGO_DOC VARCHAR(255)  NULL , 
+INGRESO_INFERIDO_EQFX DECIMAL(28, 6)  NULL , 
+FLAG_GARANTIZADA DECIMAL(11, 0)  NULL , 
+DEBE_CONSULTAR_EQUIFAX VARCHAR(255)  NULL , 
+FLAG_TIGO DECIMAL(11, 0)  NULL , 
+INGRESO_VERIFICADO DECIMAL(28, 6)  NULL , 
+MODELO_VERIFICADO VARCHAR(255)  NULL , 
 SYSTEMDATE DATE  NULL , 
-LOAD_DATE DATETIME(6)  NULL , 
+SYSTEMTIME VARCHAR(255)  NULL , 
+CLIENTSYSTEM VARCHAR(255)  NULL , 
+CLIENTTCPIP VARCHAR(255)  NULL , 
+USUARIO VARCHAR(255)  NULL , 
+RETURNSYSTEMBLOCK DECIMAL(11, 0)  NULL , 
+RETURNINPUTBLOCK DECIMAL(11, 0)  NULL , 
+RETURNINTERNALBLOCK DECIMAL(11, 0)  NULL , 
+RETURNDECISIONBLOCK DECIMAL(11, 0)  NULL , 
+APPLICATIONNUMBER VARCHAR(255)  NULL , 
+FINALSTATUS VARCHAR(255)  NULL , 
+SYSTEMID VARCHAR(255)  NULL , 
+SYSTEMCULTURE VARCHAR(255)  NULL , 
+ENGINERELEASE VARCHAR(255)  NULL , 
+WRITEDECISIONHISTORY VARCHAR(255)  NULL , 
+STEPBYSTEP VARCHAR(255)  NULL , 
+ERROR1 DECIMAL(11, 0)  NULL , 
+ERROR2 DECIMAL(11, 0)  NULL , 
+ERROR3 DECIMAL(11, 0)  NULL , 
+ERROR4 DECIMAL(11, 0)  NULL , 
+CHAMPCHALL50_50 DECIMAL(28, 6)  NULL , 
+CHAMPCHALL90_10 DECIMAL(28, 6)  NULL , 
+LOAD_DATE DATE  NULL , 
 FILENAME VARCHAR(1000)  NULL ) 
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Wed Apr 24 11:23:16 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '107' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Thu May  2 16:40:39 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '136' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '107' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '136' , 
 ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
 ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
-ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '1 Seconds' , 
+ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '3 Seconds' , 
 ActaName_8 = 'RDatabase_Object_Type',ActaValue_8 = 'TABLE' , 
 ActaName_9 = 'RTable_Type',ActaValue_9 = 'TABLE' , 
 ActaName_10 = 'RDescription',ActaValue_10 = '' , 
 ActaName_11 = 'REstimated_Row_Count',ActaValue_11 = '50000' , 
 ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'yes' , 
 ActaName_13 = 'RSavedAfterCheckOut',ActaValue_13 = 'YES' , 
-ActaName_14 = 'RDate_modified',ActaValue_14 = 'Wed Apr 24 11:25:48 2019' )
+ActaName_14 = 'RDate_modified',ActaValue_14 = 'Tue Apr 23 18:02:14 2019' )
 CREATE TABLE DS_TARGET.STG_SAT.CUS_ADM_MOE(name VARCHAR(1024)  NULL  SET("Native Type" = 'String', "Required" = 'No', "XML Type" = 'ATTRIBUTE', "ui_mapping_text" = 'mde_moe_20190322.block.name'), 
 name_1 VARCHAR(1024)  NULL  SET("Native Type" = 'String', "Required" = 'No', "XML Type" = 'ATTRIBUTE', "ui_mapping_text" = 'mde_moe_20190322.block.subdictionary.name'), 
 id VARCHAR(1024)  NULL  SET("Native Type" = 'String', "Required" = 'No', "XML Type" = 'ATTRIBUTE', "ui_mapping_text" = 'mde_moe_20190322.block.subdictionary.v.id'), 
@@ -400,7 +437,9 @@ END
 
 END_TRY
 END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Apr  3 14:15:33 2018', "ActaValue_6" = 'Mon Apr 22 15:40:21 2019', "InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '54', "ui_script_text" = '$L_ID_JOB_TABLE   = SQL(\'DS_CONTROL\', \'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \\\'[$P_JOBNAME]\\\'\');
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Apr  3 14:15:33 2018', "ActaValue_6" = 'Fri Aug 24 13:26:53 2018', "InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '55', "ui_script_text" = '$L_ID_JOB_TABLE   = SQL(\'DS_CONTROL\', \'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \\\'[$P_JOBNAME]\\\'\');
+
+print(\'<<<<<<<<<<<<<dmVyc2lvbjU=>>>>>>>>>>>\');
 
 IF($L_ID_JOB_TABLE IS NOT null)
 begin
@@ -419,7 +458,7 @@ RETURNS  INT
 DECLARE
      $L_ID_JOB_TABLE INT ;
 BEGIN
-$L_ID_JOB_TABLE = sql('DS_CONTROL', 'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \'[$P_JOBNAME]\'');IF (($L_ID_JOB_TABLE IS NOT  NULL ) )
+$L_ID_JOB_TABLE = sql('DS_CONTROL', 'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \'[$P_JOBNAME]\'');print('<<<<<<<<<<<<<dmVyc2lvbjU=>>>>>>>>>>>');IF (($L_ID_JOB_TABLE IS NOT  NULL ) )
 BEGIN
 $P_EXISTEJOB = 1;END
 ELSE
@@ -427,7 +466,7 @@ BEGIN
 $P_EXISTEJOB = 0;END
 RETURN $P_EXISTEJOB;
 END
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 22 15:50:37 2019', "ActaValue_3" = 'Mon Apr 22 15:52:48 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 22 15:50:37 2019', "ActaValue_3" = 'Thu May  2 14:32:04 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_ADM_MOE::'4ca1945a-fa04-4802-bd23-6024b39bcccb'
 BEGIN
 
@@ -447,6 +486,12 @@ GUID::'ed454d33-b2df-45e1-ae5c-7d38c311a74d' CALL TRANSFORM Reverse_Pivot() INPU
  TIPO_PCCD_v VARCHAR(1024) ,
  PERFIL_CLIENTE_v VARCHAR(1024) ,
  MATCH_INTERNO_v VARCHAR(1024) ,
+ GRADUADO_v VARCHAR(1024) ,
+ UNIVERSIDAD_v VARCHAR(1024) ,
+ GARANTIA_DEPOSITO_v VARCHAR(1024) ,
+ MISMA_EMPRESA_v VARCHAR(1024) ,
+ INGRESO_BASE_v VARCHAR(1024) ,
+ NRO_SOLICITUD_v VARCHAR(1024) ,
  SUMACUOTA_CARDS_SSF_v VARCHAR(1024) ,
  SUMACUOTA_HIPOTECAS_SSF_v VARCHAR(1024) ,
  SUMACUOTA_PREST_CONSUMO_SSF_v VARCHAR(1024) ,
@@ -468,6 +513,10 @@ GUID::'ed454d33-b2df-45e1-ae5c-7d38c311a74d' CALL TRANSFORM Reverse_Pivot() INPU
  TC_JURIDICO_EQFX_v VARCHAR(1024) ,
  TOTAL_JUICIOS_EQFX_v VARCHAR(1024) ,
  SUMCUOACTOT_EQFX_v VARCHAR(1024) ,
+ SE_CONSULTO_EQUIFAX_v VARCHAR(1024) ,
+ LIMITE_SUPERIOR_EQFX_v VARCHAR(1024) ,
+ LIMITE_INFERIOR_EQFX_v VARCHAR(1024) ,
+ CUARTIL_EQFX_v VARCHAR(1024) ,
  FLAG_EXPATRIADO_v VARCHAR(1024) ,
  FLAG_VIP_v VARCHAR(1024) ,
  MOB_VISA_v VARCHAR(1024) ,
@@ -572,16 +621,43 @@ GUID::'ed454d33-b2df-45e1-ae5c-7d38c311a74d' CALL TRANSFORM Reverse_Pivot() INPU
  UMBRAL_SOLICITADO_v VARCHAR(1024) ,
  VERIFICAR_IDENTIDAD_v VARCHAR(1024) ,
  CODIGO_DOC_v VARCHAR(1024) ,
- SYSTEMDATE_v VARCHAR(1024)  )
+ INGRESO_INFERIDO_EQFX_v VARCHAR(1024) ,
+ FLAG_GARANTIZADA_v VARCHAR(1024) ,
+ DEBE_CONSULTAR_EQUIFAX_v VARCHAR(1024) ,
+ FLAG_TIGO_v VARCHAR(1024) ,
+ INGRESO_VERIFICADO_v VARCHAR(1024) ,
+ MODELO_VERIFICADO_v VARCHAR(1024) ,
+ SYSTEMDATE_v VARCHAR(1024) ,
+ SYSTEMTIME_v VARCHAR(1024) ,
+ CLIENTSYSTEM_v VARCHAR(1024) ,
+ CLIENTTCPIP_v VARCHAR(1024) ,
+ USUARIO_v VARCHAR(1024) ,
+ RETURNSYSTEMBLOCK_v VARCHAR(1024) ,
+ RETURNINPUTBLOCK_v VARCHAR(1024) ,
+ RETURNINTERNALBLOCK_v VARCHAR(1024) ,
+ RETURNDECISIONBLOCK_v VARCHAR(1024) ,
+ APPLICATIONNUMBER_v VARCHAR(1024) ,
+ FINALSTATUS_v VARCHAR(1024) ,
+ SYSTEMID_v VARCHAR(1024) ,
+ SYSTEMCULTURE_v VARCHAR(1024) ,
+ ENGINERELEASE_v VARCHAR(1024) ,
+ WRITEDECISIONHISTORY_v VARCHAR(1024) ,
+ STEPBYSTEP_v VARCHAR(1024) ,
+ ERROR1_v VARCHAR(1024) ,
+ ERROR2_v VARCHAR(1024) ,
+ ERROR3_v VARCHAR(1024) ,
+ ERROR4_v VARCHAR(1024) ,
+ CHAMPCHALL50_50_v VARCHAR(1024) ,
+ CHAMPCHALL90_10_v VARCHAR(1024)  )
 )
-SET("axis_column" = 'id', "axis_value1" = 'EDAD', "axis_value10" = 'INGRESOS', "axis_value100" = 'DEBT_BURDEN_INICIAL_SSF', "axis_value101" = 'DEBT_BURDEN_FINAL', "axis_value102" = 'MULTIPLICADOR', "axis_value103" = 'LINEA_MAXIMA', "axis_value104" = 'MUE_DISPONIBLE', "axis_value105" = 'LIMMAXLOGO', "axis_value106" = 'LIMMINLOGO', "axis_value107" = 'LINEA_TIMESINCOME', "axis_value108" = 'LINEA_DISPDEBTBURDEN', "axis_value109" = 'LINEADISPMUE', "axis_value11" = 'FORZAJE_SCORE', "axis_value110" = 'LINEA_CAP_PRODUCTO', "axis_value111" = 'LIMITE_NUEVA_LINEA', "axis_value112" = 'EMPLEADO_CUSCATLAN', "axis_value113" = 'LINEAMINIMA', "axis_value114" = 'FLAG_NORMALSALES', "axis_value115" = 'EXPCREDITICIA_ALL', "axis_value116" = 'EXPPCCD_ALL', "axis_value117" = 'LIMITE_PCCD_EQFX', "axis_value118" = 'LIMITE_PCCD', "axis_value119" = 'EMPLEO_EMPRESA', "axis_value12" = 'TIPO_PCCD', "axis_value120" = 'GASTOS_NUEVA_LINEA', "axis_value121" = 'LIMMAXLOGO2', "axis_value122" = 'LIMMINLOGO2', "axis_value123" = 'CAP_DB', "axis_value124" = 'DEBT_BURDEN_FINAL_SSF', "axis_value125" = 'LIMITEFINAL_LINEA1', "axis_value126" = 'LIMITEFINAL_LINEA2', "axis_value127" = 'CAPACIDADEDEUDAMIENTOMENSUAL', "axis_value128" = 'DEBT_BURDEN_INICIAL_ALL', "axis_value129" = 'DEBT_BURDEN_FINAL_ALL', "axis_value13" = 'PERFIL_CLIENTE', "axis_value130" = 'TASA_X_LOGO', "axis_value131" = 'MUE_FINAL2', "axis_value132" = 'MUE_FINAL3', "axis_value133" = 'PERFIL_DOCUMENTACION', "axis_value134" = 'DOCUMENTACION', "axis_value135" = 'ESTRATEGIA_AUTENTICACION', "axis_value136" = 'PRODUCTO_AUTENTICACION', "axis_value137" = 'UMBRAL_SOLICITADO', "axis_value138" = 'VERIFICAR_IDENTIDAD', "axis_value139" = 'CODIGO_DOC', "axis_value14" = 'MATCH_INTERNO', "axis_value140" = 'SYSTEMDATE', "axis_value15" = 'SUMACUOTA_CARDS_SSF', "axis_value16" = 'SUMACUOTA_HIPOTECAS_SSF', "axis_value17" = 'SUMACUOTA_PREST_CONSUMO_SSF', "axis_value18" = 'SUMACUOTA_SOBREGIROS_SSF', "axis_value19" = 'SUMACUOTA_REFI_SSF', "axis_value2" = 'TIPO_CLIENTE', "axis_value20" = 'MORAACTUAL_ALL_SSF', "axis_value21" = 'REFERENCIA_MASANTIGUA_SSF', "axis_value22" = 'CONTEO_WO_SSF', "axis_value23" = 'LIMITEPCCD_6MESES_SSF', "axis_value24" = 'LIMITEPCCD_12MESES_SSF', "axis_value25" = 'CONTEO_REFIS_SSF', "axis_value26" = 'MAYOR_ANT_TC_SSF', "axis_value27" = 'SCORE_BUREAU_EQFX', "axis_value28" = 'LIMITEPCCD_6MESES_EQFX', "axis_value29" = 'LIMITEPCCD_12MESES_EQFX', "axis_value3" = 'POLICY_INDICATOR', "axis_value30" = 'MORAACTUAL_EQFX', "axis_value31" = 'NUMEROMESES_EQFX', "axis_value32" = 'ANTMAXTC_EQFX', "axis_value33" = 'TC_JURIDICO_EQFX', "axis_value34" = 'TOTAL_JUICIOS_EQFX', "axis_value35" = 'SUMCUOACTOT_EQFX', "axis_value36" = 'FLAG_EXPATRIADO', "axis_value37" = 'FLAG_VIP', "axis_value38" = 'MOB_VISA', "axis_value39" = 'MOB_MASTER', "axis_value4" = 'RAC', "axis_value40" = 'BEH_SCORE_VISA', "axis_value41" = 'BEH_SCORE_MASTER', "axis_value42" = 'TOTAL_DPD', "axis_value43" = 'NUM_TC', "axis_value44" = 'VISA_BALANCE', "axis_value45" = 'VISA_LINE', "axis_value46" = 'MASTER_BALANCE', "axis_value47" = 'MASTER_LINE', "axis_value48" = 'BLOCK_CODE_VISA', "axis_value49" = 'BLOCK_CODE_MASTER', "axis_value5" = 'LOGO', "axis_value50" = 'RW_BALANCE', "axis_value51" = 'VISA_WRITE_OFF', "axis_value52" = 'MASTER_WRITE_OFF', "axis_value53" = 'IL_WRITE_OFF', "axis_value54" = 'MORTG_WRITE_OFF', "axis_value55" = 'AUTO_WRITE_OFF', "axis_value56" = 'MONTHS_LAST_CLI', "axis_value57" = 'FLAG_PRE_REJECTION', "axis_value58" = 'MOB_YOUNGEST_EXTRA', "axis_value59" = 'NEG_REFERENCES', "axis_value6" = 'SOURCECODE', "axis_value60" = 'RW_CC_BALANCE', "axis_value61" = 'IL_CC_BALANCE', "axis_value62" = 'RC_LINE', "axis_value63" = 'RC_BALANCE', "axis_value64" = 'EXTRA_BALANCE', "axis_value65" = 'IL_BALANCE', "axis_value66" = 'OD_LINE', "axis_value67" = 'OD_BALANCE', "axis_value68" = 'AUTO_BALANCE', "axis_value69" = 'DDA_OVERLIMIT', "axis_value7" = 'TIPOEMPLEO', "axis_value70" = 'VAREXTRA3', "axis_value71" = 'SCORE_INTERNO', "axis_value72" = 'FLAG_REWRITE', "axis_value73" = 'MOB_REWRITE', "axis_value74" = 'RC_WRITE_OFF', "axis_value75" = 'SOB_WRITE_OFF', "axis_value76" = 'SUMACUOTAS_TARJETAS_COBIS', "axis_value77" = 'SUMACUOTAS_HIPOTECAS_COBIS', "axis_value78" = 'SUMACUOTAS_PERSONALES_COBIS', "axis_value79" = 'TIPOEMPRESA', "axis_value8" = 'TIEMPOEMPLEO', "axis_value80" = 'FLAG_ORO', "axis_value81" = 'FLAG_PEP', "axis_value82" = 'FLAG_EXTRANJERO', "axis_value83" = 'FLAG_CREDOMATIC', "axis_value84" = 'FLAG_AFP_ELECTRONICO', "axis_value85" = 'REASONCODE', "axis_value86" = 'AUX2', "axis_value87" = 'PREVIOUS_REASONCODE', "axis_value88" = 'AUX', "axis_value89" = 'CUOTASINTERNAS_COBIS', "axis_value9" = 'LOGO2', "axis_value90" = 'TARGET_MARKET', "axis_value91" = 'FLAG_PLANILLERO', "axis_value92" = 'FLAG_HIT', "axis_value93" = 'PROGRAMA', "axis_value94" = 'LIMITE_PCCD_SSF', "axis_value95" = 'FLAG_XS', "axis_value96" = 'REASONCODES', "axis_value97" = 'FLAG_PCCD', "axis_value98" = 'CAP_MUE', "axis_value99" = 'MUE_DISPUESTO', "collision_resolution" = 'Last_Row', "nonpivot_column1" = 'DI_FILENAME', "pivot_column1" = 'v', "pivot_column_default1" = 'NULL', "pivot_column_prefix1" = 'EDAD', "pivot_column_prefix10" = 'INGRESOS', "pivot_column_prefix100" = 'DEBT_BURDEN_INICIAL_SSF', "pivot_column_prefix101" = 'DEBT_BURDEN_FINAL', "pivot_column_prefix102" = 'MULTIPLICADOR', "pivot_column_prefix103" = 'LINEA_MAXIMA', "pivot_column_prefix104" = 'MUE_DISPONIBLE', "pivot_column_prefix105" = 'LIMMAXLOGO', "pivot_column_prefix106" = 'LIMMINLOGO', "pivot_column_prefix107" = 'LINEA_TIMESINCOME', "pivot_column_prefix108" = 'LINEA_DISPDEBTBURDEN', "pivot_column_prefix109" = 'LINEADISPMUE', "pivot_column_prefix11" = 'FORZAJE_SCORE', "pivot_column_prefix110" = 'LINEA_CAP_PRODUCTO', "pivot_column_prefix111" = 'LIMITE_NUEVA_LINEA', "pivot_column_prefix112" = 'EMPLEADO_CUSCATLAN', "pivot_column_prefix113" = 'LINEAMINIMA', "pivot_column_prefix114" = 'FLAG_NORMALSALES', "pivot_column_prefix115" = 'EXPCREDITICIA_ALL', "pivot_column_prefix116" = 'EXPPCCD_ALL', "pivot_column_prefix117" = 'LIMITE_PCCD_EQFX', "pivot_column_prefix118" = 'LIMITE_PCCD', "pivot_column_prefix119" = 'EMPLEO_EMPRESA', "pivot_column_prefix12" = 'TIPO_PCCD', "pivot_column_prefix120" = 'GASTOS_NUEVA_LINEA', "pivot_column_prefix121" = 'LIMMAXLOGO2', "pivot_column_prefix122" = 'LIMMINLOGO2', "pivot_column_prefix123" = 'CAP_DB', "pivot_column_prefix124" = 'DEBT_BURDEN_FINAL_SSF', "pivot_column_prefix125" = 'LIMITEFINAL_LINEA1', "pivot_column_prefix126" = 'LIMITEFINAL_LINEA2', "pivot_column_prefix127" = 'CAPACIDADEDEUDAMIENTOMENSUAL', "pivot_column_prefix128" = 'DEBT_BURDEN_INICIAL_ALL', "pivot_column_prefix129" = 'DEBT_BURDEN_FINAL_ALL', "pivot_column_prefix13" = 'PERFIL_CLIENTE', "pivot_column_prefix130" = 'TASA_X_LOGO', "pivot_column_prefix131" = 'MUE_FINAL2', "pivot_column_prefix132" = 'MUE_FINAL3', "pivot_column_prefix133" = 'PERFIL_DOCUMENTACION', "pivot_column_prefix134" = 'DOCUMENTACION', "pivot_column_prefix135" = 'ESTRATEGIA_AUTENTICACION', "pivot_column_prefix136" = 'PRODUCTO_AUTENTICACION', "pivot_column_prefix137" = 'UMBRAL_SOLICITADO', "pivot_column_prefix138" = 'VERIFICAR_IDENTIDAD', "pivot_column_prefix139" = 'CODIGO_DOC', "pivot_column_prefix14" = 'MATCH_INTERNO', "pivot_column_prefix140" = 'SYSTEMDATE', "pivot_column_prefix15" = 'SUMACUOTA_CARDS_SSF', "pivot_column_prefix16" = 'SUMACUOTA_HIPOTECAS_SSF', "pivot_column_prefix17" = 'SUMACUOTA_PREST_CONSUMO_SSF', "pivot_column_prefix18" = 'SUMACUOTA_SOBREGIROS_SSF', "pivot_column_prefix19" = 'SUMACUOTA_REFI_SSF', "pivot_column_prefix2" = 'TIPO_CLIENTE', "pivot_column_prefix20" = 'MORAACTUAL_ALL_SSF', "pivot_column_prefix21" = 'REFERENCIA_MASANTIGUA_SSF', "pivot_column_prefix22" = 'CONTEO_WO_SSF', "pivot_column_prefix23" = 'LIMITEPCCD_6MESES_SSF', "pivot_column_prefix24" = 'LIMITEPCCD_12MESES_SSF', "pivot_column_prefix25" = 'CONTEO_REFIS_SSF', "pivot_column_prefix26" = 'MAYOR_ANT_TC_SSF', "pivot_column_prefix27" = 'SCORE_BUREAU_EQFX', "pivot_column_prefix28" = 'LIMITEPCCD_6MESES_EQFX', "pivot_column_prefix29" = 'LIMITEPCCD_12MESES_EQFX', "pivot_column_prefix3" = 'POLICY_INDICATOR', "pivot_column_prefix30" = 'MORAACTUAL_EQFX', "pivot_column_prefix31" = 'NUMEROMESES_EQFX', "pivot_column_prefix32" = 'ANTMAXTC_EQFX', "pivot_column_prefix33" = 'TC_JURIDICO_EQFX', "pivot_column_prefix34" = 'TOTAL_JUICIOS_EQFX', "pivot_column_prefix35" = 'SUMCUOACTOT_EQFX', "pivot_column_prefix36" = 'FLAG_EXPATRIADO', "pivot_column_prefix37" = 'FLAG_VIP', "pivot_column_prefix38" = 'MOB_VISA', "pivot_column_prefix39" = 'MOB_MASTER', "pivot_column_prefix4" = 'RAC', "pivot_column_prefix40" = 'BEH_SCORE_VISA', "pivot_column_prefix41" = 'BEH_SCORE_MASTER', "pivot_column_prefix42" = 'TOTAL_DPD', "pivot_column_prefix43" = 'NUM_TC', "pivot_column_prefix44" = 'VISA_BALANCE', "pivot_column_prefix45" = 'VISA_LINE', "pivot_column_prefix46" = 'MASTER_BALANCE', "pivot_column_prefix47" = 'MASTER_LINE', "pivot_column_prefix48" = 'BLOCK_CODE_VISA', "pivot_column_prefix49" = 'BLOCK_CODE_MASTER', "pivot_column_prefix5" = 'LOGO', "pivot_column_prefix50" = 'RW_BALANCE', "pivot_column_prefix51" = 'VISA_WRITE_OFF', "pivot_column_prefix52" = 'MASTER_WRITE_OFF', "pivot_column_prefix53" = 'IL_WRITE_OFF', "pivot_column_prefix54" = 'MORTG_WRITE_OFF', "pivot_column_prefix55" = 'AUTO_WRITE_OFF', "pivot_column_prefix56" = 'MONTHS_LAST_CLI', "pivot_column_prefix57" = 'FLAG_PRE_REJECTION', "pivot_column_prefix58" = 'MOB_YOUNGEST_EXTRA', "pivot_column_prefix59" = 'NEG_REFERENCES', "pivot_column_prefix6" = 'SOURCECODE', "pivot_column_prefix60" = 'RW_CC_BALANCE', "pivot_column_prefix61" = 'IL_CC_BALANCE', "pivot_column_prefix62" = 'RC_LINE', "pivot_column_prefix63" = 'RC_BALANCE', "pivot_column_prefix64" = 'EXTRA_BALANCE', "pivot_column_prefix65" = 'IL_BALANCE', "pivot_column_prefix66" = 'OD_LINE', "pivot_column_prefix67" = 'OD_BALANCE', "pivot_column_prefix68" = 'AUTO_BALANCE', "pivot_column_prefix69" = 'DDA_OVERLIMIT', "pivot_column_prefix7" = 'TIPOEMPLEO', "pivot_column_prefix70" = 'VAREXTRA3', "pivot_column_prefix71" = 'SCORE_INTERNO', "pivot_column_prefix72" = 'FLAG_REWRITE', "pivot_column_prefix73" = 'MOB_REWRITE', "pivot_column_prefix74" = 'RC_WRITE_OFF', "pivot_column_prefix75" = 'SOB_WRITE_OFF', "pivot_column_prefix76" = 'SUMACUOTAS_TARJETAS_COBIS', "pivot_column_prefix77" = 'SUMACUOTAS_HIPOTECAS_COBIS', "pivot_column_prefix78" = 'SUMACUOTAS_PERSONALES_COBIS', "pivot_column_prefix79" = 'TIPOEMPRESA', "pivot_column_prefix8" = 'TIEMPOEMPLEO', "pivot_column_prefix80" = 'FLAG_ORO', "pivot_column_prefix81" = 'FLAG_PEP', "pivot_column_prefix82" = 'FLAG_EXTRANJERO', "pivot_column_prefix83" = 'FLAG_CREDOMATIC', "pivot_column_prefix84" = 'FLAG_AFP_ELECTRONICO', "pivot_column_prefix85" = 'REASONCODE', "pivot_column_prefix86" = 'AUX2', "pivot_column_prefix87" = 'PREVIOUS_REASONCODE', "pivot_column_prefix88" = 'AUX', "pivot_column_prefix89" = 'CUOTASINTERNAS_COBIS', "pivot_column_prefix9" = 'LOGO2', "pivot_column_prefix90" = 'TARGET_MARKET', "pivot_column_prefix91" = 'FLAG_PLANILLERO', "pivot_column_prefix92" = 'FLAG_HIT', "pivot_column_prefix93" = 'PROGRAMA', "pivot_column_prefix94" = 'LIMITE_PCCD_SSF', "pivot_column_prefix95" = 'FLAG_XS', "pivot_column_prefix96" = 'REASONCODES', "pivot_column_prefix97" = 'FLAG_PCCD', "pivot_column_prefix98" = 'CAP_MUE', "pivot_column_prefix99" = 'MUE_DISPUESTO', "source_is_sorted" = 'yes', "total_axis_values" = '140');
+SET("axis_column" = 'id', "axis_value1" = 'EDAD', "axis_value10" = 'INGRESOS', "axis_value100" = 'TARGET_MARKET', "axis_value101" = 'FLAG_PLANILLERO', "axis_value102" = 'FLAG_HIT', "axis_value103" = 'PROGRAMA', "axis_value104" = 'LIMITE_PCCD_SSF', "axis_value105" = 'FLAG_XS', "axis_value106" = 'REASONCODES', "axis_value107" = 'FLAG_PCCD', "axis_value108" = 'CAP_MUE', "axis_value109" = 'MUE_DISPUESTO', "axis_value11" = 'FORZAJE_SCORE', "axis_value110" = 'DEBT_BURDEN_INICIAL_SSF', "axis_value111" = 'DEBT_BURDEN_FINAL', "axis_value112" = 'MULTIPLICADOR', "axis_value113" = 'LINEA_MAXIMA', "axis_value114" = 'MUE_DISPONIBLE', "axis_value115" = 'LIMMAXLOGO', "axis_value116" = 'LIMMINLOGO', "axis_value117" = 'LINEA_TIMESINCOME', "axis_value118" = 'LINEA_DISPDEBTBURDEN', "axis_value119" = 'LINEADISPMUE', "axis_value12" = 'TIPO_PCCD', "axis_value120" = 'LINEA_CAP_PRODUCTO', "axis_value121" = 'LIMITE_NUEVA_LINEA', "axis_value122" = 'EMPLEADO_CUSCATLAN', "axis_value123" = 'LINEAMINIMA', "axis_value124" = 'FLAG_NORMALSALES', "axis_value125" = 'EXPCREDITICIA_ALL', "axis_value126" = 'EXPPCCD_ALL', "axis_value127" = 'LIMITE_PCCD_EQFX', "axis_value128" = 'LIMITE_PCCD', "axis_value129" = 'EMPLEO_EMPRESA', "axis_value13" = 'PERFIL_CLIENTE', "axis_value130" = 'GASTOS_NUEVA_LINEA', "axis_value131" = 'LIMMAXLOGO2', "axis_value132" = 'LIMMINLOGO2', "axis_value133" = 'CAP_DB', "axis_value134" = 'DEBT_BURDEN_FINAL_SSF', "axis_value135" = 'LIMITEFINAL_LINEA1', "axis_value136" = 'LIMITEFINAL_LINEA2', "axis_value137" = 'CAPACIDADEDEUDAMIENTOMENSUAL', "axis_value138" = 'DEBT_BURDEN_INICIAL_ALL', "axis_value139" = 'DEBT_BURDEN_FINAL_ALL', "axis_value14" = 'MATCH_INTERNO', "axis_value140" = 'TASA_X_LOGO', "axis_value141" = 'MUE_FINAL2', "axis_value142" = 'MUE_FINAL3', "axis_value143" = 'PERFIL_DOCUMENTACION', "axis_value144" = 'DOCUMENTACION', "axis_value145" = 'ESTRATEGIA_AUTENTICACION', "axis_value146" = 'PRODUCTO_AUTENTICACION', "axis_value147" = 'UMBRAL_SOLICITADO', "axis_value148" = 'VERIFICAR_IDENTIDAD', "axis_value149" = 'CODIGO_DOC', "axis_value15" = 'GRADUADO', "axis_value150" = 'INGRESO_INFERIDO_EQFX', "axis_value151" = 'FLAG_GARANTIZADA', "axis_value152" = 'DEBE_CONSULTAR_EQUIFAX', "axis_value153" = 'FLAG_TIGO', "axis_value154" = 'INGRESO_VERIFICADO', "axis_value155" = 'MODELO_VERIFICADO', "axis_value156" = 'SYSTEMDATE', "axis_value157" = 'SYSTEMTIME', "axis_value158" = 'CLIENTSYSTEM', "axis_value159" = 'CLIENTTCPIP', "axis_value16" = 'UNIVERSIDAD', "axis_value160" = 'USUARIO', "axis_value161" = 'RETURNSYSTEMBLOCK', "axis_value162" = 'RETURNINPUTBLOCK', "axis_value163" = 'RETURNINTERNALBLOCK', "axis_value164" = 'RETURNDECISIONBLOCK', "axis_value165" = 'APPLICATIONNUMBER', "axis_value166" = 'FINALSTATUS', "axis_value167" = 'SYSTEMID', "axis_value168" = 'SYSTEMCULTURE', "axis_value169" = 'ENGINERELEASE', "axis_value17" = 'GARANTIA_DEPOSITO', "axis_value170" = 'WRITEDECISIONHISTORY', "axis_value171" = 'STEPBYSTEP', "axis_value172" = 'ERROR1', "axis_value173" = 'ERROR2', "axis_value174" = 'ERROR3', "axis_value175" = 'ERROR4', "axis_value176" = 'CHAMPCHALL50_50', "axis_value177" = 'CHAMPCHALL90_10', "axis_value18" = 'MISMA_EMPRESA', "axis_value19" = 'INGRESO_BASE', "axis_value2" = 'TIPO_CLIENTE', "axis_value20" = 'NRO_SOLICITUD', "axis_value21" = 'SUMACUOTA_CARDS_SSF', "axis_value22" = 'SUMACUOTA_HIPOTECAS_SSF', "axis_value23" = 'SUMACUOTA_PREST_CONSUMO_SSF', "axis_value24" = 'SUMACUOTA_SOBREGIROS_SSF', "axis_value25" = 'SUMACUOTA_REFI_SSF', "axis_value26" = 'MORAACTUAL_ALL_SSF', "axis_value27" = 'REFERENCIA_MASANTIGUA_SSF', "axis_value28" = 'CONTEO_WO_SSF', "axis_value29" = 'LIMITEPCCD_6MESES_SSF', "axis_value3" = 'POLICY_INDICATOR', "axis_value30" = 'LIMITEPCCD_12MESES_SSF', "axis_value31" = 'CONTEO_REFIS_SSF', "axis_value32" = 'MAYOR_ANT_TC_SSF', "axis_value33" = 'SCORE_BUREAU_EQFX', "axis_value34" = 'LIMITEPCCD_6MESES_EQFX', "axis_value35" = 'LIMITEPCCD_12MESES_EQFX', "axis_value36" = 'MORAACTUAL_EQFX', "axis_value37" = 'NUMEROMESES_EQFX', "axis_value38" = 'ANTMAXTC_EQFX', "axis_value39" = 'TC_JURIDICO_EQFX', "axis_value4" = 'RAC', "axis_value40" = 'TOTAL_JUICIOS_EQFX', "axis_value41" = 'SUMCUOACTOT_EQFX', "axis_value42" = 'SE_CONSULTO_EQUIFAX', "axis_value43" = 'LIMITE_SUPERIOR_EQFX', "axis_value44" = 'LIMITE_INFERIOR_EQFX', "axis_value45" = 'CUARTIL_EQFX', "axis_value46" = 'FLAG_EXPATRIADO', "axis_value47" = 'FLAG_VIP', "axis_value48" = 'MOB_VISA', "axis_value49" = 'MOB_MASTER', "axis_value5" = 'LOGO', "axis_value50" = 'BEH_SCORE_VISA', "axis_value51" = 'BEH_SCORE_MASTER', "axis_value52" = 'TOTAL_DPD', "axis_value53" = 'NUM_TC', "axis_value54" = 'VISA_BALANCE', "axis_value55" = 'VISA_LINE', "axis_value56" = 'MASTER_BALANCE', "axis_value57" = 'MASTER_LINE', "axis_value58" = 'BLOCK_CODE_VISA', "axis_value59" = 'BLOCK_CODE_MASTER', "axis_value6" = 'SOURCECODE', "axis_value60" = 'RW_BALANCE', "axis_value61" = 'VISA_WRITE_OFF', "axis_value62" = 'MASTER_WRITE_OFF', "axis_value63" = 'IL_WRITE_OFF', "axis_value64" = 'MORTG_WRITE_OFF', "axis_value65" = 'AUTO_WRITE_OFF', "axis_value66" = 'MONTHS_LAST_CLI', "axis_value67" = 'FLAG_PRE_REJECTION', "axis_value68" = 'MOB_YOUNGEST_EXTRA', "axis_value69" = 'NEG_REFERENCES', "axis_value7" = 'TIPOEMPLEO', "axis_value70" = 'RW_CC_BALANCE', "axis_value71" = 'IL_CC_BALANCE', "axis_value72" = 'RC_LINE', "axis_value73" = 'RC_BALANCE', "axis_value74" = 'EXTRA_BALANCE', "axis_value75" = 'IL_BALANCE', "axis_value76" = 'OD_LINE', "axis_value77" = 'OD_BALANCE', "axis_value78" = 'AUTO_BALANCE', "axis_value79" = 'DDA_OVERLIMIT', "axis_value8" = 'TIEMPOEMPLEO', "axis_value80" = 'VAREXTRA3', "axis_value81" = 'SCORE_INTERNO', "axis_value82" = 'FLAG_REWRITE', "axis_value83" = 'MOB_REWRITE', "axis_value84" = 'RC_WRITE_OFF', "axis_value85" = 'SOB_WRITE_OFF', "axis_value86" = 'SUMACUOTAS_TARJETAS_COBIS', "axis_value87" = 'SUMACUOTAS_HIPOTECAS_COBIS', "axis_value88" = 'SUMACUOTAS_PERSONALES_COBIS', "axis_value89" = 'TIPOEMPRESA', "axis_value9" = 'LOGO2', "axis_value90" = 'FLAG_ORO', "axis_value91" = 'FLAG_PEP', "axis_value92" = 'FLAG_EXTRANJERO', "axis_value93" = 'FLAG_CREDOMATIC', "axis_value94" = 'FLAG_AFP_ELECTRONICO', "axis_value95" = 'REASONCODE', "axis_value96" = 'AUX2', "axis_value97" = 'PREVIOUS_REASONCODE', "axis_value98" = 'AUX', "axis_value99" = 'CUOTASINTERNAS_COBIS', "collision_resolution" = 'Last_Row', "nonpivot_column1" = 'DI_FILENAME', "pivot_column1" = 'v', "pivot_column_default1" = 'NULL', "pivot_column_prefix1" = 'EDAD', "pivot_column_prefix10" = 'INGRESOS', "pivot_column_prefix100" = 'TARGET_MARKET', "pivot_column_prefix101" = 'FLAG_PLANILLERO', "pivot_column_prefix102" = 'FLAG_HIT', "pivot_column_prefix103" = 'PROGRAMA', "pivot_column_prefix104" = 'LIMITE_PCCD_SSF', "pivot_column_prefix105" = 'FLAG_XS', "pivot_column_prefix106" = 'REASONCODES', "pivot_column_prefix107" = 'FLAG_PCCD', "pivot_column_prefix108" = 'CAP_MUE', "pivot_column_prefix109" = 'MUE_DISPUESTO', "pivot_column_prefix11" = 'FORZAJE_SCORE', "pivot_column_prefix110" = 'DEBT_BURDEN_INICIAL_SSF', "pivot_column_prefix111" = 'DEBT_BURDEN_FINAL', "pivot_column_prefix112" = 'MULTIPLICADOR', "pivot_column_prefix113" = 'LINEA_MAXIMA', "pivot_column_prefix114" = 'MUE_DISPONIBLE', "pivot_column_prefix115" = 'LIMMAXLOGO', "pivot_column_prefix116" = 'LIMMINLOGO', "pivot_column_prefix117" = 'LINEA_TIMESINCOME', "pivot_column_prefix118" = 'LINEA_DISPDEBTBURDEN', "pivot_column_prefix119" = 'LINEADISPMUE', "pivot_column_prefix12" = 'TIPO_PCCD', "pivot_column_prefix120" = 'LINEA_CAP_PRODUCTO', "pivot_column_prefix121" = 'LIMITE_NUEVA_LINEA', "pivot_column_prefix122" = 'EMPLEADO_CUSCATLAN', "pivot_column_prefix123" = 'LINEAMINIMA', "pivot_column_prefix124" = 'FLAG_NORMALSALES', "pivot_column_prefix125" = 'EXPCREDITICIA_ALL', "pivot_column_prefix126" = 'EXPPCCD_ALL', "pivot_column_prefix127" = 'LIMITE_PCCD_EQFX', "pivot_column_prefix128" = 'LIMITE_PCCD', "pivot_column_prefix129" = 'EMPLEO_EMPRESA', "pivot_column_prefix13" = 'PERFIL_CLIENTE', "pivot_column_prefix130" = 'GASTOS_NUEVA_LINEA', "pivot_column_prefix131" = 'LIMMAXLOGO2', "pivot_column_prefix132" = 'LIMMINLOGO2', "pivot_column_prefix133" = 'CAP_DB', "pivot_column_prefix134" = 'DEBT_BURDEN_FINAL_SSF', "pivot_column_prefix135" = 'LIMITEFINAL_LINEA1', "pivot_column_prefix136" = 'LIMITEFINAL_LINEA2', "pivot_column_prefix137" = 'CAPACIDADEDEUDAMIENTOMENSUAL', "pivot_column_prefix138" = 'DEBT_BURDEN_INICIAL_ALL', "pivot_column_prefix139" = 'DEBT_BURDEN_FINAL_ALL', "pivot_column_prefix14" = 'MATCH_INTERNO', "pivot_column_prefix140" = 'TASA_X_LOGO', "pivot_column_prefix141" = 'MUE_FINAL2', "pivot_column_prefix142" = 'MUE_FINAL3', "pivot_column_prefix143" = 'PERFIL_DOCUMENTACION', "pivot_column_prefix144" = 'DOCUMENTACION', "pivot_column_prefix145" = 'ESTRATEGIA_AUTENTICACION', "pivot_column_prefix146" = 'PRODUCTO_AUTENTICACION', "pivot_column_prefix147" = 'UMBRAL_SOLICITADO', "pivot_column_prefix148" = 'VERIFICAR_IDENTIDAD', "pivot_column_prefix149" = 'CODIGO_DOC', "pivot_column_prefix15" = 'GRADUADO', "pivot_column_prefix150" = 'INGRESO_INFERIDO_EQFX', "pivot_column_prefix151" = 'FLAG_GARANTIZADA', "pivot_column_prefix152" = 'DEBE_CONSULTAR_EQUIFAX', "pivot_column_prefix153" = 'FLAG_TIGO', "pivot_column_prefix154" = 'INGRESO_VERIFICADO', "pivot_column_prefix155" = 'MODELO_VERIFICADO', "pivot_column_prefix156" = 'SYSTEMDATE', "pivot_column_prefix157" = 'SYSTEMTIME', "pivot_column_prefix158" = 'CLIENTSYSTEM', "pivot_column_prefix159" = 'CLIENTTCPIP', "pivot_column_prefix16" = 'UNIVERSIDAD', "pivot_column_prefix160" = 'USUARIO', "pivot_column_prefix161" = 'RETURNSYSTEMBLOCK', "pivot_column_prefix162" = 'RETURNINPUTBLOCK', "pivot_column_prefix163" = 'RETURNINTERNALBLOCK', "pivot_column_prefix164" = 'RETURNDECISIONBLOCK', "pivot_column_prefix165" = 'APPLICATIONNUMBER', "pivot_column_prefix166" = 'FINALSTATUS', "pivot_column_prefix167" = 'SYSTEMID', "pivot_column_prefix168" = 'SYSTEMCULTURE', "pivot_column_prefix169" = 'ENGINERELEASE', "pivot_column_prefix17" = 'GARANTIA_DEPOSITO', "pivot_column_prefix170" = 'WRITEDECISIONHISTORY', "pivot_column_prefix171" = 'STEPBYSTEP', "pivot_column_prefix172" = 'ERROR1', "pivot_column_prefix173" = 'ERROR2', "pivot_column_prefix174" = 'ERROR3', "pivot_column_prefix175" = 'ERROR4', "pivot_column_prefix176" = 'CHAMPCHALL50_50', "pivot_column_prefix177" = 'CHAMPCHALL90_10', "pivot_column_prefix18" = 'MISMA_EMPRESA', "pivot_column_prefix19" = 'INGRESO_BASE', "pivot_column_prefix2" = 'TIPO_CLIENTE', "pivot_column_prefix20" = 'NRO_SOLICITUD', "pivot_column_prefix21" = 'SUMACUOTA_CARDS_SSF', "pivot_column_prefix22" = 'SUMACUOTA_HIPOTECAS_SSF', "pivot_column_prefix23" = 'SUMACUOTA_PREST_CONSUMO_SSF', "pivot_column_prefix24" = 'SUMACUOTA_SOBREGIROS_SSF', "pivot_column_prefix25" = 'SUMACUOTA_REFI_SSF', "pivot_column_prefix26" = 'MORAACTUAL_ALL_SSF', "pivot_column_prefix27" = 'REFERENCIA_MASANTIGUA_SSF', "pivot_column_prefix28" = 'CONTEO_WO_SSF', "pivot_column_prefix29" = 'LIMITEPCCD_6MESES_SSF', "pivot_column_prefix3" = 'POLICY_INDICATOR', "pivot_column_prefix30" = 'LIMITEPCCD_12MESES_SSF', "pivot_column_prefix31" = 'CONTEO_REFIS_SSF', "pivot_column_prefix32" = 'MAYOR_ANT_TC_SSF', "pivot_column_prefix33" = 'SCORE_BUREAU_EQFX', "pivot_column_prefix34" = 'LIMITEPCCD_6MESES_EQFX', "pivot_column_prefix35" = 'LIMITEPCCD_12MESES_EQFX', "pivot_column_prefix36" = 'MORAACTUAL_EQFX', "pivot_column_prefix37" = 'NUMEROMESES_EQFX', "pivot_column_prefix38" = 'ANTMAXTC_EQFX', "pivot_column_prefix39" = 'TC_JURIDICO_EQFX', "pivot_column_prefix4" = 'RAC', "pivot_column_prefix40" = 'TOTAL_JUICIOS_EQFX', "pivot_column_prefix41" = 'SUMCUOACTOT_EQFX', "pivot_column_prefix42" = 'SE_CONSULTO_EQUIFAX', "pivot_column_prefix43" = 'LIMITE_SUPERIOR_EQFX', "pivot_column_prefix44" = 'LIMITE_INFERIOR_EQFX', "pivot_column_prefix45" = 'CUARTIL_EQFX', "pivot_column_prefix46" = 'FLAG_EXPATRIADO', "pivot_column_prefix47" = 'FLAG_VIP', "pivot_column_prefix48" = 'MOB_VISA', "pivot_column_prefix49" = 'MOB_MASTER', "pivot_column_prefix5" = 'LOGO', "pivot_column_prefix50" = 'BEH_SCORE_VISA', "pivot_column_prefix51" = 'BEH_SCORE_MASTER', "pivot_column_prefix52" = 'TOTAL_DPD', "pivot_column_prefix53" = 'NUM_TC', "pivot_column_prefix54" = 'VISA_BALANCE', "pivot_column_prefix55" = 'VISA_LINE', "pivot_column_prefix56" = 'MASTER_BALANCE', "pivot_column_prefix57" = 'MASTER_LINE', "pivot_column_prefix58" = 'BLOCK_CODE_VISA', "pivot_column_prefix59" = 'BLOCK_CODE_MASTER', "pivot_column_prefix6" = 'SOURCECODE', "pivot_column_prefix60" = 'RW_BALANCE', "pivot_column_prefix61" = 'VISA_WRITE_OFF', "pivot_column_prefix62" = 'MASTER_WRITE_OFF', "pivot_column_prefix63" = 'IL_WRITE_OFF', "pivot_column_prefix64" = 'MORTG_WRITE_OFF', "pivot_column_prefix65" = 'AUTO_WRITE_OFF', "pivot_column_prefix66" = 'MONTHS_LAST_CLI', "pivot_column_prefix67" = 'FLAG_PRE_REJECTION', "pivot_column_prefix68" = 'MOB_YOUNGEST_EXTRA', "pivot_column_prefix69" = 'NEG_REFERENCES', "pivot_column_prefix7" = 'TIPOEMPLEO', "pivot_column_prefix70" = 'RW_CC_BALANCE', "pivot_column_prefix71" = 'IL_CC_BALANCE', "pivot_column_prefix72" = 'RC_LINE', "pivot_column_prefix73" = 'RC_BALANCE', "pivot_column_prefix74" = 'EXTRA_BALANCE', "pivot_column_prefix75" = 'IL_BALANCE', "pivot_column_prefix76" = 'OD_LINE', "pivot_column_prefix77" = 'OD_BALANCE', "pivot_column_prefix78" = 'AUTO_BALANCE', "pivot_column_prefix79" = 'DDA_OVERLIMIT', "pivot_column_prefix8" = 'TIEMPOEMPLEO', "pivot_column_prefix80" = 'VAREXTRA3', "pivot_column_prefix81" = 'SCORE_INTERNO', "pivot_column_prefix82" = 'FLAG_REWRITE', "pivot_column_prefix83" = 'MOB_REWRITE', "pivot_column_prefix84" = 'RC_WRITE_OFF', "pivot_column_prefix85" = 'SOB_WRITE_OFF', "pivot_column_prefix86" = 'SUMACUOTAS_TARJETAS_COBIS', "pivot_column_prefix87" = 'SUMACUOTAS_HIPOTECAS_COBIS', "pivot_column_prefix88" = 'SUMACUOTAS_PERSONALES_COBIS', "pivot_column_prefix89" = 'TIPOEMPRESA', "pivot_column_prefix9" = 'LOGO2', "pivot_column_prefix90" = 'FLAG_ORO', "pivot_column_prefix91" = 'FLAG_PEP', "pivot_column_prefix92" = 'FLAG_EXTRANJERO', "pivot_column_prefix93" = 'FLAG_CREDOMATIC', "pivot_column_prefix94" = 'FLAG_AFP_ELECTRONICO', "pivot_column_prefix95" = 'REASONCODE', "pivot_column_prefix96" = 'AUX2', "pivot_column_prefix97" = 'PREVIOUS_REASONCODE', "pivot_column_prefix98" = 'AUX', "pivot_column_prefix99" = 'CUOTASINTERNAS_COBIS', "source_is_sorted" = 'yes', "total_axis_values" = '177');
 
 ALGUIComment ("InputSchema_WidthProp" = '51', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>400</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
 GUID::'1881c318-6d2d-44aa-a10d-e51b767c0819' READ TABLE DS_TARGET.STG_SAT.CUS_ADM_MOE OUTPUT(CUS_ADM_MOE)
 SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
 
-ALGUIComment ("InputSchema_WidthProp" = '51', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Name" = '235', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Name" = '216', "Output_Width_Type" = '128', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'REV_PIV_ADM_MOE_1', "x" = '870', "y" = '-90')
-GUID::'94ef0573-9180-47d7-8158-cb022df9abf9' CREATE VIEW Query( EDAD DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.EDAD_v') ,
+ALGUIComment ("InputSchema_WidthProp" = '51', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Name" = '266', "Input_Width_Type" = '98', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Name" = '279', "Output_Width_Type" = '137', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'REV_PIV_ADM_MOE_1', "x" = '870', "y" = '-90')
+GUID::'775c7425-e2c2-4aec-860a-995a47dcac9b' CREATE VIEW Query( EDAD DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.EDAD_v') ,
  TIPO_CLIENTE DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.TIPO_CLIENTE_v') ,
  POLICY_INDICATOR DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.POLICY_INDICATOR_v') ,
  RAC DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.RAC_v') ,
@@ -595,6 +671,12 @@ GUID::'94ef0573-9180-47d7-8158-cb022df9abf9' CREATE VIEW Query( EDAD DECIMAL(28,
  TIPO_PCCD DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.TIPO_PCCD_v') ,
  PERFIL_CLIENTE VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.PERFIL_CLIENTE_v') ,
  MATCH_INTERNO DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.MATCH_INTERNO_v') ,
+ GRADUADO VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.GRADUADO_v') ,
+ UNIVERSIDAD VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.UNIVERSIDAD_v') ,
+ GARANTIA_DEPOSITO DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.GARANTIA_DEPOSITO_v') ,
+ MISMA_EMPRESA DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.MISMA_EMPRESA_v') ,
+ INGRESO_BASE DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.INGRESO_BASE_v') ,
+ NRO_SOLICITUD VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.NRO_SOLICITUD_v') ,
  SUMACUOTA_CARDS_SSF DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SUMACUOTA_CARDS_SSF_v') ,
  SUMACUOTA_HIPOTECAS_SSF DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SUMACUOTA_HIPOTECAS_SSF_v') ,
  SUMACUOTA_PREST_CONSUMO_SSF DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SUMACUOTA_PREST_CONSUMO_SSF_v') ,
@@ -616,6 +698,10 @@ GUID::'94ef0573-9180-47d7-8158-cb022df9abf9' CREATE VIEW Query( EDAD DECIMAL(28,
  TC_JURIDICO_EQFX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.TC_JURIDICO_EQFX_v') ,
  TOTAL_JUICIOS_EQFX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.TOTAL_JUICIOS_EQFX_v') ,
  SUMCUOACTOT_EQFX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SUMCUOACTOT_EQFX_v') ,
+ SE_CONSULTO_EQUIFAX VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SE_CONSULTO_EQUIFAX_v') ,
+ LIMITE_SUPERIOR_EQFX DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LIMITE_SUPERIOR_EQFX_v') ,
+ LIMITE_INFERIOR_EQFX DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.LIMITE_INFERIOR_EQFX_v') ,
+ CUARTIL_EQFX DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.CUARTIL_EQFX_v') ,
  FLAG_EXPATRIADO DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.FLAG_EXPATRIADO_v') ,
  FLAG_VIP DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.FLAG_VIP_v') ,
  MOB_VISA DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.MOB_VISA_v') ,
@@ -720,22 +806,49 @@ GUID::'94ef0573-9180-47d7-8158-cb022df9abf9' CREATE VIEW Query( EDAD DECIMAL(28,
  UMBRAL_SOLICITADO VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.UMBRAL_SOLICITADO_v') ,
  VERIFICAR_IDENTIDAD VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.VERIFICAR_IDENTIDAD_v') ,
  CODIGO_DOC VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.CODIGO_DOC_v') ,
+ INGRESO_INFERIDO_EQFX DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.INGRESO_INFERIDO_EQFX_v') ,
+ FLAG_GARANTIZADA DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.FLAG_GARANTIZADA_v') ,
+ DEBE_CONSULTAR_EQUIFAX VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.DEBE_CONSULTAR_EQUIFAX_v') ,
+ FLAG_TIGO DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.FLAG_TIGO_v') ,
+ INGRESO_VERIFICADO DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.INGRESO_VERIFICADO_v') ,
+ MODELO_VERIFICADO VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.MODELO_VERIFICADO_v') ,
  SYSTEMDATE DATE  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SYSTEMDATE_v') ,
- LOAD_DATE DATETIME(9)  SET( "ui_mapping_text" = 'sysdate( )') ,
+ SYSTEMTIME VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SYSTEMTIME_v') ,
+ CLIENTSYSTEM VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.CLIENTSYSTEM_v') ,
+ CLIENTTCPIP VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.CLIENTTCPIP_v') ,
+ USUARIO VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.USUARIO_v') ,
+ RETURNSYSTEMBLOCK DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.RETURNSYSTEMBLOCK_v') ,
+ RETURNINPUTBLOCK DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.RETURNINPUTBLOCK_v') ,
+ RETURNINTERNALBLOCK DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.RETURNINTERNALBLOCK_v') ,
+ RETURNDECISIONBLOCK DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.RETURNDECISIONBLOCK_v') ,
+ APPLICATIONNUMBER VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.APPLICATIONNUMBER_v') ,
+ FINALSTATUS VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.FINALSTATUS_v') ,
+ SYSTEMID VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SYSTEMID_v') ,
+ SYSTEMCULTURE VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.SYSTEMCULTURE_v') ,
+ ENGINERELEASE VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.ENGINERELEASE_v') ,
+ WRITEDECISIONHISTORY VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.WRITEDECISIONHISTORY_v') ,
+ STEPBYSTEP VARCHAR(255)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.STEPBYSTEP_v') ,
+ ERROR1 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.ERROR1_v') ,
+ ERROR2 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.ERROR2_v') ,
+ ERROR3 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.ERROR3_v') ,
+ ERROR4 DECIMAL(11, 0)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.ERROR4_v') ,
+ CHAMPCHALL50_50 DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.CHAMPCHALL50_50_v') ,
+ CHAMPCHALL90_10 DECIMAL(28, 6)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.CHAMPCHALL90_10_v') ,
+ LOAD_DATE DATE  SET( "ui_mapping_text" = 'sysdate( )') ,
  FILENAME VARCHAR(1000)  SET( "ui_mapping_text" = 'REV_PIV_ADM_MOE_1.DI_FILENAME')  )
  AS
-SELECT REV_PIV_ADM_MOE_1.EDAD_v, REV_PIV_ADM_MOE_1.TIPO_CLIENTE_v, REV_PIV_ADM_MOE_1.POLICY_INDICATOR_v, REV_PIV_ADM_MOE_1.RAC_v, REV_PIV_ADM_MOE_1.LOGO_v, REV_PIV_ADM_MOE_1.SOURCECODE_v, REV_PIV_ADM_MOE_1.TIPOEMPLEO_v, REV_PIV_ADM_MOE_1.TIEMPOEMPLEO_v, REV_PIV_ADM_MOE_1.LOGO2_v, REV_PIV_ADM_MOE_1.INGRESOS_v, REV_PIV_ADM_MOE_1.FORZAJE_SCORE_v, REV_PIV_ADM_MOE_1.TIPO_PCCD_v, REV_PIV_ADM_MOE_1.PERFIL_CLIENTE_v, REV_PIV_ADM_MOE_1.MATCH_INTERNO_v, REV_PIV_ADM_MOE_1.SUMACUOTA_CARDS_SSF_v, REV_PIV_ADM_MOE_1.SUMACUOTA_HIPOTECAS_SSF_v, REV_PIV_ADM_MOE_1.SUMACUOTA_PREST_CONSUMO_SSF_v, REV_PIV_ADM_MOE_1.SUMACUOTA_SOBREGIROS_SSF_v, REV_PIV_ADM_MOE_1.SUMACUOTA_REFI_SSF_v, REV_PIV_ADM_MOE_1.MORAACTUAL_ALL_SSF_v, REV_PIV_ADM_MOE_1.REFERENCIA_MASANTIGUA_SSF_v, REV_PIV_ADM_MOE_1.CONTEO_WO_SSF_v, REV_PIV_ADM_MOE_1.LIMITEPCCD_6MESES_SSF_v, REV_PIV_ADM_MOE_1.LIMITEPCCD_12MESES_SSF_v, REV_PIV_ADM_MOE_1.CONTEO_REFIS_SSF_v, REV_PIV_ADM_MOE_1.MAYOR_ANT_TC_SSF_v, REV_PIV_ADM_MOE_1.SCORE_BUREAU_EQFX_v, REV_PIV_ADM_MOE_1.LIMITEPCCD_6MESES_EQFX_v, REV_PIV_ADM_MOE_1.LIMITEPCCD_12MESES_EQFX_v, REV_PIV_ADM_MOE_1.MORAACTUAL_EQFX_v, REV_PIV_ADM_MOE_1.NUMEROMESES_EQFX_v, REV_PIV_ADM_MOE_1.ANTMAXTC_EQFX_v, REV_PIV_ADM_MOE_1.TC_JURIDICO_EQFX_v, REV_PIV_ADM_MOE_1.TOTAL_JUICIOS_EQFX_v, REV_PIV_ADM_MOE_1.SUMCUOACTOT_EQFX_v, REV_PIV_ADM_MOE_1.FLAG_EXPATRIADO_v, REV_PIV_ADM_MOE_1.FLAG_VIP_v, REV_PIV_ADM_MOE_1.MOB_VISA_v, REV_PIV_ADM_MOE_1.MOB_MASTER_v, REV_PIV_ADM_MOE_1.BEH_SCORE_VISA_v, REV_PIV_ADM_MOE_1.BEH_SCORE_MASTER_v, REV_PIV_ADM_MOE_1.TOTAL_DPD_v, REV_PIV_ADM_MOE_1.NUM_TC_v, REV_PIV_ADM_MOE_1.VISA_BALANCE_v, REV_PIV_ADM_MOE_1.VISA_LINE_v, REV_PIV_ADM_MOE_1.MASTER_BALANCE_v, REV_PIV_ADM_MOE_1.MASTER_LINE_v, REV_PIV_ADM_MOE_1.BLOCK_CODE_VISA_v, REV_PIV_ADM_MOE_1.BLOCK_CODE_MASTER_v, REV_PIV_ADM_MOE_1.RW_BALANCE_v, REV_PIV_ADM_MOE_1.VISA_WRITE_OFF_v, REV_PIV_ADM_MOE_1.MASTER_WRITE_OFF_v, REV_PIV_ADM_MOE_1.IL_WRITE_OFF_v, REV_PIV_ADM_MOE_1.MORTG_WRITE_OFF_v, REV_PIV_ADM_MOE_1.AUTO_WRITE_OFF_v, REV_PIV_ADM_MOE_1.MONTHS_LAST_CLI_v, REV_PIV_ADM_MOE_1.FLAG_PRE_REJECTION_v, REV_PIV_ADM_MOE_1.MOB_YOUNGEST_EXTRA_v, REV_PIV_ADM_MOE_1.NEG_REFERENCES_v, REV_PIV_ADM_MOE_1.RW_CC_BALANCE_v, REV_PIV_ADM_MOE_1.IL_CC_BALANCE_v, REV_PIV_ADM_MOE_1.RC_LINE_v, REV_PIV_ADM_MOE_1.RC_BALANCE_v, REV_PIV_ADM_MOE_1.EXTRA_BALANCE_v, REV_PIV_ADM_MOE_1.IL_BALANCE_v, REV_PIV_ADM_MOE_1.OD_LINE_v, REV_PIV_ADM_MOE_1.OD_BALANCE_v, REV_PIV_ADM_MOE_1.AUTO_BALANCE_v, REV_PIV_ADM_MOE_1.DDA_OVERLIMIT_v, REV_PIV_ADM_MOE_1.VAREXTRA3_v, REV_PIV_ADM_MOE_1.SCORE_INTERNO_v, REV_PIV_ADM_MOE_1.FLAG_REWRITE_v, REV_PIV_ADM_MOE_1.MOB_REWRITE_v, REV_PIV_ADM_MOE_1.RC_WRITE_OFF_v, REV_PIV_ADM_MOE_1.SOB_WRITE_OFF_v, REV_PIV_ADM_MOE_1.SUMACUOTAS_TARJETAS_COBIS_v, REV_PIV_ADM_MOE_1.SUMACUOTAS_HIPOTECAS_COBIS_v, REV_PIV_ADM_MOE_1.SUMACUOTAS_PERSONALES_COBIS_v, REV_PIV_ADM_MOE_1.TIPOEMPRESA_v, REV_PIV_ADM_MOE_1.FLAG_ORO_v, REV_PIV_ADM_MOE_1.FLAG_PEP_v, REV_PIV_ADM_MOE_1.FLAG_EXTRANJERO_v, REV_PIV_ADM_MOE_1.FLAG_CREDOMATIC_v, REV_PIV_ADM_MOE_1.FLAG_AFP_ELECTRONICO_v, REV_PIV_ADM_MOE_1.REASONCODE_v, REV_PIV_ADM_MOE_1.AUX2_v, REV_PIV_ADM_MOE_1.PREVIOUS_REASONCODE_v, REV_PIV_ADM_MOE_1.AUX_v, REV_PIV_ADM_MOE_1.CUOTASINTERNAS_COBIS_v, REV_PIV_ADM_MOE_1.TARGET_MARKET_v, REV_PIV_ADM_MOE_1.FLAG_PLANILLERO_v, REV_PIV_ADM_MOE_1.FLAG_HIT_v, REV_PIV_ADM_MOE_1.PROGRAMA_v, REV_PIV_ADM_MOE_1.LIMITE_PCCD_SSF_v, REV_PIV_ADM_MOE_1.FLAG_XS_v, REV_PIV_ADM_MOE_1.REASONCODES_v, REV_PIV_ADM_MOE_1.FLAG_PCCD_v, REV_PIV_ADM_MOE_1.CAP_MUE_v, REV_PIV_ADM_MOE_1.MUE_DISPUESTO_v, REV_PIV_ADM_MOE_1.DEBT_BURDEN_INICIAL_SSF_v, REV_PIV_ADM_MOE_1.DEBT_BURDEN_FINAL_v, REV_PIV_ADM_MOE_1.MULTIPLICADOR_v, REV_PIV_ADM_MOE_1.LINEA_MAXIMA_v, REV_PIV_ADM_MOE_1.MUE_DISPONIBLE_v, REV_PIV_ADM_MOE_1.LIMMAXLOGO_v, REV_PIV_ADM_MOE_1.LIMMINLOGO_v, REV_PIV_ADM_MOE_1.LINEA_TIMESINCOME_v, REV_PIV_ADM_MOE_1.LINEA_DISPDEBTBURDEN_v, REV_PIV_ADM_MOE_1.LINEADISPMUE_v, REV_PIV_ADM_MOE_1.LINEA_CAP_PRODUCTO_v, REV_PIV_ADM_MOE_1.LIMITE_NUEVA_LINEA_v, REV_PIV_ADM_MOE_1.EMPLEADO_CUSCATLAN_v, REV_PIV_ADM_MOE_1.LINEAMINIMA_v, REV_PIV_ADM_MOE_1.FLAG_NORMALSALES_v, REV_PIV_ADM_MOE_1.EXPCREDITICIA_ALL_v, REV_PIV_ADM_MOE_1.EXPPCCD_ALL_v, REV_PIV_ADM_MOE_1.LIMITE_PCCD_EQFX_v, REV_PIV_ADM_MOE_1.LIMITE_PCCD_v, REV_PIV_ADM_MOE_1.EMPLEO_EMPRESA_v, REV_PIV_ADM_MOE_1.GASTOS_NUEVA_LINEA_v, REV_PIV_ADM_MOE_1.LIMMAXLOGO2_v, REV_PIV_ADM_MOE_1.LIMMINLOGO2_v, REV_PIV_ADM_MOE_1.CAP_DB_v, REV_PIV_ADM_MOE_1.DEBT_BURDEN_FINAL_SSF_v, REV_PIV_ADM_MOE_1.LIMITEFINAL_LINEA1_v, REV_PIV_ADM_MOE_1.LIMITEFINAL_LINEA2_v, REV_PIV_ADM_MOE_1.CAPACIDADEDEUDAMIENTOMENSUAL_v, REV_PIV_ADM_MOE_1.DEBT_BURDEN_INICIAL_ALL_v, REV_PIV_ADM_MOE_1.DEBT_BURDEN_FINAL_ALL_v, REV_PIV_ADM_MOE_1.TASA_X_LOGO_v, REV_PIV_ADM_MOE_1.MUE_FINAL2_v, REV_PIV_ADM_MOE_1.MUE_FINAL3_v, REV_PIV_ADM_MOE_1.PERFIL_DOCUMENTACION_v, REV_PIV_ADM_MOE_1.DOCUMENTACION_v, REV_PIV_ADM_MOE_1.ESTRATEGIA_AUTENTICACION_v, REV_PIV_ADM_MOE_1.PRODUCTO_AUTENTICACION_v, REV_PIV_ADM_MOE_1.UMBRAL_SOLICITADO_v, REV_PIV_ADM_MOE_1.VERIFICAR_IDENTIDAD_v, REV_PIV_ADM_MOE_1.CODIGO_DOC_v, REV_PIV_ADM_MOE_1.SYSTEMDATE_v, sysdate(), REV_PIV_ADM_MOE_1.DI_FILENAME FROM REV_PIV_ADM_MOE_1 
+SELECT REV_PIV_ADM_MOE_1.EDAD_v, REV_PIV_ADM_MOE_1.TIPO_CLIENTE_v, REV_PIV_ADM_MOE_1.POLICY_INDICATOR_v, REV_PIV_ADM_MOE_1.RAC_v, REV_PIV_ADM_MOE_1.LOGO_v, REV_PIV_ADM_MOE_1.SOURCECODE_v, REV_PIV_ADM_MOE_1.TIPOEMPLEO_v, REV_PIV_ADM_MOE_1.TIEMPOEMPLEO_v, REV_PIV_ADM_MOE_1.LOGO2_v, REV_PIV_ADM_MOE_1.INGRESOS_v, REV_PIV_ADM_MOE_1.FORZAJE_SCORE_v, REV_PIV_ADM_MOE_1.TIPO_PCCD_v, REV_PIV_ADM_MOE_1.PERFIL_CLIENTE_v, REV_PIV_ADM_MOE_1.MATCH_INTERNO_v, REV_PIV_ADM_MOE_1.GRADUADO_v, REV_PIV_ADM_MOE_1.UNIVERSIDAD_v, REV_PIV_ADM_MOE_1.GARANTIA_DEPOSITO_v, REV_PIV_ADM_MOE_1.MISMA_EMPRESA_v, REV_PIV_ADM_MOE_1.INGRESO_BASE_v, REV_PIV_ADM_MOE_1.NRO_SOLICITUD_v, REV_PIV_ADM_MOE_1.SUMACUOTA_CARDS_SSF_v, REV_PIV_ADM_MOE_1.SUMACUOTA_HIPOTECAS_SSF_v, REV_PIV_ADM_MOE_1.SUMACUOTA_PREST_CONSUMO_SSF_v, REV_PIV_ADM_MOE_1.SUMACUOTA_SOBREGIROS_SSF_v, REV_PIV_ADM_MOE_1.SUMACUOTA_REFI_SSF_v, REV_PIV_ADM_MOE_1.MORAACTUAL_ALL_SSF_v, REV_PIV_ADM_MOE_1.REFERENCIA_MASANTIGUA_SSF_v, REV_PIV_ADM_MOE_1.CONTEO_WO_SSF_v, REV_PIV_ADM_MOE_1.LIMITEPCCD_6MESES_SSF_v, REV_PIV_ADM_MOE_1.LIMITEPCCD_12MESES_SSF_v, REV_PIV_ADM_MOE_1.CONTEO_REFIS_SSF_v, REV_PIV_ADM_MOE_1.MAYOR_ANT_TC_SSF_v, REV_PIV_ADM_MOE_1.SCORE_BUREAU_EQFX_v, REV_PIV_ADM_MOE_1.LIMITEPCCD_6MESES_EQFX_v, REV_PIV_ADM_MOE_1.LIMITEPCCD_12MESES_EQFX_v, REV_PIV_ADM_MOE_1.MORAACTUAL_EQFX_v, REV_PIV_ADM_MOE_1.NUMEROMESES_EQFX_v, REV_PIV_ADM_MOE_1.ANTMAXTC_EQFX_v, REV_PIV_ADM_MOE_1.TC_JURIDICO_EQFX_v, REV_PIV_ADM_MOE_1.TOTAL_JUICIOS_EQFX_v, REV_PIV_ADM_MOE_1.SUMCUOACTOT_EQFX_v, REV_PIV_ADM_MOE_1.SE_CONSULTO_EQUIFAX_v, REV_PIV_ADM_MOE_1.LIMITE_SUPERIOR_EQFX_v, REV_PIV_ADM_MOE_1.LIMITE_INFERIOR_EQFX_v, REV_PIV_ADM_MOE_1.CUARTIL_EQFX_v, REV_PIV_ADM_MOE_1.FLAG_EXPATRIADO_v, REV_PIV_ADM_MOE_1.FLAG_VIP_v, REV_PIV_ADM_MOE_1.MOB_VISA_v, REV_PIV_ADM_MOE_1.MOB_MASTER_v, REV_PIV_ADM_MOE_1.BEH_SCORE_VISA_v, REV_PIV_ADM_MOE_1.BEH_SCORE_MASTER_v, REV_PIV_ADM_MOE_1.TOTAL_DPD_v, REV_PIV_ADM_MOE_1.NUM_TC_v, REV_PIV_ADM_MOE_1.VISA_BALANCE_v, REV_PIV_ADM_MOE_1.VISA_LINE_v, REV_PIV_ADM_MOE_1.MASTER_BALANCE_v, REV_PIV_ADM_MOE_1.MASTER_LINE_v, REV_PIV_ADM_MOE_1.BLOCK_CODE_VISA_v, REV_PIV_ADM_MOE_1.BLOCK_CODE_MASTER_v, REV_PIV_ADM_MOE_1.RW_BALANCE_v, REV_PIV_ADM_MOE_1.VISA_WRITE_OFF_v, REV_PIV_ADM_MOE_1.MASTER_WRITE_OFF_v, REV_PIV_ADM_MOE_1.IL_WRITE_OFF_v, REV_PIV_ADM_MOE_1.MORTG_WRITE_OFF_v, REV_PIV_ADM_MOE_1.AUTO_WRITE_OFF_v, REV_PIV_ADM_MOE_1.MONTHS_LAST_CLI_v, REV_PIV_ADM_MOE_1.FLAG_PRE_REJECTION_v, REV_PIV_ADM_MOE_1.MOB_YOUNGEST_EXTRA_v, REV_PIV_ADM_MOE_1.NEG_REFERENCES_v, REV_PIV_ADM_MOE_1.RW_CC_BALANCE_v, REV_PIV_ADM_MOE_1.IL_CC_BALANCE_v, REV_PIV_ADM_MOE_1.RC_LINE_v, REV_PIV_ADM_MOE_1.RC_BALANCE_v, REV_PIV_ADM_MOE_1.EXTRA_BALANCE_v, REV_PIV_ADM_MOE_1.IL_BALANCE_v, REV_PIV_ADM_MOE_1.OD_LINE_v, REV_PIV_ADM_MOE_1.OD_BALANCE_v, REV_PIV_ADM_MOE_1.AUTO_BALANCE_v, REV_PIV_ADM_MOE_1.DDA_OVERLIMIT_v, REV_PIV_ADM_MOE_1.VAREXTRA3_v, REV_PIV_ADM_MOE_1.SCORE_INTERNO_v, REV_PIV_ADM_MOE_1.FLAG_REWRITE_v, REV_PIV_ADM_MOE_1.MOB_REWRITE_v, REV_PIV_ADM_MOE_1.RC_WRITE_OFF_v, REV_PIV_ADM_MOE_1.SOB_WRITE_OFF_v, REV_PIV_ADM_MOE_1.SUMACUOTAS_TARJETAS_COBIS_v, REV_PIV_ADM_MOE_1.SUMACUOTAS_HIPOTECAS_COBIS_v, REV_PIV_ADM_MOE_1.SUMACUOTAS_PERSONALES_COBIS_v, REV_PIV_ADM_MOE_1.TIPOEMPRESA_v, REV_PIV_ADM_MOE_1.FLAG_ORO_v, REV_PIV_ADM_MOE_1.FLAG_PEP_v, REV_PIV_ADM_MOE_1.FLAG_EXTRANJERO_v, REV_PIV_ADM_MOE_1.FLAG_CREDOMATIC_v, REV_PIV_ADM_MOE_1.FLAG_AFP_ELECTRONICO_v, REV_PIV_ADM_MOE_1.REASONCODE_v, REV_PIV_ADM_MOE_1.AUX2_v, REV_PIV_ADM_MOE_1.PREVIOUS_REASONCODE_v, REV_PIV_ADM_MOE_1.AUX_v, REV_PIV_ADM_MOE_1.CUOTASINTERNAS_COBIS_v, REV_PIV_ADM_MOE_1.TARGET_MARKET_v, REV_PIV_ADM_MOE_1.FLAG_PLANILLERO_v, REV_PIV_ADM_MOE_1.FLAG_HIT_v, REV_PIV_ADM_MOE_1.PROGRAMA_v, REV_PIV_ADM_MOE_1.LIMITE_PCCD_SSF_v, REV_PIV_ADM_MOE_1.FLAG_XS_v, REV_PIV_ADM_MOE_1.REASONCODES_v, REV_PIV_ADM_MOE_1.FLAG_PCCD_v, REV_PIV_ADM_MOE_1.CAP_MUE_v, REV_PIV_ADM_MOE_1.MUE_DISPUESTO_v, REV_PIV_ADM_MOE_1.DEBT_BURDEN_INICIAL_SSF_v, REV_PIV_ADM_MOE_1.DEBT_BURDEN_FINAL_v, REV_PIV_ADM_MOE_1.MULTIPLICADOR_v, REV_PIV_ADM_MOE_1.LINEA_MAXIMA_v, REV_PIV_ADM_MOE_1.MUE_DISPONIBLE_v, REV_PIV_ADM_MOE_1.LIMMAXLOGO_v, REV_PIV_ADM_MOE_1.LIMMINLOGO_v, REV_PIV_ADM_MOE_1.LINEA_TIMESINCOME_v, REV_PIV_ADM_MOE_1.LINEA_DISPDEBTBURDEN_v, REV_PIV_ADM_MOE_1.LINEADISPMUE_v, REV_PIV_ADM_MOE_1.LINEA_CAP_PRODUCTO_v, REV_PIV_ADM_MOE_1.LIMITE_NUEVA_LINEA_v, REV_PIV_ADM_MOE_1.EMPLEADO_CUSCATLAN_v, REV_PIV_ADM_MOE_1.LINEAMINIMA_v, REV_PIV_ADM_MOE_1.FLAG_NORMALSALES_v, REV_PIV_ADM_MOE_1.EXPCREDITICIA_ALL_v, REV_PIV_ADM_MOE_1.EXPPCCD_ALL_v, REV_PIV_ADM_MOE_1.LIMITE_PCCD_EQFX_v, REV_PIV_ADM_MOE_1.LIMITE_PCCD_v, REV_PIV_ADM_MOE_1.EMPLEO_EMPRESA_v, REV_PIV_ADM_MOE_1.GASTOS_NUEVA_LINEA_v, REV_PIV_ADM_MOE_1.LIMMAXLOGO2_v, REV_PIV_ADM_MOE_1.LIMMINLOGO2_v, REV_PIV_ADM_MOE_1.CAP_DB_v, REV_PIV_ADM_MOE_1.DEBT_BURDEN_FINAL_SSF_v, REV_PIV_ADM_MOE_1.LIMITEFINAL_LINEA1_v, REV_PIV_ADM_MOE_1.LIMITEFINAL_LINEA2_v, REV_PIV_ADM_MOE_1.CAPACIDADEDEUDAMIENTOMENSUAL_v, REV_PIV_ADM_MOE_1.DEBT_BURDEN_INICIAL_ALL_v, REV_PIV_ADM_MOE_1.DEBT_BURDEN_FINAL_ALL_v, REV_PIV_ADM_MOE_1.TASA_X_LOGO_v, REV_PIV_ADM_MOE_1.MUE_FINAL2_v, REV_PIV_ADM_MOE_1.MUE_FINAL3_v, REV_PIV_ADM_MOE_1.PERFIL_DOCUMENTACION_v, REV_PIV_ADM_MOE_1.DOCUMENTACION_v, REV_PIV_ADM_MOE_1.ESTRATEGIA_AUTENTICACION_v, REV_PIV_ADM_MOE_1.PRODUCTO_AUTENTICACION_v, REV_PIV_ADM_MOE_1.UMBRAL_SOLICITADO_v, REV_PIV_ADM_MOE_1.VERIFICAR_IDENTIDAD_v, REV_PIV_ADM_MOE_1.CODIGO_DOC_v, REV_PIV_ADM_MOE_1.INGRESO_INFERIDO_EQFX_v, REV_PIV_ADM_MOE_1.FLAG_GARANTIZADA_v, REV_PIV_ADM_MOE_1.DEBE_CONSULTAR_EQUIFAX_v, REV_PIV_ADM_MOE_1.FLAG_TIGO_v, REV_PIV_ADM_MOE_1.INGRESO_VERIFICADO_v, REV_PIV_ADM_MOE_1.MODELO_VERIFICADO_v, REV_PIV_ADM_MOE_1.SYSTEMDATE_v, REV_PIV_ADM_MOE_1.SYSTEMTIME_v, REV_PIV_ADM_MOE_1.CLIENTSYSTEM_v, REV_PIV_ADM_MOE_1.CLIENTTCPIP_v, REV_PIV_ADM_MOE_1.USUARIO_v, REV_PIV_ADM_MOE_1.RETURNSYSTEMBLOCK_v, REV_PIV_ADM_MOE_1.RETURNINPUTBLOCK_v, REV_PIV_ADM_MOE_1.RETURNINTERNALBLOCK_v, REV_PIV_ADM_MOE_1.RETURNDECISIONBLOCK_v, REV_PIV_ADM_MOE_1.APPLICATIONNUMBER_v, REV_PIV_ADM_MOE_1.FINALSTATUS_v, REV_PIV_ADM_MOE_1.SYSTEMID_v, REV_PIV_ADM_MOE_1.SYSTEMCULTURE_v, REV_PIV_ADM_MOE_1.ENGINERELEASE_v, REV_PIV_ADM_MOE_1.WRITEDECISIONHISTORY_v, REV_PIV_ADM_MOE_1.STEPBYSTEP_v, REV_PIV_ADM_MOE_1.ERROR1_v, REV_PIV_ADM_MOE_1.ERROR2_v, REV_PIV_ADM_MOE_1.ERROR3_v, REV_PIV_ADM_MOE_1.ERROR4_v, REV_PIV_ADM_MOE_1.CHAMPCHALL50_50_v, REV_PIV_ADM_MOE_1.CHAMPCHALL90_10_v, sysdate(), REV_PIV_ADM_MOE_1.DI_FILENAME FROM REV_PIV_ADM_MOE_1 
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
-ALGUIComment ("InputSchema_WidthProp" = '51', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>444</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '1260', "y" = '-90')
-GUID::'a55b5979-3e37-4edc-b276-93871c282998' LOAD TABLE DS_TARGET.SAT.CUS_ADM_MOE INPUT(Query)
+ALGUIComment ("InputSchema_WidthProp" = '51', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>444</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '1260', "y" = '-90')
+GUID::'f75aaedb-a3b3-48a0-95c7-b822efc9f970' LOAD TABLE DS_TARGET.SAT.CUS_ADM_MOE INPUT(Query)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
 <bulk_col_delimiter>/127</bulk_col_delimiter>
 <bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
-<bulk_ldr_generate_files_only>0</bulk_ldr_generate_files_only>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
 <bulk_row_delimiter>&#xA;</bulk_row_delimiter>
 <enable_partitioning>no</enable_partitioning>
 <ignore_column_case>yes</ignore_column_case>
@@ -755,7 +868,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 <iq_log_null_constraints>no</iq_log_null_constraints>
 <iq_log_unique_constraints>no</iq_log_unique_constraints>
 <loader_auto_correct>no</loader_auto_correct>
-<loader_bulk_load>0</loader_bulk_load>
+<loader_bulk_load></loader_bulk_load>
 <loader_compare_column>compare_by_name</loader_compare_column>
 <loader_delete_map></loader_delete_map>
 <loader_drop_and_create_table>yes</loader_drop_and_create_table>
@@ -873,7 +986,7 @@ SET("connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configur
 
 END
  SET ("Cache_type" = 'in_memory_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 22 11:33:30 2019', "ActaValue_3" = 'Wed Apr 24 11:25:51 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Mar 22 11:33:30 2019', "ActaValue_3" = 'Tue Apr 23 18:02:17 2019', "x" = '-1', "y" = '-1')
 CREATE SESSION JOB_ADM_MOE::'3d951ad1-fc17-41cd-af47-1ee6877ec6ca'( )
 DECLARE
      $L_EXISTE_JOB INT ;
@@ -891,7 +1004,7 @@ DECLARE
      GLOBAL $G_VAR_NUM_FILE INT ;
      GLOBAL $G_RUTA VARCHAR(150) ;
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI', "ui_script_text" = 'print(\'--version: 7193656\');
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI', "ui_script_text" = 'print(\'--version: b129255\');
 
 $G_JOB_NAME = job_name( );
 
@@ -902,7 +1015,7 @@ $G_SH_ROUTE = sql(\'DS_CONTROL\', \'SELECT VALOR FROM CNF.PARAMETROS WHERE PARAM
 $G_RUTA = $G_SH_ROUTE ;
 ', "x" = '90', "y" = '-90')
 BEGIN_SCRIPT
-print('--version: 7193656');$G_JOB_NAME = job_name();$G_FILE_LOCATION = CF_DEFINE_UBICACION();$G_SH_ROUTE = sql('DS_CONTROL', 'SELECT VALOR FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%MDE%\'');$G_RUTA = $G_SH_ROUTE;END
+print('--version: b129255');$G_JOB_NAME = job_name();$G_FILE_LOCATION = CF_DEFINE_UBICACION();$G_SH_ROUTE = sql('DS_CONTROL', 'SELECT VALOR FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%MDE%\'');$G_RUTA = $G_SH_ROUTE;END
  AlGUIComment ("If_condition" = 'CF_JOBNAME( $G_JOB_NAME,$L_EXISTE_JOB) = 1', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'CDN_JOB', "x" = '480', "y" = '-90')
 IF ((cf_jobname($G_JOB_NAME, $L_EXISTE_JOB) = 1) )
 BEGIN
@@ -928,7 +1041,7 @@ $L_FECHA = sysdate();sql('DS_CONTROL', 'INSERT INTO LOG_EJECUCION(ERROR_NUMBER, 
 END
 END
  SET ("job_checkpoint_enabled" = 'no', "job_collect_statistics" = 'no', "job_collect_statistics_monitor" = 'no', "job_create_debug_package" = 'no', "job_enable_assemblers" = 'yes', "job_enable_audit" = 'yes', "job_enable_dataquality" = 'yes', "job_export_repo" = 'no', "job_export_reports" = 'no', "job_guid" = '3d951ad1-fc17-41cd-af47-1ee6877ec6ca', "job_isrecoverable" = 'no', "job_mode" = 'Multi-Process', "job_monitor_sample_rate" = '1000', "job_monitor_timer_rate" = '5', "job_name" = 'JOB_ADM_MOE', "job_print_version" = 'no', "job_testmode_enabled" = 'no', "job_trace_abapquery" = 'no', "job_trace_all" = 'no', "job_trace_ascomm" = 'no', "job_trace_assemblers" = 'no', "job_trace_audit" = 'no', "job_trace_dataflow" = 'yes', "job_trace_idoc_file" = 'no', "job_trace_memory_loader" = 'no', "job_trace_memory_reader" = 'no', "job_trace_optimized_dataflow" = 'no', "job_trace_parallel_execution" = 'no', "job_trace_rfc_function" = 'no', "job_trace_row" = 'no', "job_trace_script" = 'no', "job_trace_session" = 'yes', "job_trace_sql_only" = 'no', "job_trace_sqlfunctions" = 'no', "job_trace_sqlloaders" = 'no', "job_trace_sqlreaders" = 'no', "job_trace_sqltransforms" = 'no', "job_trace_stored_procedure" = 'no', "job_trace_table" = 'no', "job_trace_table_reader" = 'no', "job_trace_transform" = 'no', "job_trace_userfunction" = 'no', "job_trace_usertransform" = 'no', "job_trace_workflow" = 'yes', "job_type" = 'batch', "job_use_statistics" = 'yes', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Apr  5 19:12:55 2019', "ActaValue_3" = 'Tue Apr 23 18:02:17 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri Apr  5 19:12:55 2019', "ActaValue_3" = 'Thu May  2 14:38:22 2019', "x" = '-1', "y" = '-1')
 CREATE PLAN WF_CUS_ADM_MOE::'cb375fd9-3310-4d2f-8b89-3d053457b2f0'( )
 DECLARE
      $L_TABLE_NAME VARCHAR(100) ;
@@ -975,14 +1088,14 @@ TRY
 BEGIN
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>341</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_ADM_MOE', "ui_script_text" = '
 
-$G_COUNTER = sql(\'DS_CONTROL\',\'SELECT isnull (MIN(ROW_ID),0) FROM CNF.FILE_LIST_MDE where loaded is null or loaded <> 1 and upper(FILENAME) like \\\'%DECHISTORY_CUS_ADM.DAT%\\\'\');
+$G_COUNTER = sql(\'DS_CONTROL\',\'SELECT isnull (MIN(ROW_ID),0) FROM CNF.FILE_LIST_MDE where loaded is null or loaded <> 1 and upper(FILENAME) like \\\'%DECHISTORY_CUS_ADM%\\\'\');
 
 
-$G_VAR_NUM_FILE = $G_COUNTER + sql(\'DS_CONTROL\',\'select count(1) from CNF.FILE_LIST_MDE where loaded is null or loaded <> 1 and upper(FILENAME) like \\\'%DECHISTORY_CUS_ADM.DAT%\\\'\');
+$G_VAR_NUM_FILE = $G_COUNTER + sql(\'DS_CONTROL\',\'select count(1) from CNF.FILE_LIST_MDE where loaded is null or loaded <> 1 and upper(FILENAME) like \\\'%DECHISTORY_CUS_ADM%\\\'\');
 
 ', "x" = '870', "y" = '-90')
 BEGIN_SCRIPT
-$G_COUNTER = sql('DS_CONTROL', 'SELECT isnull (MIN(ROW_ID),0) FROM CNF.FILE_LIST_MDE where loaded is null or loaded <> 1 and upper(FILENAME) like \'%DECHISTORY_CUS_ADM.DAT%\'');$G_VAR_NUM_FILE = ($G_COUNTER + sql('DS_CONTROL', 'select count(1) from CNF.FILE_LIST_MDE where loaded is null or loaded <> 1 and upper(FILENAME) like \'%DECHISTORY_CUS_ADM.DAT%\''));END
+$G_COUNTER = sql('DS_CONTROL', 'SELECT isnull (MIN(ROW_ID),0) FROM CNF.FILE_LIST_MDE where loaded is null or loaded <> 1 and upper(FILENAME) like \'%DECHISTORY_CUS_ADM%\'');$G_VAR_NUM_FILE = ($G_COUNTER + sql('DS_CONTROL', 'select count(1) from CNF.FILE_LIST_MDE where loaded is null or loaded <> 1 and upper(FILENAME) like \'%DECHISTORY_CUS_ADM%\''));END
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>319</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'ADM_MOE_LOOP', "x" = '1260', "y" = '-90')
 WHILE (($G_COUNTER < $G_VAR_NUM_FILE) )
 BEGIN

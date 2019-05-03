@@ -3,3 +3,5 @@
 		Se verifican las tablas
 		Se agrega control de version
 		Se verifica el MIS_DATE de 8 tablas. Pendiente de generar el MIS_DATE en 3 tablas, definir por parte de BC
+190503: Se amplia columna DW_PAYMENT_HISTORY de tabla PTREFMAS a 12 caracteres
+		Para la tabla PTOPERAC el etl tiene que dejar de dividir dentro de 1000 para la columna OP_FACTOR_MLO debido a que antes el archivo plano no traia punto decimal y ahora si..

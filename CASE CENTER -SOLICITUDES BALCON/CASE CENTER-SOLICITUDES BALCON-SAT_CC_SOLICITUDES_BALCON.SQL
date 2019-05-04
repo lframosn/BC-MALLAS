@@ -48,8 +48,9 @@ drop table IF EXISTS SAT.CC_SOLICITUDES_BALCON;  CREATE TABLE IF NOT EXISTS SAT.
 ,	MODIFIED	TIMESTAMP		--modified
 ,	MODIFIED_BY	VARCHAR	(255)	--modified by
 ,	FECHA_DE_ENVIO_PARA_IMPRESION	TIMESTAMP		--fecha de envio para impresion
+,	ROLES_EJECUTIVO VARCHAR(255)
 ,	SUPERVISOR VARCHAR(255)
-,	CANAL	VARCHAR(255)
+,	CANAL_EJECUTIVO	VARCHAR(255)
 ,	MIS_DATE	DATE		--fecha de proceso
 ,	LOAD_DATE	DATE default getdate()		--Fecha en que se realiza la carga
 ); COMMIT;	 	 		

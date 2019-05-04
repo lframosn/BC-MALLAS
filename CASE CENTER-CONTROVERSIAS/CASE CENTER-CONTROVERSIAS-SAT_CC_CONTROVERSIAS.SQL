@@ -59,11 +59,6 @@ drop table IF EXISTS SAT.CC_CONTROVERSIAS;  CREATE TABLE IF NOT EXISTS SAT.CC_CO
 ,	ESTADO	VARCHAR	(255)	--estado
 ,	FECHA_ULTIMA_MODIFICACION	TIMESTAMP		--fecha ultima modificacion
 ,	CREATED_BY	VARCHAR	(255)	--created by
-,	CODIGO_DE_LA_AUTORIZACION	VARCHAR	(255)	--Codigo de la autorizacion
-,	NOMBRE_DEL_COMERCIO	VARCHAR	(255)	--Nombre del comercio
-,	CODIGO_DE_COMERCIO_MCC	DECIMAL	(4,0)	--Codigo de Comercio MCC
-,	FECHA_Y_HORA_DE_LA_TRANSACCION	TIMESTAMP		--fecha y hora de la transaccion
-,	PAIS_DE_LA_TRANSACCION	DECIMAL	(3,0)	--pais de la transaccion
 ,	MIS_DATE	DATE		--fecha de proceso
 ,	LOAD_DATE	DATE default getdate()		--Fecha en que se realiza la carga
 ); COMMIT;	 	 		

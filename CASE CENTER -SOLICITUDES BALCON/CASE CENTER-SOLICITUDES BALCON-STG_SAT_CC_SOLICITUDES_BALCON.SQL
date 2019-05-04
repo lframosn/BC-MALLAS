@@ -26,7 +26,7 @@ drop table IF EXISTS STG_SAT.CC_SOLICITUDES_BALCON;  CREATE TABLE IF NOT EXISTS 
 ,	TIPO_CUOTA	VARCHAR	(255)	--tipo cuota
 ,	CUOTAS	DECIMAL	(3,0)	--cuotas
 ,	TASA_PREFERENCIAL	DECIMAL	(7,2)	--tasa preferencial
-,	FECHA_DE_CORTE	DATE		--fecha de corte
+,	FECHA_DE_CORTE	TIMESTAMP		--fecha de corte
 ,	LUGAR_DE_ENTREGA	VARCHAR	(255)	--lugar de entrega
 ,	AGENCIA	VARCHAR	(255)	--agencia
 ,	MONTO_CHEQUES_SOLICITADOS	DECIMAL	(17,0)	--monto cheques solicitados
@@ -48,6 +48,8 @@ drop table IF EXISTS STG_SAT.CC_SOLICITUDES_BALCON;  CREATE TABLE IF NOT EXISTS 
 ,	MODIFIED	TIMESTAMP		--modified
 ,	MODIFIED_BY	VARCHAR	(255)	--modified by
 ,	FECHA_DE_ENVIO_PARA_IMPRESION	TIMESTAMP		--fecha de envio para impresion
+,	SUPERVISOR VARCHAR(255)
+,	CANAL	VARCHAR(255)
 ,	MIS_DATE	DATE		--fecha de proceso
 ,	LOAD_DATE	DATE default getdate()		--Fecha en que se realiza la carga
 ); COMMIT;	 	 		

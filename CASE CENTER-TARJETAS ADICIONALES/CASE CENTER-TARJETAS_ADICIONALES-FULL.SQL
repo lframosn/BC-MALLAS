@@ -115,7 +115,7 @@ drop table IF EXISTS SAT.CC_TARJETAS_ADICIONALES;  CREATE TABLE IF NOT EXISTS SA
 ,	CUSCAID	VARCHAR	(255)	--cuscaid
 ,	FECHA_INGRESO	DATE		--fecha ingreso
 ,	FECHA_MODIFICACION	TIMESTAMP		--fecha modificacion
-,	FECHA_APROBACION	VARCHAR	(255)	--fecha aprobacion
+,	FECHA_APROBACION	DATE	--fecha aprobacion
 ,	ESTADO	VARCHAR	(255)	--estado
 ,	MIS_DATE	DATE		--fecha de proceso
 ,	LOAD_DATE	DATE default getdate()		--Fecha en que se realiza la carga
@@ -224,7 +224,7 @@ drop table IF EXISTS STG_SAT.CC_TARJETAS_ADICIONALES;  CREATE TABLE IF NOT EXIST
 ,	CUSCAID	VARCHAR	(255)	--cuscaid
 ,	FECHA_INGRESO	DATE		--fecha ingreso
 ,	FECHA_MODIFICACION	TIMESTAMP		--fecha modificacion
-,	FECHA_APROBACION	VARCHAR	(255)	--fecha aprobacion
+,	FECHA_APROBACION	DATE	--fecha aprobacion
 ,	ESTADO	VARCHAR	(255)	--estado
 ,	MIS_DATE	DATE		--fecha de proceso
 ,	LOAD_DATE	DATE default getdate()		--Fecha en que se realiza la carga

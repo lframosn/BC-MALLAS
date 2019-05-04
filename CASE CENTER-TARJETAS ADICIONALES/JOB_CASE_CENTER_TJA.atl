@@ -15,7 +15,7 @@ CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET
 <locale_codepage>&lt;default&gt;</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E8B329712D69BFFF45C1C9B3488E92B2B8DF79CFD04704FD2F09C3004E0574A3464CCC112EF90A204AFDA7F350EBFA</password>
+<password>+0400000000120303000803E86DC995682E40992D1BB0731D53CB68C11F2C1289F75F6004515A817B535DC9FA2EB4180A461B7D5D5E6D5D1F3DF1</password>
 <server_codepage>&lt;default&gt;</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -40,7 +40,7 @@ CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET 
 <locale_codepage>iso-8859-1</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E8B58BF7234E4177880BD54377ACDC78A42F46ED9EF15957E0E109D30FAE24B965348F3E5EC541548B468F5F28D96F</password>
+<password>+0400000000120303000803E85F92E9DD11B2DA40381DBBD6B6FF4B6CD7E7F7BD28611761EF6B03EB4E4B78445496098E255AEE790AAD4FACAF67</password>
 <server_codepage>iso-8859-1</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -58,15 +58,14 @@ ActaName_3 = 'RDescription',ActaValue_3 = '' ,
 ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
-ActaName_7 = 'RDate_created',ActaValue_7 = 'Thu May  2 14:12:19 2019' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Fri May  3 09:38:45 2019' , 
-ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '17' , 
+ActaName_7 = 'RDate_created',ActaValue_7 = 'Fri May  3 19:04:38 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Fri May  3 19:03:12 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '27' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
-ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '17' , 
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '27' , 
 ActaName_12 = 'RNumber_Of_Updates',ActaValue_12 = '0' , 
 ActaName_13 = 'RNumber_Of_Deletes',ActaValue_13 = '0' , 
-ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '3 Seconds' , 
-ActaName_15 = 'RDate_modified',ActaValue_15 = 'Thu May  2 15:51:28 2019' )
+ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '3 Seconds' )
 CREATE TABLE DS_TARGET.SAT.CC_TARJETAS_ADICIONALES(PAN VARCHAR(255)  NULL , 
 SOLICITUD VARCHAR(255)  NULL , 
 NUMERO_CLIENTE VARCHAR(255)  NULL , 
@@ -168,7 +167,7 @@ INDIC_TJ_EMV_ADIC5 VARCHAR(255)  NULL ,
 CUSCAID VARCHAR(255)  NULL , 
 FECHA_INGRESO DATE  NULL , 
 FECHA_MODIFICACION DATETIME(6)  NULL , 
-FECHA_APROBACION VARCHAR(255)  NULL , 
+FECHA_APROBACION DATE  NULL , 
 ESTADO VARCHAR(255)  NULL , 
 MIS_DATE DATE  NULL , 
 LOAD_DATE DATE  NULL ) 
@@ -181,13 +180,12 @@ ActaName_3 = 'RDescription',ActaValue_3 = '' ,
 ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
-ActaName_7 = 'RDate_created',ActaValue_7 = 'Thu May  2 14:12:21 2019' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Fri May  3 09:38:02 2019' , 
-ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '17' , 
+ActaName_7 = 'RDate_created',ActaValue_7 = 'Fri May  3 19:04:42 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Fri May  3 19:02:37 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '27' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
-ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '17' , 
-ActaName_12 = 'RElapsed_Time_For_Load',ActaValue_12 = '36 Seconds' , 
-ActaName_13 = 'RDate_modified',ActaValue_13 = 'Thu May  2 15:51:29 2019' )
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '27' , 
+ActaName_12 = 'RElapsed_Time_For_Load',ActaValue_12 = '33 Seconds' )
 CREATE TABLE DS_TARGET.STG_SAT.CC_TARJETAS_ADICIONALES(PAN VARCHAR(255)  NULL , 
 SOLICITUD VARCHAR(255)  NULL , 
 NUMERO_CLIENTE VARCHAR(255)  NULL , 
@@ -289,7 +287,7 @@ INDIC_TJ_EMV_ADIC5 VARCHAR(255)  NULL ,
 CUSCAID VARCHAR(255)  NULL , 
 FECHA_INGRESO DATE  NULL , 
 FECHA_MODIFICACION DATETIME(6)  NULL , 
-FECHA_APROBACION VARCHAR(255)  NULL , 
+FECHA_APROBACION DATE  NULL , 
 ESTADO VARCHAR(255)  NULL , 
 MIS_DATE DATE  NULL , 
 LOAD_DATE DATE  NULL ) 
@@ -463,7 +461,9 @@ END
 
 END_TRY
 END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Apr  3 14:15:33 2018', "ActaValue_6" = 'Mon Apr 22 15:40:21 2019', "InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '54', "ui_script_text" = '$L_ID_JOB_TABLE   = SQL(\'DS_CONTROL\', \'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \\\'[$P_JOBNAME]\\\'\');
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Apr  3 14:15:33 2018', "ActaValue_6" = 'Fri Aug 24 13:26:53 2018', "InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '55', "ui_script_text" = '$L_ID_JOB_TABLE   = SQL(\'DS_CONTROL\', \'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \\\'[$P_JOBNAME]\\\'\');
+
+print(\'<<<<<<<<<<<<<dmVyc2lvbjU=>>>>>>>>>>>\');
 
 IF($L_ID_JOB_TABLE IS NOT null)
 begin
@@ -482,7 +482,7 @@ RETURNS  INT
 DECLARE
      $L_ID_JOB_TABLE INT ;
 BEGIN
-$L_ID_JOB_TABLE = sql('DS_CONTROL', 'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \'[$P_JOBNAME]\'');IF (($L_ID_JOB_TABLE IS NOT  NULL ) )
+$L_ID_JOB_TABLE = sql('DS_CONTROL', 'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \'[$P_JOBNAME]\'');print('<<<<<<<<<<<<<dmVyc2lvbjU=>>>>>>>>>>>');IF (($L_ID_JOB_TABLE IS NOT  NULL ) )
 BEGIN
 $P_EXISTEJOB = 1;END
 ELSE
@@ -490,7 +490,7 @@ BEGIN
 $P_EXISTEJOB = 0;END
 RETURN $P_EXISTEJOB;
 END
- AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Wed Apr  4 11:29:53 2018', "ActaValue_6" = 'Wed Apr 10 15:09:19 2019', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '##/********************************************************           
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Wed Apr  4 11:29:53 2018', "ActaValue_6" = 'Thu Sep  6 17:32:55 2018', "InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '55', "ui_script_text" = '##/********************************************************           
 ##  * CF_TABLE_NAME                                        *   
 ##  *                                                      *   
 ##  * Author:  Jaime Ascencio | Gyssa                      *   
@@ -504,13 +504,10 @@ END
 #print( \'Validacion de tabla en WF\');
 $P_TABLE_NAME = replace_substr( $P_TABLE_NAME, \'stg.\', \'\');
 
-Print($P_TABLE_NAME);
+#Print(\'SELECT ID_JOB_TABLE FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \\\'[$P_TABLE_NAME]\\\'\');
  
 $L_REPROCESS   = SQL(\'DS_CONTROL\', \'select VALOR from cnf.PARAMETROS where PARAMETRO = \\\'REPROCESO\\\'\');
 $L_EXIST_TABLE   = SQL(\'DS_CONTROL\', \'SELECT ID_JOB_TABLE FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \\\'[$P_TABLE_NAME]\\\'\');
-
-PRINT (\'SELECT ID_JOB_TABLE FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \\\'[$P_TABLE_NAME]\\\'\');
-
 $L_FILE_EXIST = sql( \'DS_CONTROL\', \'SELECT count(1) FROM CNF.FILE_LIST WHERE filename like (\\\'[$P_TABLE_NAME]%\\\') and loaded = 0\');
 
 IF($L_EXIST_TABLE is not null) #que exista la tabla
@@ -533,7 +530,7 @@ begin
 			else
 				begin
 					$L_EXIST_TABLE  = 0;
-					print( \': NO EXISTE TABLA A REPROCESAR\');
+					print( \':: NO EXISTE TABLA A REPROCESAR\');
 				end
 		end
 		else
@@ -573,7 +570,7 @@ end
 else
 	begin
 		$L_EXIST_TABLE  = 0;
-		print( \'::: NO EXISTE TABLA A PROCESAR\');	
+		print( \':: NO EXISTE TABLA A PROCESAR\');	
 	end
 	
 
@@ -591,7 +588,7 @@ DECLARE
      $L_REPROCESS VARCHAR(1) ;
      $L_TBL_TO_REPRO VARCHAR(100) ;
 BEGIN
-$P_TABLE_NAME = replace_substr($P_TABLE_NAME, 'stg.', '');print($P_TABLE_NAME);$L_REPROCESS = sql('DS_CONTROL', 'select VALOR from cnf.PARAMETROS where PARAMETRO = \'REPROCESO\'');$L_EXIST_TABLE = sql('DS_CONTROL', 'SELECT ID_JOB_TABLE FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \'[$P_TABLE_NAME]\'');print('SELECT ID_JOB_TABLE FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \'[$P_TABLE_NAME]\'');$L_FILE_EXIST = sql('DS_CONTROL', 'SELECT count(1) FROM CNF.FILE_LIST WHERE filename like (\'[$P_TABLE_NAME]%\') and loaded = 0');IF (($L_EXIST_TABLE IS NOT  NULL ) )
+$P_TABLE_NAME = replace_substr($P_TABLE_NAME, 'stg.', '');$L_REPROCESS = sql('DS_CONTROL', 'select VALOR from cnf.PARAMETROS where PARAMETRO = \'REPROCESO\'');$L_EXIST_TABLE = sql('DS_CONTROL', 'SELECT ID_JOB_TABLE FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \'[$P_TABLE_NAME]\'');$L_FILE_EXIST = sql('DS_CONTROL', 'SELECT count(1) FROM CNF.FILE_LIST WHERE filename like (\'[$P_TABLE_NAME]%\') and loaded = 0');IF (($L_EXIST_TABLE IS NOT  NULL ) )
 BEGIN
 IF (($L_FILE_EXIST > 0) )
 BEGIN
@@ -602,7 +599,7 @@ BEGIN
 $L_EXIST_TABLE = 1;cf_type_load($L_TBL_TO_REPRO);END
 ELSE
 BEGIN
-$L_EXIST_TABLE = 0;print(': NO EXISTE TABLA A REPROCESAR');END
+$L_EXIST_TABLE = 0;print(':: NO EXISTE TABLA A REPROCESAR');END
 END
 ELSE
 BEGIN
@@ -626,7 +623,7 @@ END
 END
 ELSE
 BEGIN
-$L_EXIST_TABLE = 0;print('::: NO EXISTE TABLA A PROCESAR');END
+$L_EXIST_TABLE = 0;print(':: NO EXISTE TABLA A PROCESAR');END
 RETURN $L_EXIST_TABLE;
 END
  AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Mon May 28 15:00:01 2018', "ActaValue_6" = 'Tue Sep 11 21:47:28 2018', "InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '55', "ui_script_text" = '##/********************************************************           
@@ -671,12 +668,127 @@ BEGIN
 END
 RETURN 1;
 END
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu May  2 12:52:51 2019', "ActaValue_3" = 'Thu May  2 14:32:40 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu May  2 15:51:32 2019', "ActaValue_3" = 'Fri May  3 19:11:34 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_TARADICIONALES::'c0380447-005a-44cc-87ae-a277ec5f59fe'
 BEGIN
 
-ALGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = '', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>410</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '50', "x" = '870', "y" = '-90')
-GUID::'f6e8c7f4-1ac0-486c-a579-ff42a39b9f78' LOAD TABLE DS_TARGET.STG_SAT.CC_TARJETAS_ADICIONALES INPUT(Query)
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>347</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '42', "x" = '90', "y" = '-90')
+GUID::'d18a3c72-6362-42f5-93cf-2bc26ef72f94' READ FILE FF_TARADICIONALES."$G_FILE_NAME" OUTPUT(FF_TARADICIONALES)
+SET("adaptable" = 'no', "cache" = 'yes', "connection_port" = 'no', "file_location" = 'local', "name" = 'UNNAMED', "number_of_threads" = '<default>', "read_subfolders" = 'yes', "reader_capture_data_conversion_errors" = 'no', "reader_capture_file_access_errors" = 'yes', "reader_capture_row_format_errors" = 'yes', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'no', "reader_include_filename" = 'no', "reader_log_data_conversion_warnings" = 'yes', "reader_log_row_format_warnings" = 'yes', "reader_log_warnings" = 'yes', "reader_maximum_warnings_to_log" = '-99', "reader_skip_empty_files" = 'yes', "reader_skip_error_handling" = 'no', "reader_write_error_rows_to_file" = 'no', "root_dir" = '$G_FILE_LOCATION', "table_weight" = '0', "transfer_custom" = 'no');
+
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "ui_acta_from_schema_0" = 'FF_TARADICIONALES', "x" = '480', "y" = '-90')
+GUID::'af12a81b-1ac4-4b30-99be-a84a086c8ce9' CREATE VIEW Query( PAN VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.PAN') ,
+ SOLICITUD VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.SOLICITUD') ,
+ NUMERO_CLIENTE VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NUMERO_CLIENTE') ,
+ NOMBRE_CLIENTE VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NOMBRE_CLIENTE') ,
+ NRO_TJS_ADICIONALES VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NRO_TJS_ADICIONALES') ,
+ CALPARTICIP_BENEFTJADIC1_CONTRA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CALPARTICIP_BENEFTJADIC1_CONTRA') ,
+ CODIGO_TIPO_TJADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CODIGO_TIPO_TJADIC1') ,
+ CODIGO_MARCA_TJADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CODIGO_MARCA_TJADIC1') ,
+ TIPO_IDENTIF_1_ADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.TIPO_IDENTIF_1_ADIC1') ,
+ NUMERO_IDENTIF_1_ADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NUMERO_IDENTIF_1_ADIC1') ,
+ TIPO_IDENTIF_2_ADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.TIPO_IDENTIF_2_ADIC1') ,
+ NUMERO_IDENTIF_2_ADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NUMERO_IDENTIF_2_ADIC1') ,
+ PRIMER_NOMBRE_ADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.PRIMER_NOMBRE_ADIC1') ,
+ SEGUNDO_NOMBRE_ADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.SEGUNDO_NOMBRE_ADIC1') ,
+ PRIMER_APELLIDO_ADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.PRIMER_APELLIDO_ADIC1') ,
+ SEGUNDO_APELLIDO_ADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.SEGUNDO_APELLIDO_ADIC1') ,
+ NOMBRE_COMPLETO_ADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NOMBRE_COMPLETO_ADIC1') ,
+ INDIC_ESTAMP_TJADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.INDIC_ESTAMP_TJADIC1') ,
+ CONDIC_ESTAMP_TJADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CONDIC_ESTAMP_TJADIC1') ,
+ NOMBRE_ESTAMP_TJADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NOMBRE_ESTAMP_TJADIC1') ,
+ TELEFONO_CASA_ADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.TELEFONO_CASA_ADIC1') ,
+ TELEFONO_TRABAJO_ADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.TELEFONO_TRABAJO_ADIC1') ,
+ CALPARTICIP_BENEFTJADIC2_CONTRA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CALPARTICIP_BENEFTJADIC2_CONTRA') ,
+ CODIGO_TIPO_TJADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CODIGO_TIPO_TJADIC2') ,
+ CODIGO_MARCA_TJADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CODIGO_MARCA_TJADIC2') ,
+ NUMERO_IDENTIF_1_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NUMERO_IDENTIF_1_ADIC2') ,
+ NUMERO_IDENTIF_2_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NUMERO_IDENTIF_2_ADIC2') ,
+ NOMBRE_COMPLETO_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NOMBRE_COMPLETO_ADIC2') ,
+ INDIC_ESTAMP_TJADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.INDIC_ESTAMP_TJADIC2') ,
+ CONDIC_ESTAMP_TJADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CONDIC_ESTAMP_TJADIC2') ,
+ PRIMER_NOMBRE_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.PRIMER_NOMBRE_ADIC2') ,
+ SEGUNDO_NOMBRE_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.SEGUNDO_NOMBRE_ADIC2') ,
+ PRIMER_APELLIDO_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.PRIMER_APELLIDO_ADIC2') ,
+ SEGUNDO_APELLIDO_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.SEGUNDO_APELLIDO_ADIC2') ,
+ NOMBRE_ESTAMP_TJADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NOMBRE_ESTAMP_TJADIC2') ,
+ TELEFONO_CASA_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.TELEFONO_CASA_ADIC2') ,
+ TELEFONO_TRABAJO_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.TELEFONO_TRABAJO_ADIC2') ,
+ CELULAR_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CELULAR_ADIC2') ,
+ LIMITE_ADIC2 DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.LIMITE_ADIC2') ,
+ INDIC_EXENCION_CUOTAS_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.INDIC_EXENCION_CUOTAS_ADIC2') ,
+ INDIC_TJ_EMV_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.INDIC_TJ_EMV_ADIC2') ,
+ CALPARTICIP_BENEFTJADIC3_CONTRA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CALPARTICIP_BENEFTJADIC3_CONTRA') ,
+ CODIGO_TIPO_TJADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CODIGO_TIPO_TJADIC3') ,
+ CODIGO_MARCA_TJADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CODIGO_MARCA_TJADIC3') ,
+ NUMERO_IDENTIF_1_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NUMERO_IDENTIF_1_ADIC3') ,
+ NUMERO_IDENTIF_2_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NUMERO_IDENTIF_2_ADIC3') ,
+ NOMBRE_COMPLETO_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NOMBRE_COMPLETO_ADIC3') ,
+ INDIC_ESTAMP_TJADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.INDIC_ESTAMP_TJADIC3') ,
+ CONDIC_ESTAMP_TJADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CONDIC_ESTAMP_TJADIC3') ,
+ PRIMER_NOMBRE_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.PRIMER_NOMBRE_ADIC3') ,
+ SEGUNDO_NOMBRE_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.SEGUNDO_NOMBRE_ADIC3') ,
+ PRIMER_APELLIDO_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.PRIMER_APELLIDO_ADIC3') ,
+ SEGUNDO_APELLIDO_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.SEGUNDO_APELLIDO_ADIC3') ,
+ NOMBRE_ESTAMP_TJADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NOMBRE_ESTAMP_TJADIC3') ,
+ TELEFONO_CASA_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.TELEFONO_CASA_ADIC3') ,
+ TELEFONO_TRABAJO_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.TELEFONO_TRABAJO_ADIC3') ,
+ CELULAR_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CELULAR_ADIC3') ,
+ LIMITE_ADIC3 DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.LIMITE_ADIC3') ,
+ INDIC_EXENCION_CUOTAS_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.INDIC_EXENCION_CUOTAS_ADIC3') ,
+ INDIC_TJ_EMV_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.INDIC_TJ_EMV_ADIC3') ,
+ CALPARTICIP_BENEFTJADIC4_CONTRA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CALPARTICIP_BENEFTJADIC4_CONTRA') ,
+ CODIGO_TIPO_TJADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CODIGO_TIPO_TJADIC4') ,
+ CODIGO_MARCA_TJADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CODIGO_MARCA_TJADIC4') ,
+ NUMERO_IDENTIF_1_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NUMERO_IDENTIF_1_ADIC4') ,
+ NUMERO_IDENTIF_2_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NUMERO_IDENTIF_2_ADIC4') ,
+ NOMBRE_COMPLETO_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NOMBRE_COMPLETO_ADIC4') ,
+ INDIC_ESTAMP_TJADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.INDIC_ESTAMP_TJADIC4') ,
+ CONDIC_ESTAMP_TJADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CONDIC_ESTAMP_TJADIC4') ,
+ PRIMER_NOMBRE_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.PRIMER_NOMBRE_ADIC4') ,
+ SEGUNDO_NOMBRE_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.SEGUNDO_NOMBRE_ADIC4') ,
+ PRIMER_APELLIDO_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.PRIMER_APELLIDO_ADIC4') ,
+ SEGUNDO_APELLIDO_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.SEGUNDO_APELLIDO_ADIC4') ,
+ NOMBRE_ESTAMP_TJADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NOMBRE_ESTAMP_TJADIC4') ,
+ TELEFONO_CASA_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.TELEFONO_CASA_ADIC4') ,
+ TELEFONO_TRABAJO_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.TELEFONO_TRABAJO_ADIC4') ,
+ CELULAR_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CELULAR_ADIC4') ,
+ LIMITE_ADIC4 DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.LIMITE_ADIC4') ,
+ INDIC_EXENCION_CUOTAS_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.INDIC_EXENCION_CUOTAS_ADIC4') ,
+ INDIC_TJ_EMV_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.INDIC_TJ_EMV_ADIC4') ,
+ CALPARTICIP_BENEFTJADIC5_CONTRA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CALPARTICIP_BENEFTJADIC5_CONTRA') ,
+ CODIGO_TIPO_TJADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CODIGO_TIPO_TJADIC5') ,
+ CODIGO_MARCA_TJADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CODIGO_MARCA_TJADIC5') ,
+ NUMERO_IDENTIF_1_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NUMERO_IDENTIF_1_ADIC5') ,
+ NUMERO_IDENTIF_2_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NUMERO_IDENTIF_2_ADIC5') ,
+ NOMBRE_COMPLETO_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NOMBRE_COMPLETO_ADIC5') ,
+ PRIMER_NOMBRE_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.PRIMER_NOMBRE_ADIC5') ,
+ SEGUNDO_NOMBRE_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.SEGUNDO_NOMBRE_ADIC5') ,
+ PRIMER_APELLIDO_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.PRIMER_APELLIDO_ADIC5') ,
+ SEGUNDO_APELLIDO_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.SEGUNDO_APELLIDO_ADIC5') ,
+ INDIC_ESTAMP_TJADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.INDIC_ESTAMP_TJADIC5') ,
+ CONDIC_ESTAMP_TJADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CONDIC_ESTAMP_TJADIC5') ,
+ NOMBRE_ESTAMP_TJADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.NOMBRE_ESTAMP_TJADIC5') ,
+ TELEFONO_CASA_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.TELEFONO_CASA_ADIC5') ,
+ TELEFONO_TRABAJO_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.TELEFONO_TRABAJO_ADIC5') ,
+ CELULAR_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CELULAR_ADIC5') ,
+ LIMITE_ADIC5 DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.LIMITE_ADIC5') ,
+ INDIC_EXENCION_CUOTAS_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.INDIC_EXENCION_CUOTAS_ADIC5') ,
+ INDIC_TJ_EMV_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.INDIC_TJ_EMV_ADIC5') ,
+ CUSCAID VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.CUSCAID') ,
+ FECHA_INGRESO DATE  SET( "ui_mapping_text" = 'FF_TARADICIONALES.FECHA_INGRESO') ,
+ FECHA_MODIFICACION DATETIME(9)  SET( "ui_mapping_text" = 'replace_substr(FF_TARADICIONALES.FECHA_MODIFICACION,\' UTC\',\'\')') ,
+ FECHA_APROBACION DATE  SET( "ui_mapping_text" = 'FF_TARADICIONALES.FECHA_APROBACION') ,
+ ESTADO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_TARADICIONALES.ESTADO') ,
+ MIS_DATE DATE  SET( "ui_mapping_text" = '$G_FECHA_ARCHIVO') ,
+ LOAD_DATE DATE  SET( "ui_mapping_text" = 'sysdate()')  )
+ AS
+SELECT FF_TARADICIONALES.PAN, FF_TARADICIONALES.SOLICITUD, FF_TARADICIONALES.NUMERO_CLIENTE, FF_TARADICIONALES.NOMBRE_CLIENTE, FF_TARADICIONALES.NRO_TJS_ADICIONALES, FF_TARADICIONALES.CALPARTICIP_BENEFTJADIC1_CONTRA, FF_TARADICIONALES.CODIGO_TIPO_TJADIC1, FF_TARADICIONALES.CODIGO_MARCA_TJADIC1, FF_TARADICIONALES.TIPO_IDENTIF_1_ADIC1, FF_TARADICIONALES.NUMERO_IDENTIF_1_ADIC1, FF_TARADICIONALES.TIPO_IDENTIF_2_ADIC1, FF_TARADICIONALES.NUMERO_IDENTIF_2_ADIC1, FF_TARADICIONALES.PRIMER_NOMBRE_ADIC1, FF_TARADICIONALES.SEGUNDO_NOMBRE_ADIC1, FF_TARADICIONALES.PRIMER_APELLIDO_ADIC1, FF_TARADICIONALES.SEGUNDO_APELLIDO_ADIC1, FF_TARADICIONALES.NOMBRE_COMPLETO_ADIC1, FF_TARADICIONALES.INDIC_ESTAMP_TJADIC1, FF_TARADICIONALES.CONDIC_ESTAMP_TJADIC1, FF_TARADICIONALES.NOMBRE_ESTAMP_TJADIC1, FF_TARADICIONALES.TELEFONO_CASA_ADIC1, FF_TARADICIONALES.TELEFONO_TRABAJO_ADIC1, FF_TARADICIONALES.CALPARTICIP_BENEFTJADIC2_CONTRA, FF_TARADICIONALES.CODIGO_TIPO_TJADIC2, FF_TARADICIONALES.CODIGO_MARCA_TJADIC2, FF_TARADICIONALES.NUMERO_IDENTIF_1_ADIC2, FF_TARADICIONALES.NUMERO_IDENTIF_2_ADIC2, FF_TARADICIONALES.NOMBRE_COMPLETO_ADIC2, FF_TARADICIONALES.INDIC_ESTAMP_TJADIC2, FF_TARADICIONALES.CONDIC_ESTAMP_TJADIC2, FF_TARADICIONALES.PRIMER_NOMBRE_ADIC2, FF_TARADICIONALES.SEGUNDO_NOMBRE_ADIC2, FF_TARADICIONALES.PRIMER_APELLIDO_ADIC2, FF_TARADICIONALES.SEGUNDO_APELLIDO_ADIC2, FF_TARADICIONALES.NOMBRE_ESTAMP_TJADIC2, FF_TARADICIONALES.TELEFONO_CASA_ADIC2, FF_TARADICIONALES.TELEFONO_TRABAJO_ADIC2, FF_TARADICIONALES.CELULAR_ADIC2, FF_TARADICIONALES.LIMITE_ADIC2, FF_TARADICIONALES.INDIC_EXENCION_CUOTAS_ADIC2, FF_TARADICIONALES.INDIC_TJ_EMV_ADIC2, FF_TARADICIONALES.CALPARTICIP_BENEFTJADIC3_CONTRA, FF_TARADICIONALES.CODIGO_TIPO_TJADIC3, FF_TARADICIONALES.CODIGO_MARCA_TJADIC3, FF_TARADICIONALES.NUMERO_IDENTIF_1_ADIC3, FF_TARADICIONALES.NUMERO_IDENTIF_2_ADIC3, FF_TARADICIONALES.NOMBRE_COMPLETO_ADIC3, FF_TARADICIONALES.INDIC_ESTAMP_TJADIC3, FF_TARADICIONALES.CONDIC_ESTAMP_TJADIC3, FF_TARADICIONALES.PRIMER_NOMBRE_ADIC3, FF_TARADICIONALES.SEGUNDO_NOMBRE_ADIC3, FF_TARADICIONALES.PRIMER_APELLIDO_ADIC3, FF_TARADICIONALES.SEGUNDO_APELLIDO_ADIC3, FF_TARADICIONALES.NOMBRE_ESTAMP_TJADIC3, FF_TARADICIONALES.TELEFONO_CASA_ADIC3, FF_TARADICIONALES.TELEFONO_TRABAJO_ADIC3, FF_TARADICIONALES.CELULAR_ADIC3, FF_TARADICIONALES.LIMITE_ADIC3, FF_TARADICIONALES.INDIC_EXENCION_CUOTAS_ADIC3, FF_TARADICIONALES.INDIC_TJ_EMV_ADIC3, FF_TARADICIONALES.CALPARTICIP_BENEFTJADIC4_CONTRA, FF_TARADICIONALES.CODIGO_TIPO_TJADIC4, FF_TARADICIONALES.CODIGO_MARCA_TJADIC4, FF_TARADICIONALES.NUMERO_IDENTIF_1_ADIC4, FF_TARADICIONALES.NUMERO_IDENTIF_2_ADIC4, FF_TARADICIONALES.NOMBRE_COMPLETO_ADIC4, FF_TARADICIONALES.INDIC_ESTAMP_TJADIC4, FF_TARADICIONALES.CONDIC_ESTAMP_TJADIC4, FF_TARADICIONALES.PRIMER_NOMBRE_ADIC4, FF_TARADICIONALES.SEGUNDO_NOMBRE_ADIC4, FF_TARADICIONALES.PRIMER_APELLIDO_ADIC4, FF_TARADICIONALES.SEGUNDO_APELLIDO_ADIC4, FF_TARADICIONALES.NOMBRE_ESTAMP_TJADIC4, FF_TARADICIONALES.TELEFONO_CASA_ADIC4, FF_TARADICIONALES.TELEFONO_TRABAJO_ADIC4, FF_TARADICIONALES.CELULAR_ADIC4, FF_TARADICIONALES.LIMITE_ADIC4, FF_TARADICIONALES.INDIC_EXENCION_CUOTAS_ADIC4, FF_TARADICIONALES.INDIC_TJ_EMV_ADIC4, FF_TARADICIONALES.CALPARTICIP_BENEFTJADIC5_CONTRA, FF_TARADICIONALES.CODIGO_TIPO_TJADIC5, FF_TARADICIONALES.CODIGO_MARCA_TJADIC5, FF_TARADICIONALES.NUMERO_IDENTIF_1_ADIC5, FF_TARADICIONALES.NUMERO_IDENTIF_2_ADIC5, FF_TARADICIONALES.NOMBRE_COMPLETO_ADIC5, FF_TARADICIONALES.PRIMER_NOMBRE_ADIC5, FF_TARADICIONALES.SEGUNDO_NOMBRE_ADIC5, FF_TARADICIONALES.PRIMER_APELLIDO_ADIC5, FF_TARADICIONALES.SEGUNDO_APELLIDO_ADIC5, FF_TARADICIONALES.INDIC_ESTAMP_TJADIC5, FF_TARADICIONALES.CONDIC_ESTAMP_TJADIC5, FF_TARADICIONALES.NOMBRE_ESTAMP_TJADIC5, FF_TARADICIONALES.TELEFONO_CASA_ADIC5, FF_TARADICIONALES.TELEFONO_TRABAJO_ADIC5, FF_TARADICIONALES.CELULAR_ADIC5, FF_TARADICIONALES.LIMITE_ADIC5, FF_TARADICIONALES.INDIC_EXENCION_CUOTAS_ADIC5, FF_TARADICIONALES.INDIC_TJ_EMV_ADIC5, FF_TARADICIONALES.CUSCAID, FF_TARADICIONALES.FECHA_INGRESO, replace_substr(FF_TARADICIONALES.FECHA_MODIFICACION, ' UTC', ''), FF_TARADICIONALES.FECHA_APROBACION, FF_TARADICIONALES.ESTADO, $G_FECHA_ARCHIVO, sysdate() FROM FF_TARADICIONALES 
+SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
+;
+
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>410</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "x" = '870', "y" = '-90')
+GUID::'8d4439f1-e154-4248-a87c-52d36a0a5486' LOAD TABLE DS_TARGET.STG_SAT.CC_TARJETAS_ADICIONALES INPUT(Query)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
@@ -727,133 +839,18 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 </LDRConfiguration>
 </LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
 
-ALGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>347</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '50', "x" = '90', "y" = '-90')
-GUID::'2ca5fa4d-9dd2-4ba3-8d93-77d85effd64f' READ FILE FF_CC_TARJETAS_ADICIONALES."$G_FILE_NAME" OUTPUT(FF_CC_TARJETAS_ADICIONALES)
-SET("cache" = 'yes', "connection_port" = 'no', "file_location" = 'local', "name" = 'UNNAMED', "read_subfolders" = 'yes', "reader_capture_data_conversion_errors" = 'no', "reader_capture_file_access_errors" = 'yes', "reader_capture_row_format_errors" = 'yes', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'no', "reader_include_filename" = 'no', "reader_log_data_conversion_warnings" = 'yes', "reader_log_row_format_warnings" = 'yes', "reader_log_warnings" = 'yes', "reader_maximum_warnings_to_log" = '-99', "reader_skip_empty_files" = 'yes', "reader_skip_error_handling" = 'no', "reader_write_error_rows_to_file" = 'no', "root_dir" = '$G_FILE_LOCATION', "table_weight" = '0', "transfer_custom" = 'no');
-
-ALGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '50', "ui_acta_from_schema_0" = 'FF_CC_TARJETAS_ADICIONALES', "x" = '480', "y" = '-90')
-GUID::'44012922-8989-4639-9fc4-55da946e6d00' CREATE VIEW Query( PAN VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.PAN') ,
- SOLICITUD VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.SOLICITUD') ,
- NUMERO_CLIENTE VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NUMERO_CLIENTE') ,
- NOMBRE_CLIENTE VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NOMBRE_CLIENTE') ,
- NRO_TJS_ADICIONALES VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NRO_TJS_ADICIONALES') ,
- CALPARTICIP_BENEFTJADIC1_CONTRA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CALPARTICIP_BENEFTJADIC1_CONTRA') ,
- CODIGO_TIPO_TJADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CODIGO_TIPO_TJADIC1') ,
- CODIGO_MARCA_TJADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CODIGO_MARCA_TJADIC1') ,
- TIPO_IDENTIF_1_ADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.TIPO_IDENTIF_1_ADIC1') ,
- NUMERO_IDENTIF_1_ADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NUMERO_IDENTIF_1_ADIC1') ,
- TIPO_IDENTIF_2_ADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.TIPO_IDENTIF_2_ADIC1') ,
- NUMERO_IDENTIF_2_ADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NUMERO_IDENTIF_2_ADIC1') ,
- PRIMER_NOMBRE_ADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.PRIMER_NOMBRE_ADIC1') ,
- SEGUNDO_NOMBRE_ADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.SEGUNDO_NOMBRE_ADIC1') ,
- PRIMER_APELLIDO_ADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.PRIMER_APELLIDO_ADIC1') ,
- SEGUNDO_APELLIDO_ADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.SEGUNDO_APELLIDO_ADIC1') ,
- NOMBRE_COMPLETO_ADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NOMBRE_COMPLETO_ADIC1') ,
- INDIC_ESTAMP_TJADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.INDIC_ESTAMP_TJADIC1') ,
- CONDIC_ESTAMP_TJADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CONDIC_ESTAMP_TJADIC1') ,
- NOMBRE_ESTAMP_TJADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NOMBRE_ESTAMP_TJADIC1') ,
- TELEFONO_CASA_ADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.TELEFONO_CASA_ADIC1') ,
- TELEFONO_TRABAJO_ADIC1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.TELEFONO_TRABAJO_ADIC1') ,
- CALPARTICIP_BENEFTJADIC2_CONTRA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CALPARTICIP_BENEFTJADIC2_CONTRA') ,
- CODIGO_TIPO_TJADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CODIGO_TIPO_TJADIC2') ,
- CODIGO_MARCA_TJADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CODIGO_MARCA_TJADIC2') ,
- NUMERO_IDENTIF_1_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NUMERO_IDENTIF_1_ADIC2') ,
- NUMERO_IDENTIF_2_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NUMERO_IDENTIF_2_ADIC2') ,
- NOMBRE_COMPLETO_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NOMBRE_COMPLETO_ADIC2') ,
- INDIC_ESTAMP_TJADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.INDIC_ESTAMP_TJADIC2') ,
- CONDIC_ESTAMP_TJADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CONDIC_ESTAMP_TJADIC2') ,
- PRIMER_NOMBRE_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.PRIMER_NOMBRE_ADIC2') ,
- SEGUNDO_NOMBRE_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.SEGUNDO_NOMBRE_ADIC2') ,
- PRIMER_APELLIDO_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.PRIMER_APELLIDO_ADIC2') ,
- SEGUNDO_APELLIDO_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.SEGUNDO_APELLIDO_ADIC2') ,
- NOMBRE_ESTAMP_TJADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NOMBRE_ESTAMP_TJADIC2') ,
- TELEFONO_CASA_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.TELEFONO_CASA_ADIC2') ,
- TELEFONO_TRABAJO_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.TELEFONO_TRABAJO_ADIC2') ,
- CELULAR_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CELULAR_ADIC2') ,
- LIMITE_ADIC2 DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.LIMITE_ADIC2') ,
- INDIC_EXENCION_CUOTAS_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.INDIC_EXENCION_CUOTAS_ADIC2') ,
- INDIC_TJ_EMV_ADIC2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.INDIC_TJ_EMV_ADIC2') ,
- CALPARTICIP_BENEFTJADIC3_CONTRA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CALPARTICIP_BENEFTJADIC3_CONTRA') ,
- CODIGO_TIPO_TJADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CODIGO_TIPO_TJADIC3') ,
- CODIGO_MARCA_TJADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CODIGO_MARCA_TJADIC3') ,
- NUMERO_IDENTIF_1_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NUMERO_IDENTIF_1_ADIC3') ,
- NUMERO_IDENTIF_2_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NUMERO_IDENTIF_2_ADIC3') ,
- NOMBRE_COMPLETO_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NOMBRE_COMPLETO_ADIC3') ,
- INDIC_ESTAMP_TJADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.INDIC_ESTAMP_TJADIC3') ,
- CONDIC_ESTAMP_TJADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CONDIC_ESTAMP_TJADIC3') ,
- PRIMER_NOMBRE_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.PRIMER_NOMBRE_ADIC3') ,
- SEGUNDO_NOMBRE_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.SEGUNDO_NOMBRE_ADIC3') ,
- PRIMER_APELLIDO_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.PRIMER_APELLIDO_ADIC3') ,
- SEGUNDO_APELLIDO_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.SEGUNDO_APELLIDO_ADIC3') ,
- NOMBRE_ESTAMP_TJADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NOMBRE_ESTAMP_TJADIC3') ,
- TELEFONO_CASA_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.TELEFONO_CASA_ADIC3') ,
- TELEFONO_TRABAJO_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.TELEFONO_TRABAJO_ADIC3') ,
- CELULAR_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CELULAR_ADIC3') ,
- LIMITE_ADIC3 DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.LIMITE_ADIC3') ,
- INDIC_EXENCION_CUOTAS_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.INDIC_EXENCION_CUOTAS_ADIC3') ,
- INDIC_TJ_EMV_ADIC3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.INDIC_TJ_EMV_ADIC3') ,
- CALPARTICIP_BENEFTJADIC4_CONTRA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CALPARTICIP_BENEFTJADIC4_CONTRA') ,
- CODIGO_TIPO_TJADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CODIGO_TIPO_TJADIC4') ,
- CODIGO_MARCA_TJADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CODIGO_MARCA_TJADIC4') ,
- NUMERO_IDENTIF_1_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NUMERO_IDENTIF_1_ADIC4') ,
- NUMERO_IDENTIF_2_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NUMERO_IDENTIF_2_ADIC4') ,
- NOMBRE_COMPLETO_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NOMBRE_COMPLETO_ADIC4') ,
- INDIC_ESTAMP_TJADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.INDIC_ESTAMP_TJADIC4') ,
- CONDIC_ESTAMP_TJADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CONDIC_ESTAMP_TJADIC4') ,
- PRIMER_NOMBRE_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.PRIMER_NOMBRE_ADIC4') ,
- SEGUNDO_NOMBRE_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.SEGUNDO_NOMBRE_ADIC4') ,
- PRIMER_APELLIDO_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.PRIMER_APELLIDO_ADIC4') ,
- SEGUNDO_APELLIDO_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.SEGUNDO_APELLIDO_ADIC4') ,
- NOMBRE_ESTAMP_TJADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NOMBRE_ESTAMP_TJADIC4') ,
- TELEFONO_CASA_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.TELEFONO_CASA_ADIC4') ,
- TELEFONO_TRABAJO_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.TELEFONO_TRABAJO_ADIC4') ,
- CELULAR_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CELULAR_ADIC4') ,
- LIMITE_ADIC4 DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.LIMITE_ADIC4') ,
- INDIC_EXENCION_CUOTAS_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.INDIC_EXENCION_CUOTAS_ADIC4') ,
- INDIC_TJ_EMV_ADIC4 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.INDIC_TJ_EMV_ADIC4') ,
- CALPARTICIP_BENEFTJADIC5_CONTRA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CALPARTICIP_BENEFTJADIC5_CONTRA') ,
- CODIGO_TIPO_TJADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CODIGO_TIPO_TJADIC5') ,
- CODIGO_MARCA_TJADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CODIGO_MARCA_TJADIC5') ,
- NUMERO_IDENTIF_1_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NUMERO_IDENTIF_1_ADIC5') ,
- NUMERO_IDENTIF_2_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NUMERO_IDENTIF_2_ADIC5') ,
- NOMBRE_COMPLETO_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NOMBRE_COMPLETO_ADIC5') ,
- PRIMER_NOMBRE_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.PRIMER_NOMBRE_ADIC5') ,
- SEGUNDO_NOMBRE_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.SEGUNDO_NOMBRE_ADIC5') ,
- PRIMER_APELLIDO_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.PRIMER_APELLIDO_ADIC5') ,
- SEGUNDO_APELLIDO_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.SEGUNDO_APELLIDO_ADIC5') ,
- INDIC_ESTAMP_TJADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.INDIC_ESTAMP_TJADIC5') ,
- CONDIC_ESTAMP_TJADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CONDIC_ESTAMP_TJADIC5') ,
- NOMBRE_ESTAMP_TJADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.NOMBRE_ESTAMP_TJADIC5') ,
- TELEFONO_CASA_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.TELEFONO_CASA_ADIC5') ,
- TELEFONO_TRABAJO_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.TELEFONO_TRABAJO_ADIC5') ,
- CELULAR_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CELULAR_ADIC5') ,
- LIMITE_ADIC5 DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.LIMITE_ADIC5') ,
- INDIC_EXENCION_CUOTAS_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.INDIC_EXENCION_CUOTAS_ADIC5') ,
- INDIC_TJ_EMV_ADIC5 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.INDIC_TJ_EMV_ADIC5') ,
- CUSCAID VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.CUSCAID') ,
- FECHA_INGRESO DATE  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.FECHA_INGRESO') ,
- FECHA_MODIFICACION DATETIME(9)  SET( "ui_mapping_text" = 'replace_substr(FF_CC_TARJETAS_ADICIONALES.FECHA_MODIFICACION,\' UTC\',\'\')') ,
- FECHA_APROBACION VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.FECHA_APROBACION') ,
- ESTADO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_TARJETAS_ADICIONALES.ESTADO') ,
- MIS_DATE DATE  SET( "ui_mapping_text" = '$G_FECHA_ARCHIVO') ,
- LOAD_DATE DATE  SET( "ui_mapping_text" = 'systime()')  )
- AS
-SELECT FF_CC_TARJETAS_ADICIONALES.PAN, FF_CC_TARJETAS_ADICIONALES.SOLICITUD, FF_CC_TARJETAS_ADICIONALES.NUMERO_CLIENTE, FF_CC_TARJETAS_ADICIONALES.NOMBRE_CLIENTE, FF_CC_TARJETAS_ADICIONALES.NRO_TJS_ADICIONALES, FF_CC_TARJETAS_ADICIONALES.CALPARTICIP_BENEFTJADIC1_CONTRA, FF_CC_TARJETAS_ADICIONALES.CODIGO_TIPO_TJADIC1, FF_CC_TARJETAS_ADICIONALES.CODIGO_MARCA_TJADIC1, FF_CC_TARJETAS_ADICIONALES.TIPO_IDENTIF_1_ADIC1, FF_CC_TARJETAS_ADICIONALES.NUMERO_IDENTIF_1_ADIC1, FF_CC_TARJETAS_ADICIONALES.TIPO_IDENTIF_2_ADIC1, FF_CC_TARJETAS_ADICIONALES.NUMERO_IDENTIF_2_ADIC1, FF_CC_TARJETAS_ADICIONALES.PRIMER_NOMBRE_ADIC1, FF_CC_TARJETAS_ADICIONALES.SEGUNDO_NOMBRE_ADIC1, FF_CC_TARJETAS_ADICIONALES.PRIMER_APELLIDO_ADIC1, FF_CC_TARJETAS_ADICIONALES.SEGUNDO_APELLIDO_ADIC1, FF_CC_TARJETAS_ADICIONALES.NOMBRE_COMPLETO_ADIC1, FF_CC_TARJETAS_ADICIONALES.INDIC_ESTAMP_TJADIC1, FF_CC_TARJETAS_ADICIONALES.CONDIC_ESTAMP_TJADIC1, FF_CC_TARJETAS_ADICIONALES.NOMBRE_ESTAMP_TJADIC1, FF_CC_TARJETAS_ADICIONALES.TELEFONO_CASA_ADIC1, FF_CC_TARJETAS_ADICIONALES.TELEFONO_TRABAJO_ADIC1, FF_CC_TARJETAS_ADICIONALES.CALPARTICIP_BENEFTJADIC2_CONTRA, FF_CC_TARJETAS_ADICIONALES.CODIGO_TIPO_TJADIC2, FF_CC_TARJETAS_ADICIONALES.CODIGO_MARCA_TJADIC2, FF_CC_TARJETAS_ADICIONALES.NUMERO_IDENTIF_1_ADIC2, FF_CC_TARJETAS_ADICIONALES.NUMERO_IDENTIF_2_ADIC2, FF_CC_TARJETAS_ADICIONALES.NOMBRE_COMPLETO_ADIC2, FF_CC_TARJETAS_ADICIONALES.INDIC_ESTAMP_TJADIC2, FF_CC_TARJETAS_ADICIONALES.CONDIC_ESTAMP_TJADIC2, FF_CC_TARJETAS_ADICIONALES.PRIMER_NOMBRE_ADIC2, FF_CC_TARJETAS_ADICIONALES.SEGUNDO_NOMBRE_ADIC2, FF_CC_TARJETAS_ADICIONALES.PRIMER_APELLIDO_ADIC2, FF_CC_TARJETAS_ADICIONALES.SEGUNDO_APELLIDO_ADIC2, FF_CC_TARJETAS_ADICIONALES.NOMBRE_ESTAMP_TJADIC2, FF_CC_TARJETAS_ADICIONALES.TELEFONO_CASA_ADIC2, FF_CC_TARJETAS_ADICIONALES.TELEFONO_TRABAJO_ADIC2, FF_CC_TARJETAS_ADICIONALES.CELULAR_ADIC2, FF_CC_TARJETAS_ADICIONALES.LIMITE_ADIC2, FF_CC_TARJETAS_ADICIONALES.INDIC_EXENCION_CUOTAS_ADIC2, FF_CC_TARJETAS_ADICIONALES.INDIC_TJ_EMV_ADIC2, FF_CC_TARJETAS_ADICIONALES.CALPARTICIP_BENEFTJADIC3_CONTRA, FF_CC_TARJETAS_ADICIONALES.CODIGO_TIPO_TJADIC3, FF_CC_TARJETAS_ADICIONALES.CODIGO_MARCA_TJADIC3, FF_CC_TARJETAS_ADICIONALES.NUMERO_IDENTIF_1_ADIC3, FF_CC_TARJETAS_ADICIONALES.NUMERO_IDENTIF_2_ADIC3, FF_CC_TARJETAS_ADICIONALES.NOMBRE_COMPLETO_ADIC3, FF_CC_TARJETAS_ADICIONALES.INDIC_ESTAMP_TJADIC3, FF_CC_TARJETAS_ADICIONALES.CONDIC_ESTAMP_TJADIC3, FF_CC_TARJETAS_ADICIONALES.PRIMER_NOMBRE_ADIC3, FF_CC_TARJETAS_ADICIONALES.SEGUNDO_NOMBRE_ADIC3, FF_CC_TARJETAS_ADICIONALES.PRIMER_APELLIDO_ADIC3, FF_CC_TARJETAS_ADICIONALES.SEGUNDO_APELLIDO_ADIC3, FF_CC_TARJETAS_ADICIONALES.NOMBRE_ESTAMP_TJADIC3, FF_CC_TARJETAS_ADICIONALES.TELEFONO_CASA_ADIC3, FF_CC_TARJETAS_ADICIONALES.TELEFONO_TRABAJO_ADIC3, FF_CC_TARJETAS_ADICIONALES.CELULAR_ADIC3, FF_CC_TARJETAS_ADICIONALES.LIMITE_ADIC3, FF_CC_TARJETAS_ADICIONALES.INDIC_EXENCION_CUOTAS_ADIC3, FF_CC_TARJETAS_ADICIONALES.INDIC_TJ_EMV_ADIC3, FF_CC_TARJETAS_ADICIONALES.CALPARTICIP_BENEFTJADIC4_CONTRA, FF_CC_TARJETAS_ADICIONALES.CODIGO_TIPO_TJADIC4, FF_CC_TARJETAS_ADICIONALES.CODIGO_MARCA_TJADIC4, FF_CC_TARJETAS_ADICIONALES.NUMERO_IDENTIF_1_ADIC4, FF_CC_TARJETAS_ADICIONALES.NUMERO_IDENTIF_2_ADIC4, FF_CC_TARJETAS_ADICIONALES.NOMBRE_COMPLETO_ADIC4, FF_CC_TARJETAS_ADICIONALES.INDIC_ESTAMP_TJADIC4, FF_CC_TARJETAS_ADICIONALES.CONDIC_ESTAMP_TJADIC4, FF_CC_TARJETAS_ADICIONALES.PRIMER_NOMBRE_ADIC4, FF_CC_TARJETAS_ADICIONALES.SEGUNDO_NOMBRE_ADIC4, FF_CC_TARJETAS_ADICIONALES.PRIMER_APELLIDO_ADIC4, FF_CC_TARJETAS_ADICIONALES.SEGUNDO_APELLIDO_ADIC4, FF_CC_TARJETAS_ADICIONALES.NOMBRE_ESTAMP_TJADIC4, FF_CC_TARJETAS_ADICIONALES.TELEFONO_CASA_ADIC4, FF_CC_TARJETAS_ADICIONALES.TELEFONO_TRABAJO_ADIC4, FF_CC_TARJETAS_ADICIONALES.CELULAR_ADIC4, FF_CC_TARJETAS_ADICIONALES.LIMITE_ADIC4, FF_CC_TARJETAS_ADICIONALES.INDIC_EXENCION_CUOTAS_ADIC4, FF_CC_TARJETAS_ADICIONALES.INDIC_TJ_EMV_ADIC4, FF_CC_TARJETAS_ADICIONALES.CALPARTICIP_BENEFTJADIC5_CONTRA, FF_CC_TARJETAS_ADICIONALES.CODIGO_TIPO_TJADIC5, FF_CC_TARJETAS_ADICIONALES.CODIGO_MARCA_TJADIC5, FF_CC_TARJETAS_ADICIONALES.NUMERO_IDENTIF_1_ADIC5, FF_CC_TARJETAS_ADICIONALES.NUMERO_IDENTIF_2_ADIC5, FF_CC_TARJETAS_ADICIONALES.NOMBRE_COMPLETO_ADIC5, FF_CC_TARJETAS_ADICIONALES.PRIMER_NOMBRE_ADIC5, FF_CC_TARJETAS_ADICIONALES.SEGUNDO_NOMBRE_ADIC5, FF_CC_TARJETAS_ADICIONALES.PRIMER_APELLIDO_ADIC5, FF_CC_TARJETAS_ADICIONALES.SEGUNDO_APELLIDO_ADIC5, FF_CC_TARJETAS_ADICIONALES.INDIC_ESTAMP_TJADIC5, FF_CC_TARJETAS_ADICIONALES.CONDIC_ESTAMP_TJADIC5, FF_CC_TARJETAS_ADICIONALES.NOMBRE_ESTAMP_TJADIC5, FF_CC_TARJETAS_ADICIONALES.TELEFONO_CASA_ADIC5, FF_CC_TARJETAS_ADICIONALES.TELEFONO_TRABAJO_ADIC5, FF_CC_TARJETAS_ADICIONALES.CELULAR_ADIC5, FF_CC_TARJETAS_ADICIONALES.LIMITE_ADIC5, FF_CC_TARJETAS_ADICIONALES.INDIC_EXENCION_CUOTAS_ADIC5, FF_CC_TARJETAS_ADICIONALES.INDIC_TJ_EMV_ADIC5, FF_CC_TARJETAS_ADICIONALES.CUSCAID, FF_CC_TARJETAS_ADICIONALES.FECHA_INGRESO, replace_substr(FF_CC_TARJETAS_ADICIONALES.FECHA_MODIFICACION, ' UTC', ''), FF_CC_TARJETAS_ADICIONALES.FECHA_APROBACION, FF_CC_TARJETAS_ADICIONALES.ESTADO, $G_FECHA_ARCHIVO, systime() FROM FF_CC_TARJETAS_ADICIONALES 
-SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
-;
-
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu May  2 12:52:51 2019', "ActaValue_3" = 'Thu May  2 14:19:43 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu May  2 15:51:32 2019', "ActaValue_3" = 'Thu May  2 14:19:43 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_TARADICIONALES::'9a3695ff-8bb0-4d37-919a-e59722fa0a97'
 BEGIN
 
-ALGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>366</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '50', "x" = '90', "y" = '-90')
-GUID::'40f2228a-2c4e-4515-9ed7-1ed227408b96' READ TABLE DS_TARGET.STG_SAT.CC_TARJETAS_ADICIONALES OUTPUT(CC_TARJETAS_ADICIONALES)
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>366</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '42', "x" = '90', "y" = '-90')
+GUID::'d0a51a36-51d2-4f62-98c9-721823f058f7' READ TABLE DS_TARGET.STG_SAT.CC_TARJETAS_ADICIONALES OUTPUT(CC_TARJETAS_ADICIONALES)
 SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
 
-ALGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '50', "ui_acta_from_schema_0" = 'CC_TARJETAS_ADICIONALES', "x" = '480', "y" = '-90')
-GUID::'fecce1d1-ff1d-4f43-b162-e1c0b4a6a1f0' CREATE VIEW Query( PAN VARCHAR(255)  SET( "ui_mapping_text" = 'CC_TARJETAS_ADICIONALES.PAN') ,
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "ui_acta_from_schema_0" = 'CC_TARJETAS_ADICIONALES', "x" = '480', "y" = '-90')
+GUID::'ba581cfe-392a-48b4-8f26-e7df83b66bd9' CREATE VIEW Query( PAN VARCHAR(255)  SET( "ui_mapping_text" = 'CC_TARJETAS_ADICIONALES.PAN') ,
  SOLICITUD VARCHAR(255)  SET( "ui_mapping_text" = 'CC_TARJETAS_ADICIONALES.SOLICITUD') ,
  NUMERO_CLIENTE VARCHAR(255)  SET( "ui_mapping_text" = 'CC_TARJETAS_ADICIONALES.NUMERO_CLIENTE') ,
  NOMBRE_CLIENTE VARCHAR(255)  SET( "ui_mapping_text" = 'CC_TARJETAS_ADICIONALES.NOMBRE_CLIENTE') ,
@@ -954,7 +951,7 @@ GUID::'fecce1d1-ff1d-4f43-b162-e1c0b4a6a1f0' CREATE VIEW Query( PAN VARCHAR(255)
  CUSCAID VARCHAR(255)  SET( "ui_mapping_text" = 'CC_TARJETAS_ADICIONALES.CUSCAID') ,
  FECHA_INGRESO DATE  SET( "ui_mapping_text" = 'CC_TARJETAS_ADICIONALES.FECHA_INGRESO') ,
  FECHA_MODIFICACION DATETIME(9)  SET( "ui_mapping_text" = 'CC_TARJETAS_ADICIONALES.FECHA_MODIFICACION') ,
- FECHA_APROBACION VARCHAR(255)  SET( "ui_mapping_text" = 'CC_TARJETAS_ADICIONALES.FECHA_APROBACION') ,
+ FECHA_APROBACION DATE  SET( "ui_mapping_text" = 'CC_TARJETAS_ADICIONALES.FECHA_APROBACION') ,
  ESTADO VARCHAR(255)  SET( "ui_mapping_text" = 'CC_TARJETAS_ADICIONALES.ESTADO') ,
  MIS_DATE DATE  SET( "ui_mapping_text" = 'CC_TARJETAS_ADICIONALES.MIS_DATE') ,
  LOAD_DATE DATE  SET( "ui_mapping_text" = 'CC_TARJETAS_ADICIONALES.LOAD_DATE')  )
@@ -963,8 +960,8 @@ SELECT CC_TARJETAS_ADICIONALES.PAN, CC_TARJETAS_ADICIONALES.SOLICITUD, CC_TARJET
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
-ALGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>410</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '50', "x" = '870', "y" = '-90')
-GUID::'f8bab34f-2862-4723-85f9-a35d0fe78da6' LOAD TABLE DS_TARGET.SAT.CC_TARJETAS_ADICIONALES INPUT(Query)
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>410</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "x" = '870', "y" = '-90')
+GUID::'c2115e99-257f-4c55-b888-cfad4916eea9' LOAD TABLE DS_TARGET.SAT.CC_TARJETAS_ADICIONALES INPUT(Query)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
@@ -1017,11 +1014,11 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Apr 29 15:13:12 2019', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '33', "ui_display_name" = 'FF_CC_TARJETAS_ADICIONALES', "x" = '-1', "y" = '-1')
-CREATE FILE DATASTORE FF_CC_TARJETAS_ADICIONALES::'6ede4cc2-d5ea-439a-8a8e-e7defc013b9d'(PAN VARCHAR(22) , SOLICITUD VARCHAR(21) , NUMERO_CLIENTE VARCHAR(8) , NOMBRE_CLIENTE VARCHAR(100) , NRO_TJS_ADICIONALES VARCHAR(1) , CALPARTICIP_BENEFTJADIC1_CONTRA VARCHAR(2) , CODIGO_TIPO_TJADIC1 VARCHAR(2) , CODIGO_MARCA_TJADIC1 VARCHAR(2) , TIPO_IDENTIF_1_ADIC1 VARCHAR(3) , NUMERO_IDENTIF_1_ADIC1 VARCHAR(14) , TIPO_IDENTIF_2_ADIC1 VARCHAR(3) , NUMERO_IDENTIF_2_ADIC1 VARCHAR(10) , PRIMER_NOMBRE_ADIC1 VARCHAR(40) , SEGUNDO_NOMBRE_ADIC1 VARCHAR(40) , PRIMER_APELLIDO_ADIC1 VARCHAR(36) , SEGUNDO_APELLIDO_ADIC1 VARCHAR(36) , NOMBRE_COMPLETO_ADIC1 VARCHAR(100) , INDIC_ESTAMP_TJADIC1 VARCHAR(1) , CONDIC_ESTAMP_TJADIC1 VARCHAR(3) , NOMBRE_ESTAMP_TJADIC1 VARCHAR(35) , TELEFONO_CASA_ADIC1 VARCHAR(8) , TELEFONO_TRABAJO_ADIC1 VARCHAR(8) , CALPARTICIP_BENEFTJADIC2_CONTRA VARCHAR(2) , CODIGO_TIPO_TJADIC2 VARCHAR(2) , CODIGO_MARCA_TJADIC2 VARCHAR(2) , NUMERO_IDENTIF_1_ADIC2 VARCHAR(14) , NUMERO_IDENTIF_2_ADIC2 VARCHAR(10) , NOMBRE_COMPLETO_ADIC2 VARCHAR(100) , INDIC_ESTAMP_TJADIC2 VARCHAR(1) , CONDIC_ESTAMP_TJADIC2 VARCHAR(3) , PRIMER_NOMBRE_ADIC2 VARCHAR(40) , SEGUNDO_NOMBRE_ADIC2 VARCHAR(40) , PRIMER_APELLIDO_ADIC2 VARCHAR(36) , SEGUNDO_APELLIDO_ADIC2 VARCHAR(36) , NOMBRE_ESTAMP_TJADIC2 VARCHAR(35) , TELEFONO_CASA_ADIC2 VARCHAR(8) , TELEFONO_TRABAJO_ADIC2 VARCHAR(8) , CELULAR_ADIC2 VARCHAR(8) , LIMITE_ADIC2 DECIMAL(17, 2) , INDIC_EXENCION_CUOTAS_ADIC2 VARCHAR(1) , INDIC_TJ_EMV_ADIC2 VARCHAR(1) , CALPARTICIP_BENEFTJADIC3_CONTRA VARCHAR(2) , CODIGO_TIPO_TJADIC3 VARCHAR(2) , CODIGO_MARCA_TJADIC3 VARCHAR(2) , NUMERO_IDENTIF_1_ADIC3 VARCHAR(14) , NUMERO_IDENTIF_2_ADIC3 VARCHAR(10) , NOMBRE_COMPLETO_ADIC3 VARCHAR(100) , INDIC_ESTAMP_TJADIC3 VARCHAR(1) , CONDIC_ESTAMP_TJADIC3 VARCHAR(3) , PRIMER_NOMBRE_ADIC3 VARCHAR(40) , SEGUNDO_NOMBRE_ADIC3 VARCHAR(40) , PRIMER_APELLIDO_ADIC3 VARCHAR(36) , SEGUNDO_APELLIDO_ADIC3 VARCHAR(36) , NOMBRE_ESTAMP_TJADIC3 VARCHAR(35) , TELEFONO_CASA_ADIC3 VARCHAR(8) , TELEFONO_TRABAJO_ADIC3 VARCHAR(8) , CELULAR_ADIC3 VARCHAR(8) , LIMITE_ADIC3 DECIMAL(17, 2) , INDIC_EXENCION_CUOTAS_ADIC3 VARCHAR(1) , INDIC_TJ_EMV_ADIC3 VARCHAR(1) , CALPARTICIP_BENEFTJADIC4_CONTRA VARCHAR(2) , CODIGO_TIPO_TJADIC4 VARCHAR(10) , CODIGO_MARCA_TJADIC4 VARCHAR(2) , NUMERO_IDENTIF_1_ADIC4 VARCHAR(14) , NUMERO_IDENTIF_2_ADIC4 VARCHAR(10) , NOMBRE_COMPLETO_ADIC4 VARCHAR(100) , INDIC_ESTAMP_TJADIC4 VARCHAR(1) , CONDIC_ESTAMP_TJADIC4 VARCHAR(3) , PRIMER_NOMBRE_ADIC4 VARCHAR(40) , SEGUNDO_NOMBRE_ADIC4 VARCHAR(40) , PRIMER_APELLIDO_ADIC4 VARCHAR(36) , SEGUNDO_APELLIDO_ADIC4 VARCHAR(36) , NOMBRE_ESTAMP_TJADIC4 VARCHAR(35) , TELEFONO_CASA_ADIC4 VARCHAR(8) , TELEFONO_TRABAJO_ADIC4 VARCHAR(8) , CELULAR_ADIC4 VARCHAR(8) , LIMITE_ADIC4 DECIMAL(17, 2) , INDIC_EXENCION_CUOTAS_ADIC4 VARCHAR(1) , INDIC_TJ_EMV_ADIC4 VARCHAR(1) , CALPARTICIP_BENEFTJADIC5_CONTRA VARCHAR(2) , CODIGO_TIPO_TJADIC5 VARCHAR(2) , CODIGO_MARCA_TJADIC5 VARCHAR(2) , NUMERO_IDENTIF_1_ADIC5 VARCHAR(14) , NUMERO_IDENTIF_2_ADIC5 VARCHAR(10) , NOMBRE_COMPLETO_ADIC5 VARCHAR(100) , PRIMER_NOMBRE_ADIC5 VARCHAR(40) , SEGUNDO_NOMBRE_ADIC5 VARCHAR(40) , PRIMER_APELLIDO_ADIC5 VARCHAR(36) , SEGUNDO_APELLIDO_ADIC5 VARCHAR(36) , INDIC_ESTAMP_TJADIC5 VARCHAR(1) , CONDIC_ESTAMP_TJADIC5 VARCHAR(3) , NOMBRE_ESTAMP_TJADIC5 VARCHAR(35) , TELEFONO_CASA_ADIC5 VARCHAR(8) , TELEFONO_TRABAJO_ADIC5 VARCHAR(8) , CELULAR_ADIC5 VARCHAR(8) , LIMITE_ADIC5 DECIMAL(17, 2) , INDIC_EXENCION_CUOTAS_ADIC5 VARCHAR(1) , INDIC_TJ_EMV_ADIC5 VARCHAR(1) , CUSCAID VARCHAR(255) , FECHA_INGRESO DATE , FECHA_MODIFICACION DATETIME(9) , FECHA_APROBACION VARCHAR(10) , ESTADO VARCHAR(50) )
- SET ("abap_file_format" = 'no', "application_type" = '', "cache" = 'yes', "column_delimiter" = '\\t', "column_width" = '1', "column_width1" = '22', "column_width10" = '14', "column_width100" = '24', "column_width101" = '24', "column_width102" = '10', "column_width103" = '50', "column_width11" = '3', "column_width12" = '10', "column_width13" = '40', "column_width14" = '40', "column_width15" = '36', "column_width16" = '36', "column_width17" = '100', "column_width18" = '1', "column_width19" = '3', "column_width2" = '21', "column_width20" = '35', "column_width21" = '8', "column_width22" = '8', "column_width23" = '2', "column_width24" = '2', "column_width25" = '2', "column_width26" = '14', "column_width27" = '10', "column_width28" = '100', "column_width29" = '1', "column_width3" = '8', "column_width30" = '3', "column_width31" = '40', "column_width32" = '40', "column_width33" = '36', "column_width34" = '36', "column_width35" = '35', "column_width36" = '8', "column_width37" = '8', "column_width38" = '8', "column_width39" = '48', "column_width4" = '100', "column_width40" = '1', "column_width41" = '1', "column_width42" = '2', "column_width43" = '2', "column_width44" = '2', "column_width45" = '14', "column_width46" = '10', "column_width47" = '100', "column_width48" = '1', "column_width49" = '3', "column_width5" = '1', "column_width50" = '40', "column_width51" = '40', "column_width52" = '36', "column_width53" = '36', "column_width54" = '35', "column_width55" = '8', "column_width56" = '8', "column_width57" = '8', "column_width58" = '48', "column_width59" = '1', "column_width6" = '2', "column_width60" = '1', "column_width61" = '2', "column_width62" = '10', "column_width63" = '2', "column_width64" = '14', "column_width65" = '10', "column_width66" = '100', "column_width67" = '1', "column_width68" = '3', "column_width69" = '40', "column_width7" = '2', "column_width70" = '40', "column_width71" = '36', "column_width72" = '36', "column_width73" = '35', "column_width74" = '8', "column_width75" = '8', "column_width76" = '8', "column_width77" = '48', "column_width78" = '1', "column_width79" = '1', "column_width8" = '2', "column_width80" = '2', "column_width81" = '2', "column_width82" = '2', "column_width83" = '14', "column_width84" = '10', "column_width85" = '100', "column_width86" = '40', "column_width87" = '40', "column_width88" = '36', "column_width89" = '36', "column_width9" = '3', "column_width90" = '1', "column_width91" = '3', "column_width92" = '35', "column_width93" = '8', "column_width94" = '8', "column_width95" = '8', "column_width96" = '48', "column_width97" = '1', "column_width98" = '1', "column_width99" = '255', "date_format" = 'yyyy.mm.dd', "datetime_format" = 'yyyy.mm.dd hh24:mi:ss', "ds_configuration_enabled" = 'no', "file_format" = 'ascii', "file_location" = 'local', "file_name" = '$G_FILE_NAME', "file_type" = 'delimited_file', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>', "name" = 'UNNAMED', "number_of_threads" = '<default>', "read_subfolders" = 'yes', "reader_capture_data_conversion_errors" = 'no', "reader_capture_file_access_errors" = 'yes', "reader_capture_row_format_errors" = 'yes', "reader_capture_string_truncation_errors" = 'no', "reader_log_data_conversion_warnings" = 'yes', "reader_log_row_format_warnings" = 'yes', "reader_log_warnings" = 'yes', "reader_maximum_warnings_to_log" = '-99', "reader_skip_empty_files" = 'yes', "reader_skip_error_handling" = 'no', "reader_write_error_rows_to_file" = 'no', "root_dir" = '$G_FILE_LOCATION', "row_delimiter" = '
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri May  3 19:06:29 2019', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_display_name" = 'FF_TARADICIONALES', "x" = '-1', "y" = '-1')
+CREATE FILE DATASTORE FF_TARADICIONALES::'09b46b2c-a1b0-4327-941e-b3fb98137dd4'(PAN VARCHAR(255) , SOLICITUD VARCHAR(255) , NUMERO_CLIENTE VARCHAR(255) , NOMBRE_CLIENTE VARCHAR(255) , NRO_TJS_ADICIONALES VARCHAR(255) , CALPARTICIP_BENEFTJADIC1_CONTRA VARCHAR(255) , CODIGO_TIPO_TJADIC1 VARCHAR(255) , CODIGO_MARCA_TJADIC1 VARCHAR(255) , TIPO_IDENTIF_1_ADIC1 VARCHAR(255) , NUMERO_IDENTIF_1_ADIC1 VARCHAR(255) , TIPO_IDENTIF_2_ADIC1 VARCHAR(255) , NUMERO_IDENTIF_2_ADIC1 VARCHAR(255) , PRIMER_NOMBRE_ADIC1 VARCHAR(255) , SEGUNDO_NOMBRE_ADIC1 VARCHAR(255) , PRIMER_APELLIDO_ADIC1 VARCHAR(255) , SEGUNDO_APELLIDO_ADIC1 VARCHAR(255) , NOMBRE_COMPLETO_ADIC1 VARCHAR(255) , INDIC_ESTAMP_TJADIC1 VARCHAR(255) , CONDIC_ESTAMP_TJADIC1 VARCHAR(255) , NOMBRE_ESTAMP_TJADIC1 VARCHAR(255) , TELEFONO_CASA_ADIC1 VARCHAR(255) , TELEFONO_TRABAJO_ADIC1 VARCHAR(255) , CALPARTICIP_BENEFTJADIC2_CONTRA VARCHAR(255) , CODIGO_TIPO_TJADIC2 VARCHAR(255) , CODIGO_MARCA_TJADIC2 VARCHAR(255) , NUMERO_IDENTIF_1_ADIC2 VARCHAR(255) , NUMERO_IDENTIF_2_ADIC2 VARCHAR(255) , NOMBRE_COMPLETO_ADIC2 VARCHAR(255) , INDIC_ESTAMP_TJADIC2 VARCHAR(255) , CONDIC_ESTAMP_TJADIC2 VARCHAR(255) , PRIMER_NOMBRE_ADIC2 VARCHAR(255) , SEGUNDO_NOMBRE_ADIC2 VARCHAR(255) , PRIMER_APELLIDO_ADIC2 VARCHAR(255) , SEGUNDO_APELLIDO_ADIC2 VARCHAR(255) , NOMBRE_ESTAMP_TJADIC2 VARCHAR(255) , TELEFONO_CASA_ADIC2 VARCHAR(255) , TELEFONO_TRABAJO_ADIC2 VARCHAR(255) , CELULAR_ADIC2 VARCHAR(255) , LIMITE_ADIC2 DECIMAL(17, 2) , INDIC_EXENCION_CUOTAS_ADIC2 VARCHAR(255) , INDIC_TJ_EMV_ADIC2 VARCHAR(255) , CALPARTICIP_BENEFTJADIC3_CONTRA VARCHAR(255) , CODIGO_TIPO_TJADIC3 VARCHAR(255) , CODIGO_MARCA_TJADIC3 VARCHAR(255) , NUMERO_IDENTIF_1_ADIC3 VARCHAR(255) , NUMERO_IDENTIF_2_ADIC3 VARCHAR(255) , NOMBRE_COMPLETO_ADIC3 VARCHAR(255) , INDIC_ESTAMP_TJADIC3 VARCHAR(255) , CONDIC_ESTAMP_TJADIC3 VARCHAR(255) , PRIMER_NOMBRE_ADIC3 VARCHAR(255) , SEGUNDO_NOMBRE_ADIC3 VARCHAR(255) , PRIMER_APELLIDO_ADIC3 VARCHAR(255) , SEGUNDO_APELLIDO_ADIC3 VARCHAR(255) , NOMBRE_ESTAMP_TJADIC3 VARCHAR(255) , TELEFONO_CASA_ADIC3 VARCHAR(255) , TELEFONO_TRABAJO_ADIC3 VARCHAR(255) , CELULAR_ADIC3 VARCHAR(255) , LIMITE_ADIC3 DECIMAL(17, 2) , INDIC_EXENCION_CUOTAS_ADIC3 VARCHAR(255) , INDIC_TJ_EMV_ADIC3 VARCHAR(255) , CALPARTICIP_BENEFTJADIC4_CONTRA VARCHAR(255) , CODIGO_TIPO_TJADIC4 VARCHAR(255) , CODIGO_MARCA_TJADIC4 VARCHAR(255) , NUMERO_IDENTIF_1_ADIC4 VARCHAR(255) , NUMERO_IDENTIF_2_ADIC4 VARCHAR(255) , NOMBRE_COMPLETO_ADIC4 VARCHAR(255) , INDIC_ESTAMP_TJADIC4 VARCHAR(255) , CONDIC_ESTAMP_TJADIC4 VARCHAR(255) , PRIMER_NOMBRE_ADIC4 VARCHAR(255) , SEGUNDO_NOMBRE_ADIC4 VARCHAR(255) , PRIMER_APELLIDO_ADIC4 VARCHAR(255) , SEGUNDO_APELLIDO_ADIC4 VARCHAR(255) , NOMBRE_ESTAMP_TJADIC4 VARCHAR(255) , TELEFONO_CASA_ADIC4 VARCHAR(255) , TELEFONO_TRABAJO_ADIC4 VARCHAR(255) , CELULAR_ADIC4 VARCHAR(255) , LIMITE_ADIC4 DECIMAL(17, 2) , INDIC_EXENCION_CUOTAS_ADIC4 VARCHAR(255) , INDIC_TJ_EMV_ADIC4 VARCHAR(255) , CALPARTICIP_BENEFTJADIC5_CONTRA VARCHAR(255) , CODIGO_TIPO_TJADIC5 VARCHAR(255) , CODIGO_MARCA_TJADIC5 VARCHAR(255) , NUMERO_IDENTIF_1_ADIC5 VARCHAR(255) , NUMERO_IDENTIF_2_ADIC5 VARCHAR(255) , NOMBRE_COMPLETO_ADIC5 VARCHAR(255) , PRIMER_NOMBRE_ADIC5 VARCHAR(255) , SEGUNDO_NOMBRE_ADIC5 VARCHAR(255) , PRIMER_APELLIDO_ADIC5 VARCHAR(255) , SEGUNDO_APELLIDO_ADIC5 VARCHAR(255) , INDIC_ESTAMP_TJADIC5 VARCHAR(255) , CONDIC_ESTAMP_TJADIC5 VARCHAR(255) , NOMBRE_ESTAMP_TJADIC5 VARCHAR(255) , TELEFONO_CASA_ADIC5 VARCHAR(255) , TELEFONO_TRABAJO_ADIC5 VARCHAR(255) , CELULAR_ADIC5 VARCHAR(255) , LIMITE_ADIC5 DECIMAL(17, 2) , INDIC_EXENCION_CUOTAS_ADIC5 VARCHAR(255) , INDIC_TJ_EMV_ADIC5 VARCHAR(255) , CUSCAID VARCHAR(255) , FECHA_INGRESO DATE  SET( "Format" = 'dd/mm/yyyy') , FECHA_MODIFICACION DATETIME(9) , FECHA_APROBACION DATE  SET( "Format" = 'dd/mm/yyyy') , ESTADO VARCHAR(255) )
+ SET ("abap_file_format" = 'no', "application_type" = '', "cache" = 'yes', "column_delimiter" = '\\t', "column_width" = '1', "column_width1" = '255', "column_width10" = '255', "column_width100" = '24', "column_width101" = '24', "column_width102" = '24', "column_width103" = '255', "column_width11" = '255', "column_width12" = '255', "column_width13" = '255', "column_width14" = '255', "column_width15" = '255', "column_width16" = '255', "column_width17" = '255', "column_width18" = '255', "column_width19" = '255', "column_width2" = '255', "column_width20" = '255', "column_width21" = '255', "column_width22" = '255', "column_width23" = '255', "column_width24" = '255', "column_width25" = '255', "column_width26" = '255', "column_width27" = '255', "column_width28" = '255', "column_width29" = '255', "column_width3" = '255', "column_width30" = '255', "column_width31" = '255', "column_width32" = '255', "column_width33" = '255', "column_width34" = '255', "column_width35" = '255', "column_width36" = '255', "column_width37" = '255', "column_width38" = '255', "column_width39" = '48', "column_width4" = '255', "column_width40" = '255', "column_width41" = '255', "column_width42" = '255', "column_width43" = '255', "column_width44" = '255', "column_width45" = '255', "column_width46" = '255', "column_width47" = '255', "column_width48" = '255', "column_width49" = '255', "column_width5" = '255', "column_width50" = '255', "column_width51" = '255', "column_width52" = '255', "column_width53" = '255', "column_width54" = '255', "column_width55" = '255', "column_width56" = '255', "column_width57" = '255', "column_width58" = '48', "column_width59" = '255', "column_width6" = '255', "column_width60" = '255', "column_width61" = '255', "column_width62" = '255', "column_width63" = '255', "column_width64" = '255', "column_width65" = '255', "column_width66" = '255', "column_width67" = '255', "column_width68" = '255', "column_width69" = '255', "column_width7" = '255', "column_width70" = '255', "column_width71" = '255', "column_width72" = '255', "column_width73" = '255', "column_width74" = '255', "column_width75" = '255', "column_width76" = '255', "column_width77" = '48', "column_width78" = '255', "column_width79" = '255', "column_width8" = '255', "column_width80" = '255', "column_width81" = '255', "column_width82" = '255', "column_width83" = '255', "column_width84" = '255', "column_width85" = '255', "column_width86" = '255', "column_width87" = '255', "column_width88" = '255', "column_width89" = '255', "column_width9" = '255', "column_width90" = '255', "column_width91" = '255', "column_width92" = '255', "column_width93" = '255', "column_width94" = '255', "column_width95" = '255', "column_width96" = '48', "column_width97" = '255', "column_width98" = '255', "column_width99" = '255', "date_format" = 'yyyy.mm.dd', "datetime_format" = 'yyyy.mm.dd hh24:mi:ss', "ds_configuration_enabled" = 'no', "file_format" = 'ascii', "file_location" = 'local', "file_name" = '$G_FILE_NAME', "file_type" = 'delimited_file', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>', "name" = 'UNNAMED', "number_of_threads" = '<default>', "read_subfolders" = 'yes', "reader_capture_data_conversion_errors" = 'no', "reader_capture_file_access_errors" = 'yes', "reader_capture_row_format_errors" = 'yes', "reader_capture_string_truncation_errors" = 'no', "reader_log_data_conversion_warnings" = 'yes', "reader_log_row_format_warnings" = 'yes', "reader_log_warnings" = 'yes', "reader_maximum_warnings_to_log" = '-99', "reader_skip_empty_files" = 'yes', "reader_skip_error_handling" = 'no', "reader_write_error_rows_to_file" = 'no', "root_dir" = '$G_FILE_LOCATION', "row_delimiter" = '
 ', "skip_row_header" = 'yes', "table_weight" = '0', "time_format" = 'hh24:mi:ss', "transfer_custom" = 'no', "use_root_dir" = 'no', "write_bom" = 'no');
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu May  2 15:51:32 2019', "ActaValue_3" = 'Thu May  2 09:41:38 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu May  2 15:51:32 2019', "ActaValue_3" = 'Fri May  3 11:14:29 2019', "x" = '-1', "y" = '-1')
 CREATE SESSION JOB_CASE_CENTER_TJA::'a40aecd3-2280-47dd-8c59-13f56e6b38b3'( )
 DECLARE
      $L_EXISTE_JOB INT ;
@@ -1037,7 +1034,7 @@ DECLARE
      GLOBAL $G_FECHA_ARCHIVO VARCHAR(30) ;
      GLOBAL $G_FECHA_ARCHIVO1 VARCHAR(30) ;
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI', "ui_script_text" = 'print( \'--version: ba88b23\');
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI', "ui_script_text" = 'print( \'--version: fd3533e\');
 
 $G_JOB_NAME = job_name( );
 
@@ -1048,7 +1045,7 @@ $G_FILE_LOCATION = CF_DEFINE_UBICACION( );
 $G_SH_ROUTE = sql(\'DS_CONTROL\', \'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \\\'%SH_ROUTE%\\\'\');
 ', "x" = '90', "y" = '-90')
 BEGIN_SCRIPT
-print('--version: ba88b23');$G_JOB_NAME = job_name();$G_FILE_LOCATION = CF_DEFINE_UBICACION();$G_SH_ROUTE = sql('DS_CONTROL', 'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%SH_ROUTE%\'');END
+print('--version: fd3533e');$G_JOB_NAME = job_name();$G_FILE_LOCATION = CF_DEFINE_UBICACION();$G_SH_ROUTE = sql('DS_CONTROL', 'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%SH_ROUTE%\'');END
  AlGUIComment ("If_condition" = 'CF_JOBNAME( $G_JOB_NAME,$L_EXISTE_JOB) = 1', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'CDN_JOB', "x" = '480', "y" = '-90')
 IF ((cf_jobname($G_JOB_NAME, $L_EXISTE_JOB) = 1) )
 BEGIN
@@ -1074,7 +1071,7 @@ $L_FECHA = sysdate();sql('DS_CONTROL', 'INSERT INTO LOG_EJECUCION(ERROR_NUMBER, 
 END
 END
  SET ("job_checkpoint_enabled" = 'no', "job_collect_statistics" = 'no', "job_collect_statistics_monitor" = 'no', "job_create_debug_package" = 'no', "job_enable_assemblers" = 'yes', "job_enable_audit" = 'yes', "job_enable_dataquality" = 'yes', "job_export_repo" = 'no', "job_export_reports" = 'no', "job_guid" = 'a40aecd3-2280-47dd-8c59-13f56e6b38b3', "job_isrecoverable" = 'no', "job_mode" = 'Multi-Process', "job_monitor_sample_rate" = '1000', "job_monitor_timer_rate" = '5', "job_name" = 'JOB_CASE_CENTER_TJA', "job_print_version" = 'no', "job_testmode_enabled" = 'no', "job_trace_abapquery" = 'no', "job_trace_all" = 'no', "job_trace_ascomm" = 'no', "job_trace_assemblers" = 'no', "job_trace_audit" = 'no', "job_trace_dataflow" = 'yes', "job_trace_idoc_file" = 'no', "job_trace_memory_loader" = 'no', "job_trace_memory_reader" = 'no', "job_trace_optimized_dataflow" = 'no', "job_trace_parallel_execution" = 'no', "job_trace_rfc_function" = 'no', "job_trace_row" = 'no', "job_trace_script" = 'no', "job_trace_session" = 'yes', "job_trace_sql_only" = 'no', "job_trace_sqlfunctions" = 'no', "job_trace_sqlloaders" = 'no', "job_trace_sqlreaders" = 'no', "job_trace_sqltransforms" = 'no', "job_trace_stored_procedure" = 'no', "job_trace_table" = 'no', "job_trace_table_reader" = 'no', "job_trace_transform" = 'no', "job_trace_userfunction" = 'no', "job_trace_usertransform" = 'no', "job_trace_workflow" = 'yes', "job_type" = 'batch', "job_use_statistics" = 'yes', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu May  2 12:45:06 2019', "ActaValue_3" = 'Thu May  2 15:51:32 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu May  2 12:45:06 2019', "ActaValue_3" = 'Fri May  3 09:44:30 2019', "x" = '-1', "y" = '-1')
 CREATE PLAN WF_CC_TARJETAS_ADICIONALES::'90bb5a6f-f58f-4a0c-ac60-b759ef9e59e6'( )
 DECLARE
      $L_TABLE_NAME VARCHAR(100) ;

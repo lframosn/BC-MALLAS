@@ -2,7 +2,7 @@
 #__AW_Product_Version '14.2.10.1748';
 #__AW_ATL_Locale 'spa_sv.utf-8';
  AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Feb 20 15:23:05 2018', "ActaValue_3" = 'Fri Apr  6 16:33:59 2018', "x" = '-1', "y" = '-1')
-CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="WINDOWS-1252" ?>
+CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="ISO-8859-1" ?>
 <DSConfigurations>
 <DSConfiguration default="true" name="Configuration1">
 <case_sensitive>yes</case_sensitive>
@@ -15,7 +15,7 @@ CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET
 <locale_codepage>&lt;default&gt;</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E805FF585D83A1A543947B2C4CAE9BE70A407DEFD94C5FEE4B1A74BA298B91C55A41856303679F9F2C76D510D03E44</password>
+<password>+0400000000120303000803E827E0221E0823470C86921C3E83B1F5E3700FC2F37D1409E9EC952A2F135AF7CEB40A48FD95DDA252B3BF41CDA015</password>
 <server_codepage>&lt;default&gt;</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -27,7 +27,7 @@ CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET
 </DSConfigurations>
 ', "enable_data_transfer" = 'yes', "import_unknown_type" = 'no', "name" = 'DS_CONTROL', "pcache_force_utf16" = 'no', "unknown_type_size" = '255');
  AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Feb 13 15:29:23 2018', "ActaValue_3" = 'Mon Sep 17 13:36:16 2018', "x" = '-1', "y" = '-1')
-CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="WINDOWS-1252" ?>
+CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="ISO-8859-1" ?>
 <DSConfigurations>
 <DSConfiguration default="true" name="Configuration1">
 <case_sensitive>yes</case_sensitive>
@@ -40,7 +40,7 @@ CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET 
 <locale_codepage>iso-8859-1</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E8594EE8C4F49B341C5B53E06BD1B228228C5A90F0D28BBA993B60F1B31664E9DCE342458F157F3ED145FD8ABDA503</password>
+<password>+0400000000120303000803E8A61D4C44FE0E8622483D8DEF9E8D3B4CE1DEDFCF76434EA6E0894BA555155490FE41932FED53330BDD3179299FDF</password>
 <server_codepage>iso-8859-1</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -58,11 +58,11 @@ ActaName_3 = 'RDescription',ActaValue_3 = '' ,
 ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
-ActaName_7 = 'RDate_created',ActaValue_7 = 'Fri May  3 17:49:36 2019' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Fri May  3 18:21:28 2019' , 
-ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '524' , 
+ActaName_7 = 'RDate_modified',ActaValue_7 = 'Sat May  4 17:45:32 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Sat May  4 18:34:09 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '529' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
-ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '524' , 
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '529' , 
 ActaName_12 = 'RNumber_Of_Updates',ActaValue_12 = '0' , 
 ActaName_13 = 'RNumber_Of_Deletes',ActaValue_13 = '0' , 
 ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '2 Seconds' )
@@ -116,8 +116,9 @@ CUSCAID VARCHAR(255)  NULL ,
 MODIFIED DATETIME(6)  NULL , 
 MODIFIED_BY VARCHAR(255)  NULL , 
 FECHA_DE_ENVIO_PARA_IMPRESION DATETIME(6)  NULL , 
+ROLES_EJECUTIVO VARCHAR(255)  NULL , 
 SUPERVISOR VARCHAR(255)  NULL , 
-CANAL VARCHAR(255)  NULL , 
+CANAL_EJECUTIVO VARCHAR(255)  NULL , 
 MIS_DATE DATE  NULL , 
 LOAD_DATE DATE  NULL ) 
 SET("db_alias_name" = 'SAT')
@@ -129,12 +130,12 @@ ActaName_3 = 'RDescription',ActaValue_3 = '' ,
 ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
 ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
 ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
-ActaName_7 = 'RDate_created',ActaValue_7 = 'Fri May  3 17:49:39 2019' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Fri May  3 18:21:03 2019' , 
-ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '524' , 
+ActaName_7 = 'RDate_modified',ActaValue_7 = 'Sat May  4 17:45:24 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Sat May  4 18:33:43 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '529' , 
 ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
-ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '524' , 
-ActaName_12 = 'RElapsed_Time_For_Load',ActaValue_12 = '18 Seconds' )
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '529' , 
+ActaName_12 = 'RElapsed_Time_For_Load',ActaValue_12 = '24 Seconds' )
 CREATE TABLE DS_TARGET.STG_SAT.CC_SOLICITUDES_BALCON(NRO_SEGUIMIENTO VARCHAR(255)  NULL , 
 ESTADO_BANDEJA VARCHAR(255)  NULL , 
 FECHA_CREACION_SOLICITUD DATETIME(6)  NULL , 
@@ -185,8 +186,9 @@ CUSCAID VARCHAR(255)  NULL ,
 MODIFIED DATETIME(6)  NULL , 
 MODIFIED_BY VARCHAR(255)  NULL , 
 FECHA_DE_ENVIO_PARA_IMPRESION DATETIME(6)  NULL , 
+ROLES_EJECUTIVO VARCHAR(255)  NULL , 
 SUPERVISOR VARCHAR(255)  NULL , 
-CANAL VARCHAR(255)  NULL , 
+CANAL_EJECUTIVO VARCHAR(255)  NULL , 
 MIS_DATE DATE  NULL , 
 LOAD_DATE DATE  NULL ) 
 SET("db_alias_name" = 'STG_SAT')
@@ -566,16 +568,16 @@ BEGIN
 END
 RETURN 1;
 END
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu May  2 15:50:32 2019', "ActaValue_3" = 'Fri May  3 17:36:08 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu May  2 15:50:32 2019', "ActaValue_3" = 'Fri May  3 17:54:17 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_SOL_BALCON::'7b694d90-723d-4be6-b425-8f18219cc94b'
 BEGIN
 
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>369</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '50', "x" = '90', "y" = '-90')
-GUID::'114fd89d-5efe-4b5a-8f10-8a7b9d7a900e' READ TABLE DS_TARGET.STG_SAT.CC_SOLICITUDES_BALCON OUTPUT(CC_SOLICITUDES_BALCON)
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>375</CX><CY>-189</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-180</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '50', "x" = '90', "y" = '-90')
+GUID::'0840ceaa-8d2b-4791-9e7a-46e988dd50b7' READ TABLE DS_TARGET.STG_SAT.CC_SOLICITUDES_BALCON OUTPUT(CC_SOLICITUDES_BALCON)
 SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
 
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '50', "ui_acta_from_schema_0" = 'CC_SOLICITUDES_BALCON', "x" = '480', "y" = '-90')
-GUID::'e6f735d8-b84c-448b-8728-5dc4b341de17' CREATE VIEW Query( NRO_SEGUIMIENTO VARCHAR(255)  SET( "ui_mapping_text" = 'CC_SOLICITUDES_BALCON.NRO_SEGUIMIENTO') ,
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-170</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-180</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '50', "ui_acta_from_schema_0" = 'CC_SOLICITUDES_BALCON', "x" = '480', "y" = '-90')
+GUID::'31facead-601d-4242-afe2-ea52546ac3e8' CREATE VIEW Query( NRO_SEGUIMIENTO VARCHAR(255)  SET( "ui_mapping_text" = 'CC_SOLICITUDES_BALCON.NRO_SEGUIMIENTO') ,
  ESTADO_BANDEJA VARCHAR(255)  SET( "ui_mapping_text" = 'CC_SOLICITUDES_BALCON.ESTADO_BANDEJA') ,
  FECHA_CREACION_SOLICITUD DATETIME(9)  SET( "ui_mapping_text" = 'CC_SOLICITUDES_BALCON.FECHA_CREACION_SOLICITUD') ,
  NUMERO_DE_TARJETA VARCHAR(255)  SET( "ui_mapping_text" = 'CC_SOLICITUDES_BALCON.NUMERO_DE_TARJETA') ,
@@ -625,17 +627,18 @@ GUID::'e6f735d8-b84c-448b-8728-5dc4b341de17' CREATE VIEW Query( NRO_SEGUIMIENTO 
  MODIFIED DATETIME(9)  SET( "ui_mapping_text" = 'CC_SOLICITUDES_BALCON.MODIFIED') ,
  MODIFIED_BY VARCHAR(255)  SET( "ui_mapping_text" = 'CC_SOLICITUDES_BALCON.MODIFIED_BY') ,
  FECHA_DE_ENVIO_PARA_IMPRESION DATETIME(9)  SET( "ui_mapping_text" = 'CC_SOLICITUDES_BALCON.FECHA_DE_ENVIO_PARA_IMPRESION') ,
+ ROLES_EJECUTIVO VARCHAR(255)  SET( "ui_mapping_text" = 'CC_SOLICITUDES_BALCON.ROLES_EJECUTIVO') ,
  SUPERVISOR VARCHAR(255)  SET( "ui_mapping_text" = 'CC_SOLICITUDES_BALCON.SUPERVISOR') ,
- CANAL VARCHAR(255)  SET( "ui_mapping_text" = 'CC_SOLICITUDES_BALCON.CANAL') ,
+ CANAL_EJECUTIVO VARCHAR(255)  SET( "ui_mapping_text" = 'CC_SOLICITUDES_BALCON.CANAL_EJECUTIVO') ,
  MIS_DATE DATE  SET( "ui_mapping_text" = 'CC_SOLICITUDES_BALCON.MIS_DATE') ,
  LOAD_DATE DATE  SET( "ui_mapping_text" = 'CC_SOLICITUDES_BALCON.LOAD_DATE')  )
  AS
-SELECT CC_SOLICITUDES_BALCON.NRO_SEGUIMIENTO, CC_SOLICITUDES_BALCON.ESTADO_BANDEJA, CC_SOLICITUDES_BALCON.FECHA_CREACION_SOLICITUD, CC_SOLICITUDES_BALCON.NUMERO_DE_TARJETA, CC_SOLICITUDES_BALCON.PRODUCTO_COLOCADO, CC_SOLICITUDES_BALCON.TIPO_DE_PRODUCTO, CC_SOLICITUDES_BALCON.NUMERO_DE_CUENTA, CC_SOLICITUDES_BALCON.NOMBRE_COMPLETO, CC_SOLICITUDES_BALCON.TIPO_DOCUMENTO, CC_SOLICITUDES_BALCON.NUMERO_DOCUMENTO, CC_SOLICITUDES_BALCON.DIRECCION_CASA, CC_SOLICITUDES_BALCON.TELEFONO_CASA, CC_SOLICITUDES_BALCON.REFERENCIA_CASA, CC_SOLICITUDES_BALCON.DIRECCION_TRABAJO, CC_SOLICITUDES_BALCON.TELEFONO_TRABAJO, CC_SOLICITUDES_BALCON.REFERENCIA_TRABAJO, CC_SOLICITUDES_BALCON.NUMERO_CONTACTO_1, CC_SOLICITUDES_BALCON.NUMERO_CONTACTO_2, CC_SOLICITUDES_BALCON.BALCON_PARA_TERCERO, CC_SOLICITUDES_BALCON.NOMBRE_DE_TERCERO, CC_SOLICITUDES_BALCON.MONTO_ESTADO_DE_CUENTA, CC_SOLICITUDES_BALCON.MONTO_MAXIMO_AUTORIZADO, CC_SOLICITUDES_BALCON.LIMITE_DE_CREDITO, CC_SOLICITUDES_BALCON.LIMITE_DISPONIBLE, CC_SOLICITUDES_BALCON.SUB_PRODUCTO, CC_SOLICITUDES_BALCON.TIPO_CUOTA, CC_SOLICITUDES_BALCON.CUOTAS, CC_SOLICITUDES_BALCON.TASA_PREFERENCIAL, CC_SOLICITUDES_BALCON.FECHA_DE_CORTE, CC_SOLICITUDES_BALCON.LUGAR_DE_ENTREGA, CC_SOLICITUDES_BALCON.AGENCIA, CC_SOLICITUDES_BALCON.MONTO_CHEQUES_SOLICITADOS, CC_SOLICITUDES_BALCON.CANTIDAD_CHEQUES_SOLICITADOS, CC_SOLICITUDES_BALCON.NORMAL_MONTO_DE_ESTADO_CUENTA, CC_SOLICITUDES_BALCON.NORMAL_MONTO_MAXIMO_AUTORIZADO, CC_SOLICITUDES_BALCON.NORMAL_BALCON_25MAS_ESTADO_CTA, CC_SOLICITUDES_BALCON.INSTITUTO_1, CC_SOLICITUDES_BALCON.INSTITUTO_2, CC_SOLICITUDES_BALCON.INSTITUTO_3, CC_SOLICITUDES_BALCON.ENDOSO_1, CC_SOLICITUDES_BALCON.ENDOSO_2, CC_SOLICITUDES_BALCON.ENDOSO_3, CC_SOLICITUDES_BALCON.MONTO_A_EMITIR_1, CC_SOLICITUDES_BALCON.MONTO_A_EMITIR_2, CC_SOLICITUDES_BALCON.MONTO_A_EMITIR_3, CC_SOLICITUDES_BALCON.RECORD_ID_CASE_CENTER, CC_SOLICITUDES_BALCON.CUSCAID, CC_SOLICITUDES_BALCON.MODIFIED, CC_SOLICITUDES_BALCON.MODIFIED_BY, CC_SOLICITUDES_BALCON.FECHA_DE_ENVIO_PARA_IMPRESION, CC_SOLICITUDES_BALCON.SUPERVISOR, CC_SOLICITUDES_BALCON.CANAL, CC_SOLICITUDES_BALCON.MIS_DATE, CC_SOLICITUDES_BALCON.LOAD_DATE FROM CC_SOLICITUDES_BALCON 
+SELECT CC_SOLICITUDES_BALCON.NRO_SEGUIMIENTO, CC_SOLICITUDES_BALCON.ESTADO_BANDEJA, CC_SOLICITUDES_BALCON.FECHA_CREACION_SOLICITUD, CC_SOLICITUDES_BALCON.NUMERO_DE_TARJETA, CC_SOLICITUDES_BALCON.PRODUCTO_COLOCADO, CC_SOLICITUDES_BALCON.TIPO_DE_PRODUCTO, CC_SOLICITUDES_BALCON.NUMERO_DE_CUENTA, CC_SOLICITUDES_BALCON.NOMBRE_COMPLETO, CC_SOLICITUDES_BALCON.TIPO_DOCUMENTO, CC_SOLICITUDES_BALCON.NUMERO_DOCUMENTO, CC_SOLICITUDES_BALCON.DIRECCION_CASA, CC_SOLICITUDES_BALCON.TELEFONO_CASA, CC_SOLICITUDES_BALCON.REFERENCIA_CASA, CC_SOLICITUDES_BALCON.DIRECCION_TRABAJO, CC_SOLICITUDES_BALCON.TELEFONO_TRABAJO, CC_SOLICITUDES_BALCON.REFERENCIA_TRABAJO, CC_SOLICITUDES_BALCON.NUMERO_CONTACTO_1, CC_SOLICITUDES_BALCON.NUMERO_CONTACTO_2, CC_SOLICITUDES_BALCON.BALCON_PARA_TERCERO, CC_SOLICITUDES_BALCON.NOMBRE_DE_TERCERO, CC_SOLICITUDES_BALCON.MONTO_ESTADO_DE_CUENTA, CC_SOLICITUDES_BALCON.MONTO_MAXIMO_AUTORIZADO, CC_SOLICITUDES_BALCON.LIMITE_DE_CREDITO, CC_SOLICITUDES_BALCON.LIMITE_DISPONIBLE, CC_SOLICITUDES_BALCON.SUB_PRODUCTO, CC_SOLICITUDES_BALCON.TIPO_CUOTA, CC_SOLICITUDES_BALCON.CUOTAS, CC_SOLICITUDES_BALCON.TASA_PREFERENCIAL, CC_SOLICITUDES_BALCON.FECHA_DE_CORTE, CC_SOLICITUDES_BALCON.LUGAR_DE_ENTREGA, CC_SOLICITUDES_BALCON.AGENCIA, CC_SOLICITUDES_BALCON.MONTO_CHEQUES_SOLICITADOS, CC_SOLICITUDES_BALCON.CANTIDAD_CHEQUES_SOLICITADOS, CC_SOLICITUDES_BALCON.NORMAL_MONTO_DE_ESTADO_CUENTA, CC_SOLICITUDES_BALCON.NORMAL_MONTO_MAXIMO_AUTORIZADO, CC_SOLICITUDES_BALCON.NORMAL_BALCON_25MAS_ESTADO_CTA, CC_SOLICITUDES_BALCON.INSTITUTO_1, CC_SOLICITUDES_BALCON.INSTITUTO_2, CC_SOLICITUDES_BALCON.INSTITUTO_3, CC_SOLICITUDES_BALCON.ENDOSO_1, CC_SOLICITUDES_BALCON.ENDOSO_2, CC_SOLICITUDES_BALCON.ENDOSO_3, CC_SOLICITUDES_BALCON.MONTO_A_EMITIR_1, CC_SOLICITUDES_BALCON.MONTO_A_EMITIR_2, CC_SOLICITUDES_BALCON.MONTO_A_EMITIR_3, CC_SOLICITUDES_BALCON.RECORD_ID_CASE_CENTER, CC_SOLICITUDES_BALCON.CUSCAID, CC_SOLICITUDES_BALCON.MODIFIED, CC_SOLICITUDES_BALCON.MODIFIED_BY, CC_SOLICITUDES_BALCON.FECHA_DE_ENVIO_PARA_IMPRESION, CC_SOLICITUDES_BALCON.ROLES_EJECUTIVO, CC_SOLICITUDES_BALCON.SUPERVISOR, CC_SOLICITUDES_BALCON.CANAL_EJECUTIVO, CC_SOLICITUDES_BALCON.MIS_DATE, CC_SOLICITUDES_BALCON.LOAD_DATE FROM CC_SOLICITUDES_BALCON 
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>413</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '50', "x" = '870', "y" = '-90')
-GUID::'0fb2e13f-6190-4c28-b218-bd71c416d0e9' LOAD TABLE DS_TARGET.SAT.CC_SOLICITUDES_BALCON INPUT(Query)
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>419</CX><CY>-189</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-180</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '50', "x" = '870', "y" = '-90')
+GUID::'0bff7f44-da5f-46b3-8d07-5e06ecd770f9' LOAD TABLE DS_TARGET.SAT.CC_SOLICITUDES_BALCON INPUT(Query)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
@@ -688,76 +691,77 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu May  2 15:50:32 2019', "ActaValue_3" = 'Fri May  3 17:54:18 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu May  2 15:50:32 2019', "ActaValue_3" = 'Sat May  4 18:31:46 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_SOL_BALCON::'7607fd13-1b92-4383-8ea8-1de51690b3ce'
 BEGIN
 
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>347</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '50', "x" = '90', "y" = '-90')
-GUID::'cfd194ec-987f-4ffb-a70a-5b96f1c7f71f' READ FILE FF_BALCON."$G_FILE_NAME" OUTPUT(FF_BALCON)
-SET("adaptable" = 'no', "cache" = 'yes', "connection_port" = 'no', "file_location" = 'local', "name" = 'UNNAMED', "number_of_threads" = '<default>', "read_subfolders" = 'yes', "reader_capture_data_conversion_errors" = 'no', "reader_capture_file_access_errors" = 'yes', "reader_capture_row_format_errors" = 'yes', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'no', "reader_include_filename" = 'no', "reader_log_data_conversion_warnings" = 'yes', "reader_log_row_format_warnings" = 'yes', "reader_log_warnings" = 'yes', "reader_maximum_warnings_to_log" = '-99', "reader_skip_empty_files" = 'yes', "reader_skip_error_handling" = 'no', "reader_write_error_rows_to_file" = 'no', "root_dir" = '$G_FILE_LOCATION', "table_weight" = '0', "transfer_custom" = 'no');
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>344</CX><CY>-170</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-180</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '50', "x" = '90', "y" = '-90')
+GUID::'8213011a-b8f7-4204-8be8-78b0f015a5f4' READ FILE FF_CC_SOLICITUDES_BALCON."$G_FILE_NAME" OUTPUT(FF_CC_SOLICITUDES_BALCON)
+SET("cache" = 'yes', "connection_port" = 'no', "file_location" = 'local', "name" = 'UNNAMED', "read_subfolders" = 'yes', "reader_capture_data_conversion_errors" = 'no', "reader_capture_file_access_errors" = 'yes', "reader_capture_row_format_errors" = 'yes', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'no', "reader_include_filename" = 'no', "reader_log_data_conversion_warnings" = 'yes', "reader_log_row_format_warnings" = 'yes', "reader_log_warnings" = 'yes', "reader_maximum_warnings_to_log" = '-99', "reader_skip_empty_files" = 'yes', "reader_skip_error_handling" = 'no', "reader_write_error_rows_to_file" = 'no', "root_dir" = '$G_FILE_LOCATION', "table_weight" = '0', "transfer_custom" = 'no');
 
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '50', "ui_acta_from_schema_0" = 'FF_BALCON', "x" = '480', "y" = '-90')
-GUID::'c30a9377-e77d-442d-9ada-6116334203f3' CREATE VIEW Query( NRO_SEGUIMIENTO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.NRO_SEGUIMIENTO') ,
- ESTADO_BANDEJA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.ESTADO_BANDEJA') ,
- FECHA_CREACION_SOLICITUD DATETIME(9)  SET( "ui_mapping_text" = 'FF_BALCON.FECHA_CREACION_SOLICITUD') ,
- NUMERO_DE_TARJETA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.NUMERO_DE_TARJETA') ,
- PRODUCTO_COLOCADO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.PRODUCTO_COLOCADO') ,
- TIPO_DE_PRODUCTO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.TIPO_DE_PRODUCTO') ,
- NUMERO_DE_CUENTA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.NUMERO_DE_CUENTA') ,
- NOMBRE_COMPLETO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.NOMBRE_COMPLETO') ,
- TIPO_DOCUMENTO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.TIPO_DOCUMENTO') ,
- NUMERO_DOCUMENTO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.NUMERO_DOCUMENTO') ,
- DIRECCION_CASA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.DIRECCION_CASA') ,
- TELEFONO_CASA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.TELEFONO_CASA') ,
- REFERENCIA_CASA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.REFERENCIA_CASA') ,
- DIRECCION_TRABAJO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.DIRECCION_TRABAJO') ,
- TELEFONO_TRABAJO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.TELEFONO_TRABAJO') ,
- REFERENCIA_TRABAJO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.REFERENCIA_TRABAJO') ,
- NUMERO_CONTACTO_1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.NUMERO_CONTACTO_1') ,
- NUMERO_CONTACTO_2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.NUMERO_CONTACTO_2') ,
- BALCON_PARA_TERCERO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.BALCON_PARA_TERCERO') ,
- NOMBRE_DE_TERCERO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.NOMBRE_DE_TERCERO') ,
- MONTO_ESTADO_DE_CUENTA DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_BALCON.MONTO_ESTADO_DE_CUENTA') ,
- MONTO_MAXIMO_AUTORIZADO DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_BALCON.MONTO_MAXIMO_AUTORIZADO') ,
- LIMITE_DE_CREDITO DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_BALCON.LIMITE_DE_CREDITO') ,
- LIMITE_DISPONIBLE DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_BALCON.LIMITE_DISPONIBLE') ,
- SUB_PRODUCTO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.SUB_PRODUCTO') ,
- TIPO_CUOTA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.TIPO_CUOTA') ,
- CUOTAS DECIMAL(3, 0)  SET( "ui_mapping_text" = 'FF_BALCON.CUOTAS') ,
- TASA_PREFERENCIAL DECIMAL(7, 2)  SET( "ui_mapping_text" = 'FF_BALCON.TASA_PREFERENCIAL') ,
- FECHA_DE_CORTE DATETIME(9)  SET( "ui_mapping_text" = 'replace_substr(FF_BALCON.FECHA_DE_CORTE,\' UTC\',\'\')') ,
- LUGAR_DE_ENTREGA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.LUGAR_DE_ENTREGA') ,
- AGENCIA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.AGENCIA') ,
- MONTO_CHEQUES_SOLICITADOS DECIMAL(17, 0)  SET( "ui_mapping_text" = 'FF_BALCON.MONTO_CHEQUES_SOLICITADOS') ,
- CANTIDAD_CHEQUES_SOLICITADOS DECIMAL(1, 0)  SET( "ui_mapping_text" = 'FF_BALCON.CANTIDAD_CHEQUES_SOLICITADOS') ,
- NORMAL_MONTO_DE_ESTADO_CUENTA DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_BALCON.NORMAL_MONTO_DE_ESTADO_CUENTA') ,
- NORMAL_MONTO_MAXIMO_AUTORIZADO DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_BALCON.NORMAL_MONTO_MAXIMO_AUTORIZADO') ,
- NORMAL_BALCON_25MAS_ESTADO_CTA DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_BALCON.NORMAL_BALCON_25MAS_ESTADO_CTA') ,
- INSTITUTO_1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.INSTITUTO_1') ,
- INSTITUTO_2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.INSTITUTO_2') ,
- INSTITUTO_3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.INSTITUTO_3') ,
- ENDOSO_1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.ENDOSO_1') ,
- ENDOSO_2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.ENDOSO_2') ,
- ENDOSO_3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.ENDOSO_3') ,
- MONTO_A_EMITIR_1 DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_BALCON.MONTO_A_EMITIR_1') ,
- MONTO_A_EMITIR_2 DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_BALCON.MONTO_A_EMITIR_2') ,
- MONTO_A_EMITIR_3 DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_BALCON.MONTO_A_EMITIR_3') ,
- RECORD_ID_CASE_CENTER VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.RECORD_ID_CASE_CENTER') ,
- CUSCAID VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.CUSCAID') ,
- MODIFIED DATETIME(9)  SET( "ui_mapping_text" = 'FF_BALCON.MODIFIED') ,
- MODIFIED_BY VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.MODIFIED_BY') ,
- FECHA_DE_ENVIO_PARA_IMPRESION DATETIME(9)  SET( "ui_mapping_text" = 'FF_BALCON.FECHA_DE_ENVIO_PARA_IMPRESION') ,
- SUPERVISOR VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.SUPERVISOR') ,
- CANAL VARCHAR(255)  SET( "ui_mapping_text" = 'FF_BALCON.CANAL') ,
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-170</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-180</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '50', "ui_acta_from_schema_0" = 'FF_CC_SOLICITUDES_BALCON', "x" = '480', "y" = '-90')
+GUID::'7ca57d69-7d7e-4fa5-874e-68e07504e26a' CREATE VIEW Query_1( NRO_SEGUIMIENTO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.NRO_SEGUIMIENTO') ,
+ ESTADO_BANDEJA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.ESTADO_BANDEJA') ,
+ FECHA_CREACION_SOLICITUD DATETIME(9)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.FECHA_CREACION_SOLICITUD') ,
+ NUMERO_DE_TARJETA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.NUMERO_DE_TARJETA') ,
+ PRODUCTO_COLOCADO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.PRODUCTO_COLOCADO') ,
+ TIPO_DE_PRODUCTO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.TIPO_DE_PRODUCTO') ,
+ NUMERO_DE_CUENTA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.NUMERO_DE_CUENTA') ,
+ NOMBRE_COMPLETO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.NOMBRE_COMPLETO') ,
+ TIPO_DOCUMENTO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.TIPO_DOCUMENTO') ,
+ NUMERO_DOCUMENTO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.NUMERO_DOCUMENTO') ,
+ DIRECCION_CASA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.DIRECCION_CASA') ,
+ TELEFONO_CASA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.TELEFONO_CASA') ,
+ REFERENCIA_CASA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.REFERENCIA_CASA') ,
+ DIRECCION_TRABAJO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.DIRECCION_TRABAJO') ,
+ TELEFONO_TRABAJO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.TELEFONO_TRABAJO') ,
+ REFERENCIA_TRABAJO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.REFERENCIA_TRABAJO') ,
+ NUMERO_CONTACTO_1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.NUMERO_CONTACTO_1') ,
+ NUMERO_CONTACTO_2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.NUMERO_CONTACTO_2') ,
+ BALCON_PARA_TERCERO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.BALCON_PARA_TERCERO') ,
+ NOMBRE_DE_TERCERO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.NOMBRE_DE_TERCERO') ,
+ MONTO_ESTADO_DE_CUENTA DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.MONTO_ESTADO_DE_CUENTA') ,
+ MONTO_MAXIMO_AUTORIZADO DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.MONTO_MAXIMO_AUTORIZADO') ,
+ LIMITE_DE_CREDITO DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.LIMITE_DE_CREDITO') ,
+ LIMITE_DISPONIBLE DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.LIMITE_DISPONIBLE') ,
+ SUB_PRODUCTO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.SUB_PRODUCTO') ,
+ TIPO_CUOTA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.TIPO_CUOTA') ,
+ CUOTAS DECIMAL(3, 0)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.CUOTAS') ,
+ TASA_PREFERENCIAL DECIMAL(7, 2)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.TASA_PREFERENCIAL') ,
+ FECHA_DE_CORTE DATETIME(9)  SET( "ui_mapping_text" = 'replace_substr(FF_CC_SOLICITUDES_BALCON.FECHA_DE_CORTE,\' UTC\',\'\')') ,
+ LUGAR_DE_ENTREGA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.LUGAR_DE_ENTREGA') ,
+ AGENCIA VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.AGENCIA') ,
+ MONTO_CHEQUES_SOLICITADOS DECIMAL(17, 0)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.MONTO_CHEQUES_SOLICITADOS') ,
+ CANTIDAD_CHEQUES_SOLICITADOS DECIMAL(1, 0)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.CANTIDAD_CHEQUES_SOLICITADOS') ,
+ NORMAL_MONTO_DE_ESTADO_CUENTA DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.NORMAL_MONTO_DE_ESTADO_CUENTA') ,
+ NORMAL_MONTO_MAXIMO_AUTORIZADO DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.NORMAL_MONTO_MAXIMO_AUTORIZADO') ,
+ NORMAL_BALCON_25MAS_ESTADO_CTA DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.NORMAL_BALCON_25MAS_ESTADO_CTA') ,
+ INSTITUTO_1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.INSTITUTO_1') ,
+ INSTITUTO_2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.INSTITUTO_2') ,
+ INSTITUTO_3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.INSTITUTO_3') ,
+ ENDOSO_1 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.ENDOSO_1') ,
+ ENDOSO_2 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.ENDOSO_2') ,
+ ENDOSO_3 VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.ENDOSO_3') ,
+ MONTO_A_EMITIR_1 DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.MONTO_A_EMITIR_1') ,
+ MONTO_A_EMITIR_2 DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.MONTO_A_EMITIR_2') ,
+ MONTO_A_EMITIR_3 DECIMAL(17, 2)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.MONTO_A_EMITIR_3') ,
+ RECORD_ID_CASE_CENTER VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.RECORD_ID_CASE_CENTER') ,
+ CUSCAID VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.CUSCAID') ,
+ MODIFIED DATETIME(9)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.MODIFIED') ,
+ MODIFIED_BY VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.MODIFIED_BY') ,
+ FECHA_DE_ENVIO_PARA_IMPRESION DATETIME(9)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.FECHA_DE_ENVIO_PARA_IMPRESION') ,
+ ROLES_EJECUTIVO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.ROLES_EJECUTIVO') ,
+ SUPERVISOR VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.SUPERVISOR') ,
+ CANAL_EJECUTIVO VARCHAR(255)  SET( "ui_mapping_text" = 'FF_CC_SOLICITUDES_BALCON.CANAL_EJECUTIVO') ,
  MIS_DATE DATE  SET( "ui_mapping_text" = '$G_FECHA_ARCHIVO') ,
  LOAD_DATE DATE  SET( "ui_mapping_text" = 'sysdate()')  )
  AS
-SELECT FF_BALCON.NRO_SEGUIMIENTO, FF_BALCON.ESTADO_BANDEJA, FF_BALCON.FECHA_CREACION_SOLICITUD, FF_BALCON.NUMERO_DE_TARJETA, FF_BALCON.PRODUCTO_COLOCADO, FF_BALCON.TIPO_DE_PRODUCTO, FF_BALCON.NUMERO_DE_CUENTA, FF_BALCON.NOMBRE_COMPLETO, FF_BALCON.TIPO_DOCUMENTO, FF_BALCON.NUMERO_DOCUMENTO, FF_BALCON.DIRECCION_CASA, FF_BALCON.TELEFONO_CASA, FF_BALCON.REFERENCIA_CASA, FF_BALCON.DIRECCION_TRABAJO, FF_BALCON.TELEFONO_TRABAJO, FF_BALCON.REFERENCIA_TRABAJO, FF_BALCON.NUMERO_CONTACTO_1, FF_BALCON.NUMERO_CONTACTO_2, FF_BALCON.BALCON_PARA_TERCERO, FF_BALCON.NOMBRE_DE_TERCERO, FF_BALCON.MONTO_ESTADO_DE_CUENTA, FF_BALCON.MONTO_MAXIMO_AUTORIZADO, FF_BALCON.LIMITE_DE_CREDITO, FF_BALCON.LIMITE_DISPONIBLE, FF_BALCON.SUB_PRODUCTO, FF_BALCON.TIPO_CUOTA, FF_BALCON.CUOTAS, FF_BALCON.TASA_PREFERENCIAL, replace_substr(FF_BALCON.FECHA_DE_CORTE, ' UTC', ''), FF_BALCON.LUGAR_DE_ENTREGA, FF_BALCON.AGENCIA, FF_BALCON.MONTO_CHEQUES_SOLICITADOS, FF_BALCON.CANTIDAD_CHEQUES_SOLICITADOS, FF_BALCON.NORMAL_MONTO_DE_ESTADO_CUENTA, FF_BALCON.NORMAL_MONTO_MAXIMO_AUTORIZADO, FF_BALCON.NORMAL_BALCON_25MAS_ESTADO_CTA, FF_BALCON.INSTITUTO_1, FF_BALCON.INSTITUTO_2, FF_BALCON.INSTITUTO_3, FF_BALCON.ENDOSO_1, FF_BALCON.ENDOSO_2, FF_BALCON.ENDOSO_3, FF_BALCON.MONTO_A_EMITIR_1, FF_BALCON.MONTO_A_EMITIR_2, FF_BALCON.MONTO_A_EMITIR_3, FF_BALCON.RECORD_ID_CASE_CENTER, FF_BALCON.CUSCAID, FF_BALCON.MODIFIED, FF_BALCON.MODIFIED_BY, FF_BALCON.FECHA_DE_ENVIO_PARA_IMPRESION, FF_BALCON.SUPERVISOR, FF_BALCON.CANAL, $G_FECHA_ARCHIVO, sysdate() FROM FF_BALCON 
+SELECT FF_CC_SOLICITUDES_BALCON.NRO_SEGUIMIENTO, FF_CC_SOLICITUDES_BALCON.ESTADO_BANDEJA, FF_CC_SOLICITUDES_BALCON.FECHA_CREACION_SOLICITUD, FF_CC_SOLICITUDES_BALCON.NUMERO_DE_TARJETA, FF_CC_SOLICITUDES_BALCON.PRODUCTO_COLOCADO, FF_CC_SOLICITUDES_BALCON.TIPO_DE_PRODUCTO, FF_CC_SOLICITUDES_BALCON.NUMERO_DE_CUENTA, FF_CC_SOLICITUDES_BALCON.NOMBRE_COMPLETO, FF_CC_SOLICITUDES_BALCON.TIPO_DOCUMENTO, FF_CC_SOLICITUDES_BALCON.NUMERO_DOCUMENTO, FF_CC_SOLICITUDES_BALCON.DIRECCION_CASA, FF_CC_SOLICITUDES_BALCON.TELEFONO_CASA, FF_CC_SOLICITUDES_BALCON.REFERENCIA_CASA, FF_CC_SOLICITUDES_BALCON.DIRECCION_TRABAJO, FF_CC_SOLICITUDES_BALCON.TELEFONO_TRABAJO, FF_CC_SOLICITUDES_BALCON.REFERENCIA_TRABAJO, FF_CC_SOLICITUDES_BALCON.NUMERO_CONTACTO_1, FF_CC_SOLICITUDES_BALCON.NUMERO_CONTACTO_2, FF_CC_SOLICITUDES_BALCON.BALCON_PARA_TERCERO, FF_CC_SOLICITUDES_BALCON.NOMBRE_DE_TERCERO, FF_CC_SOLICITUDES_BALCON.MONTO_ESTADO_DE_CUENTA, FF_CC_SOLICITUDES_BALCON.MONTO_MAXIMO_AUTORIZADO, FF_CC_SOLICITUDES_BALCON.LIMITE_DE_CREDITO, FF_CC_SOLICITUDES_BALCON.LIMITE_DISPONIBLE, FF_CC_SOLICITUDES_BALCON.SUB_PRODUCTO, FF_CC_SOLICITUDES_BALCON.TIPO_CUOTA, FF_CC_SOLICITUDES_BALCON.CUOTAS, FF_CC_SOLICITUDES_BALCON.TASA_PREFERENCIAL, replace_substr(FF_CC_SOLICITUDES_BALCON.FECHA_DE_CORTE, ' UTC', ''), FF_CC_SOLICITUDES_BALCON.LUGAR_DE_ENTREGA, FF_CC_SOLICITUDES_BALCON.AGENCIA, FF_CC_SOLICITUDES_BALCON.MONTO_CHEQUES_SOLICITADOS, FF_CC_SOLICITUDES_BALCON.CANTIDAD_CHEQUES_SOLICITADOS, FF_CC_SOLICITUDES_BALCON.NORMAL_MONTO_DE_ESTADO_CUENTA, FF_CC_SOLICITUDES_BALCON.NORMAL_MONTO_MAXIMO_AUTORIZADO, FF_CC_SOLICITUDES_BALCON.NORMAL_BALCON_25MAS_ESTADO_CTA, FF_CC_SOLICITUDES_BALCON.INSTITUTO_1, FF_CC_SOLICITUDES_BALCON.INSTITUTO_2, FF_CC_SOLICITUDES_BALCON.INSTITUTO_3, FF_CC_SOLICITUDES_BALCON.ENDOSO_1, FF_CC_SOLICITUDES_BALCON.ENDOSO_2, FF_CC_SOLICITUDES_BALCON.ENDOSO_3, FF_CC_SOLICITUDES_BALCON.MONTO_A_EMITIR_1, FF_CC_SOLICITUDES_BALCON.MONTO_A_EMITIR_2, FF_CC_SOLICITUDES_BALCON.MONTO_A_EMITIR_3, FF_CC_SOLICITUDES_BALCON.RECORD_ID_CASE_CENTER, FF_CC_SOLICITUDES_BALCON.CUSCAID, FF_CC_SOLICITUDES_BALCON.MODIFIED, FF_CC_SOLICITUDES_BALCON.MODIFIED_BY, FF_CC_SOLICITUDES_BALCON.FECHA_DE_ENVIO_PARA_IMPRESION, FF_CC_SOLICITUDES_BALCON.ROLES_EJECUTIVO, FF_CC_SOLICITUDES_BALCON.SUPERVISOR, FF_CC_SOLICITUDES_BALCON.CANAL_EJECUTIVO, $G_FECHA_ARCHIVO, sysdate() FROM FF_CC_SOLICITUDES_BALCON 
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>413</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '50', "x" = '870', "y" = '-90')
-GUID::'b2c1db41-b97d-462e-8527-ef31e1493d1c' LOAD TABLE DS_TARGET.STG_SAT.CC_SOLICITUDES_BALCON INPUT(Query)
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>419</CX><CY>-189</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-180</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '50', "x" = '870', "y" = '-90')
+GUID::'77699908-a771-49a5-b6b6-76bc5e27389c' LOAD TABLE DS_TARGET.STG_SAT.CC_SOLICITUDES_BALCON INPUT(Query_1)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
@@ -810,11 +814,11 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Fri May  3 17:50:29 2019', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '50', "ui_display_name" = 'FF_BALCON', "x" = '-1', "y" = '-1')
-CREATE FILE DATASTORE FF_BALCON::'eeea69b5-f97d-4cbc-8111-c16d6d72ebea'(NRO_SEGUIMIENTO VARCHAR(255) , ESTADO_BANDEJA VARCHAR(255) , FECHA_CREACION_SOLICITUD DATETIME(9)  SET( "Format" = 'dd/mm/yyyy hh:mm') , NUMERO_DE_TARJETA VARCHAR(255) , PRODUCTO_COLOCADO VARCHAR(255) , TIPO_DE_PRODUCTO VARCHAR(255) , NUMERO_DE_CUENTA VARCHAR(255) , NOMBRE_COMPLETO VARCHAR(255) , TIPO_DOCUMENTO VARCHAR(255) , NUMERO_DOCUMENTO VARCHAR(255) , DIRECCION_CASA VARCHAR(255) , TELEFONO_CASA VARCHAR(255) , REFERENCIA_CASA VARCHAR(255) , DIRECCION_TRABAJO VARCHAR(255) , TELEFONO_TRABAJO VARCHAR(255) , REFERENCIA_TRABAJO VARCHAR(255) , NUMERO_CONTACTO_1 VARCHAR(255) , NUMERO_CONTACTO_2 VARCHAR(255) , BALCON_PARA_TERCERO VARCHAR(255) , NOMBRE_DE_TERCERO VARCHAR(255) , MONTO_ESTADO_DE_CUENTA DECIMAL(17, 2) , MONTO_MAXIMO_AUTORIZADO DECIMAL(17, 2) , LIMITE_DE_CREDITO DECIMAL(17, 2) , LIMITE_DISPONIBLE DECIMAL(17, 2) , SUB_PRODUCTO VARCHAR(255) , TIPO_CUOTA VARCHAR(255) , CUOTAS DECIMAL(3, 0) , TASA_PREFERENCIAL DECIMAL(7, 2) , FECHA_DE_CORTE DATETIME(9) , LUGAR_DE_ENTREGA VARCHAR(255) , AGENCIA VARCHAR(255) , MONTO_CHEQUES_SOLICITADOS DECIMAL(17, 0) , CANTIDAD_CHEQUES_SOLICITADOS DECIMAL(1, 0) , NORMAL_MONTO_DE_ESTADO_CUENTA DECIMAL(17, 2) , NORMAL_MONTO_MAXIMO_AUTORIZADO DECIMAL(17, 2) , NORMAL_BALCON_25MAS_ESTADO_CTA DECIMAL(17, 2) , INSTITUTO_1 VARCHAR(255) , INSTITUTO_2 VARCHAR(255) , INSTITUTO_3 VARCHAR(255) , ENDOSO_1 VARCHAR(255) , ENDOSO_2 VARCHAR(255) , ENDOSO_3 VARCHAR(255) , MONTO_A_EMITIR_1 DECIMAL(17, 2) , MONTO_A_EMITIR_2 DECIMAL(17, 2) , MONTO_A_EMITIR_3 DECIMAL(17, 2) , RECORD_ID_CASE_CENTER VARCHAR(255) , CUSCAID VARCHAR(255) , MODIFIED DATETIME(9)  SET( "Format" = 'dd/mm/yyyy hh:mm') , MODIFIED_BY VARCHAR(255) , FECHA_DE_ENVIO_PARA_IMPRESION DATETIME(9)  SET( "Format" = 'dd/mm/yyyy hh:mm') , ROLES_ULTIMO_EDT VARCHAR(255) , SUPERVISOR VARCHAR(255) , CANAL VARCHAR(255) )
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Sat May  4 17:59:55 2019', "InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '50', "ui_display_name" = 'FF_CC_SOLICITUDES_BALCON', "x" = '-1', "y" = '-1')
+CREATE FILE DATASTORE FF_CC_SOLICITUDES_BALCON::'fc0ba47b-6ff3-4148-9983-5fdecf08e19d'(NRO_SEGUIMIENTO VARCHAR(255) , ESTADO_BANDEJA VARCHAR(255) , FECHA_CREACION_SOLICITUD DATETIME(9)  SET( "Format" = 'dd/mm/yyyy hh:mm') , NUMERO_DE_TARJETA VARCHAR(255) , PRODUCTO_COLOCADO VARCHAR(255) , TIPO_DE_PRODUCTO VARCHAR(255) , NUMERO_DE_CUENTA VARCHAR(255) , NOMBRE_COMPLETO VARCHAR(255) , TIPO_DOCUMENTO VARCHAR(255) , NUMERO_DOCUMENTO VARCHAR(255) , DIRECCION_CASA VARCHAR(255) , TELEFONO_CASA VARCHAR(255) , REFERENCIA_CASA VARCHAR(255) , DIRECCION_TRABAJO VARCHAR(255) , TELEFONO_TRABAJO VARCHAR(255) , REFERENCIA_TRABAJO VARCHAR(255) , NUMERO_CONTACTO_1 VARCHAR(255) , NUMERO_CONTACTO_2 VARCHAR(255) , BALCON_PARA_TERCERO VARCHAR(255) , NOMBRE_DE_TERCERO VARCHAR(255) , MONTO_ESTADO_DE_CUENTA DECIMAL(17, 2) , MONTO_MAXIMO_AUTORIZADO DECIMAL(17, 2) , LIMITE_DE_CREDITO DECIMAL(17, 2) , LIMITE_DISPONIBLE DECIMAL(17, 2) , SUB_PRODUCTO VARCHAR(255) , TIPO_CUOTA VARCHAR(255) , CUOTAS DECIMAL(3, 0) , TASA_PREFERENCIAL DECIMAL(7, 2) , FECHA_DE_CORTE DATETIME(9) , LUGAR_DE_ENTREGA VARCHAR(255) , AGENCIA VARCHAR(255) , MONTO_CHEQUES_SOLICITADOS DECIMAL(17, 0) , CANTIDAD_CHEQUES_SOLICITADOS DECIMAL(1, 0) , NORMAL_MONTO_DE_ESTADO_CUENTA DECIMAL(17, 2) , NORMAL_MONTO_MAXIMO_AUTORIZADO DECIMAL(17, 2) , NORMAL_BALCON_25MAS_ESTADO_CTA DECIMAL(17, 2) , INSTITUTO_1 VARCHAR(255) , INSTITUTO_2 VARCHAR(255) , INSTITUTO_3 VARCHAR(255) , ENDOSO_1 VARCHAR(255) , ENDOSO_2 VARCHAR(255) , ENDOSO_3 VARCHAR(255) , MONTO_A_EMITIR_1 DECIMAL(17, 2) , MONTO_A_EMITIR_2 DECIMAL(17, 2) , MONTO_A_EMITIR_3 DECIMAL(17, 2) , RECORD_ID_CASE_CENTER VARCHAR(255) , CUSCAID VARCHAR(255) , MODIFIED DATETIME(9)  SET( "Format" = 'dd/mm/yyyy hh:mm') , MODIFIED_BY VARCHAR(255) , FECHA_DE_ENVIO_PARA_IMPRESION DATETIME(9)  SET( "Format" = 'dd/mm/yyyy hh:mm') , ROLES_EJECUTIVO VARCHAR(255) , SUPERVISOR VARCHAR(255) , CANAL_EJECUTIVO VARCHAR(255) )
  SET ("abap_file_format" = 'no', "application_type" = '', "cache" = 'yes', "column_delimiter" = '\\t', "column_width" = '1', "column_width1" = '255', "column_width10" = '255', "column_width11" = '255', "column_width12" = '255', "column_width13" = '255', "column_width14" = '255', "column_width15" = '255', "column_width16" = '255', "column_width17" = '255', "column_width18" = '255', "column_width19" = '255', "column_width2" = '255', "column_width20" = '255', "column_width21" = '48', "column_width22" = '48', "column_width23" = '48', "column_width24" = '48', "column_width25" = '255', "column_width26" = '255', "column_width27" = '48', "column_width28" = '48', "column_width29" = '24', "column_width3" = '24', "column_width30" = '255', "column_width31" = '255', "column_width32" = '48', "column_width33" = '48', "column_width34" = '48', "column_width35" = '48', "column_width36" = '48', "column_width37" = '255', "column_width38" = '255', "column_width39" = '255', "column_width4" = '255', "column_width40" = '255', "column_width41" = '255', "column_width42" = '255', "column_width43" = '48', "column_width44" = '48', "column_width45" = '48', "column_width46" = '255', "column_width47" = '255', "column_width48" = '24', "column_width49" = '255', "column_width5" = '255', "column_width50" = '24', "column_width51" = '255', "column_width52" = '255', "column_width53" = '255', "column_width6" = '255', "column_width7" = '255', "column_width8" = '255', "column_width9" = '255', "date_format" = 'yyyy.mm.dd', "datetime_format" = 'yyyy.mm.dd hh24:mi:ss', "ds_configuration_enabled" = 'no', "file_format" = 'ascii', "file_location" = 'local', "file_name" = '$G_FILE_NAME', "file_type" = 'delimited_file', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>', "name" = 'UNNAMED', "number_of_threads" = '<default>', "read_subfolders" = 'yes', "reader_capture_data_conversion_errors" = 'no', "reader_capture_file_access_errors" = 'yes', "reader_capture_row_format_errors" = 'yes', "reader_capture_string_truncation_errors" = 'no', "reader_log_data_conversion_warnings" = 'yes', "reader_log_row_format_warnings" = 'yes', "reader_log_warnings" = 'yes', "reader_maximum_warnings_to_log" = '-99', "reader_skip_empty_files" = 'yes', "reader_skip_error_handling" = 'no', "reader_write_error_rows_to_file" = 'no', "root_dir" = '$G_FILE_LOCATION', "row_delimiter" = '
 ', "skip_row_header" = 'yes', "table_weight" = '0', "time_format" = 'hh24:mi:ss', "transfer_custom" = 'no', "use_root_dir" = 'no', "write_bom" = 'no');
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu May  2 15:50:32 2019', "ActaValue_3" = 'Fri May  3 17:12:30 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu May  2 15:50:32 2019', "ActaValue_3" = 'Sat May  4 17:23:38 2019', "x" = '-1', "y" = '-1')
 CREATE SESSION JOB_CASE_CENTER_BAL::'20e430ef-1e93-49d2-815d-feb40ed30855'( )
 DECLARE
      $L_EXISTE_JOB INT ;
@@ -830,7 +834,7 @@ DECLARE
      GLOBAL $G_FECHA_ARCHIVO VARCHAR(30) ;
      GLOBAL $G_FECHA_ARCHIVO1 VARCHAR(30) ;
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI', "ui_script_text" = 'print( \'--version: fd3533e\');
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>228</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI', "ui_script_text" = 'print( \'--version: 06c3c92\');
 
 $G_JOB_NAME = job_name( );
 
@@ -841,17 +845,17 @@ $G_FILE_LOCATION = CF_DEFINE_UBICACION( );
 $G_SH_ROUTE = sql(\'DS_CONTROL\', \'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \\\'%SH_ROUTE%\\\'\');
 ', "x" = '90', "y" = '-90')
 BEGIN_SCRIPT
-print('--version: fd3533e');$G_JOB_NAME = job_name();$G_FILE_LOCATION = CF_DEFINE_UBICACION();$G_SH_ROUTE = sql('DS_CONTROL', 'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%SH_ROUTE%\'');END
- AlGUIComment ("If_condition" = 'CF_JOBNAME( $G_JOB_NAME,$L_EXISTE_JOB) = 1', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'CDN_JOB', "x" = '480', "y" = '-90')
+print('--version: 06c3c92');$G_JOB_NAME = job_name();$G_FILE_LOCATION = CF_DEFINE_UBICACION();$G_SH_ROUTE = sql('DS_CONTROL', 'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%SH_ROUTE%\'');END
+ AlGUIComment ("If_condition" = 'CF_JOBNAME( $G_JOB_NAME,$L_EXISTE_JOB) = 1', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'CDN_JOB', "x" = '480', "y" = '-90')
 IF ((cf_jobname($G_JOB_NAME, $L_EXISTE_JOB) = 1) )
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try5512', "x" = '90', "y" = '-90')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try5512', "x" = '90', "y" = '-90')
 TRY
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>416</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>422</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
 CALL PLAN WF_CC_SOLICITUDES_BALCON::'2434cea5-763a-4bc7-87d0-316afc81b9de'();
 END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch5516', "x" = '870', "y" = '-90')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch5516', "x" = '870', "y" = '-90')
 CATCH (210101)
 BEGIN
 END
@@ -860,14 +864,14 @@ END_TRY
 END
 ELSE
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>413</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_CDT_JOB_ER...', "ui_script_text" = '$L_FECHA = sysdate( );
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>413</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_CDT_JOB_ER...', "ui_script_text" = '$L_FECHA = sysdate( );
 SQL(\'DS_CONTROL\', \'INSERT INTO LOG_EJECUCION(ERROR_NUMBER, ERROR_CONTEXT, ERROR_MESSAGE, ERROR_TIMESTAMP) VALUES(0, \\\'No existe Job ingresado con nombre [$G_JOB_NAME]\\\', \\\'\\\', \\\'[$L_FECHA]\\\')\');', "x" = '90', "y" = '-90')
 BEGIN_SCRIPT
 $L_FECHA = sysdate();sql('DS_CONTROL', 'INSERT INTO LOG_EJECUCION(ERROR_NUMBER, ERROR_CONTEXT, ERROR_MESSAGE, ERROR_TIMESTAMP) VALUES(0, \'No existe Job ingresado con nombre [$G_JOB_NAME]\', \'\', \'[$L_FECHA]\')');END
 END
 END
  SET ("job_checkpoint_enabled" = 'no', "job_collect_statistics" = 'no', "job_collect_statistics_monitor" = 'no', "job_create_debug_package" = 'no', "job_enable_assemblers" = 'yes', "job_enable_audit" = 'yes', "job_enable_dataquality" = 'yes', "job_export_repo" = 'no', "job_export_reports" = 'no', "job_guid" = '20e430ef-1e93-49d2-815d-feb40ed30855', "job_isrecoverable" = 'no', "job_mode" = 'Multi-Process', "job_monitor_sample_rate" = '1000', "job_monitor_timer_rate" = '5', "job_name" = 'JOB_CASE_CENTER_BAL', "job_print_version" = 'no', "job_testmode_enabled" = 'no', "job_trace_abapquery" = 'no', "job_trace_all" = 'no', "job_trace_ascomm" = 'no', "job_trace_assemblers" = 'no', "job_trace_audit" = 'no', "job_trace_dataflow" = 'yes', "job_trace_idoc_file" = 'no', "job_trace_memory_loader" = 'no', "job_trace_memory_reader" = 'no', "job_trace_optimized_dataflow" = 'no', "job_trace_parallel_execution" = 'no', "job_trace_rfc_function" = 'no', "job_trace_row" = 'no', "job_trace_script" = 'no', "job_trace_session" = 'yes', "job_trace_sql_only" = 'no', "job_trace_sqlfunctions" = 'no', "job_trace_sqlloaders" = 'no', "job_trace_sqlreaders" = 'no', "job_trace_sqltransforms" = 'no', "job_trace_stored_procedure" = 'no', "job_trace_table" = 'no', "job_trace_table_reader" = 'no', "job_trace_transform" = 'no', "job_trace_userfunction" = 'no', "job_trace_usertransform" = 'no', "job_trace_workflow" = 'yes', "job_type" = 'batch', "job_use_statistics" = 'yes', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu May  2 10:28:31 2019', "ActaValue_3" = 'Thu May  2 15:50:33 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu May  2 10:28:31 2019', "ActaValue_3" = 'Sat May  4 17:23:38 2019', "x" = '-1', "y" = '-1')
 CREATE PLAN WF_CC_SOLICITUDES_BALCON::'2434cea5-763a-4bc7-87d0-316afc81b9de'( )
 DECLARE
      $L_TABLE_NAME VARCHAR(100) ;
@@ -883,7 +887,7 @@ DECLARE
      $L_ERROR_MESSAGE VARCHAR(512) ;
      $L_ERROR_TIMESTAMP __AL_TIMESTAMP(9) ;
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>285</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI_WF', "ui_script_text" = '$L_TABLE_NAME = replace_substr( workflow_name( ), \'__\', \'.\');
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>291</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI_WF', "ui_script_text" = '$L_TABLE_NAME = replace_substr( workflow_name( ), \'__\', \'.\');
 
 $L_TABLE_NAME  = replace_substr( $L_TABLE_NAME, \'WF_\', \'\' );
 
@@ -903,13 +907,13 @@ sql( \'DS_TARGET\', \'truncate table STG_SAT.[$L_TABLE_NAME]\');
 ', "x" = '90', "y" = '-90')
 BEGIN_SCRIPT
 $L_TABLE_NAME = replace_substr(workflow_name(), '__', '.');$L_TABLE_NAME = replace_substr($L_TABLE_NAME, 'WF_', '');$G_FILE_NAME = sql('DS_CONTROL', 'SELECT filename FROM CNF.FILE_LIST WHERE tablename like (\'[$L_TABLE_NAME]%\') and loaded = 0');$G_FECHA_ARCHIVO = replace_substr($G_FILE_NAME, 'csv___solicitudes_balcon-', '');$G_FECHA_ARCHIVO = replace_substr($G_FECHA_ARCHIVO, '.txt', '');$G_FECHA_ARCHIVO = to_date($G_FECHA_ARCHIVO, 'DD-MM-YYYY');$L_TABLE_NAME = ('' || $L_TABLE_NAME);sql('DS_TARGET', 'truncate table STG_SAT.[$L_TABLE_NAME]');END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try5586', "x" = '480', "y" = '-90')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try5586', "x" = '480', "y" = '-90')
 TRY
 BEGIN
- AlGUIComment ("If_condition" = 'CF_TABLE_NAME($L_TABLE_NAME) = 1', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>344</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'CDT_TABLE_EXIST', "x" = '870', "y" = '-90')
+ AlGUIComment ("If_condition" = 'CF_TABLE_NAME($L_TABLE_NAME) = 1', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>332</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'CDT_TABLE_EXIST', "x" = '870', "y" = '-90')
 IF ((cf_table_name($L_TABLE_NAME) = 1) )
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>275</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI_DF', "ui_script_text" = '
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>285</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI_DF', "ui_script_text" = '
 $L_STATUS_JOB = \'INICIADO\';
 
 $L_TABLE_NAME = replace_substr( $L_TABLE_NAME, \'STG_SAT.\', \'\');
@@ -922,9 +926,9 @@ $L_ID_GENERATED  = CF_CONTROL_LOG_EDW($G_CURRENT_DATE, $L_ID_JOB_TABLA , $L_STAT
 ', "x" = '90', "y" = '-90')
 BEGIN_SCRIPT
 $L_STATUS_JOB = 'INICIADO';$L_TABLE_NAME = replace_substr($L_TABLE_NAME, 'STG_SAT.', '');$L_ID_JOB_TABLA = sql('DS_CONTROL', 'SELECT ID_JOB_TABLE FROM CNF.CAT_JOBS WHERE NOMBRE_JOB = \'[$G_JOB_NAME]\' AND NOMBRE_TABLA = \'[$L_TABLE_NAME]\'');$L_ID_GENERATED = cf_control_log_edw($G_CURRENT_DATE, $L_ID_JOB_TABLA, $L_STATUS_JOB, $L_ID_GENERATED);END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>416</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>400</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
 CALL DATAFLOW DF_STG_SOL_BALCON::'7607fd13-1b92-4383-8ea8-1de51690b3ce'();
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>294</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_MID_DF', "ui_script_text" = '$L_TABLE_NAME = \'STG_SAT.\' || $L_TABLE_NAME ;
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>300</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_MID_DF', "ui_script_text" = '$L_TABLE_NAME = \'STG_SAT.\' || $L_TABLE_NAME ;
 $L_COUNT_RECORDS = sql( \'DS_TARGET\', \'SELECT COUNT(*) FROM [$L_TABLE_NAME]\' );
 
 $L_TABLE_NAME = replace_substr( $L_TABLE_NAME , \'STG_SAT.\', \'\');
@@ -938,11 +942,11 @@ SQL(\'DS_CONTROL\', \'COMMIT\');
 ', "x" = '870', "y" = '-90')
 BEGIN_SCRIPT
 $L_TABLE_NAME = ('STG_SAT.' || $L_TABLE_NAME);$L_COUNT_RECORDS = sql('DS_TARGET', 'SELECT COUNT(*) FROM [$L_TABLE_NAME]');$L_TABLE_NAME = replace_substr($L_TABLE_NAME, 'STG_SAT.', '');$L_ID_CATJOB = sql('DS_CONTROL', 'SELECT ID_JOB_TABLE FROM CNF.CAT_JOBS WHERE NOMBRE_JOB = \'[$G_JOB_NAME]\' AND NOMBRE_TABLA = \'[$L_TABLE_NAME]\'');$L_MAX_ID = sql('DS_CONTROL', 'SELECT MAX(ID_CONTROL) FROM CNF.CONTROL_EJECUCION WHERE ID_CAT_JOB = [$L_ID_CATJOB]');sql('DS_CONTROL', 'UPDATE CNF.CONTROL_EJECUCION SET COUNT_FILA = \'[$L_COUNT_RECORDS]\' WHERE ID_CAT_JOB = [$L_ID_CATJOB] AND ID_CONTROL = [$L_MAX_ID]');sql('DS_CONTROL', 'COMMIT');END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>332</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1260', "y" = '-90')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>322</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1260', "y" = '-90')
 CALL DATAFLOW DF_SOL_BALCON::'7b694d90-723d-4be6-b425-8f18219cc94b'();
 END
 END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch5590', "x" = '1260', "y" = '-90')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch5590', "x" = '1260', "y" = '-90')
 CATCH (210101)
 BEGIN
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>360</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_CATCH_WF', "ui_script_text" = '##INSTANCIA DE VARIABLES GLOBALES##
@@ -966,7 +970,7 @@ $L_ERROR_NUMBER = error_number();$L_ERROR_CONTEXT = error_context();$L_ERROR_MES
 END
 
 END_TRY
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>297</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_FIN_WF', "ui_script_text" = '$L_STATUS_JOB = \'FINALIZADO\';
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>300</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_FIN_WF', "ui_script_text" = '$L_STATUS_JOB = \'FINALIZADO\';
 
 sql( \'DS_CONTROL\', \'UPDATE CNF.FILE_LIST SET loaded = 1 WHERE filename = \\\'[$G_FILE_NAME]\\\'\');
 sql( \'DS_CONTROL\', \'commit\');

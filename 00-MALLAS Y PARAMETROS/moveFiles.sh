@@ -5,12 +5,13 @@
 ##  *                                                      *
 ##  * Purpose:  Mueve de ubicacion archivos a procesados   *
 ##  *                                                      *
-##  * Usage: Y3JlYWRvOjIxMTIyMDE4/B64                      *
+##  * Usage: Y3JlYWRvOjI0MDgyMDE4/B64                      *
 ##  *      JOB_LOAD_FILESNAMES                             *
 ##  ********************************************************/
 
 
 
-cd /datos/SAT/mallas
-mv $1 /datos/SAT/mallas/procesados
+cd $1
+ls -I procesados -I listadoArchivos.txt | grep -v sh > listadoArchivos.txt
+for file in $(cat listadoArchivos.txt); do mv "$file" procesados/; done
 

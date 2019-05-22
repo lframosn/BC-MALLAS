@@ -3,4 +3,5 @@
 20190424: correccion llamada quemada en codigo
 20190502: se agregan nuevos campos a la definicion de la tabla
 20190509: correccion like busqueda de nombre de archivo
-20190509: correccion like busqueda de nombre de archivo (no implementado correctamente) y eliminacion de llamadas para mover archivos.
+20190520: correccion like busqueda de nombre de archivo (no implementado correctamente) y eliminacion de llamadas para mover archivos.
+20190522: problema de ejecucion en concurrencia con Score y logica de asignacion de correlativos.

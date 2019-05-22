@@ -10,6 +10,8 @@
 ##  ********************************************************/
 
 
-cd /data/SAT/mde
-mv $1 ./procesados
+
+cd $1
+ls -I procesados -I listadoArchivos.txt | grep -v sh > listadoArchivos.txt
+for file in $(cat listadoArchivos.txt); do mv "$file" procesados/; done
 

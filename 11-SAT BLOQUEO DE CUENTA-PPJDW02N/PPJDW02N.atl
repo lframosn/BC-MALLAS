@@ -1,7 +1,7 @@
 #__AW_Repository_Version '14.2.10.0000';
 #__AW_Product_Version '14.2.10.1748';
 #__AW_ATL_Locale 'spa_sv.utf-8';
- AlGUIComment ("x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Feb 20 15:23:05 2018', "ActaValue_3" = 'Fri Apr  6 16:33:59 2018', "x" = '-1', "y" = '-1')
 CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="ISO-8859-1" ?>
 <DSConfigurations>
 <DSConfiguration default="true" name="Configuration1">
@@ -15,18 +15,18 @@ CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET
 <locale_codepage>&lt;default&gt;</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E81E4970CEE7566E0C9C7DA6595169EF0CCA68102BDDF3AA9010CC1F2C4309FCF70BBB69617AE7AD8A3FA72BD98592</password>
+<password>+0400000000120303000803E8977E7DB0DEEF6942D70DA6FDCE74A47CCACC8F36EB31AD1FEC1B680722107BF189C307EC77A1C3402D56A747F2DE</password>
 <server_codepage>&lt;default&gt;</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
 <sybase_iq_version>Sybase IQ 16.x</sybase_iq_version>
 <sybiq_engine_name>svbclsapiq01da_IDWDEV</sybiq_engine_name>
 <use_named_pipe>no</use_named_pipe>
-<user>dba</user>
+<user>DWH_ETLS</user>
 </DSConfiguration>
 </DSConfigurations>
-', "enable_data_transfer" = 'yes', "import_unknown_type" = 'no', "name" = 'DS_CONTROL', "pcache_force_utf16" = 'no');
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Dec 11 10:31:02 2018', "ActaValue_3" = 'Wed Feb 20 15:51:23 2019', "x" = '-1', "y" = '-1')
+', "enable_data_transfer" = 'yes', "import_unknown_type" = 'no', "name" = 'DS_CONTROL', "pcache_force_utf16" = 'no', "unknown_type_size" = '255');
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Feb 13 15:29:23 2018', "ActaValue_3" = 'Mon Sep 17 13:36:16 2018', "x" = '-1', "y" = '-1')
 CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="ISO-8859-1" ?>
 <DSConfigurations>
 <DSConfiguration default="true" name="Configuration1">
@@ -40,7 +40,7 @@ CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET 
 <locale_codepage>iso-8859-1</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E87458E1D233C3B839B2C94992D7A4C1B825A396E626781142B218A8C155A0F2A651D5A549419D0DD357EB4E781A66</password>
+<password>+0400000000120303000803E8CDF8172A2F59DED28097B00C4BFFF3E6DC3D0ABD7FA0362742160B290C63985499F184F39CBB00F33FA0BAA112C8</password>
 <server_codepage>iso-8859-1</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -52,13 +52,13 @@ CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET 
 </DSConfigurations>
 ', "enable_data_transfer" = 'yes', "import_unknown_type" = 'no', "name" = 'DS_TARGET', "pcache_force_utf16" = 'no', "unknown_type_size" = '255');
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Wed Mar  6 10:12:04 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '54' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Thu May 23 18:58:19 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '15' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '54' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '15' , 
 ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
 ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
-ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '1 Seconds' , 
+ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '0 Seconds' , 
 ActaName_8 = 'RDatabase_Object_Type',ActaValue_8 = 'TABLE' , 
 ActaName_9 = 'RTable_Type',ActaValue_9 = 'TABLE' , 
 ActaName_10 = 'RDescription',ActaValue_10 = '' , 
@@ -85,67 +85,409 @@ FILLER1 VARCHAR(815)  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDatabase_Object_Type',ActaValue_1 = 'TABLE' , 
-ActaName_2 = 'RTable_Type',ActaValue_2 = 'TABLE' , 
-ActaName_3 = 'RDescription',ActaValue_3 = '' , 
-ActaName_4 = 'RDate_last_loaded',ActaValue_4 = 'Wed Mar  6 10:11:59 2019' , 
-ActaName_5 = 'RTotal_Number_Of_Rows_Processed',ActaValue_5 = '54' , 
-ActaName_6 = 'RNumber_Of_Rows_Rejected',ActaValue_6 = '0' , 
-ActaName_7 = 'REstimated_Row_Count',ActaValue_7 = '50000' , 
-ActaName_8 = 'RLoader_Is_Template_Table',ActaValue_8 = 'no' , 
-ActaName_9 = 'RSavedAfterCheckOut',ActaValue_9 = 'YES' , 
-ActaName_10 = 'RDate_modified',ActaValue_10 = 'Tue Mar  5 17:49:04 2019' , 
-ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '54' , 
-ActaName_12 = 'RElapsed_Time_For_Load',ActaValue_12 = '0 Seconds' )
-CREATE TABLE DS_TARGET.STG_SAT.TBBLQCTA(CODENT_D VARCHAR(4)  NULL  SET("ui_mapping_text" = 'TBBLQCTA.CODENT_D'), 
-NSECFIC_D DECIMAL(10, 0)  NULL  SET("ui_mapping_text" = 'TBBLQCTA.NSECFIC_D'), 
-TIPOCINTA_D DECIMAL(2, 0)  NULL  SET("ui_mapping_text" = 'TBBLQCTA.TIPOCINTA_D'), 
-TIPOREG_D VARCHAR(1)  NULL  SET("ui_mapping_text" = 'TBBLQCTA.TIPOREG_D'), 
-FILLER_D VARCHAR(91)  NULL  SET("ui_mapping_text" = 'TBBLQCTA.FILLER_D'), 
-NUMREGPROC DECIMAL(12, 0)  NULL  SET("ui_mapping_text" = 'TBBLQCTA.NUMREGPROC'), 
-CODENT VARCHAR(4)  NULL  SET("ui_mapping_text" = 'TBBLQCTA.CODENT'), 
-CENTALTA VARCHAR(4)  NULL  SET("ui_mapping_text" = 'TBBLQCTA.CENTALTA'), 
-CUENTA VARCHAR(12)  NULL  SET("ui_mapping_text" = 'TBBLQCTA.CUENTA'), 
-CODBLQ DECIMAL(2, 0)  NULL  SET("ui_mapping_text" = 'TBBLQCTA.CODBLQ'), 
-FECULTBLQ DATE  NULL  SET("ui_mapping_text" = 'TBBLQCTA.FECULTBLQ'), 
-TEXBLQ VARCHAR(30)  NULL  SET("ui_mapping_text" = 'TBBLQCTA.TEXBLQ'), 
-INDBLQEXT VARCHAR(1)  NULL  SET("ui_mapping_text" = 'TBBLQCTA.INDBLQEXT'), 
-MOTBLQ DECIMAL(2, 0)  NULL  SET("ui_mapping_text" = 'TBBLQCTA.MOTBLQ'), 
-FILLER1 VARCHAR(815)  NULL  SET("ui_mapping_text" = 'TBBLQCTA.FILLER1')) 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Thu May 23 18:58:13 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '15' , 
+ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '15' , 
+ActaName_5 = 'RElapsed_Time_For_Load',ActaValue_5 = '2 Seconds' , 
+ActaName_6 = 'RDatabase_Object_Type',ActaValue_6 = 'TABLE' , 
+ActaName_7 = 'RTable_Type',ActaValue_7 = 'TABLE' , 
+ActaName_8 = 'RDescription',ActaValue_8 = '' , 
+ActaName_9 = 'REstimated_Row_Count',ActaValue_9 = '50000' , 
+ActaName_10 = 'RLoader_Is_Template_Table',ActaValue_10 = 'yes' , 
+ActaName_11 = 'RSavedAfterCheckOut',ActaValue_11 = 'YES' , 
+ActaName_12 = 'RDate_modified',ActaValue_12 = 'Thu May 23 19:00:34 2019' )
+CREATE TABLE DS_TARGET.STG_SAT.TBBLQCTA(CODENT_D VARCHAR(4)  NULL  SET("Description" = 'TBBLQCTA.CODENT_D'), 
+NSECFIC_D DECIMAL(10, 0)  NULL  SET("Description" = 'TBBLQCTA.NSECFIC_D'), 
+TIPOCINTA_D DECIMAL(2, 0)  NULL  SET("Description" = 'TBBLQCTA.TIPOCINTA_D'), 
+TIPOREG_D VARCHAR(1)  NULL  SET("Description" = 'TBBLQCTA.TIPOREG_D'), 
+FILLER_D VARCHAR(91)  NULL  SET("Description" = 'TBBLQCTA.FILLER_D'), 
+NUMREGPROC DECIMAL(12, 0)  NULL  SET("Description" = 'TBBLQCTA.NUMREGPROC'), 
+CODENT VARCHAR(4)  NULL  SET("Description" = 'TBBLQCTA.CODENT'), 
+CENTALTA VARCHAR(4)  NULL  SET("Description" = 'TBBLQCTA.CENTALTA'), 
+CUENTA VARCHAR(12)  NULL  SET("Description" = 'TBBLQCTA.CUENTA'), 
+CODBLQ DECIMAL(2, 0)  NULL  SET("Description" = 'TBBLQCTA.CODBLQ'), 
+FECULTBLQ VARCHAR(10)  NULL  SET("Description" = 'TBBLQCTA.FECULTBLQ'), 
+TEXBLQ VARCHAR(30)  NULL  SET("Description" = 'TBBLQCTA.TEXBLQ'), 
+INDBLQEXT VARCHAR(1)  NULL  SET("Description" = 'TBBLQCTA.INDBLQEXT'), 
+MOTBLQ DECIMAL(2, 0)  NULL  SET("Description" = 'TBBLQCTA.MOTBLQ'), 
+FILLER1 VARCHAR(815)  NULL  SET("Description" = 'TBBLQCTA.FILLER1')) 
 SET("db_alias_name" = 'STG_SAT')
 ;
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Mar  5 16:33:35 2019', "ActaValue_3" = 'Tue Mar  5 17:54:11 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Fri Dec 14 15:48:11 2018', "ActaValue_6" = 'Wed Jan 23 19:03:22 2019', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '
+
+
+$L_NOMBRE_TABLA = workflow_name( );
+$L_NOMBRE_TABLA = replace_substr( $L_NOMBRE_TABLA , \'WF_\', \'\');
+$L_NOMBRE_TABLA = replace_substr( $L_NOMBRE_TABLA , \'__R\', \'\');
+$L_ID_EJECUCION = $P_ID_EJECUCION ;
+print( \'--------------------ENTRANDO A CUENTA DE DATOS  [$L_ID_EJECUCION]\');
+
+$L_CUANTOS_LLEVA = sql( \'DS_CONTROL\', \'SELECT NUM_FILAS_INS FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
+print( \'CUENTA ACTUAL: \' || $L_CUANTOS_LLEVA);
+
+
+IF ($L_CUANTOS_LLEVA IS null )
+begin
+    $L_CUANTOS_LLEVA = 0;	
+end
+
+
+#print( \'SELECT COUNT(*) FROM SAT.[$L_NOMBRE_TABLA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
+$L_SUMA = sql( \'DS_TARGET\', \'SELECT COUNT(*) FROM SAT.[$L_NOMBRE_TABLA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
+print( $L_SUMA);
+
+
+
+$L_SUMA = $L_SUMA + $L_CUANTOS_LLEVA ;
+
+sql( \'DS_CONTROL\', \'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = [$L_SUMA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
+sql( \'DS_CONTROL\', \'COMMIT\');
+
+RETURN 0;
+
+', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_CUENTA_DATOS($P_ID_EJECUCION INT  IN )
+RETURNS  INT 
+DECLARE
+     $L_NOMBRE_TABLA VARCHAR(50) ;
+     $L_CUANTOS_LLEVA INT ;
+     $L_SUMA INT ;
+     $L_ID_EJECUCION INT ;
+BEGIN
+$L_NOMBRE_TABLA = workflow_name();$L_NOMBRE_TABLA = replace_substr($L_NOMBRE_TABLA, 'WF_', '');$L_NOMBRE_TABLA = replace_substr($L_NOMBRE_TABLA, '__R', '');$L_ID_EJECUCION = $P_ID_EJECUCION;print('--------------------ENTRANDO A CUENTA DE DATOS  [$L_ID_EJECUCION]');$L_CUANTOS_LLEVA = sql('DS_CONTROL', 'SELECT NUM_FILAS_INS FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');print(('CUENTA ACTUAL: ' || $L_CUANTOS_LLEVA));IF (($L_CUANTOS_LLEVA IS  NULL ) )
+BEGIN
+$L_CUANTOS_LLEVA = 0;END
+$L_SUMA = sql('DS_TARGET', 'SELECT COUNT(*) FROM SAT.[$L_NOMBRE_TABLA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');print($L_SUMA);$L_SUMA = ($L_SUMA + $L_CUANTOS_LLEVA);sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = [$L_SUMA] WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'COMMIT');RETURN 0;
+END
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 13:29:48 2018', "ActaValue_6" = 'Wed Feb 27 16:45:37 2019', "InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '70', "ui_script_text" = '######################################################################
+## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
+##                                                                  ##
+## 11/12/2018                                                       ##
+##                                                                  ##
+## CREADO POR JAVIER LOPEZ                                          ##
+## GYSSA                                                            ##
+######################################################################
+
+##ELIMINAMOS PREFIJO WF Y REEMPLAZAMOS __ POR . PARA QUE HAGA MATCH CON LO QUE SE TIENE EN LA TABLA DE MALLAS
+$L_NOMBRE_WF = replace_substr(workflow_name( ), \'__\', \'.\');
+$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, \'WF_\', \'\');
+
+
+##OBTENEMOS ID DE MALLA POR MEDIO DE LA TABLA CNF.MALLAS
+$L_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\'\');
+
+
+
+##OBTENEMOS EL ID DE EJECUCIÓN DE LA MALLA QUE ESTÉ CON ESTADO CARGADO
+$L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\\\'CARGADO\\\',\\\'LISTADO\\\') AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
+#print( \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
+
+
+##TEST si tiene reproceso
+IF($L_ID_EJECUCION IS null)
+begin
+    $L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO != \\\'FINALIZADO\\\' AND REPROCESO = 1 AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
+end
+
+print( $L_ID_EJECUCION );
+
+
+##INICIAMOS VARIABLES
+$L_ESTADO  = \'INICIADO\';
+$L_CURRENT_DATE = sysdate( ) ;
+
+
+try
+    
+	begin
+	##INICIO DE TRANASCCIÓN
+	SQL(\'DS_CONTROL\', \'BEGIN TRANSACTION\');
+
+	##CAMBIO DE ESTADO A INICIADO EN TABLA DE CONTROL PARA LA MALLA QUE SE EJECUTANDO
+	sql( \'DS_CONTROL\', \'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \\\'[$L_ESTADO]\\\' WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
+	sql( \'DS_CONTROL\', \'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = 0 WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
+	
+
+	SQL(\'DS_CONTROL\', \'COMMIT\');
+    print( \'**********************************************************************\');
+    print( \'****************TERMINANDO INSERCION CONTROL_EJECUCION****************\');
+    print( \'**********************************************************************\');
+	
+
+	print( \'**********************************************************************\');
+	PRINT( \'********TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION*********\');
+	print( \'**********************************************************************\');
+
+    
+
+	RETURN $L_ID_EJECUCION ;		
+	end
+catch ( all  )
+	begin
+	    print( \'********************************************************************************************\');
+		print( \'**********OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION**********\');
+		print( \'********************************************************************************************\');
+		RETURN -1;
+	end
+', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_EJECUCION_MALLA( )
+RETURNS  INT 
+DECLARE
+     $L_CURRENT_DATE DATE ;
+     $L_ID_MALLA INT ;
+     $L_NOMBRE_WF VARCHAR(50) ;
+     $L_ESTADO VARCHAR(50) ;
+     $L_REPROCESO INT ;
+     $L_ID_EJECUCION INT ;
+BEGIN
+$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');$L_ID_MALLA = sql('DS_CONTROL', 'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\'CARGADO\',\'LISTADO\') AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]');IF (($L_ID_EJECUCION IS  NULL ) )
+BEGIN
+$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO != \'FINALIZADO\' AND REPROCESO = 1 AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]');END
+print($L_ID_EJECUCION);$L_ESTADO = 'INICIADO';$L_CURRENT_DATE = sysdate();TRY
+BEGIN
+sql('DS_CONTROL', 'BEGIN TRANSACTION');sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \'[$L_ESTADO]\' WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET NUM_FILAS_INS = 0 WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'COMMIT');print('**********************************************************************');print('****************TERMINANDO INSERCION CONTROL_EJECUCION****************');print('**********************************************************************');print('**********************************************************************');print('********TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION*********');print('**********************************************************************');RETURN $L_ID_EJECUCION;
+END
+CATCH (210101)
+BEGIN
+print('********************************************************************************************');print('**********OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION**********');print('********************************************************************************************');RETURN -1;
+END
+
+END_TRY
+END
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 12:14:53 2018', "ActaValue_6" = 'Fri Dec 14 11:25:44 2018', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_script_text" = '######################################################################
+## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
+##                                                                  ##
+## 11/12/2018                                                       ##
+##                                                                  ##
+## CREADO POR JAVIER LOPEZ                                          ##
+## GYSSA                                                            ##
+######################################################################
+
+##ENVIO DE CORREO ELECTRONICO ANTE ERROR
+$L_EMAIL = sql(\'DS_CONTROL\', \'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \\\'%EMAIL_NOTIFICACION%\\\'\');
+
+
+$L_EXEC = smtp_to($L_EMAIL,$P_SBJ,$P_MSG,10,10);
+
+
+RETURN $L_EXEC;', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_ENVIO_CORREO($P_SBJ VARCHAR(100)  IN, $P_MSG VARCHAR(1000)  IN )
+RETURNS  INT 
+DECLARE
+     $L_EMAIL VARCHAR(1000) ;
+     $L_EXEC VARCHAR(1000) ;
+BEGIN
+$L_EMAIL = sql('DS_CONTROL', 'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%EMAIL_NOTIFICACION%\'');$L_EXEC = smtp_to($L_EMAIL, $P_SBJ, $P_MSG, 10, 10);RETURN $L_EXEC;
+END
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 16:39:09 2018', "ActaValue_6" = 'Mon Feb 18 20:28:17 2019', "InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '54', "ui_script_text" = '######################################################################
+## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
+##                                                                  ##
+## 11/12/2018                                                       ##
+##                                                                  ##
+## CREADO POR JAVIER LOPEZ                                          ##
+## GYSSA                                                            ##
+######################################################################
+
+##ELIMINAMOS PREFIJO WF Y REEMPLAZAMOS __ POR . PARA QUE HAGA MATCH CON LO QUE SE TIENE EN LA TABLA DE MALLAS
+$L_NOMBRE_WF = replace_substr(workflow_name( ), \'__\', \'.\');
+$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, \'WF_\', \'\');
+
+##OBTENEMOS ID DE MALLA POR MEDIO DE LA TABLA CNF.MALLAS
+$L_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\'\');
+
+##OBTENEMOS EL ID DE EJECUCIÓN DE LA MALLA QUE ESTÉ CON ESTADO CARGADO
+$L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO = \\\'INICIADO\\\' AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
+
+##INICIAMOS VARIABLES
+$L_ESTADO  = \'FINALIZADO\';
+$L_CURRENT_DATE = sysdate( ) ;
+
+
+print(\'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \\\'[$L_ESTADO]\\\' WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
+try
+    
+	begin
+	##INICIO DE TRANASCCIÓN
+	
+	SQL(\'DS_CONTROL\', \'BEGIN TRANSACTION\');	
+	
+	##CAMBIO DE ESTADO A FINALIZADO EN TABLA DE CONTROL PARA LA MALLA QUE SE EJECUTANDO
+	sql( \'DS_CONTROL\', \'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \\\'[$L_ESTADO]\\\' WHERE ESTADO = \\\'INICIADO\\\' AND IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');	
+
+
+	
+	SQL(\'DS_CONTROL\', \'COMMIT\');
+    print( \'**********************************************************\');
+    print( \'**********TERMINANDO INSERCION CONTROL_EJECUCION**********\');
+	print( \'**********************************************************\');
+
+	
+
+	print( \'************************************************************************\');
+	PRINT(\'**********TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION**********\');
+	print( \'************************************************************************\');
+	
+	
+	
+	RETURN $L_ID_EJECUCION ;		
+	end
+catch ( all  )
+	begin
+	    print( \'********************************************************************************************\');
+		print( \'**********OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION**********\');
+		print( \'********************************************************************************************\');
+		RETURN -1;
+	end', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_FIN_MALLA( )
+RETURNS  INT 
+DECLARE
+     $L_NOMBRE_WF VARCHAR(50) ;
+     $L_ID_MALLA INT ;
+     $L_ID_EJECUCION INT ;
+     $L_ESTADO VARCHAR(25) ;
+     $L_CURRENT_DATE DATETIME(9) ;
+     $L_CUENTA_DATOS INT ;
+     $L_TABLA_ACTUAL INT ;
+     $L_CUENTA_CONTROL INT ;
+BEGIN
+$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');$L_ID_MALLA = sql('DS_CONTROL', 'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO = \'INICIADO\' AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]');$L_ESTADO = 'FINALIZADO';$L_CURRENT_DATE = sysdate();print('UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \'[$L_ESTADO]\' WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');TRY
+BEGIN
+sql('DS_CONTROL', 'BEGIN TRANSACTION');sql('DS_CONTROL', 'UPDATE CNF.MALLAS_EJECUCION SET ESTADO = \'[$L_ESTADO]\' WHERE ESTADO = \'INICIADO\' AND IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');sql('DS_CONTROL', 'COMMIT');print('**********************************************************');print('**********TERMINANDO INSERCION CONTROL_EJECUCION**********');print('**********************************************************');print('************************************************************************');print('**********TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION**********');print('************************************************************************');RETURN $L_ID_EJECUCION;
+END
+CATCH (210101)
+BEGIN
+print('********************************************************************************************');print('**********OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION**********');print('********************************************************************************************');RETURN -1;
+END
+
+END_TRY
+END
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 14:57:03 2018', "ActaValue_6" = 'Wed Feb 27 15:18:03 2019', "InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '70', "ui_script_text" = '######################################################################
+## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
+##                                                                  ##
+## 11/12/2018                                                       ##
+##                                                                  ##
+## CREADO POR JAVIER LOPEZ                                          ##
+## GYSSA                                                            ##
+######################################################################
+
+##ELIMINAMOS PREFIJO WF Y REEMPLAZAMOS __ POR . PARA QUE HAGA MATCH CON LO QUE SE TIENE EN LA TABLA DE MALLAS
+$L_NOMBRE_WF = replace_substr(workflow_name( ), \'__\', \'.\');
+$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, \'WF_\', \'\');
+
+
+print( \'PROCESO NORMAL INICIO\');
+##OBTENEMOS ID DE MALLA POR MEDIO DE LA TABLA CNF.MALLAS
+print( \'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\'\');
+$L_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\'\');
+
+##SE BUSCA SI EXISTE COMBINACIÓN DE REPROCESO CON ID_MALLA, SI HAY VALOR QUE COINCIDE
+##ES REPROCESO Y ENTRA EN EL FLUJO DEL ELSE, SI NO, ENTRA EN FLUJO DE PRIMER PROCESO
+print( \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO != \\\'FINALIZADO\\\' AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
+$L_ID_EJECUCION = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO != \\\'FINALIZADO\\\' AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]\');
+
+
+print( \'SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
+$P_TIPO_PROCESO  = sql( \'DS_CONTROL\', \'SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]\');
+
+
+RETURN $P_TIPO_PROCESO;', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_PROCESO_NORMAL( )
+RETURNS  INT 
+DECLARE
+     $L_NOMBRE_WF VARCHAR(50) ;
+     $L_ID_MALLA INT ;
+     $L_ID_EJECUCION INT ;
+     $P_TIPO_PROCESO INT ;
+     $L_VALOR_REPROCESO INT ;
+BEGIN
+$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');print('PROCESO NORMAL INICIO');print('SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');$L_ID_MALLA = sql('DS_CONTROL', 'SELECT IDENTIFICADOR_MALLA FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\'');print('SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO != \'FINALIZADO\' AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]');$L_ID_EJECUCION = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO != \'FINALIZADO\' AND IDENTIFICADOR_MALLA = [$L_ID_MALLA]');print('SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');$P_TIPO_PROCESO = sql('DS_CONTROL', 'SELECT REPROCESO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$L_ID_EJECUCION]');RETURN $P_TIPO_PROCESO;
+END
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Dec 11 11:01:08 2018', "ActaValue_6" = 'Wed Feb 27 16:22:00 2019', "InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '70', "ui_script_text" = '######################################################################
+## FUNCIÓN DE VERIFICACIÓN DE EXISTENCIA DE MALLA EN TABLA MALLAS   ##
+##                                                                  ##
+## 11/12/2018                                                       ##
+##                                                                  ##
+## CREADO POR JAVIER LOPEZ                                          ##
+## MODIFICADO POR: JAIME ASCENCIO                                   ##
+## VALIDACION DE REPROCESO                                          ##
+## GYSSA                                                            ##
+######################################################################
+
+##ELIMINA CARACTERES ESPACIALES DEL NOMBRE DEL WF
+$L_NOMBRE_WF = replace_substr(workflow_name( ), \'__\', \'.\');
+$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, \'WF_\', \'\');
+
+$L_VALOR_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\' \');
+$L_VALOR_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\\\'CARGADO\\\',\\\'LISTADO\\\') AND IDENTIFICADOR_MALLA = \' || $L_VALOR_ID_MALLA);
+
+##TEST si tiene reproceso
+IF($L_VALOR_ID_MALLA IS null)
+begin
+    $L_VALOR_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \\\'[$L_NOMBRE_WF]\\\' \');
+	$L_VALOR_ID_MALLA = sql( \'DS_CONTROL\', \'SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO != \\\'FINALIZADO\\\' AND REPROCESO = 1 AND IDENTIFICADOR_MALLA = \' || $L_VALOR_ID_MALLA);
+end
+
+
+IF($L_VALOR_ID_MALLA IS NOT null)
+begin
+	$L_EXISTE_MALLA = 1;
+end
+else begin
+    $L_EXISTE_MALLA = 0	;
+end
+
+RETURN $L_EXISTE_MALLA ;', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_VERIFICA_MALLA( )
+RETURNS  INT 
+DECLARE
+     $L_NOMBRE_WF VARCHAR(50) ;
+     $L_EXISTE_MALLA INT ;
+     $L_VALOR_ID_MALLA INT ;
+BEGIN
+$L_NOMBRE_WF = replace_substr(workflow_name(), '__', '.');$L_NOMBRE_WF = replace_substr($L_NOMBRE_WF, 'WF_', '');$L_VALOR_ID_MALLA = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\' ');$L_VALOR_ID_MALLA = sql('DS_CONTROL', ('SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO IN (\'CARGADO\',\'LISTADO\') AND IDENTIFICADOR_MALLA = ' || $L_VALOR_ID_MALLA));IF (($L_VALOR_ID_MALLA IS  NULL ) )
+BEGIN
+$L_VALOR_ID_MALLA = sql('DS_CONTROL', 'SELECT MAX(IDENTIFICADOR_MALLA) FROM CNF.MALLAS WHERE NOMBRE_MALLA LIKE \'[$L_NOMBRE_WF]\' ');$L_VALOR_ID_MALLA = sql('DS_CONTROL', ('SELECT MAX(IDENTIFICADOR_EJECUCION) FROM CNF.MALLAS_EJECUCION WHERE ESTADO != \'FINALIZADO\' AND REPROCESO = 1 AND IDENTIFICADOR_MALLA = ' || $L_VALOR_ID_MALLA));END
+IF (($L_VALOR_ID_MALLA IS NOT  NULL ) )
+BEGIN
+$L_EXISTE_MALLA = 1;END
+ELSE
+BEGIN
+$L_EXISTE_MALLA = 0;END
+RETURN $L_EXISTE_MALLA;
+END
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Mar  5 16:33:35 2019', "ActaValue_3" = 'Thu May 23 18:52:35 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_TBBLQCTA::'f8394453-7d87-4662-bf21-25a1f9dd73f1'
 BEGIN
 
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Description', "Input_2nd_Column_Name" = 'Type', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = '', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>194</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '42', "x" = '90', "y" = '-90')
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Description', "Input_2nd_Column_Name" = 'Type', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>194</CX><CY>-170</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '42', "x" = '90', "y" = '-90')
 GUID::'e50dd547-8ebb-40d3-a9ea-399fe00e5010' READ __BODI_COPYBOOK_COBOL PPJDW02N OUTPUT(TBBLQCTA)
 SET("Cbl_capture_data_conversion" = 'no', "cache" = 'no', "connection_port" = 'no', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'yes', "reader_include_filename" = 'no', "table_weight" = '0');
 
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "ui_acta_from_schema_0" = 'TBBLQCTA', "x" = '480', "y" = '-90')
-GUID::'12815980-d3c6-4b7d-ad77-5d2960573434' CREATE VIEW Query( CODENT_D VARCHAR(4)  SET( "ui_mapping_text" = 'TBBLQCTA.CODENT_D') ,
- NSECFIC_D DECIMAL(10, 0)  SET( "ui_mapping_text" = 'TBBLQCTA.NSECFIC_D') ,
- TIPOCINTA_D DECIMAL(2, 0)  SET( "ui_mapping_text" = 'TBBLQCTA.TIPOCINTA_D') ,
- TIPOREG_D VARCHAR(1)  SET( "ui_mapping_text" = 'TBBLQCTA.TIPOREG_D') ,
- FILLER_D VARCHAR(91)  SET( "ui_mapping_text" = 'TBBLQCTA.FILLER_D') ,
- NUMREGPROC DECIMAL(12, 0)  SET( "ui_mapping_text" = 'TBBLQCTA.NUMREGPROC') ,
- CODENT VARCHAR(4)  SET( "ui_mapping_text" = 'TBBLQCTA.CODENT') ,
- CENTALTA VARCHAR(4)  SET( "ui_mapping_text" = 'TBBLQCTA.CENTALTA') ,
- CUENTA VARCHAR(12)  SET( "ui_mapping_text" = 'TBBLQCTA.CUENTA') ,
- CODBLQ DECIMAL(2, 0)  SET( "ui_mapping_text" = 'TBBLQCTA.CODBLQ') ,
- FECULTBLQ DATE  SET( "ui_mapping_text" = 'TBBLQCTA.FECULTBLQ') ,
- TEXBLQ VARCHAR(30)  SET( "ui_mapping_text" = 'TBBLQCTA.TEXBLQ') ,
- INDBLQEXT VARCHAR(1)  SET( "ui_mapping_text" = 'TBBLQCTA.INDBLQEXT') ,
- MOTBLQ DECIMAL(2, 0)  SET( "ui_mapping_text" = 'TBBLQCTA.MOTBLQ') ,
- FILLER1 VARCHAR(815)  SET( "ui_mapping_text" = 'TBBLQCTA.FILLER1')  )
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-170</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-180</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'TBBLQCTA', "ui_where_text" = 'TBBLQCTA.TIPOREG_D = \'D\'', "x" = '480', "y" = '-90')
+GUID::'f4a2f513-7e64-4be0-a12d-8931ffd70b4c' CREATE VIEW Query( CODENT_D VARCHAR(4)  SET( "Description" = 'TBBLQCTA.CODENT_D', "ui_mapping_text" = 'TBBLQCTA.CODENT_D') ,
+ NSECFIC_D DECIMAL(10, 0)  SET( "Description" = 'TBBLQCTA.NSECFIC_D', "ui_mapping_text" = 'TBBLQCTA.NSECFIC_D') ,
+ TIPOCINTA_D DECIMAL(2, 0)  SET( "Description" = 'TBBLQCTA.TIPOCINTA_D', "ui_mapping_text" = 'TBBLQCTA.TIPOCINTA_D') ,
+ TIPOREG_D VARCHAR(1)  SET( "Description" = 'TBBLQCTA.TIPOREG_D', "ui_mapping_text" = 'TBBLQCTA.TIPOREG_D') ,
+ FILLER_D VARCHAR(91)  SET( "Description" = 'TBBLQCTA.FILLER_D', "ui_mapping_text" = 'TBBLQCTA.FILLER_D') ,
+ NUMREGPROC DECIMAL(12, 0)  SET( "Description" = 'TBBLQCTA.NUMREGPROC', "ui_mapping_text" = 'TBBLQCTA.NUMREGPROC') ,
+ CODENT VARCHAR(4)  SET( "Description" = 'TBBLQCTA.CODENT', "ui_mapping_text" = 'TBBLQCTA.CODENT') ,
+ CENTALTA VARCHAR(4)  SET( "Description" = 'TBBLQCTA.CENTALTA', "ui_mapping_text" = 'TBBLQCTA.CENTALTA') ,
+ CUENTA VARCHAR(12)  SET( "Description" = 'TBBLQCTA.CUENTA', "ui_mapping_text" = 'TBBLQCTA.CUENTA') ,
+ CODBLQ DECIMAL(2, 0)  SET( "Description" = 'TBBLQCTA.CODBLQ', "ui_mapping_text" = 'TBBLQCTA.CODBLQ') ,
+ FECULTBLQ VARCHAR(10)  SET( "Description" = 'TBBLQCTA.FECULTBLQ', "ui_mapping_text" = 'TBBLQCTA.FECULTBLQ') ,
+ TEXBLQ VARCHAR(30)  SET( "Description" = 'TBBLQCTA.TEXBLQ', "ui_mapping_text" = 'TBBLQCTA.TEXBLQ') ,
+ INDBLQEXT VARCHAR(1)  SET( "Description" = 'TBBLQCTA.INDBLQEXT', "ui_mapping_text" = 'TBBLQCTA.INDBLQEXT') ,
+ MOTBLQ DECIMAL(2, 0)  SET( "Description" = 'TBBLQCTA.MOTBLQ', "ui_mapping_text" = 'TBBLQCTA.MOTBLQ') ,
+ FILLER1 VARCHAR(815)  SET( "Description" = 'TBBLQCTA.FILLER1', "ui_mapping_text" = 'TBBLQCTA.FILLER1')  )
  AS
-SELECT TBBLQCTA.CODENT_D, TBBLQCTA.NSECFIC_D, TBBLQCTA.TIPOCINTA_D, TBBLQCTA.TIPOREG_D, TBBLQCTA.FILLER_D, TBBLQCTA.NUMREGPROC, TBBLQCTA.CODENT, TBBLQCTA.CENTALTA, TBBLQCTA.CUENTA, TBBLQCTA.CODBLQ, TBBLQCTA.FECULTBLQ, TBBLQCTA.TEXBLQ, TBBLQCTA.INDBLQEXT, TBBLQCTA.MOTBLQ, TBBLQCTA.FILLER1 FROM TBBLQCTA 
+SELECT TBBLQCTA.CODENT_D, TBBLQCTA.NSECFIC_D, TBBLQCTA.TIPOCINTA_D, TBBLQCTA.TIPOREG_D, TBBLQCTA.FILLER_D, TBBLQCTA.NUMREGPROC, TBBLQCTA.CODENT, TBBLQCTA.CENTALTA, TBBLQCTA.CUENTA, TBBLQCTA.CODBLQ, TBBLQCTA.FECULTBLQ, TBBLQCTA.TEXBLQ, TBBLQCTA.INDBLQEXT, TBBLQCTA.MOTBLQ, TBBLQCTA.FILLER1 FROM TBBLQCTA  WHERE (TBBLQCTA.TIPOREG_D = 'D')
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>591</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "ui_display_name" = 'TBBLQCTA(DS_TARGET.STG_SAT)', "x" = '870', "y" = '-90')
-GUID::'bd98663d-4e10-45db-a645-c5ced43c277f' LOAD TABLE DS_TARGET.STG_SAT.TBBLQCTA INPUT(Query)
-SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>419</CX><CY>-189</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-180</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
+GUID::'a79d0b83-866e-494a-b0f3-b6046aa9dbcf' LOAD TABLE DS_TARGET.STG_SAT.TBBLQCTA INPUT(Query)
+SET("connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
 <bulk_col_delimiter>/127</bulk_col_delimiter>
@@ -177,7 +519,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 <loader_insert_map></loader_insert_map>
 <loader_load_choice>append</loader_load_choice>
 <loader_num_parallel_loaders>1</loader_num_parallel_loaders>
-<loader_overflow_file>DS_TARGET_STG_SAT_TBBLQCTA.txt</loader_overflow_file>
+<loader_overflow_file></loader_overflow_file>
 <loader_post_load1></loader_post_load1>
 <loader_pre_load1></loader_pre_load1>
 <loader_transactional>no</loader_transactional>
@@ -193,16 +535,20 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 <use_unicode_varchar>no</use_unicode_varchar>
 <sql_text></sql_text>
 </LDRConfiguration>
-</LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
+</LDRConfigurations>', "loader_template_table" = 'yes', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Mar  5 16:33:35 2019', "ActaValue_3" = 'Tue Mar  5 17:46:45 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Mar  5 16:33:35 2019', "ActaValue_3" = 'Thu May 23 18:56:00 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_TBBLQCTA::'7dbd832f-9ca0-43bd-b893-b00e70a400a3'
 BEGIN
 
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>438</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "x" = '870', "y" = '-90')
-GUID::'fbf09dba-894b-47cf-8faf-da38e2257f4d' LOAD TABLE DS_TARGET.SAT.TBBLQCTA INPUT(Query_1)
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>375</CX><CY>-189</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-180</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '54', "x" = '90', "y" = '-90')
+GUID::'e82ac870-ce6e-462f-98f7-0965257c57d2' READ TABLE DS_TARGET.STG_SAT.TBBLQCTA OUTPUT(TBBLQCTA)
+SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
+
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>419</CX><CY>-189</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-180</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "x" = '870', "y" = '-90')
+GUID::'fb7ead3a-8e4c-471b-a242-fb62b504be1a' LOAD TABLE DS_TARGET.SAT.TBBLQCTA INPUT(Query)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
@@ -253,8 +599,8 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 </LDRConfiguration>
 </LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
 
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "ui_acta_from_schema_0" = 'TBBLQCTA', "x" = '480', "y" = '-90')
-GUID::'a624403a-e0f4-4436-b6d6-806d9cb09b9f' CREATE VIEW Query_1( IDENTIFICADOR_EJECUCION INT  SET( "ui_mapping_text" = '$G_ID_EJECUCION') ,
+ALGUIComment ("InputSchema_WidthProp" = '52', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Name" = '215', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-170</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-180</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '54', "ui_acta_from_schema_0" = 'TBBLQCTA', "x" = '480', "y" = '-90')
+GUID::'eec1a92c-9a86-4baa-9bd8-31ce4c70fd88' CREATE VIEW Query( IDENTIFICADOR_EJECUCION INT  SET( "ui_mapping_text" = '$G_ID_EJECUCION') ,
  CODENT_D VARCHAR(4)  SET( "ui_mapping_text" = 'TBBLQCTA.CODENT_D') ,
  NSECFIC_D DECIMAL(10, 0)  SET( "ui_mapping_text" = 'TBBLQCTA.NSECFIC_D') ,
  TIPOCINTA_D DECIMAL(2, 0)  SET( "ui_mapping_text" = 'TBBLQCTA.TIPOCINTA_D') ,
@@ -275,13 +621,9 @@ SELECT $G_ID_EJECUCION, TBBLQCTA.CODENT_D, TBBLQCTA.NSECFIC_D, TBBLQCTA.TIPOCINT
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>394</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '42', "ui_display_name" = 'TBBLQCTA(DS_TARGET.STG_SAT)', "x" = '90', "y" = '-90')
-GUID::'70fd70ae-755a-47a0-97d7-517cfccf0d18' READ TABLE DS_TARGET.STG_SAT.TBBLQCTA OUTPUT(TBBLQCTA)
-SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
-
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaName_4" = 'RDescription', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Mar  5 15:31:06 2019', "ActaValue_3" = 'Wed Mar  6 09:56:56 2019', "ActaValue_4" = '11 - BLOQUEO DE CUENTA', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaName_4" = 'RDescription', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Mar  5 15:31:06 2019', "ActaValue_3" = 'Thu May 23 17:02:29 2019', "ActaValue_4" = '11 - BLOQUEO DE CUENTA', "x" = '-1', "y" = '-1')
 CREATE SESSION JOB_PPJDW02N::'bf7a7201-3536-4146-821a-bf4adcd627d2'( )
 DECLARE
      GLOBAL $G_NOMBRE_JOB VARCHAR(50) ;
@@ -290,8 +632,8 @@ DECLARE
      GLOBAL $G_RUTA VARCHAR(1000) ;
      GLOBAL $G_NOMBRE_ARCHIVO VARCHAR(100) ;
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>288</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INICIAL', "ui_script_text" = '##INICIALIZACIÓN DE VARIABLES
-print(\'--version: 583c84c\');
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>300</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INICIAL', "ui_script_text" = '##INICIALIZACIÓN DE VARIABLES
+print(\'--version: eeb93e0\');
 
 $G_NOMBRE_JOB = job_name( );
 $G_FECHA_PROCESO  = sysdate( );
@@ -301,25 +643,25 @@ sql( \'DS_CONTROL\', \'COMMIT\');
 
 ', "x" = '90', "y" = '-90')
 BEGIN_SCRIPT
-print('--version: 583c84c');$G_NOMBRE_JOB = job_name();$G_FECHA_PROCESO = sysdate();$G_RUTA = sql('DS_CONTROL', 'SELECT VALOR FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'RUTA_ARCHIVO\'');sql('DS_CONTROL', 'COMMIT');END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try182', "x" = '480', "y" = '-90')
+print('--version: eeb93e0');$G_NOMBRE_JOB = job_name();$G_FECHA_PROCESO = sysdate();$G_RUTA = sql('DS_CONTROL', 'SELECT VALOR FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'RUTA_ARCHIVO\'');sql('DS_CONTROL', 'COMMIT');END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try182', "x" = '480', "y" = '-90')
 TRY
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>288</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '870', "y" = '-90')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>282</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '870', "y" = '-90')
 CALL PLAN WF_PPJDW02N::'6ee173f7-e329-4265-a13e-54eb54ba1ecf'();
 END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch186', "x" = '1260', "y" = '-90')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch186', "x" = '1260', "y" = '-90')
 CATCH (210101)
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>291</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_ERROR', "x" = '994', "y" = '-303')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>291</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_ERROR', "ui_script_text" = 'print(error_message( ));', "x" = '994', "y" = '-303')
 BEGIN_SCRIPT
-END
+print(error_message());END
 END
 
 END_TRY
 END
  SET ("job_checkpoint_enabled" = 'no', "job_collect_statistics" = 'no', "job_collect_statistics_monitor" = 'no', "job_create_debug_package" = 'no', "job_enable_assemblers" = 'yes', "job_enable_audit" = 'yes', "job_enable_dataquality" = 'yes', "job_export_repo" = 'no', "job_export_reports" = 'no', "job_guid" = 'bf7a7201-3536-4146-821a-bf4adcd627d2', "job_isrecoverable" = 'no', "job_mode" = 'Multi-Process', "job_monitor_sample_rate" = '1000', "job_monitor_timer_rate" = '5', "job_name" = 'JOB_PPJDW02N', "job_print_version" = 'no', "job_testmode_enabled" = 'no', "job_trace_abapquery" = 'no', "job_trace_all" = 'no', "job_trace_ascomm" = 'no', "job_trace_assemblers" = 'no', "job_trace_audit" = 'no', "job_trace_dataflow" = 'yes', "job_trace_idoc_file" = 'no', "job_trace_memory_loader" = 'no', "job_trace_memory_reader" = 'no', "job_trace_optimized_dataflow" = 'no', "job_trace_parallel_execution" = 'no', "job_trace_rfc_function" = 'no', "job_trace_row" = 'no', "job_trace_script" = 'no', "job_trace_session" = 'yes', "job_trace_sql_only" = 'no', "job_trace_sqlfunctions" = 'no', "job_trace_sqlloaders" = 'no', "job_trace_sqlreaders" = 'no', "job_trace_sqltransforms" = 'no', "job_trace_stored_procedure" = 'no', "job_trace_table" = 'no', "job_trace_table_reader" = 'no', "job_trace_transform" = 'no', "job_trace_userfunction" = 'no', "job_trace_usertransform" = 'no', "job_trace_workflow" = 'yes', "job_type" = 'batch', "job_use_statistics" = 'yes', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Mar  5 16:14:40 2019', "ActaValue_3" = 'Tue Mar  5 16:37:45 2019')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Mar  5 16:14:40 2019', "ActaValue_3" = 'Tue Mar  5 17:45:33 2019')
 CREATE __BODI_COPYBOOK_COBOL DATASTORE PPJDW02N::'0c18b415-7d78-468c-843c-eef5112f4d0a' OUTPUT (TBBLQCTA( CODENT_D VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '0', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODENT_D', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'TBBLQCTA.CODENT_D', "Description" = 'TBBLQCTA.CODENT_D') ,
  NSECFIC_D DECIMAL(10, 0)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '4', "Cbl_field_level" = '2', "Cbl_field_name" = 'NSECFIC_D', "Cbl_field_original_PIC" = '9(10)', "Cbl_field_path" = 'TBBLQCTA.NSECFIC_D', "Cbl_field_precision" = '10', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'TBBLQCTA.NSECFIC_D') ,
  TIPOCINTA_D DECIMAL(2, 0)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '14', "Cbl_field_level" = '2', "Cbl_field_name" = 'TIPOCINTA_D', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'TBBLQCTA.TIPOCINTA_D', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'TBBLQCTA.TIPOCINTA_D') ,
@@ -330,27 +672,27 @@ CREATE __BODI_COPYBOOK_COBOL DATASTORE PPJDW02N::'0c18b415-7d78-468c-843c-eef511
  CENTALTA VARCHAR(4)  SET( "Cbl_field_internal_length" = '4', "Cbl_field_internal_offset" = '124', "Cbl_field_level" = '2', "Cbl_field_name" = 'CENTALTA', "Cbl_field_original_PIC" = 'X(4)', "Cbl_field_path" = 'TBBLQCTA.CENTALTA', "Description" = 'TBBLQCTA.CENTALTA') ,
  CUENTA VARCHAR(12)  SET( "Cbl_field_internal_length" = '12', "Cbl_field_internal_offset" = '128', "Cbl_field_level" = '2', "Cbl_field_name" = 'CUENTA', "Cbl_field_original_PIC" = 'X(12)', "Cbl_field_path" = 'TBBLQCTA.CUENTA', "Description" = 'TBBLQCTA.CUENTA') ,
  CODBLQ DECIMAL(2, 0)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '140', "Cbl_field_level" = '2', "Cbl_field_name" = 'CODBLQ', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'TBBLQCTA.CODBLQ', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'TBBLQCTA.CODBLQ') ,
- FECULTBLQ VARCHAR(10)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '142', "Cbl_field_level" = '2', "Cbl_field_name" = 'FECULTBLQ', "Cbl_field_original_PIC" = 'X(10)', "Cbl_field_path" = 'TBBLQCTA.FECULTBLQ', "Description" = 'TBBLQCTA.FECULTBLQ') ,
+ FECULTBLQ VARCHAR(10)  SET( "Cbl_field_internal_length" = '10', "Cbl_field_internal_offset" = '142', "Cbl_field_level" = '2', "Cbl_field_name" = 'FECULTBLQ', "Cbl_field_original_PIC" = 'X(10)', "Cbl_field_path" = 'TBBLQCTA.FECULTBLQ', "Content_Type" = 'DATE', "Description" = 'TBBLQCTA.FECULTBLQ') ,
  TEXBLQ VARCHAR(30)  SET( "Cbl_field_internal_length" = '30', "Cbl_field_internal_offset" = '152', "Cbl_field_level" = '2', "Cbl_field_name" = 'TEXBLQ', "Cbl_field_original_PIC" = 'X(30)', "Cbl_field_path" = 'TBBLQCTA.TEXBLQ', "Description" = 'TBBLQCTA.TEXBLQ') ,
  INDBLQEXT VARCHAR(1)  SET( "Cbl_field_internal_length" = '1', "Cbl_field_internal_offset" = '182', "Cbl_field_level" = '2', "Cbl_field_name" = 'INDBLQEXT', "Cbl_field_original_PIC" = 'X(1)', "Cbl_field_path" = 'TBBLQCTA.INDBLQEXT', "Description" = 'TBBLQCTA.INDBLQEXT') ,
  MOTBLQ DECIMAL(2, 0)  SET( "Cbl_field_internal_length" = '2', "Cbl_field_internal_offset" = '183', "Cbl_field_level" = '2', "Cbl_field_name" = 'MOTBLQ', "Cbl_field_original_PIC" = '9(2)', "Cbl_field_path" = 'TBBLQCTA.MOTBLQ', "Cbl_field_precision" = '2', "Cbl_field_type" = 'ACTA_DECIMAL', "Description" = 'TBBLQCTA.MOTBLQ') ,
  FILLER1 VARCHAR(815)  SET( "Cbl_field_internal_length" = '815', "Cbl_field_internal_offset" = '185', "Cbl_field_level" = '2', "Cbl_field_name" = 'FILLER1', "Cbl_field_original_PIC" = 'X(815)', "Cbl_field_path" = 'TBBLQCTA.FILLER1', "Description" = 'TBBLQCTA.FILLER1')  )
 )
  SET ("Cbl_expand_occurs" = 'yes', "Cbl_file_dir" = '$G_RUTA', "Cbl_file_name" = '$G_NOMBRE_ARCHIVO', "Cbl_file_type" = 'F', "Cbl_has_record_mark" = 'no', "Cbl_ignore_redefines" = 'no', "Cbl_is_big_endian" = 'yes', "Cbl_rdr_hv_action" = 'Nothing', "Cbl_rdr_hvalue" = '0xFF', "Cbl_rdr_lv_action" = 'Nothing', "Cbl_rdr_lvalue" = '0x40', "Cbl_rec_size" = '1001', "Cbl_rec_trailer" = '1', "Cbl_schema_file" = 'C:\\BC\\SAT\\cobol copybooks\\11-SAT BLOQUEO DE CUENTA-PPJDW02N-FULL.cpy', "Cbl_source_begin_pos" = '1', "Cbl_source_end_pos" = '9999', "Cbl_source_format" = 'smart', "application_type" = '', "ds_configuration_enabled" = 'no', "locale_codepage" = 'cp1252', "locale_language" = '<default>', "locale_territory" = '<default>');
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Mar  5 16:36:35 2019', "ActaValue_3" = 'Tue Mar  5 17:21:55 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Mar  5 16:36:35 2019', "ActaValue_3" = 'Thu May 23 17:08:11 2019', "x" = '-1', "y" = '-1')
 CREATE PLAN WF_PPJDW02N::'6ee173f7-e329-4265-a13e-54eb54ba1ecf'( )
 DECLARE
      $L_NOMBRE_WF VARCHAR(50) ;
      $L_CONTADOR INT ;
      $L_ID_EJECUCION_MALLA INT ;
 BEGIN
- AlGUIComment ("If_condition" = 'CF_VERIFICA_MALLA() = 1', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>375</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'CDN_EXISTE_MALLA', "x" = '966', "y" = '-834')
+ AlGUIComment ("If_condition" = 'CF_VERIFICA_MALLA() = 1', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>369</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'CDN_EXISTE_MALLA', "x" = '966', "y" = '-834')
 IF ((CF_VERIFICA_MALLA() = 1) )
 BEGIN
- AlGUIComment ("If_condition" = 'CF_PROCESO_NORMAL() = 0', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>294</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'TIPO_PROCESO', "x" = '1006', "y" = '-384')
+ AlGUIComment ("If_condition" = 'CF_PROCESO_NORMAL() = 0', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>303</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'TIPO_PROCESO', "x" = '1006', "y" = '-384')
 IF ((CF_PROCESO_NORMAL() = 0) )
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>328</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INICIO_DF', "ui_script_text" = '
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>344</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INICIO_DF', "ui_script_text" = '
 $L_ID_EJECUCION_MALLA = CF_EJECUCION_MALLA();
 
 
@@ -366,9 +708,9 @@ CF_ENVIO_CORREO(\'INICIO DE PROCESO [$L_NOMBRE_WF]\', \'SE INICIA LA EJECUCIÓN 
 ', "x" = '90', "y" = '-90')
 BEGIN_SCRIPT
 $L_ID_EJECUCION_MALLA = CF_EJECUCION_MALLA();$G_ID_EJECUCION = $L_ID_EJECUCION_MALLA;print('--------------------------------EJECUCIÓN DATOS');print($G_ID_EJECUCION);$G_NOMBRE_ARCHIVO = sql('DS_CONTROL', 'SELECT NOMBRE_ARCHIVO FROM CNF.MALLAS_EJECUCION WHERE IDENTIFICADOR_EJECUCION = [$G_ID_EJECUCION]');cf_envio_correo('INICIO DE PROCESO [$L_NOMBRE_WF]', 'SE INICIA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]');END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>294</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '609', "y" = '-322')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>278</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
 CALL PLAN WF_TBBLQCTA::'cf3af788-7dc7-4262-9814-3406f3b91fce'();
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SC_FIN', "ui_script_text" = '##ENVIO DE CORREO DE FIN DE PROCESO
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SC_FIN', "ui_script_text" = '##ENVIO DE CORREO DE FIN DE PROCESO
 CF_ENVIO_CORREO(\'FIN DE PROCESO [$L_NOMBRE_WF]\', \'SE FINALIZA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]\');
 
 ##CAMBIO ESTADO DE MALLA A FINALIZADO
@@ -378,13 +720,13 @@ CF_FIN_MALLA();
 
 
 
-', "x" = '1260', "y" = '-90')
+', "x" = '870', "y" = '-90')
 BEGIN_SCRIPT
 cf_envio_correo('FIN DE PROCESO [$L_NOMBRE_WF]', 'SE FINALIZA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]');CF_FIN_MALLA();END
 END
 ELSE
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>328</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INICIO_DF', "ui_script_text" = '
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>344</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INICIO_DF', "ui_script_text" = '
 $G_ID_EJECUCION = CF_EJECUCION_MALLA();
 
 
@@ -397,7 +739,7 @@ CF_ENVIO_CORREO(\'INICIO DE PROCESO [$L_NOMBRE_WF]\', \'SE INICIA LA EJECUCIÓN 
 ', "x" = '90', "y" = '-90')
 BEGIN_SCRIPT
 $G_ID_EJECUCION = CF_EJECUCION_MALLA();print('--------------------------------EJECUCIÓN DATOS');print($G_ID_EJECUCION);cf_envio_correo('INICIO DE PROCESO [$L_NOMBRE_WF]', 'SE INICIA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]');END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SC_FIN', "ui_script_text" = '##ENVIO DE CORREO DE FIN DE PROCESO
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SC_FIN', "ui_script_text" = '##ENVIO DE CORREO DE FIN DE PROCESO
 CF_ENVIO_CORREO(\'FIN DE PROCESO [$L_NOMBRE_WF]\', \'SE FINALIZA LA EJECUCIÓN PARA LA MALLA [$L_NOMBRE_WF]\');
 
 ##CAMBIO ESTADO DE MALLA A FINALIZADO
@@ -414,7 +756,7 @@ END
 END
 ELSE
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>300</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SC_ERROR_404', "ui_script_text" = '##ERROR NO EXISTE MALLA
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>291</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SC_ERROR_404', "ui_script_text" = '##ERROR NO EXISTE MALLA
 PRINT(\'SCRIPT NO EXISTE LA MALLA\');
 ##CF_NO_EXISTE_MALLA();
 
@@ -426,14 +768,14 @@ print('SCRIPT NO EXISTE LA MALLA');print('LA MALLA NO EXISTE');END
 END
 END
  SET ("run_once" = 'no', "unit_of_recovery" = 'no', "workflow_type" = 'Regular')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Mar  5 16:21:10 2019', "ActaValue_3" = 'Tue Mar  5 17:47:43 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Mar  5 16:21:10 2019', "ActaValue_3" = 'Thu May 23 18:56:01 2019', "x" = '-1', "y" = '-1')
 CREATE PLAN WF_TBBLQCTA::'cf3af788-7dc7-4262-9814-3406f3b91fce'( )
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>369</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '125', "y" = '-463')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>350</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '90', "y" = '-90')
 CALL DATAFLOW DF_STG_TBBLQCTA::'f8394453-7d87-4662-bf21-25a1f9dd73f1'();
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>285</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '631', "y" = '-747')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>272</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-195</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
 CALL DATAFLOW DF_TBBLQCTA::'7dbd832f-9ca0-43bd-b893-b00e70a400a3'();
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Script6593', "ui_script_text" = 'CF_CUENTA_DATOS($G_ID_EJECUCION );', "x" = '870', "y" = '-90')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Script6593', "ui_script_text" = 'CF_CUENTA_DATOS($G_ID_EJECUCION );', "x" = '870', "y" = '-90')
 BEGIN_SCRIPT
 cf_cuenta_datos($G_ID_EJECUCION);END
 END

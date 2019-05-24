@@ -22,17 +22,17 @@ drop table IF EXISTS SAT.TBBLQCTA;  CREATE TABLE IF NOT EXISTS SAT.TBBLQCTA  ( 	
 ,	TIPOREG_D	VARCHAR	(1)	--TIPO DE REGISTRO D = DETALLE 
 ,	FILLER_D	VARCHAR	(91)	--FILLER
 ,	NUMREGPROC	DECIMAL	(12,0)	--NUMERO DE REGISTRO PROCESADO
-,	CODENT 	VARCHAR	(4)	--Código de entidad 
+,	CODENT 	VARCHAR	(4)	--CÃ³digo de entidad 
 ,	CENTALTA 	VARCHAR	(4)	--Centro de alta cuenta de tarjeta 
 ,	CUENTA 	VARCHAR	(12)	--Cuenta de tarjeta 
-,	CODBLQ 	DECIMAL	(2,0)	--Código de bloqueo 
-,	FECULTBLQ 	DATE		--Fecha de último bloqueo 
+,	CODBLQ 	DECIMAL	(2,0)	--CÃ³digo de bloqueo 
+,	FECULTBLQ 	DATE		--Fecha de Ãºltimo bloqueo 
 ,	TEXBLQ  	VARCHAR	(30)	--Comentario del bloqueo 
 --	 	 		
 ,	INDBLQEXT 	VARCHAR	(1)	--Indicador de bloqueo:
---E – Externo	 	 		
---M – Manual	 	 		
---A – Automático	 	 		
+--E â€“ Externo	 	 		
+--M â€“ Manual	 	 		
+--A â€“ AutomÃ¡tico	 	 		
 ,	MOTBLQ 	DECIMAL	(2,0)	--Motivo de Bloqueo 
 ,	FILLER1	VARCHAR	(815)	--FILLER
 ); COMMIT;	 	 		
@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS "STG_SAT"."TBBLQCTA" (
 	"CENTALTA" VARCHAR(4) NULL ,
 	"CUENTA" VARCHAR(12) NULL ,
 	"CODBLQ" DECIMAL(2,0) NULL ,
-	"FECULTBLQ" DATE NULL ,
+	"FECULTBLQ" VARCHAR(10) NULL ,
 	"TEXBLQ" VARCHAR(30) NULL ,
 	"INDBLQEXT" VARCHAR(1) NULL ,
 	"MOTBLQ" DECIMAL(2,0) NULL ,

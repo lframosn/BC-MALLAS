@@ -5,3 +5,4 @@
 20190509: correccion like busqueda de nombre de archivo
 20190517: eliminacion llamada a sh que mueve archivos.
 20190522: problema de ejecucion en concurrencia con MOE y logica de asignacion de correlativos.
+20190528: cambio de schema, este fue enviado por modellica.

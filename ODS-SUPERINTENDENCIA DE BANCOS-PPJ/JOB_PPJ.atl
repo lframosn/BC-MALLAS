@@ -15,7 +15,7 @@ CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET
 <locale_codepage>&lt;default&gt;</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E8D0D09F696921615839E00512B31E4A916923F25CB793934D68E6D223754DEBE14506255D75B50599BA6CE290087A</password>
+<password>+0400000000120303000803E83D733A6EEA8387E15AE54B9E4ACD299427AF0B8FA07C8AA801A8345913862B82A8EF7AF0DC952CBD44155194E16D</password>
 <server_codepage>&lt;default&gt;</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -31,9 +31,9 @@ CREATE DATABASE DATASTORE DS_SRC_COB_REMESAS::'97f7a463-2fbe-40b3-a3d7-b37f78de6
 <DSConfigurations>
 <DSConfiguration default="true" name="Configuration1">
 <case_sensitive>yes</case_sensitive>
-<cdc_ra_password>+0400000000120303000803E89407884D3697BE7136CE7B19F745AF2469F7171FE6CCF71914BFCAB56D09C85A143C45EEDF769B6F50EAF2F28F</cdc_ra_password>
+<cdc_ra_password>+0400000000120303000803E80B05AA223C25274703EBFD47FB708AA237FB4169428C03B54ED227279DA1F55FA2363C619D00714FE30364437E</cdc_ra_password>
 <cdc_ra_user>sa</cdc_ra_user>
-<cdc_rs_password>+0400000000120303000803E80080507B075D05FB92B8DE1085F6CB816092F2529412563D7817890EA511B8A25448D01DD4E05A2CE47014CF82</cdc_rs_password>
+<cdc_rs_password>+0400000000120303000803E8BE8258FAADEE7B8D5BB618F74D3FC547875A77848D626C6536019079273CA7D3733A8DFC1D4AA1CB20B1973782</cdc_rs_password>
 <cdc_rs_retention>0</cdc_rs_retention>
 <cdc_rs_server>SAMPLE_RS</cdc_rs_server>
 <cdc_rs_user>ds</cdc_rs_user>
@@ -42,7 +42,7 @@ CREATE DATABASE DATASTORE DS_SRC_COB_REMESAS::'97f7a463-2fbe-40b3-a3d7-b37f78de6
 <locale_codepage>&lt;default&gt;</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E86B299E21B9E98F0C508B2601697F125FF413FE55624B38510DAD8CD46CD4FF2ADB4F275E99EC43F7DBB63AFB10A1AFB517</password>
+<password>+0400000000120303000803E884FCAD69F680442CE4FA05C7D1C8C4FE27A78F76A4F38F87AC7EB25C67709CC6A44FDE233ECCB2388837040C96E2571FF5</password>
 <server_codepage>&lt;default&gt;</server_codepage>
 <sql_server_database>cob_remesas</sql_server_database>
 <sql_server_dataserver>SYB_SVCCOBIS01DA</sql_server_dataserver>
@@ -65,7 +65,7 @@ CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET 
 <locale_codepage>iso-8859-1</locale_codepage>
 <locale_language>&lt;default&gt;</locale_language>
 <locale_territory>&lt;default&gt;</locale_territory>
-<password>+0400000000120303000803E80F6288FE356E02210A17D1E710ED7966BDD651AF8CC3437899CA0AF6836052CF05A594C6EFAB48585647DF3D35D9</password>
+<password>+0400000000120303000803E83CB104D3E5ECA872C754EAFF1A2CB42586CE5B6EB333C4310C8F0BFC74DEFCF128F5832AF064B0F1F747E6B28D15</password>
 <server_codepage>iso-8859-1</server_codepage>
 <sql_server_database>IDWDEV</sql_server_database>
 <sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
@@ -473,10 +473,10 @@ LOAD_DATE DATE  NULL )
 SET("db_alias_name" = 'STG_SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue May  7 15:22:44 2019' , 
-ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '1011' , 
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue May 28 10:49:57 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '4' , 
 ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
-ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '1011' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '4' , 
 ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
 ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
 ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '4 Seconds' , 
@@ -622,20 +622,18 @@ LOAD_DATE DATE  NULL )
 SET("db_alias_name" = 'SAT')
 ;
 
- AlGUIComment (ActaName_1 = 'RDatabase_Object_Type',ActaValue_1 = 'TABLE' , 
-ActaName_2 = 'RTable_Type',ActaValue_2 = 'TABLE' , 
-ActaName_3 = 'RDescription',ActaValue_3 = '' , 
-ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
-ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
-ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
-ActaName_7 = 'RDate_modified',ActaValue_7 = 'Mon May  6 11:40:49 2019' , 
-ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Tue May  7 15:22:35 2019' , 
-ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '1011' , 
-ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
-ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '1011' , 
-ActaName_12 = 'RNumber_Of_Updates',ActaValue_12 = '0' , 
-ActaName_13 = 'RNumber_Of_Deletes',ActaValue_13 = '0' , 
-ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '20 Seconds' )
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Tue May 28 10:49:47 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '4' , 
+ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '4' , 
+ActaName_5 = 'RDatabase_Object_Type',ActaValue_5 = 'TABLE' , 
+ActaName_6 = 'RTable_Type',ActaValue_6 = 'TABLE' , 
+ActaName_7 = 'RDescription',ActaValue_7 = '' , 
+ActaName_8 = 'REstimated_Row_Count',ActaValue_8 = '50000' , 
+ActaName_9 = 'RSavedAfterCheckOut',ActaValue_9 = 'YES' , 
+ActaName_10 = 'RLoader_Is_Template_Table',ActaValue_10 = 'no' , 
+ActaName_11 = 'RDate_modified',ActaValue_11 = 'Mon May 27 19:25:15 2019' , 
+ActaName_12 = 'RElapsed_Time_For_Load',ActaValue_12 = '1 Seconds' )
 CREATE TABLE DS_TARGET.STG_SAT.PTOPERAC(OP_FECHA_CORTE DATE  NULL , 
 OP_FILIAL DECIMAL(1, 0)  NULL , 
 OP_PRODUCTO DECIMAL(2, 0)  NULL , 
@@ -655,12 +653,12 @@ OP_CATEGORIA_OPER VARCHAR(2)  NULL ,
 OP_CLASE_GTIA VARCHAR(2)  NULL , 
 OP_TIPO_CARTERA VARCHAR(2)  NULL , 
 OP_TIPO_TRAMITE VARCHAR(1)  NULL , 
-OP_FECHA_INI DATE  NULL , 
-OP_FECHA_FIN DATE  NULL , 
-OP_FECHA_FIN_LEGAL DATE  NULL , 
-OP_FECHA_CAS DATE  NULL , 
-OP_FECHA_PAG DATE  NULL , 
-OP_FECHA_CAN DATE  NULL , 
+OP_FECHA_INI VARCHAR(8)  NULL , 
+OP_FECHA_FIN VARCHAR(8)  NULL , 
+OP_FECHA_FIN_LEGAL VARCHAR(8)  NULL , 
+OP_FECHA_CAS VARCHAR(8)  NULL , 
+OP_FECHA_PAG VARCHAR(8)  NULL , 
+OP_FECHA_CAN VARCHAR(8)  NULL , 
 OP_PLAZO DECIMAL(4, 0)  NULL , 
 OP_TOTAL_CUOTAS DECIMAL(3, 0)  NULL , 
 OP_TIPO_AMORTIZ VARCHAR(10)  NULL , 
@@ -696,7 +694,7 @@ OP_TIPO_CERTIFICADO VARCHAR(2)  NULL ,
 OP_FACTOR_MLO DECIMAL(8, 4)  NULL , 
 OP_ESTADO_OPER VARCHAR(10)  NULL , 
 OP_USUARIO_MODIF VARCHAR(14)  NULL , 
-OP_FECHA_MODIF DATE  NULL , 
+OP_FECHA_MODIF VARCHAR(8)  NULL , 
 OP_MORA DECIMAL(19, 4)  NULL , 
 OP_TASA_MORA DECIMAL(6, 4)  NULL , 
 OP_CUOTAS_MORA DECIMAL(2, 0)  NULL , 
@@ -730,18 +728,18 @@ OP_UNIDAD_MEDIDA VARCHAR(10)  NULL ,
 OP_CANTIDAD_FINANCIADAS DECIMAL(19, 4)  NULL , 
 OP_TRAMITE DECIMAL(4, 0)  NULL , 
 OP_CUPOS_TERCEROS VARCHAR(10)  NULL , 
-OP_ULT_PAGCAP DATE  NULL , 
-OP_ULT_PAGINT DATE  NULL , 
-OP_FULT_REAJ DATE  NULL , 
-OP_FECHA_ESCRITURACION DATE  NULL , 
-OP_FECHA_DESDE_MORA_CAP DATE  NULL , 
-OP_FECHA_DESDE_MORA_INTS DATE  NULL , 
+OP_ULT_PAGCAP VARCHAR(8)  NULL , 
+OP_ULT_PAGINT VARCHAR(8)  NULL , 
+OP_FULT_REAJ VARCHAR(8)  NULL , 
+OP_FECHA_ESCRITURACION VARCHAR(8)  NULL , 
+OP_FECHA_DESDE_MORA_CAP VARCHAR(8)  NULL , 
+OP_FECHA_DESDE_MORA_INTS VARCHAR(8)  NULL , 
 OP_CUOT_MOCAP DECIMAL(5, 0)  NULL , 
 OP_CUOT_MOINT DECIMAL(5, 0)  NULL , 
 OP_PAGO_ADECAP DECIMAL(19, 4)  NULL , 
 OP_CUOTAS_PAG DECIMAL(2, 0)  NULL , 
 OP_DIAS_ANIO DECIMAL(3, 0)  NULL , 
-OP_FECPROXCUO DATE  NULL , 
+OP_FECPROXCUO VARCHAR(8)  NULL , 
 OP_CLABAS VARCHAR(10)  NULL , 
 OP_VAL_GTIA_HIPO DECIMAL(19, 4)  NULL , 
 OP_VAL_GTIA_OTRAS DECIMAL(19, 4)  NULL , 
@@ -753,9 +751,9 @@ OP_TIPO_DIVIDENDO VARCHAR(10)  NULL ,
 OP_RIESGO_A_RVA_ANT DECIMAL(19, 4)  NULL , 
 OP_TASA_INI DECIMAL(6, 4)  NULL , 
 OP_DIAS_PRORROGA DECIMAL(4, 0)  NULL , 
-OP_FECHA_INI_PRORR DATE  NULL , 
+OP_FECHA_INI_PRORR VARCHAR(8)  NULL , 
 OP_TIPO_TASA_REFERENCIA VARCHAR(10)  NULL , 
-OP_FECHA_PROX_REAJUSTE DATE  NULL , 
+OP_FECHA_PROX_REAJUSTE VARCHAR(8)  NULL , 
 OP_TIPOTC VARCHAR(1)  NULL , 
 OP_CLASETC VARCHAR(1)  NULL , 
 OP_PRODUCTOTC VARCHAR(20)  NULL , 
@@ -764,8 +762,8 @@ EPP_POST_ACCOUNT VARCHAR(19)  NULL ,
 OP_STATUS VARCHAR(1)  NULL , 
 CODBLQ1 DECIMAL(2, 0)  NULL , 
 CODBLQ2 DECIMAL(2, 0)  NULL , 
-FECBLQ1 DATE  NULL , 
-FECBLQ2 DATE  NULL , 
+FECBLQ1 VARCHAR(8)  NULL , 
+FECBLQ2 VARCHAR(8)  NULL , 
 LOGO VARCHAR(4)  NULL , 
 LOAD_DATE DATE  NULL ) 
 SET("db_alias_name" = 'STG_SAT')
@@ -2000,22 +1998,22 @@ SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Jan 10 17:01:26 2019', "ActaValue_3" = 'Thu Jan 31 11:53:24 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Jan 10 17:01:26 2019', "ActaValue_3" = 'Tue May 28 09:43:12 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_PTOPERAC::'247c7f54-cc02-4c67-9861-ad248861ab49'
 BEGIN
 
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>391</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '42', "x" = '90', "y" = '-90')
-GUID::'65cbb1cc-9a9e-4530-bd73-effc1815008e' READ TABLE DS_TARGET.STG_SAT.PTOPERAC OUTPUT(PTOPERAC_1)
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>388</CX><CY>-189</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-180</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '42', "x" = '203', "y" = '-809')
+GUID::'eb15b89e-a8cb-4e43-aa34-272407083f19' READ TABLE DS_TARGET.STG_SAT.PTOPERAC OUTPUT(PTOPERAC)
 SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
 
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>435</CX><CY>-183</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "x" = '870', "y" = '-90')
-GUID::'7f5a5688-e705-4210-9ea4-a88a92ca107f' LOAD TABLE DS_TARGET.SAT.PTOPERAC INPUT(Query_1)
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = '', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>432</CX><CY>-189</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-180</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "x" = '1219', "y" = '-1069')
+GUID::'61777ba4-1af5-4b77-bf8f-1543380545c6' LOAD TABLE DS_TARGET.SAT.PTOPERAC INPUT(Query)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
 <bulk_col_delimiter>/127</bulk_col_delimiter>
 <bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
-<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_generate_files_only>0</bulk_ldr_generate_files_only>
 <bulk_row_delimiter>&#xA;</bulk_row_delimiter>
 <enable_partitioning>no</enable_partitioning>
 <ignore_column_case>yes</ignore_column_case>
@@ -2035,14 +2033,14 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 <iq_log_null_constraints>no</iq_log_null_constraints>
 <iq_log_unique_constraints>no</iq_log_unique_constraints>
 <loader_auto_correct>no</loader_auto_correct>
-<loader_bulk_load></loader_bulk_load>
+<loader_bulk_load>0</loader_bulk_load>
 <loader_compare_column>compare_by_name</loader_compare_column>
 <loader_delete_map></loader_delete_map>
-<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_drop_and_create_table>no</loader_drop_and_create_table>
 <loader_insert_map></loader_insert_map>
 <loader_load_choice>append</loader_load_choice>
 <loader_num_parallel_loaders>1</loader_num_parallel_loaders>
-<loader_overflow_file></loader_overflow_file>
+<loader_overflow_file>DS_TARGET_SAT_PTOPERAC.txt</loader_overflow_file>
 <loader_post_load1></loader_post_load1>
 <loader_pre_load1></loader_pre_load1>
 <loader_transactional>no</loader_transactional>
@@ -2051,7 +2049,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 <loader_update_map></loader_update_map>
 <loader_use_user_defined_keys>no</loader_use_user_defined_keys>
 <loader_xact_size>1000</loader_xact_size>
-<mssql_bulk_ldr_mode>append</mssql_bulk_ldr_mode>
+<mssql_bulk_ldr_mode>truncate</mssql_bulk_ldr_mode>
 <mssql_bulk_ldr_packet_size>0</mssql_bulk_ldr_packet_size>
 <overflow_file_format>write_data</overflow_file_format>
 <use_overflow_file>no</use_overflow_file>
@@ -2060,141 +2058,141 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 </LDRConfiguration>
 </LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
 
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-164</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "ui_acta_from_schema_0" = 'PTOPERAC_1', "x" = '480', "y" = '-90')
-GUID::'32c9a325-112f-40fe-99ca-824174efadf0' CREATE VIEW Query_1( OP_FECHA_CORTE DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_CORTE') ,
- OP_FILIAL DECIMAL(1, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FILIAL') ,
- OP_PRODUCTO DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_PRODUCTO') ,
- OP_OPERACION DECIMAL(10, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_OPERACION') ,
- OP_NUM_OP_IFI VARCHAR(20)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_NUM_OP_IFI') ,
- OP_OFICIAL VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_OFICIAL') ,
- OP_CLIENTE VARCHAR(24)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CLIENTE') ,
- OP_CIUDAD DECIMAL(4, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CIUDAD') ,
- OP_OFICINA DECIMAL(5, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_OFICINA') ,
- OP_MONEDA DECIMAL(1, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_MONEDA') ,
- OP_SECTOR_CONTABLE VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_SECTOR_CONTABLE') ,
- OP_SECTOR_REAL VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_SECTOR_REAL') ,
- OP_DESTINO VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_DESTINO') ,
- OP_TIPO_OPER VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPO_OPER') ,
- OP_CATEG_CONT VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CATEG_CONT') ,
- OP_CATEGORIA_OPER VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CATEGORIA_OPER') ,
- OP_CLASE_GTIA VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CLASE_GTIA') ,
- OP_TIPO_CARTERA VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPO_CARTERA') ,
- OP_TIPO_TRAMITE VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPO_TRAMITE') ,
- OP_FECHA_INI DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_INI') ,
- OP_FECHA_FIN DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_FIN') ,
- OP_FECHA_FIN_LEGAL DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_FIN_LEGAL') ,
- OP_FECHA_CAS DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_CAS') ,
- OP_FECHA_PAG DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_PAG') ,
- OP_FECHA_CAN DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_CAN') ,
- OP_PLAZO DECIMAL(4, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_PLAZO') ,
- OP_TOTAL_CUOTAS DECIMAL(3, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TOTAL_CUOTAS') ,
- OP_TIPO_AMORTIZ VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPO_AMORTIZ') ,
- OP_GRACIA_CAP DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_GRACIA_CAP') ,
- OP_GRACIA_INT DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_GRACIA_INT') ,
- OP_PERIODO_CAP DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_PERIODO_CAP') ,
- OP_PERIODO_INT DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_PERIODO_INT') ,
- OP_MOROSIDAD_CAP DECIMAL(5, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_MOROSIDAD_CAP') ,
- OP_MOROSIDAD_INT DECIMAL(5, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_MOROSIDAD_INT') ,
- OP_TASA_ORIGINAL DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TASA_ORIGINAL') ,
- OP_TASA_ACTUAL DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TASA_ACTUAL') ,
- OP_TASA_REF DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TASA_REF') ,
- OP_TASA_EFECTIVA DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TASA_EFECTIVA') ,
- OP_FORMA_REAJUSTE VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FORMA_REAJUSTE') ,
- OP_ORIGEN_FONDOS VARCHAR(5)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_ORIGEN_FONDOS') ,
- OP_VALOR_ORIGINAL DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_VALOR_ORIGINAL') ,
- OP_SALDO_CAPITAL DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_SALDO_CAPITAL') ,
- OP_DESEMBOLSOS DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_DESEMBOLSOS') ,
- OP_CAPITAL_VCDO DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CAPITAL_VCDO') ,
- OP_CAPITAL_MORA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CAPITAL_MORA') ,
- OP_SALDO_INTERES DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_SALDO_INTERES') ,
- OP_INTERES_VCDO DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_INTERES_VCDO') ,
- OP_INTERES_MORA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_INTERES_MORA') ,
- OP_RIESGO DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RIESGO') ,
- OP_ABONO_PEND DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_ABONO_PEND') ,
- OP_VAL_ACTUAL_GTIA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_VAL_ACTUAL_GTIA') ,
- OP_VAL_REAL_GTIA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_VAL_REAL_GTIA') ,
- OP_COB_ACTUAL_GTIA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_COB_ACTUAL_GTIA') ,
- OP_COB_REAL_GTIA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_COB_REAL_GTIA') ,
- OP_GARANTIA_INSCRITA VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_GARANTIA_INSCRITA') ,
- OP_GARANTE_CART_PIG VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_GARANTE_CART_PIG') ,
- OP_TIPO_CERTIFICADO VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPO_CERTIFICADO') ,
- OP_FACTOR_MLO DECIMAL(8, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FACTOR_MLO') ,
- OP_ESTADO_OPER VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_ESTADO_OPER') ,
- OP_USUARIO_MODIF VARCHAR(14)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_USUARIO_MODIF') ,
- OP_FECHA_MODIF DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_MODIF') ,
- OP_MORA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_MORA') ,
- OP_TASA_MORA DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TASA_MORA') ,
- OP_CUOTAS_MORA DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CUOTAS_MORA') ,
- OP_CALIFICACION VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CALIFICACION') ,
- OP_RANGO_PLAZO DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RANGO_PLAZO') ,
- OP_RANGO_MORA_CAP DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RANGO_MORA_CAP') ,
- OP_RANGO_MORA_INT DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RANGO_MORA_INT') ,
- OP_RESERVA_REQUERIDA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RESERVA_REQUERIDA') ,
- OP_RESERVA_CONSTITUIDA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RESERVA_CONSTITUIDA') ,
- OP_DEDUCCIONES DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_DEDUCCIONES') ,
- OP_COBERTURA_GTIA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_COBERTURA_GTIA') ,
- OP_ETAPA_COBRO VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_ETAPA_COBRO') ,
- OP_CALIF_ANT VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CALIF_ANT') ,
- OP_RES_REQUE_ANT DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RES_REQUE_ANT') ,
- OP_RES_CONST_ANT DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RES_CONST_ANT') ,
- OP_RESULTADO_CALIF DECIMAL(1, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RESULTADO_CALIF') ,
- OP_TIPO_MOROSIDAD DECIMAL(1, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPO_MOROSIDAD') ,
- OP_RANGO_MOROSIDAD DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RANGO_MOROSIDAD') ,
- OP_RANGO_SALDO_TOTAL DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RANGO_SALDO_TOTAL') ,
- OP_TIPO_OPER_SSF VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPO_OPER_SSF') ,
- OP_DESTINO_OPER_SSF VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_DESTINO_OPER_SSF') ,
- OP_RANGO_PLAZO_FALTANTE DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RANGO_PLAZO_FALTANTE') ,
- OP_TIPO_LINEA_CR VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPO_LINEA_CR') ,
- OP_CUENTA_CAP VARCHAR(20)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CUENTA_CAP') ,
- OP_CUENTA_INT VARCHAR(20)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CUENTA_INT') ,
- OP_CUOTA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CUOTA') ,
- OP_NUM_LINEA DECIMAL(4, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_NUM_LINEA') ,
- OP_OPERACION_CANCELO VARCHAR(24)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_OPERACION_CANCELO') ,
- OP_CLASE_GASTO VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CLASE_GASTO') ,
- OP_UNIDAD_MEDIDA VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_UNIDAD_MEDIDA') ,
- OP_CANTIDAD_FINANCIADAS DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CANTIDAD_FINANCIADAS') ,
- OP_TRAMITE DECIMAL(4, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TRAMITE') ,
- OP_CUPOS_TERCEROS VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CUPOS_TERCEROS') ,
- OP_ULT_PAGCAP DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_ULT_PAGCAP') ,
- OP_ULT_PAGINT DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_ULT_PAGINT') ,
- OP_FULT_REAJ DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FULT_REAJ') ,
- OP_FECHA_ESCRITURACION DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_ESCRITURACION') ,
- OP_FECHA_DESDE_MORA_CAP DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_DESDE_MORA_CAP') ,
- OP_FECHA_DESDE_MORA_INTS DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_DESDE_MORA_INTS') ,
- OP_CUOT_MOCAP DECIMAL(5, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CUOT_MOCAP') ,
- OP_CUOT_MOINT DECIMAL(5, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CUOT_MOINT') ,
- OP_PAGO_ADECAP DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_PAGO_ADECAP') ,
- OP_CUOTAS_PAG DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CUOTAS_PAG') ,
- OP_DIAS_ANIO DECIMAL(3, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_DIAS_ANIO') ,
- OP_FECPROXCUO DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECPROXCUO') ,
- OP_CLABAS VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CLABAS') ,
- OP_VAL_GTIA_HIPO DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_VAL_GTIA_HIPO') ,
- OP_VAL_GTIA_OTRAS DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_VAL_GTIA_OTRAS') ,
- OP_RIESGOS_A_RVA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RIESGOS_A_RVA') ,
- OP_MONTO_SEGURO DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_MONTO_SEGURO') ,
- OP_TIPO_PLAZO VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPO_PLAZO') ,
- OP_MODIFICADO VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_MODIFICADO') ,
- OP_TIPO_DIVIDENDO VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPO_DIVIDENDO') ,
- OP_RIESGO_A_RVA_ANT DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RIESGO_A_RVA_ANT') ,
- OP_TASA_INI DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TASA_INI') ,
- OP_DIAS_PRORROGA DECIMAL(4, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_DIAS_PRORROGA') ,
- OP_FECHA_INI_PRORR DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_INI_PRORR') ,
- OP_TIPO_TASA_REFERENCIA VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPO_TASA_REFERENCIA') ,
- OP_FECHA_PROX_REAJUSTE DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_PROX_REAJUSTE') ,
- OP_TIPOTC VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPOTC') ,
- OP_CLASETC VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CLASETC') ,
- OP_PRODUCTOTC VARCHAR(20)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_PRODUCTOTC') ,
- VEHICULO_LEGAL VARCHAR(3)  SET( "ui_mapping_text" = 'PTOPERAC_1.VEHICULO_LEGAL') ,
- EPP_POST_ACCOUNT VARCHAR(19)  SET( "ui_mapping_text" = 'PTOPERAC_1.EPP_POST_ACCOUNT') ,
- OP_STATUS VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_STATUS') ,
- CODBLQ1 DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.CODBLQ1') ,
- CODBLQ2 DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.CODBLQ2') ,
- FECBLQ1 DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.FECBLQ1') ,
- FECBLQ2 DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.FECBLQ2') ,
- LOGO VARCHAR(4)  SET( "ui_mapping_text" = 'PTOPERAC_1.LOGO') ,
- LOAD_DATE DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.LOAD_DATE')  )
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-170</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-180</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "ui_acta_from_schema_0" = 'PTOPERAC', "x" = '678', "y" = '-878')
+GUID::'b004d856-2892-445d-b5d5-7062b9eeb694' CREATE VIEW Query( OP_FECHA_CORTE DATE  SET( "ui_mapping_text" = 'PTOPERAC.OP_FECHA_CORTE') ,
+ OP_FILIAL DECIMAL(1, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_FILIAL') ,
+ OP_PRODUCTO DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_PRODUCTO') ,
+ OP_OPERACION DECIMAL(10, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_OPERACION') ,
+ OP_NUM_OP_IFI VARCHAR(20)  SET( "ui_mapping_text" = 'PTOPERAC.OP_NUM_OP_IFI') ,
+ OP_OFICIAL VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC.OP_OFICIAL') ,
+ OP_CLIENTE VARCHAR(24)  SET( "ui_mapping_text" = 'PTOPERAC.OP_CLIENTE') ,
+ OP_CIUDAD DECIMAL(4, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_CIUDAD') ,
+ OP_OFICINA DECIMAL(5, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_OFICINA') ,
+ OP_MONEDA DECIMAL(1, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_MONEDA') ,
+ OP_SECTOR_CONTABLE VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC.OP_SECTOR_CONTABLE') ,
+ OP_SECTOR_REAL VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC.OP_SECTOR_REAL') ,
+ OP_DESTINO VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC.OP_DESTINO') ,
+ OP_TIPO_OPER VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC.OP_TIPO_OPER') ,
+ OP_CATEG_CONT VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC.OP_CATEG_CONT') ,
+ OP_CATEGORIA_OPER VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC.OP_CATEGORIA_OPER') ,
+ OP_CLASE_GTIA VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC.OP_CLASE_GTIA') ,
+ OP_TIPO_CARTERA VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC.OP_TIPO_CARTERA') ,
+ OP_TIPO_TRAMITE VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC.OP_TIPO_TRAMITE') ,
+ OP_FECHA_INI DATE  SET( "ui_mapping_text" = 'PTOPERAC.OP_FECHA_INI') ,
+ OP_FECHA_FIN DATE  SET( "ui_mapping_text" = 'PTOPERAC.OP_FECHA_FIN') ,
+ OP_FECHA_FIN_LEGAL DATE  SET( "ui_mapping_text" = 'PTOPERAC.OP_FECHA_FIN_LEGAL') ,
+ OP_FECHA_CAS DATE  SET( "ui_mapping_text" = 'PTOPERAC.OP_FECHA_CAS') ,
+ OP_FECHA_PAG DATE  SET( "ui_mapping_text" = 'PTOPERAC.OP_FECHA_PAG') ,
+ OP_FECHA_CAN DATE  SET( "ui_mapping_text" = 'PTOPERAC.OP_FECHA_CAN') ,
+ OP_PLAZO DECIMAL(4, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_PLAZO') ,
+ OP_TOTAL_CUOTAS DECIMAL(3, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_TOTAL_CUOTAS') ,
+ OP_TIPO_AMORTIZ VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC.OP_TIPO_AMORTIZ') ,
+ OP_GRACIA_CAP DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_GRACIA_CAP') ,
+ OP_GRACIA_INT DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_GRACIA_INT') ,
+ OP_PERIODO_CAP DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_PERIODO_CAP') ,
+ OP_PERIODO_INT DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_PERIODO_INT') ,
+ OP_MOROSIDAD_CAP DECIMAL(5, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_MOROSIDAD_CAP') ,
+ OP_MOROSIDAD_INT DECIMAL(5, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_MOROSIDAD_INT') ,
+ OP_TASA_ORIGINAL DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_TASA_ORIGINAL') ,
+ OP_TASA_ACTUAL DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_TASA_ACTUAL') ,
+ OP_TASA_REF DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_TASA_REF') ,
+ OP_TASA_EFECTIVA DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_TASA_EFECTIVA') ,
+ OP_FORMA_REAJUSTE VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC.OP_FORMA_REAJUSTE') ,
+ OP_ORIGEN_FONDOS VARCHAR(5)  SET( "ui_mapping_text" = 'PTOPERAC.OP_ORIGEN_FONDOS') ,
+ OP_VALOR_ORIGINAL DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_VALOR_ORIGINAL') ,
+ OP_SALDO_CAPITAL DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_SALDO_CAPITAL') ,
+ OP_DESEMBOLSOS DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_DESEMBOLSOS') ,
+ OP_CAPITAL_VCDO DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_CAPITAL_VCDO') ,
+ OP_CAPITAL_MORA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_CAPITAL_MORA') ,
+ OP_SALDO_INTERES DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_SALDO_INTERES') ,
+ OP_INTERES_VCDO DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_INTERES_VCDO') ,
+ OP_INTERES_MORA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_INTERES_MORA') ,
+ OP_RIESGO DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_RIESGO') ,
+ OP_ABONO_PEND DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_ABONO_PEND') ,
+ OP_VAL_ACTUAL_GTIA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_VAL_ACTUAL_GTIA') ,
+ OP_VAL_REAL_GTIA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_VAL_REAL_GTIA') ,
+ OP_COB_ACTUAL_GTIA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_COB_ACTUAL_GTIA') ,
+ OP_COB_REAL_GTIA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_COB_REAL_GTIA') ,
+ OP_GARANTIA_INSCRITA VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC.OP_GARANTIA_INSCRITA') ,
+ OP_GARANTE_CART_PIG VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC.OP_GARANTE_CART_PIG') ,
+ OP_TIPO_CERTIFICADO VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC.OP_TIPO_CERTIFICADO') ,
+ OP_FACTOR_MLO DECIMAL(8, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_FACTOR_MLO') ,
+ OP_ESTADO_OPER VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC.OP_ESTADO_OPER') ,
+ OP_USUARIO_MODIF VARCHAR(14)  SET( "ui_mapping_text" = 'PTOPERAC.OP_USUARIO_MODIF') ,
+ OP_FECHA_MODIF DATE  SET( "ui_mapping_text" = 'PTOPERAC.OP_FECHA_MODIF') ,
+ OP_MORA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_MORA') ,
+ OP_TASA_MORA DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_TASA_MORA') ,
+ OP_CUOTAS_MORA DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_CUOTAS_MORA') ,
+ OP_CALIFICACION VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC.OP_CALIFICACION') ,
+ OP_RANGO_PLAZO DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_RANGO_PLAZO') ,
+ OP_RANGO_MORA_CAP DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_RANGO_MORA_CAP') ,
+ OP_RANGO_MORA_INT DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_RANGO_MORA_INT') ,
+ OP_RESERVA_REQUERIDA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_RESERVA_REQUERIDA') ,
+ OP_RESERVA_CONSTITUIDA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_RESERVA_CONSTITUIDA') ,
+ OP_DEDUCCIONES DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_DEDUCCIONES') ,
+ OP_COBERTURA_GTIA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_COBERTURA_GTIA') ,
+ OP_ETAPA_COBRO VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC.OP_ETAPA_COBRO') ,
+ OP_CALIF_ANT VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC.OP_CALIF_ANT') ,
+ OP_RES_REQUE_ANT DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_RES_REQUE_ANT') ,
+ OP_RES_CONST_ANT DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_RES_CONST_ANT') ,
+ OP_RESULTADO_CALIF DECIMAL(1, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_RESULTADO_CALIF') ,
+ OP_TIPO_MOROSIDAD DECIMAL(1, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_TIPO_MOROSIDAD') ,
+ OP_RANGO_MOROSIDAD DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_RANGO_MOROSIDAD') ,
+ OP_RANGO_SALDO_TOTAL DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_RANGO_SALDO_TOTAL') ,
+ OP_TIPO_OPER_SSF VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC.OP_TIPO_OPER_SSF') ,
+ OP_DESTINO_OPER_SSF VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC.OP_DESTINO_OPER_SSF') ,
+ OP_RANGO_PLAZO_FALTANTE DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_RANGO_PLAZO_FALTANTE') ,
+ OP_TIPO_LINEA_CR VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC.OP_TIPO_LINEA_CR') ,
+ OP_CUENTA_CAP VARCHAR(20)  SET( "ui_mapping_text" = 'PTOPERAC.OP_CUENTA_CAP') ,
+ OP_CUENTA_INT VARCHAR(20)  SET( "ui_mapping_text" = 'PTOPERAC.OP_CUENTA_INT') ,
+ OP_CUOTA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_CUOTA') ,
+ OP_NUM_LINEA DECIMAL(4, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_NUM_LINEA') ,
+ OP_OPERACION_CANCELO VARCHAR(24)  SET( "ui_mapping_text" = 'PTOPERAC.OP_OPERACION_CANCELO') ,
+ OP_CLASE_GASTO VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC.OP_CLASE_GASTO') ,
+ OP_UNIDAD_MEDIDA VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC.OP_UNIDAD_MEDIDA') ,
+ OP_CANTIDAD_FINANCIADAS DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_CANTIDAD_FINANCIADAS') ,
+ OP_TRAMITE DECIMAL(4, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_TRAMITE') ,
+ OP_CUPOS_TERCEROS VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC.OP_CUPOS_TERCEROS') ,
+ OP_ULT_PAGCAP DATE  SET( "ui_mapping_text" = 'PTOPERAC.OP_ULT_PAGCAP') ,
+ OP_ULT_PAGINT DATE  SET( "ui_mapping_text" = 'PTOPERAC.OP_ULT_PAGINT') ,
+ OP_FULT_REAJ DATE  SET( "ui_mapping_text" = 'PTOPERAC.OP_FULT_REAJ') ,
+ OP_FECHA_ESCRITURACION DATE  SET( "ui_mapping_text" = 'PTOPERAC.OP_FECHA_ESCRITURACION') ,
+ OP_FECHA_DESDE_MORA_CAP DATE  SET( "ui_mapping_text" = 'PTOPERAC.OP_FECHA_DESDE_MORA_CAP') ,
+ OP_FECHA_DESDE_MORA_INTS DATE  SET( "ui_mapping_text" = 'PTOPERAC.OP_FECHA_DESDE_MORA_INTS') ,
+ OP_CUOT_MOCAP DECIMAL(5, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_CUOT_MOCAP') ,
+ OP_CUOT_MOINT DECIMAL(5, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_CUOT_MOINT') ,
+ OP_PAGO_ADECAP DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_PAGO_ADECAP') ,
+ OP_CUOTAS_PAG DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_CUOTAS_PAG') ,
+ OP_DIAS_ANIO DECIMAL(3, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_DIAS_ANIO') ,
+ OP_FECPROXCUO DATE  SET( "ui_mapping_text" = 'PTOPERAC.OP_FECPROXCUO') ,
+ OP_CLABAS VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC.OP_CLABAS') ,
+ OP_VAL_GTIA_HIPO DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_VAL_GTIA_HIPO') ,
+ OP_VAL_GTIA_OTRAS DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_VAL_GTIA_OTRAS') ,
+ OP_RIESGOS_A_RVA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_RIESGOS_A_RVA') ,
+ OP_MONTO_SEGURO DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_MONTO_SEGURO') ,
+ OP_TIPO_PLAZO VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC.OP_TIPO_PLAZO') ,
+ OP_MODIFICADO VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC.OP_MODIFICADO') ,
+ OP_TIPO_DIVIDENDO VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC.OP_TIPO_DIVIDENDO') ,
+ OP_RIESGO_A_RVA_ANT DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_RIESGO_A_RVA_ANT') ,
+ OP_TASA_INI DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC.OP_TASA_INI') ,
+ OP_DIAS_PRORROGA DECIMAL(4, 0)  SET( "ui_mapping_text" = 'PTOPERAC.OP_DIAS_PRORROGA') ,
+ OP_FECHA_INI_PRORR DATE  SET( "ui_mapping_text" = 'PTOPERAC.OP_FECHA_INI_PRORR') ,
+ OP_TIPO_TASA_REFERENCIA VARCHAR(10)  SET( "ui_mapping_text" = 'PTOPERAC.OP_TIPO_TASA_REFERENCIA') ,
+ OP_FECHA_PROX_REAJUSTE DATE  SET( "ui_mapping_text" = 'PTOPERAC.OP_FECHA_PROX_REAJUSTE') ,
+ OP_TIPOTC VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC.OP_TIPOTC') ,
+ OP_CLASETC VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC.OP_CLASETC') ,
+ OP_PRODUCTOTC VARCHAR(20)  SET( "ui_mapping_text" = 'PTOPERAC.OP_PRODUCTOTC') ,
+ VEHICULO_LEGAL VARCHAR(3)  SET( "ui_mapping_text" = 'PTOPERAC.VEHICULO_LEGAL') ,
+ EPP_POST_ACCOUNT VARCHAR(19)  SET( "ui_mapping_text" = 'PTOPERAC.EPP_POST_ACCOUNT') ,
+ OP_STATUS VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC.OP_STATUS') ,
+ CODBLQ1 DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC.CODBLQ1') ,
+ CODBLQ2 DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC.CODBLQ2') ,
+ FECBLQ1 DATE  SET( "ui_mapping_text" = 'PTOPERAC.FECBLQ1') ,
+ FECBLQ2 DATE  SET( "ui_mapping_text" = 'PTOPERAC.FECBLQ2') ,
+ LOGO VARCHAR(4)  SET( "ui_mapping_text" = 'PTOPERAC.LOGO') ,
+ LOAD_DATE DATE  SET( "ui_mapping_text" = 'PTOPERAC.LOAD_DATE')  )
  AS
-SELECT PTOPERAC_1.OP_FECHA_CORTE, PTOPERAC_1.OP_FILIAL, PTOPERAC_1.OP_PRODUCTO, PTOPERAC_1.OP_OPERACION, PTOPERAC_1.OP_NUM_OP_IFI, PTOPERAC_1.OP_OFICIAL, PTOPERAC_1.OP_CLIENTE, PTOPERAC_1.OP_CIUDAD, PTOPERAC_1.OP_OFICINA, PTOPERAC_1.OP_MONEDA, PTOPERAC_1.OP_SECTOR_CONTABLE, PTOPERAC_1.OP_SECTOR_REAL, PTOPERAC_1.OP_DESTINO, PTOPERAC_1.OP_TIPO_OPER, PTOPERAC_1.OP_CATEG_CONT, PTOPERAC_1.OP_CATEGORIA_OPER, PTOPERAC_1.OP_CLASE_GTIA, PTOPERAC_1.OP_TIPO_CARTERA, PTOPERAC_1.OP_TIPO_TRAMITE, PTOPERAC_1.OP_FECHA_INI, PTOPERAC_1.OP_FECHA_FIN, PTOPERAC_1.OP_FECHA_FIN_LEGAL, PTOPERAC_1.OP_FECHA_CAS, PTOPERAC_1.OP_FECHA_PAG, PTOPERAC_1.OP_FECHA_CAN, PTOPERAC_1.OP_PLAZO, PTOPERAC_1.OP_TOTAL_CUOTAS, PTOPERAC_1.OP_TIPO_AMORTIZ, PTOPERAC_1.OP_GRACIA_CAP, PTOPERAC_1.OP_GRACIA_INT, PTOPERAC_1.OP_PERIODO_CAP, PTOPERAC_1.OP_PERIODO_INT, PTOPERAC_1.OP_MOROSIDAD_CAP, PTOPERAC_1.OP_MOROSIDAD_INT, PTOPERAC_1.OP_TASA_ORIGINAL, PTOPERAC_1.OP_TASA_ACTUAL, PTOPERAC_1.OP_TASA_REF, PTOPERAC_1.OP_TASA_EFECTIVA, PTOPERAC_1.OP_FORMA_REAJUSTE, PTOPERAC_1.OP_ORIGEN_FONDOS, PTOPERAC_1.OP_VALOR_ORIGINAL, PTOPERAC_1.OP_SALDO_CAPITAL, PTOPERAC_1.OP_DESEMBOLSOS, PTOPERAC_1.OP_CAPITAL_VCDO, PTOPERAC_1.OP_CAPITAL_MORA, PTOPERAC_1.OP_SALDO_INTERES, PTOPERAC_1.OP_INTERES_VCDO, PTOPERAC_1.OP_INTERES_MORA, PTOPERAC_1.OP_RIESGO, PTOPERAC_1.OP_ABONO_PEND, PTOPERAC_1.OP_VAL_ACTUAL_GTIA, PTOPERAC_1.OP_VAL_REAL_GTIA, PTOPERAC_1.OP_COB_ACTUAL_GTIA, PTOPERAC_1.OP_COB_REAL_GTIA, PTOPERAC_1.OP_GARANTIA_INSCRITA, PTOPERAC_1.OP_GARANTE_CART_PIG, PTOPERAC_1.OP_TIPO_CERTIFICADO, PTOPERAC_1.OP_FACTOR_MLO, PTOPERAC_1.OP_ESTADO_OPER, PTOPERAC_1.OP_USUARIO_MODIF, PTOPERAC_1.OP_FECHA_MODIF, PTOPERAC_1.OP_MORA, PTOPERAC_1.OP_TASA_MORA, PTOPERAC_1.OP_CUOTAS_MORA, PTOPERAC_1.OP_CALIFICACION, PTOPERAC_1.OP_RANGO_PLAZO, PTOPERAC_1.OP_RANGO_MORA_CAP, PTOPERAC_1.OP_RANGO_MORA_INT, PTOPERAC_1.OP_RESERVA_REQUERIDA, PTOPERAC_1.OP_RESERVA_CONSTITUIDA, PTOPERAC_1.OP_DEDUCCIONES, PTOPERAC_1.OP_COBERTURA_GTIA, PTOPERAC_1.OP_ETAPA_COBRO, PTOPERAC_1.OP_CALIF_ANT, PTOPERAC_1.OP_RES_REQUE_ANT, PTOPERAC_1.OP_RES_CONST_ANT, PTOPERAC_1.OP_RESULTADO_CALIF, PTOPERAC_1.OP_TIPO_MOROSIDAD, PTOPERAC_1.OP_RANGO_MOROSIDAD, PTOPERAC_1.OP_RANGO_SALDO_TOTAL, PTOPERAC_1.OP_TIPO_OPER_SSF, PTOPERAC_1.OP_DESTINO_OPER_SSF, PTOPERAC_1.OP_RANGO_PLAZO_FALTANTE, PTOPERAC_1.OP_TIPO_LINEA_CR, PTOPERAC_1.OP_CUENTA_CAP, PTOPERAC_1.OP_CUENTA_INT, PTOPERAC_1.OP_CUOTA, PTOPERAC_1.OP_NUM_LINEA, PTOPERAC_1.OP_OPERACION_CANCELO, PTOPERAC_1.OP_CLASE_GASTO, PTOPERAC_1.OP_UNIDAD_MEDIDA, PTOPERAC_1.OP_CANTIDAD_FINANCIADAS, PTOPERAC_1.OP_TRAMITE, PTOPERAC_1.OP_CUPOS_TERCEROS, PTOPERAC_1.OP_ULT_PAGCAP, PTOPERAC_1.OP_ULT_PAGINT, PTOPERAC_1.OP_FULT_REAJ, PTOPERAC_1.OP_FECHA_ESCRITURACION, PTOPERAC_1.OP_FECHA_DESDE_MORA_CAP, PTOPERAC_1.OP_FECHA_DESDE_MORA_INTS, PTOPERAC_1.OP_CUOT_MOCAP, PTOPERAC_1.OP_CUOT_MOINT, PTOPERAC_1.OP_PAGO_ADECAP, PTOPERAC_1.OP_CUOTAS_PAG, PTOPERAC_1.OP_DIAS_ANIO, PTOPERAC_1.OP_FECPROXCUO, PTOPERAC_1.OP_CLABAS, PTOPERAC_1.OP_VAL_GTIA_HIPO, PTOPERAC_1.OP_VAL_GTIA_OTRAS, PTOPERAC_1.OP_RIESGOS_A_RVA, PTOPERAC_1.OP_MONTO_SEGURO, PTOPERAC_1.OP_TIPO_PLAZO, PTOPERAC_1.OP_MODIFICADO, PTOPERAC_1.OP_TIPO_DIVIDENDO, PTOPERAC_1.OP_RIESGO_A_RVA_ANT, PTOPERAC_1.OP_TASA_INI, PTOPERAC_1.OP_DIAS_PRORROGA, PTOPERAC_1.OP_FECHA_INI_PRORR, PTOPERAC_1.OP_TIPO_TASA_REFERENCIA, PTOPERAC_1.OP_FECHA_PROX_REAJUSTE, PTOPERAC_1.OP_TIPOTC, PTOPERAC_1.OP_CLASETC, PTOPERAC_1.OP_PRODUCTOTC, PTOPERAC_1.VEHICULO_LEGAL, PTOPERAC_1.EPP_POST_ACCOUNT, PTOPERAC_1.OP_STATUS, PTOPERAC_1.CODBLQ1, PTOPERAC_1.CODBLQ2, PTOPERAC_1.FECBLQ1, PTOPERAC_1.FECBLQ2, PTOPERAC_1.LOGO, PTOPERAC_1.LOAD_DATE FROM PTOPERAC_1 
+SELECT PTOPERAC.OP_FECHA_CORTE, PTOPERAC.OP_FILIAL, PTOPERAC.OP_PRODUCTO, PTOPERAC.OP_OPERACION, PTOPERAC.OP_NUM_OP_IFI, PTOPERAC.OP_OFICIAL, PTOPERAC.OP_CLIENTE, PTOPERAC.OP_CIUDAD, PTOPERAC.OP_OFICINA, PTOPERAC.OP_MONEDA, PTOPERAC.OP_SECTOR_CONTABLE, PTOPERAC.OP_SECTOR_REAL, PTOPERAC.OP_DESTINO, PTOPERAC.OP_TIPO_OPER, PTOPERAC.OP_CATEG_CONT, PTOPERAC.OP_CATEGORIA_OPER, PTOPERAC.OP_CLASE_GTIA, PTOPERAC.OP_TIPO_CARTERA, PTOPERAC.OP_TIPO_TRAMITE, PTOPERAC.OP_FECHA_INI, PTOPERAC.OP_FECHA_FIN, PTOPERAC.OP_FECHA_FIN_LEGAL, PTOPERAC.OP_FECHA_CAS, PTOPERAC.OP_FECHA_PAG, PTOPERAC.OP_FECHA_CAN, PTOPERAC.OP_PLAZO, PTOPERAC.OP_TOTAL_CUOTAS, PTOPERAC.OP_TIPO_AMORTIZ, PTOPERAC.OP_GRACIA_CAP, PTOPERAC.OP_GRACIA_INT, PTOPERAC.OP_PERIODO_CAP, PTOPERAC.OP_PERIODO_INT, PTOPERAC.OP_MOROSIDAD_CAP, PTOPERAC.OP_MOROSIDAD_INT, PTOPERAC.OP_TASA_ORIGINAL, PTOPERAC.OP_TASA_ACTUAL, PTOPERAC.OP_TASA_REF, PTOPERAC.OP_TASA_EFECTIVA, PTOPERAC.OP_FORMA_REAJUSTE, PTOPERAC.OP_ORIGEN_FONDOS, PTOPERAC.OP_VALOR_ORIGINAL, PTOPERAC.OP_SALDO_CAPITAL, PTOPERAC.OP_DESEMBOLSOS, PTOPERAC.OP_CAPITAL_VCDO, PTOPERAC.OP_CAPITAL_MORA, PTOPERAC.OP_SALDO_INTERES, PTOPERAC.OP_INTERES_VCDO, PTOPERAC.OP_INTERES_MORA, PTOPERAC.OP_RIESGO, PTOPERAC.OP_ABONO_PEND, PTOPERAC.OP_VAL_ACTUAL_GTIA, PTOPERAC.OP_VAL_REAL_GTIA, PTOPERAC.OP_COB_ACTUAL_GTIA, PTOPERAC.OP_COB_REAL_GTIA, PTOPERAC.OP_GARANTIA_INSCRITA, PTOPERAC.OP_GARANTE_CART_PIG, PTOPERAC.OP_TIPO_CERTIFICADO, PTOPERAC.OP_FACTOR_MLO, PTOPERAC.OP_ESTADO_OPER, PTOPERAC.OP_USUARIO_MODIF, PTOPERAC.OP_FECHA_MODIF, PTOPERAC.OP_MORA, PTOPERAC.OP_TASA_MORA, PTOPERAC.OP_CUOTAS_MORA, PTOPERAC.OP_CALIFICACION, PTOPERAC.OP_RANGO_PLAZO, PTOPERAC.OP_RANGO_MORA_CAP, PTOPERAC.OP_RANGO_MORA_INT, PTOPERAC.OP_RESERVA_REQUERIDA, PTOPERAC.OP_RESERVA_CONSTITUIDA, PTOPERAC.OP_DEDUCCIONES, PTOPERAC.OP_COBERTURA_GTIA, PTOPERAC.OP_ETAPA_COBRO, PTOPERAC.OP_CALIF_ANT, PTOPERAC.OP_RES_REQUE_ANT, PTOPERAC.OP_RES_CONST_ANT, PTOPERAC.OP_RESULTADO_CALIF, PTOPERAC.OP_TIPO_MOROSIDAD, PTOPERAC.OP_RANGO_MOROSIDAD, PTOPERAC.OP_RANGO_SALDO_TOTAL, PTOPERAC.OP_TIPO_OPER_SSF, PTOPERAC.OP_DESTINO_OPER_SSF, PTOPERAC.OP_RANGO_PLAZO_FALTANTE, PTOPERAC.OP_TIPO_LINEA_CR, PTOPERAC.OP_CUENTA_CAP, PTOPERAC.OP_CUENTA_INT, PTOPERAC.OP_CUOTA, PTOPERAC.OP_NUM_LINEA, PTOPERAC.OP_OPERACION_CANCELO, PTOPERAC.OP_CLASE_GASTO, PTOPERAC.OP_UNIDAD_MEDIDA, PTOPERAC.OP_CANTIDAD_FINANCIADAS, PTOPERAC.OP_TRAMITE, PTOPERAC.OP_CUPOS_TERCEROS, PTOPERAC.OP_ULT_PAGCAP, PTOPERAC.OP_ULT_PAGINT, PTOPERAC.OP_FULT_REAJ, PTOPERAC.OP_FECHA_ESCRITURACION, PTOPERAC.OP_FECHA_DESDE_MORA_CAP, PTOPERAC.OP_FECHA_DESDE_MORA_INTS, PTOPERAC.OP_CUOT_MOCAP, PTOPERAC.OP_CUOT_MOINT, PTOPERAC.OP_PAGO_ADECAP, PTOPERAC.OP_CUOTAS_PAG, PTOPERAC.OP_DIAS_ANIO, PTOPERAC.OP_FECPROXCUO, PTOPERAC.OP_CLABAS, PTOPERAC.OP_VAL_GTIA_HIPO, PTOPERAC.OP_VAL_GTIA_OTRAS, PTOPERAC.OP_RIESGOS_A_RVA, PTOPERAC.OP_MONTO_SEGURO, PTOPERAC.OP_TIPO_PLAZO, PTOPERAC.OP_MODIFICADO, PTOPERAC.OP_TIPO_DIVIDENDO, PTOPERAC.OP_RIESGO_A_RVA_ANT, PTOPERAC.OP_TASA_INI, PTOPERAC.OP_DIAS_PRORROGA, PTOPERAC.OP_FECHA_INI_PRORR, PTOPERAC.OP_TIPO_TASA_REFERENCIA, PTOPERAC.OP_FECHA_PROX_REAJUSTE, PTOPERAC.OP_TIPOTC, PTOPERAC.OP_CLASETC, PTOPERAC.OP_PRODUCTOTC, PTOPERAC.VEHICULO_LEGAL, PTOPERAC.EPP_POST_ACCOUNT, PTOPERAC.OP_STATUS, PTOPERAC.CODBLQ1, PTOPERAC.CODBLQ2, PTOPERAC.FECBLQ1, PTOPERAC.FECBLQ2, PTOPERAC.LOGO, PTOPERAC.LOAD_DATE FROM PTOPERAC 
 SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
 ;
 
@@ -3037,16 +3035,154 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Dec 13 14:57:41 2018', "ActaValue_3" = 'Mon May  6 14:03:26 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Dec 13 14:57:41 2018', "ActaValue_3" = 'Tue May 28 10:24:00 2019', "x" = '-1', "y" = '-1')
 CREATE  DATAFLOW DF_STG_PTOPERAC::'511aadfc-528d-422c-92dd-f53b565f8ff5'
 BEGIN
 
-ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>344</CX><CY>-189</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '42', "ui_display_name" = '"$G_FILE_NAME"(PTOPERAC)', "x" = '90', "y" = '-90')
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Description', "Input_2nd_Column_Name" = 'Type', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>344</CX><CY>-189</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '42', "ui_display_name" = '"$G_FILE_NAME"(PTOPERAC)', "x" = '90', "y" = '-90')
 GUID::'d92ef88d-5bdf-49e4-8ef5-7cb248151c6e' READ FILE PTOPERAC."$G_FILE_NAME" OUTPUT(PTOPERAC_1)
-SET("adaptable" = 'no', "cache" = 'yes', "connection_port" = 'no', "file_location" = 'job_server', "name" = 'UNNAMED', "number_of_threads" = '<default>', "read_subfolders" = 'yes', "reader_capture_data_conversion_errors" = 'no', "reader_capture_file_access_errors" = 'yes', "reader_capture_row_format_errors" = 'yes', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'no', "reader_include_filename" = 'no', "reader_log_data_conversion_warnings" = 'yes', "reader_log_row_format_warnings" = 'yes', "reader_log_warnings" = 'yes', "reader_maximum_warnings_to_log" = '-99', "reader_skip_empty_files" = 'yes', "reader_skip_error_handling" = 'no', "reader_write_error_rows_to_file" = 'no', "root_dir" = '$G_FILE_LOCATION', "table_weight" = '0', "transfer_custom" = 'no');
+SET("adaptable" = 'no', "cache" = 'yes', "connection_port" = 'no', "file_location" = 'job_server', "name" = 'UNNAMED', "number_of_threads" = '<default>', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'no', "reader_include_filename" = 'no', "reader_maximum_warnings_to_log" = '-99', "root_dir" = '$G_FILE_LOCATION', "table_weight" = '0');
 
-ALGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = '', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>432</CX><CY>-189</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '50', "x" = '870', "y" = '-90')
-GUID::'97098863-b112-4882-b87c-02dd46baf618' LOAD TABLE DS_TARGET.STG_SAT.PTOPERAC INPUT(Query)
+ALGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Name" = '294', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-170</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '50', "ui_acta_from_schema_0" = 'PTOPERAC_1', "x" = '480', "y" = '-90')
+GUID::'ba8bdabd-0f62-4172-8d8e-d06bab7feddf' CREATE VIEW Query( OP_FECHA_CORTE DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_CORTE') ,
+ OP_FILIAL DECIMAL(1, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FILIAL') ,
+ OP_PRODUCTO DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_PRODUCTO') ,
+ OP_OPERACION DECIMAL(10, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_OPERACION') ,
+ OP_NUM_OP_IFI VARCHAR(20)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_NUM_OP_IFI)') ,
+ OP_OFICIAL VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_OFICIAL)') ,
+ OP_CLIENTE VARCHAR(24)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_CLIENTE)') ,
+ OP_CIUDAD DECIMAL(4, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CIUDAD') ,
+ OP_OFICINA DECIMAL(5, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_OFICINA') ,
+ OP_MONEDA DECIMAL(1, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_MONEDA') ,
+ OP_SECTOR_CONTABLE VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_SECTOR_CONTABLE') ,
+ OP_SECTOR_REAL VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_SECTOR_REAL') ,
+ OP_DESTINO VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_DESTINO)') ,
+ OP_TIPO_OPER VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPO_OPER') ,
+ OP_CATEG_CONT VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CATEG_CONT') ,
+ OP_CATEGORIA_OPER VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CATEGORIA_OPER') ,
+ OP_CLASE_GTIA VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CLASE_GTIA') ,
+ OP_TIPO_CARTERA VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPO_CARTERA') ,
+ OP_TIPO_TRAMITE VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPO_TRAMITE') ,
+ OP_FECHA_INI VARCHAR(8)  SET( "ui_mapping_text" = 'ifthenelse(PTOPERAC_1.OP_FECHA_INI = \'        \',NULL, PTOPERAC_1.OP_FECHA_INI)') ,
+ OP_FECHA_FIN VARCHAR(8)  SET( "ui_mapping_text" = 'ifthenelse(PTOPERAC_1.OP_FECHA_FIN = \'        \',NULL, PTOPERAC_1.OP_FECHA_FIN)') ,
+ OP_FECHA_FIN_LEGAL VARCHAR(8)  SET( "ui_mapping_text" = 'ifthenelse(PTOPERAC_1.OP_FECHA_FIN_LEGAL = \'        \',NULL, PTOPERAC_1.OP_FECHA_FIN_LEGAL)') ,
+ OP_FECHA_CAS VARCHAR(8)  SET( "ui_mapping_text" = 'ifthenelse(PTOPERAC_1.OP_FECHA_CAS = \'        \',NULL, PTOPERAC_1.OP_FECHA_CAS)') ,
+ OP_FECHA_PAG VARCHAR(8)  SET( "ui_mapping_text" = 'ifthenelse(PTOPERAC_1.OP_FECHA_PAG = \'        \',NULL, PTOPERAC_1.OP_FECHA_PAG)') ,
+ OP_FECHA_CAN VARCHAR(8)  SET( "ui_mapping_text" = 'ifthenelse(PTOPERAC_1.OP_FECHA_CAN = \'        \',NULL, PTOPERAC_1.OP_FECHA_CAN)') ,
+ OP_PLAZO DECIMAL(4, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_PLAZO') ,
+ OP_TOTAL_CUOTAS DECIMAL(3, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TOTAL_CUOTAS') ,
+ OP_TIPO_AMORTIZ VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_TIPO_AMORTIZ)') ,
+ OP_GRACIA_CAP DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_GRACIA_CAP') ,
+ OP_GRACIA_INT DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_GRACIA_INT') ,
+ OP_PERIODO_CAP DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_PERIODO_CAP') ,
+ OP_PERIODO_INT DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_PERIODO_INT') ,
+ OP_MOROSIDAD_CAP DECIMAL(5, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_MOROSIDAD_CAP') ,
+ OP_MOROSIDAD_INT DECIMAL(5, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_MOROSIDAD_INT') ,
+ OP_TASA_ORIGINAL DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TASA_ORIGINAL') ,
+ OP_TASA_ACTUAL DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TASA_ACTUAL') ,
+ OP_TASA_REF DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TASA_REF') ,
+ OP_TASA_EFECTIVA DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TASA_EFECTIVA') ,
+ OP_FORMA_REAJUSTE VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FORMA_REAJUSTE') ,
+ OP_ORIGEN_FONDOS VARCHAR(5)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_ORIGEN_FONDOS)') ,
+ OP_VALOR_ORIGINAL DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_VALOR_ORIGINAL') ,
+ OP_SALDO_CAPITAL DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_SALDO_CAPITAL') ,
+ OP_DESEMBOLSOS DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_DESEMBOLSOS') ,
+ OP_CAPITAL_VCDO DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CAPITAL_VCDO') ,
+ OP_CAPITAL_MORA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CAPITAL_MORA') ,
+ OP_SALDO_INTERES DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_SALDO_INTERES') ,
+ OP_INTERES_VCDO DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_INTERES_VCDO') ,
+ OP_INTERES_MORA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_INTERES_MORA') ,
+ OP_RIESGO DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RIESGO') ,
+ OP_ABONO_PEND DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_ABONO_PEND') ,
+ OP_VAL_ACTUAL_GTIA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_VAL_ACTUAL_GTIA') ,
+ OP_VAL_REAL_GTIA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_VAL_REAL_GTIA') ,
+ OP_COB_ACTUAL_GTIA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_COB_ACTUAL_GTIA') ,
+ OP_COB_REAL_GTIA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_COB_REAL_GTIA') ,
+ OP_GARANTIA_INSCRITA VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_GARANTIA_INSCRITA') ,
+ OP_GARANTE_CART_PIG VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_GARANTE_CART_PIG') ,
+ OP_TIPO_CERTIFICADO VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPO_CERTIFICADO') ,
+ OP_FACTOR_MLO DECIMAL(8, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FACTOR_MLO / 1000') ,
+ OP_ESTADO_OPER VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_ESTADO_OPER)') ,
+ OP_USUARIO_MODIF VARCHAR(14)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_USUARIO_MODIF)') ,
+ OP_FECHA_MODIF VARCHAR(8)  SET( "ui_mapping_text" = 'ifthenelse(PTOPERAC_1.OP_FECHA_MODIF = \'        \',NULL, PTOPERAC_1.OP_FECHA_MODIF)') ,
+ OP_MORA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_MORA') ,
+ OP_TASA_MORA DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TASA_MORA') ,
+ OP_CUOTAS_MORA DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CUOTAS_MORA') ,
+ OP_CALIFICACION VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_CALIFICACION)') ,
+ OP_RANGO_PLAZO DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RANGO_PLAZO') ,
+ OP_RANGO_MORA_CAP DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RANGO_MORA_CAP') ,
+ OP_RANGO_MORA_INT DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RANGO_MORA_INT') ,
+ OP_RESERVA_REQUERIDA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RESERVA_REQUERIDA') ,
+ OP_RESERVA_CONSTITUIDA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RESERVA_CONSTITUIDA') ,
+ OP_DEDUCCIONES DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_DEDUCCIONES') ,
+ OP_COBERTURA_GTIA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_COBERTURA_GTIA') ,
+ OP_ETAPA_COBRO VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_ETAPA_COBRO)') ,
+ OP_CALIF_ANT VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_CALIF_ANT)') ,
+ OP_RES_REQUE_ANT DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RES_REQUE_ANT') ,
+ OP_RES_CONST_ANT DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RES_CONST_ANT') ,
+ OP_RESULTADO_CALIF DECIMAL(1, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RESULTADO_CALIF') ,
+ OP_TIPO_MOROSIDAD DECIMAL(1, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPO_MOROSIDAD') ,
+ OP_RANGO_MOROSIDAD DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RANGO_MOROSIDAD') ,
+ OP_RANGO_SALDO_TOTAL DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RANGO_SALDO_TOTAL') ,
+ OP_TIPO_OPER_SSF VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_TIPO_OPER_SSF)') ,
+ OP_DESTINO_OPER_SSF VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_DESTINO_OPER_SSF)') ,
+ OP_RANGO_PLAZO_FALTANTE DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RANGO_PLAZO_FALTANTE') ,
+ OP_TIPO_LINEA_CR VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_TIPO_LINEA_CR)') ,
+ OP_CUENTA_CAP VARCHAR(20)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_CUENTA_CAP)') ,
+ OP_CUENTA_INT VARCHAR(20)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_CUENTA_INT)') ,
+ OP_CUOTA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CUOTA') ,
+ OP_NUM_LINEA DECIMAL(4, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_NUM_LINEA') ,
+ OP_OPERACION_CANCELO VARCHAR(24)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_OPERACION_CANCELO)') ,
+ OP_CLASE_GASTO VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_CLASE_GASTO)') ,
+ OP_UNIDAD_MEDIDA VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_UNIDAD_MEDIDA)') ,
+ OP_CANTIDAD_FINANCIADAS DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CANTIDAD_FINANCIADAS') ,
+ OP_TRAMITE DECIMAL(4, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TRAMITE') ,
+ OP_CUPOS_TERCEROS VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_CUPOS_TERCEROS)') ,
+ OP_ULT_PAGCAP VARCHAR(8)  SET( "ui_mapping_text" = 'ifthenelse(PTOPERAC_1.OP_ULT_PAGCAP = \'        \',NULL, PTOPERAC_1.OP_ULT_PAGCAP)') ,
+ OP_ULT_PAGINT VARCHAR(8)  SET( "ui_mapping_text" = 'ifthenelse(PTOPERAC_1.OP_ULT_PAGINT = \'        \',NULL, PTOPERAC_1.OP_ULT_PAGINT)') ,
+ OP_FULT_REAJ VARCHAR(8)  SET( "ui_mapping_text" = 'ifthenelse(PTOPERAC_1.OP_FULT_REAJ = \'        \',NULL, PTOPERAC_1.OP_FULT_REAJ)') ,
+ OP_FECHA_ESCRITURACION VARCHAR(8)  SET( "ui_mapping_text" = 'ifthenelse(PTOPERAC_1.OP_FECHA_ESCRITURACION = \'        \',NULL, PTOPERAC_1.OP_FECHA_ESCRITURACION)') ,
+ OP_FECHA_DESDE_MORA_CAP VARCHAR(8)  SET( "ui_mapping_text" = 'ifthenelse(PTOPERAC_1.OP_FECHA_DESDE_MORA_CAP = \'        \',NULL, PTOPERAC_1.OP_FECHA_DESDE_MORA_CAP)') ,
+ OP_FECHA_DESDE_MORA_INTS VARCHAR(8)  SET( "ui_mapping_text" = 'ifthenelse(PTOPERAC_1.OP_FECHA_DESDE_MORA_INTS = \'        \',NULL, PTOPERAC_1.OP_FECHA_DESDE_MORA_INTS)') ,
+ OP_CUOT_MOCAP DECIMAL(5, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CUOT_MOCAP') ,
+ OP_CUOT_MOINT DECIMAL(5, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CUOT_MOINT') ,
+ OP_PAGO_ADECAP DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_PAGO_ADECAP') ,
+ OP_CUOTAS_PAG DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CUOTAS_PAG') ,
+ OP_DIAS_ANIO DECIMAL(3, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_DIAS_ANIO') ,
+ OP_FECPROXCUO VARCHAR(8)  SET( "ui_mapping_text" = 'ifthenelse(PTOPERAC_1.OP_FECPROXCUO = \'        \',NULL, PTOPERAC_1.OP_FECPROXCUO)') ,
+ OP_CLABAS VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_CLABAS)') ,
+ OP_VAL_GTIA_HIPO DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_VAL_GTIA_HIPO') ,
+ OP_VAL_GTIA_OTRAS DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_VAL_GTIA_OTRAS') ,
+ OP_RIESGOS_A_RVA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RIESGOS_A_RVA') ,
+ OP_MONTO_SEGURO DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_MONTO_SEGURO') ,
+ OP_TIPO_PLAZO VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_TIPO_PLAZO)') ,
+ OP_MODIFICADO VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_MODIFICADO') ,
+ OP_TIPO_DIVIDENDO VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_TIPO_DIVIDENDO)') ,
+ OP_RIESGO_A_RVA_ANT DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RIESGO_A_RVA_ANT') ,
+ OP_TASA_INI DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TASA_INI') ,
+ OP_DIAS_PRORROGA DECIMAL(4, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_DIAS_PRORROGA') ,
+ OP_FECHA_INI_PRORR VARCHAR(8)  SET( "ui_mapping_text" = 'ifthenelse(PTOPERAC_1.OP_FECHA_INI_PRORR = \'        \',NULL, PTOPERAC_1.OP_FECHA_INI_PRORR)') ,
+ OP_TIPO_TASA_REFERENCIA VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_TIPO_TASA_REFERENCIA)') ,
+ OP_FECHA_PROX_REAJUSTE VARCHAR(8)  SET( "ui_mapping_text" = 'ifthenelse(PTOPERAC_1.OP_FECHA_PROX_REAJUSTE = \'        \',NULL, PTOPERAC_1.OP_FECHA_PROX_REAJUSTE)') ,
+ OP_TIPOTC VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPOTC') ,
+ OP_CLASETC VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CLASETC') ,
+ OP_PRODUCTOTC VARCHAR(20)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_PRODUCTOTC)') ,
+ VEHICULO_LEGAL VARCHAR(3)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.VEHICULO_LEGAL)') ,
+ EPP_POST_ACCOUNT VARCHAR(19)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.EPP_POST_ACCOUNT)') ,
+ OP_STATUS VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_STATUS') ,
+ CODBLQ1 DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.CODBLQ1') ,
+ CODBLQ2 DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.CODBLQ2') ,
+ FECBLQ1 VARCHAR(8)  SET( "ui_mapping_text" = 'ifthenelse(PTOPERAC_1.FECBLQ1 = \'        \',NULL, PTOPERAC_1.FECBLQ1)') ,
+ FECBLQ2 VARCHAR(8)  SET( "ui_mapping_text" = 'ifthenelse(PTOPERAC_1.FECBLQ2 = \'        \',NULL, PTOPERAC_1.FECBLQ2)') ,
+ LOGO VARCHAR(4)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.LOGO)') ,
+ LOAD_DATE DATE  SET( "ui_mapping_text" = 'sysdate()')  )
+ AS
+SELECT PTOPERAC_1.OP_FECHA_CORTE, PTOPERAC_1.OP_FILIAL, PTOPERAC_1.OP_PRODUCTO, PTOPERAC_1.OP_OPERACION, cf_trim(PTOPERAC_1.OP_NUM_OP_IFI), cf_trim(PTOPERAC_1.OP_OFICIAL), cf_trim(PTOPERAC_1.OP_CLIENTE), PTOPERAC_1.OP_CIUDAD, PTOPERAC_1.OP_OFICINA, PTOPERAC_1.OP_MONEDA, PTOPERAC_1.OP_SECTOR_CONTABLE, PTOPERAC_1.OP_SECTOR_REAL, cf_trim(PTOPERAC_1.OP_DESTINO), PTOPERAC_1.OP_TIPO_OPER, PTOPERAC_1.OP_CATEG_CONT, PTOPERAC_1.OP_CATEGORIA_OPER, PTOPERAC_1.OP_CLASE_GTIA, PTOPERAC_1.OP_TIPO_CARTERA, PTOPERAC_1.OP_TIPO_TRAMITE, ifthenelse((PTOPERAC_1.OP_FECHA_INI = '        '),  NULL , PTOPERAC_1.OP_FECHA_INI), ifthenelse((PTOPERAC_1.OP_FECHA_FIN = '        '),  NULL , PTOPERAC_1.OP_FECHA_FIN), ifthenelse((PTOPERAC_1.OP_FECHA_FIN_LEGAL = '        '),  NULL , PTOPERAC_1.OP_FECHA_FIN_LEGAL), ifthenelse((PTOPERAC_1.OP_FECHA_CAS = '        '),  NULL , PTOPERAC_1.OP_FECHA_CAS), ifthenelse((PTOPERAC_1.OP_FECHA_PAG = '        '),  NULL , PTOPERAC_1.OP_FECHA_PAG), ifthenelse((PTOPERAC_1.OP_FECHA_CAN = '        '),  NULL , PTOPERAC_1.OP_FECHA_CAN), PTOPERAC_1.OP_PLAZO, PTOPERAC_1.OP_TOTAL_CUOTAS, cf_trim(PTOPERAC_1.OP_TIPO_AMORTIZ), PTOPERAC_1.OP_GRACIA_CAP, PTOPERAC_1.OP_GRACIA_INT, PTOPERAC_1.OP_PERIODO_CAP, PTOPERAC_1.OP_PERIODO_INT, PTOPERAC_1.OP_MOROSIDAD_CAP, PTOPERAC_1.OP_MOROSIDAD_INT, PTOPERAC_1.OP_TASA_ORIGINAL, PTOPERAC_1.OP_TASA_ACTUAL, PTOPERAC_1.OP_TASA_REF, PTOPERAC_1.OP_TASA_EFECTIVA, PTOPERAC_1.OP_FORMA_REAJUSTE, cf_trim(PTOPERAC_1.OP_ORIGEN_FONDOS), PTOPERAC_1.OP_VALOR_ORIGINAL, PTOPERAC_1.OP_SALDO_CAPITAL, PTOPERAC_1.OP_DESEMBOLSOS, PTOPERAC_1.OP_CAPITAL_VCDO, PTOPERAC_1.OP_CAPITAL_MORA, PTOPERAC_1.OP_SALDO_INTERES, PTOPERAC_1.OP_INTERES_VCDO, PTOPERAC_1.OP_INTERES_MORA, PTOPERAC_1.OP_RIESGO, PTOPERAC_1.OP_ABONO_PEND, PTOPERAC_1.OP_VAL_ACTUAL_GTIA, PTOPERAC_1.OP_VAL_REAL_GTIA, PTOPERAC_1.OP_COB_ACTUAL_GTIA, PTOPERAC_1.OP_COB_REAL_GTIA, PTOPERAC_1.OP_GARANTIA_INSCRITA, PTOPERAC_1.OP_GARANTE_CART_PIG, PTOPERAC_1.OP_TIPO_CERTIFICADO, (PTOPERAC_1.OP_FACTOR_MLO / 1000), cf_trim(PTOPERAC_1.OP_ESTADO_OPER), cf_trim(PTOPERAC_1.OP_USUARIO_MODIF), ifthenelse((PTOPERAC_1.OP_FECHA_MODIF = '        '),  NULL , PTOPERAC_1.OP_FECHA_MODIF), PTOPERAC_1.OP_MORA, PTOPERAC_1.OP_TASA_MORA, PTOPERAC_1.OP_CUOTAS_MORA, cf_trim(PTOPERAC_1.OP_CALIFICACION), PTOPERAC_1.OP_RANGO_PLAZO, PTOPERAC_1.OP_RANGO_MORA_CAP, PTOPERAC_1.OP_RANGO_MORA_INT, PTOPERAC_1.OP_RESERVA_REQUERIDA, PTOPERAC_1.OP_RESERVA_CONSTITUIDA, PTOPERAC_1.OP_DEDUCCIONES, PTOPERAC_1.OP_COBERTURA_GTIA, cf_trim(PTOPERAC_1.OP_ETAPA_COBRO), cf_trim(PTOPERAC_1.OP_CALIF_ANT), PTOPERAC_1.OP_RES_REQUE_ANT, PTOPERAC_1.OP_RES_CONST_ANT, PTOPERAC_1.OP_RESULTADO_CALIF, PTOPERAC_1.OP_TIPO_MOROSIDAD, PTOPERAC_1.OP_RANGO_MOROSIDAD, PTOPERAC_1.OP_RANGO_SALDO_TOTAL, cf_trim(PTOPERAC_1.OP_TIPO_OPER_SSF), cf_trim(PTOPERAC_1.OP_DESTINO_OPER_SSF), PTOPERAC_1.OP_RANGO_PLAZO_FALTANTE, cf_trim(PTOPERAC_1.OP_TIPO_LINEA_CR), cf_trim(PTOPERAC_1.OP_CUENTA_CAP), cf_trim(PTOPERAC_1.OP_CUENTA_INT), PTOPERAC_1.OP_CUOTA, PTOPERAC_1.OP_NUM_LINEA, cf_trim(PTOPERAC_1.OP_OPERACION_CANCELO), cf_trim(PTOPERAC_1.OP_CLASE_GASTO), cf_trim(PTOPERAC_1.OP_UNIDAD_MEDIDA), PTOPERAC_1.OP_CANTIDAD_FINANCIADAS, PTOPERAC_1.OP_TRAMITE, cf_trim(PTOPERAC_1.OP_CUPOS_TERCEROS), ifthenelse((PTOPERAC_1.OP_ULT_PAGCAP = '        '),  NULL , PTOPERAC_1.OP_ULT_PAGCAP), ifthenelse((PTOPERAC_1.OP_ULT_PAGINT = '        '),  NULL , PTOPERAC_1.OP_ULT_PAGINT), ifthenelse((PTOPERAC_1.OP_FULT_REAJ = '        '),  NULL , PTOPERAC_1.OP_FULT_REAJ), ifthenelse((PTOPERAC_1.OP_FECHA_ESCRITURACION = '        '),  NULL , PTOPERAC_1.OP_FECHA_ESCRITURACION), ifthenelse((PTOPERAC_1.OP_FECHA_DESDE_MORA_CAP = '        '),  NULL , PTOPERAC_1.OP_FECHA_DESDE_MORA_CAP), ifthenelse((PTOPERAC_1.OP_FECHA_DESDE_MORA_INTS = '        '),  NULL , PTOPERAC_1.OP_FECHA_DESDE_MORA_INTS), PTOPERAC_1.OP_CUOT_MOCAP, PTOPERAC_1.OP_CUOT_MOINT, PTOPERAC_1.OP_PAGO_ADECAP, PTOPERAC_1.OP_CUOTAS_PAG, PTOPERAC_1.OP_DIAS_ANIO, ifthenelse((PTOPERAC_1.OP_FECPROXCUO = '        '),  NULL , PTOPERAC_1.OP_FECPROXCUO), cf_trim(PTOPERAC_1.OP_CLABAS), PTOPERAC_1.OP_VAL_GTIA_HIPO, PTOPERAC_1.OP_VAL_GTIA_OTRAS, PTOPERAC_1.OP_RIESGOS_A_RVA, PTOPERAC_1.OP_MONTO_SEGURO, cf_trim(PTOPERAC_1.OP_TIPO_PLAZO), PTOPERAC_1.OP_MODIFICADO, cf_trim(PTOPERAC_1.OP_TIPO_DIVIDENDO), PTOPERAC_1.OP_RIESGO_A_RVA_ANT, PTOPERAC_1.OP_TASA_INI, PTOPERAC_1.OP_DIAS_PRORROGA, ifthenelse((PTOPERAC_1.OP_FECHA_INI_PRORR = '        '),  NULL , PTOPERAC_1.OP_FECHA_INI_PRORR), cf_trim(PTOPERAC_1.OP_TIPO_TASA_REFERENCIA), ifthenelse((PTOPERAC_1.OP_FECHA_PROX_REAJUSTE = '        '),  NULL , PTOPERAC_1.OP_FECHA_PROX_REAJUSTE), PTOPERAC_1.OP_TIPOTC, PTOPERAC_1.OP_CLASETC, cf_trim(PTOPERAC_1.OP_PRODUCTOTC), cf_trim(PTOPERAC_1.VEHICULO_LEGAL), cf_trim(PTOPERAC_1.EPP_POST_ACCOUNT), PTOPERAC_1.OP_STATUS, PTOPERAC_1.CODBLQ1, PTOPERAC_1.CODBLQ2, ifthenelse((PTOPERAC_1.FECBLQ1 = '        '),  NULL , PTOPERAC_1.FECBLQ1), ifthenelse((PTOPERAC_1.FECBLQ2 = '        '),  NULL , PTOPERAC_1.FECBLQ2), cf_trim(PTOPERAC_1.LOGO), sysdate() FROM PTOPERAC_1 
+SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
+;
+
+ALGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>432</CX><CY>-189</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-180</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '42', "ui_display_name" = 'PTOPERAC(DS_TARGET.STG_SAT)', "x" = '959', "y" = '-88')
+GUID::'b8e1c783-e586-4558-a1f0-a3095f24d5ec' LOAD TABLE DS_TARGET.STG_SAT.PTOPERAC INPUT(Query)
 SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
 <LDRConfigurations>
 <LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
@@ -3096,144 +3232,6 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 <sql_text></sql_text>
 </LDRConfiguration>
 </LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
-
-ALGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Name" = '294', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-170</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-175</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '50', "ui_acta_from_schema_0" = 'PTOPERAC_1', "x" = '480', "y" = '-90')
-GUID::'ba8bdabd-0f62-4172-8d8e-d06bab7feddf' CREATE VIEW Query( OP_FECHA_CORTE DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_CORTE') ,
- OP_FILIAL DECIMAL(1, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FILIAL') ,
- OP_PRODUCTO DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_PRODUCTO') ,
- OP_OPERACION DECIMAL(10, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_OPERACION') ,
- OP_NUM_OP_IFI VARCHAR(20)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_NUM_OP_IFI)') ,
- OP_OFICIAL VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_OFICIAL)') ,
- OP_CLIENTE VARCHAR(24)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_CLIENTE)') ,
- OP_CIUDAD DECIMAL(4, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CIUDAD') ,
- OP_OFICINA DECIMAL(5, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_OFICINA') ,
- OP_MONEDA DECIMAL(1, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_MONEDA') ,
- OP_SECTOR_CONTABLE VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_SECTOR_CONTABLE') ,
- OP_SECTOR_REAL VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_SECTOR_REAL') ,
- OP_DESTINO VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_DESTINO)') ,
- OP_TIPO_OPER VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPO_OPER') ,
- OP_CATEG_CONT VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CATEG_CONT') ,
- OP_CATEGORIA_OPER VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CATEGORIA_OPER') ,
- OP_CLASE_GTIA VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CLASE_GTIA') ,
- OP_TIPO_CARTERA VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPO_CARTERA') ,
- OP_TIPO_TRAMITE VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPO_TRAMITE') ,
- OP_FECHA_INI DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_INI') ,
- OP_FECHA_FIN DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_FIN') ,
- OP_FECHA_FIN_LEGAL DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_FIN_LEGAL') ,
- OP_FECHA_CAS DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_CAS') ,
- OP_FECHA_PAG DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_PAG') ,
- OP_FECHA_CAN DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_CAN') ,
- OP_PLAZO DECIMAL(4, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_PLAZO') ,
- OP_TOTAL_CUOTAS DECIMAL(3, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TOTAL_CUOTAS') ,
- OP_TIPO_AMORTIZ VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_TIPO_AMORTIZ)') ,
- OP_GRACIA_CAP DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_GRACIA_CAP') ,
- OP_GRACIA_INT DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_GRACIA_INT') ,
- OP_PERIODO_CAP DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_PERIODO_CAP') ,
- OP_PERIODO_INT DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_PERIODO_INT') ,
- OP_MOROSIDAD_CAP DECIMAL(5, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_MOROSIDAD_CAP') ,
- OP_MOROSIDAD_INT DECIMAL(5, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_MOROSIDAD_INT') ,
- OP_TASA_ORIGINAL DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TASA_ORIGINAL') ,
- OP_TASA_ACTUAL DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TASA_ACTUAL') ,
- OP_TASA_REF DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TASA_REF') ,
- OP_TASA_EFECTIVA DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TASA_EFECTIVA') ,
- OP_FORMA_REAJUSTE VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FORMA_REAJUSTE') ,
- OP_ORIGEN_FONDOS VARCHAR(5)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_ORIGEN_FONDOS)') ,
- OP_VALOR_ORIGINAL DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_VALOR_ORIGINAL') ,
- OP_SALDO_CAPITAL DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_SALDO_CAPITAL') ,
- OP_DESEMBOLSOS DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_DESEMBOLSOS') ,
- OP_CAPITAL_VCDO DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CAPITAL_VCDO') ,
- OP_CAPITAL_MORA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CAPITAL_MORA') ,
- OP_SALDO_INTERES DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_SALDO_INTERES') ,
- OP_INTERES_VCDO DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_INTERES_VCDO') ,
- OP_INTERES_MORA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_INTERES_MORA') ,
- OP_RIESGO DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RIESGO') ,
- OP_ABONO_PEND DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_ABONO_PEND') ,
- OP_VAL_ACTUAL_GTIA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_VAL_ACTUAL_GTIA') ,
- OP_VAL_REAL_GTIA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_VAL_REAL_GTIA') ,
- OP_COB_ACTUAL_GTIA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_COB_ACTUAL_GTIA') ,
- OP_COB_REAL_GTIA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_COB_REAL_GTIA') ,
- OP_GARANTIA_INSCRITA VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_GARANTIA_INSCRITA') ,
- OP_GARANTE_CART_PIG VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_GARANTE_CART_PIG') ,
- OP_TIPO_CERTIFICADO VARCHAR(2)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPO_CERTIFICADO') ,
- OP_FACTOR_MLO DECIMAL(8, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FACTOR_MLO') ,
- OP_ESTADO_OPER VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_ESTADO_OPER)') ,
- OP_USUARIO_MODIF VARCHAR(14)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_USUARIO_MODIF)') ,
- OP_FECHA_MODIF DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_MODIF') ,
- OP_MORA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_MORA') ,
- OP_TASA_MORA DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TASA_MORA') ,
- OP_CUOTAS_MORA DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CUOTAS_MORA') ,
- OP_CALIFICACION VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_CALIFICACION)') ,
- OP_RANGO_PLAZO DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RANGO_PLAZO') ,
- OP_RANGO_MORA_CAP DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RANGO_MORA_CAP') ,
- OP_RANGO_MORA_INT DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RANGO_MORA_INT') ,
- OP_RESERVA_REQUERIDA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RESERVA_REQUERIDA') ,
- OP_RESERVA_CONSTITUIDA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RESERVA_CONSTITUIDA') ,
- OP_DEDUCCIONES DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_DEDUCCIONES') ,
- OP_COBERTURA_GTIA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_COBERTURA_GTIA') ,
- OP_ETAPA_COBRO VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_ETAPA_COBRO)') ,
- OP_CALIF_ANT VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_CALIF_ANT)') ,
- OP_RES_REQUE_ANT DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RES_REQUE_ANT') ,
- OP_RES_CONST_ANT DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RES_CONST_ANT') ,
- OP_RESULTADO_CALIF DECIMAL(1, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RESULTADO_CALIF') ,
- OP_TIPO_MOROSIDAD DECIMAL(1, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPO_MOROSIDAD') ,
- OP_RANGO_MOROSIDAD DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RANGO_MOROSIDAD') ,
- OP_RANGO_SALDO_TOTAL DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RANGO_SALDO_TOTAL') ,
- OP_TIPO_OPER_SSF VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_TIPO_OPER_SSF)') ,
- OP_DESTINO_OPER_SSF VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_DESTINO_OPER_SSF)') ,
- OP_RANGO_PLAZO_FALTANTE DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RANGO_PLAZO_FALTANTE') ,
- OP_TIPO_LINEA_CR VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_TIPO_LINEA_CR)') ,
- OP_CUENTA_CAP VARCHAR(20)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_CUENTA_CAP)') ,
- OP_CUENTA_INT VARCHAR(20)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_CUENTA_INT)') ,
- OP_CUOTA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CUOTA') ,
- OP_NUM_LINEA DECIMAL(4, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_NUM_LINEA') ,
- OP_OPERACION_CANCELO VARCHAR(24)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_OPERACION_CANCELO)') ,
- OP_CLASE_GASTO VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_CLASE_GASTO)') ,
- OP_UNIDAD_MEDIDA VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_UNIDAD_MEDIDA)') ,
- OP_CANTIDAD_FINANCIADAS DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CANTIDAD_FINANCIADAS') ,
- OP_TRAMITE DECIMAL(4, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TRAMITE') ,
- OP_CUPOS_TERCEROS VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_CUPOS_TERCEROS)') ,
- OP_ULT_PAGCAP DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_ULT_PAGCAP') ,
- OP_ULT_PAGINT DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_ULT_PAGINT') ,
- OP_FULT_REAJ DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FULT_REAJ') ,
- OP_FECHA_ESCRITURACION DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_ESCRITURACION') ,
- OP_FECHA_DESDE_MORA_CAP DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_DESDE_MORA_CAP') ,
- OP_FECHA_DESDE_MORA_INTS DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_DESDE_MORA_INTS') ,
- OP_CUOT_MOCAP DECIMAL(5, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CUOT_MOCAP') ,
- OP_CUOT_MOINT DECIMAL(5, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CUOT_MOINT') ,
- OP_PAGO_ADECAP DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_PAGO_ADECAP') ,
- OP_CUOTAS_PAG DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CUOTAS_PAG') ,
- OP_DIAS_ANIO DECIMAL(3, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_DIAS_ANIO') ,
- OP_FECPROXCUO DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECPROXCUO') ,
- OP_CLABAS VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_CLABAS)') ,
- OP_VAL_GTIA_HIPO DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_VAL_GTIA_HIPO') ,
- OP_VAL_GTIA_OTRAS DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_VAL_GTIA_OTRAS') ,
- OP_RIESGOS_A_RVA DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RIESGOS_A_RVA') ,
- OP_MONTO_SEGURO DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_MONTO_SEGURO') ,
- OP_TIPO_PLAZO VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_TIPO_PLAZO)') ,
- OP_MODIFICADO VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_MODIFICADO') ,
- OP_TIPO_DIVIDENDO VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_TIPO_DIVIDENDO)') ,
- OP_RIESGO_A_RVA_ANT DECIMAL(19, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_RIESGO_A_RVA_ANT') ,
- OP_TASA_INI DECIMAL(6, 4)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TASA_INI') ,
- OP_DIAS_PRORROGA DECIMAL(4, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_DIAS_PRORROGA') ,
- OP_FECHA_INI_PRORR DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_INI_PRORR') ,
- OP_TIPO_TASA_REFERENCIA VARCHAR(10)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_TIPO_TASA_REFERENCIA)') ,
- OP_FECHA_PROX_REAJUSTE DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_FECHA_PROX_REAJUSTE') ,
- OP_TIPOTC VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_TIPOTC') ,
- OP_CLASETC VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_CLASETC') ,
- OP_PRODUCTOTC VARCHAR(20)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.OP_PRODUCTOTC)') ,
- VEHICULO_LEGAL VARCHAR(3)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.VEHICULO_LEGAL)') ,
- EPP_POST_ACCOUNT VARCHAR(19)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.EPP_POST_ACCOUNT)') ,
- OP_STATUS VARCHAR(1)  SET( "ui_mapping_text" = 'PTOPERAC_1.OP_STATUS') ,
- CODBLQ1 DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.CODBLQ1') ,
- CODBLQ2 DECIMAL(2, 0)  SET( "ui_mapping_text" = 'PTOPERAC_1.CODBLQ2') ,
- FECBLQ1 DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.FECBLQ1') ,
- FECBLQ2 DATE  SET( "ui_mapping_text" = 'PTOPERAC_1.FECBLQ2') ,
- LOGO VARCHAR(4)  SET( "ui_mapping_text" = 'CF_TRIM(PTOPERAC_1.LOGO)') ,
- LOAD_DATE DATE  SET( "ui_mapping_text" = 'sysdate()')  )
- AS
-SELECT PTOPERAC_1.OP_FECHA_CORTE, PTOPERAC_1.OP_FILIAL, PTOPERAC_1.OP_PRODUCTO, PTOPERAC_1.OP_OPERACION, cf_trim(PTOPERAC_1.OP_NUM_OP_IFI), cf_trim(PTOPERAC_1.OP_OFICIAL), cf_trim(PTOPERAC_1.OP_CLIENTE), PTOPERAC_1.OP_CIUDAD, PTOPERAC_1.OP_OFICINA, PTOPERAC_1.OP_MONEDA, PTOPERAC_1.OP_SECTOR_CONTABLE, PTOPERAC_1.OP_SECTOR_REAL, cf_trim(PTOPERAC_1.OP_DESTINO), PTOPERAC_1.OP_TIPO_OPER, PTOPERAC_1.OP_CATEG_CONT, PTOPERAC_1.OP_CATEGORIA_OPER, PTOPERAC_1.OP_CLASE_GTIA, PTOPERAC_1.OP_TIPO_CARTERA, PTOPERAC_1.OP_TIPO_TRAMITE, PTOPERAC_1.OP_FECHA_INI, PTOPERAC_1.OP_FECHA_FIN, PTOPERAC_1.OP_FECHA_FIN_LEGAL, PTOPERAC_1.OP_FECHA_CAS, PTOPERAC_1.OP_FECHA_PAG, PTOPERAC_1.OP_FECHA_CAN, PTOPERAC_1.OP_PLAZO, PTOPERAC_1.OP_TOTAL_CUOTAS, cf_trim(PTOPERAC_1.OP_TIPO_AMORTIZ), PTOPERAC_1.OP_GRACIA_CAP, PTOPERAC_1.OP_GRACIA_INT, PTOPERAC_1.OP_PERIODO_CAP, PTOPERAC_1.OP_PERIODO_INT, PTOPERAC_1.OP_MOROSIDAD_CAP, PTOPERAC_1.OP_MOROSIDAD_INT, PTOPERAC_1.OP_TASA_ORIGINAL, PTOPERAC_1.OP_TASA_ACTUAL, PTOPERAC_1.OP_TASA_REF, PTOPERAC_1.OP_TASA_EFECTIVA, PTOPERAC_1.OP_FORMA_REAJUSTE, cf_trim(PTOPERAC_1.OP_ORIGEN_FONDOS), PTOPERAC_1.OP_VALOR_ORIGINAL, PTOPERAC_1.OP_SALDO_CAPITAL, PTOPERAC_1.OP_DESEMBOLSOS, PTOPERAC_1.OP_CAPITAL_VCDO, PTOPERAC_1.OP_CAPITAL_MORA, PTOPERAC_1.OP_SALDO_INTERES, PTOPERAC_1.OP_INTERES_VCDO, PTOPERAC_1.OP_INTERES_MORA, PTOPERAC_1.OP_RIESGO, PTOPERAC_1.OP_ABONO_PEND, PTOPERAC_1.OP_VAL_ACTUAL_GTIA, PTOPERAC_1.OP_VAL_REAL_GTIA, PTOPERAC_1.OP_COB_ACTUAL_GTIA, PTOPERAC_1.OP_COB_REAL_GTIA, PTOPERAC_1.OP_GARANTIA_INSCRITA, PTOPERAC_1.OP_GARANTE_CART_PIG, PTOPERAC_1.OP_TIPO_CERTIFICADO, PTOPERAC_1.OP_FACTOR_MLO, cf_trim(PTOPERAC_1.OP_ESTADO_OPER), cf_trim(PTOPERAC_1.OP_USUARIO_MODIF), PTOPERAC_1.OP_FECHA_MODIF, PTOPERAC_1.OP_MORA, PTOPERAC_1.OP_TASA_MORA, PTOPERAC_1.OP_CUOTAS_MORA, cf_trim(PTOPERAC_1.OP_CALIFICACION), PTOPERAC_1.OP_RANGO_PLAZO, PTOPERAC_1.OP_RANGO_MORA_CAP, PTOPERAC_1.OP_RANGO_MORA_INT, PTOPERAC_1.OP_RESERVA_REQUERIDA, PTOPERAC_1.OP_RESERVA_CONSTITUIDA, PTOPERAC_1.OP_DEDUCCIONES, PTOPERAC_1.OP_COBERTURA_GTIA, cf_trim(PTOPERAC_1.OP_ETAPA_COBRO), cf_trim(PTOPERAC_1.OP_CALIF_ANT), PTOPERAC_1.OP_RES_REQUE_ANT, PTOPERAC_1.OP_RES_CONST_ANT, PTOPERAC_1.OP_RESULTADO_CALIF, PTOPERAC_1.OP_TIPO_MOROSIDAD, PTOPERAC_1.OP_RANGO_MOROSIDAD, PTOPERAC_1.OP_RANGO_SALDO_TOTAL, cf_trim(PTOPERAC_1.OP_TIPO_OPER_SSF), cf_trim(PTOPERAC_1.OP_DESTINO_OPER_SSF), PTOPERAC_1.OP_RANGO_PLAZO_FALTANTE, cf_trim(PTOPERAC_1.OP_TIPO_LINEA_CR), cf_trim(PTOPERAC_1.OP_CUENTA_CAP), cf_trim(PTOPERAC_1.OP_CUENTA_INT), PTOPERAC_1.OP_CUOTA, PTOPERAC_1.OP_NUM_LINEA, cf_trim(PTOPERAC_1.OP_OPERACION_CANCELO), cf_trim(PTOPERAC_1.OP_CLASE_GASTO), cf_trim(PTOPERAC_1.OP_UNIDAD_MEDIDA), PTOPERAC_1.OP_CANTIDAD_FINANCIADAS, PTOPERAC_1.OP_TRAMITE, cf_trim(PTOPERAC_1.OP_CUPOS_TERCEROS), PTOPERAC_1.OP_ULT_PAGCAP, PTOPERAC_1.OP_ULT_PAGINT, PTOPERAC_1.OP_FULT_REAJ, PTOPERAC_1.OP_FECHA_ESCRITURACION, PTOPERAC_1.OP_FECHA_DESDE_MORA_CAP, PTOPERAC_1.OP_FECHA_DESDE_MORA_INTS, PTOPERAC_1.OP_CUOT_MOCAP, PTOPERAC_1.OP_CUOT_MOINT, PTOPERAC_1.OP_PAGO_ADECAP, PTOPERAC_1.OP_CUOTAS_PAG, PTOPERAC_1.OP_DIAS_ANIO, PTOPERAC_1.OP_FECPROXCUO, cf_trim(PTOPERAC_1.OP_CLABAS), PTOPERAC_1.OP_VAL_GTIA_HIPO, PTOPERAC_1.OP_VAL_GTIA_OTRAS, PTOPERAC_1.OP_RIESGOS_A_RVA, PTOPERAC_1.OP_MONTO_SEGURO, cf_trim(PTOPERAC_1.OP_TIPO_PLAZO), PTOPERAC_1.OP_MODIFICADO, cf_trim(PTOPERAC_1.OP_TIPO_DIVIDENDO), PTOPERAC_1.OP_RIESGO_A_RVA_ANT, PTOPERAC_1.OP_TASA_INI, PTOPERAC_1.OP_DIAS_PRORROGA, PTOPERAC_1.OP_FECHA_INI_PRORR, cf_trim(PTOPERAC_1.OP_TIPO_TASA_REFERENCIA), PTOPERAC_1.OP_FECHA_PROX_REAJUSTE, PTOPERAC_1.OP_TIPOTC, PTOPERAC_1.OP_CLASETC, cf_trim(PTOPERAC_1.OP_PRODUCTOTC), cf_trim(PTOPERAC_1.VEHICULO_LEGAL), cf_trim(PTOPERAC_1.EPP_POST_ACCOUNT), PTOPERAC_1.OP_STATUS, PTOPERAC_1.CODBLQ1, PTOPERAC_1.CODBLQ2, PTOPERAC_1.FECBLQ1, PTOPERAC_1.FECBLQ2, cf_trim(PTOPERAC_1.LOGO), sysdate() FROM PTOPERAC_1 
-SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
-;
 
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
@@ -3514,7 +3512,7 @@ SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr
 END
  SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
  AlGUIComment ("ANNOTATION_0" = 'ALGUICOMMENT( x = \'253\', y = \'-486\',ObjectDesc=\'Descripcion: plantilla adaptada para ejecutar esquemas sat.\',UI_DATA_XML=\'<UIDATA><MAINICON><LOCATION><X>-253</X><Y>486</Y></LOCATION><SIZE><CX>0</CX><CY>0</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>1288</CX><CY>200</CY></SIZE><VISIBLE>1</VISIBLE></DESCRIPTION></UIDATA>\' )
-', "ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Dec 13 11:47:05 2018', "ActaValue_3" = 'Tue May  7 14:24:29 2019', "x" = '-1', "y" = '-1')
+', "ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Dec 13 11:47:05 2018', "ActaValue_3" = 'Tue May 28 10:43:07 2019', "x" = '-1', "y" = '-1')
 CREATE SESSION JOB_PPJ::'69a74849-71ea-430c-99c3-1ef19f4cf787'( )
 DECLARE
      $L_EXISTE_JOB INT ;
@@ -3529,7 +3527,7 @@ DECLARE
      GLOBAL $G_FILE_NAME VARCHAR(500) ;
      GLOBAL $G_SH_ROUTE VARCHAR(100) ;
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>228</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI', "ui_script_text" = 'print( \'--version: 70540b2\');
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>228</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI', "ui_script_text" = 'print( \'--version: 9dc9d3b\');
 
 ##INICIALIZACIÓN DE VARIABLES
 $G_JOB_NAME = job_name( );
@@ -3548,17 +3546,17 @@ print( \'+---------------------INICIO: [$G_JOB_NAME]--------------------------�
 
 ', "x" = '260', "y" = '-735')
 BEGIN_SCRIPT
-print('--version: 22e869e');$G_JOB_NAME = job_name();$G_FILE_LOCATION = CF_DEFINE_UBICACION();$G_CURRENT_DATE = RETURN_LOAD_DATE();$G_SH_ROUTE = sql('DS_CONTROL', 'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%SH_ROUTE%\'');print('+---------------------INICIO: [$G_JOB_NAME]--------------------------☺');END
+print('--version: 9dc9d3b');$G_JOB_NAME = job_name();$G_FILE_LOCATION = CF_DEFINE_UBICACION();$G_CURRENT_DATE = RETURN_LOAD_DATE();$G_SH_ROUTE = sql('DS_CONTROL', 'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%SH_ROUTE%\'');print('+---------------------INICIO: [$G_JOB_NAME]--------------------------☺');END
  AlGUIComment ("If_condition" = 'CF_JOBNAME( $G_JOB_NAME,$L_EXISTE_JOB) = 1', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'CDN_JOB', "x" = '835', "y" = '-737')
 IF ((cf_jobname($G_JOB_NAME, $L_EXISTE_JOB) = 1) )
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try4697', "x" = '68', "y" = '-65')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try4697', "x" = '68', "y" = '-65')
 TRY
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>272</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '458', "y" = '-65')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>272</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '458', "y" = '-65')
 CALL PLAN WF_PTPROINT::'8c4cdfa2-fceb-4e96-9b70-8aac68a082e5'();
 END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch4702', "x" = '848', "y" = '-65')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch4702', "x" = '848', "y" = '-65')
 CATCH (210101)
 BEGIN
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Script612', "ui_script_text" = 'CF_EMAIL_NOTIFICATION(\'ERROR EN EJECUCIÓN DE JOB\', error_message( ));', "x" = '859', "y" = '-313')
@@ -3567,133 +3565,133 @@ cf_email_notification('ERROR EN EJECUCIÓN DE JOB', error_message());END
 END
 
 END_TRY
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try5512', "x" = '1216', "y" = '-65')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try5512', "x" = '1216', "y" = '-65')
 TRY
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>275</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1606', "y" = '-65')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>278</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1606', "y" = '-65')
 CALL PLAN WF_PTOCONC::'345d6d47-cb5a-4255-ad50-963b1648f0e6'();
 END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch5516', "x" = '1996', "y" = '-65')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch5516', "x" = '1996', "y" = '-65')
 CATCH (210101)
 BEGIN
 END
 
 END_TRY
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try7976', "x" = '67', "y" = '-295')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try7976', "x" = '67', "y" = '-295')
 TRY
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>272</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '457', "y" = '-295')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>272</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '457', "y" = '-295')
 CALL PLAN WF_PTOCOPS::'4049bc6a-d7b0-4dc0-9ceb-fe71aa9f8af0'();
 END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch7980', "x" = '847', "y" = '-295')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch7980', "x" = '847', "y" = '-295')
 CATCH (210101)
 BEGIN
 END
 
 END_TRY
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try10333', "x" = '1219', "y" = '-295')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try10333', "x" = '1219', "y" = '-295')
 TRY
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>288</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1609', "y" = '-295')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>282</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1609', "y" = '-295')
 CALL PLAN WF_PTCREBAL::'7fe1137e-79ab-43df-8273-aac07840bc7c'();
 END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>235</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch10337', "x" = '1999', "y" = '-295')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch10337', "x" = '1999', "y" = '-295')
 CATCH (210101)
 BEGIN
 END
 
 END_TRY
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try12678', "x" = '61', "y" = '-518')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try12678', "x" = '61', "y" = '-518')
 TRY
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>294</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '451', "y" = '-518')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>294</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '451', "y" = '-518')
 CALL PLAN WF_PTCHARGE::'dfd7c910-7362-4cc3-82c7-29a1026e4ded'();
 END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>235</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch12682', "x" = '841', "y" = '-518')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch12682', "x" = '841', "y" = '-518')
 CATCH (210101)
 BEGIN
 END
 
 END_TRY
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try14949', "x" = '1218', "y" = '-516')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try14949', "x" = '1218', "y" = '-516')
 TRY
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>269</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1608', "y" = '-516')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>275</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1608', "y" = '-516')
 CALL PLAN WF_PTDEDEIN::'970e2d63-c7b9-49cf-99b2-7760cd2f5c5e'();
 END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>235</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch14953', "x" = '1998', "y" = '-516')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch14953', "x" = '1998', "y" = '-516')
 CATCH (210101)
 BEGIN
 END
 
 END_TRY
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try17400', "x" = '55', "y" = '-785')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try17400', "x" = '55', "y" = '-785')
 TRY
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>278</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '416', "y" = '-785')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>278</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '416', "y" = '-785')
 CALL PLAN WF_PTMOINTR::'9f6b66ba-4890-4a5b-a95a-68b01b01e436'();
 END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>235</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch17404', "x" = '806', "y" = '-785')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch17404', "x" = '806', "y" = '-785')
 CATCH (210101)
 BEGIN
 END
 
 END_TRY
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try21935', "x" = '1220', "y" = '-785')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try21935', "x" = '1220', "y" = '-785')
 TRY
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>269</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1610', "y" = '-785')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>275</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1610', "y" = '-785')
 CALL PLAN WF_PTREDEIN::'40fb17ef-79c3-47da-b92d-555b41caaed6'();
 END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>235</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch21939', "x" = '2000', "y" = '-785')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch21939', "x" = '2000', "y" = '-785')
 CATCH (210101)
 BEGIN
 END
 
 END_TRY
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try24255', "x" = '55', "y" = '-1043')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try24255', "x" = '55', "y" = '-1043')
 TRY
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>269</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '470', "y" = '-1043')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>269</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '470', "y" = '-1043')
 CALL PLAN WF_PTCTRIRE::'2592f892-a8bf-41a6-bbce-2d26f9f6d2a3'();
 END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>235</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch24259', "x" = '860', "y" = '-1043')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch24259', "x" = '860', "y" = '-1043')
 CATCH (210101)
 BEGIN
 END
 
 END_TRY
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try26713', "x" = '1215', "y" = '-1043')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try26713', "x" = '1215', "y" = '-1043')
 TRY
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>291</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1605', "y" = '-1043')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>288</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1605', "y" = '-1043')
 CALL PLAN WF_PTREFMAS::'eafd22eb-536b-43eb-a7d7-b6f89bff6060'();
 END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>235</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch26717', "x" = '1995', "y" = '-1043')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch26717', "x" = '1995', "y" = '-1043')
 CATCH (210101)
 BEGIN
 END
 
 END_TRY
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try29050', "x" = '75', "y" = '-1315')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try29050', "x" = '75', "y" = '-1315')
 TRY
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>291</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '465', "y" = '-1315')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>291</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '465', "y" = '-1315')
 CALL PLAN WF_PTOPERAC::'27c3f898-c551-4a09-97ef-52cd83a8ca16'();
 END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>235</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch29054', "x" = '855', "y" = '-1315')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch29054', "x" = '855', "y" = '-1315')
 CATCH (210101)
 BEGIN
 END
 
 END_TRY
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try38121', "x" = '1221', "y" = '-1313')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try38121', "x" = '1221', "y" = '-1313')
 TRY
 BEGIN
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>291</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1638', "y" = '-1313')
-CALL PLAN WF_PTOPERAC::'27c3f898-c551-4a09-97ef-52cd83a8ca16'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>307</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-195</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1625', "y" = '-1315')
+CALL PLAN WF_PTOPERAC2::'ce313010-bd97-4192-a3be-1865c7f0f64e'();
 END
- AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>235</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch38125', "x" = '2003', "y" = '-1315')
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch38125', "x" = '2003', "y" = '-1315')
 CATCH (210101)
 BEGIN
 END
@@ -3709,8 +3707,6 @@ $L_FECHA = sysdate();sql('DS_CONTROL', 'INSERT INTO LOG_EJECUCION(ERROR_NUMBER, 
 END
 END
  SET ("job_checkpoint_enabled" = 'no', "job_collect_statistics" = 'no', "job_collect_statistics_monitor" = 'no', "job_create_debug_package" = 'no', "job_enable_assemblers" = 'yes', "job_enable_audit" = 'yes', "job_enable_dataquality" = 'yes', "job_export_repo" = 'no', "job_export_reports" = 'no', "job_guid" = '69a74849-71ea-430c-99c3-1ef19f4cf787', "job_isrecoverable" = 'no', "job_mode" = 'Multi-Process', "job_monitor_sample_rate" = '1000', "job_monitor_timer_rate" = '5', "job_name" = 'JOB_PPJ', "job_print_version" = 'no', "job_testmode_enabled" = 'no', "job_trace_abapquery" = 'no', "job_trace_all" = 'no', "job_trace_ascomm" = 'no', "job_trace_assemblers" = 'no', "job_trace_audit" = 'no', "job_trace_dataflow" = 'yes', "job_trace_idoc_file" = 'no', "job_trace_memory_loader" = 'no', "job_trace_memory_reader" = 'no', "job_trace_optimized_dataflow" = 'no', "job_trace_parallel_execution" = 'no', "job_trace_rfc_function" = 'no', "job_trace_row" = 'no', "job_trace_script" = 'no', "job_trace_session" = 'yes', "job_trace_sql_only" = 'no', "job_trace_sqlfunctions" = 'no', "job_trace_sqlloaders" = 'no', "job_trace_sqlreaders" = 'no', "job_trace_sqltransforms" = 'no', "job_trace_stored_procedure" = 'no', "job_trace_table" = 'no', "job_trace_table_reader" = 'no', "job_trace_transform" = 'no', "job_trace_userfunction" = 'no', "job_trace_usertransform" = 'no', "job_trace_workflow" = 'yes', "job_type" = 'batch', "job_use_statistics" = 'yes', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Dec 13 11:46:26 2018')
-CREATE __AL_PROJECT PRJ_SAT JOB_PPJ;
  AlGUIComment ("InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_display_name" = 'PTCHARGE', "x" = '-1', "y" = '-1')
 CREATE FILE DATASTORE PTCHARGE::'a5b3c677-e588-449f-a063-50e915a7bfac'(IDW_DATE DATE  SET( "Format" = 'yyyymmdd') , CUENTA VARCHAR(24) , CIF VARCHAR(24) , NIT VARCHAR(24) , NOMBRE VARCHAR(100) , FECOTOR DATE  SET( "Format" = 'yyyymmdd') , FVENCT DATE  SET( "Format" = 'yyyymmdd') , MONTO DECIMAL(11, 2) , CAPITAL DECIMAL(11, 2) , INTERES DECIMAL(11, 2) , FECVENT DATE  SET( "Format" = 'yyyymmdd') , VEHICULO_LEGAL VARCHAR(3) , ORG VARCHAR(4) )
  SET ("abap_file_format" = 'no', "application_type" = '', "cache" = 'yes', "column_delimiter" = '~', "column_width" = '1', "column_width1" = '24', "column_width10" = '48', "column_width11" = '24', "column_width12" = '3', "column_width13" = '4', "column_width2" = '24', "column_width3" = '24', "column_width4" = '24', "column_width5" = '100', "column_width6" = '24', "column_width7" = '24', "column_width8" = '48', "column_width9" = '48', "date_format" = 'yyyy.mm.dd', "datetime_format" = 'yyyy.mm.dd hh24:mi:ss', "ds_configuration_enabled" = 'no', "file_format" = 'ascii', "file_location" = 'local', "file_name" = '$G_FILE_NAME', "file_type" = 'delimited_file', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>', "name" = 'UNNAMED', "number_of_threads" = '<default>', "read_subfolders" = 'yes', "reader_capture_data_conversion_errors" = 'no', "reader_capture_file_access_errors" = 'yes', "reader_capture_row_format_errors" = 'yes', "reader_capture_string_truncation_errors" = 'no', "reader_log_data_conversion_warnings" = 'yes', "reader_log_row_format_warnings" = 'yes', "reader_log_warnings" = 'yes', "reader_maximum_warnings_to_log" = '-99', "reader_skip_empty_files" = 'yes', "reader_skip_error_handling" = 'no', "reader_write_error_rows_to_file" = 'no', "root_dir" = '$G_FILE_LOCATION', "row_delimiter" = '
@@ -3739,9 +3735,9 @@ CREATE FILE DATASTORE PTOCONC::'02a68c05-81ce-4fda-b97f-74e544893f16'(OP_FECHA_C
 CREATE FILE DATASTORE PTOCOPS::'36d69447-ecd7-4b15-864d-57f2768a02b2'(OP_FECHA_CORTE DATE  SET( "Format" = 'yyyymmdd') , OP_TIPO_OPER_SSF VARCHAR(10) , OP_TIPO_OPER VARCHAR(2) , OP_CLABAS VARCHAR(10) , OP_COSTUMER_TYPE VARCHAR(10) , OP_CAPITAL_VIG DECIMAL(11, 2) , OP_CAPITAL_VEN DECIMAL(11, 2) , OP_INTERES_VIG DECIMAL(11, 2) , OP_INTERES_VEN DECIMAL(11, 2) , TOTAL DECIMAL(11, 2) , BRAND VARCHAR(1) , VEHICULO_LEGAL VARCHAR(3) )
  SET ("abap_file_format" = 'no', "application_type" = '', "cache" = 'yes', "column_delimiter" = '~', "column_width" = '1', "column_width1" = '24', "column_width10" = '48', "column_width11" = '1', "column_width12" = '3', "column_width2" = '10', "column_width3" = '2', "column_width4" = '10', "column_width5" = '10', "column_width6" = '48', "column_width7" = '48', "column_width8" = '48', "column_width9" = '48', "date_format" = 'yyyy.mm.dd', "datetime_format" = 'yyyy.mm.dd hh24:mi:ss', "ds_configuration_enabled" = 'no', "file_format" = 'ascii', "file_location" = 'local', "file_name" = '$G_FILE_NAME', "file_type" = 'delimited_file', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>', "name" = 'UNNAMED', "number_of_threads" = '<default>', "read_subfolders" = 'yes', "reader_capture_data_conversion_errors" = 'no', "reader_capture_file_access_errors" = 'yes', "reader_capture_row_format_errors" = 'yes', "reader_capture_string_truncation_errors" = 'no', "reader_log_data_conversion_warnings" = 'yes', "reader_log_row_format_warnings" = 'yes', "reader_log_warnings" = 'yes', "reader_maximum_warnings_to_log" = '-99', "reader_skip_empty_files" = 'yes', "reader_skip_error_handling" = 'no', "reader_write_error_rows_to_file" = 'no', "root_dir" = '$G_FILE_LOCATION', "row_delimiter" = '
 ', "table_weight" = '0', "time_format" = 'hh24:mi:ss', "transfer_custom" = 'no', "use_root_dir" = 'no', "write_bom" = 'no');
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Apr  8 14:21:24 2019', "InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '50', "ui_display_name" = 'PTOPERAC', "x" = '-1', "y" = '-1')
-CREATE FILE DATASTORE PTOPERAC::'e3933569-c684-48d2-b2e9-29f113582863'(OP_FECHA_CORTE DATE  SET( "Format" = 'yyyymmdd') , OP_FILIAL DECIMAL(1, 0) , OP_PRODUCTO DECIMAL(2, 0) , OP_OPERACION DECIMAL(10, 0) , OP_NUM_OP_IFI VARCHAR(20) , OP_OFICIAL VARCHAR(10) , OP_CLIENTE VARCHAR(24) , OP_CIUDAD DECIMAL(4, 0) , OP_OFICINA DECIMAL(5, 0) , OP_MONEDA DECIMAL(1, 0) , OP_SECTOR_CONTABLE VARCHAR(2) , OP_SECTOR_REAL VARCHAR(2) , OP_DESTINO VARCHAR(10) , OP_TIPO_OPER VARCHAR(2) , OP_CATEG_CONT VARCHAR(1) , OP_CATEGORIA_OPER VARCHAR(2) , OP_CLASE_GTIA VARCHAR(2) , OP_TIPO_CARTERA VARCHAR(2) , OP_TIPO_TRAMITE VARCHAR(1) , OP_FECHA_INI DATE  SET( "Format" = 'yyyymmdd') , OP_FECHA_FIN DATE  SET( "Format" = 'yyyymmdd') , OP_FECHA_FIN_LEGAL DATE  SET( "Format" = 'yyyymmdd') , OP_FECHA_CAS DATE  SET( "Format" = 'yyyymmdd') , OP_FECHA_PAG DATE  SET( "Format" = 'yyyymmdd') , OP_FECHA_CAN DATE  SET( "Format" = 'yyyymmdd') , OP_PLAZO DECIMAL(4, 0) , OP_TOTAL_CUOTAS DECIMAL(3, 0) , OP_TIPO_AMORTIZ VARCHAR(10) , OP_GRACIA_CAP DECIMAL(2, 0) , OP_GRACIA_INT DECIMAL(2, 0) , OP_PERIODO_CAP DECIMAL(2, 0) , OP_PERIODO_INT DECIMAL(2, 0) , OP_MOROSIDAD_CAP DECIMAL(5, 0) , OP_MOROSIDAD_INT DECIMAL(5, 0) , OP_TASA_ORIGINAL DECIMAL(6, 4) , OP_TASA_ACTUAL DECIMAL(6, 4) , OP_TASA_REF DECIMAL(6, 4) , OP_TASA_EFECTIVA DECIMAL(6, 4) , OP_FORMA_REAJUSTE VARCHAR(1) , OP_ORIGEN_FONDOS VARCHAR(5) , OP_VALOR_ORIGINAL DECIMAL(19, 4) , OP_SALDO_CAPITAL DECIMAL(19, 4) , OP_DESEMBOLSOS DECIMAL(19, 4) , OP_CAPITAL_VCDO DECIMAL(19, 4) , OP_CAPITAL_MORA DECIMAL(19, 4) , OP_SALDO_INTERES DECIMAL(19, 4) , OP_INTERES_VCDO DECIMAL(19, 4) , OP_INTERES_MORA DECIMAL(19, 4) , OP_RIESGO DECIMAL(19, 4) , OP_ABONO_PEND DECIMAL(19, 4) , OP_VAL_ACTUAL_GTIA DECIMAL(19, 4) , OP_VAL_REAL_GTIA DECIMAL(19, 4) , OP_COB_ACTUAL_GTIA DECIMAL(19, 4) , OP_COB_REAL_GTIA DECIMAL(19, 4) , OP_GARANTIA_INSCRITA VARCHAR(1) , OP_GARANTE_CART_PIG VARCHAR(2) , OP_TIPO_CERTIFICADO VARCHAR(2) , OP_FACTOR_MLO VARCHAR(48) , OP_ESTADO_OPER VARCHAR(10) , OP_USUARIO_MODIF VARCHAR(14) , OP_FECHA_MODIF DATE  SET( "Format" = 'yyyymmdd') , OP_MORA DECIMAL(19, 4) , OP_TASA_MORA DECIMAL(6, 4) , OP_CUOTAS_MORA DECIMAL(2, 0) , OP_CALIFICACION VARCHAR(10) , OP_RANGO_PLAZO DECIMAL(2, 0) , OP_RANGO_MORA_CAP DECIMAL(2, 0) , OP_RANGO_MORA_INT DECIMAL(2, 0) , OP_RESERVA_REQUERIDA DECIMAL(19, 4) , OP_RESERVA_CONSTITUIDA DECIMAL(19, 4) , OP_DEDUCCIONES DECIMAL(19, 4) , OP_COBERTURA_GTIA DECIMAL(19, 4) , OP_ETAPA_COBRO VARCHAR(10) , OP_CALIF_ANT VARCHAR(10) , OP_RES_REQUE_ANT DECIMAL(19, 4) , OP_RES_CONST_ANT DECIMAL(19, 4) , OP_RESULTADO_CALIF DECIMAL(1, 0) , OP_TIPO_MOROSIDAD DECIMAL(1, 0) , OP_RANGO_MOROSIDAD DECIMAL(2, 0) , OP_RANGO_SALDO_TOTAL DECIMAL(2, 0) , OP_TIPO_OPER_SSF VARCHAR(10) , OP_DESTINO_OPER_SSF VARCHAR(10) , OP_RANGO_PLAZO_FALTANTE DECIMAL(2, 0) , OP_TIPO_LINEA_CR VARCHAR(10) , OP_CUENTA_CAP VARCHAR(20) , OP_CUENTA_INT VARCHAR(20) , OP_CUOTA DECIMAL(19, 4) , OP_NUM_LINEA DECIMAL(4, 0) , OP_OPERACION_CANCELO VARCHAR(24) , OP_CLASE_GASTO VARCHAR(10) , OP_UNIDAD_MEDIDA VARCHAR(10) , OP_CANTIDAD_FINANCIADAS DECIMAL(19, 4) , OP_TRAMITE DECIMAL(4, 0) , OP_CUPOS_TERCEROS VARCHAR(10) , OP_ULT_PAGCAP DATE  SET( "Format" = 'yyyymmdd') , OP_ULT_PAGINT DATE  SET( "Format" = 'yyyymmdd') , OP_FULT_REAJ DATE  SET( "Format" = 'yyyymmdd') , OP_FECHA_ESCRITURACION DATE  SET( "Format" = 'yyyymmdd') , OP_FECHA_DESDE_MORA_CAP DATE  SET( "Format" = 'yyyymmdd') , OP_FECHA_DESDE_MORA_INTS DATE  SET( "Format" = 'yyyymmdd') , OP_CUOT_MOCAP DECIMAL(5, 0) , OP_CUOT_MOINT DECIMAL(5, 0) , OP_PAGO_ADECAP DECIMAL(19, 4) , OP_CUOTAS_PAG DECIMAL(2, 0) , OP_DIAS_ANIO DECIMAL(3, 0) , OP_FECPROXCUO DATE  SET( "Format" = 'yyyymmdd') , OP_CLABAS VARCHAR(10) , OP_VAL_GTIA_HIPO DECIMAL(19, 4) , OP_VAL_GTIA_OTRAS DECIMAL(19, 4) , OP_RIESGOS_A_RVA DECIMAL(19, 4) , OP_MONTO_SEGURO DECIMAL(19, 4) , OP_TIPO_PLAZO VARCHAR(10) , OP_MODIFICADO VARCHAR(1) , OP_TIPO_DIVIDENDO VARCHAR(10) , OP_RIESGO_A_RVA_ANT DECIMAL(19, 4) , OP_TASA_INI DECIMAL(6, 4) , OP_DIAS_PRORROGA DECIMAL(4, 0) , OP_FECHA_INI_PRORR DATE , OP_TIPO_TASA_REFERENCIA VARCHAR(10) , OP_FECHA_PROX_REAJUSTE DATE  SET( "Format" = 'yyyymmdd') , OP_TIPOTC VARCHAR(1) , OP_CLASETC VARCHAR(1) , OP_PRODUCTOTC VARCHAR(20) , VEHICULO_LEGAL VARCHAR(3) , EPP_POST_ACCOUNT VARCHAR(19) , OP_STATUS VARCHAR(1) , CODBLQ1 DECIMAL(2, 0) , CODBLQ2 DECIMAL(2, 0) , FECBLQ1 DATE  SET( "Format" = 'yyyymmdd') , FECBLQ2 DATE  SET( "Format" = 'yyyymmdd') , LOGO VARCHAR(4) )
- SET ("abap_file_format" = 'no', "application_type" = '', "cache" = 'yes', "column_delimiter" = '~', "column_width" = '1', "column_width1" = '24', "column_width10" = '48', "column_width100" = '24', "column_width101" = '48', "column_width102" = '48', "column_width103" = '48', "column_width104" = '48', "column_width105" = '48', "column_width106" = '24', "column_width107" = '10', "column_width108" = '48', "column_width109" = '48', "column_width11" = '2', "column_width110" = '48', "column_width111" = '48', "column_width112" = '10', "column_width113" = '1', "column_width114" = '10', "column_width115" = '48', "column_width116" = '48', "column_width117" = '48', "column_width118" = '24', "column_width119" = '10', "column_width12" = '2', "column_width120" = '24', "column_width121" = '1', "column_width122" = '1', "column_width123" = '20', "column_width124" = '3', "column_width125" = '19', "column_width126" = '1', "column_width127" = '48', "column_width128" = '48', "column_width129" = '24', "column_width13" = '10', "column_width130" = '24', "column_width131" = '4', "column_width14" = '2', "column_width15" = '1', "column_width16" = '2', "column_width17" = '2', "column_width18" = '2', "column_width19" = '1', "column_width2" = '48', "column_width20" = '24', "column_width21" = '24', "column_width22" = '24', "column_width23" = '24', "column_width24" = '24', "column_width25" = '24', "column_width26" = '48', "column_width27" = '48', "column_width28" = '10', "column_width29" = '48', "column_width3" = '48', "column_width30" = '48', "column_width31" = '48', "column_width32" = '48', "column_width33" = '48', "column_width34" = '48', "column_width35" = '48', "column_width36" = '48', "column_width37" = '48', "column_width38" = '48', "column_width39" = '1', "column_width4" = '48', "column_width40" = '5', "column_width41" = '48', "column_width42" = '48', "column_width43" = '48', "column_width44" = '48', "column_width45" = '48', "column_width46" = '48', "column_width47" = '48', "column_width48" = '48', "column_width49" = '48', "column_width5" = '20', "column_width50" = '48', "column_width51" = '48', "column_width52" = '48', "column_width53" = '48', "column_width54" = '48', "column_width55" = '1', "column_width56" = '2', "column_width57" = '2', "column_width58" = '48', "column_width59" = '10', "column_width6" = '10', "column_width60" = '14', "column_width61" = '24', "column_width62" = '48', "column_width63" = '48', "column_width64" = '48', "column_width65" = '10', "column_width66" = '48', "column_width67" = '48', "column_width68" = '48', "column_width69" = '48', "column_width7" = '24', "column_width70" = '48', "column_width71" = '48', "column_width72" = '48', "column_width73" = '10', "column_width74" = '10', "column_width75" = '48', "column_width76" = '48', "column_width77" = '48', "column_width78" = '48', "column_width79" = '48', "column_width8" = '48', "column_width80" = '48', "column_width81" = '10', "column_width82" = '10', "column_width83" = '48', "column_width84" = '10', "column_width85" = '20', "column_width86" = '20', "column_width87" = '48', "column_width88" = '48', "column_width89" = '24', "column_width9" = '48', "column_width90" = '10', "column_width91" = '10', "column_width92" = '48', "column_width93" = '48', "column_width94" = '10', "column_width95" = '24', "column_width96" = '24', "column_width97" = '24', "column_width98" = '24', "column_width99" = '24', "date_format" = 'yyyy.mm.dd', "datetime_format" = 'yyyy.mm.dd hh24:mi:ss', "ds_configuration_enabled" = 'no', "file_format" = 'ascii', "file_location" = 'job_server', "file_name" = '$G_FILE_NAME', "file_type" = 'delimited_file', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>', "name" = 'UNNAMED', "number_of_threads" = '<default>', "read_subfolders" = 'yes', "reader_capture_data_conversion_errors" = 'no', "reader_capture_file_access_errors" = 'yes', "reader_capture_row_format_errors" = 'yes', "reader_capture_string_truncation_errors" = 'no', "reader_log_data_conversion_warnings" = 'yes', "reader_log_row_format_warnings" = 'yes', "reader_log_warnings" = 'yes', "reader_maximum_warnings_to_log" = '-99', "reader_skip_empty_files" = 'yes', "reader_skip_error_handling" = 'no', "reader_write_error_rows_to_file" = 'no', "root_dir" = '$G_FILE_LOCATION', "row_delimiter" = '
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Apr  8 14:21:24 2019', "ActaValue_3" = 'Mon May  6 11:40:56 2019', "InputSchema_WidthProp" = '48', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '42', "ui_display_name" = 'PTOPERAC', "x" = '-1', "y" = '-1')
+CREATE FILE DATASTORE PTOPERAC::'e3933569-c684-48d2-b2e9-29f113582863'(OP_FECHA_CORTE DATE  SET( "Format" = 'yyyymmdd') , OP_FILIAL DECIMAL(1, 0) , OP_PRODUCTO DECIMAL(2, 0) , OP_OPERACION DECIMAL(10, 0) , OP_NUM_OP_IFI VARCHAR(20) , OP_OFICIAL VARCHAR(10) , OP_CLIENTE VARCHAR(24) , OP_CIUDAD DECIMAL(4, 0) , OP_OFICINA DECIMAL(5, 0) , OP_MONEDA DECIMAL(1, 0) , OP_SECTOR_CONTABLE VARCHAR(2) , OP_SECTOR_REAL VARCHAR(2) , OP_DESTINO VARCHAR(10) , OP_TIPO_OPER VARCHAR(2) , OP_CATEG_CONT VARCHAR(1) , OP_CATEGORIA_OPER VARCHAR(2) , OP_CLASE_GTIA VARCHAR(2) , OP_TIPO_CARTERA VARCHAR(2) , OP_TIPO_TRAMITE VARCHAR(1) , OP_FECHA_INI VARCHAR(8) , OP_FECHA_FIN VARCHAR(8) , OP_FECHA_FIN_LEGAL VARCHAR(8) , OP_FECHA_CAS VARCHAR(8) , OP_FECHA_PAG VARCHAR(8) , OP_FECHA_CAN VARCHAR(8) , OP_PLAZO DECIMAL(4, 0) , OP_TOTAL_CUOTAS DECIMAL(3, 0) , OP_TIPO_AMORTIZ VARCHAR(10) , OP_GRACIA_CAP DECIMAL(2, 0) , OP_GRACIA_INT DECIMAL(2, 0) , OP_PERIODO_CAP DECIMAL(2, 0) , OP_PERIODO_INT DECIMAL(2, 0) , OP_MOROSIDAD_CAP DECIMAL(5, 0) , OP_MOROSIDAD_INT DECIMAL(5, 0) , OP_TASA_ORIGINAL DECIMAL(6, 4) , OP_TASA_ACTUAL DECIMAL(6, 4) , OP_TASA_REF DECIMAL(6, 4) , OP_TASA_EFECTIVA DECIMAL(6, 4) , OP_FORMA_REAJUSTE VARCHAR(1) , OP_ORIGEN_FONDOS VARCHAR(5) , OP_VALOR_ORIGINAL DECIMAL(19, 4) , OP_SALDO_CAPITAL DECIMAL(19, 4) , OP_DESEMBOLSOS DECIMAL(19, 4) , OP_CAPITAL_VCDO DECIMAL(19, 4) , OP_CAPITAL_MORA DECIMAL(19, 4) , OP_SALDO_INTERES DECIMAL(19, 4) , OP_INTERES_VCDO DECIMAL(19, 4) , OP_INTERES_MORA DECIMAL(19, 4) , OP_RIESGO DECIMAL(19, 4) , OP_ABONO_PEND DECIMAL(19, 4) , OP_VAL_ACTUAL_GTIA DECIMAL(19, 4) , OP_VAL_REAL_GTIA DECIMAL(19, 4) , OP_COB_ACTUAL_GTIA DECIMAL(19, 4) , OP_COB_REAL_GTIA DECIMAL(19, 4) , OP_GARANTIA_INSCRITA VARCHAR(1) , OP_GARANTE_CART_PIG VARCHAR(2) , OP_TIPO_CERTIFICADO VARCHAR(2) , OP_FACTOR_MLO VARCHAR(48) , OP_ESTADO_OPER VARCHAR(10) , OP_USUARIO_MODIF VARCHAR(14) , OP_FECHA_MODIF VARCHAR(8) , OP_MORA DECIMAL(19, 4) , OP_TASA_MORA DECIMAL(6, 4) , OP_CUOTAS_MORA DECIMAL(2, 0) , OP_CALIFICACION VARCHAR(10) , OP_RANGO_PLAZO DECIMAL(2, 0) , OP_RANGO_MORA_CAP DECIMAL(2, 0) , OP_RANGO_MORA_INT DECIMAL(2, 0) , OP_RESERVA_REQUERIDA DECIMAL(19, 4) , OP_RESERVA_CONSTITUIDA DECIMAL(19, 4) , OP_DEDUCCIONES DECIMAL(19, 4) , OP_COBERTURA_GTIA DECIMAL(19, 4) , OP_ETAPA_COBRO VARCHAR(10) , OP_CALIF_ANT VARCHAR(10) , OP_RES_REQUE_ANT DECIMAL(19, 4) , OP_RES_CONST_ANT DECIMAL(19, 4) , OP_RESULTADO_CALIF DECIMAL(1, 0) , OP_TIPO_MOROSIDAD DECIMAL(1, 0) , OP_RANGO_MOROSIDAD DECIMAL(2, 0) , OP_RANGO_SALDO_TOTAL DECIMAL(2, 0) , OP_TIPO_OPER_SSF VARCHAR(10) , OP_DESTINO_OPER_SSF VARCHAR(10) , OP_RANGO_PLAZO_FALTANTE DECIMAL(2, 0) , OP_TIPO_LINEA_CR VARCHAR(10) , OP_CUENTA_CAP VARCHAR(20) , OP_CUENTA_INT VARCHAR(20) , OP_CUOTA DECIMAL(19, 4) , OP_NUM_LINEA DECIMAL(4, 0) , OP_OPERACION_CANCELO VARCHAR(24) , OP_CLASE_GASTO VARCHAR(10) , OP_UNIDAD_MEDIDA VARCHAR(10) , OP_CANTIDAD_FINANCIADAS DECIMAL(19, 4) , OP_TRAMITE DECIMAL(4, 0) , OP_CUPOS_TERCEROS VARCHAR(10) , OP_ULT_PAGCAP VARCHAR(8) , OP_ULT_PAGINT VARCHAR(8) , OP_FULT_REAJ VARCHAR(8) , OP_FECHA_ESCRITURACION VARCHAR(8) , OP_FECHA_DESDE_MORA_CAP VARCHAR(8) , OP_FECHA_DESDE_MORA_INTS VARCHAR(8) , OP_CUOT_MOCAP DECIMAL(5, 0) , OP_CUOT_MOINT DECIMAL(5, 0) , OP_PAGO_ADECAP DECIMAL(19, 4) , OP_CUOTAS_PAG DECIMAL(2, 0) , OP_DIAS_ANIO DECIMAL(3, 0) , OP_FECPROXCUO VARCHAR(8) , OP_CLABAS VARCHAR(10) , OP_VAL_GTIA_HIPO DECIMAL(19, 4) , OP_VAL_GTIA_OTRAS DECIMAL(19, 4) , OP_RIESGOS_A_RVA DECIMAL(19, 4) , OP_MONTO_SEGURO DECIMAL(19, 4) , OP_TIPO_PLAZO VARCHAR(10) , OP_MODIFICADO VARCHAR(1) , OP_TIPO_DIVIDENDO VARCHAR(10) , OP_RIESGO_A_RVA_ANT DECIMAL(19, 4) , OP_TASA_INI DECIMAL(6, 4) , OP_DIAS_PRORROGA DECIMAL(4, 0) , OP_FECHA_INI_PRORR VARCHAR(8) , OP_TIPO_TASA_REFERENCIA VARCHAR(10) , OP_FECHA_PROX_REAJUSTE VARCHAR(8) , OP_TIPOTC VARCHAR(1) , OP_CLASETC VARCHAR(1) , OP_PRODUCTOTC VARCHAR(20) , VEHICULO_LEGAL VARCHAR(3) , EPP_POST_ACCOUNT VARCHAR(19) , OP_STATUS VARCHAR(1) , CODBLQ1 DECIMAL(2, 0) , CODBLQ2 DECIMAL(2, 0) , FECBLQ1 VARCHAR(8) , FECBLQ2 VARCHAR(8) , LOGO VARCHAR(4) )
+ SET ("abap_file_format" = 'no', "application_type" = '', "cache" = 'yes', "column_delimiter" = '~', "column_width" = '1', "column_width1" = '24', "column_width10" = '48', "column_width100" = '8', "column_width101" = '48', "column_width102" = '48', "column_width103" = '48', "column_width104" = '48', "column_width105" = '48', "column_width106" = '8', "column_width107" = '10', "column_width108" = '48', "column_width109" = '48', "column_width11" = '2', "column_width110" = '48', "column_width111" = '48', "column_width112" = '10', "column_width113" = '1', "column_width114" = '10', "column_width115" = '48', "column_width116" = '48', "column_width117" = '48', "column_width118" = '8', "column_width119" = '10', "column_width12" = '2', "column_width120" = '8', "column_width121" = '1', "column_width122" = '1', "column_width123" = '20', "column_width124" = '3', "column_width125" = '19', "column_width126" = '1', "column_width127" = '48', "column_width128" = '48', "column_width129" = '8', "column_width13" = '10', "column_width130" = '8', "column_width131" = '4', "column_width14" = '2', "column_width15" = '1', "column_width16" = '2', "column_width17" = '2', "column_width18" = '2', "column_width19" = '1', "column_width2" = '48', "column_width20" = '8', "column_width21" = '8', "column_width22" = '8', "column_width23" = '8', "column_width24" = '8', "column_width25" = '8', "column_width26" = '48', "column_width27" = '48', "column_width28" = '10', "column_width29" = '48', "column_width3" = '48', "column_width30" = '48', "column_width31" = '48', "column_width32" = '48', "column_width33" = '48', "column_width34" = '48', "column_width35" = '48', "column_width36" = '48', "column_width37" = '48', "column_width38" = '48', "column_width39" = '1', "column_width4" = '48', "column_width40" = '5', "column_width41" = '48', "column_width42" = '48', "column_width43" = '48', "column_width44" = '48', "column_width45" = '48', "column_width46" = '48', "column_width47" = '48', "column_width48" = '48', "column_width49" = '48', "column_width5" = '20', "column_width50" = '48', "column_width51" = '48', "column_width52" = '48', "column_width53" = '48', "column_width54" = '48', "column_width55" = '1', "column_width56" = '2', "column_width57" = '2', "column_width58" = '48', "column_width59" = '10', "column_width6" = '10', "column_width60" = '14', "column_width61" = '8', "column_width62" = '48', "column_width63" = '48', "column_width64" = '48', "column_width65" = '10', "column_width66" = '48', "column_width67" = '48', "column_width68" = '48', "column_width69" = '48', "column_width7" = '24', "column_width70" = '48', "column_width71" = '48', "column_width72" = '48', "column_width73" = '10', "column_width74" = '10', "column_width75" = '48', "column_width76" = '48', "column_width77" = '48', "column_width78" = '48', "column_width79" = '48', "column_width8" = '48', "column_width80" = '48', "column_width81" = '10', "column_width82" = '10', "column_width83" = '48', "column_width84" = '10', "column_width85" = '20', "column_width86" = '20', "column_width87" = '48', "column_width88" = '48', "column_width89" = '24', "column_width9" = '48', "column_width90" = '10', "column_width91" = '10', "column_width92" = '48', "column_width93" = '48', "column_width94" = '10', "column_width95" = '8', "column_width96" = '8', "column_width97" = '8', "column_width98" = '8', "column_width99" = '8', "date_format" = 'yyyy.mm.dd', "datetime_format" = 'yyyy.mm.dd hh24:mi:ss', "ds_configuration_enabled" = 'no', "file_format" = 'ascii', "file_location" = 'job_server', "file_name" = '$G_FILE_NAME', "file_type" = 'delimited_file', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>', "name" = 'UNNAMED', "number_of_threads" = '<default>', "read_subfolders" = 'yes', "reader_capture_data_conversion_errors" = 'no', "reader_capture_file_access_errors" = 'yes', "reader_capture_row_format_errors" = 'yes', "reader_capture_string_truncation_errors" = 'no', "reader_log_data_conversion_warnings" = 'yes', "reader_log_row_format_warnings" = 'yes', "reader_log_warnings" = 'yes', "reader_maximum_warnings_to_log" = '-99', "reader_skip_empty_files" = 'yes', "reader_skip_error_handling" = 'no', "reader_write_error_rows_to_file" = 'no', "root_dir" = '$G_FILE_LOCATION', "row_delimiter" = '
 ', "table_weight" = '0', "time_format" = 'hh24:mi:ss', "transfer_custom" = 'no', "use_root_dir" = 'no', "write_bom" = 'no');
  AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaValue_1" = 'YES', "ActaValue_2" = 'Mon Apr  8 15:01:16 2019', "InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '50', "ui_display_name" = 'PTPROINT', "x" = '-1', "y" = '-1')
 CREATE FILE DATASTORE PTPROINT::'739a2b5f-8343-4087-afbe-0da47b7ccf88'(PV_FECHA_CORTE DATE  SET( "Format" = 'yyyymmdd') , PV_NUM_OP_IFI VARCHAR(20) , PV_CLIENTE VARCHAR(24) , PV_TIPO_OPER VARCHAR(2) , PV_BALANCE_INT DECIMAL(11, 2) , PV_ACUMU_INT DECIMAL(11, 2) , PV_TOTAL_INT DECIMAL(11, 2) , PV_CLABAS VARCHAR(10) , PV_TASA_ORIG DECIMAL(6, 4) , PV_BILLING_CYCLE VARCHAR(2) , PV_BALANCE_PRINC DECIMAL(11, 2) , PV_BRAND VARCHAR(1) , PV_VEHICULO_LEGAL VARCHAR(3) )
@@ -4606,7 +4602,7 @@ BEGIN_SCRIPT
 $L_STATUS_JOB = 'FINALIZADO';sql('DS_CONTROL', 'UPDATE CNF.FILE_LIST SET loaded = 1 WHERE filename = \'[$G_FILE_NAME]\'');sql('DS_CONTROL', 'commit');exec(('[$G_SH_ROUTE]' || 'moveFiles.sh'), '[$G_FILE_NAME]', 8);$G_FILE_NAME = '';$L_ID_GENERATED = cf_control_log_fin($L_ID_GENERATED, $L_STATUS_JOB);END
 END
  SET ("run_once" = 'no', "unit_of_recovery" = 'no', "workflow_type" = 'Regular')
- AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Dec 13 14:57:41 2018', "ActaValue_3" = 'Mon May  6 11:40:57 2019', "x" = '-1', "y" = '-1')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Thu Dec 13 14:57:41 2018', "ActaValue_3" = 'Tue May 28 10:24:01 2019', "x" = '-1', "y" = '-1')
 CREATE PLAN WF_PTOPERAC::'27c3f898-c551-4a09-97ef-52cd83a8ca16'( )
 DECLARE
      $L_TABLE_NAME VARCHAR(100) ;
@@ -4628,7 +4624,7 @@ $L_TABLE_NAME  = replace_substr( $L_TABLE_NAME, \'WF_\', \'\' );
 
 # + ----------------------obtener nombre de la tabla
 $G_FILE_NAME = sql( \'DS_CONTROL\', \'SELECT filename FROM CNF.FILE_LIST WHERE tablename like (\\\'[$L_TABLE_NAME]%\\\') and loaded = 0\');
-#print( \'SELECT filename FROM CNF.FILE_LIST WHERE tablename like (\\\'[$L_TABLE_NAME]%\\\') and loaded = 0\');
+print( \'SELECT filename FROM CNF.FILE_LIST WHERE tablename like (\\\'[$L_TABLE_NAME]%\\\') and loaded = 0\');
 #print( $G_FILE_NAME );
 
 
@@ -4639,7 +4635,7 @@ sql( \'DS_TARGET\', \'truncate table STG_SAT.[$L_TABLE_NAME]\');
 
 ', "x" = '90', "y" = '-90')
 BEGIN_SCRIPT
-$L_TABLE_NAME = replace_substr(workflow_name(), '__', '.');$L_TABLE_NAME = replace_substr($L_TABLE_NAME, 'WF_', '');$G_FILE_NAME = sql('DS_CONTROL', 'SELECT filename FROM CNF.FILE_LIST WHERE tablename like (\'[$L_TABLE_NAME]%\') and loaded = 0');$L_TABLE_NAME = ('' || $L_TABLE_NAME);sql('DS_TARGET', 'truncate table STG_SAT.[$L_TABLE_NAME]');END
+$L_TABLE_NAME = replace_substr(workflow_name(), '__', '.');$L_TABLE_NAME = replace_substr($L_TABLE_NAME, 'WF_', '');$G_FILE_NAME = sql('DS_CONTROL', 'SELECT filename FROM CNF.FILE_LIST WHERE tablename like (\'[$L_TABLE_NAME]%\') and loaded = 0');print('SELECT filename FROM CNF.FILE_LIST WHERE tablename like (\'[$L_TABLE_NAME]%\') and loaded = 0');$L_TABLE_NAME = ('' || $L_TABLE_NAME);sql('DS_TARGET', 'truncate table STG_SAT.[$L_TABLE_NAME]');END
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try5586', "x" = '480', "y" = '-90')
 TRY
 BEGIN
@@ -4656,11 +4652,124 @@ $L_ID_JOB_TABLA = sql( \'DS_CONTROL\', \'SELECT ID_JOB_TABLE FROM CNF.CAT_JOBS W
 
 $L_ID_GENERATED  = CF_CONTROL_LOG_EDW($G_CURRENT_DATE, $L_ID_JOB_TABLA , $L_STATUS_JOB, $L_ID_GENERATED );
 
-PRINT( \'INICIO DE TRABAJO, INFORMACION ALMACENADA EN TABLA TBL_CONTROL_EJECUCION\');
+PRINT( \'INICIO DE TRABAJO, INFORMACION ALMACENADA EN TABLA TBL_CONTROL_EJECUCION \'  || $G_FILE_NAME);
 
 ', "x" = '90', "y" = '-90')
 BEGIN_SCRIPT
-$L_STATUS_JOB = 'INICIADO';$L_TABLE_NAME = replace_substr($L_TABLE_NAME, 'STG_SAT.', '');$L_ID_JOB_TABLA = sql('DS_CONTROL', 'SELECT ID_JOB_TABLE FROM CNF.CAT_JOBS WHERE NOMBRE_JOB = \'[$G_JOB_NAME]\' AND NOMBRE_TABLA = \'[$L_TABLE_NAME]\'');$L_ID_GENERATED = cf_control_log_edw($G_CURRENT_DATE, $L_ID_JOB_TABLA, $L_STATUS_JOB, $L_ID_GENERATED);print('INICIO DE TRABAJO, INFORMACION ALMACENADA EN TABLA TBL_CONTROL_EJECUCION');END
+$L_STATUS_JOB = 'INICIADO';$L_TABLE_NAME = replace_substr($L_TABLE_NAME, 'STG_SAT.', '');$L_ID_JOB_TABLA = sql('DS_CONTROL', 'SELECT ID_JOB_TABLE FROM CNF.CAT_JOBS WHERE NOMBRE_JOB = \'[$G_JOB_NAME]\' AND NOMBRE_TABLA = \'[$L_TABLE_NAME]\'');$L_ID_GENERATED = cf_control_log_edw($G_CURRENT_DATE, $L_ID_JOB_TABLA, $L_STATUS_JOB, $L_ID_GENERATED);print(('INICIO DE TRABAJO, INFORMACION ALMACENADA EN TABLA TBL_CONTROL_EJECUCION ' || $G_FILE_NAME));END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>363</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
+CALL DATAFLOW DF_STG_PTOPERAC::'511aadfc-528d-422c-92dd-f53b565f8ff5'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>300</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_MID_DF', "ui_script_text" = '$L_TABLE_NAME = \'STG_SAT.\' || $L_TABLE_NAME ;
+$L_COUNT_RECORDS = sql( \'DS_TARGET\', \'SELECT COUNT(*) FROM [$L_TABLE_NAME]\' );
+
+$L_TABLE_NAME = replace_substr( $L_TABLE_NAME , \'STG_SAT.\', \'\');
+
+$L_ID_CATJOB = sql( \'DS_CONTROL\', \'SELECT ID_JOB_TABLE FROM CNF.CAT_JOBS WHERE NOMBRE_JOB = \\\'[$G_JOB_NAME]\\\' AND NOMBRE_TABLA = \\\'[$L_TABLE_NAME]\\\'\');
+
+$L_MAX_ID = sql( \'DS_CONTROL\', \'SELECT MAX(ID_CONTROL) FROM CNF.CONTROL_EJECUCION WHERE ID_CAT_JOB = [$L_ID_CATJOB]\');
+
+sql( \'DS_CONTROL\', \'UPDATE CNF.CONTROL_EJECUCION SET COUNT_FILA = \\\'[$L_COUNT_RECORDS]\\\' WHERE ID_CAT_JOB = [$L_ID_CATJOB] AND ID_CONTROL = [$L_MAX_ID]\');
+SQL(\'DS_CONTROL\', \'COMMIT\');
+', "x" = '870', "y" = '-90')
+BEGIN_SCRIPT
+$L_TABLE_NAME = ('STG_SAT.' || $L_TABLE_NAME);$L_COUNT_RECORDS = sql('DS_TARGET', 'SELECT COUNT(*) FROM [$L_TABLE_NAME]');$L_TABLE_NAME = replace_substr($L_TABLE_NAME, 'STG_SAT.', '');$L_ID_CATJOB = sql('DS_CONTROL', 'SELECT ID_JOB_TABLE FROM CNF.CAT_JOBS WHERE NOMBRE_JOB = \'[$G_JOB_NAME]\' AND NOMBRE_TABLA = \'[$L_TABLE_NAME]\'');$L_MAX_ID = sql('DS_CONTROL', 'SELECT MAX(ID_CONTROL) FROM CNF.CONTROL_EJECUCION WHERE ID_CAT_JOB = [$L_ID_CATJOB]');sql('DS_CONTROL', 'UPDATE CNF.CONTROL_EJECUCION SET COUNT_FILA = \'[$L_COUNT_RECORDS]\' WHERE ID_CAT_JOB = [$L_ID_CATJOB] AND ID_CONTROL = [$L_MAX_ID]');sql('DS_CONTROL', 'COMMIT');END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>285</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1260', "y" = '-90')
+CALL DATAFLOW DF_PTOPERAC::'247c7f54-cc02-4c67-9861-ad248861ab49'();
+END
+END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch5590', "x" = '1260', "y" = '-90')
+CATCH (210101)
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>360</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_CATCH_WF', "ui_script_text" = '##INSTANCIA DE VARIABLES GLOBALES##
+$L_ERROR_NUMBER = error_number( );
+
+$L_ERROR_CONTEXT = error_context( );
+
+$L_ERROR_MESSAGE = error_message( );
+
+$L_ERROR_TIMESTAMP = error_timestamp( );
+
+##INFORMACIÓN DE ERROR EN TABLA DE LOG
+
+CF_ERROR_LOG($L_ERROR_NUMBER, $L_ERROR_CONTEXT, $L_ERROR_MESSAGE, $L_ERROR_TIMESTAMP, $L_ID_GENERATED );
+
+
+raise_exception( \'OCURRIO UN ERROR AL INGRESAR DATOS, VERIFICAR TABLA DE LOG PARA MAS INFORAMCION\');
+', "x" = '1047', "y" = '-394')
+BEGIN_SCRIPT
+$L_ERROR_NUMBER = error_number();$L_ERROR_CONTEXT = error_context();$L_ERROR_MESSAGE = error_message();$L_ERROR_TIMESTAMP = error_timestamp();cf_error_log($L_ERROR_NUMBER, $L_ERROR_CONTEXT, $L_ERROR_MESSAGE, $L_ERROR_TIMESTAMP, $L_ID_GENERATED);raise_exception('OCURRIO UN ERROR AL INGRESAR DATOS, VERIFICAR TABLA DE LOG PARA MAS INFORAMCION');END
+END
+
+END_TRY
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>300</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_FIN_WF', "ui_script_text" = '$L_STATUS_JOB = \'FINALIZADO\';
+
+#Moviendo Archivos
+sql( \'DS_CONTROL\', \'UPDATE CNF.FILE_LIST SET loaded = 1 WHERE filename = \\\'[$G_FILE_NAME]\\\'\');
+sql( \'DS_CONTROL\', \'commit\');
+exec(\'[$G_SH_ROUTE]\'||\'moveFiles.sh\',\'[$G_FILE_NAME]\',8);
+$G_FILE_NAME = \'\';
+
+$L_ID_GENERATED  = CF_CONTROL_LOG_FIN( $L_ID_GENERATED, $L_STATUS_JOB );', "x" = '1650', "y" = '-90')
+BEGIN_SCRIPT
+$L_STATUS_JOB = 'FINALIZADO';sql('DS_CONTROL', 'UPDATE CNF.FILE_LIST SET loaded = 1 WHERE filename = \'[$G_FILE_NAME]\'');sql('DS_CONTROL', 'commit');exec(('[$G_SH_ROUTE]' || 'moveFiles.sh'), '[$G_FILE_NAME]', 8);$G_FILE_NAME = '';$L_ID_GENERATED = cf_control_log_fin($L_ID_GENERATED, $L_STATUS_JOB);END
+END
+ SET ("run_once" = 'no', "unit_of_recovery" = 'no', "workflow_type" = 'Regular')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue May 28 10:43:06 2019', "ActaValue_3" = 'Tue May 28 10:47:36 2019', "x" = '-1', "y" = '-1')
+CREATE PLAN WF_PTOPERAC2::'ce313010-bd97-4192-a3be-1865c7f0f64e'( )
+DECLARE
+     $L_TABLE_NAME VARCHAR(100) ;
+     $L_EXIST_TABLE INT ;
+     $L_COUNT_RECORDS INT ;
+     $L_ID_CATJOB INT ;
+     $L_MAX_ID INT ;
+     $L_STATUS_JOB VARCHAR(25) ;
+     $L_ID_GENERATED INT ;
+     $L_ID_JOB_TABLA INT ;
+     $L_ERROR_NUMBER INT ;
+     $L_ERROR_CONTEXT VARCHAR(512) ;
+     $L_ERROR_MESSAGE VARCHAR(512) ;
+     $L_ERROR_TIMESTAMP __AL_TIMESTAMP(9) ;
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>291</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI_WF', "ui_script_text" = '$L_TABLE_NAME = replace_substr( workflow_name( ), \'__\', \'.\');
+$L_TABLE_NAME  = replace_substr( $L_TABLE_NAME, \'WF_\', \'\' );
+
+
+# + ----------------------obtener nombre de la tabla
+$G_FILE_NAME = sql( \'DS_CONTROL\', \'SELECT filename FROM CNF.FILE_LIST WHERE tablename like (\\\'[$L_TABLE_NAME]%\\\') and loaded = 0\');
+print( \'SELECT filename FROM CNF.FILE_LIST WHERE tablename like (\\\'[$L_TABLE_NAME]%\\\') and loaded = 0\');
+#print( $G_FILE_NAME );
+
+
+$L_TABLE_NAME = \'\' || $L_TABLE_NAME ;
+$L_TABLE_NAME  = replace_substr( $L_TABLE_NAME, \'2\', \'\' );
+##sql( \'DS_TARGET\', \'truncate table [$L_TABLE_NAME]\');
+sql( \'DS_TARGET\', \'truncate table STG_SAT.[$L_TABLE_NAME]\');
+
+
+', "x" = '90', "y" = '-90')
+BEGIN_SCRIPT
+$L_TABLE_NAME = replace_substr(workflow_name(), '__', '.');$L_TABLE_NAME = replace_substr($L_TABLE_NAME, 'WF_', '');$G_FILE_NAME = sql('DS_CONTROL', 'SELECT filename FROM CNF.FILE_LIST WHERE tablename like (\'[$L_TABLE_NAME]%\') and loaded = 0');print('SELECT filename FROM CNF.FILE_LIST WHERE tablename like (\'[$L_TABLE_NAME]%\') and loaded = 0');$L_TABLE_NAME = ('' || $L_TABLE_NAME);$L_TABLE_NAME = replace_substr($L_TABLE_NAME, '2', '');sql('DS_TARGET', 'truncate table STG_SAT.[$L_TABLE_NAME]');END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try5586', "x" = '480', "y" = '-90')
+TRY
+BEGIN
+ AlGUIComment ("If_condition" = 'CF_TABLE_NAME($L_TABLE_NAME) = 1', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>332</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'CDT_TABLE_EXIST', "x" = '870', "y" = '-90')
+IF ((cf_table_name($L_TABLE_NAME) = 1) )
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>285</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI_DF', "ui_script_text" = '##$G_CURRENT_DATE = to_char( sysdate( ), \'mm/dd/yy\' );
+
+$L_STATUS_JOB = \'INICIADO\';
+
+$L_TABLE_NAME = replace_substr( $L_TABLE_NAME, \'STG_SAT.\', \'\');
+ 
+$L_ID_JOB_TABLA = sql( \'DS_CONTROL\', \'SELECT ID_JOB_TABLE FROM CNF.CAT_JOBS WHERE NOMBRE_JOB = \\\'[$G_JOB_NAME]\\\' AND NOMBRE_TABLA = \\\'[$L_TABLE_NAME]\\\'\');
+
+$L_ID_GENERATED  = CF_CONTROL_LOG_EDW($G_CURRENT_DATE, $L_ID_JOB_TABLA , $L_STATUS_JOB, $L_ID_GENERATED );
+
+PRINT( \'INICIO DE TRABAJO, INFORMACION ALMACENADA EN TABLA TBL_CONTROL_EJECUCION \'  || $G_FILE_NAME);
+
+', "x" = '90', "y" = '-90')
+BEGIN_SCRIPT
+$L_STATUS_JOB = 'INICIADO';$L_TABLE_NAME = replace_substr($L_TABLE_NAME, 'STG_SAT.', '');$L_ID_JOB_TABLA = sql('DS_CONTROL', 'SELECT ID_JOB_TABLE FROM CNF.CAT_JOBS WHERE NOMBRE_JOB = \'[$G_JOB_NAME]\' AND NOMBRE_TABLA = \'[$L_TABLE_NAME]\'');$L_ID_GENERATED = cf_control_log_edw($G_CURRENT_DATE, $L_ID_JOB_TABLA, $L_STATUS_JOB, $L_ID_GENERATED);print(('INICIO DE TRABAJO, INFORMACION ALMACENADA EN TABLA TBL_CONTROL_EJECUCION ' || $G_FILE_NAME));END
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>363</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
 CALL DATAFLOW DF_STG_PTOPERAC::'511aadfc-528d-422c-92dd-f53b565f8ff5'();
  AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>300</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_MID_DF', "ui_script_text" = '$L_TABLE_NAME = \'STG_SAT.\' || $L_TABLE_NAME ;

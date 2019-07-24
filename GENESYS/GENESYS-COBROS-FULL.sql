@@ -179,9 +179,6 @@ select
 
 select 
  @OBJECT_USER = 'STG'
-,@VERSION_COMMIT = '324967d5faf083a1ff1e39ea7b581499d757fcd9'
-,@VERSION_CODE = '324967d'
-,@VERSION_DATE = 'April 8, 2019 1:52:52 PM'
 ,@CRDATE = NULL
 
 SELECT @CRDATE = create_time 

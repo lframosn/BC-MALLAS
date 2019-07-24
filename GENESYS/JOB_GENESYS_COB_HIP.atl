@@ -1,0 +1,1028 @@
+#__AW_Repository_Version '14.2.10.0000';
+#__AW_Product_Version '14.2.10.1748';
+#__AW_ATL_Locale 'spa_sv.utf-8';
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Feb 20 15:23:05 2018', "ActaValue_3" = 'Fri Apr  6 16:33:59 2018', "x" = '-1', "y" = '-1')
+CREATE DATABASE DATASTORE DS_CONTROL::'266a60d3-43b4-4bba-ac5f-f259f40777e9' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="ISO-8859-1" ?>
+<DSConfigurations>
+<DSConfiguration default="true" name="Configuration1">
+<case_sensitive>yes</case_sensitive>
+<database_type>Sybase IQ</database_type>
+<db_dsnless>yes</db_dsnless>
+<db_port_no>2638</db_port_no>
+<iq_use_linked_remoteserver>no</iq_use_linked_remoteserver>
+<js_db_on_same_machine>no</js_db_on_same_machine>
+<loader_xact_size>1000</loader_xact_size>
+<locale_codepage>&lt;default&gt;</locale_codepage>
+<locale_language>&lt;default&gt;</locale_language>
+<locale_territory>&lt;default&gt;</locale_territory>
+<password>+0400000000120303000803E8376BE34AF18EA8919E179E1F1189ED66F22E50CB3B1763EB65913A4EAE0CDE5FC17FD285A4F95FDA080340A02AF7</password>
+<server_codepage>&lt;default&gt;</server_codepage>
+<sql_server_database>IDWDEV</sql_server_database>
+<sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
+<sybase_iq_version>Sybase IQ 16.x</sybase_iq_version>
+<sybiq_engine_name>svbclsapiq01da_IDWDEV</sybiq_engine_name>
+<use_named_pipe>no</use_named_pipe>
+<user>DWH_ETLS</user>
+</DSConfiguration>
+</DSConfigurations>
+', "enable_data_transfer" = 'yes', "import_unknown_type" = 'no', "name" = 'DS_CONTROL', "pcache_force_utf16" = 'no', "unknown_type_size" = '255');
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Feb 13 15:29:23 2018', "ActaValue_3" = 'Mon Sep 17 13:36:16 2018', "x" = '-1', "y" = '-1')
+CREATE DATABASE DATASTORE DS_TARGET::'c6165d28-a8e5-4a78-a930-82ad686ce0f0' SET ("DBLiveLoad" = 'no', "application_type" = 'Custom', "cdc_enabled" = 'no', "cdc_type" = 'native', "datastore_repotype" = 'local', "ds_configuration_enabled" = 'yes', "ds_configurations" = '<?xml version="1.0" encoding="ISO-8859-1" ?>
+<DSConfigurations>
+<DSConfiguration default="true" name="Configuration1">
+<case_sensitive>yes</case_sensitive>
+<database_type>Sybase IQ</database_type>
+<db_dsnless>yes</db_dsnless>
+<db_port_no>2638</db_port_no>
+<iq_use_linked_remoteserver>no</iq_use_linked_remoteserver>
+<js_db_on_same_machine>no</js_db_on_same_machine>
+<loader_xact_size>10000</loader_xact_size>
+<locale_codepage>iso-8859-1</locale_codepage>
+<locale_language>&lt;default&gt;</locale_language>
+<locale_territory>&lt;default&gt;</locale_territory>
+<password>+0400000000120303000803E850ABAE94E54A47F104E1390EF9207790553FB862F428B04BF1CDDF4A1087113A85F1DDCF21558D04301E18021E26</password>
+<server_codepage>iso-8859-1</server_codepage>
+<sql_server_database>IDWDEV</sql_server_database>
+<sql_server_dataserver>svbclsapiq01da</sql_server_dataserver>
+<sybase_iq_version>Sybase IQ 16.x</sybase_iq_version>
+<sybiq_engine_name>svbclsapiq01da_IDWDEV</sybiq_engine_name>
+<use_named_pipe>no</use_named_pipe>
+<user>DWH_ETLS</user>
+</DSConfiguration>
+</DSConfigurations>
+', "enable_data_transfer" = 'yes', "import_unknown_type" = 'no', "name" = 'DS_TARGET', "pcache_force_utf16" = 'no', "unknown_type_size" = '255');
+
+ AlGUIComment (ActaName_1 = 'RDate_last_loaded',ActaValue_1 = 'Wed Jul 24 15:32:28 2019' , 
+ActaName_2 = 'RTotal_Number_Of_Rows_Processed',ActaValue_2 = '365' , 
+ActaName_3 = 'RNumber_Of_Rows_Rejected',ActaValue_3 = '0' , 
+ActaName_4 = 'RNumber_Of_Inserts',ActaValue_4 = '365' , 
+ActaName_5 = 'RNumber_Of_Updates',ActaValue_5 = '0' , 
+ActaName_6 = 'RNumber_Of_Deletes',ActaValue_6 = '0' , 
+ActaName_7 = 'RElapsed_Time_For_Load',ActaValue_7 = '5 Seconds' , 
+ActaName_8 = 'RDatabase_Object_Type',ActaValue_8 = 'TABLE' , 
+ActaName_9 = 'RTable_Type',ActaValue_9 = 'TABLE' , 
+ActaName_10 = 'RDescription',ActaValue_10 = '' , 
+ActaName_11 = 'REstimated_Row_Count',ActaValue_11 = '50000' , 
+ActaName_12 = 'RLoader_Is_Template_Table',ActaValue_12 = 'no' , 
+ActaName_13 = 'RSavedAfterCheckOut',ActaValue_13 = 'YES' , 
+ActaName_14 = 'RDate_modified',ActaValue_14 = 'Wed Jul 24 06:20:19 2019' )
+CREATE TABLE DS_TARGET.STG.BC_CL_COB(RECORD_ID INT  NULL  SET("ui_mapping_text" = 'BC_CL_COB.RECORD_ID'), 
+CONTACT_INFO VARCHAR(128)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.CONTACT_INFO'), 
+CONTACT_INFO_TYPE INT  NULL  SET("ui_mapping_text" = 'BC_CL_COB.CONTACT_INFO_TYPE'), 
+RECORD_TYPE INT  NULL  SET("ui_mapping_text" = 'BC_CL_COB.RECORD_TYPE'), 
+RECORD_STATUS INT  NULL  SET("ui_mapping_text" = 'BC_CL_COB.RECORD_STATUS'), 
+CALL_RESULT INT  NULL  SET("ui_mapping_text" = 'BC_CL_COB.CALL_RESULT'), 
+ATTEMPT INT  NULL  SET("ui_mapping_text" = 'BC_CL_COB.ATTEMPT'), 
+DIAL_SCHED_TIME INT  NULL  SET("ui_mapping_text" = 'BC_CL_COB.DIAL_SCHED_TIME'), 
+CALL_TIME INT  NULL  SET("ui_mapping_text" = 'BC_CL_COB.CALL_TIME'), 
+DAILY_FROM INT  NULL  SET("ui_mapping_text" = 'BC_CL_COB.DAILY_FROM'), 
+DAILY_TILL INT  NULL  SET("ui_mapping_text" = 'BC_CL_COB.DAILY_TILL'), 
+TZ_DBID INT  NULL  SET("ui_mapping_text" = 'BC_CL_COB.TZ_DBID'), 
+CAMPAIGN_ID INT  NULL  SET("ui_mapping_text" = 'BC_CL_COB.CAMPAIGN_ID'), 
+AGENT_ID VARCHAR(32)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.AGENT_ID'), 
+CHAIN_ID INT  NULL  SET("ui_mapping_text" = 'BC_CL_COB.CHAIN_ID'), 
+CHAIN_N INT  NULL  SET("ui_mapping_text" = 'BC_CL_COB.CHAIN_N'), 
+GROUP_ID INT  NULL  SET("ui_mapping_text" = 'BC_CL_COB.GROUP_ID'), 
+APP_ID INT  NULL  SET("ui_mapping_text" = 'BC_CL_COB.APP_ID'), 
+TREATMENTS VARCHAR(255)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.TREATMENTS'), 
+MEDIA_REF INT  NULL  SET("ui_mapping_text" = 'BC_CL_COB.MEDIA_REF'), 
+EMAIL_SUBJECT VARCHAR(255)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.EMAIL_SUBJECT'), 
+EMAIL_TEMPLATE_ID INT  NULL  SET("ui_mapping_text" = 'BC_CL_COB.EMAIL_TEMPLATE_ID'), 
+SWITCH_ID INT  NULL  SET("ui_mapping_text" = 'BC_CL_COB.SWITCH_ID'), 
+BC_COB_ACCT_NUM VARCHAR(19)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_ACCT_NUM'), 
+BC_COB_ADDRESS_BUS_LINE1 VARCHAR(35)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_ADDRESS_BUS_LINE1'), 
+BC_COB_ADDRESS_BUS_LINE2 VARCHAR(35)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_ADDRESS_BUS_LINE2'), 
+BC_COB_ADDRESS_LINE1 VARCHAR(35)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_ADDRESS_LINE1'), 
+BC_COB_ADDRESS_LINE2 VARCHAR(35)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_ADDRESS_LINE2'), 
+BC_COB_ADDRESS_LINE3 VARCHAR(35)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_ADDRESS_LINE3'), 
+BC_COB_AMNA_SS VARCHAR(18)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_AMNA_SS'), 
+BC_COB_BALANCE_AT_RISK REAL  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_BALANCE_AT_RISK'), 
+BC_COB_BEHAVIORAL_SCORE VARCHAR(3)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_BEHAVIORAL_SCORE'), 
+BC_COB_CARDS_CUST_ID VARCHAR(19)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_CARDS_CUST_ID'), 
+BC_COB_CURRENT_BALANCE REAL  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_CURRENT_BALANCE'), 
+BC_COB_CURRENT_DUE_AMT REAL  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_CURRENT_DUE_AMT'), 
+BC_COB_CUST_TYPE VARCHAR(4)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_CUST_TYPE'), 
+BC_COB_CUSTOMER_CITY VARCHAR(30)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_CUSTOMER_CITY'), 
+BC_COB_CUSTOMER_INFO_NUMBER VARCHAR(30)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_CUSTOMER_INFO_NUMBER'), 
+BC_COB_CUSTOMER_NAME VARCHAR(45)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_CUSTOMER_NAME'), 
+BC_COB_CUSTOMER_STATE VARCHAR(2)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_CUSTOMER_STATE'), 
+BC_COB_CYCLES_DELINQUENCY INT  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_CYCLES_DELINQUENCY'), 
+BC_COB_DPD INT  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_DPD'), 
+BC_COB_LAST_ACTIVITY_DATE VARCHAR(8)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_LAST_ACTIVITY_DATE'), 
+BC_COB_LAST_PAYMENT_DATE VARCHAR(8)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_LAST_PAYMENT_DATE'), 
+BC_COB_MONTHS_ON_BOOK INT  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_MONTHS_ON_BOOK'), 
+BC_COB_OPEN_DATE VARCHAR(8)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_OPEN_DATE'), 
+BC_COB_OVERLIMIT_AMT REAL  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_OVERLIMIT_AMT'), 
+BC_COB_POSTAL_CODE VARCHAR(9)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_POSTAL_CODE'), 
+BC_COB_RESPONSIBLE_COLL VARCHAR(4)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_RESPONSIBLE_COLL'), 
+BC_COB_TOTAL_DELINQ_AMT REAL  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_TOTAL_DELINQ_AMT'), 
+BC_COB_TOTAL_DUE_AMOUNT REAL  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_TOTAL_DUE_AMOUNT'), 
+BC_COB_FUNCTIONAL_AREA VARCHAR(1)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_FUNCTIONAL_AREA'), 
+BC_COB_STATE_CODE VARCHAR(2)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_STATE_CODE'), 
+BC_COB_LOCATION_CODE VARCHAR(6)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_LOCATION_CODE'), 
+BC_COB_DISPOSITION VARCHAR(50)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_DISPOSITION'), 
+BC_COB_C1 VARCHAR(25)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_C1'), 
+BC_COB_C2 VARCHAR(25)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_C2'), 
+BC_COB_C3 VARCHAR(25)  NULL  SET("ui_mapping_text" = 'BC_CL_COB.BC_COB_C3'), 
+LOAD_DATE DATETIME(9)  NULL  SET("Content_Type" = 'DATE', "Description" = 'Fecha de carga', "ui_mapping_text" = 'sysdate()')) 
+SET("db_alias_name" = 'STG')
+;
+
+ AlGUIComment (ActaName_1 = 'RDatabase_Object_Type',ActaValue_1 = 'TABLE' , 
+ActaName_2 = 'RTable_Type',ActaValue_2 = 'TABLE' , 
+ActaName_3 = 'RDescription',ActaValue_3 = '' , 
+ActaName_4 = 'REstimated_Row_Count',ActaValue_4 = '50000' , 
+ActaName_5 = 'RSavedAfterCheckOut',ActaValue_5 = 'YES' , 
+ActaName_6 = 'RLoader_Is_Template_Table',ActaValue_6 = 'no' , 
+ActaName_7 = 'RDate_created',ActaValue_7 = 'Wed Jul 24 06:55:57 2019' , 
+ActaName_8 = 'RDate_last_loaded',ActaValue_8 = 'Wed Jul 24 15:32:36 2019' , 
+ActaName_9 = 'RTotal_Number_Of_Rows_Processed',ActaValue_9 = '365' , 
+ActaName_10 = 'RNumber_Of_Rows_Rejected',ActaValue_10 = '0' , 
+ActaName_11 = 'RNumber_Of_Inserts',ActaValue_11 = '365' , 
+ActaName_12 = 'RNumber_Of_Updates',ActaValue_12 = '0' , 
+ActaName_13 = 'RNumber_Of_Deletes',ActaValue_13 = '0' , 
+ActaName_14 = 'RElapsed_Time_For_Load',ActaValue_14 = '1 Seconds' )
+CREATE TABLE DS_TARGET.dbo.BC_CL_COB(RECORD_ID INT  NULL , 
+CONTACT_INFO VARCHAR(128)  NULL , 
+CONTACT_INFO_TYPE INT  NULL , 
+RECORD_TYPE INT  NULL , 
+RECORD_STATUS INT  NULL , 
+CALL_RESULT INT  NULL , 
+ATTEMPT INT  NULL , 
+DIAL_SCHED_TIME INT  NULL , 
+CALL_TIME INT  NULL , 
+DAILY_FROM INT  NULL , 
+DAILY_TILL INT  NULL , 
+TZ_DBID INT  NULL , 
+CAMPAIGN_ID INT  NULL , 
+AGENT_ID VARCHAR(32)  NULL , 
+CHAIN_ID INT  NULL , 
+CHAIN_N INT  NULL , 
+GROUP_ID INT  NULL , 
+APP_ID INT  NULL , 
+TREATMENTS VARCHAR(255)  NULL , 
+MEDIA_REF INT  NULL , 
+EMAIL_SUBJECT VARCHAR(255)  NULL , 
+EMAIL_TEMPLATE_ID INT  NULL , 
+SWITCH_ID INT  NULL , 
+BC_COB_ACCT_NUM VARCHAR(19)  NULL , 
+BC_COB_ADDRESS_BUS_LINE1 VARCHAR(35)  NULL , 
+BC_COB_ADDRESS_BUS_LINE2 VARCHAR(35)  NULL , 
+BC_COB_ADDRESS_LINE1 VARCHAR(35)  NULL , 
+BC_COB_ADDRESS_LINE2 VARCHAR(35)  NULL , 
+BC_COB_ADDRESS_LINE3 VARCHAR(35)  NULL , 
+BC_COB_AMNA_SS VARCHAR(18)  NULL , 
+BC_COB_BALANCE_AT_RISK REAL  NULL , 
+BC_COB_BEHAVIORAL_SCORE VARCHAR(3)  NULL , 
+BC_COB_CARDS_CUST_ID VARCHAR(19)  NULL , 
+BC_COB_CURRENT_BALANCE REAL  NULL , 
+BC_COB_CURRENT_DUE_AMT REAL  NULL , 
+BC_COB_CUST_TYPE VARCHAR(4)  NULL , 
+BC_COB_CUSTOMER_CITY VARCHAR(30)  NULL , 
+BC_COB_CUSTOMER_INFO_NUMBER VARCHAR(30)  NULL , 
+BC_COB_CUSTOMER_NAME VARCHAR(45)  NULL , 
+BC_COB_CUSTOMER_STATE VARCHAR(2)  NULL , 
+BC_COB_CYCLES_DELINQUENCY INT  NULL , 
+BC_COB_DPD INT  NULL , 
+BC_COB_LAST_ACTIVITY_DATE VARCHAR(8)  NULL , 
+BC_COB_LAST_PAYMENT_DATE VARCHAR(8)  NULL , 
+BC_COB_MONTHS_ON_BOOK INT  NULL , 
+BC_COB_OPEN_DATE VARCHAR(8)  NULL , 
+BC_COB_OVERLIMIT_AMT REAL  NULL , 
+BC_COB_POSTAL_CODE VARCHAR(9)  NULL , 
+BC_COB_RESPONSIBLE_COLL VARCHAR(4)  NULL , 
+BC_COB_TOTAL_DELINQ_AMT REAL  NULL , 
+BC_COB_TOTAL_DUE_AMOUNT REAL  NULL , 
+BC_COB_FUNCTIONAL_AREA VARCHAR(1)  NULL , 
+BC_COB_STATE_CODE VARCHAR(2)  NULL , 
+BC_COB_LOCATION_CODE VARCHAR(6)  NULL , 
+BC_COB_DISPOSITION VARCHAR(50)  NULL , 
+BC_COB_C1 VARCHAR(25)  NULL , 
+BC_COB_C2 VARCHAR(25)  NULL , 
+BC_COB_C3 VARCHAR(25)  NULL , 
+LOAD_DATE DATETIME(6)  NULL ) 
+SET("db_alias_name" = 'dbo')
+;
+ AlGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '50', "ui_display_name" = 'BC_CL_COB', "x" = '-1', "y" = '-1')
+CREATE FILE DATASTORE BC_CL_COB::'47389f72-6af1-4ece-94d3-5dd73356ec59'(RECORD_ID INT , CONTACT_INFO VARCHAR(128) , CONTACT_INFO_TYPE INT , RECORD_TYPE INT , RECORD_STATUS INT , CALL_RESULT INT , ATTEMPT INT , DIAL_SCHED_TIME INT , CALL_TIME INT , DAILY_FROM INT , DAILY_TILL INT , TZ_DBID INT , CAMPAIGN_ID INT , AGENT_ID VARCHAR(32) , CHAIN_ID INT , CHAIN_N INT , GROUP_ID INT , APP_ID INT , TREATMENTS VARCHAR(255) , MEDIA_REF INT , EMAIL_SUBJECT VARCHAR(255) , EMAIL_TEMPLATE_ID INT , SWITCH_ID INT , BC_COB_ACCT_NUM VARCHAR(19) , BC_COB_ADDRESS_BUS_LINE1 VARCHAR(35) , BC_COB_ADDRESS_BUS_LINE2 VARCHAR(35) , BC_COB_ADDRESS_LINE1 VARCHAR(35) , BC_COB_ADDRESS_LINE2 VARCHAR(35) , BC_COB_ADDRESS_LINE3 VARCHAR(35) , BC_COB_AMNA_SS VARCHAR(18) , BC_COB_BALANCE_AT_RISK REAL , BC_COB_BEHAVIORAL_SCORE VARCHAR(3) , BC_COB_CARDS_CUST_ID VARCHAR(19) , BC_COB_CURRENT_BALANCE REAL , BC_COB_CURRENT_DUE_AMT REAL , BC_COB_CUST_TYPE VARCHAR(4) , BC_COB_CUSTOMER_CITY VARCHAR(30) , BC_COB_CUSTOMER_INFO_NUMBER VARCHAR(30) , BC_COB_CUSTOMER_NAME VARCHAR(45) , BC_COB_CUSTOMER_STATE VARCHAR(2) , BC_COB_CYCLES_DELINQUENCY INT , BC_COB_DPD INT , BC_COB_LAST_ACTIVITY_DATE VARCHAR(8) , BC_COB_LAST_PAYMENT_DATE VARCHAR(8) , BC_COB_MONTHS_ON_BOOK INT , BC_COB_OPEN_DATE VARCHAR(8) , BC_COB_OVERLIMIT_AMT REAL , BC_COB_POSTAL_CODE VARCHAR(9) , BC_COB_RESPONSIBLE_COLL VARCHAR(4) , BC_COB_TOTAL_DELINQ_AMT REAL , BC_COB_TOTAL_DUE_AMOUNT REAL , BC_COB_FUNCTIONAL_AREA VARCHAR(1) , BC_COB_STATE_CODE VARCHAR(2) , BC_COB_LOCATION_CODE VARCHAR(6) , BC_COB_DISPOSITION VARCHAR(50) , BC_COB_C1 VARCHAR(25) , BC_COB_C2 VARCHAR(25) , BC_COB_C3 VARCHAR(25) )
+ SET ("abap_file_format" = 'no', "application_type" = '', "cache" = 'yes', "column_delimiter" = '~', "column_width" = '1', "column_width1" = '4', "column_width10" = '4', "column_width11" = '4', "column_width12" = '4', "column_width13" = '4', "column_width14" = '32', "column_width15" = '4', "column_width16" = '4', "column_width17" = '4', "column_width18" = '4', "column_width19" = '255', "column_width2" = '128', "column_width20" = '4', "column_width21" = '255', "column_width22" = '4', "column_width23" = '4', "column_width24" = '19', "column_width25" = '35', "column_width26" = '35', "column_width27" = '35', "column_width28" = '35', "column_width29" = '35', "column_width3" = '4', "column_width30" = '18', "column_width31" = '8', "column_width32" = '3', "column_width33" = '19', "column_width34" = '8', "column_width35" = '8', "column_width36" = '4', "column_width37" = '30', "column_width38" = '30', "column_width39" = '45', "column_width4" = '4', "column_width40" = '2', "column_width41" = '4', "column_width42" = '4', "column_width43" = '8', "column_width44" = '8', "column_width45" = '4', "column_width46" = '8', "column_width47" = '8', "column_width48" = '9', "column_width49" = '4', "column_width5" = '4', "column_width50" = '8', "column_width51" = '8', "column_width52" = '1', "column_width53" = '2', "column_width54" = '6', "column_width55" = '50', "column_width56" = '25', "column_width57" = '25', "column_width58" = '25', "column_width6" = '4', "column_width7" = '4', "column_width8" = '4', "column_width9" = '4', "date_format" = 'yyyy.mm.dd', "datetime_format" = 'yyyy.mm.dd hh24:mi:ss', "ds_configuration_enabled" = 'no', "file_format" = 'ascii', "file_location" = 'job_server', "file_name" = 'BC_CL_COB_MORA1_BP.txt', "file_type" = 'delimited_file', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>', "name" = 'UNNAMED', "number_of_threads" = '<default>', "read_subfolders" = 'yes', "reader_capture_data_conversion_errors" = 'no', "reader_capture_file_access_errors" = 'yes', "reader_capture_row_format_errors" = 'yes', "reader_capture_string_truncation_errors" = 'no', "reader_log_data_conversion_warnings" = 'yes', "reader_log_row_format_warnings" = 'yes', "reader_log_warnings" = 'yes', "reader_maximum_warnings_to_log" = '-99', "reader_skip_empty_files" = 'yes', "reader_skip_error_handling" = 'no', "reader_write_error_rows_to_file" = 'no', "root_dir" = '/data/SAT/genesys', "row_delimiter" = '
+', "table_weight" = '0', "time_format" = 'hh24:mi:ss', "transfer_custom" = 'no', "use_root_dir" = 'no', "write_bom" = 'no');
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RDescription', "ActaName_3" = 'RParallelizable', "ActaName_4" = 'RisScriptValidationFunction', "ActaName_5" = 'RSavedAfterCheckOut', "ActaName_6" = 'RDate_created', "ActaName_7" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'PARA CAPTURAR EL INICIO DE LOS JOBS', "ActaValue_3" = 'no', "ActaValue_4" = 'no', "ActaValue_5" = 'YES', "ActaValue_6" = 'Tue Apr  3 17:39:19 2018', "ActaValue_7" = 'Tue May 28 11:11:41 2019', "InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '70', "ui_script_text" = '$L_CURRENT_DATE = sysdate( ) ;
+$L_CAT_JOB = $P_CAT_JOB ;
+$L_STATUS_JOB = $P_STATUS_JOB ;
+print( \'----------------ID: [$L_CAT_JOB]----------------\');
+
+try
+    
+	begin
+	SQL(\'DS_CONTROL\', \'BEGIN TRANSACTION\');
+	#print( \'begin cf_control_log_edw\');
+	
+	print( \'INSERT INTO CNF.CONTROL_EJECUCION(ID_CAT_JOB, FECHA, ESTADO, COUNT_FILA) VALUES([$L_CAT_JOB], \\\'[$L_CURRENT_DATE]\\\', \\\'[$L_STATUS_JOB]\\\', 0)\');
+	
+	SQL(\'DS_CONTROL\', \'INSERT INTO CNF.CONTROL_EJECUCION(ID_CAT_JOB, FECHA, ESTADO, COUNT_FILA) VALUES([$L_CAT_JOB], \\\'[$L_CURRENT_DATE]\\\', \\\'[$L_STATUS_JOB]\\\', 0)\');
+	
+	
+
+    #print( \'TERMINANDO INSERCION CONTROL_EJECUCION\');
+
+	$L_ID_GENERATED = sql( \'DS_CONTROL\', \'SELECT MAX(ID_CONTROL) FROM CNF.CONTROL_EJECUCION WHERE ID_CAT_JOB = [$L_CAT_JOB]\');
+	#print( $L_ID_GENERATED );
+    SQL(\'DS_CONTROL\', \'COMMIT TRANSACTION;\');
+	SQL(\'DS_CONTROL\', \'COMMIT;\');
+
+    $P_ID_GENERATED = $L_ID_GENERATED ;	
+
+	PRINT(\'TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION\');
+	RETURN $P_ID_GENERATED ;		
+	end
+catch ( all  )
+	begin
+		print( \'OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION\');
+		RETURN -1;
+	end', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_CONTROL_LOG_EDW($P_CURRENT_DATE VARCHAR(25)  IN, $P_CAT_JOB INT  IN, $P_STATUS_JOB VARCHAR(25)  IN, $P_ID_GENERATED INT  OUT )
+RETURNS  INT 
+DECLARE
+     $L_CURRENT_DATE VARCHAR(25) ;
+     $L_CAT_JOB INT ;
+     $L_STATUS_JOB VARCHAR(25) ;
+     $L_ID_GENERATED INT ;
+BEGIN
+$L_CURRENT_DATE = sysdate();$L_CAT_JOB = $P_CAT_JOB;$L_STATUS_JOB = $P_STATUS_JOB;print('----------------ID: [$L_CAT_JOB]----------------');TRY
+BEGIN
+sql('DS_CONTROL', 'BEGIN TRANSACTION');print('INSERT INTO CNF.CONTROL_EJECUCION(ID_CAT_JOB, FECHA, ESTADO, COUNT_FILA) VALUES([$L_CAT_JOB], \'[$L_CURRENT_DATE]\', \'[$L_STATUS_JOB]\', 0)');sql('DS_CONTROL', 'INSERT INTO CNF.CONTROL_EJECUCION(ID_CAT_JOB, FECHA, ESTADO, COUNT_FILA) VALUES([$L_CAT_JOB], \'[$L_CURRENT_DATE]\', \'[$L_STATUS_JOB]\', 0)');$L_ID_GENERATED = sql('DS_CONTROL', 'SELECT MAX(ID_CONTROL) FROM CNF.CONTROL_EJECUCION WHERE ID_CAT_JOB = [$L_CAT_JOB]');sql('DS_CONTROL', 'COMMIT TRANSACTION;');sql('DS_CONTROL', 'COMMIT;');$P_ID_GENERATED = $L_ID_GENERATED;print('TERMINANDO INSERCION EN TABLA DE CONTROL DE EJECUCION');RETURN $P_ID_GENERATED;
+END
+CATCH (210101)
+BEGIN
+print('OCURRIO UN ERROR AL AGREGAR INFORMACION A LA TABLA TBL_CONTROL_EJECUCION');RETURN -1;
+END
+
+END_TRY
+END
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RDescription', "ActaName_3" = 'RParallelizable', "ActaName_4" = 'RisScriptValidationFunction', "ActaName_5" = 'RSavedAfterCheckOut', "ActaName_6" = 'RDate_created', "ActaName_7" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'PARA DEFINIR QUE UN JOB FUE FINALIZADO CON EXITO', "ActaValue_3" = 'no', "ActaValue_4" = 'no', "ActaValue_5" = 'YES', "ActaValue_6" = 'Tue Feb 20 17:24:23 2018', "ActaValue_7" = 'Wed Sep 12 08:51:58 2018', "InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '50', "ui_script_text" = '$L_ID_GENERATED = $P_ID_GENERATED ;
+$L_STATUS_JOB = $P_STATUS_JOB ;
+
+try
+	begin
+	IF ($L_ID_GENERATED is not null)
+	begin
+        SQL(\'DS_CONTROL\', \'BEGIN TRANSACTION\');
+	    SQL(\'DS_CONTROL\', \'UPDATE CNF.CONTROL_EJECUCION SET ESTADO = \\\'[$L_STATUS_JOB]\\\' WHERE ID_CONTROL = [$L_ID_GENERATED]\');
+	    SQL(\'DS_CONTROL\', \'COMMIT TRANSACTION;\');
+		SQL(\'DS_CONTROL\', \'COMMIT;\');
+	    print( \'Terminando la modificacion en tabla\' );
+	end
+	RETURN $L_ID_GENERATED ;
+	end
+catch ( all  )
+	begin
+        print( \'NO SE PUDO INSERTAR EN LA TABLA DE LOG\');                
+		Return  -1;
+	end', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_CONTROL_LOG_FIN($P_ID_GENERATED INT  IN, $P_STATUS_JOB VARCHAR(25)  IN )
+RETURNS  INT 
+DECLARE
+     $L_ID_GENERATED INT ;
+     $L_STATUS_JOB VARCHAR(25) ;
+BEGIN
+$L_ID_GENERATED = $P_ID_GENERATED;$L_STATUS_JOB = $P_STATUS_JOB;TRY
+BEGIN
+IF (($L_ID_GENERATED IS NOT  NULL ) )
+BEGIN
+sql('DS_CONTROL', 'BEGIN TRANSACTION');sql('DS_CONTROL', 'UPDATE CNF.CONTROL_EJECUCION SET ESTADO = \'[$L_STATUS_JOB]\' WHERE ID_CONTROL = [$L_ID_GENERATED]');sql('DS_CONTROL', 'COMMIT TRANSACTION;');sql('DS_CONTROL', 'COMMIT;');print('Terminando la modificacion en tabla');END
+RETURN $L_ID_GENERATED;
+END
+CATCH (210101)
+BEGIN
+print('NO SE PUDO INSERTAR EN LA TABLA DE LOG');RETURN -1;
+END
+
+END_TRY
+END
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RDescription', "ActaName_3" = 'RParallelizable', "ActaName_4" = 'RisScriptValidationFunction', "ActaName_5" = 'RSavedAfterCheckOut', "ActaName_6" = 'RDate_created', "ActaName_7" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'Envio de notificaciones por emial.', "ActaValue_3" = 'no', "ActaValue_4" = 'no', "ActaValue_5" = 'YES', "ActaValue_6" = 'Mon Jul 16 09:49:37 2018', "ActaValue_7" = 'Fri Jul 13 15:22:25 2018', "InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '50', "ui_script_text" = '##/********************************************************           
+##  * CF_TABLE_NAME                                        *   
+##  *                                                      *   
+##  * Author:  Jaime Ascencio | Gyssa                      *   
+##  *                                                      *   
+##  * Purpose: Envio de email a una lista de notifica.     *   
+##  *                                                      *   
+##  * Usage:                                               *   
+##  *      Ejecutada por cada WF 13JUL2018                 *   
+##  ********************************************************/ 
+
+
+$L_EMAIL = sql(\'DS_CONTROL\', \'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \\\'%EMAIL_NOTIFICACION%\\\'\');
+
+#concatenar mensaje chilero....
+
+
+
+$L_EXEC = smtp_to($L_EMAIL,$P_SBJ,$P_MSG,10,10);
+
+return $L_EXEC;', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_EMAIL_NOTIFICATION($P_SBJ VARCHAR(256)  IN, $P_MSG VARCHAR(5000)  IN )
+RETURNS  INT 
+DECLARE
+     $L_EMAIL VARCHAR(100) ;
+     $L_EXEC INT ;
+BEGIN
+$L_EMAIL = sql('DS_CONTROL', 'SELECT VALOR  FROM CNF.PARAMETROS WHERE PARAMETRO LIKE \'%EMAIL_NOTIFICACION%\'');$L_EXEC = smtp_to($L_EMAIL, $P_SBJ, $P_MSG, 10, 10);RETURN $L_EXEC;
+END
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RDescription', "ActaName_3" = 'RParallelizable', "ActaName_4" = 'RisScriptValidationFunction', "ActaName_5" = 'RSavedAfterCheckOut', "ActaName_6" = 'RDate_created', "ActaName_7" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'PARA CAPTURAR ERROR EN TABLA', "ActaValue_3" = 'no', "ActaValue_4" = 'no', "ActaValue_5" = 'YES', "ActaValue_6" = 'Tue Feb 20 09:39:51 2018', "ActaValue_7" = 'Fri Aug 24 13:26:53 2018', "InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '55', "ui_script_text" = '$L_ERROR_NUMBER = $P_ERROR_NUMBER ;
+$L_ERROR_CONTEXT = $P_ERROR_CONTEXT ;
+$L_ERROR_MESSAGE = $P_ERROR_MESSAGE ;
+##$L_ERROR_TIMESTAMP = $P_ERROR_TIMESTAMP ;
+
+$L_ID_GENERATED = $P_ID_GENERATED ;
+
+print( \'**********************\' );
+$L_ERROR_CONTEXT = replace_substr( $L_ERROR_CONTEXT , chr( 39 ), \'"\');
+$L_ERROR_MESSAGE  = replace_substr( $L_ERROR_MESSAGE  , chr( 39 ), \'"\');
+print( \'MENSAJE DE ERROR EN LOG EJECUCION\' );
+print( \'**********************\' );
+
+$L_ERROR_TIMESTAMP  = sysdate( );
+
+try
+	begin
+	#print( \'Entrando al begin\' );
+
+	#print( \'INSERT INTO CNF.LOG_EJECUCION(ERROR_NUMBER, ERROR_CONTEXT, ERROR_MESSAGE, ERROR_TIMESTAMP) VALUES([$L_ERROR_NUMBER], \\\'[$L_ERROR_CONTEXT]\\\', \\\'[$L_ERROR_MESSAGE]\\\', \\\'[$L_ERROR_TIMESTAMP]\\\')\');
+
+    SQL(\'DS_CONTROL\', \'INSERT INTO CNF.LOG_EJECUCION(ERROR_NUMBER, ERROR_CONTEXT, ERROR_MESSAGE, ERROR_TIMESTAMP) VALUES([$L_ERROR_NUMBER], \\\'[$L_ERROR_CONTEXT]\\\', \\\'[$L_ERROR_MESSAGE]\\\', \\\'[$L_ERROR_TIMESTAMP]\\\')\');	
+    ##SQL(\'DS_CONTROL\', \'INSERT INTO dbo.LOG_EJECUCION(ERROR_NUMBER, ERROR_CONTEXT, ERROR_MESSAGE, ERROR_TIMESTAMP) VALUES([$L_ERROR_NUMBER], \\\'mensaje2\\\', \\\'mensaje\\\', \\\'\\\')\');	
+	SQL(\'DS_CONTROL\', \'COMMIT\');
+
+
+	
+
+    #print( \'mitad del proc\' );	
+
+	SQL(\'DS_CONTROL\', \'UPDATE CNF.CONTROL_EJECUCION SET ESTADO = \\\'ERROR\\\' WHERE ID_CONTROL = [$L_ID_GENERATED]\');
+    SQL(\'DS_CONTROL\', \'COMMIT\');
+	#print( \'Terminando la insercion en tabla\' );
+	RETURN $L_ERROR_NUMBER;
+	end
+catch ( all  )
+	begin
+        print( \'ERROR DE CONTEXTO******************\');
+        print( $L_ERROR_CONTEXT  );                
+		Return  -1;
+	end
+
+
+', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_ERROR_LOG($P_ERROR_NUMBER INT  IN, $P_ERROR_MESSAGE VARCHAR(5000)  IN, $P_ERROR_CONTEXT VARCHAR(5000)  IN, $P_ERROR_TIMESTAMP DATETIME(9)  IN, $P_ID_GENERATED INT  IN )
+RETURNS  INT 
+DECLARE
+     $L_ERROR_CONTEXT VARCHAR(1000) ;
+     $L_ERROR_MESSAGE VARCHAR(1000) ;
+     $L_ERROR_NUMBER INT ;
+     $L_ERROR_TIMESTAMP DATETIME(9) ;
+     $L_ID_GENERATED INT ;
+BEGIN
+$L_ERROR_NUMBER = $P_ERROR_NUMBER;$L_ERROR_CONTEXT = $P_ERROR_CONTEXT;$L_ERROR_MESSAGE = $P_ERROR_MESSAGE;$L_ID_GENERATED = $P_ID_GENERATED;print('**********************');$L_ERROR_CONTEXT = replace_substr($L_ERROR_CONTEXT, chr(39), '"');$L_ERROR_MESSAGE = replace_substr($L_ERROR_MESSAGE, chr(39), '"');print('MENSAJE DE ERROR EN LOG EJECUCION');print('**********************');$L_ERROR_TIMESTAMP = sysdate();TRY
+BEGIN
+sql('DS_CONTROL', 'INSERT INTO CNF.LOG_EJECUCION(ERROR_NUMBER, ERROR_CONTEXT, ERROR_MESSAGE, ERROR_TIMESTAMP) VALUES([$L_ERROR_NUMBER], \'[$L_ERROR_CONTEXT]\', \'[$L_ERROR_MESSAGE]\', \'[$L_ERROR_TIMESTAMP]\')');sql('DS_CONTROL', 'COMMIT');sql('DS_CONTROL', 'UPDATE CNF.CONTROL_EJECUCION SET ESTADO = \'ERROR\' WHERE ID_CONTROL = [$L_ID_GENERATED]');sql('DS_CONTROL', 'COMMIT');RETURN $L_ERROR_NUMBER;
+END
+CATCH (210101)
+BEGIN
+print('ERROR DE CONTEXTO******************');print($L_ERROR_CONTEXT);RETURN -1;
+END
+
+END_TRY
+END
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Tue Apr  3 14:15:33 2018', "ActaValue_6" = 'Fri Aug 24 13:26:53 2018', "InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '55', "ui_script_text" = '$L_ID_JOB_TABLE   = SQL(\'DS_CONTROL\', \'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \\\'[$P_JOBNAME]\\\'\');
+
+print(\'<<<<<<<<<<<<<dmVyc2lvbjU=>>>>>>>>>>>\');
+
+IF($L_ID_JOB_TABLE IS NOT null)
+begin
+ $P_EXISTEJOB = 1;	
+end
+else 
+begin
+ $P_EXISTEJOB = 0;	
+end
+
+return $P_EXISTEJOB ;
+
+', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_JOBNAME($P_JOBNAME VARCHAR(100)  IN, $P_EXISTEJOB INT  OUT )
+RETURNS  INT 
+DECLARE
+     $L_ID_JOB_TABLE INT ;
+BEGIN
+$L_ID_JOB_TABLE = sql('DS_CONTROL', 'SELECT MAX(ID_JOB_TABLE) FROM cnf.CAT_JOBS WHERE NOMBRE_JOB = \'[$P_JOBNAME]\'');print('<<<<<<<<<<<<<dmVyc2lvbjU=>>>>>>>>>>>');IF (($L_ID_JOB_TABLE IS NOT  NULL ) )
+BEGIN
+$P_EXISTEJOB = 1;END
+ELSE
+BEGIN
+$P_EXISTEJOB = 0;END
+RETURN $P_EXISTEJOB;
+END
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Wed Apr  4 11:29:53 2018', "ActaValue_6" = 'Wed Jul 24 05:42:51 2019', "InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '70', "ui_script_text" = '##/********************************************************           
+##  * CF_TABLE_NAME                                        *   
+##  *                                                      *   
+##  * Author:  Jaime Ascencio | Gyssa                      *   
+##  *                                                      *   
+##  * Purpose:  logica procesamiento de tablas.            *   
+##  *                                                      *   
+##  * Usage:                                               *   
+##  *      Ejecutada por cada WF                           *   
+##  ********************************************************/ 
+
+#print( \'Validacion de tabla en WF\');
+$P_TABLE_NAME = replace_substr( $P_TABLE_NAME, \'stg.\', \'\');
+
+Print(\'SELECT ID_JOB_TABLE FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \\\'[$P_TABLE_NAME]\\\'\');
+ 
+$L_REPROCESS   = SQL(\'DS_CONTROL\', \'select VALOR from cnf.PARAMETROS where PARAMETRO = \\\'REPROCESO\\\'\');
+$L_EXIST_TABLE   = SQL(\'DS_CONTROL\', \'SELECT ID_JOB_TABLE FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \\\'[$P_TABLE_NAME]\\\'\');
+$L_FILE_EXIST = sql( \'DS_CONTROL\', \'SELECT count(1) FROM CNF.FILE_LIST WHERE filename like (\\\'[$P_TABLE_NAME]%\\\') and loaded = 0\');
+
+IF($L_EXIST_TABLE is not null) #que exista la tabla
+begin
+#print(\'###################################################que exista la tabla\');
+	IF($L_FILE_EXIST > 0) # si tiene archivo
+	begin
+	#print(\'###################################################si tiene archivo cobis | ics\');
+		IF($L_REPROCESS = \'1\') # requiere reproceso.
+		begin
+		#print(\'###################################################requiere reproceso.\');
+			#obtener nombre tabla a reprocesar
+			$L_TBL_TO_REPRO   = SQL(\'DS_CONTROL\', \'SELECT NOMBRE_TABLA FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \\\'[$P_TABLE_NAME]\\\' and REPROCESO = 1\');		
+
+			IF($L_TBL_TO_REPRO is not null)
+			begin
+				$L_EXIST_TABLE  = 1;
+				CF_TYPE_LOAD($L_TBL_TO_REPRO);
+			end
+			else
+				begin
+					$L_EXIST_TABLE  = 0;
+					print( \'::1 NO EXISTE TABLA A REPROCESAR\');
+				end
+		end
+		else
+			begin
+				$L_TABLE_NAME   = SQL(\'DS_CONTROL\', \'SELECT NOMBRE_TABLA FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \\\'[$P_TABLE_NAME]\\\' and TIPO_CARGA =\\\'FULL\\\'\');
+				$L_EXIST_TABLE  = 1;
+				CF_TYPE_LOAD($L_TABLE_NAME);
+			end
+	end
+	else #no tiene archivo cobis | ics
+	begin
+		#print(\'###################################################no tiene archivo cobis | ics\');
+		IF($L_REPROCESS = \'1\') # requiere reproceso.
+		begin
+			#print(\'###################################################requiere reproceso.\');
+			#obtener nombre tabla a reprocesar
+			$L_TBL_TO_REPRO   = SQL(\'DS_CONTROL\', \'SELECT NOMBRE_TABLA FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \\\'[$P_TABLE_NAME]\\\' and REPROCESO = 1\');		
+			IF($L_TBL_TO_REPRO is not null)
+			begin
+				$L_EXIST_TABLE  = 1;
+				CF_TYPE_LOAD($L_TBL_TO_REPRO);
+			end
+			else
+			begin
+				$L_EXIST_TABLE  = 0;
+				print( \'::2 NO EXISTE TABLA A REPROCESAR\');
+			end
+		end
+		else
+		begin
+			$L_TABLE_NAME   = SQL(\'DS_CONTROL\', \'SELECT NOMBRE_TABLA FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \\\'[$P_TABLE_NAME]\\\' and TIPO_CARGA =\\\'FULL\\\'\');
+			$L_EXIST_TABLE  = 1;
+			CF_TYPE_LOAD($L_TABLE_NAME);	
+		end
+	end
+end
+else
+	begin
+		$L_EXIST_TABLE  = 0;
+		print( \'::3 NO EXISTE TABLA A PROCESAR\');	
+	end
+	
+
+
+
+
+
+Return $L_EXIST_TABLE ;', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_TABLE_NAME($P_TABLE_NAME VARCHAR(100)  IN )
+RETURNS  INT 
+DECLARE
+     $L_EXIST_TABLE INT ;
+     $L_TABLE_NAME VARCHAR(100) ;
+     $L_FILE_EXIST INT ;
+     $L_REPROCESS VARCHAR(1) ;
+     $L_TBL_TO_REPRO VARCHAR(100) ;
+BEGIN
+$P_TABLE_NAME = replace_substr($P_TABLE_NAME, 'stg.', '');print('SELECT ID_JOB_TABLE FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \'[$P_TABLE_NAME]\'');$L_REPROCESS = sql('DS_CONTROL', 'select VALOR from cnf.PARAMETROS where PARAMETRO = \'REPROCESO\'');$L_EXIST_TABLE = sql('DS_CONTROL', 'SELECT ID_JOB_TABLE FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \'[$P_TABLE_NAME]\'');$L_FILE_EXIST = sql('DS_CONTROL', 'SELECT count(1) FROM CNF.FILE_LIST WHERE filename like (\'[$P_TABLE_NAME]%\') and loaded = 0');IF (($L_EXIST_TABLE IS NOT  NULL ) )
+BEGIN
+IF (($L_FILE_EXIST > 0) )
+BEGIN
+IF (($L_REPROCESS = '1') )
+BEGIN
+$L_TBL_TO_REPRO = sql('DS_CONTROL', 'SELECT NOMBRE_TABLA FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \'[$P_TABLE_NAME]\' and REPROCESO = 1');IF (($L_TBL_TO_REPRO IS NOT  NULL ) )
+BEGIN
+$L_EXIST_TABLE = 1;cf_type_load($L_TBL_TO_REPRO);END
+ELSE
+BEGIN
+$L_EXIST_TABLE = 0;print('::1 NO EXISTE TABLA A REPROCESAR');END
+END
+ELSE
+BEGIN
+$L_TABLE_NAME = sql('DS_CONTROL', 'SELECT NOMBRE_TABLA FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \'[$P_TABLE_NAME]\' and TIPO_CARGA =\'FULL\'');$L_EXIST_TABLE = 1;cf_type_load($L_TABLE_NAME);END
+END
+ELSE
+BEGIN
+IF (($L_REPROCESS = '1') )
+BEGIN
+$L_TBL_TO_REPRO = sql('DS_CONTROL', 'SELECT NOMBRE_TABLA FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \'[$P_TABLE_NAME]\' and REPROCESO = 1');IF (($L_TBL_TO_REPRO IS NOT  NULL ) )
+BEGIN
+$L_EXIST_TABLE = 1;cf_type_load($L_TBL_TO_REPRO);END
+ELSE
+BEGIN
+$L_EXIST_TABLE = 0;print('::2 NO EXISTE TABLA A REPROCESAR');END
+END
+ELSE
+BEGIN
+$L_TABLE_NAME = sql('DS_CONTROL', 'SELECT NOMBRE_TABLA FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \'[$P_TABLE_NAME]\' and TIPO_CARGA =\'FULL\'');$L_EXIST_TABLE = 1;cf_type_load($L_TABLE_NAME);END
+END
+END
+ELSE
+BEGIN
+$L_EXIST_TABLE = 0;print('::3 NO EXISTE TABLA A PROCESAR');END
+RETURN $L_EXIST_TABLE;
+END
+ AlGUIComment ("ActaName_1" = 'RActa_user_func_category', "ActaName_2" = 'RParallelizable', "ActaName_3" = 'RisScriptValidationFunction', "ActaName_4" = 'RSavedAfterCheckOut', "ActaName_5" = 'RDate_created', "ActaName_6" = 'RDate_modified', "ActaValue_1" = 'User_Script_Function', "ActaValue_2" = 'no', "ActaValue_3" = 'no', "ActaValue_4" = 'YES', "ActaValue_5" = 'Mon May 28 15:00:01 2018', "ActaValue_6" = 'Tue Sep 11 21:47:28 2018', "InputSchema_WidthProp" = '50', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UpperContainer_HeightProp" = '55', "ui_script_text" = '##/********************************************************           
+##  * CF_TYPE_LOAD                                         *   
+##  *                                                      *   
+##  * Author:  Carlos Javier | Gyssa                       *   
+##  *                                                      *   
+##  * Purpose:  truncar tabla recibida como parametro.     *   
+##  *                                                      *   
+##  * Usage:                                               *   
+##  *      Llamada desde CF_TABLE _NAME                    *   
+##  ********************************************************/ 
+
+
+## modificar tabla, agregar columna "TIPO_CARGA varchar(12) incremental|full" 
+## truncate table devuelta....
+
+$TYPE_LOAD  = SQL(\'DS_CONTROL\', \'SELECT TIPO_CARGA FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \\\'[$P_TABLE_NAME]\\\'\');		
+
+
+if($TYPE_LOAD = \'FULL\')
+begin
+     sql( \'DS_TARGET\', \'TRUNCATE TABLE [$P_TABLE_NAME]\');
+     #print( \'truncate\');	
+end
+else begin
+	
+end
+
+
+return 1;', "x" = '-1', "y" = '-1')
+CREATE FUNCTION CF_TYPE_LOAD($P_TABLE_NAME VARCHAR(100)  IN )
+RETURNS  INT 
+DECLARE
+     $TYPE_LOAD VARCHAR(4) ;
+BEGIN
+$TYPE_LOAD = sql('DS_CONTROL', 'SELECT TIPO_CARGA FROM cnf.CAT_JOBS WHERE NOMBRE_TABLA = \'[$P_TABLE_NAME]\'');IF (($TYPE_LOAD = 'FULL') )
+BEGIN
+sql('DS_TARGET', 'TRUNCATE TABLE [$P_TABLE_NAME]');END
+ELSE
+BEGIN
+END
+RETURN 1;
+END
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Tue Jul 23 23:54:59 2019', "ActaValue_3" = 'Wed Jul 24 12:53:40 2019', "x" = '-1', "y" = '-1')
+CREATE  DATAFLOW DF_BP_CL_COB::'de68859d-ecf0-468f-a5a2-de09d6414c27'
+BEGIN
+
+ALGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-170</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-180</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '70', "ui_acta_from_schema_0" = 'BC_CL_COB', "x" = '612', "y" = '-552')
+GUID::'26ce71e5-664c-438f-bdf4-9608410ed601' CREATE VIEW Query( RECORD_ID INT  SET( "ui_mapping_text" = 'BC_CL_COB.RECORD_ID') ,
+ CONTACT_INFO VARCHAR(128)  SET( "ui_mapping_text" = 'BC_CL_COB.CONTACT_INFO') ,
+ CONTACT_INFO_TYPE INT  SET( "ui_mapping_text" = 'BC_CL_COB.CONTACT_INFO_TYPE') ,
+ RECORD_TYPE INT  SET( "ui_mapping_text" = 'BC_CL_COB.RECORD_TYPE') ,
+ RECORD_STATUS INT  SET( "ui_mapping_text" = 'BC_CL_COB.RECORD_STATUS') ,
+ CALL_RESULT INT  SET( "ui_mapping_text" = 'BC_CL_COB.CALL_RESULT') ,
+ ATTEMPT INT  SET( "ui_mapping_text" = 'BC_CL_COB.ATTEMPT') ,
+ DIAL_SCHED_TIME INT  SET( "ui_mapping_text" = 'BC_CL_COB.DIAL_SCHED_TIME') ,
+ CALL_TIME INT  SET( "ui_mapping_text" = 'BC_CL_COB.CALL_TIME') ,
+ DAILY_FROM INT  SET( "ui_mapping_text" = 'BC_CL_COB.DAILY_FROM') ,
+ DAILY_TILL INT  SET( "ui_mapping_text" = 'BC_CL_COB.DAILY_TILL') ,
+ TZ_DBID INT  SET( "ui_mapping_text" = 'BC_CL_COB.TZ_DBID') ,
+ CAMPAIGN_ID INT  SET( "ui_mapping_text" = 'BC_CL_COB.CAMPAIGN_ID') ,
+ AGENT_ID VARCHAR(32)  SET( "ui_mapping_text" = 'BC_CL_COB.AGENT_ID') ,
+ CHAIN_ID INT  SET( "ui_mapping_text" = 'BC_CL_COB.CHAIN_ID') ,
+ CHAIN_N INT  SET( "ui_mapping_text" = 'BC_CL_COB.CHAIN_N') ,
+ GROUP_ID INT  SET( "ui_mapping_text" = 'BC_CL_COB.GROUP_ID') ,
+ APP_ID INT  SET( "ui_mapping_text" = 'BC_CL_COB.APP_ID') ,
+ TREATMENTS VARCHAR(255)  SET( "ui_mapping_text" = 'BC_CL_COB.TREATMENTS') ,
+ MEDIA_REF INT  SET( "ui_mapping_text" = 'BC_CL_COB.MEDIA_REF') ,
+ EMAIL_SUBJECT VARCHAR(255)  SET( "ui_mapping_text" = 'BC_CL_COB.EMAIL_SUBJECT') ,
+ EMAIL_TEMPLATE_ID INT  SET( "ui_mapping_text" = 'BC_CL_COB.EMAIL_TEMPLATE_ID') ,
+ SWITCH_ID INT  SET( "ui_mapping_text" = 'BC_CL_COB.SWITCH_ID') ,
+ BC_COB_ACCT_NUM VARCHAR(19)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_ACCT_NUM') ,
+ BC_COB_ADDRESS_BUS_LINE1 VARCHAR(35)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_ADDRESS_BUS_LINE1') ,
+ BC_COB_ADDRESS_BUS_LINE2 VARCHAR(35)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_ADDRESS_BUS_LINE2') ,
+ BC_COB_ADDRESS_LINE1 VARCHAR(35)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_ADDRESS_LINE1') ,
+ BC_COB_ADDRESS_LINE2 VARCHAR(35)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_ADDRESS_LINE2') ,
+ BC_COB_ADDRESS_LINE3 VARCHAR(35)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_ADDRESS_LINE3') ,
+ BC_COB_AMNA_SS VARCHAR(18)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_AMNA_SS') ,
+ BC_COB_BALANCE_AT_RISK REAL  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_BALANCE_AT_RISK') ,
+ BC_COB_BEHAVIORAL_SCORE VARCHAR(3)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_BEHAVIORAL_SCORE') ,
+ BC_COB_CARDS_CUST_ID VARCHAR(19)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_CARDS_CUST_ID') ,
+ BC_COB_CURRENT_BALANCE REAL  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_CURRENT_BALANCE') ,
+ BC_COB_CURRENT_DUE_AMT REAL  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_CURRENT_DUE_AMT') ,
+ BC_COB_CUST_TYPE VARCHAR(4)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_CUST_TYPE') ,
+ BC_COB_CUSTOMER_CITY VARCHAR(30)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_CUSTOMER_CITY') ,
+ BC_COB_CUSTOMER_INFO_NUMBER VARCHAR(30)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_CUSTOMER_INFO_NUMBER') ,
+ BC_COB_CUSTOMER_NAME VARCHAR(45)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_CUSTOMER_NAME') ,
+ BC_COB_CUSTOMER_STATE VARCHAR(2)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_CUSTOMER_STATE') ,
+ BC_COB_CYCLES_DELINQUENCY INT  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_CYCLES_DELINQUENCY') ,
+ BC_COB_DPD INT  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_DPD') ,
+ BC_COB_LAST_ACTIVITY_DATE VARCHAR(8)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_LAST_ACTIVITY_DATE') ,
+ BC_COB_LAST_PAYMENT_DATE VARCHAR(8)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_LAST_PAYMENT_DATE') ,
+ BC_COB_MONTHS_ON_BOOK INT  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_MONTHS_ON_BOOK') ,
+ BC_COB_OPEN_DATE VARCHAR(8)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_OPEN_DATE') ,
+ BC_COB_OVERLIMIT_AMT REAL  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_OVERLIMIT_AMT') ,
+ BC_COB_POSTAL_CODE VARCHAR(9)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_POSTAL_CODE') ,
+ BC_COB_RESPONSIBLE_COLL VARCHAR(4)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_RESPONSIBLE_COLL') ,
+ BC_COB_TOTAL_DELINQ_AMT REAL  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_TOTAL_DELINQ_AMT') ,
+ BC_COB_TOTAL_DUE_AMOUNT REAL  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_TOTAL_DUE_AMOUNT') ,
+ BC_COB_FUNCTIONAL_AREA VARCHAR(1)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_FUNCTIONAL_AREA') ,
+ BC_COB_STATE_CODE VARCHAR(2)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_STATE_CODE') ,
+ BC_COB_LOCATION_CODE VARCHAR(6)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_LOCATION_CODE') ,
+ BC_COB_DISPOSITION VARCHAR(50)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_DISPOSITION') ,
+ BC_COB_C1 VARCHAR(25)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_C1') ,
+ BC_COB_C2 VARCHAR(25)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_C2') ,
+ BC_COB_C3 VARCHAR(25)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_C3') ,
+ LOAD_DATE DATETIME(9)  SET( "Content_Type" = 'DATE', "Description" = 'Fecha de carga', "ui_mapping_text" = 'BC_CL_COB.LOAD_DATE')  )
+ AS
+SELECT BC_CL_COB.RECORD_ID, BC_CL_COB.CONTACT_INFO, BC_CL_COB.CONTACT_INFO_TYPE, BC_CL_COB.RECORD_TYPE, BC_CL_COB.RECORD_STATUS, BC_CL_COB.CALL_RESULT, BC_CL_COB.ATTEMPT, BC_CL_COB.DIAL_SCHED_TIME, BC_CL_COB.CALL_TIME, BC_CL_COB.DAILY_FROM, BC_CL_COB.DAILY_TILL, BC_CL_COB.TZ_DBID, BC_CL_COB.CAMPAIGN_ID, BC_CL_COB.AGENT_ID, BC_CL_COB.CHAIN_ID, BC_CL_COB.CHAIN_N, BC_CL_COB.GROUP_ID, BC_CL_COB.APP_ID, BC_CL_COB.TREATMENTS, BC_CL_COB.MEDIA_REF, BC_CL_COB.EMAIL_SUBJECT, BC_CL_COB.EMAIL_TEMPLATE_ID, BC_CL_COB.SWITCH_ID, BC_CL_COB.BC_COB_ACCT_NUM, BC_CL_COB.BC_COB_ADDRESS_BUS_LINE1, BC_CL_COB.BC_COB_ADDRESS_BUS_LINE2, BC_CL_COB.BC_COB_ADDRESS_LINE1, BC_CL_COB.BC_COB_ADDRESS_LINE2, BC_CL_COB.BC_COB_ADDRESS_LINE3, BC_CL_COB.BC_COB_AMNA_SS, BC_CL_COB.BC_COB_BALANCE_AT_RISK, BC_CL_COB.BC_COB_BEHAVIORAL_SCORE, BC_CL_COB.BC_COB_CARDS_CUST_ID, BC_CL_COB.BC_COB_CURRENT_BALANCE, BC_CL_COB.BC_COB_CURRENT_DUE_AMT, BC_CL_COB.BC_COB_CUST_TYPE, BC_CL_COB.BC_COB_CUSTOMER_CITY, BC_CL_COB.BC_COB_CUSTOMER_INFO_NUMBER, BC_CL_COB.BC_COB_CUSTOMER_NAME, BC_CL_COB.BC_COB_CUSTOMER_STATE, BC_CL_COB.BC_COB_CYCLES_DELINQUENCY, BC_CL_COB.BC_COB_DPD, BC_CL_COB.BC_COB_LAST_ACTIVITY_DATE, BC_CL_COB.BC_COB_LAST_PAYMENT_DATE, BC_CL_COB.BC_COB_MONTHS_ON_BOOK, BC_CL_COB.BC_COB_OPEN_DATE, BC_CL_COB.BC_COB_OVERLIMIT_AMT, BC_CL_COB.BC_COB_POSTAL_CODE, BC_CL_COB.BC_COB_RESPONSIBLE_COLL, BC_CL_COB.BC_COB_TOTAL_DELINQ_AMT, BC_CL_COB.BC_COB_TOTAL_DUE_AMOUNT, BC_CL_COB.BC_COB_FUNCTIONAL_AREA, BC_CL_COB.BC_COB_STATE_CODE, BC_CL_COB.BC_COB_LOCATION_CODE, BC_CL_COB.BC_COB_DISPOSITION, BC_CL_COB.BC_COB_C1, BC_CL_COB.BC_COB_C2, BC_CL_COB.BC_COB_C3, BC_CL_COB.LOAD_DATE FROM BC_CL_COB 
+SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
+;
+
+ALGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = '', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>425</CX><CY>-189</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-180</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '70', "x" = '963', "y" = '-666')
+GUID::'0bb85379-5efc-40d0-b98c-8f573300b598' LOAD TABLE DS_TARGET.dbo.BC_CL_COB INPUT(Query)
+SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
+<LDRConfigurations>
+<LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_generate_files_only>0</bulk_ldr_generate_files_only>
+<bulk_row_delimiter>&#xA;</bulk_row_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<iq_blk_ldr_binary>yes</iq_blk_ldr_binary>
+<iq_blk_ldr_block_size>500000</iq_blk_ldr_block_size>
+<iq_checkpoint>no</iq_checkpoint>
+<iq_ignore_all_constraints></iq_ignore_all_constraints>
+<iq_ignore_conversion_error>no</iq_ignore_conversion_error>
+<iq_ignore_dataval_constraints></iq_ignore_dataval_constraints>
+<iq_ignore_foreignkey_constraints></iq_ignore_foreignkey_constraints>
+<iq_ignore_null_constraints></iq_ignore_null_constraints>
+<iq_ignore_unique_constraints></iq_ignore_unique_constraints>
+<iq_log_dataval_constraints>no</iq_log_dataval_constraints>
+<iq_log_foreignkey_constraints>no</iq_log_foreignkey_constraints>
+<iq_log_null_constraints>no</iq_log_null_constraints>
+<iq_log_unique_constraints>no</iq_log_unique_constraints>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load>0</loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>no</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file>DS_TARGET_dbo_BC_CL_COB.txt</loader_overflow_file>
+<loader_post_load1></loader_post_load1>
+<loader_pre_load1></loader_pre_load1>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<mssql_bulk_ldr_mode>append</mssql_bulk_ldr_mode>
+<mssql_bulk_ldr_packet_size>0</mssql_bulk_ldr_packet_size>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+<sql_text></sql_text>
+</LDRConfiguration>
+</LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
+
+ALGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>381</CX><CY>-189</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-180</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '39', "x" = '50', "y" = '-294')
+GUID::'dda5b384-b6e4-40c2-83eb-934cbb40b855' READ TABLE DS_TARGET.STG.BC_CL_COB OUTPUT(BC_CL_COB)
+SET("Initial_Load" = 'no', "array_fetch_size" = '1000', "cache" = 'yes', "connection_port" = 'no', "enable_partitioning" = 'no', "name" = 'DS_TARGET', "package_size" = '0', "parallel_sap_connections" = '0', "reader_is_DB2CDC_table" = 'no', "reader_overflow_file" = 'overflow_file', "reader_template_table" = 'no', "reader_use_overflow_file" = 'no', "reader_use_trex_transaction" = 'no', "sap_odp_cwf_delay" = '5', "table_weight" = '0', "teradata_bulk_rdr_cleanup" = 'yes');
+
+END
+ SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Jul 24 15:31:24 2019', "ActaValue_3" = 'Wed Jul 24 15:32:24 2019', "x" = '-1', "y" = '-1')
+CREATE  DATAFLOW DF_STG_BC_CL_COB_HIPOTECAS::'a0627517-1f3b-46ab-8947-3b73632f5fa8'
+BEGIN
+
+ALGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>238</CX><CY>-170</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-180</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '70', "ui_acta_from_schema_0" = 'BC_CL_COB', "x" = '480', "y" = '-90')
+GUID::'6d4c4a6b-d1e1-4a6a-ad85-9d316b5ac778' CREATE VIEW Query( RECORD_ID INT  SET( "ui_mapping_text" = 'BC_CL_COB.RECORD_ID', "ui_pasting" = 'BC_CL_COB.RECORD_ID') ,
+ CONTACT_INFO VARCHAR(128)  SET( "ui_mapping_text" = 'BC_CL_COB.CONTACT_INFO', "ui_pasting" = 'BC_CL_COB.CONTACT_INFO') ,
+ CONTACT_INFO_TYPE INT  SET( "ui_mapping_text" = 'BC_CL_COB.CONTACT_INFO_TYPE', "ui_pasting" = 'BC_CL_COB.CONTACT_INFO_TYPE') ,
+ RECORD_TYPE INT  SET( "ui_mapping_text" = 'BC_CL_COB.RECORD_TYPE', "ui_pasting" = 'BC_CL_COB.RECORD_TYPE') ,
+ RECORD_STATUS INT  SET( "ui_mapping_text" = 'BC_CL_COB.RECORD_STATUS', "ui_pasting" = 'BC_CL_COB.RECORD_STATUS') ,
+ CALL_RESULT INT  SET( "ui_mapping_text" = 'BC_CL_COB.CALL_RESULT', "ui_pasting" = 'BC_CL_COB.CALL_RESULT') ,
+ ATTEMPT INT  SET( "ui_mapping_text" = 'BC_CL_COB.ATTEMPT', "ui_pasting" = 'BC_CL_COB.ATTEMPT') ,
+ DIAL_SCHED_TIME INT  SET( "ui_mapping_text" = 'BC_CL_COB.DIAL_SCHED_TIME', "ui_pasting" = 'BC_CL_COB.DIAL_SCHED_TIME') ,
+ CALL_TIME INT  SET( "ui_mapping_text" = 'BC_CL_COB.CALL_TIME', "ui_pasting" = 'BC_CL_COB.CALL_TIME') ,
+ DAILY_FROM INT  SET( "ui_mapping_text" = 'BC_CL_COB.DAILY_FROM', "ui_pasting" = 'BC_CL_COB.DAILY_FROM') ,
+ DAILY_TILL INT  SET( "ui_mapping_text" = 'BC_CL_COB.DAILY_TILL', "ui_pasting" = 'BC_CL_COB.DAILY_TILL') ,
+ TZ_DBID INT  SET( "ui_mapping_text" = 'BC_CL_COB.TZ_DBID', "ui_pasting" = 'BC_CL_COB.TZ_DBID') ,
+ CAMPAIGN_ID INT  SET( "ui_mapping_text" = 'BC_CL_COB.CAMPAIGN_ID', "ui_pasting" = 'BC_CL_COB.CAMPAIGN_ID') ,
+ AGENT_ID VARCHAR(32)  SET( "ui_mapping_text" = 'BC_CL_COB.AGENT_ID', "ui_pasting" = 'BC_CL_COB.AGENT_ID') ,
+ CHAIN_ID INT  SET( "ui_mapping_text" = 'BC_CL_COB.CHAIN_ID', "ui_pasting" = 'BC_CL_COB.CHAIN_ID') ,
+ CHAIN_N INT  SET( "ui_mapping_text" = 'BC_CL_COB.CHAIN_N', "ui_pasting" = 'BC_CL_COB.CHAIN_N') ,
+ GROUP_ID INT  SET( "ui_mapping_text" = 'BC_CL_COB.GROUP_ID', "ui_pasting" = 'BC_CL_COB.GROUP_ID') ,
+ APP_ID INT  SET( "ui_mapping_text" = 'BC_CL_COB.APP_ID', "ui_pasting" = 'BC_CL_COB.APP_ID') ,
+ TREATMENTS VARCHAR(255)  SET( "ui_mapping_text" = 'BC_CL_COB.TREATMENTS', "ui_pasting" = 'BC_CL_COB.TREATMENTS') ,
+ MEDIA_REF INT  SET( "ui_mapping_text" = 'BC_CL_COB.MEDIA_REF', "ui_pasting" = 'BC_CL_COB.MEDIA_REF') ,
+ EMAIL_SUBJECT VARCHAR(255)  SET( "ui_mapping_text" = 'BC_CL_COB.EMAIL_SUBJECT', "ui_pasting" = 'BC_CL_COB.EMAIL_SUBJECT') ,
+ EMAIL_TEMPLATE_ID INT  SET( "ui_mapping_text" = 'BC_CL_COB.EMAIL_TEMPLATE_ID', "ui_pasting" = 'BC_CL_COB.EMAIL_TEMPLATE_ID') ,
+ SWITCH_ID INT  SET( "ui_mapping_text" = 'BC_CL_COB.SWITCH_ID', "ui_pasting" = 'BC_CL_COB.SWITCH_ID') ,
+ BC_COB_ACCT_NUM VARCHAR(19)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_ACCT_NUM', "ui_pasting" = 'BC_CL_COB.BC_COB_ACCT_NUM') ,
+ BC_COB_ADDRESS_BUS_LINE1 VARCHAR(35)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_ADDRESS_BUS_LINE1', "ui_pasting" = 'BC_CL_COB.BC_COB_ADDRESS_BUS_LINE1') ,
+ BC_COB_ADDRESS_BUS_LINE2 VARCHAR(35)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_ADDRESS_BUS_LINE2', "ui_pasting" = 'BC_CL_COB.BC_COB_ADDRESS_BUS_LINE2') ,
+ BC_COB_ADDRESS_LINE1 VARCHAR(35)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_ADDRESS_LINE1', "ui_pasting" = 'BC_CL_COB.BC_COB_ADDRESS_LINE1') ,
+ BC_COB_ADDRESS_LINE2 VARCHAR(35)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_ADDRESS_LINE2', "ui_pasting" = 'BC_CL_COB.BC_COB_ADDRESS_LINE2') ,
+ BC_COB_ADDRESS_LINE3 VARCHAR(35)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_ADDRESS_LINE3', "ui_pasting" = 'BC_CL_COB.BC_COB_ADDRESS_LINE3') ,
+ BC_COB_AMNA_SS VARCHAR(18)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_AMNA_SS', "ui_pasting" = 'BC_CL_COB.BC_COB_AMNA_SS') ,
+ BC_COB_BALANCE_AT_RISK REAL  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_BALANCE_AT_RISK', "ui_pasting" = 'BC_CL_COB.BC_COB_BALANCE_AT_RISK') ,
+ BC_COB_BEHAVIORAL_SCORE VARCHAR(3)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_BEHAVIORAL_SCORE', "ui_pasting" = 'BC_CL_COB.BC_COB_BEHAVIORAL_SCORE') ,
+ BC_COB_CARDS_CUST_ID VARCHAR(19)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_CARDS_CUST_ID', "ui_pasting" = 'BC_CL_COB.BC_COB_CARDS_CUST_ID') ,
+ BC_COB_CURRENT_BALANCE REAL  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_CURRENT_BALANCE', "ui_pasting" = 'BC_CL_COB.BC_COB_CURRENT_BALANCE') ,
+ BC_COB_CURRENT_DUE_AMT REAL  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_CURRENT_DUE_AMT', "ui_pasting" = 'BC_CL_COB.BC_COB_CURRENT_DUE_AMT') ,
+ BC_COB_CUST_TYPE VARCHAR(4)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_CUST_TYPE', "ui_pasting" = 'BC_CL_COB.BC_COB_CUST_TYPE') ,
+ BC_COB_CUSTOMER_CITY VARCHAR(30)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_CUSTOMER_CITY', "ui_pasting" = 'BC_CL_COB.BC_COB_CUSTOMER_CITY') ,
+ BC_COB_CUSTOMER_INFO_NUMBER VARCHAR(30)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_CUSTOMER_INFO_NUMBER', "ui_pasting" = 'BC_CL_COB.BC_COB_CUSTOMER_INFO_NUMBER') ,
+ BC_COB_CUSTOMER_NAME VARCHAR(45)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_CUSTOMER_NAME', "ui_pasting" = 'BC_CL_COB.BC_COB_CUSTOMER_NAME') ,
+ BC_COB_CUSTOMER_STATE VARCHAR(2)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_CUSTOMER_STATE', "ui_pasting" = 'BC_CL_COB.BC_COB_CUSTOMER_STATE') ,
+ BC_COB_CYCLES_DELINQUENCY INT  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_CYCLES_DELINQUENCY', "ui_pasting" = 'BC_CL_COB.BC_COB_CYCLES_DELINQUENCY') ,
+ BC_COB_DPD INT  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_DPD', "ui_pasting" = 'BC_CL_COB.BC_COB_DPD') ,
+ BC_COB_LAST_ACTIVITY_DATE VARCHAR(8)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_LAST_ACTIVITY_DATE', "ui_pasting" = 'BC_CL_COB.BC_COB_LAST_ACTIVITY_DATE') ,
+ BC_COB_LAST_PAYMENT_DATE VARCHAR(8)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_LAST_PAYMENT_DATE', "ui_pasting" = 'BC_CL_COB.BC_COB_LAST_PAYMENT_DATE') ,
+ BC_COB_MONTHS_ON_BOOK INT  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_MONTHS_ON_BOOK', "ui_pasting" = 'BC_CL_COB.BC_COB_MONTHS_ON_BOOK') ,
+ BC_COB_OPEN_DATE VARCHAR(8)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_OPEN_DATE', "ui_pasting" = 'BC_CL_COB.BC_COB_OPEN_DATE') ,
+ BC_COB_OVERLIMIT_AMT REAL  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_OVERLIMIT_AMT', "ui_pasting" = 'BC_CL_COB.BC_COB_OVERLIMIT_AMT') ,
+ BC_COB_POSTAL_CODE VARCHAR(9)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_POSTAL_CODE', "ui_pasting" = 'BC_CL_COB.BC_COB_POSTAL_CODE') ,
+ BC_COB_RESPONSIBLE_COLL VARCHAR(4)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_RESPONSIBLE_COLL', "ui_pasting" = 'BC_CL_COB.BC_COB_RESPONSIBLE_COLL') ,
+ BC_COB_TOTAL_DELINQ_AMT REAL  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_TOTAL_DELINQ_AMT', "ui_pasting" = 'BC_CL_COB.BC_COB_TOTAL_DELINQ_AMT') ,
+ BC_COB_TOTAL_DUE_AMOUNT REAL  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_TOTAL_DUE_AMOUNT', "ui_pasting" = 'BC_CL_COB.BC_COB_TOTAL_DUE_AMOUNT') ,
+ BC_COB_FUNCTIONAL_AREA VARCHAR(1)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_FUNCTIONAL_AREA', "ui_pasting" = 'BC_CL_COB.BC_COB_FUNCTIONAL_AREA') ,
+ BC_COB_STATE_CODE VARCHAR(2)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_STATE_CODE', "ui_pasting" = 'BC_CL_COB.BC_COB_STATE_CODE') ,
+ BC_COB_LOCATION_CODE VARCHAR(6)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_LOCATION_CODE', "ui_pasting" = 'BC_CL_COB.BC_COB_LOCATION_CODE') ,
+ BC_COB_DISPOSITION VARCHAR(50)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_DISPOSITION', "ui_pasting" = 'BC_CL_COB.BC_COB_DISPOSITION') ,
+ BC_COB_C1 VARCHAR(25)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_C1', "ui_pasting" = 'BC_CL_COB.BC_COB_C1') ,
+ BC_COB_C2 VARCHAR(25)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_C2', "ui_pasting" = 'BC_CL_COB.BC_COB_C2') ,
+ BC_COB_C3 VARCHAR(25)  SET( "ui_mapping_text" = 'BC_CL_COB.BC_COB_C3', "ui_pasting" = 'BC_CL_COB.BC_COB_C3') ,
+ LOAD_DATE DATETIME(9)  SET( "Content_Type" = 'DATE', "Description" = 'Fecha de carga', "ui_mapping_text" = 'sysdate()', "ui_pasting" = 'sysdate()')  )
+ AS
+SELECT BC_CL_COB.RECORD_ID, BC_CL_COB.CONTACT_INFO, BC_CL_COB.CONTACT_INFO_TYPE, BC_CL_COB.RECORD_TYPE, BC_CL_COB.RECORD_STATUS, BC_CL_COB.CALL_RESULT, BC_CL_COB.ATTEMPT, BC_CL_COB.DIAL_SCHED_TIME, BC_CL_COB.CALL_TIME, BC_CL_COB.DAILY_FROM, BC_CL_COB.DAILY_TILL, BC_CL_COB.TZ_DBID, BC_CL_COB.CAMPAIGN_ID, BC_CL_COB.AGENT_ID, BC_CL_COB.CHAIN_ID, BC_CL_COB.CHAIN_N, BC_CL_COB.GROUP_ID, BC_CL_COB.APP_ID, BC_CL_COB.TREATMENTS, BC_CL_COB.MEDIA_REF, BC_CL_COB.EMAIL_SUBJECT, BC_CL_COB.EMAIL_TEMPLATE_ID, BC_CL_COB.SWITCH_ID, BC_CL_COB.BC_COB_ACCT_NUM, BC_CL_COB.BC_COB_ADDRESS_BUS_LINE1, BC_CL_COB.BC_COB_ADDRESS_BUS_LINE2, BC_CL_COB.BC_COB_ADDRESS_LINE1, BC_CL_COB.BC_COB_ADDRESS_LINE2, BC_CL_COB.BC_COB_ADDRESS_LINE3, BC_CL_COB.BC_COB_AMNA_SS, BC_CL_COB.BC_COB_BALANCE_AT_RISK, BC_CL_COB.BC_COB_BEHAVIORAL_SCORE, BC_CL_COB.BC_COB_CARDS_CUST_ID, BC_CL_COB.BC_COB_CURRENT_BALANCE, BC_CL_COB.BC_COB_CURRENT_DUE_AMT, BC_CL_COB.BC_COB_CUST_TYPE, BC_CL_COB.BC_COB_CUSTOMER_CITY, BC_CL_COB.BC_COB_CUSTOMER_INFO_NUMBER, BC_CL_COB.BC_COB_CUSTOMER_NAME, BC_CL_COB.BC_COB_CUSTOMER_STATE, BC_CL_COB.BC_COB_CYCLES_DELINQUENCY, BC_CL_COB.BC_COB_DPD, BC_CL_COB.BC_COB_LAST_ACTIVITY_DATE, BC_CL_COB.BC_COB_LAST_PAYMENT_DATE, BC_CL_COB.BC_COB_MONTHS_ON_BOOK, BC_CL_COB.BC_COB_OPEN_DATE, BC_CL_COB.BC_COB_OVERLIMIT_AMT, BC_CL_COB.BC_COB_POSTAL_CODE, BC_CL_COB.BC_COB_RESPONSIBLE_COLL, BC_CL_COB.BC_COB_TOTAL_DELINQ_AMT, BC_CL_COB.BC_COB_TOTAL_DUE_AMOUNT, BC_CL_COB.BC_COB_FUNCTIONAL_AREA, BC_CL_COB.BC_COB_STATE_CODE, BC_CL_COB.BC_COB_LOCATION_CODE, BC_CL_COB.BC_COB_DISPOSITION, BC_CL_COB.BC_COB_C1, BC_CL_COB.BC_COB_C2, BC_CL_COB.BC_COB_C3, sysdate() FROM BC_CL_COB 
+SET("distinct_run_as_separate_process" = 'no', "group_by_run_as_separate_process" = 'no', "join_run_as_separate_process" = 'no', "order_by_run_as_separate_process" = 'no', "run_as_separate_process" = 'no')
+;
+
+ALGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Description', "Input_2nd_Column_Name" = 'Type', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Description', "Output_3rd_Column_Name" = 'Content_Type', "Output_Column_Name_4" = 'Business_Name', "Output_Column_Name_5" = 'Description', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>375</CX><CY>-189</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-180</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UpperContainer_HeightProp" = '39', "ui_display_name" = '"BC_CL_COB_HIPOTECAS.txt"(BC_CL_COB)', "x" = '90', "y" = '-90')
+GUID::'e688cb3a-2d36-4be4-a735-23b15695671f' READ FILE BC_CL_COB."BC_CL_COB_HIPOTECAS.txt" OUTPUT(BC_CL_COB)
+SET("adaptable" = 'no', "cache" = 'yes', "connection_port" = 'no', "file_location" = 'job_server', "name" = 'UNNAMED', "number_of_threads" = '<default>', "reader_filename_col" = 'DI_FILENAME', "reader_filename_col_size" = '100', "reader_filename_only" = 'no', "reader_include_filename" = 'no', "reader_maximum_warnings_to_log" = '-99', "root_dir" = '/data/SAT/genesys', "table_weight" = '0');
+
+ALGUIComment ("InputSchema_WidthProp" = '41', "Input_1st_Column_Name" = 'Type', "Input_2nd_Column_Name" = 'Description', "Input_Column_Name_3" = 'Content_Type', "Input_Column_Name_4" = 'Business_Name', "Input_Column_Width_3" = '100', "Input_Column_Width_4" = '100', "Input_Width_Description" = '130', "Input_Width_Type" = '85', "Output_1st_Column_Name" = 'Type', "Output_2nd_Column_Name" = 'Mapping', "Output_3rd_Column_Name" = 'Description', "Output_Column_Name_4" = 'Content_Type', "Output_Column_Name_5" = 'Business_Name', "Output_Column_Width_4" = '100', "Output_Column_Width_5" = '100', "Output_Width_Decsription" = '130', "Output_Width_Mapping" = '85', "Output_Width_Type" = '80', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>425</CX><CY>-189</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-180</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "UI_PASSTHRU_VSPLIT_PCT" = '50', "UpperContainer_HeightProp" = '39', "x" = '1194', "y" = '-200')
+GUID::'eb76d4c1-2e4f-43f3-ba58-ba6569c3a736' LOAD TABLE DS_TARGET.STG.BC_CL_COB INPUT(Query)
+SET("LDRLiveLoad" = 'no', "Table_Type" = 'TABLE', "connection_port" = 'no', "ldr_configuration_enabled" = 'yes', "ldr_configurations" = '<?xml version="1.0" encoding="UTF-8"?>
+<LDRConfigurations>
+<LDRConfiguration database_type="Sybase IQ" database_version="Sybase IQ 16.x">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_row_delimiter>&#xA;</bulk_row_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<iq_blk_ldr_binary>yes</iq_blk_ldr_binary>
+<iq_blk_ldr_block_size>500000</iq_blk_ldr_block_size>
+<iq_checkpoint>no</iq_checkpoint>
+<iq_ignore_all_constraints></iq_ignore_all_constraints>
+<iq_ignore_conversion_error>no</iq_ignore_conversion_error>
+<iq_ignore_dataval_constraints></iq_ignore_dataval_constraints>
+<iq_ignore_foreignkey_constraints></iq_ignore_foreignkey_constraints>
+<iq_ignore_null_constraints></iq_ignore_null_constraints>
+<iq_ignore_unique_constraints></iq_ignore_unique_constraints>
+<iq_log_dataval_constraints>no</iq_log_dataval_constraints>
+<iq_log_foreignkey_constraints>no</iq_log_foreignkey_constraints>
+<iq_log_null_constraints>no</iq_log_null_constraints>
+<iq_log_unique_constraints>no</iq_log_unique_constraints>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_post_load1></loader_post_load1>
+<loader_pre_load1></loader_pre_load1>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<mssql_bulk_ldr_mode>append</mssql_bulk_ldr_mode>
+<mssql_bulk_ldr_packet_size>0</mssql_bulk_ldr_packet_size>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+<sql_text></sql_text>
+</LDRConfiguration>
+</LDRConfigurations>', "loader_template_table" = 'no', "name" = 'DS_TARGET', "use_unicode_varchar" = 'no');
+
+END
+ SET ("Cache_type" = 'pageable_cache', "Parallelism_degree" = 'default', "allows_both_input_and_output" = 'yes', "dataflow_loader_bulk_load" = 'no', "dataflow_loader_commit_size" = 'default', "dataflow_loader_row_size_bytes" = '0', "dataflow_number_of_loaders" = '0', "run_once" = 'no', "use_dataflow_links" = 'no', "use_datastore_links" = 'yes', "validation_xform_exists" = 'no', "validation_xform_stats" = 'no')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Jul 24 15:01:43 2019', "ActaValue_3" = 'Wed Jul 24 15:31:24 2019', "x" = '-1', "y" = '-1')
+CREATE SESSION JOB_GENESYS_COB_HIP::'90472a57-e017-4368-b3b5-1c497e534662'( )
+DECLARE
+     $L_EXISTE_JOB INT ;
+     $L_FECHA DATE ;
+     $L_ID_GENERATED INT ;
+     $L_STATUS_JOB VARCHAR(25) ;
+     $L_U_SEN VARCHAR(25) ;
+     $L_P_SEN VARCHAR(25) ;
+     $L_SERVER_SEN VARCHAR(25) ;
+     $L_PORT_SEN VARCHAR(25) ;
+     $L_QRY VARCHAR(4000) ;
+     GLOBAL $G_JOB_NAME VARCHAR(100) ;
+     GLOBAL $G_CURRENT_DATE VARCHAR(25) ;
+     GLOBAL $G_JOB_EXIST INT ;
+     GLOBAL $G_PATH_SEN VARCHAR(150) ;
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>228</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI', "ui_script_text" = 'print(\'---version: 7c88848\');
+##INICIALIZACIÓN DE VARIABLES
+$G_JOB_NAME = job_name( );
+
+
+#INICIALIZAR
+$L_U_SEN = sql( \'DS_TARGET\', \'select valor from cnf.parametros where parametro = \\\'U_GEN\\\'\');
+$L_P_SEN = sql( \'DS_TARGET\', \'select valor from cnf.parametros where parametro = \\\'P_GEN\\\'\');
+$G_PATH_SEN = sql( \'DS_TARGET\', \'select valor from cnf.parametros where parametro = \\\'PATH_GEN\\\'\');
+$L_SERVER_SEN = sql( \'DS_TARGET\', \'select valor from cnf.parametros where parametro = \\\'SERVER_GEN\\\'\');
+$L_PORT_SEN = sql( \'DS_TARGET\', \'select valor from cnf.parametros where parametro = \\\'PORT_GEN\\\'\');
+
+#ejecutar shell script
+
+##print(\'[$G_PATH_SEN]genesys_bdg.sh \' || \' [$L_U_SEN]\' || \' [$L_P_SEN]\'|| \' [$L_SERVER_SEN] \'|| \' [$L_PORT_SEN]\'|| \' [$G_PATH_SEN]\' || \' BC_CL_COB_MORA1_BP.txt [$L_QRY]\');
+exec(\'/bin/bash\', \'[$G_PATH_SEN]genesys_bdg_hipoteca.sh \' || \' [$L_U_SEN]\' || \' [$L_P_SEN]\'|| \' [$L_SERVER_SEN] \'|| \' [$L_PORT_SEN]\'|| \' [$G_PATH_SEN]\',8);
+
+
+
+', "x" = '791', "y" = '-484')
+BEGIN_SCRIPT
+print('---version: 7c88848');$G_JOB_NAME = job_name();$L_U_SEN = sql('DS_TARGET', 'select valor from cnf.parametros where parametro = \'U_GEN\'');$L_P_SEN = sql('DS_TARGET', 'select valor from cnf.parametros where parametro = \'P_GEN\'');$G_PATH_SEN = sql('DS_TARGET', 'select valor from cnf.parametros where parametro = \'PATH_GEN\'');$L_SERVER_SEN = sql('DS_TARGET', 'select valor from cnf.parametros where parametro = \'SERVER_GEN\'');$L_PORT_SEN = sql('DS_TARGET', 'select valor from cnf.parametros where parametro = \'PORT_GEN\'');exec('/bin/bash', ((((('[$G_PATH_SEN]genesys_bdg_hipoteca.sh ' || ' [$L_U_SEN]') || ' [$L_P_SEN]') || ' [$L_SERVER_SEN] ') || ' [$L_PORT_SEN]') || ' [$G_PATH_SEN]'), 8);END
+ AlGUIComment ("If_condition" = 'CF_JOBNAME( $G_JOB_NAME,$L_EXISTE_JOB) = 1', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>297</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'CDT_JOB_EXIST', "x" = '1178', "y" = '-484')
+IF ((cf_jobname($G_JOB_NAME, $L_EXISTE_JOB) = 1) )
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try1081', "x" = '90', "y" = '-90')
+TRY
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>378</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-195</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
+CALL PLAN WF_BC_CL_COB_HIP::'2e1733d4-8920-498a-bb10-99d762505aaf'();
+END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch1101', "x" = '870', "y" = '-90')
+CATCH (210101)
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Script1403', "ui_script_text" = 'CF_EMAIL_NOTIFICATION(\'ERROR EN EJECUCIÓN DE JOB\', error_message( ));', "x" = '947', "y" = '-200')
+BEGIN_SCRIPT
+cf_email_notification('ERROR EN EJECUCIÓN DE JOB', error_message());END
+END
+
+END_TRY
+END
+ELSE
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>375</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_ERROR_CDT', "ui_script_text" = '$L_FECHA = sysdate( );
+SQL(\'DS_CONTROL\', \'INSERT INTO LOG_EJECUCION(ERROR_NUMBER, ERROR_CONTEXT, ERROR_MESSAGE, ERROR_TIMESTAMP) VALUES(0, \\\'No existe Job ingresado con nombre [$G_JOB_NAME]\\\', \\\'\\\', \\\'[$L_FECHA]\\\')\');', "x" = '438', "y" = '-347')
+BEGIN_SCRIPT
+$L_FECHA = sysdate();sql('DS_CONTROL', 'INSERT INTO LOG_EJECUCION(ERROR_NUMBER, ERROR_CONTEXT, ERROR_MESSAGE, ERROR_TIMESTAMP) VALUES(0, \'No existe Job ingresado con nombre [$G_JOB_NAME]\', \'\', \'[$L_FECHA]\')');END
+END
+END
+ SET ("job_checkpoint_enabled" = 'no', "job_collect_statistics" = 'no', "job_collect_statistics_monitor" = 'no', "job_create_debug_package" = 'no', "job_enable_assemblers" = 'yes', "job_enable_audit" = 'yes', "job_enable_dataquality" = 'yes', "job_export_repo" = 'no', "job_export_reports" = 'no', "job_guid" = '90472a57-e017-4368-b3b5-1c497e534662', "job_isrecoverable" = 'no', "job_mode" = 'Multi-Process', "job_monitor_sample_rate" = '1000', "job_monitor_timer_rate" = '5', "job_name" = 'JOB_GENESYS_COB_HIP', "job_print_version" = 'no', "job_testmode_enabled" = 'no', "job_trace_abapquery" = 'no', "job_trace_all" = 'no', "job_trace_ascomm" = 'no', "job_trace_assemblers" = 'no', "job_trace_audit" = 'no', "job_trace_dataflow" = 'yes', "job_trace_idoc_file" = 'no', "job_trace_memory_loader" = 'no', "job_trace_memory_reader" = 'no', "job_trace_optimized_dataflow" = 'no', "job_trace_parallel_execution" = 'no', "job_trace_rfc_function" = 'no', "job_trace_row" = 'no', "job_trace_script" = 'no', "job_trace_session" = 'yes', "job_trace_sql_only" = 'no', "job_trace_sqlfunctions" = 'no', "job_trace_sqlloaders" = 'no', "job_trace_sqlreaders" = 'no', "job_trace_sqltransforms" = 'no', "job_trace_stored_procedure" = 'no', "job_trace_table" = 'no', "job_trace_table_reader" = 'no', "job_trace_transform" = 'no', "job_trace_userfunction" = 'no', "job_trace_usertransform" = 'no', "job_trace_workflow" = 'yes', "job_type" = 'batch', "job_use_statistics" = 'yes', "locale_codepage" = '<default>', "locale_language" = '<default>', "locale_territory" = '<default>')
+ AlGUIComment ("ActaName_1" = 'RSavedAfterCheckOut', "ActaName_2" = 'RDate_created', "ActaName_3" = 'RDate_modified', "ActaValue_1" = 'YES', "ActaValue_2" = 'Wed Jul 24 15:06:55 2019', "ActaValue_3" = 'Wed Jul 24 15:33:29 2019', "x" = '-1', "y" = '-1')
+CREATE PLAN WF_BC_CL_COB_HIP::'2e1733d4-8920-498a-bb10-99d762505aaf'( )
+DECLARE
+     $L_TABLE_NAME VARCHAR(100) ;
+     $L_EXIST_TABLE INT ;
+     $L_COUNT_RECORDS INT ;
+     $L_ID_CATJOB INT ;
+     $L_MAX_ID INT ;
+     $L_STATUS_JOB VARCHAR(25) ;
+     $L_ID_GENERATED INT ;
+     $L_ID_JOB_TABLA INT ;
+     $L_ERROR_NUMBER INT ;
+     $L_ERROR_CONTEXT VARCHAR(512) ;
+     $L_ERROR_MESSAGE VARCHAR(512) ;
+     $L_ERROR_TIMESTAMP __AL_TIMESTAMP(9) ;
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>291</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI_WF', "ui_script_text" = '$L_TABLE_NAME  = replace_substr( workflow_name( ), \'WF_\', \'\' );
+$L_TABLE_NAME  = replace_substr( $L_TABLE_NAME, \'_HIP\', \'\' );
+#truncate table stg
+sql( \'DS_TARGET\', \'truncate table STG.[$L_TABLE_NAME]\');
+print($L_TABLE_NAME);
+
+
+', "x" = '480', "y" = '-90')
+BEGIN_SCRIPT
+$L_TABLE_NAME = replace_substr(workflow_name(), 'WF_', '');$L_TABLE_NAME = replace_substr($L_TABLE_NAME, '_HIP', '');sql('DS_TARGET', 'truncate table STG.[$L_TABLE_NAME]');print($L_TABLE_NAME);END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Try5586', "x" = '870', "y" = '-90')
+TRY
+BEGIN
+ AlGUIComment ("If_condition" = 'CF_TABLE_NAME($L_TABLE_NAME) = 1', "UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>332</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'CDT_TABLE_EXIST', "x" = '1260', "y" = '-90')
+IF ((cf_table_name($L_TABLE_NAME) = 1) )
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>285</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_INI_DF', "ui_script_text" = '$L_STATUS_JOB = \'INICIADO\';
+$L_TABLE_NAME = replace_substr( $L_TABLE_NAME, \'stg.\', \'\');
+$L_ID_JOB_TABLA = sql( \'DS_CONTROL\', \'SELECT ID_JOB_TABLE FROM CNF.CAT_JOBS WHERE NOMBRE_JOB = \\\'[$G_JOB_NAME]\\\' AND NOMBRE_TABLA = \\\'[$L_TABLE_NAME]\\\'\');
+$L_ID_GENERATED  = CF_CONTROL_LOG_EDW($G_CURRENT_DATE, $L_ID_JOB_TABLA , $L_STATUS_JOB, $L_ID_GENERATED );
+
+
+
+
+
+
+PRINT( \'INICIO DE TRABAJO, INFORMACION ALMACENADA EN TABLA TBL_CONTROL_EJECUCION - [$L_ID_GENERATED]\');
+
+', "x" = '90', "y" = '-90')
+BEGIN_SCRIPT
+$L_STATUS_JOB = 'INICIADO';$L_TABLE_NAME = replace_substr($L_TABLE_NAME, 'stg.', '');$L_ID_JOB_TABLA = sql('DS_CONTROL', 'SELECT ID_JOB_TABLE FROM CNF.CAT_JOBS WHERE NOMBRE_JOB = \'[$G_JOB_NAME]\' AND NOMBRE_TABLA = \'[$L_TABLE_NAME]\'');$L_ID_GENERATED = cf_control_log_edw($G_CURRENT_DATE, $L_ID_JOB_TABLA, $L_STATUS_JOB, $L_ID_GENERATED);print('INICIO DE TRABAJO, INFORMACION ALMACENADA EN TABLA TBL_CONTROL_EJECUCION - [$L_ID_GENERATED]');END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>422</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-195</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '480', "y" = '-90')
+CALL DATAFLOW DF_STG_BC_CL_COB_HIPOTECAS::'a0627517-1f3b-46ab-8947-3b73632f5fa8'();
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>300</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_MID_DF', "ui_script_text" = '$L_TABLE_NAME = \'BC_CL_COB\';
+
+$L_TABLE_NAME = \'STG.\' || $L_TABLE_NAME ;
+$L_COUNT_RECORDS = sql( \'DS_TARGET\', \'SELECT COUNT(*) FROM [$L_TABLE_NAME]\' );
+
+$L_TABLE_NAME = replace_substr( $L_TABLE_NAME , \'STG.\', \'\');
+#print(\'SELECT ID_JOB_TABLE FROM CNF.CAT_JOBS WHERE NOMBRE_JOB = \\\'[$G_JOB_NAME]\\\' AND NOMBRE_TABLA = \\\'[$L_TABLE_NAME]\\\'\');
+
+$L_ID_CATJOB = sql( \'DS_CONTROL\', \'SELECT ID_JOB_TABLE FROM CNF.CAT_JOBS WHERE NOMBRE_JOB = \\\'[$G_JOB_NAME]\\\' AND NOMBRE_TABLA = \\\'[$L_TABLE_NAME]\\\'\');
+
+$L_MAX_ID = sql( \'DS_CONTROL\', \'SELECT MAX(ID_CONTROL) FROM CNF.CONTROL_EJECUCION WHERE ID_CAT_JOB = [$L_ID_CATJOB]\');
+
+sql( \'DS_CONTROL\', \'UPDATE CNF.CONTROL_EJECUCION SET COUNT_FILA = \\\'[$L_COUNT_RECORDS]\\\' WHERE ID_CAT_JOB = [$L_ID_CATJOB] AND ID_CONTROL = [$L_MAX_ID]\');
+SQL(\'DS_CONTROL\', \'COMMIT\');
+', "x" = '870', "y" = '-90')
+BEGIN_SCRIPT
+$L_TABLE_NAME = 'BC_CL_COB';$L_TABLE_NAME = ('STG.' || $L_TABLE_NAME);$L_COUNT_RECORDS = sql('DS_TARGET', 'SELECT COUNT(*) FROM [$L_TABLE_NAME]');$L_TABLE_NAME = replace_substr($L_TABLE_NAME, 'STG.', '');$L_ID_CATJOB = sql('DS_CONTROL', 'SELECT ID_JOB_TABLE FROM CNF.CAT_JOBS WHERE NOMBRE_JOB = \'[$G_JOB_NAME]\' AND NOMBRE_TABLA = \'[$L_TABLE_NAME]\'');$L_MAX_ID = sql('DS_CONTROL', 'SELECT MAX(ID_CONTROL) FROM CNF.CONTROL_EJECUCION WHERE ID_CAT_JOB = [$L_ID_CATJOB]');sql('DS_CONTROL', 'UPDATE CNF.CONTROL_EJECUCION SET COUNT_FILA = \'[$L_COUNT_RECORDS]\' WHERE ID_CAT_JOB = [$L_ID_CATJOB] AND ID_CONTROL = [$L_MAX_ID]');sql('DS_CONTROL', 'COMMIT');END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>297</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-195</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "x" = '1260', "y" = '-90')
+CALL DATAFLOW DF_BP_CL_COB::'de68859d-ecf0-468f-a5a2-de09d6414c27'();
+END
+END
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>216</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'Catch5590', "x" = '1650', "y" = '-90')
+CATCH (210101)
+BEGIN
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>360</CX><CY>-179</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_CATCH_WF', "ui_script_text" = '##INSTANCIA DE VARIABLES GLOBALES##
+$L_ERROR_NUMBER = error_number( );
+
+$L_ERROR_CONTEXT = error_context( );
+
+$L_ERROR_MESSAGE = error_message( );
+
+$L_ERROR_TIMESTAMP = error_timestamp( );
+
+##INFORMACIÓN DE ERROR EN TABLA DE LOG
+
+CF_ERROR_LOG($L_ERROR_NUMBER, $L_ERROR_CONTEXT, $L_ERROR_MESSAGE, $L_ERROR_TIMESTAMP, $L_ID_GENERATED );
+
+
+raise_exception( \'OCURRIO UN ERROR AL INGRESAR DATOS, VERIFICAR TABLA DE LOG PARA MAS INFORAMCION\');
+', "x" = '1047', "y" = '-394')
+BEGIN_SCRIPT
+$L_ERROR_NUMBER = error_number();$L_ERROR_CONTEXT = error_context();$L_ERROR_MESSAGE = error_message();$L_ERROR_TIMESTAMP = error_timestamp();cf_error_log($L_ERROR_NUMBER, $L_ERROR_CONTEXT, $L_ERROR_MESSAGE, $L_ERROR_TIMESTAMP, $L_ID_GENERATED);raise_exception('OCURRIO UN ERROR AL INGRESAR DATOS, VERIFICAR TABLA DE LOG PARA MAS INFORAMCION');END
+END
+
+END_TRY
+ AlGUIComment ("UI_DATA_XML" = '<UIDATA><MAINICON><LOCATION><X>0</X><Y>0</Y></LOCATION><SIZE><CX>300</CX><CY>-185</CY></SIZE></MAINICON><DESCRIPTION><LOCATION><X>0</X><Y>-190</Y></LOCATION><SIZE><CX>200</CX><CY>200</CY></SIZE><VISIBLE>0</VISIBLE></DESCRIPTION></UIDATA>', "ui_display_name" = 'SCRIPT_FIN_WF', "ui_script_text" = '$L_STATUS_JOB = \'FINALIZADO\';
+
+print( $L_ID_GENERATED );
+$L_ID_GENERATED  = CF_CONTROL_LOG_FIN( $L_ID_GENERATED, $L_STATUS_JOB );
+
+
+exec(\'/bin/bash\', \'[$G_PATH_SEN]genesys_del.sh \',8);', "x" = '2040', "y" = '-90')
+BEGIN_SCRIPT
+$L_STATUS_JOB = 'FINALIZADO';print($L_ID_GENERATED);$L_ID_GENERATED = cf_control_log_fin($L_ID_GENERATED, $L_STATUS_JOB);exec('/bin/bash', '[$G_PATH_SEN]genesys_del.sh ', 8);END
+END
+ SET ("run_once" = 'no', "unit_of_recovery" = 'no', "workflow_type" = 'Regular')

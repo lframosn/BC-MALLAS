@@ -1,0 +1,19 @@
+--insert cat_jobs
+INSERT INTO "CNF"."CAT_JOBS" ("NOMBRE_JOB","NOMBRE_TABLA","TIPO_CARGA","REPROCESO") VALUES('JOB_GENESYS_COB','BC_CL_COB',NULL,0)
+
+--insert parametros
+INSERT INTO "CNF"."PARAMETROS" ("PARAMETRO","VALOR") VALUES('U_GEN','usr_sapds');
+INSERT INTO "CNF"."PARAMETROS" ("PARAMETRO","VALOR") VALUES('P_GEN','Cusca2019');
+INSERT INTO "CNF"."PARAMETROS" ("PARAMETRO","VALOR") VALUES('PATH_GEN','/data/SAT/genesys/');
+INSERT INTO "CNF"."PARAMETROS" ("PARAMETRO","VALOR") VALUES('SERVER_GEN','SVBCWSQL1401DA');
+INSERT INTO "CNF"."PARAMETROS" ("PARAMETRO","VALOR") VALUES('PORT_GEN','3341');
+
+
+--instrucciones OS.
+
+1. crear una carpeta "genesys" en esta ruta 
+mkdir /data/SAT/
+2. copiar los sh anexos en el entregable.
+genesys_bdg_hipoteca.sh
+genesys_bdg.sh
+genesys_del.sh
